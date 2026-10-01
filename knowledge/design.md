@@ -43,8 +43,9 @@ The main variant Prisma combines a classic and an instrumental register on a whi
 2. First decision: name, one-sentence offer, request button, figure 1 with caption, provider line.
 3. Depth: abilities strip, tools and methods with state and evidence, quality, who we are, client institutions, process, fit lists, billing.
 4. Addresses: every section and every tool or method carries a fragment identifier.
-5. Layout: on wide screens the hero sets text beside the layered figure, tool rows run in two alternating columns and methods in three. On narrow screens everything stacks and the header keeps only the request link.
+5. Layout: on wide screens the hero sets text beside the layered figure, tool rows run in two alternating columns and methods in three. On narrow screens everything stacks and the section links become a swipeable row with the request link first.
 6. Motion: the two warning messages of figure 1 fade in once and stay still under reduced motion.
+7. Variant switch: the footer of every page lists all variants and the overview and marks the current one.
 
 ## Design variants
 

@@ -39,7 +39,10 @@ The page offers and explains a service of Digital Humanities Craft OG. The tools
 node tools/build-variants.cjs                      # regenerate all variants and the overview page
 node --check tools/build-variants.cjs tools/shoot-variants.cjs
 PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/shoot-variants.cjs
+PLAYWRIGHT=/path/to/node_modules/playwright AXE=/path/to/axe-core/axe.min.js CHANNEL=msedge LINKS=1 node tools/check.cjs
 ```
+
+Run `tools/check.cjs` before every push. It must end with `all checks passed`.
 
 ### Conventions
 

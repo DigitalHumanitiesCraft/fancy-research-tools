@@ -22,7 +22,7 @@ related: [specification, data, design]
 
 # Testing
 
-The checks that guard a change of content, look or tooling. The repository installs no toolchain, so browser checks borrow an existing Playwright installation and a local axe-core copy.
+The checks that guard a change of content, look or tooling. The repository installs no toolchain, so `tools/check.cjs` borrows an existing Playwright installation and an axe-core copy.
 
 ## Test strategy
 
@@ -34,10 +34,10 @@ Every change runs the syntax check and the build. A change of look or markup add
 |---|---|
 | `node --check tools/*.cjs` | the scripts parse |
 | build followed by `git status` | the generated variants match `index.html` |
-| axe with WCAG 2.2 AA and best-practice rules | no violation at 1440 and 320 pixels in every variant |
-| overflow probe | no horizontal document scroll at 320 pixels |
-| image probe | every image loads |
-| link check with `curl -sIL` | every demo, repository and evidence link answers 200 |
+| `tools/check.cjs`, axe with WCAG 2.2 AA and best-practice rules | no violation in every variant, the overview and the 404 page, at 1440 and 320 pixels, light and dark |
+| `tools/check.cjs`, overflow probe | no horizontal document scroll at 320 pixels |
+| `tools/check.cjs`, image probe | every image loads after scrolling through the page |
+| `tools/check.cjs` with `LINKS=1` | every external link of `index.html` answers 200 |
 
 ## Acceptance
 
@@ -52,13 +52,14 @@ Every change runs the syntax check and the build. A change of look or markup add
 ```
 node --check tools/build-variants.cjs tools/shoot-variants.cjs
 node tools/build-variants.cjs && git status --short     # generated files must stay unchanged after a content-neutral build
-PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/shoot-variants.cjs   # preview images
+PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/shoot-variants.cjs   # overview previews and link previews
+PLAYWRIGHT=/path/to/node_modules/playwright AXE=/path/to/axe-core/axe.min.js CHANNEL=msedge LINKS=1 node tools/check.cjs
 ```
 
-The axe run loads `axe.min.js` from an existing axe-core installation into each page served locally and runs the rule sets `wcag2a`, `wcag2aa`, `wcag21aa`, `wcag22aa` and `best-practice`.
+The browser scripts expect the repository served locally, by default at http://127.0.0.1:4321. The 404 page uses absolute paths for GitHub Pages, so its stylesheet resolves only on the published site.
 
 ## Known limits
 
 - axe covers part of the success criteria. Keyboard paths and screen readers need a manual pass, which has not run.
-- The browser checks depend on an outside Playwright and axe installation and live in no script of this repository yet, see [plan](plan.md).
+- The browser checks depend on an outside Playwright and axe-core installation.
 - The live address is checked by the operator, see Acceptance.

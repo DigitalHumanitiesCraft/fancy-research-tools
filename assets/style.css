@@ -150,14 +150,15 @@
   .brand {
     display: inline-flex;
     align-items: center;
-    gap: 0.55rem;
+    gap: 0.6rem;
+    padding-block: 0.6rem;
     color: var(--text);
     text-decoration: none;
     font-family: var(--font-display);
     font-weight: 600;
     font-size: 1.45rem;
 
-    & svg { inline-size: 2.4rem; block-size: auto; flex: none; }
+    & svg { inline-size: 2.9rem; block-size: auto; flex: none; }
   }
 
   .mark-line { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -196,9 +197,19 @@
     &:hover { text-decoration: none; background: var(--purple-deep); color: white; }
   }
 
-  /* On narrow screens the section links give way, the request stays reachable. */
-  @media (max-width: 40rem) {
-    .site-nav li:not(:last-child) { display: none; }
+  /* On narrow screens the section links form a swipeable row under the wordmark, request first,
+     so every section stays one tap away without a script-driven menu. */
+  @media (max-width: 52rem) {
+    .site-nav {
+      inline-size: 100%;
+      overflow-x: auto;
+      scrollbar-width: none;
+      mask-image: linear-gradient(90deg, black 85%, transparent);
+    }
+    .site-nav ul { flex-wrap: nowrap; padding-block-end: var(--space-xs); }
+    .site-nav li { flex: none; }
+    .site-nav li:last-child { order: -1; }
+    .site-nav li:nth-last-child(2) { padding-inline-end: var(--space-l); }
   }
 
   @media (max-width: 24rem) {
@@ -892,6 +903,23 @@
     & span { line-height: 1.4; }
   }
 
+  .variant-switch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-xs) var(--space-m);
+    inline-size: 100%;
+    padding-block: var(--space-s);
+    border-block: 1px solid oklch(100% 0 0 / 0.15);
+
+    & p { font-weight: 600; color: var(--paper); }
+    & ul { display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-m); }
+    & a { display: inline-block; padding-block: 0.4rem; }
+    & a[aria-current="page"] { color: var(--paper); font-weight: 600; text-decoration: none; }
+  }
+
+  .address { margin-block-start: var(--space-s); font-family: var(--font-mono); user-select: all; }
+
   .footer-links {
     display: flex;
     flex-wrap: wrap;
@@ -901,6 +929,7 @@
 }
 
 @media print {
-  .site-header, .actions, .compare { display: none; }
+  .site-header, .actions, .compare, .variant-switch, .abilities { display: none; }
+  .section { padding-block: 1.5rem; }
   .cta, .site-footer { background: none; color: black; }
 }

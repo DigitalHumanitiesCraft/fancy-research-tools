@@ -32,6 +32,8 @@ What the page must do and which decisions hold. Requirements and stories change 
 - FR-04: Every section and every tool or method is addressable. Acceptance: each has a unique fragment identifier.
 - FR-05: The billing modes are stated. Acceptance: the request section names hourly billing and an agreed fee.
 - FR-06: Every variant carries the same content. Acceptance: running the build leaves no difference in the generated directories.
+- FR-07: Every page leads to every variant. Acceptance: the footer lists all variants and the overview, the current variant marked with `aria-current`.
+- FR-08: A shared link shows title, description and image. Acceptance: Open Graph metadata with a 1200 by 630 image per variant and a canonical link to the main variant.
 
 ### Non-functional requirements
 
@@ -127,6 +129,14 @@ Effect. Two tool rows carry diagrams, the others screenshots.
 Choice. Every variant except the root carries `noindex`.
 
 Reason. Identical content at several addresses would compete in search results.
+
+### ADR-007 Swipeable section row on phones
+
+Context. The header had room only for the request link on narrow screens.
+
+Choice. The section links become a horizontally swipeable row under the wordmark, request link first.
+
+Reason. Every section stays reachable without a script-driven menu and without a second link list.
 
 ### ADR-006 House rules over the dhcraft.org pattern
 

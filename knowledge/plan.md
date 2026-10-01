@@ -26,17 +26,10 @@ The accepted next work and the decisions it waits on. Decisions taken move into 
 
 A service page that visitors find from dhcraft.org, that shares well, loads fast on a phone and holds its claims against the linked evidence, in the variant the operator chooses.
 
-## Optimisation round across all variants
+## Next work
 
-Accepted by the operator on 2026-10-01. Changes in `index.html` and `assets/style.css` reach every variant, theme changes one.
-
-1. Shared content: e-mail address as copyable text beside the mail links, a one-sentence caption for figure 1, state lines that lead with what works.
-2. Sharing: Open Graph and description metadata with a preview image per variant, a canonical link to the main variant.
-3. Speed: screenshots as WebP in several widths with `srcset`, the DHCraft logo at display size.
-4. Navigation on phones: a section menu that works without JavaScript.
-5. Hygiene: a 404 page, print rules that match the current markup, removal of leftover rules.
-6. Variant polish: per-theme review of contrast, spacing and the header mark.
-7. Checks: the browser checks of [testing](testing.md) as a script in `tools/`.
+1. A manual keyboard and screen reader pass over the main variant, see [testing](testing.md#known-limits).
+2. Per-theme review of the variant the operator chooses, once chosen.
 
 ## Open decisions and dependencies
 

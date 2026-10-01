@@ -55,3 +55,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Source: Konvention Promptotyping Documents and its templates in the vault
 - Target: all documents in `knowledge/`, `CLAUDE.md`
 - Result: index, project, specification, data, design, testing, plan, handoff and journal with the required frontmatter. The plan omits the status tracker of its template, because the global instructions ban status markers in notes.
+
+### 2026-10-01 integrated Optimisation round across all variants
+
+- Source: operator request to improve every variant and to reach every design from the start page
+- Target: `index.html`, `assets/style.css`, `tools/`, [specification](specification.md), [design](design.md), [testing](testing.md)
+- Result: variant switch in every footer, copyable e-mail address, shorter figure caption, state lines leading with what works, Open Graph metadata and link previews per variant, WebP screenshots with `srcset`, a smaller provider logo, a swipeable section row on phones, a 404 page, updated print rules and `tools/check.cjs` as a repeatable check run.
