@@ -28,8 +28,9 @@ A service page that visitors find from dhcraft.org, that shares well, loads fast
 
 ## Next work
 
-1. A manual keyboard and screen reader pass over the main variant, see [testing](testing.md#known-limits).
-2. Per-theme review of the variant the operator chooses, once chosen.
+1. Motif images per variant from a Codex session after [design](design.md#generated-images), then a labelled figure that the build swaps per variant.
+2. A manual keyboard and screen reader pass over the main variant, see [testing](testing.md#known-limits).
+3. Per-theme review of the variant the operator chooses, once chosen.
 
 ## Open decisions and dependencies
 

@@ -116,13 +116,13 @@ Effect. State lines drift when a tool changes, so [data](data.md) records the ch
 
 ### ADR-004 Schematic diagrams for third-party images
 
-Context. Some demos show museum images under their own licences, one explicitly without commercial use.
+Context. Some demos show museum images under their own licences.
 
-Choice. Those tools appear with a hand-drawn diagram instead of a screenshot.
+Choice. A tool whose demo shows images under a non-commercial or unclear licence appears with a hand-drawn diagram instead of a screenshot. A demo whose images are all Public Domain or CC0 is shown as a screenshot.
 
 Reason. The page is commercial, and an image licence must not decide the layout of a service page.
 
-Effect. Two tool rows carry diagrams, the others screenshots.
+Effect. Objekt-Bestimmung carries a diagram. Kulturpool-Demo moved to a screenshot after its licence field was checked.
 
 ### ADR-005 Main variant indexed, other variants hidden from search
 
@@ -145,3 +145,11 @@ Context. The header had room only for the request link on narrow screens.
 Choice. The section links become a horizontally swipeable row under the wordmark, request link first.
 
 Reason. Every section stays reachable without a script-driven menu and without a second link list.
+
+### ADR-008 Screenshots as evidence, generated images as identity
+
+Context. Better images were wanted everywhere, including generated ones.
+
+Choice. Tool rows show only real screenshots or schematic diagrams. Generated images appear only as a motif image of a variant, visibly labelled as generated, and never depict a tool, an interface, a person or text.
+
+Reason. The page earns trust through evidence links. A generated image in the place of a screenshot would claim an interface that does not exist.

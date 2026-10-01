@@ -59,6 +59,28 @@ All variants are generated from `index.html` by `tools/build-variants.cjs`. Each
 | Labor | `theme-labor.css` | dark ground, monospace headings, luminous spectrum, stronger grid, glowing card edges |
 | Raster | `theme-raster.css` | Swiss typography, one sans serif in large tight cuts, black on white, spectrum as a flat block under section titles, no rounded corners |
 
+## Generated images
+
+One motif runs through every variant, light that splits and becomes visible, as an image for tools that make knowledge visible. Each variant renders it in its own register. The images are produced by a Codex session with image generation and integrated afterwards as a labelled figure that the build swaps per variant.
+
+Rules for every generated image.
+
+- It shows the motif only. No tool, no interface, no person, no logo, no legible text.
+- It imitates no living artist and no identifiable existing artwork.
+- It is labelled on the page, in the figure caption, as generated with the model named.
+- Its prompt, model and date are recorded in [data](data.md#images).
+
+Delivery. One PNG per variant, 2400 by 1200 pixels, saved as `assets/img/source/motif-<slug>.png`, with the prompt and the model used noted beside it in `assets/img/source/motif-<slug>.txt`.
+
+| Slug | Variant | Prompt |
+|---|---|---|
+| prisma | Prisma | Studio photograph of a clear triangular glass prism on a seamless white surface. A thin beam of white light enters from the left and leaves the prism as a crisp, evenly spaced spectrum of red, orange, yellow, green, cyan, blue and violet that fans out to the right across the white surface. Soft shadow, high-key light, precise and calm scientific mood, generous empty white space in the left third. No text, no logos, no people. Wide format 2:1. |
+| edition | Edition | Copperplate engraving in the manner of a seventeenth-century scientific book illustration, showing the classic prism experiment, a darkened room, a small round hole in a window shutter, a beam of light passing through a triangular glass prism and spreading into a band on the opposite wall. Fine black hatching on white paper, the refracted band and a few single reference letters in rubric red, nothing else coloured. Generous margins, no modern objects, no words. Wide format 2:1. |
+| labor | Labor | Night photograph of an optical laboratory bench, a precision glass prism on a black breadboard, a laser-thin white beam splitting into a luminous spectrum, faint measuring grid lines projected onto a dark navy surface, cyan and violet glow, shallow depth of field, clean and quiet, no people, no text. Wide format 2:1. |
+| raster | Raster | Poster in the Swiss International Typographic Style, flat geometric composition on white, one black equilateral triangle, one thin black line entering it from the left, seven flat parallel colour bands in red, orange, yellow, green, cyan, blue and violet leaving it to the right at a strict angle, strong underlying grid, large white space, no gradients, no shadows, no text. Wide format 2:1. |
+
+The DHCraft variant uses the existing watercolour hexagon of the DHCraft logo and needs no generated image.
+
 ## Binding to the action layer
 
 `CLAUDE.md` applies this document through these rules.

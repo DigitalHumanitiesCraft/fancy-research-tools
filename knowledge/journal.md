@@ -61,3 +61,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Source: operator request to improve every variant and to reach every design from the start page
 - Target: `index.html`, `assets/style.css`, `tools/`, [specification](specification.md), [design](design.md), [testing](testing.md)
 - Result: variant switch in every footer, copyable e-mail address, shorter figure caption, state lines leading with what works, Open Graph metadata and link previews per variant, WebP screenshots with `srcset`, a smaller provider logo, a swipeable section row on phones, a 404 page, updated print rules and `tools/check.cjs` as a repeatable check run.
+
+### 2026-10-01 integrated Sharper screenshots and the image rule
+
+- Source: operator request for good screenshots everywhere and for style-fitting generated images, to be produced by Codex
+- Target: `tools/shoot-tools.cjs`, [data](data.md#images), [specification](specification.md#adr-008-screenshots-as-evidence-generated-images-as-identity), [design](design.md#generated-images), `AGENTS.md`
+- Result: tool screenshots retaken at double pixel density by a repeatable script, Kulturpool-Demo shown as a real screenshot after its licence field was checked, generated images limited to a labelled motif per variant with prompts ready for Codex.

@@ -640,17 +640,6 @@
 
   .shot.schema { display: grid; place-items: center; aspect-ratio: 16 / 10; background: var(--surface); }
   .shot.schema .diagram { padding: var(--space-m); background: none; }
-  .d-panel { fill: var(--raised); stroke: var(--rule); }
-  .d-facet { fill: var(--blue); }
-  .d-tiles rect { stroke: var(--raised); stroke-width: 2; }
-  .t1 { fill: color-mix(in oklch, var(--red) 55%, var(--raised)); }
-  .t2 { fill: color-mix(in oklch, var(--orange) 55%, var(--raised)); }
-  .t3 { fill: color-mix(in oklch, var(--yellow) 60%, var(--raised)); }
-  .t4 { fill: color-mix(in oklch, var(--green) 55%, var(--raised)); }
-  .t5 { fill: color-mix(in oklch, var(--cyan) 55%, var(--raised)); }
-  .t6 { fill: color-mix(in oklch, var(--blue) 55%, var(--raised)); }
-  .t7 { fill: color-mix(in oklch, var(--purple) 50%, var(--raised)); }
-  .d-tiles .is-picked { stroke: var(--text); stroke-width: 3; }
   .d-photo { fill: color-mix(in oklch, var(--yellow) 45%, var(--raised)); stroke: var(--rule); }
   .d-col rect { fill: var(--raised); stroke: var(--rule); }
   .d-cell { stroke: var(--rule); stroke-width: 5; stroke-linecap: round; }
