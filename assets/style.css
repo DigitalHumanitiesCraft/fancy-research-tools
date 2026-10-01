@@ -1,7 +1,10 @@
 @layer reset, base, tokens, layout, components, utilities;
 
-@font-face { font-family: "Sora"; src: url("fonts/sora-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
-@font-face { font-family: "Sora"; src: url("fonts/sora-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "EB Garamond"; src: url("fonts/eb-garamond-500-normal-latin.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "EB Garamond"; src: url("fonts/eb-garamond-600-normal-latin.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "EB Garamond"; src: url("fonts/eb-garamond-500-italic-latin.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains-mono-400-normal-latin.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains-mono-500-normal-latin.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 @font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 @font-face { font-family: "Instrument Sans"; src: url("fonts/instrument-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
@@ -15,40 +18,48 @@
 }
 
 @layer tokens {
-  /* Palette from the DHCraft website (hex in comments), converted exactly to OKLCH. */
+  /* Ink comes from the DHCraft website. The accents are a spectrum at matched OKLCH lightness,
+     so every hue carries the same visual weight and the rainbow reads as one calm system. */
   :root {
     color-scheme: light dark;
 
-    --paper: oklch(99.1% 0.005 95.1); /* #fdfcf8 */
+    --paper: oklch(100% 0 0);
     --ink: oklch(28.3% 0.064 270.7); /* #1e2749 */
     --ink-deep: oklch(24% 0.053 271); /* #161d38 */
-    --orange: oklch(74.2% 0.138 69.3); /* #e39a3b */
-    --purple: oklch(53.1% 0.14 315); /* #8a4fa3 */
     --purple-deep: oklch(41.6% 0.105 307); /* #5b3a78 */
-    --green: oklch(63.5% 0.136 139.3); /* #5c9e4a */
-    --blue: oklch(73.9% 0.083 252.8); /* #85aede */
-    --pink: oklch(64.6% 0.138 334.4); /* #c06bb0 */
+
+    --red: oklch(66% 0.16 25);
+    --orange: oklch(74% 0.14 60);
+    --yellow: oklch(84% 0.14 95);
+    --green: oklch(70% 0.14 150);
+    --cyan: oklch(74% 0.1 205);
+    --blue: oklch(68% 0.12 255);
+    --purple: oklch(58% 0.15 300);
+    --pink: oklch(70% 0.13 345);
+    --spectrum: linear-gradient(90deg, var(--red), var(--orange), var(--yellow), var(--green), var(--cyan), var(--blue), var(--purple));
 
     --bg: light-dark(var(--paper), var(--ink-deep));
-    --surface: light-dark(oklch(96.6% 0.012 95), oklch(28% 0.06 270));
+    --surface: light-dark(oklch(97.6% 0.004 270), oklch(28% 0.06 270));
     --raised: light-dark(white, oklch(31% 0.06 270));
     --text: light-dark(var(--ink), oklch(95% 0.01 270));
-    --text-muted: light-dark(oklch(43% 0.04 270), oklch(80% 0.025 270));
+    --text-muted: light-dark(oklch(45% 0.03 270), oklch(80% 0.025 270));
     --on-ink: oklch(88% 0.02 270);
-    --rule: light-dark(oklch(88% 0.015 270), oklch(40% 0.05 270));
+    --rule: light-dark(oklch(90% 0.01 270), oklch(40% 0.05 270));
+    --grid: light-dark(oklch(28% 0.064 271 / 0.07), oklch(100% 0 0 / 0.06));
     --link: light-dark(var(--purple-deep), oklch(82% 0.1 315));
     --focus: light-dark(var(--purple-deep), var(--orange));
-    --warn-bg: light-dark(oklch(94% 0.06 75), oklch(40% 0.08 65));
-    --ok: var(--green);
+    --warn-bg: light-dark(oklch(95% 0.05 75), oklch(40% 0.08 65));
+    --ok: oklch(55% 0.14 150);
 
-    --font-display: "Sora", system-ui, sans-serif;
+    --font-display: "EB Garamond", Georgia, serif;
     --font-body: "Instrument Sans", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
     --step--1: clamp(0.875rem, 0.85rem + 0.1vw, 0.94rem);
     --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
     --step-1: clamp(1.15rem, 1.07rem + 0.4vw, 1.4rem);
-    --step-2: clamp(1.6rem, 1.3rem + 1.4vw, 2.6rem);
-    --step-3: clamp(2.2rem, 1.6rem + 2.8vw, 4rem);
+    --step-2: clamp(2rem, 1.6rem + 1.8vw, 3.1rem);
+    --step-3: clamp(2.9rem, 2rem + 3.8vw, 5.4rem);
     --step-4: clamp(2.7rem, 1.7rem + 4.8vw, 6rem);
     --radius-control: 0.5rem;
 
@@ -81,12 +92,13 @@
 
   h1, h2, h3 {
     font-family: var(--font-display);
-    line-height: 1.1;
-    letter-spacing: -0.02em;
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
     text-wrap: balance;
   }
 
-  h3 { font-size: var(--step-1); }
+  h3 { font-size: calc(var(--step-1) * 1.12); font-weight: 600; }
 
   a { color: var(--link); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
   a:hover { text-decoration-thickness: 2px; }
@@ -122,7 +134,8 @@
     inset-block-start: 0;
     z-index: 5;
     background: var(--bg);
-    border-block-end: 1px solid var(--rule);
+
+    &::after { content: ""; position: absolute; inset-inline: 0; inset-block-end: 0; block-size: 2px; background: var(--spectrum); }
 
     & .wrap {
       display: flex;
@@ -135,13 +148,28 @@
   }
 
   .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
     color: var(--text);
     text-decoration: none;
     font-family: var(--font-display);
-    font-weight: 700;
-    font-size: var(--step-1);
-    letter-spacing: -0.02em;
+    font-weight: 600;
+    font-size: 1.45rem;
+
+    & svg { inline-size: 2.4rem; block-size: auto; flex: none; }
   }
+
+  .mark-line { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .mark-prism { fill: light-dark(white, var(--ink-deep)); stroke: currentColor; stroke-width: 2; stroke-linejoin: round; }
+  .mark-ray { fill: none; stroke-width: 2.2; stroke-linecap: round; }
+  .r1 { stroke: var(--red); }
+  .r2 { stroke: var(--orange); }
+  .r3 { stroke: var(--yellow); }
+  .r4 { stroke: var(--green); }
+  .r5 { stroke: var(--cyan); }
+  .r6 { stroke: var(--blue); }
+  .r7 { stroke: var(--purple); }
 
   .site-nav ul {
     display: flex;
@@ -180,14 +208,14 @@
 
   /* "(research)" is set back so the name reads as tools first, research as the home ground. */
   .paren {
-    font-weight: 600;
+    font-style: italic;
+    font-weight: 500;
     color: var(--text-muted);
-    letter-spacing: -0.04em;
   }
 
   /* The bang is the one playful gesture of the page: the palette in a single glyph. */
   .bang {
-    background: linear-gradient(180deg, var(--orange) 15%, var(--pink) 85%);
+    background: linear-gradient(180deg, var(--red), var(--orange), var(--yellow), var(--green), var(--cyan), var(--blue), var(--purple));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -201,6 +229,21 @@
     min-block-size: min(50rem, calc(100svh - 4rem));
     padding-block: var(--space-l);
     overflow: clip;
+    position: relative;
+    isolation: isolate;
+
+    /* A faint measuring grid, the instrument side of the identity. */
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 3rem 3rem;
+      mask-image: radial-gradient(ellipse 60% 70% at 72% 45%, black, transparent);
+    }
   }
 
   .hero-grid {
@@ -212,9 +255,9 @@
 
   .hero h1 {
     font-size: var(--step-3);
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1;
   }
 
   .lede {
@@ -291,7 +334,7 @@
     font-size: var(--step--1);
     color: var(--text-muted);
 
-    & span { font-weight: 600; color: var(--text); margin-inline-end: 0.3rem; }
+    & span { font-family: var(--font-mono); font-weight: 500; font-size: 0.85em; color: var(--text); margin-inline-end: 0.4rem; }
   }
 
   .before {
@@ -316,9 +359,9 @@
     border-radius: 0.35rem;
     background: var(--bg);
     box-shadow: 0 0 0 1px var(--rule);
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: var(--step--1);
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.78rem;
     color: var(--text-muted);
   }
 
@@ -421,6 +464,7 @@
   }
 
   .app-label {
+    font-family: var(--font-mono);
     margin-block-end: 0.4rem;
     font-size: 0.7rem;
     font-weight: 600;
@@ -516,11 +560,12 @@
       border-radius: var(--radius);
       background: var(--surface);
     }
-    & li:nth-child(5n + 1) { --c: var(--orange); }
-    & li:nth-child(5n + 2) { --c: var(--blue); }
-    & li:nth-child(5n + 3) { --c: var(--green); }
-    & li:nth-child(5n + 4) { --c: var(--pink); }
-    & li:nth-child(5n) { --c: var(--purple); }
+    & li:nth-child(1) { --c: var(--red); }
+    & li:nth-child(2) { --c: var(--orange); }
+    & li:nth-child(3) { --c: var(--yellow); }
+    & li:nth-child(4) { --c: var(--green); }
+    & li:nth-child(5) { --c: var(--blue); }
+    & li:nth-child(6) { --c: var(--purple); }
     & a { grid-column: 2; font-size: var(--step--1); }
   }
 
@@ -538,7 +583,7 @@
     stroke-linejoin: round;
   }
 
-  .ability-name { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em; }
+  .ability-name { font-family: var(--font-display); font-weight: 600; font-size: 1.2rem; line-height: 1.15; }
 
   .tags {
     display: flex;
@@ -550,8 +595,8 @@
       border-radius: 0.35rem;
       background: var(--bg);
       box-shadow: 0 0 0 1px var(--rule);
-      font-size: var(--step--1);
-      font-weight: 500;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
     }
   }
 
@@ -582,6 +627,24 @@
     & img { inline-size: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
   }
 
+  .shot.schema { display: grid; place-items: center; aspect-ratio: 16 / 10; background: var(--surface); }
+  .shot.schema .diagram { padding: var(--space-m); background: none; }
+  .d-panel { fill: var(--raised); stroke: var(--rule); }
+  .d-facet { fill: var(--blue); }
+  .d-tiles rect { stroke: var(--raised); stroke-width: 2; }
+  .t1 { fill: color-mix(in oklch, var(--red) 55%, var(--raised)); }
+  .t2 { fill: color-mix(in oklch, var(--orange) 55%, var(--raised)); }
+  .t3 { fill: color-mix(in oklch, var(--yellow) 60%, var(--raised)); }
+  .t4 { fill: color-mix(in oklch, var(--green) 55%, var(--raised)); }
+  .t5 { fill: color-mix(in oklch, var(--cyan) 55%, var(--raised)); }
+  .t6 { fill: color-mix(in oklch, var(--blue) 55%, var(--raised)); }
+  .t7 { fill: color-mix(in oklch, var(--purple) 50%, var(--raised)); }
+  .d-tiles .is-picked { stroke: var(--text); stroke-width: 3; }
+  .d-photo { fill: color-mix(in oklch, var(--yellow) 45%, var(--raised)); stroke: var(--rule); }
+  .d-col rect { fill: var(--raised); stroke: var(--rule); }
+  .d-cell { stroke: var(--rule); stroke-width: 5; stroke-linecap: round; }
+  .d-conflict { fill: none; stroke: var(--red); stroke-width: 2; }
+
   .tool-body > * + * { margin-block-start: var(--space-s); }
   .tool h3 { font-size: var(--step-2); }
   .tool .problem { font-weight: 500; max-inline-size: var(--measure); }
@@ -602,8 +665,11 @@
     border-radius: 0.3rem;
     background: var(--text);
     color: var(--bg);
-    font-weight: 600;
-    font-size: 0.8em;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 0.78em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
   }
 
   .methods {
@@ -675,12 +741,12 @@
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
     gap: var(--space-l);
 
-    & div { padding-inline-start: var(--space-m); border-inline-start: 3px solid var(--c, var(--purple)); }
+    & div { padding-inline-start: var(--space-m); border-inline-start: 3px solid var(--c, var(--red)); }
     & div:nth-child(2) { --c: var(--orange); }
-    & div:nth-child(3) { --c: var(--blue); }
-    & div:nth-child(4) { --c: var(--green); }
-    & div:nth-child(5) { --c: var(--pink); }
-    & dt { font-family: var(--font-display); font-weight: 600; font-size: var(--step-1); letter-spacing: -0.02em; }
+    & div:nth-child(3) { --c: var(--green); }
+    & div:nth-child(4) { --c: var(--blue); }
+    & div:nth-child(5) { --c: var(--purple); }
+    & dt { font-family: var(--font-display); font-weight: 600; font-size: calc(var(--step-1) * 1.12); }
     & dd { margin-block-start: var(--space-xs); color: var(--text-muted); max-inline-size: 46ch; }
   }
 
@@ -752,15 +818,34 @@
     &.no li::before { content: "✕"; color: var(--text-muted); }
   }
 
-  .prose { max-inline-size: var(--measure); font-size: var(--step-1); }
 
   .cta {
     background: var(--ink);
     color: var(--paper);
 
-    & .section-title { font-size: var(--step-4); letter-spacing: -0.035em; margin-block-end: var(--space-m); }
-    & .prose { color: var(--on-ink); }
-    & .actions { margin-block-start: var(--space-l); }
+    & .section-title { font-size: var(--step-3); letter-spacing: -0.03em; margin-block-end: var(--space-l); }
+    & .actions { margin-block-start: var(--space-m); }
+  }
+
+  .paths {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+    gap: var(--space-l);
+  }
+
+  .path {
+    padding: var(--space-m) var(--space-l) var(--space-l);
+    border-radius: var(--radius);
+    background: oklch(100% 0 0 / 0.05);
+    box-shadow: inset 0 0 0 1px oklch(100% 0 0 / 0.12);
+
+    & h3 { font-size: var(--step-1); color: var(--paper); }
+    & > p { margin-block-start: var(--space-xs); color: var(--on-ink); }
+  }
+
+  .billing {
+    margin-block-start: var(--space-l);
+    color: var(--on-ink);
   }
 
   .ask {
@@ -768,10 +853,11 @@
     display: grid;
     gap: var(--space-xs);
     counter-reset: ask;
-    font-size: var(--step-1);
+    font-size: var(--step-0);
 
     & li { counter-increment: ask; display: flex; gap: var(--space-s); }
     & li::before { content: counter(ask); color: var(--orange); font-family: var(--font-display); font-weight: 700; }
+    &.bullets li::before { content: "•"; }
   }
 
   .site-footer {

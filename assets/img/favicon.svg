@@ -1,12 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="0.3" y2="1">
-      <stop offset="0.1" stop-color="#e39a3b"/>
-      <stop offset="0.5" stop-color="#8a4fa3"/>
-      <stop offset="0.9" stop-color="#5c9e4a"/>
-    </linearGradient>
-  </defs>
-  <rect width="32" height="32" rx="8" fill="#1e2749"/>
-  <rect x="13" y="5" width="6" height="15" rx="3" fill="url(#g)"/>
-  <circle cx="16" cy="25" r="3" fill="#5c9e4a"/>
+  <rect width="32" height="32" rx="7" fill="#1e2749"/>
+  <g fill="none" stroke-linecap="round" stroke-width="1.6">
+    <path d="M3 18 L12 16" stroke="#ffffff"/>
+    <path d="M19 16 L30 9" stroke="#e5534b"/>
+    <path d="M19 16 L30 12" stroke="#ef9a3c"/>
+    <path d="M19 16 L30 15" stroke="#e9cf45"/>
+    <path d="M19 16 L30 18" stroke="#5fbf6a"/>
+    <path d="M19 16 L30 21" stroke="#4fc0d0"/>
+    <path d="M19 16 L30 24" stroke="#5b8fe0"/>
+    <path d="M19 16 L30 27" stroke="#9a62d0"/>
+  </g>
+  <path d="M15.5 5 L23 25 H8 Z" fill="#1e2749" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round"/>
 </svg>
