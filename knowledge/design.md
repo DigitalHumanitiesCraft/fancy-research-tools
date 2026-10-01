@@ -1,48 +1,67 @@
-# Design
+---
+title: Design
+project:
+  name: fancy (research) tools!
+  repository: https://github.com/DigitalHumanitiesCraft/fancy-research-tools
+status: draft
+language: en
+created: 2026-10-01
+updated: 2026-10-01
+authors: [Christopher Pollin]
+generated-with: Claude Code (Claude Opus 5.5)
+method:
+  name: Promptotyping
+  url: https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin
+template:
+  name: Vorlage Design
+  version: 0.3
+  url: https://dhcraft.org/Promptotyping/promptotyping-document/design
+  alias: https://dhcraft.org/Promptotyping/#promptotyping-document-design
+related: [specification, project]
+---
 
-## Purpose of the page
+How the page looks and behaves in each variant. The content is the same everywhere, the variants differ only in theme.
 
-The page presents a professional service of Digital Humanities Craft OG. It offers custom tools that speed up a concrete workflow for research and cultural heritage institutions as well as companies and public administration, adaptable existing tools, and the methods and frameworks behind them. The name is "fancy (research) tools!", with "research" set back in italics and parentheses because the offer reaches beyond research.
+## Design stance
 
-## Content and interaction hierarchy
+The page speaks to academic readers and to clients outside academia. It argues with verifiable statements, a numbered figure, state lines with evidence and named institutions, and keeps marketing gestures to the name and its exclamation mark. Abilities link to the tool that shows them, so the abstract claim and the concrete instance stay next to each other.
 
-1. User task: understand the offer, judge whether it fits, and send a request, either as a conversation or as documents from which a first prototype is built.
-2. Primary objects: the tools, the methods and frameworks, the quality claims, the process, the fit criteria and the two request paths.
-3. Visible for the first decision: name, one sentence on the offer, the request button, figure 1 with its caption and the provider.
-4. Optional depth: the abilities strip, which links each ability to a tool that shows it, the tools and methods with honest state and evidence links, quality, who we are, client institutions, process, fit lists, billing.
-5. Addressable states: every section and every tool or method has a fragment identifier.
-6. Wide screens show the hero as text plus layered figure and each tool as a two-column row. Methods sit in three columns. Narrow screens stack everything, the header keeps only the request link.
+## Design system
 
-## Content sources
+The main variant Prisma combines a classic and an instrumental register on a white ground.
 
-- Provider data, imprint, client institutions, the GAMS cooperation, team facts and target groups follow the published DHCraft website (`DigitalHumanitiesCraft/dhcraft-site`, `src/i18n/content.ts` and `src/pages/imprint.astro`), checked on 2026-10-01.
-- Each tool and method links its own knowledge base under "Belege". Those knowledge bases stay the source of truth, and the line marked "Stand" is updated by hand when a state changes.
-- Tools whose screenshots would show third-party images under their own licences are drawn as schematic diagrams instead, because the page advertises a paid service.
-- Billing follows the operator's statement of 2026-10-01, per hour or as an agreed fee depending on the commission.
+- Signature image: a prism splitting a ray into the spectrum, used as favicon and header mark.
+- Colour: ink navy from the DHCraft website, accents as a spectrum at matched OKLCH lightness (red, orange, yellow, green, cyan, blue, violet), carried by a two-pixel line under the header and the exclamation mark.
+- Type: EB Garamond for headings and wordmark, Instrument Sans for running text, JetBrains Mono for machine-like labels such as state, figure number, tags and pane labels. All fonts are self-hosted under `assets/fonts/`.
+- Texture: a faint measuring grid behind the hero.
+- Provider mark: the watercolour DHCraft logo in hero and footer.
+- Themes: light and dark through `light-dark()`.
 
-## Identity
+## Interaction patterns
 
-The page combines a classic and an instrumental register on a white ground. The signature image is a prism that splits a ray into the spectrum, used as favicon and header mark.
-
-- Ink navy comes from the DHCraft website.
-- The accents form a spectrum at matched OKLCH lightness, red, orange, yellow, green, cyan, blue and violet, so the rainbow reads as one calm system. A two-pixel spectrum line under the header and the exclamation mark carry it.
-- EB Garamond sets headings and the wordmark, Instrument Sans the running text, JetBrains Mono every machine-like label (state, figure numbers, tags, pane labels). All fonts are self-hosted under `assets/fonts/` under the SIL Open Font License.
-- A faint measuring grid sits behind the hero.
-- The watercolour DHCraft logo marks the provider in the hero and the footer.
+1. User task: understand the offer, judge the fit, send a request by conversation or by documents for a first prototype.
+2. First decision: name, one-sentence offer, request button, figure 1 with caption, provider line.
+3. Depth: abilities strip, tools and methods with state and evidence, quality, who we are, client institutions, process, fit lists, billing.
+4. Addresses: every section and every tool or method carries a fragment identifier.
+5. Layout: on wide screens the hero sets text beside the layered figure, tool rows run in two alternating columns and methods in three. On narrow screens everything stacks and the header keeps only the request link.
+6. Motion: the two warning messages of figure 1 fade in once and stay still under reduced motion.
 
 ## Design variants
 
-All variants carry the same content and are generated from `index.html` by `tools/build-variants.cjs`. Each adds one unlayered theme stylesheet under `assets/` that overrides tokens and components of the shared base. All except the main variant carry `noindex`. The overview page `varianten/` shows a preview of each.
+All variants are generated from `index.html` by `tools/build-variants.cjs`. Each adds one unlayered theme stylesheet under `assets/` and carries `noindex`. The overview page `varianten/` shows a preview of each.
 
-- Prisma, the main variant described above.
-- DHCraft (`theme-dhcraft.css`) follows dhcraft.org, `src/styles/global.css` and the Nav, Hero, Services and Contact components of `DigitalHumanitiesCraft/dhcraft-site`. Paper ground, the watercolour palette, Sora 700 and 800, pill buttons, bordered cards, hexagon icons, the line logo and a purple second hero line. Light only, as dhcraft.org. Its kicker labels are left out, because the house rules ban eyebrows.
-- Edition (`theme-edition.css`) sets classic book typography, EB Garamond throughout, black on white with rubric red as the only accent, small capitals for labels and square shapes.
-- Labor (`theme-labor.css`) pushes the instrument side, a dark ground, monospace headings, a luminous spectrum, a stronger grid and glowing card edges.
-- Raster (`theme-raster.css`) follows Swiss typography, one sans serif in large tight cuts, black on white, the spectrum as a flat block under section titles and no rounded corners.
+| Variant | Theme | Character |
+|---|---|---|
+| Prisma | none, root page | as described above |
+| DHCraft | `theme-dhcraft.css` | the look of dhcraft.org after its `global.css` and its Nav, Hero, Services and Contact components, paper ground, watercolour palette, Sora 700 and 800, pill buttons, bordered cards, hexagon icons, line logo, purple second hero line, light only |
+| Edition | `theme-edition.css` | classic book typography, EB Garamond throughout, black on white with rubric red as the only accent, small capitals for labels, square shapes |
+| Labor | `theme-labor.css` | dark ground, monospace headings, luminous spectrum, stronger grid, glowing card edges |
+| Raster | `theme-raster.css` | Swiss typography, one sans serif in large tight cuts, black on white, spectrum as a flat block under section titles, no rounded corners |
 
-## Rules carried from the house standard
+## Binding to the action layer
 
-- No eyebrows, no decorative counters, no standing explanatory prose.
-- No runtime CDN, no analytics, no third-party requests. The page needs no JavaScript.
-- Light and dark theme through `light-dark()`. The hero animation is skipped under reduced motion.
-- The stylesheet link carries a version query, raised on every published style change, so browsers fetch the new file.
+`CLAUDE.md` applies this document through these rules.
+
+- No eyebrows, no decorative counters, no standing explanatory prose, also where a model such as dhcraft.org uses them.
+- No runtime CDN, no analytics, no third-party request, no JavaScript.
+- Every published style change raises the version query of the stylesheet link, so browsers fetch the new file.
