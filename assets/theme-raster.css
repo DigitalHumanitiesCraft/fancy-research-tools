@@ -90,3 +90,8 @@ a { text-decoration-thickness: 2px; }
 .site-footer { background: var(--text); }
 
 .bar, .d-cell, .d-line { background: oklch(84% 0 0); stroke: oklch(84% 0 0); }
+
+/* The motif as a Swiss poster, flat bands and a solid triangle. */
+.m-band { opacity: 1; }
+.m-prism { fill: var(--text); stroke: none; }
+.m-beam { stroke-width: 6; stroke-linecap: butt; }

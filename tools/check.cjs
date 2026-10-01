@@ -9,7 +9,7 @@ const { chromium } = require(process.env.PLAYWRIGHT || "playwright");
 
 const base = process.env.BASE || "http://127.0.0.1:4321";
 const axePath = process.env.AXE || require.resolve("axe-core/axe.min.js");
-const pages = ["/", "/dhcraft/", "/edition/", "/labor/", "/raster/", "/varianten/", "/404.html"];
+const pages = ["/", "/dhcraft/", "/edition/", "/labor/", "/raster/", "/varianten/", "/datenschutz/", "/en/privacy/", "/404.html"].concat(require("fs").existsSync(require("path").join(__dirname, "..", "en", "index.html")) ? ["/en/"] : []);
 const widths = [1440, 320];
 const schemes = ["light", "dark"];
 
@@ -41,11 +41,52 @@ const schemes = ["light", "dark"];
       }
     }
   }
+  // Keyboard pass: every tab stop shows a focus outline and is neither off screen nor hidden
+  // under the sticky header (WCAG 2.4.7 and 2.4.11).
+  for (const url of ["/", "/en/", "/datenschutz/"]) {
+    for (const width of widths) {
+      const page = await browser.newPage({ viewport: { width, height: 800 }, reducedMotion: "reduce" });
+      const res = await page.goto(base + url, { waitUntil: "networkidle" });
+      if (!res || res.status() !== 200) { await page.close(); continue; }
+      const problems = [];
+      let first = null;
+      for (let i = 0; i < 250; i++) {
+        await page.keyboard.press("Tab");
+        const stop = await page.evaluate(() => {
+          const el = document.activeElement;
+          if (!el || el === document.body) return null;
+          const cs = getComputedStyle(el);
+          const r = el.getBoundingClientRect();
+          // Obscured means the topmost element at the centre of the focused one belongs to the header.
+          const header = document.querySelector(".site-header");
+          const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+          return {
+            key: `${el.tagName} ${el.getAttribute("href") || el.textContent.trim().slice(0, 30)}`,
+            outline: cs.outlineStyle !== "none" && parseFloat(cs.outlineWidth) > 0,
+            onScreen: r.bottom > 0 && r.top < innerHeight,
+            obscured: Boolean(header && hit && !header.contains(el) && header.contains(hit)),
+          };
+        });
+        if (!stop) break;
+        if (stop.key === first) break;
+        first = first || stop.key;
+        if (!stop.outline) problems.push(`no focus outline on ${stop.key}`);
+        if (!stop.onScreen) problems.push(`focus off screen on ${stop.key}`);
+        if (stop.obscured) problems.push(`focus hidden under header on ${stop.key}`);
+      }
+      if (problems.length) { failures += problems.length; console.log(`FAIL keyboard ${url} ${width}\n  ${problems.slice(0, 8).join("\n  ")}`); }
+      else console.log(`ok   keyboard ${url} ${width}`);
+      await page.close();
+    }
+  }
+
   await browser.close();
 
   if (process.env.LINKS) {
     const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
-    const links = [...new Set([...html.matchAll(/href="(https?:\/\/[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, "&")))];
+    const links = [...new Set([...html.matchAll(/href="(https?:\/\/[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, "&")))]
+      // Own pages are checked locally above and may not be published yet.
+      .filter((link) => !link.startsWith("https://dhcraft.org/fancy-research-tools/"));
     for (const link of links) {
       const res = await fetch(link, { method: "GET", redirect: "follow" }).catch((e) => ({ status: e.message }));
       if (res.status !== 200) { failures++; console.log(`FAIL link ${res.status} ${link}`); }

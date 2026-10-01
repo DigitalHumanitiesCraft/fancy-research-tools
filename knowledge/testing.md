@@ -37,6 +37,7 @@ Every change runs the syntax check and the build. A change of look or markup add
 | `tools/check.cjs`, axe with WCAG 2.2 AA and best-practice rules | no violation in every variant, the overview and the 404 page, at 1440 and 320 pixels, light and dark |
 | `tools/check.cjs`, overflow probe | no horizontal document scroll at 320 pixels |
 | `tools/check.cjs`, image probe | every image loads after scrolling through the page |
+| `tools/check.cjs`, keyboard pass | every tab stop on the main, English and privacy pages shows a focus outline, stays on screen and is not hidden under the sticky header |
 | `tools/check.cjs` with `LINKS=1` | every external link of `index.html` answers 200 |
 
 ## Acceptance
@@ -60,6 +61,6 @@ The browser scripts expect the repository served locally, by default at http://1
 
 ## Known limits
 
-- axe covers part of the success criteria. Keyboard paths and screen readers need a manual pass, which has not run.
+- axe and the keyboard pass cover part of the success criteria. A screen reader pass has not run.
 - The browser checks depend on an outside Playwright and axe-core installation.
 - The live address is checked by the operator, see Acceptance.

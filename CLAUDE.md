@@ -7,6 +7,7 @@ Read `knowledge/INDEX.md` first, then `knowledge/handoff.md`, then the document 
 ## Working rules
 
 - Edit content only in `index.html`. Run `node tools/build-variants.cjs` afterwards. Never edit `dhcraft/`, `edition/`, `labor/`, `raster/` or `varianten/` by hand.
+- `en/index.html` is the English main variant and is maintained by hand. Mirror every content change of `index.html` there in the same commit. `datenschutz/` and `en/privacy/` change together.
 - A new or changed tool entry carries problem, solution, state line and evidence link. Take the state from the tool's own knowledge base, record source and check date in `knowledge/data.md`, and verify every link answers HTTP 200.
 - Tool rows show real screenshots from `tools/shoot-tools.cjs` or schematic diagrams. Never show third-party images under a non-commercial or unclear licence, and never put a generated image where a screenshot belongs. Generated images follow `knowledge/design.md#generated-images`.
 - Never invent prices, promises, conditions or client names. Billing is stated as hourly or agreed fee and nothing more.

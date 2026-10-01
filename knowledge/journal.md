@@ -67,3 +67,16 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Source: operator request for good screenshots everywhere and for style-fitting generated images, to be produced by Codex
 - Target: `tools/shoot-tools.cjs`, [data](data.md#images), [specification](specification.md#adr-008-screenshots-as-evidence-generated-images-as-identity), [design](design.md#generated-images), `AGENTS.md`
 - Result: tool screenshots retaken at double pixel density by a repeatable script, Kulturpool-Demo shown as a real screenshot after its licence field was checked, generated images limited to a labelled motif per variant with prompts ready for Codex.
+
+### 2026-10-01 integrated Decisions taken on the operator's behalf
+
+- Source: operator instruction to take every open decision and carry it out
+- Target: [specification](specification.md#adr-009-decisions-taken-on-the-operators-behalf), [plan](plan.md), `en/`, `datenschutz/`, the DHCraft website repository
+- Result: Prisma remains the main variant, a privacy statement and an English version are published, dhcraft.org links the page, the L.I.S.A. article is linked as evidence, the keyboard pass joined `tools/check.cjs`.
+
+### 2026-10-01 rejected Generated motif images through Codex
+
+- Source: operator request to generate images with Codex
+- Target: [design](design.md#motif)
+- Reason: the installed Codex CLI offers no image generation, and a paid image API needs consent. A hand-drawn SVG motif styled per theme took its place, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images).
+

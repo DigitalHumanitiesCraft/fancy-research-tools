@@ -26,7 +26,7 @@ knowledge-sources:
     Open Graph protocol: https://ogp.me/
 ---
 
-"fancy (research) tools!" is a German-language service page of Digital Humanities Craft OG. It offers custom tools that speed up a concrete workflow, adaptable existing tools and the methods behind them, for research and cultural heritage institutions as well as companies and public administration. It is published at https://dhcraft.org/fancy-research-tools/.
+"fancy (research) tools!" is a German-language service page of Digital Humanities Craft OG. It offers custom tools that speed up a concrete workflow, adaptable existing tools and the methods behind them, for research and cultural heritage institutions as well as companies and public administration. It is published at https://dhcraft.org/fancy-research-tools/, in English at https://dhcraft.org/fancy-research-tools/en/, and linked from the research software card of dhcraft.org.
 
 ## Material basis
 

@@ -110,3 +110,12 @@ h1, h2, h3 { font-weight: 500; letter-spacing: 0; }
 
 .variant-switch { border-color: var(--rule); }
 .variant-switch p, .variant-switch a[aria-current="page"] { color: var(--text); }
+
+/* The motif as an engraving, hatched shapes and a rubric spectrum. */
+.m-prism { fill: url(#m-hatch); stroke-width: 1.5; }
+.m-band { fill: var(--rubric); }
+.b1, .b7 { opacity: 0.25; }
+.b2, .b6 { opacity: 0.45; }
+.b3, .b5 { opacity: 0.7; }
+.b4 { opacity: 1; }
+.m-beam { stroke-width: 1.5; }

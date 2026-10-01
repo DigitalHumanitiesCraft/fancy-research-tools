@@ -28,17 +28,11 @@ A service page that visitors find from dhcraft.org, that shares well, loads fast
 
 ## Next work
 
-1. Motif images per variant from a Codex session after [design](design.md#generated-images), then a labelled figure that the build swaps per variant.
-2. A manual keyboard and screen reader pass over the main variant, see [testing](testing.md#known-limits).
-3. Per-theme review of the variant the operator chooses, once chosen.
+1. A legal review of the privacy statement.
+2. A screen reader pass over the main variant, see [testing](testing.md#known-limits).
+3. Mirroring every content change of `index.html` in `en/index.html`.
 
 ## Open decisions and dependencies
 
-- Which variant becomes the main page, and whether the others stay public.
-- A privacy statement, which dhcraft.org also lacks.
-- An English version.
-- A real case with before and after, which needs the consent of the project behind it.
-- Names and photos of the team and a list of publications and talks.
-- A licence and a neutral title for the date-extraction timeline, and a Pages site for `vetmed-berichtswesen`, before either can appear.
-- A link to the page from dhcraft.org, a change in the repository of the DHCraft website.
-- Own domain or the address under dhcraft.org.
+- A real case with before and after needs the consent of the project behind it.
+- Generated motif images need a tool with image generation, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images).

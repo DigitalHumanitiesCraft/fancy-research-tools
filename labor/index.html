@@ -6,6 +6,8 @@
   <title>fancy (research) tools! | Digital Humanities Craft</title>
   <meta name="description" content="Digital Humanities Craft entwickelt Werkzeuge, die einen bestimmten Arbeitsablauf beschleunigen, für Forschungs- und Kultureinrichtungen, Unternehmen und Verwaltung. Dazu kommen erprobte Forschungswerkzeuge und Methoden, die sich an ein Projekt anpassen lassen.">
   <link rel="canonical" href="https://dhcraft.org/fancy-research-tools/">
+  <link rel="alternate" hreflang="de" href="https://dhcraft.org/fancy-research-tools/">
+  <link rel="alternate" hreflang="en" href="https://dhcraft.org/fancy-research-tools/en/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_AT">
   <meta property="og:site_name" content="Digital Humanities Craft">
@@ -19,8 +21,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../assets/fonts/jetbrains-mono-500-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../assets/style.css?v=10">
-  <link rel="stylesheet" href="../assets/theme-labor.css?v=1790881591">
+  <link rel="stylesheet" href="../assets/style.css?v=11">
+  <link rel="stylesheet" href="../assets/theme-labor.css?v=1790883124">
   <meta name="robots" content="noindex">
 </head>
 <body>
@@ -289,6 +291,25 @@
 
     <section class="section" id="methoden" aria-labelledby="methoden-title">
       <div class="wrap">
+        <div class="motif" aria-hidden="true">
+          <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <pattern id="m-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="6" class="m-hatch-line"/></pattern>
+              <filter id="m-glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <path class="m-beam" d="M0 168 L548 158"/>
+            <g class="m-bands">
+              <path class="m-band b1" d="M652 150 L1200 40 L1200 72 L654 155 Z"/>
+              <path class="m-band b2" d="M654 155 L1200 72 L1200 104 L656 160 Z"/>
+              <path class="m-band b3" d="M656 160 L1200 104 L1200 136 L658 165 Z"/>
+              <path class="m-band b4" d="M658 165 L1200 136 L1200 168 L660 170 Z"/>
+              <path class="m-band b5" d="M660 170 L1200 168 L1200 200 L662 175 Z"/>
+              <path class="m-band b6" d="M662 175 L1200 200 L1200 232 L664 180 Z"/>
+              <path class="m-band b7" d="M664 180 L1200 232 L1200 264 L666 185 Z"/>
+            </g>
+            <path class="m-prism" d="M600 30 L700 250 L500 250 Z"/>
+          </svg>
+        </div>
         <h2 id="methoden-title" class="section-title">Methoden und Frameworks</h2>
         <ul class="methods" role="list">
           <li class="method" id="m-pt">
@@ -308,9 +329,10 @@
             </svg>
             <h3>Promptotyping</h3>
             <p class="solution">Promptotyping ist unsere Methode, Forschungsartefakte mit KI-Agenten zu entwickeln. Quellen, Daten und fachliches Projektverständnis stehen in einer gepflegten Wissensbasis, aus der jede Entwicklungsrunde schöpft und in die sie zurückschreibt.</p>
-            <p class="state"><span class="state-label">Stand</span> Grundlage unserer Projekte. Ein Fachbeitrag zur Methode ist in Vorbereitung. <a class="evidence" href="https://github.com/DigitalHumanitiesCraft/Promptotyping">Belege</a></p>
+            <p class="state"><span class="state-label">Stand</span> Grundlage unserer Projekte. Ein Beitrag auf L.I.S.A. stellt die Methode vor, ein Zeitschriftenbeitrag ist in Vorbereitung. <a class="evidence" href="https://github.com/DigitalHumanitiesCraft/Promptotyping">Belege</a></p>
             <div class="actions">
               <a class="button" href="https://dhcraft.org/Promptotyping/">Zur Methode</a>
+              <a class="button" href="https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin">Beitrag auf L.I.S.A.</a>
               <a class="button" href="https://github.com/DigitalHumanitiesCraft/Promptotyping">Repository</a>
             </div>
           </li>
@@ -513,11 +535,13 @@
           <li><a href="../labor/" aria-current="page">Labor</a></li>
           <li><a href="../raster/">Raster</a></li>
           <li><a href="../varianten/">Übersicht</a></li>
+          <li><a href="../en/" hreflang="en" lang="en">English</a></li>
         </ul>
       </nav>
       <ul role="list" class="footer-links">
         <li><a href="https://dhcraft.org/">dhcraft.org</a></li>
         <li><a href="https://dhcraft.org/imprint/">Impressum</a></li>
+        <li><a href="../datenschutz/">Datenschutz</a></li>
         <li><a href="https://github.com/DigitalHumanitiesCraft">GitHub</a></li>
       </ul>
     </div>

@@ -65,9 +65,10 @@ for (const v of variants.filter((x) => x.theme)) {
   const own = switchBlock
     .replace(` aria-current="page"`, "")
     .replace(/href="\.\/"/, 'href="../"')
-    .replace(/href="(dhcraft|edition|labor|raster|varianten)\/"/g, 'href="../$1/"')
+    .replace(/href="(dhcraft|edition|labor|raster|varianten|en)\/"/g, 'href="../$1/"')
     .replace(`href="../${v.dir}/"`, `href="../${v.dir}/" aria-current="page"`);
   h = mustReplace(h, switchBlock, own);
+  h = h.replace(/href="(datenschutz|en)\/"/g, 'href="../$1/"');
 
   fs.mkdirSync(path.join(root, v.dir), { recursive: true });
   fs.writeFileSync(path.join(root, v.dir, "index.html"), h);

@@ -84,3 +84,9 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -0.03em; }
 .cta { background: oklch(11% 0.02 265); }
 .button.on-dark { background: var(--cyan); color: var(--bg); border-color: var(--cyan); }
 .site-footer { background: oklch(11% 0.02 265); border-block-start: 1px solid var(--rule); }
+
+/* The motif as a lit instrument, glowing bands on the dark ground. */
+.m-bands { filter: url(#m-glow); }
+.m-band { opacity: 1; }
+.m-beam { stroke: white; filter: url(#m-glow); }
+.m-prism { fill: oklch(100% 0 0 / 0.06); stroke: var(--cyan); }

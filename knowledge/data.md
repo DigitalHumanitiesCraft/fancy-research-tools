@@ -30,6 +30,7 @@ The facts the page states about its provider, tools and methods, with the source
 | Target groups, teaching across Europe, project partnership, GAMS cooperation | same repository, `src/i18n/content.ts` |
 | Institutions the company works for | same file, partner and project lists |
 | Billing per hour or as agreed fee | operator statement, 2026-10-01 |
+| Privacy statement | the page's own behaviour (no cookies, no third-party request, verified by `tools/check.cjs` and NFR-03), hosting by GitHub Pages, contact by e-mail and telephone |
 
 ## Tools
 
@@ -48,7 +49,7 @@ Checked on 2026-10-01.
 
 | Method | Page | Repository | Evidence |
 |---|---|---|---|
-| Promptotyping | https://dhcraft.org/Promptotyping/ | https://github.com/DigitalHumanitiesCraft/Promptotyping | the repository |
+| Promptotyping | https://dhcraft.org/Promptotyping/ and the article https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin | https://github.com/DigitalHumanitiesCraft/Promptotyping | the repository |
 | Grounded Vault | https://dhcraft.org/grounded-vault/ | https://github.com/DigitalHumanitiesCraft/grounded-vault | `knowledge/` in the repository |
 | Agentic Edition Pipeline | video https://youtu.be/krL-xMxTa_c | https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline | `knowledge/00_INDEX.md` in the repository |
 
@@ -70,8 +71,8 @@ Objekt-Bestimmung appears as a diagram, because its demo shows museum images und
 
 | Candidate | Reason |
 |---|---|
-| Date extraction and timeline (`chpollin/vizerektor-zeitstrahl`) | no licence file, page header names an internal university training |
-| `vetmed-berichtswesen` | no GitHub Pages site |
+| Date extraction and timeline (`chpollin/vizerektor-zeitstrahl`) | internal university training material, no licence file |
+| `vetmed-berichtswesen` | client reporting material, no GitHub Pages site |
 | M³GIM | open rights question recorded in the vault |
 | viewCrafter | ended on 2026-09-29, repository private |
 | SZD-HTR, zbz-ocr-tei | same task as coOCR/HTR and the Agentic Edition Pipeline |

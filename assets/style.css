@@ -685,6 +685,32 @@
     letter-spacing: 0.04em;
   }
 
+  .motif {
+    margin-block-end: var(--space-l);
+
+    & svg { inline-size: 100%; block-size: clamp(7rem, 4rem + 14vw, 16rem); }
+  }
+
+  .m-beam { fill: none; stroke: var(--text); stroke-width: 3; stroke-linecap: round; }
+  .m-prism { fill: light-dark(oklch(100% 0 0 / 0.75), oklch(24% 0.053 271 / 0.8)); stroke: var(--text); stroke-width: 2.5; stroke-linejoin: round; }
+  .m-band { fill: var(--c); opacity: 0.85; }
+  .b1 { --c: var(--red); }
+  .b2 { --c: var(--orange); }
+  .b3 { --c: var(--yellow); }
+  .b4 { --c: var(--green); }
+  .b5 { --c: var(--cyan); }
+  .b6 { --c: var(--blue); }
+  .b7 { --c: var(--purple); }
+  .m-hatch-line { stroke: var(--text); stroke-width: 1.2; }
+
+  .legal {
+    max-inline-size: var(--measure);
+
+    & h2 { font-size: var(--step-1); margin-block: var(--space-l) var(--space-xs); }
+    & p + p { margin-block-start: var(--space-s); }
+    & .legal-date { margin-block-start: var(--space-l); color: var(--text-muted); font-size: var(--step--1); }
+  }
+
   .methods {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));

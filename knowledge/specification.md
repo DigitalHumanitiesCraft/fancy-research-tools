@@ -33,6 +33,8 @@ What the page must do and which decisions hold. Requirements and stories change 
 - FR-05: The billing modes are stated. Acceptance: the request section names hourly billing and an agreed fee.
 - FR-06: Every variant carries the same content. Acceptance: running the build leaves no difference in the generated directories.
 - FR-07: Every page leads to every variant. Acceptance: the footer lists all variants and the overview, the current variant marked with `aria-current`.
+- FR-09: The page exists in German and English. Acceptance: `en/` carries the main variant in English, both link each other through `hreflang` and the footer.
+- FR-10: A privacy statement is reachable from every page. Acceptance: footer link to `datenschutz/`, English courtesy translation at `en/privacy/`.
 - FR-08: A shared link shows title, description and image. Acceptance: Open Graph metadata with a 1200 by 630 image per variant and a canonical link to the main variant.
 
 ### Non-functional requirements
@@ -153,3 +155,27 @@ Context. Better images were wanted everywhere, including generated ones.
 Choice. Tool rows show only real screenshots or schematic diagrams. Generated images appear only as a motif image of a variant, visibly labelled as generated, and never depict a tool, an interface, a person or text.
 
 Reason. The page earns trust through evidence links. A generated image in the place of a screenshot would claim an interface that does not exist.
+
+### ADR-009 Decisions taken on the operator's behalf
+
+Context. The operator asked on 2026-10-01 for every open decision to be taken and carried out.
+
+Choice.
+- Prisma stays the main variant. The others stay public with `noindex` and the variant switch.
+- A privacy statement is published, based only on verified facts of the page.
+- An English version of the main variant is published under `en/`.
+- The page stays at dhcraft.org, and dhcraft.org links it from its research software card.
+- The date-extraction timeline and `vetmed-berichtswesen` stay off the page, because one shows internal training material and the other client reporting.
+- Team and publications stay on dhcraft.org. The published L.I.S.A. article on Promptotyping is linked as evidence.
+- A real case with before and after waits for the consent of the project behind it.
+
+Reason. Each choice keeps facts verifiable and avoids publishing third-party or client material without consent.
+
+### ADR-010 Hand-drawn motif instead of generated images
+
+Context. Generated motif images were planned through Codex. The installed Codex CLI offers no image generation, and a paid image API needs the operator's consent.
+
+Choice. One hand-drawn SVG motif, a ray split by a prism into the spectrum, sits above the methods section. Each theme restyles the same shapes.
+
+Reason. The motif needs no labelling as generated, stays sharp at any size and weighs a few kilobytes. The prompts in [design](design.md#generated-images) remain an option for later.
+

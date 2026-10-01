@@ -59,9 +59,21 @@ All variants are generated from `index.html` by `tools/build-variants.cjs`. Each
 | Labor | `theme-labor.css` | dark ground, monospace headings, luminous spectrum, stronger grid, glowing card edges |
 | Raster | `theme-raster.css` | Swiss typography, one sans serif in large tight cuts, black on white, spectrum as a flat block under section titles, no rounded corners |
 
+## Motif
+
+One motif runs through every variant, light that splits and becomes visible, as an image for tools that make knowledge visible. It is a hand-drawn SVG above the methods section, decorative and hidden from assistive technology. Each theme restyles the same shapes.
+
+| Variant | Rendering |
+|---|---|
+| Prisma | clear outlined prism, spectrum at matched lightness |
+| DHCraft | watercolour palette, softened bands |
+| Edition | hatched prism, spectrum in graded rubric red |
+| Labor | glowing beam and bands on the dark ground |
+| Raster | solid black triangle, flat full-strength bands |
+
 ## Generated images
 
-One motif runs through every variant, light that splits and becomes visible, as an image for tools that make knowledge visible. Each variant renders it in its own register. The images are produced by a Codex session with image generation and integrated afterwards as a labelled figure that the build swaps per variant.
+Generated images are an option for later, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images). If they are produced, they render the same motif per variant and are integrated as a labelled figure that the build swaps per variant.
 
 Rules for every generated image.
 
