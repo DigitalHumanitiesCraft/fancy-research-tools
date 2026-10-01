@@ -645,6 +645,19 @@
   .d-cell { stroke: var(--rule); stroke-width: 5; stroke-linecap: round; }
   .d-conflict { fill: none; stroke: var(--red); stroke-width: 2; }
 
+  .variants {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+    gap: var(--space-l) var(--space-m);
+
+    & a { display: grid; gap: var(--space-s); color: var(--text); text-decoration: none; }
+    & img { border-radius: var(--radius); box-shadow: 0 0 0 1px var(--rule), var(--shadow); }
+    & a:hover .variant-name { text-decoration: underline; }
+    & p { margin-block-start: var(--space-xs); color: var(--text-muted); }
+  }
+
+  .variant-name { font-family: var(--font-display); font-weight: 600; font-size: var(--step-1); }
+
   .tool-body > * + * { margin-block-start: var(--space-s); }
   .tool h3 { font-size: var(--step-2); }
   .tool .problem { font-weight: 500; max-inline-size: var(--measure); }

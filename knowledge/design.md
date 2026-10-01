@@ -30,15 +30,15 @@ The page combines a classic and an instrumental register on a white ground. The 
 - A faint measuring grid sits behind the hero.
 - The watercolour DHCraft logo marks the provider in the hero and the footer.
 
-## Variant B in the look of dhcraft.org
+## Design variants
 
-`dhcraft/index.html` carries the same content in the look of dhcraft.org, generated from `index.html` by `tools/build-variant-dhcraft.cjs`. The theme `assets/theme-dhcraft.css` overrides tokens and components of the shared stylesheet and follows `src/styles/global.css` and the Nav, Hero, Services and Contact components of `DigitalHumanitiesCraft/dhcraft-site`.
+All variants carry the same content and are generated from `index.html` by `tools/build-variants.cjs`. Each adds one unlayered theme stylesheet under `assets/` that overrides tokens and components of the shared base. All except the main variant carry `noindex`. The overview page `varianten/` shows a preview of each.
 
-- Paper ground, the DHCraft watercolour palette, Sora 700 and 800 for headings, pill buttons, bordered cards and hexagon icons from the logo.
-- The hero adds a purple second line after the dhcraft.org pattern. The line logo stands in the header as on dhcraft.org.
-- Light only, because dhcraft.org has no dark theme.
-- The kicker labels of dhcraft.org are left out, because the house rules ban eyebrows.
-- The variant carries `noindex`, so search engines list only the main variant.
+- Prisma, the main variant described above.
+- DHCraft (`theme-dhcraft.css`) follows dhcraft.org, `src/styles/global.css` and the Nav, Hero, Services and Contact components of `DigitalHumanitiesCraft/dhcraft-site`. Paper ground, the watercolour palette, Sora 700 and 800, pill buttons, bordered cards, hexagon icons, the line logo and a purple second hero line. Light only, as dhcraft.org. Its kicker labels are left out, because the house rules ban eyebrows.
+- Edition (`theme-edition.css`) sets classic book typography, EB Garamond throughout, black on white with rubric red as the only accent, small capitals for labels and square shapes.
+- Labor (`theme-labor.css`) pushes the instrument side, a dark ground, monospace headings, a luminous spectrum, a stronger grid and glowing card edges.
+- Raster (`theme-raster.css`) follows Swiss typography, one sans serif in large tight cuts, black on white, the spectrum as a flat block under section titles and no rounded corners.
 
 ## Rules carried from the house standard
 
