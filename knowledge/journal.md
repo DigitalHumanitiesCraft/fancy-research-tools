@@ -12,7 +12,10 @@ A second round the same evening reworked copy and identity. The copy was rewritt
 
 Kept off the page after the sweep: the date-extraction timeline (no licence file, header names an internal university training), vetmed-berichtswesen (no Pages site), M³GIM (open rights question in the vault).
 
+A third step added variant B in the look of dhcraft.org under `dhcraft/`, generated from the main page, so the operator can compare the prism identity with the house look of DHCraft.
+
 Open:
+- The choice between the prism variant and the dhcraft.org variant.
 - A privacy statement. dhcraft.org has none, and the page sets no cookies and loads nothing from third parties.
 - The English version, if wanted.
 - The CorrespExplorer map tiles, which need an API key, mentioned openly in the tool's state.

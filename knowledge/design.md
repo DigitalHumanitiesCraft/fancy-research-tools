@@ -30,6 +30,16 @@ The page combines a classic and an instrumental register on a white ground. The 
 - A faint measuring grid sits behind the hero.
 - The watercolour DHCraft logo marks the provider in the hero and the footer.
 
+## Variant B in the look of dhcraft.org
+
+`dhcraft/index.html` carries the same content in the look of dhcraft.org, generated from `index.html` by `tools/build-variant-dhcraft.cjs`. The theme `assets/theme-dhcraft.css` overrides tokens and components of the shared stylesheet and follows `src/styles/global.css` and the Nav, Hero, Services and Contact components of `DigitalHumanitiesCraft/dhcraft-site`.
+
+- Paper ground, the DHCraft watercolour palette, Sora 700 and 800 for headings, pill buttons, bordered cards and hexagon icons from the logo.
+- The hero adds a purple second line after the dhcraft.org pattern. The line logo stands in the header as on dhcraft.org.
+- Light only, because dhcraft.org has no dark theme.
+- The kicker labels of dhcraft.org are left out, because the house rules ban eyebrows.
+- The variant carries `noindex`, so search engines list only the main variant.
+
 ## Rules carried from the house standard
 
 - No eyebrows, no decorative counters, no standing explanatory prose.
