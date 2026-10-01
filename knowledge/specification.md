@@ -130,14 +130,6 @@ Choice. Every variant except the root carries `noindex`.
 
 Reason. Identical content at several addresses would compete in search results.
 
-### ADR-007 Swipeable section row on phones
-
-Context. The header had room only for the request link on narrow screens.
-
-Choice. The section links become a horizontally swipeable row under the wordmark, request link first.
-
-Reason. Every section stays reachable without a script-driven menu and without a second link list.
-
 ### ADR-006 House rules over the dhcraft.org pattern
 
 Context. dhcraft.org sets kicker labels above headings.
@@ -145,3 +137,11 @@ Context. dhcraft.org sets kicker labels above headings.
 Choice. The DHCraft variant leaves them out.
 
 Reason. The house rules ban eyebrows in every interface, and they rank above a visual model.
+
+### ADR-007 Swipeable section row on phones
+
+Context. The header had room only for the request link on narrow screens.
+
+Choice. The section links become a horizontally swipeable row under the wordmark, request link first.
+
+Reason. Every section stays reachable without a script-driven menu and without a second link list.
