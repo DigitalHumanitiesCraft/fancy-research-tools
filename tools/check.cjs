@@ -25,6 +25,8 @@ const schemes = ["light"];
         // Lazy images load only near the viewport, so the page is scrolled through once.
         await page.evaluate(async () => {
           for (let y = 0; y < document.body.scrollHeight; y += 600) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 40)); }
+          // Back to the top, otherwise axe reports whatever control the sticky header covers at the last stop.
+          scrollTo(0, 0);
         });
         await page.addScriptTag({ path: axePath });
         const result = await page.evaluate(() => axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa", "best-practice"] }));

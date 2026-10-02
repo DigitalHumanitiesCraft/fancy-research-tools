@@ -30,9 +30,9 @@ A service page that visitors find from dhcraft.org, that shares well, loads fast
 
 1. A legal review of the privacy statement.
 2. A screen reader pass over the page, see [testing](testing.md#known-limits).
-3. Mirroring every content change of `index.html` in `en/index.html`.
 
 ## Open decisions and dependencies
 
-- A real case with before and after needs the consent of the project behind it.
+- Real cases with their effort, as evidence that a small budget suffices, need the consent of the projects behind them.
+- Offers for work on client data name the model access and who acts as provider of an AI system under the EU AI Act, a matter for the offer template and a legal review, not for the page.
 - Generated motif images need a tool with image generation, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images).

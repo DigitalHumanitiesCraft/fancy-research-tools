@@ -9,7 +9,7 @@ Read `knowledge/INDEX.md` first, then `knowledge/handoff.md`, then the document 
 - `index.html` holds the German content. `en/index.html` is the English page and is maintained by hand. Mirror every content change of `index.html` there in the same commit. `datenschutz/` and `en/privacy/` change together.
 - A new or changed tool entry carries problem, solution, state line and evidence link. Take the state from the tool's own knowledge base, record source and check date in `knowledge/data.md`, and verify every link answers HTTP 200.
 - Tool rows show real screenshots from `tools/shoot-tools.cjs` or schematic diagrams. Never show third-party images under a non-commercial or unclear licence, and never put a generated image where a screenshot belongs. Generated images follow `knowledge/design.md#generated-images`.
-- Never invent prices, promises, conditions or client names. Billing is stated as hourly or agreed fee and nothing more.
+- Never invent prices, promises, conditions or client names. Billing is stated as per hour, per working day or flat fee, starting from the client's budget, and the page shows no price. Language models are called frontier language models and never named by provider.
 - Copy is German and follows the house writing rules, no dash or colon as connector, no trailing negation, no ornamental triad, no marketing adjectives.
 - Write durable findings into the responsible knowledge document and add one journal entry per coherent transition.
 

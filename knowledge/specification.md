@@ -26,11 +26,11 @@ What the page must do and which decisions hold. Requirements and stories change 
 
 ### Functional requirements
 
-- FR-01: The first screen names the offer in one sentence and leads to the request. Acceptance: hero with title, lede and request button, visible without scrolling at 1440 by 900.
-- FR-02: Every tool and method shows function, state line and evidence link. Acceptance: each entry carries a "Stand" line ending in "Belege" that resolves with HTTP 200.
+- FR-01: The first screen names the offer, agentic engineering, in one sentence and leads to the request. Acceptance: hero with title, lede and request button, visible without scrolling at 1440 by 900.
+- FR-02: Every tool and method shows function, maturity and an evidence link. Acceptance: each entry carries a maturity chip and a visible link to its evidence, the method page where that is the evidence, and every link resolves with HTTP 200.
 - FR-03: A visitor can send a request in two ways. Acceptance: a conversation path with e-mail and telephone and a documents path with a prefilled e-mail, both in the section `#kontakt`.
 - FR-04: Every section and every tool or method is addressable. Acceptance: each has a unique fragment identifier.
-- FR-05: The billing modes are stated. Acceptance: the request section names hourly billing and an agreed fee.
+- FR-05: Ways of working, model use and billing are stated. Acceptance: the section `#angebot` names learning, building together and building for the client, says where frontier language models are used and that model and access are chosen per project, and names billing per hour, per working day or as a flat fee with the client's budget as starting point.
 - FR-09: The page exists in German and English. Acceptance: `en/` carries the page in English, both link each other through `hreflang` and the footer.
 - FR-10: A privacy statement is reachable from every page. Acceptance: footer link to `datenschutz/`, English courtesy translation at `en/privacy/`.
 - FR-08: A shared link shows title, description and image. Acceptance: Open Graph metadata with a 1200 by 630 image and a canonical link.
@@ -80,7 +80,7 @@ Derivation:
 
 ## Scope of the page
 
-The page runs from hero over tools, methods and frameworks, quality, who we are, process and fit to the request section and footer. Each tool row carries a screenshot, title, one sentence, maturity and ability icons, and the links open, code, evidence and request.
+The page runs from hero over the offer with its three ways of working, models and costs, then tools, methods and frameworks, quality, who we are, process and fit to the request section and footer. Each tool row carries a screenshot, title, one sentence, maturity and ability icons, and the links open, code, evidence and request.
 
 ## Decisions
 
@@ -203,3 +203,13 @@ Choice. Each method card gets one generated watercolour illustration after the b
 Reason. Methods have no interface to photograph, so a screenshot cannot serve as evidence there, and the evidence stays in the state line and its link. An illustration in the watercolour language of the DHCraft logo ties the cards to the design.
 
 Effect. Source PNGs stay local and out of Git, their prompts are committed. The operator chose the series infographic-v3, which carries a few English key terms, so the alt text describes each flow in words and the image links to its large version for small screens.
+
+### ADR-013 Positioning as an agentic engineering offer
+
+Context. The page offered custom tools and adaptable research tools. On 2026-10-02 the operator decided to present it as the offer for agentic engineering, building on an older internal concept "Prompt Engineering as a Service" and on research into terms and comparable offers. dhcraft.org already lists training and consulting on its excellence page and links this page only from its research software card.
+
+Choice. The page is the offer for agentic engineering, and the research tools are the evidence of what it produces. A section `#angebot` after the hero names three ways of working, learning, building together and building for the client, and two blocks, models and data, and costs. Frontier language models are named as such and never by provider, open models from any origin included. They are used in two places, by coding agents that build the tool and inside the finished tool for single work steps, and model and access are chosen with the client by the kind of data. Billing is per hour, per working day or as a flat fee, starting from the client's budget, with a stop after every step. No price appears on the page. The name stays, its "(research)" already marks research as optional.
+
+Reason. "Prompt engineering" is perceived as dated, and dhcraft.org had already replaced it with context engineering. "Agentic engineering" names the practice, the hero line sets it beside the plain audience. The concept's argument of providing paid model subscriptions no longer holds, because consumer plans of at least one provider train on chats unless the user opts out, so client data belongs to API, regional or local access. Speed claims of the concept ("days instead of weeks") are not used, after ADR-003 and because the Promptotyping method claims no general advantage in speed or cost. Reviewed code is the claim the page can back, because agent-built software has documented security and maintenance risks and the tools here carry public code, knowledge bases and a review.
+
+Effect. Training formats stay on dhcraft.org/excellence and are linked, not repeated. Facts for billing and model use come from operator statements recorded in [data](data.md#provider). Real cases with their effort, the strongest argument that a small budget suffices, wait for the consent of the projects behind them. A workshop count is not shown, because the sources disagree and none has a list behind it.

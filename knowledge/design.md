@@ -40,8 +40,8 @@ The values follow `src/styles/global.css` and the Nav, Hero, Services and Contac
 ## Interaction patterns
 
 1. User task: understand the offer, judge the fit, send a request by conversation or by documents for a first prototype.
-2. First decision: name, one-sentence offer, request button and the prism motif.
-3. Depth: tools and methods with maturity and evidence, quality, who we are, client institutions, process, fit lists, billing.
+2. First decision: name, the line "Agentic Engineering für alle, die mit Wissen arbeiten", request button and the prism motif.
+3. Depth: the offer with three ways of working as cards with a hexagon icon each, then models and data and costs as two plain cards, then tools and methods with maturity and evidence, quality, who we are, client institutions, process, fit lists and the request.
 4. Tool and method rows have four levels: title, one sentence, a meta row with maturity chip and ability icons, and a link row with one button and plain links (Code, Belege, Anpassen anfragen). The ability icons carry their name as hidden text for screen readers and as `title` for mouse users. A one-line legend under the tools title names every icon, so touch users can read them without hover. Abilities used: LLM-gestützt (with the model choice noted where the tool lets the user pick providers down to a local model), fachliche Prüfung, Überblick über den ganzen Bestand, lesbarer Text statt Tags, läuft im Browser, Belege bis zur Quelle. A claim that data stay in-house is not used, because the LLM-supported tools send data to the chosen model.
 5. Maturity chips: Im Einsatz (green), Release Candidate (blue), Forschungsvorschau, Laufende Demo and Bestand gesichert (orange), Experiment (pink). The word carries the meaning, the colour repeats it.
 6. Addresses: every section and every tool or method carries a fragment identifier.

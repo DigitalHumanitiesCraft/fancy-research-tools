@@ -26,7 +26,7 @@ knowledge-sources:
     Open Graph protocol: https://ogp.me/
 ---
 
-"fancy (research) tools!" is a German-language service page of Digital Humanities Craft OG. It offers custom tools that speed up a concrete workflow, adaptable existing tools and the methods behind them, for research and cultural heritage institutions as well as companies and public administration. It is published at https://dhcraft.org/fancy-research-tools/, in English at https://dhcraft.org/fancy-research-tools/en/, and linked from the research software card of dhcraft.org.
+"fancy (research) tools!" is a German-language service page of Digital Humanities Craft OG. It offers agentic engineering, building tools, workflows and knowledge bases with frontier language models and coding agents, as training, together with the client's team or for the client, for research and cultural heritage institutions as well as companies and public administration. Its own research tools and methods serve as evidence and can be adapted. It is published at https://dhcraft.org/fancy-research-tools/, in English at https://dhcraft.org/fancy-research-tools/en/, and linked from the research software card of dhcraft.org.
 
 ## Material basis
 
@@ -34,11 +34,11 @@ The page builds on facts that already exist elsewhere and are cited, never inven
 
 ## Context
 
-The name comes from a remark in a chat about a colleague's prompted markup editor for an edition project. That editor showed the pattern the page sells, a tool shaped around the person doing most of the work, with corpus-wide search, consistency checks, issues at the document and a preview of the target platform. The positioning moved in one day from a showcase over a volunteer collective to a professional, research-grounded service, see [journal](journal.md).
+The name comes from a remark in a chat about a colleague's prompted markup editor for an edition project. That editor showed the pattern the page sells, a tool shaped around the person doing most of the work, with corpus-wide search, consistency checks, issues at the document and a preview of the target platform. The positioning moved in one day from a showcase over a volunteer collective to a professional, research-grounded service, and on 2026-10-02 to an offer for agentic engineering, see [journal](journal.md) and [ADR-013](specification.md#adr-013-positioning-as-an-agentic-engineering-offer).
 
 ## Purpose
 
-Visitors are archives, museums, libraries, universities, research projects, companies and administrations with a recurring workflow and no in-house development. They should understand the offer, judge whether it fits and send a request, either as a conversation or as documents from which a first prototype is built. Billing follows the commission, per hour or as an agreed fee.
+Visitors are archives, museums, libraries, universities, research projects, companies and administrations with a recurring workflow and no in-house development, and teams that want to learn to work with coding agents themselves. They should understand the offer, judge whether it fits and send a request, either as a conversation or as documents from which a first prototype is built. Billing follows the task, per hour, per working day or as a flat fee, starting from the client's budget.
 
 ## Standards
 

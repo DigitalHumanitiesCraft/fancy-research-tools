@@ -116,3 +116,10 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: `index.html`, `assets/style.css`, [design](design.md#interaction-patterns), [specification](specification.md)
 - Result: the schematic letter figure and the provider line left the hero, the prism motif moved there. The abilities strip became a one-line icon legend. Tool and method rows have four levels with icon-only abilities and plain links. "Daten bleiben im Haus" was replaced by "LLM-gestützt" and "Läuft im Browser", because coOCR/HTR, teiCrafter, SZD-HTR and the bibliography pipeline send data to a model, coOCR/HTR and teiCrafter with a selectable provider including a local one.
 
+
+### 2026-10-02 integrated Agentic engineering offer
+
+- Source: operator decision to build on the concept "Prompt Engineering as a Service" and present the page as the offer for agentic engineering, with research by three read-only agents on the vault, dhcraft.org, terms and comparable offers
+- Target: `index.html`, `en/index.html`, `assets/style.css`, [ADR-013](specification.md#adr-013-positioning-as-an-agentic-engineering-offer), [project](project.md), [data](data.md#provider), [design](design.md#interaction-patterns), `CLAUDE.md`
+- Result: hero line "Agentic Engineering für alle, die mit Wissen arbeiten", a section `#angebot` with learning, building together and building for the client, a models block that names frontier language models without providers and two places of use, a costs block with flexible billing, budget first and structural reasons for low cost, a quality claim on reviewed code, Sichtung in the first process step, two new fit items and a budget question in the request. The English page now mirrors the German structure and no longer claims that data stay in-house.
+- Open: real cases with effort need consent, the offer template needs a clause on model access and AI Act roles.
