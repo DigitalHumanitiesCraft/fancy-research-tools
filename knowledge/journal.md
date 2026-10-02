@@ -145,3 +145,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Source: coordinating brief with the operator's corrections, the repository state after commit 7c3577d, which retargeted `tools/` and removed the standalone page, and `src/i18n/fancy.ts`, `src/components/fancy/`, the route files, `astro.config.mjs` and `src/components/Nav.astro` of the site repository
 - Target: all documents in `knowledge/`, `CLAUDE.md`, `AGENTS.md`, `README.md`
 - Result: every document now describes the page as a subpage built by the site repository and this repository as its knowledge and asset workshop, recorded as an amendment of [ADR-014](specification.md#adr-014-the-page-moves-into-the-dhcraftorg-site). Superseded or amended decisions carry a marker with a pointer. The operator's copy corrections became the [content rules](specification.md#content-rules), the state line gave way to the terms maturity chip and ability icon, [data](data.md) points to the site repository and records anchor and maturity per entry, [method images](method-images.md) describes the series in use and the open version 4 of Research Mission Control, [testing](testing.md) the checks against the site preview. Open lists left the journal entries for [plan](plan.md).
+
+### 2026-10-02 integrated No other institutions on the page
+
+- Source: operator decision that the page names no other institutions, after a vault check found the client list partly unsupported, one entry contradicted by the operator's own case study
+- Target: `src/i18n/fancy.ts` and `src/components/fancy/FancyPage.astro` in the site repository, [CR-06](specification.md#content-rules), [data](data.md#provider)
+- Result: the client list and the institute named for GAMS left the page. Wer wir sind now states teaching at universities in Austria and Germany and the role of technical partner in funded projects, as the vault records show.

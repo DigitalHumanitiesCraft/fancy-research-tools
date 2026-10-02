@@ -52,7 +52,7 @@ These rules come from operator decisions and corrections recorded in [ADR-013](#
 - CR-03: Promptotyping is presented as one context engineering method among several, chosen per project after the project is understood.
 - CR-04: Language models are called frontier language models (Frontier-Sprachmodelle) and are never named by provider. The caption of a generated image names the image model, because [ADR-012](#adr-012-generated-illustrations-for-the-method-cards) requires the label.
 - CR-05: Billing is per hour, per working day or as a flat fee, starting from the client's budget, with a decision on continuation after every step. The page shows no price.
-- CR-06: No price, promise, condition or client name is invented. Client institutions appear only as named in the sources of [data](data.md#provider), and real cases appear only with the consent of the projects behind them.
+- CR-06: No price, promise, condition or client name is invented. The page names no other institution, neither clients nor partners, by the operator's decision of 2026-10-02. Real cases appear only with the consent of the projects behind them and without naming the institution unless the operator decides otherwise.
 - CR-07: The register is formal and scholarly, with traceability, provenance and reuse as its terms and without casual phrasing. The house rules for punctuation hold, no dash or colon as connector, no trailing negation, no ornamental triad, no marketing adjectives.
 
 ## Epics and user stories
@@ -99,7 +99,7 @@ The page runs in this order.
 2. `#angebot` with the cards Lernen, Gemeinsam entwickeln and Im Auftrag entwickeln and the blocks Modelle und Daten and Kosten.
 3. `#werkzeuge` with a legend of the ability icons and the tools coOCR/HTR, teiCrafter, CorrespExplorer, SZD-HTR and Stefan-Zweig-Bibliographie. Each row carries a screenshot, title, one sentence, maturity chip, ability icons and the links Werkzeug öffnen, Code, Belege and Anpassen anfragen.
 4. `#methoden` with Promptotyping, Grounded Vault, Agentic Edition Pipeline and Research Mission Control, each with a generated infographic, one sentence, maturity chip and its links.
-5. `#qualitaet`, titled Grundsätze, with the expandable principles, followed by Wer wir sind and the client institutions, see [design](design.md#principles).
+5. `#qualitaet`, titled Grundsätze, with the expandable principles, followed by Wer wir sind, see [design](design.md#principles).
 6. `#vorgehen` with the process steps and the fit lists.
 7. `#kontakt` with the two request paths.
 

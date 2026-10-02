@@ -28,7 +28,7 @@ The facts the page states about its provider, tools, methods and images, with th
 |---|---|
 | Name, seat, telephone, e-mail | imprint of the site repository, `src/pages/imprint.astro`, published at https://dhcraft.org/imprint/ |
 | Target groups, teaching across Europe, project partnership, GAMS cooperation | `src/i18n/content.ts` of the site repository |
-| Institutions the company works for | same file, partner and project lists |
+| Teaching at universities in Austria and Germany, role as technical partner in funded projects | operator's records in the vault (teaching portfolio data, Business/Horizon Europe Learnings, offers in Business/Angebote), checked 2026-10-02 |
 | Billing per hour, per working day or as a flat fee, starting from the client's budget, decision after every step | operator statement, 2026-10-02, replacing the statement of 2026-10-01 |
 | Costs for the use of language models may be billed separately, depending on the scope of the project. The effort lies mainly in understanding the project together with the client and making the resulting systems comprehensible. Tools run in the browser without a server where the use case allows | operator statement, 2026-10-02 |
 | Frontier language models, commercial and open from any origin, never named by provider, used by coding agents and inside tools, model and access chosen per project | operator statement, 2026-10-02 |

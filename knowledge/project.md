@@ -34,7 +34,7 @@ The page is a subpage of dhcraft.org, at https://dhcraft.org/fancy-research-tool
 
 ## Material basis
 
-The page states facts that already exist elsewhere and cites them. Provider data, client institutions and team facts come from the published dhcraft.org website. Tool and method facts come from each tool's repository and knowledge base. Billing and model use follow operator statements. [data](data.md) lists every source.
+The page states facts that already exist elsewhere and cites them. Provider and team facts come from the published dhcraft.org website and the operator's records. Tool and method facts come from each tool's repository and knowledge base. The page names no other institution. [data](data.md) lists every source.
 
 ## Context
 
