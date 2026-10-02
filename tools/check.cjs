@@ -1,5 +1,5 @@
-// Browser checks for every variant, the overview page and the 404 page: axe (WCAG 2.2 AA plus
-// best practice), horizontal overflow and broken images, at desktop and narrow width, light and dark.
+// Browser checks for every page: axe (WCAG 2.2 AA plus best practice), horizontal overflow and
+// broken images, at desktop and narrow width. The page is light only, as dhcraft.org is.
 // With LINKS=1 it also checks every external link of index.html for HTTP 200.
 // Needs Playwright and axe-core from an existing installation and the repository served locally:
 //   PLAYWRIGHT=/path/to/node_modules/playwright AXE=/path/to/axe-core/axe.min.js BASE=http://127.0.0.1:4321 CHANNEL=msedge node tools/check.cjs
@@ -9,9 +9,9 @@ const { chromium } = require(process.env.PLAYWRIGHT || "playwright");
 
 const base = process.env.BASE || "http://127.0.0.1:4321";
 const axePath = process.env.AXE || require.resolve("axe-core/axe.min.js");
-const pages = ["/", "/dhcraft/", "/edition/", "/labor/", "/raster/", "/varianten/", "/datenschutz/", "/en/privacy/", "/404.html"].concat(require("fs").existsSync(require("path").join(__dirname, "..", "en", "index.html")) ? ["/en/"] : []);
+const pages = ["/", "/en/", "/datenschutz/", "/en/privacy/", "/404.html"];
 const widths = [1440, 320];
-const schemes = ["light", "dark"];
+const schemes = ["light"];
 
 (async () => {
   let failures = 0;

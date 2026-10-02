@@ -6,7 +6,7 @@ project:
 status: draft
 language: en
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 authors: [Christopher Pollin]
 generated-with: Claude Code (Claude Opus 5.5)
 method:
@@ -26,15 +26,14 @@ The checks that guard a change of content, look or tooling. The repository insta
 
 ## Test strategy
 
-Every change runs the syntax check and the build. A change of look or markup adds the browser checks in every variant. A change of a tool entry adds the link check of [data](data.md).
+Every change runs the syntax check. A change of look or markup adds the browser checks. A change of a tool entry adds the link check of [data](data.md).
 
 ## What is guaranteed
 
 | Proof | Claim |
 |---|---|
 | `node --check tools/*.cjs` | the scripts parse |
-| build followed by `git status` | the generated variants match `index.html` |
-| `tools/check.cjs`, axe with WCAG 2.2 AA and best-practice rules | no violation in every variant, the overview and the 404 page, at 1440 and 320 pixels, light and dark |
+| `tools/check.cjs`, axe with WCAG 2.2 AA and best-practice rules | no violation on the main, English, privacy and 404 pages, at 1440 and 320 pixels |
 | `tools/check.cjs`, overflow probe | no horizontal document scroll at 320 pixels |
 | `tools/check.cjs`, image probe | every image loads after scrolling through the page |
 | `tools/check.cjs`, keyboard pass | every tab stop on the main, English and privacy pages shows a focus outline, stays on screen and is not hidden under the sticky header |
@@ -51,9 +50,8 @@ Every change runs the syntax check and the build. A change of look or markup add
 ## How to run
 
 ```
-node --check tools/build-variants.cjs tools/shoot-variants.cjs
-node tools/build-variants.cjs && git status --short     # generated files must stay unchanged after a content-neutral build
-PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/shoot-variants.cjs   # overview previews and link previews
+node --check tools/*.cjs
+PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/shoot-og.cjs   # link preview image
 PLAYWRIGHT=/path/to/node_modules/playwright AXE=/path/to/axe-core/axe.min.js CHANNEL=msedge LINKS=1 node tools/check.cjs
 ```
 

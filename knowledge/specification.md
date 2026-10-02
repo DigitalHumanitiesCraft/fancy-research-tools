@@ -6,7 +6,7 @@ project:
 status: draft
 language: en
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 authors: [Christopher Pollin]
 generated-with: Claude Code (Claude Opus 5.5)
 method:
@@ -31,15 +31,13 @@ What the page must do and which decisions hold. Requirements and stories change 
 - FR-03: A visitor can send a request in two ways. Acceptance: a conversation path with e-mail and telephone and a documents path with a prefilled e-mail, both in the section `#kontakt`.
 - FR-04: Every section and every tool or method is addressable. Acceptance: each has a unique fragment identifier.
 - FR-05: The billing modes are stated. Acceptance: the request section names hourly billing and an agreed fee.
-- FR-06: Every variant carries the same content. Acceptance: running the build leaves no difference in the generated directories.
-- FR-07: Every page leads to every variant. Acceptance: the footer lists all variants and the overview, the current variant marked with `aria-current`.
-- FR-09: The page exists in German and English. Acceptance: `en/` carries the main variant in English, both link each other through `hreflang` and the footer.
+- FR-09: The page exists in German and English. Acceptance: `en/` carries the page in English, both link each other through `hreflang` and the footer.
 - FR-10: A privacy statement is reachable from every page. Acceptance: footer link to `datenschutz/`, English courtesy translation at `en/privacy/`.
-- FR-08: A shared link shows title, description and image. Acceptance: Open Graph metadata with a 1200 by 630 image per variant and a canonical link to the main variant.
+- FR-08: A shared link shows title, description and image. Acceptance: Open Graph metadata with a 1200 by 630 image and a canonical link.
 
 ### Non-functional requirements
 
-- NFR-01: Accessibility at WCAG 2.2 level AA. Measure: axe reports no violation at 1440 and 320 pixels in every variant.
+- NFR-01: Accessibility at WCAG 2.2 level AA. Measure: axe reports no violation at 1440 and 320 pixels on every page.
 - NFR-02: Reflow without horizontal scrolling. Measure: no document overflow at 320 pixels and at 200 percent zoom.
 - NFR-03: No third-party requests and no JavaScript. Measure: every URL in `src` and `href` of stylesheets, fonts and images is relative.
 - NFR-04: Copy follows the house writing rules. Measure: no dash or colon as connector, no trailing negations, no ornamental triads.
@@ -72,7 +70,7 @@ Derivation:
 
 #### Change a tool entry once
 
-*As the maintainer, I want to edit a tool in one place, so that all variants stay consistent.*
+*As the maintainer, I want to edit a tool in one place, so that the German and English pages stay consistent.*
 
 Validation: realised through the build script on 2026-10-01.
 
@@ -90,13 +88,15 @@ The page runs from hero over abilities, tools, methods and frameworks, quality, 
 
 Context. A service page needs fast loading, archivability and no consent banner.
 
-Choice. Plain HTML and CSS served by GitHub Pages, no build step for the main variant, no script.
+Choice. Plain HTML and CSS served by GitHub Pages, no build step, no script.
 
 Reason. Every interaction the page needs, anchors, e-mail and telephone links, is native.
 
 Effect. No third-party request and no cookie, so a privacy statement can stay short.
 
 ### ADR-002 One content source, variants as themes
+
+Superseded by [ADR-011](#adr-011-one-design-after-dhcraftorg).
 
 Context. Several looks were wanted for comparison without forking the copy.
 
@@ -128,6 +128,8 @@ Effect. Objekt-Bestimmung carries a diagram. Kulturpool-Demo moved to a screensh
 
 ### ADR-005 Main variant indexed, other variants hidden from search
 
+Superseded by [ADR-011](#adr-011-one-design-after-dhcraftorg).
+
 Choice. Every variant except the root carries `noindex`.
 
 Reason. Identical content at several addresses would compete in search results.
@@ -136,7 +138,7 @@ Reason. Identical content at several addresses would compete in search results.
 
 Context. dhcraft.org sets kicker labels above headings.
 
-Choice. The DHCraft variant leaves them out.
+Choice. The page leaves them out.
 
 Reason. The house rules ban eyebrows in every interface, and they rank above a visual model.
 
@@ -152,7 +154,7 @@ Reason. Every section stays reachable without a script-driven menu and without a
 
 Context. Better images were wanted everywhere, including generated ones.
 
-Choice. Tool rows show only real screenshots or schematic diagrams. Generated images appear only as a motif image of a variant, visibly labelled as generated, and never depict a tool, an interface, a person or text.
+Choice. Tool rows show only real screenshots or schematic diagrams. Generated images appear only as a motif image, visibly labelled as generated, and never depict a tool, an interface, a person or text.
 
 Reason. The page earns trust through evidence links. A generated image in the place of a screenshot would claim an interface that does not exist.
 
@@ -161,9 +163,9 @@ Reason. The page earns trust through evidence links. A generated image in the pl
 Context. The operator asked on 2026-10-01 for every open decision to be taken and carried out.
 
 Choice.
-- Prisma stays the main variant. The others stay public with `noindex` and the variant switch.
+- Prisma stays the main variant. The others stay public with `noindex` and the variant switch. Superseded by [ADR-011](#adr-011-one-design-after-dhcraftorg).
 - A privacy statement is published, based only on verified facts of the page.
-- An English version of the main variant is published under `en/`.
+- An English version is published under `en/`.
 - The page stays at dhcraft.org, and dhcraft.org links it from its research software card.
 - The date-extraction timeline and `vetmed-berichtswesen` stay off the page, because one shows internal training material and the other client reporting.
 - Team and publications stay on dhcraft.org. The published L.I.S.A. article on Promptotyping is linked as evidence.
@@ -175,7 +177,17 @@ Reason. Each choice keeps facts verifiable and avoids publishing third-party or 
 
 Context. Generated motif images were planned through Codex. The installed Codex CLI offers no image generation, and a paid image API needs the operator's consent.
 
-Choice. One hand-drawn SVG motif, a ray split by a prism into the spectrum, sits above the methods section. Each theme restyles the same shapes.
+Choice. One hand-drawn SVG motif, a ray split by a prism into the spectrum, sits above the methods section.
 
 Reason. The motif needs no labelling as generated, stays sharp at any size and weighs a few kilobytes. The prompts in [design](design.md#generated-images) remain an option for later.
 
+
+### ADR-011 One design after dhcraft.org
+
+Context. Five looks had been built for comparison. On 2026-10-02 the operator chose the look of dhcraft.org.
+
+Choice. The DHCraft theme is merged into `assets/style.css` and is the only design. Variant directories, the overview page, the variant switch, the other theme stylesheets, their fonts and images, and `tools/build-variants.cjs` are removed. The footer keeps a language link. The other four looks are documented as design documents in the operator's vault, and commit [54a6fff](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/54a6fff) keeps their code.
+
+Reason. The page reads as part of the provider's site, and one stylesheet without a build step is simpler to maintain.
+
+Effect. Old variant addresses lead to the 404 page. The page is light only.

@@ -6,7 +6,7 @@ project:
 status: draft
 language: en
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 authors: [Christopher Pollin]
 generated-with: Claude Code (Claude Opus 5.5)
 method:
@@ -51,7 +51,7 @@ The page needs no JavaScript and makes no request to third parties.
 
 ## Technical realisation
 
-A static site served by GitHub Pages from the repository root. `index.html` is the single content source. A build script generates the design variants and an overview page from it. Details in [specification](specification.md#decisions) and [testing](testing.md).
+A static site served by GitHub Pages from the repository root. `index.html` is the single content source. `en/index.html` is its English counterpart. There is no build step. Details in [specification](specification.md#decisions) and [testing](testing.md).
 
 ## Scope
 

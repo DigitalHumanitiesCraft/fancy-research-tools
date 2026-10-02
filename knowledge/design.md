@@ -6,7 +6,7 @@ project:
 status: draft
 language: en
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 authors: [Christopher Pollin]
 generated-with: Claude Code (Claude Opus 5.5)
 method:
@@ -20,22 +20,22 @@ template:
 related: [specification, project]
 ---
 
-How the page looks and behaves in each variant. The content is the same everywhere, the variants differ only in theme.
+How the page looks and behaves. The page has one design, the look of dhcraft.org.
 
 ## Design stance
 
-The page speaks to academic readers and to clients outside academia. It argues with verifiable statements, a numbered figure, state lines with evidence and named institutions, and keeps marketing gestures to the name and its exclamation mark. Abilities link to the tool that shows them, so the abstract claim and the concrete instance stay next to each other.
+The page speaks to academic readers and to clients outside academia. It argues with verifiable statements, a numbered figure, state lines with evidence and named institutions, and keeps marketing gestures to the name and its exclamation mark. Abilities link to the tool that shows them, so the abstract claim and the concrete instance stay next to each other. The look follows dhcraft.org, so the page reads as part of the provider's site.
 
 ## Design system
 
-The main variant Prisma combines a classic and an instrumental register on a white ground.
+The values follow `src/styles/global.css` and the Nav, Hero, Services and Contact components of the repository DigitalHumanitiesCraft/dhcraft-site.
 
-- Signature image: a prism splitting a ray into the spectrum, used as favicon and header mark.
-- Colour: ink navy from the DHCraft website, accents as a spectrum at matched OKLCH lightness (red, orange, yellow, green, cyan, blue, violet), carried by a two-pixel line under the header and the exclamation mark.
-- Type: EB Garamond for headings and wordmark, Instrument Sans for running text, JetBrains Mono for machine-like labels such as state, figure number, tags and pane labels. All fonts are self-hosted under `assets/fonts/`.
-- Texture: a faint measuring grid behind the hero.
-- Provider mark: the watercolour DHCraft logo in hero and footer.
-- Themes: light and dark through `light-dark()`.
+- Ground and colour: paper `#fdfcf8`, ink navy `#1e2749`, purple `#8a4fa3` as the one accent for links, focus, hover, state labels and step numbers. The watercolour palette of the logo (`#c06bb0`, `#e39a3b`, `#f2b95c`, `#5c9e4a`, `#a9c53d`, `#85aede`) colours entities, diagrams, quality cards and the motif. All values are OKLCH tokens in `assets/style.css` with the hex value as comment.
+- Type: Sora 700 and 800 for headings and wordmark, Instrument Sans for running text and labels. All fonts are self-hosted under `assets/fonts/`.
+- Shapes: pill buttons and labels, cards with a thin border on paper, the hexagon of the logo as the icon shape of the abilities.
+- Hero: a purple radial wash, an extra-bold title with a purple second line "Werkzeuge für alle, die mit Wissen arbeiten."
+- Brand: the DHCraft line logo with "fancy (research) tools!", the last word in purple. The watercolour DHCraft logo appears as provider mark in hero and footer and as favicon.
+- Theme: light only, because dhcraft.org has no dark theme.
 
 ## Interaction patterns
 
@@ -45,53 +45,26 @@ The main variant Prisma combines a classic and an instrumental register on a whi
 4. Addresses: every section and every tool or method carries a fragment identifier.
 5. Layout: on wide screens the hero sets text beside the layered figure, tool rows run in two alternating columns and methods in three. On narrow screens everything stacks and the section links become a swipeable row with the request link first.
 6. Motion: the two warning messages of figure 1 fade in once and stay still under reduced motion.
-7. Variant switch: the footer of every page lists all variants and the overview and marks the current one.
+7. Language: the footer links the German and the English page.
 
-## Design variants
+## Earlier design variants
 
-All variants are generated from `index.html` by `tools/build-variants.cjs`. Each adds one unlayered theme stylesheet under `assets/` and carries `noindex`. The overview page `varianten/` shows a preview of each.
-
-| Variant | Theme | Character |
-|---|---|---|
-| Prisma | none, root page | as described above |
-| DHCraft | `theme-dhcraft.css` | the look of dhcraft.org after its `global.css` and its Nav, Hero, Services and Contact components, paper ground, watercolour palette, Sora 700 and 800, pill buttons, bordered cards, hexagon icons, line logo, purple second hero line, light only |
-| Edition | `theme-edition.css` | classic book typography, EB Garamond throughout, black on white with rubric red as the only accent, small capitals for labels, square shapes |
-| Labor | `theme-labor.css` | dark ground, monospace headings, luminous spectrum, stronger grid, glowing card edges |
-| Raster | `theme-raster.css` | Swiss typography, one sans serif in large tight cuts, black on white, spectrum as a flat block under section titles, no rounded corners |
+Until 2026-10-02 the page existed in five looks generated from one content source, Prisma as main variant and DHCraft, Edition, Labor and Raster as themes. The operator chose DHCraft as the only design, see [specification](specification.md#adr-011-one-design-after-dhcraftorg). The last state with all variants and their theme stylesheets is commit [54a6fff](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/54a6fff). The other four looks are kept as design documents in the operator's Obsidian vault.
 
 ## Motif
 
-One motif runs through every variant, light that splits and becomes visible, as an image for tools that make knowledge visible. It is a hand-drawn SVG above the methods section, decorative and hidden from assistive technology. Each theme restyles the same shapes.
-
-| Variant | Rendering |
-|---|---|
-| Prisma | clear outlined prism, spectrum at matched lightness |
-| DHCraft | watercolour palette, softened bands |
-| Edition | hatched prism, spectrum in graded rubric red |
-| Labor | glowing beam and bands on the dark ground |
-| Raster | solid black triangle, flat full-strength bands |
+A hand-drawn SVG above the methods section shows a ray split by a prism into the watercolour palette, as an image for tools that make knowledge visible. It is decorative and hidden from assistive technology. The bands are softened like the hero wash, the prism is white with an ink outline.
 
 ## Generated images
 
-Generated images are an option for later, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images). If they are produced, they render the same motif per variant and are integrated as a labelled figure that the build swaps per variant.
-
-Rules for every generated image.
+No generated image is planned, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images). If one is produced later, these rules hold.
 
 - It shows the motif only. No tool, no interface, no person, no logo, no legible text.
 - It imitates no living artist and no identifiable existing artwork.
 - It is labelled on the page, in the figure caption, as generated with the model named.
 - Its prompt, model and date are recorded in [data](data.md#images).
 
-Delivery. One PNG per variant, 2400 by 1200 pixels, saved as `assets/img/source/motif-<slug>.png`, with the prompt and the model used noted beside it in `assets/img/source/motif-<slug>.txt`.
-
-| Slug | Variant | Prompt |
-|---|---|---|
-| prisma | Prisma | Studio photograph of a clear triangular glass prism on a seamless white surface. A thin beam of white light enters from the left and leaves the prism as a crisp, evenly spaced spectrum of red, orange, yellow, green, cyan, blue and violet that fans out to the right across the white surface. Soft shadow, high-key light, precise and calm scientific mood, generous empty white space in the left third. No text, no logos, no people. Wide format 2:1. |
-| edition | Edition | Copperplate engraving in the manner of a seventeenth-century scientific book illustration, showing the classic prism experiment, a darkened room, a small round hole in a window shutter, a beam of light passing through a triangular glass prism and spreading into a band on the opposite wall. Fine black hatching on white paper, the refracted band and a few single reference letters in rubric red, nothing else coloured. Generous margins, no modern objects, no words. Wide format 2:1. |
-| labor | Labor | Night photograph of an optical laboratory bench, a precision glass prism on a black breadboard, a laser-thin white beam splitting into a luminous spectrum, faint measuring grid lines projected onto a dark navy surface, cyan and violet glow, shallow depth of field, clean and quiet, no people, no text. Wide format 2:1. |
-| raster | Raster | Poster in the Swiss International Typographic Style, flat geometric composition on white, one black equilateral triangle, one thin black line entering it from the left, seven flat parallel colour bands in red, orange, yellow, green, cyan, blue and violet leaving it to the right at a strict angle, strong underlying grid, large white space, no gradients, no shadows, no text. Wide format 2:1. |
-
-The DHCraft variant uses the existing watercolour hexagon of the DHCraft logo and needs no generated image.
+Delivery. One PNG, 2400 by 1200 pixels, saved as `assets/img/source/motif.png`, with the prompt and the model used noted beside it in `assets/img/source/motif.txt`.
 
 ## Binding to the action layer
 

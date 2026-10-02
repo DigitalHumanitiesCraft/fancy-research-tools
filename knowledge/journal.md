@@ -80,3 +80,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: [design](design.md#motif)
 - Reason: the installed Codex CLI offers no image generation, and a paid image API needs consent. A hand-drawn SVG motif styled per theme took its place, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images).
 
+### 2026-10-02 integrated One design after dhcraft.org
+
+- Source: operator decision to keep the dhcraft.org look and to keep the other designs as vault knowledge
+- Target: `assets/style.css`, all pages, `tools/`, [design](design.md), [specification](specification.md#adr-011-one-design-after-dhcraftorg)
+- Result: the DHCraft theme is merged into the only stylesheet, variants, overview, switch, build script and unused fonts are removed, the watercolour logo became the favicon. Prisma, Edition, Labor and Raster are documented as design documents in the vault, their code stays in commit 54a6fff.
+
