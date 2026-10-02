@@ -1,15 +1,15 @@
-// Browser checks for every page: axe (WCAG 2.2 AA plus best practice), horizontal overflow and
-// broken images, at desktop and narrow width. The page is light only, as dhcraft.org is.
-// With LINKS=1 it also checks every external link of index.html for HTTP 200.
-// Needs Playwright and axe-core from an existing installation and the repository served locally:
-//   PLAYWRIGHT=/path/to/node_modules/playwright AXE=/path/to/axe-core/axe.min.js BASE=http://127.0.0.1:4321 CHANNEL=msedge node tools/check.cjs
-const fs = require("fs");
-const path = require("path");
+// Browser checks for the subpage in the dhcraft.org site: axe (WCAG 2.2 AA plus best practice),
+// horizontal overflow and broken images at desktop and narrow width, and a keyboard pass.
+// With LINKS=1 it also checks every external link of both language versions for HTTP 200.
+// Needs Playwright and axe-core from an existing installation and the site served, by default the
+// site's `npx astro preview --port 4399`. BASE=https://dhcraft.org checks the live pages.
+//   PLAYWRIGHT=/path/to/node_modules/playwright AXE=/path/to/axe-core/axe.min.js CHANNEL=msedge node tools/check.cjs
 const { chromium } = require(process.env.PLAYWRIGHT || "playwright");
 
-const base = process.env.BASE || "http://127.0.0.1:4321";
+const base = process.env.BASE || "http://127.0.0.1:4399";
 const axePath = process.env.AXE || require.resolve("axe-core/axe.min.js");
-const pages = ["/", "/en/", "/datenschutz/", "/en/privacy/", "/404.html"];
+// The site home page is left out, it belongs to the site and has findings of its own.
+const pages = (process.env.PAGES || "/fancy-research-tools/,/en/fancy-research-tools/,/fancy-research-tools/datenschutz/,/en/fancy-research-tools/privacy/").split(",");
 const widths = [1440, 320];
 const schemes = ["light"];
 
@@ -45,7 +45,7 @@ const schemes = ["light"];
   }
   // Keyboard pass: every tab stop shows a focus outline and is neither off screen nor hidden
   // under the sticky header (WCAG 2.4.7 and 2.4.11).
-  for (const url of ["/", "/en/", "/datenschutz/"]) {
+  for (const url of pages.slice(0, 3)) {
     for (const width of widths) {
       const page = await browser.newPage({ viewport: { width, height: 800 }, reducedMotion: "reduce" });
       const res = await page.goto(base + url, { waitUntil: "networkidle" });
@@ -60,7 +60,7 @@ const schemes = ["light"];
           const cs = getComputedStyle(el);
           const r = el.getBoundingClientRect();
           // Obscured means the topmost element at the centre of the focused one belongs to the header.
-          const header = document.querySelector(".site-header");
+          const header = document.querySelector("header.nav");
           const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
           return {
             key: `${el.tagName} ${el.getAttribute("href") || el.textContent.trim().slice(0, 30)}`,
@@ -85,10 +85,11 @@ const schemes = ["light"];
   await browser.close();
 
   if (process.env.LINKS) {
-    const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
+    let html = "";
+    for (const url of pages.slice(0, 2)) html += await (await fetch(base + url)).text();
     const links = [...new Set([...html.matchAll(/href="(https?:\/\/[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, "&")))]
-      // Own pages are checked locally above and may not be published yet.
-      .filter((link) => !link.startsWith("https://dhcraft.org/fancy-research-tools/"));
+      // dhcraft.org itself is covered by the page checks above.
+      .filter((link) => !link.startsWith("https://dhcraft.org/fancy-research-tools/") && !link.startsWith("https://dhcraft.org/en/fancy-research-tools/"));
     for (const link of links) {
       const res = await fetch(link, { method: "GET", redirect: "follow" }).catch((e) => ({ status: e.message }));
       if (res.status !== 200) { failures++; console.log(`FAIL link ${res.status} ${link}`); }

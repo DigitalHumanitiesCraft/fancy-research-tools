@@ -1,5 +1,6 @@
 // Takes the tool screenshots of the page from the live demos, each in its most telling state,
-// at 1440 by 900 CSS pixels and double pixel density, and writes WebP files in 1440 and 720 width.
+// at 1440 by 900 CSS pixels and double pixel density, and writes WebP files in 1440 and 720 width
+// into public/fancy-research-tools/img/ of the site repository.
 // Needs Playwright from an existing installation and network access to the demos:
 //   PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/shoot-tools.cjs [id ...]
 // The teiCrafter recipe loads a synthetic sample from a local teiCrafter clone, set TEICRAFTER_SAMPLE.
@@ -7,7 +8,9 @@ const fs = require("fs");
 const path = require("path");
 const { chromium } = require(process.env.PLAYWRIGHT || "playwright");
 
-const out = path.join(__dirname, "..", "assets", "img");
+// The site repository root, by default the sibling clone named in the vault's Repo-Verzeichnis.
+const site = process.env.SITE || path.join(__dirname, "..", "..", "dhcraft-site");
+const out = path.join(site, "public", "fancy-research-tools", "img");
 const wait = (page, ms) => page.waitForTimeout(ms);
 
 // Each recipe only chooses a state of the real tool. It never alters the tool's interface.

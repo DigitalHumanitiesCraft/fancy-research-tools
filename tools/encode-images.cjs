@@ -1,10 +1,13 @@
 // Encodes a chosen source image as WebP in 1440 and 720 width for the page, through the browser's
 // canvas, so no image library is needed. Source PNGs stay local under assets/img/source/.
 //   PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/encode-images.cjs <source.png> <target-slug>
-// writes assets/img/<target-slug>-1440.webp and assets/img/<target-slug>-720.webp.
+// writes <target-slug>-1440.webp and -720.webp into public/fancy-research-tools/img/ of the site repository.
 const fs = require("fs");
 const path = require("path");
 const { chromium } = require(process.env.PLAYWRIGHT || "playwright");
+
+// The site repository root, by default the sibling clone named in the vault's Repo-Verzeichnis.
+const site = process.env.SITE || path.join(__dirname, "..", "..", "dhcraft-site");
 
 const [source, slug] = process.argv.slice(2);
 if (!source || !slug) throw new Error("usage: node tools/encode-images.cjs <source.png> <target-slug>");
@@ -26,7 +29,7 @@ if (!source || !slug) throw new Error("usage: node tools/encode-images.cjs <sour
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
       return canvas.toDataURL("image/webp", 0.85).split(",")[1];
     }, [png, width]);
-    const file = path.join(__dirname, "..", "assets", "img", `${slug}-${width}.webp`);
+    const file = path.join(site, "public", "fancy-research-tools", "img", `${slug}-${width}.webp`);
     fs.writeFileSync(file, Buffer.from(webp, "base64"));
     console.log(path.basename(file));
   }
