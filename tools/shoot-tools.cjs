@@ -45,15 +45,6 @@ const recipes = {
     await page.getByText("Timeline", { exact: true }).first().click();
     await wait(page, 4000);
   },
-  wissensbilanz: async (page) => {
-    await page.goto("https://dhcraft.org/vetmed-wissensbilanz/?unis=UA,UB,UC,UD,UK,UI,UN,UE&k=1-A-1", { waitUntil: "networkidle" });
-    await wait(page, 3000);
-  },
-  "kulturpool-demo": async (page) => {
-    // Every object in the demo data is Public Domain or CC0, checked on 2026-10-01.
-    await page.goto("https://chpollin.github.io/kulturpool-demo/", { waitUntil: "networkidle" });
-    await wait(page, 5000);
-  },
 };
 
 async function encode(page, png, width, file) {

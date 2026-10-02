@@ -606,12 +606,6 @@
     & img { inline-size: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; }
   }
 
-  .shot.schema { display: grid; place-items: center; aspect-ratio: 16 / 10; background: var(--bg); }
-  .shot.schema .diagram { padding: var(--space-m); background: none; }
-  .d-photo { fill: color-mix(in oklch, var(--yellow) 45%, var(--raised)); stroke: var(--rule); }
-  .d-col rect { fill: var(--raised); stroke: var(--rule); }
-  .d-cell { stroke: var(--rule); stroke-width: 5; stroke-linecap: round; }
-  .d-conflict { fill: none; stroke: var(--red); stroke-width: 2; }
 
   .tool-body > * + * { margin-block-start: var(--space-s); }
   .tool h3 { font-size: var(--step-2); }
@@ -669,7 +663,7 @@
 
   .methods {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr));
     gap: var(--space-l) var(--space-m);
   }
 

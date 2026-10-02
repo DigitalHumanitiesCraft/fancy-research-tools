@@ -86,3 +86,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: `assets/style.css`, all pages, `tools/`, [design](design.md), [specification](specification.md#adr-011-one-design-after-dhcraftorg)
 - Result: the DHCraft theme is merged into the only stylesheet, variants, overview, switch, build script and unused fonts are removed, the watercolour logo became the favicon. Prisma, Edition, Labor and Raster are documented as design documents in the vault, their code stays in commit 54a6fff.
 
+### 2026-10-02 integrated Tool selection narrowed, Research Mission Control added
+
+- Source: operator decision to drop three tools and to add Research Mission Control to the methods
+- Target: `index.html`, `en/index.html`, `assets/style.css`, `tools/shoot-tools.cjs`, [data](data.md)
+- Result: Wissensbilanz-Dashboard, Kulturpool-Demo and Objekt-Bestimmung left the page with their images and diagram styles. Research Mission Control joined as fourth method with a diagram and the state of its own README, and the methods grid runs in two columns.
+

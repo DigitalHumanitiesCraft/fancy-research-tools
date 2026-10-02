@@ -124,7 +124,7 @@ Choice. A tool whose demo shows images under a non-commercial or unclear licence
 
 Reason. The page is commercial, and an image licence must not decide the layout of a service page.
 
-Effect. Objekt-Bestimmung carries a diagram. Kulturpool-Demo moved to a screenshot after its licence field was checked.
+Effect. Objekt-Bestimmung carried a diagram and Kulturpool-Demo a screenshot after its licence field was checked, until both left the page on 2026-10-02. No tool on the page currently needs a diagram.
 
 ### ADR-005 Main variant indexed, other variants hidden from search
 
