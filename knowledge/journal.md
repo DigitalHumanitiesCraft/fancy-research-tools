@@ -98,3 +98,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: [method images](method-images.md), [specification](specification.md#adr-012-generated-illustrations-for-the-method-cards), [design](design.md#generated-images), `AGENTS.md`, `.gitignore`
 - Result: a brief with style, palette, one prompt per method, file names under `assets/img/source/` and acceptance criteria. Generated illustrations on the method cards are allowed by ADR-012.
 
+### 2026-10-02 integrated SZD-HTR and the Stefan Zweig Bibliography
+
+- Source: operator decision to add both tools, reversing their earlier exclusion
+- Target: `index.html`, `en/index.html`, `tools/shoot-tools.cjs`, [data](data.md)
+- Result: SZD-HTR is shown as the tool for transcribing a whole collection with checking tiers, distinct from the interactive coOCR/HTR, with a screenshot of its statistics view that shows no facsimile. The rescued bibliography is shown as a data rescue with source-bound statements. State lines follow each repository's own status.
+

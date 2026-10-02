@@ -45,6 +45,15 @@ const recipes = {
     await page.getByText("Timeline", { exact: true }).first().click();
     await wait(page, 4000);
   },
+  // The statistics view shows the checking tiers and no facsimile, whose image rights lie with the archive.
+  "szd-htr": async (page) => {
+    await page.goto("https://chpollin.github.io/szd-htr-ocr-pipeline/#stats", { waitUntil: "networkidle" });
+    await wait(page, 3000);
+  },
+  klawiter: async (page) => {
+    await page.goto("https://chpollin.github.io/klawiter-rescue/", { waitUntil: "networkidle" });
+    await wait(page, 2000);
+  },
 };
 
 async function encode(page, png, width, file) {
