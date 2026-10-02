@@ -889,7 +889,121 @@
   }
 }
 
+@layer components {
+  /* The abilities as small hexagons, the same shapes as the abilities strip, so a row can be scanned. */
+  .traits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    font-size: var(--step--1);
+    font-weight: 500;
+
+    & li { display: inline-flex; align-items: center; gap: 0.45rem; }
+  }
+
+  .trait-icon {
+    flex: none;
+    inline-size: 1.6rem;
+    block-size: 1.75rem;
+    padding: 0.38rem;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: var(--purple);
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Maturity in one word; the colour repeats what the word says and never carries it alone. */
+  .maturity {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.1rem 0.65rem;
+    border-radius: 999px;
+    background: color-mix(in oklch, var(--c) 18%, white);
+    color: var(--ink);
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    &::before { content: ""; inline-size: 0.5rem; block-size: 0.5rem; border-radius: 50%; background: var(--c); }
+    &.m-use { --c: var(--green); }
+    &.m-rc { --c: var(--blue); }
+    &.m-preview { --c: var(--orange); }
+    &.m-experiment { --c: var(--pink); }
+  }
+
+  .more {
+    max-inline-size: var(--measure);
+    font-size: var(--step--1);
+
+    & summary {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+      inline-size: fit-content;
+      padding-block: 0.35rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      list-style: none;
+    }
+    & summary::-webkit-details-marker { display: none; }
+    & summary::after { content: "+"; font-weight: 700; color: var(--purple); }
+    &[open] summary::after { content: "−"; }
+    & summary:hover { color: var(--purple); }
+    & p { margin-block-start: var(--space-xs); color: var(--text-muted); }
+  }
+
+  .method-figure {
+    & a { display: block; border-radius: var(--radius); }
+    & img { inline-size: 100%; aspect-ratio: 16 / 10; object-fit: contain; border-radius: var(--radius); background: white; }
+    & figcaption { margin-block-start: 0.35rem; font-size: 0.75rem; color: var(--text-muted); }
+  }
+
+  ul.claims { gap: var(--space-s); align-items: start; }
+
+  .claims > li {
+    padding: var(--space-s) var(--space-m);
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+
+    & summary {
+      display: flex;
+      align-items: center;
+      gap: var(--space-s);
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.1rem;
+      list-style: none;
+    }
+    & summary::-webkit-details-marker { display: none; }
+    & summary::after { content: "+"; margin-inline-start: auto; color: var(--purple); }
+    & details[open] summary::after { content: "−"; }
+    & p { margin-block-start: var(--space-xs); color: var(--text-muted); }
+  }
+
+  .claim-icon {
+    flex: none;
+    inline-size: 2.4rem;
+    block-size: 2.6rem;
+    padding: 0.6rem;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: var(--ink);
+    fill: none;
+    stroke: white;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
 @media print {
+  details > *:not(summary) { display: block; }
+
   .site-header, .actions, .compare, .abilities { display: none; }
   .section { padding-block: 1.5rem; }
   .site-footer { background: none; color: black; }

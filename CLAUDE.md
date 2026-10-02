@@ -37,6 +37,7 @@ The page offers and explains a service of Digital Humanities Craft OG. The tools
 
 ```
 node --check tools/*.cjs
+PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/encode-images.cjs assets/img/source/<file>.png <slug>   # WebP 1440 and 720
 PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge node tools/shoot-og.cjs
 PLAYWRIGHT=/path/to/node_modules/playwright CHANNEL=msedge TEICRAFTER_SAMPLE=/path/to/teiCrafter/docs/data/editor/zbz-hersch-synthetic.xml node tools/shoot-tools.cjs
 PLAYWRIGHT=/path/to/node_modules/playwright AXE=/path/to/axe-core/axe.min.js CHANNEL=msedge LINKS=1 node tools/check.cjs

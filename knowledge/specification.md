@@ -202,4 +202,4 @@ Choice. Each method card gets one generated watercolour illustration after the b
 
 Reason. Methods have no interface to photograph, so a screenshot cannot serve as evidence there, and the evidence stays in the state line and its link. An illustration in the watercolour language of the DHCraft logo ties the cards to the design.
 
-Effect. Source PNGs stay local and out of Git, their prompts are committed. The diagrams remain until the operator has chosen the images.
+Effect. Source PNGs stay local and out of Git, their prompts are committed. The operator chose the series infographic-v3, which carries a few English key terms, so the alt text describes each flow in words and the image links to its large version for small screens.

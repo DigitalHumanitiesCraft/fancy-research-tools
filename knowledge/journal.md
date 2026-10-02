@@ -104,3 +104,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: `index.html`, `en/index.html`, `tools/shoot-tools.cjs`, [data](data.md)
 - Result: SZD-HTR is shown as the tool for transcribing a whole collection with checking tiers, distinct from the interactive coOCR/HTR, with a screenshot of its statistics view that shows no facsimile. The rescued bibliography is shown as a data rescue with source-bound statements. State lines follow each repository's own status.
 
+### 2026-10-02 integrated Condensed German page with method illustrations
+
+- Source: operator request for less text, symbols instead of prose and images that fit the design
+- Target: `index.html`, `assets/style.css`, `tools/encode-images.cjs`, [design](design.md#interaction-patterns), [data](data.md#images)
+- Result: visible text roughly halved by one-sentence solutions, ability icons, maturity chips and `<details>` for state and evidence. The method cards show the generated infographic-v3 series. The English page follows after the operator has reviewed the German draft.
+
