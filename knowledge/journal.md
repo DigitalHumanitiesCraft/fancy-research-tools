@@ -137,3 +137,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: `src/i18n/fancy.ts` and `src/components/fancy/FancyPage.astro` in the site repository, [design](design.md#quality-claims), [plan](plan.md)
 - Result: a read-only agent checked every claim against code, tests and knowledge bases of the five tools. Documented requirements held everywhere. Tests, code review and expert control are now phrased as the working method for client projects. Open formats name TEI, PAGE XML, METS/MODS, JSON-LD and CSV and IIIF as image input. Expert control states which layer of model, agent and expert a content has reached. GAMS is offered, no longer promised on request. The prism left the hero and the share image was retaken.
 - Open: GAMS conditions, review state in coOCR/HTR, licence of coOCR/HTR.
+
+### 2026-10-02 integrated Principles instead of quality claims
+
+- Source: operator correction that Promptotyping is one method among several and that the provider does not review code, with a request for a more formal register
+- Target: `src/i18n/fancy.ts` in the site repository, [design](design.md#principles), [ADR-013](specification.md#adr-013-positioning-as-an-agentic-engineering-offer)
+- Result: the section is titled Grundsätze. Project knowledge comes first and determines the context engineering method. Tests and code review gave way to a framework for coding agents and a declared maturity that names professional revision and independent review as conditions for productive use. "Passt nicht" names productive operation without independent review. Hero, offer, models, costs, process and request moved to a formal register, and costs mention model usage fees.

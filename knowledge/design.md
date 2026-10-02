@@ -57,7 +57,11 @@ Until 2026-10-02 the page existed in five looks generated from one content sourc
 
 Until 2026-10-02 a hand-drawn SVG in the hero showed a ray split by a prism into the watercolour palette. The operator removed it, the hero now carries text and the soft wash only. The SVG remains in the page history of this repository and of the site repository.
 
-## Quality claims
+## Principles
+
+The section `#qualitaet` is titled "Grundsätze". Its six items are project knowledge and method, a framework for coding agents, declared maturity, open formats, expert control and handover. The provider understands the project first and chooses the context engineering method per project, Promptotyping being one of several. The provider does not review code. It designs knowledge base, requirements, sample data and agent-run tests as the frame for coding agents, and states that productive use needs professional revision and an independent review. The copy uses a formal scholarly register, with traceability, provenance and reuse as its terms.
+
+### Earlier quality claims
 
 Each quality claim is either backed by all tools shown or phrased as the working method for client projects, which the provider can keep. A read-only check of the five tool repositories on 2026-10-02 found the earlier wording too strong in three places, approval before adoption of model output, a browser test of every tool and archiving in GAMS on request. The current wording states that model output, agent checks and expert confirmation stay distinguishable and only expert confirmation counts as established, names the open formats the tools actually read and write, and offers GAMS through the framework agreement. The review ability icon reads "Fachliche Prüfung im Werkzeug" instead of a check of every change.
 
