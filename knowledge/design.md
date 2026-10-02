@@ -57,9 +57,9 @@ A hand-drawn SVG above the methods section shows a ray split by a prism into the
 
 ## Generated images
 
-No generated image is planned, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images). If one is produced later, these rules hold.
+The method cards get generated illustrations, see [method images](method-images.md) for the brief and [specification](specification.md#adr-012-generated-illustrations-for-the-method-cards) for the decision. Every generated image follows these rules.
 
-- It shows the motif only. No tool, no interface, no person, no logo, no legible text.
+- It shows a motif or the idea of a method. No tool, no interface, no person, no logo, no legible text.
 - It imitates no living artist and no identifiable existing artwork.
 - It is labelled on the page, in the figure caption, as generated with the model named.
 - Its prompt, model and date are recorded in [data](data.md#images).

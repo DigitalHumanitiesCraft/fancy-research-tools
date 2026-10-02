@@ -31,6 +31,7 @@ This knowledge base serves anyone who changes the website "fancy (research) tool
 | [specification](specification.md) | Specification | What must the page do, and which decisions hold? | when a requirement or decision changes |
 | [data](data.md) | Material | Which facts does the page state about tools and provider, and where do they come from? | whenever a tool's state, link or licence changes |
 | [design](design.md) | Design | How does the page look? | when the look changes |
+| [method images](method-images.md) | Brief | Which images does an image-generating agent produce for the method cards, and where does it save them? | when a method or the image style changes |
 | [testing](testing.md) | Quality Assurance | Which checks guard a change, and how are they run? | when a check is added or changes |
 | [plan](plan.md) | Planning | Which accepted work comes next, which decisions are open? | when work is accepted, done or decided |
 | [handoff](handoff.md) | Handoff | Which received inputs await integration? | on receipt or processing of a point |

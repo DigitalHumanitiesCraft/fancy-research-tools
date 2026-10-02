@@ -158,6 +158,8 @@ Choice. Tool rows show only real screenshots or schematic diagrams. Generated im
 
 Reason. The page earns trust through evidence links. A generated image in the place of a screenshot would claim an interface that does not exist.
 
+Amended by [ADR-012](#adr-012-generated-illustrations-for-the-method-cards), which also allows generated illustrations on the method cards.
+
 ### ADR-009 Decisions taken on the operator's behalf
 
 Context. The operator asked on 2026-10-01 for every open decision to be taken and carried out.
@@ -191,3 +193,13 @@ Choice. The DHCraft theme is merged into `assets/style.css` and is the only desi
 Reason. The page reads as part of the provider's site, and one stylesheet without a build step is simpler to maintain.
 
 Effect. Old variant addresses lead to the 404 page. The page is light only.
+
+### ADR-012 Generated illustrations for the method cards
+
+Context. The method cards carried SVG diagrams in four different visual grammars. On 2026-10-02 the operator asked for images that fit the design, produced by Codex, which can generate images.
+
+Choice. Each method card gets one generated watercolour illustration after the brief in [method images](method-images.md). The images show the idea of a method and never a tool, an interface, a person or writing. They are labelled as generated with the model named.
+
+Reason. Methods have no interface to photograph, so a screenshot cannot serve as evidence there, and the evidence stays in the state line and its link. An illustration in the watercolour language of the DHCraft logo ties the cards to the design.
+
+Effect. Source PNGs stay local and out of Git, their prompts are committed. The diagrams remain until the operator has chosen the images.
