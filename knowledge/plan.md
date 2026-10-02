@@ -34,9 +34,8 @@ An offer page on dhcraft.org that visitors find from the site navigation and the
 
 ## Open points
 
-- The conditions under which client research data enter GAMS are not documented. The services card on the dhcraft.org home page says "Langzeitarchivierung inklusive", while the offers in the operator's vault bill archiving separately. The page says only that archiving is offered through the framework agreement.
+- The conditions under which client research data enter GAMS are not documented. The offers in the operator's vault bill archiving separately, and both this page and the home page say only that archiving is offered.
 - coOCR/HTR keeps no review state per line or page, so the principle Fachliche Kontrolle holds for it only in part.
 - coOCR/HTR puts its code under CC BY 4.0 against the house rule of MIT for code. An external contributor's code came in under CC BY, so a change needs that contributor's consent or a legal check.
 - Real cases with their effort, as evidence that a small budget suffices, need the consent of the projects behind them.
 - Offers for work on client data should name the model access and the roles under the EU AI Act, a clause for the offer template and a legal review.
-- The video dates on the dhcraft.org home page fail the contrast check. This concerns the site and predates the move of the page.
