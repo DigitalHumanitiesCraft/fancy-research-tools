@@ -9,7 +9,7 @@ method:
 status: active
 language: en
 created: 2026-10-01
-updated: 2026-10-01
+updated: 2026-10-02
 authors: [Christopher Pollin]
 generated-with: Claude Code (Claude Opus 5.5)
 template:
@@ -77,7 +77,7 @@ The curated backward-looking provenance index of the project. Current facts and 
 ### 2026-10-01 rejected Generated motif images through Codex
 
 - Source: operator request to generate images with Codex
-- Target: [design](design.md#motif)
+- Target: [design](design.md#design-history)
 - Reason: the installed Codex CLI offers no image generation, and a paid image API needs consent. A hand-drawn SVG motif styled per theme took its place, see [specification](specification.md#adr-010-hand-drawn-motif-instead-of-generated-images).
 
 ### 2026-10-02 integrated One design after dhcraft.org
@@ -116,30 +116,32 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: `index.html`, `assets/style.css`, [design](design.md#interaction-patterns), [specification](specification.md)
 - Result: the schematic letter figure and the provider line left the hero, the prism motif moved there. The abilities strip became a one-line icon legend. Tool and method rows have four levels with icon-only abilities and plain links. "Daten bleiben im Haus" was replaced by "LLM-gestützt" and "Läuft im Browser", because coOCR/HTR, teiCrafter, SZD-HTR and the bibliography pipeline send data to a model, coOCR/HTR and teiCrafter with a selectable provider including a local one.
 
-
 ### 2026-10-02 integrated Agentic engineering offer
 
 - Source: operator decision to build on the concept "Prompt Engineering as a Service" and present the page as the offer for agentic engineering, with research by three read-only agents on the vault, dhcraft.org, terms and comparable offers
 - Target: `index.html`, `en/index.html`, `assets/style.css`, [ADR-013](specification.md#adr-013-positioning-as-an-agentic-engineering-offer), [project](project.md), [data](data.md#provider), [design](design.md#interaction-patterns), `CLAUDE.md`
 - Result: hero line "Agentic Engineering für alle, die mit Wissen arbeiten", a section `#angebot` with learning, building together and building for the client, a models block that names frontier language models without providers and two places of use, a costs block with flexible billing, budget first and structural reasons for low cost, a quality claim on reviewed code, Sichtung in the first process step, two new fit items and a budget question in the request. The English page now mirrors the German structure and no longer claims that data stay in-house.
-- Open: real cases with effort need consent, the offer template needs a clause on model access and AI Act roles.
 
 ### 2026-10-02 integrated The page moves into dhcraft.org
 
 - Source: operator decision that the agentic engineering offer belongs on dhcraft.org as a subpage
 - Target: site repository `dhcraft-site` (`src/i18n/fancy.ts`, `src/components/fancy/`, `src/pages/fancy-research-tools/`, `src/pages/en/fancy-research-tools/`), [ADR-014](specification.md#adr-014-the-page-moves-into-the-dhcraftorg-site), `README.md`, `CLAUDE.md`
 - Result: the page is rebuilt in Astro with identical main content, verified by a text and attribute comparison of both languages and the privacy pages, and passes axe, overflow, image and keyboard checks at 1440 and 320. The site navigation got the item "Agentic Engineering" and a later burger breakpoint, the inactive language link a contrast fix. Offer and team links became relative.
-- Open: switching off GitHub Pages of this repository after the site deploy, the contrast of video dates on the dhcraft.org home page.
 
 ### 2026-10-02 integrated Quality claims checked against the tools, prism removed
 
 - Source: operator request for quality claims that are strictly true, and for an empty right half of the hero
-- Target: `src/i18n/fancy.ts` and `src/components/fancy/FancyPage.astro` in the site repository, [design](design.md#quality-claims), [plan](plan.md)
+- Target: `src/i18n/fancy.ts` and `src/components/fancy/FancyPage.astro` in the site repository, [design](design.md#history-of-the-quality-claims), [plan](plan.md)
 - Result: a read-only agent checked every claim against code, tests and knowledge bases of the five tools. Documented requirements held everywhere. Tests, code review and expert control are now phrased as the working method for client projects. Open formats name TEI, PAGE XML, METS/MODS, JSON-LD and CSV and IIIF as image input. Expert control states which layer of model, agent and expert a content has reached. GAMS is offered, no longer promised on request. The prism left the hero and the share image was retaken.
-- Open: GAMS conditions, review state in coOCR/HTR, licence of coOCR/HTR.
 
 ### 2026-10-02 integrated Principles instead of quality claims
 
 - Source: operator correction that Promptotyping is one method among several and that the provider does not review code, with a request for a more formal register
 - Target: `src/i18n/fancy.ts` in the site repository, [design](design.md#principles), [ADR-013](specification.md#adr-013-positioning-as-an-agentic-engineering-offer)
 - Result: the section is titled Grundsätze. Project knowledge comes first and determines the context engineering method. Tests and code review gave way to a framework for coding agents and a declared maturity that names professional revision and independent review as conditions for productive use. "Passt nicht" names productive operation without independent review. Hero, offer, models, costs, process and request moved to a formal register, and costs mention model usage fees.
+
+### 2026-10-02 corrected Knowledge base after the move into the site
+
+- Source: coordinating brief with the operator's corrections, the repository state after commit 7c3577d, which retargeted `tools/` and removed the standalone page, and `src/i18n/fancy.ts`, `src/components/fancy/`, the route files, `astro.config.mjs` and `src/components/Nav.astro` of the site repository
+- Target: all documents in `knowledge/`, `CLAUDE.md`, `AGENTS.md`, `README.md`
+- Result: every document now describes the page as a subpage built by the site repository and this repository as its knowledge and asset workshop, recorded as an amendment of [ADR-014](specification.md#adr-014-the-page-moves-into-the-dhcraftorg-site). Superseded or amended decisions carry a marker with a pointer. The operator's copy corrections became the [content rules](specification.md#content-rules), the state line gave way to the terms maturity chip and ability icon, [data](data.md) points to the site repository and records anchor and maturity per entry, [method images](method-images.md) describes the series in use and the open version 4 of Research Mission Control, [testing](testing.md) the checks against the site preview. Open lists left the journal entries for [plan](plan.md).

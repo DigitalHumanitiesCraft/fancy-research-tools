@@ -1,15 +1,15 @@
 # fancy (research) tools!
 
-The page now lives in the dhcraft.org site repository (`DigitalHumanitiesCraft/digitalhumanitiescraft.github.io`, local `dhcraft-site`) as a subpage at `/fancy-research-tools/` and `/en/fancy-research-tools/`, see ADR-014 in [knowledge/specification.md](knowledge/specification.md). Content and styles are edited there, in `src/i18n/fancy.ts` and `src/components/fancy/`. This repository keeps the knowledge base, the image sources and the tools that retake screenshots, and its HTML stays as the state before the move.
+Knowledge and asset workshop for "fancy (research) tools!", the agentic engineering offer of Digital Humanities Craft OG. The page itself is a subpage of dhcraft.org, at https://dhcraft.org/fancy-research-tools/ and https://dhcraft.org/en/fancy-research-tools/, and is built and deployed by the site repository [DigitalHumanitiesCraft/digitalhumanitiescraft.github.io](https://github.com/DigitalHumanitiesCraft/digitalhumanitiescraft.github.io).
 
-Website for a service of Digital Humanities Craft OG: custom tools that speed up a concrete workflow, for research and cultural heritage institutions as well as companies and public administration, plus adaptable tools and the methods and frameworks behind them.
+This repository holds:
 
-Static HTML and CSS without a build step and without JavaScript, served by GitHub Pages from the repository root.
+- `knowledge/`, the project knowledge about the page, its facts, design, decisions and checks, starting at [knowledge/INDEX.md](knowledge/INDEX.md).
+- `assets/img/source/`, the prompt logs of the generated method images.
+- `tools/`, scripts that take the tool screenshots, encode chosen images and render the share image into the site repository, and run accessibility, layout, image, keyboard and link checks against the site's preview build. They need an existing Playwright installation.
 
-The page follows the look of dhcraft.org. `index.html` holds the German page, `en/index.html` the English one, `assets/style.css` the only stylesheet, and there is no build step. `tools/shoot-tools.cjs` retakes the tool screenshots from the live demos, `tools/shoot-og.cjs` renders the link preview and `tools/check.cjs` runs the accessibility, layout, image and link checks. All three need an existing Playwright installation.
-
-Project knowledge lives in [knowledge/INDEX.md](knowledge/INDEX.md).
+The earlier standalone page remains in Git history. Its last published state is commit 8648a35.
 
 ## License
 
-Code under the MIT License (see `LICENSE`), texts under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Excluded are the DHCraft logos (`assets/img/dhcraft-logo-line.svg`, `assets/img/favicon-32.png` and `assets/img/apple-touch-icon.png`, all rights reserved by Digital Humanities Craft OG), the fonts in `assets/fonts/` (Instrument Sans and Sora, each under the SIL Open Font License) and the screenshots, which show the respective tools under their own licences.
+Code under the MIT License (see `LICENSE`). Texts and image prompts under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
