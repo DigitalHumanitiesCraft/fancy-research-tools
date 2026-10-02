@@ -183,6 +183,8 @@ Choice. One hand-drawn SVG motif, a ray split by a prism into the spectrum, sits
 
 Reason. The motif needs no labelling as generated, stays sharp at any size and weighs a few kilobytes. The prompts in [design](design.md#generated-images) remain an option for later.
 
+Effect, 2026-10-02. The operator removed the motif from the hero, which keeps its right half empty.
+
 
 ### ADR-011 One design after dhcraft.org
 

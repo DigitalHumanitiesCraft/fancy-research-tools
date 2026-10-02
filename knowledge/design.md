@@ -40,12 +40,12 @@ The values follow `src/styles/global.css` and the Nav, Hero, Services and Contac
 ## Interaction patterns
 
 1. User task: understand the offer, judge the fit, send a request by conversation or by documents for a first prototype.
-2. First decision: name, the line "Agentic Engineering für alle, die mit Wissen arbeiten", request button and the prism motif.
+2. First decision: name, the line "Agentic Engineering für alle, die mit Wissen arbeiten", request button. The right half of the hero stays empty.
 3. Depth: the offer with three ways of working as cards with a hexagon icon each, then models and data and costs as two plain cards, then tools and methods with maturity and evidence, quality, who we are, client institutions, process, fit lists and the request.
 4. Tool and method rows have four levels: title, one sentence, a meta row with maturity chip and ability icons, and a link row with one button and plain links (Code, Belege, Anpassen anfragen). The ability icons carry their name as hidden text for screen readers and as `title` for mouse users. A one-line legend under the tools title names every icon, so touch users can read them without hover. Abilities used: LLM-gestützt (with the model choice noted where the tool lets the user pick providers down to a local model), fachliche Prüfung, Überblick über den ganzen Bestand, lesbarer Text statt Tags, läuft im Browser, Belege bis zur Quelle. A claim that data stay in-house is not used, because the LLM-supported tools send data to the chosen model.
 5. Maturity chips: Im Einsatz (green), Release Candidate (blue), Forschungsvorschau, Laufende Demo and Bestand gesichert (orange), Experiment (pink). The word carries the meaning, the colour repeats it.
 6. Addresses: every section and every tool or method carries a fragment identifier.
-7. Layout: on wide screens the hero sets text beside the prism motif, tool rows run in two alternating columns and methods in two. On narrow screens everything stacks, the motif is left out and the section links become a swipeable row with the request link first.
+7. Layout: on wide screens the hero keeps its text in the left half, tool rows run in two alternating columns and methods in two. On narrow screens everything stacks, the motif is left out and the section links become a swipeable row with the request link first.
 8. Motion: buttons lift slightly on hover and stay still under reduced motion.
 9. Language: the footer links the German and the English page.
 
@@ -55,7 +55,11 @@ Until 2026-10-02 the page existed in five looks generated from one content sourc
 
 ## Motif
 
-A hand-drawn SVG in the hero shows a ray split by a prism into the watercolour palette, as an image for tools that make knowledge visible. It is decorative and hidden from assistive technology. The bands are softened like the hero wash, the prism is white with an ink outline.
+Until 2026-10-02 a hand-drawn SVG in the hero showed a ray split by a prism into the watercolour palette. The operator removed it, the hero now carries text and the soft wash only. The SVG remains in the page history of this repository and of the site repository.
+
+## Quality claims
+
+Each quality claim is either backed by all tools shown or phrased as the working method for client projects, which the provider can keep. A read-only check of the five tool repositories on 2026-10-02 found the earlier wording too strong in three places, approval before adoption of model output, a browser test of every tool and archiving in GAMS on request. The current wording states that model output, agent checks and expert confirmation stay distinguishable and only expert confirmation counts as established, names the open formats the tools actually read and write, and offers GAMS through the framework agreement. The review ability icon reads "Fachliche Prüfung im Werkzeug" instead of a check of every change.
 
 ## Generated images
 

@@ -130,3 +130,10 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: site repository `dhcraft-site` (`src/i18n/fancy.ts`, `src/components/fancy/`, `src/pages/fancy-research-tools/`, `src/pages/en/fancy-research-tools/`), [ADR-014](specification.md#adr-014-the-page-moves-into-the-dhcraftorg-site), `README.md`, `CLAUDE.md`
 - Result: the page is rebuilt in Astro with identical main content, verified by a text and attribute comparison of both languages and the privacy pages, and passes axe, overflow, image and keyboard checks at 1440 and 320. The site navigation got the item "Agentic Engineering" and a later burger breakpoint, the inactive language link a contrast fix. Offer and team links became relative.
 - Open: switching off GitHub Pages of this repository after the site deploy, the contrast of video dates on the dhcraft.org home page.
+
+### 2026-10-02 integrated Quality claims checked against the tools, prism removed
+
+- Source: operator request for quality claims that are strictly true, and for an empty right half of the hero
+- Target: `src/i18n/fancy.ts` and `src/components/fancy/FancyPage.astro` in the site repository, [design](design.md#quality-claims), [plan](plan.md)
+- Result: a read-only agent checked every claim against code, tests and knowledge bases of the five tools. Documented requirements held everywhere. Tests, code review and expert control are now phrased as the working method for client projects. Open formats name TEI, PAGE XML, METS/MODS, JSON-LD and CSV and IIIF as image input. Expert control states which layer of model, agent and expert a content has reached. GAMS is offered, no longer promised on request. The prism left the hero and the share image was retaken.
+- Open: GAMS conditions, review state in coOCR/HTR, licence of coOCR/HTR.
