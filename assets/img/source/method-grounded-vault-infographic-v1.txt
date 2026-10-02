@@ -1,0 +1,16 @@
+Date: 2026-10-02
+Tool: built-in image_gen.imagegen
+Model: gpt-image (generic generated-file metadata identifier). Exact model version is not exposed by the tool.
+Requested format: PNG, 1600 x 1000, opaque white background. Actual dimensions are recorded below after inspection. No resizing or conversion performed.
+
+Reference images:
+C:\Users\Chrisi\Documents\GitHub\fancy-research-tools\assets\img\source\method-grounded-vault-b.png
+
+Exact generation prompt:
+Erzeuge eine akademische Infografik für eine Digital-Humanities-Website. Vollständig reinweißer Hintergrund #ffffff ohne Papiertextur oder Farbnebel. Feine Navy-Tintenlinien #1e2749 und zurückhaltende Aquarellflächen nur innerhalb der dargestellten Dokumente und Motive. Konkrete, fein gezeichnete Materialien wie in der Stilreferenz. Großzügige freie Ränder. Querformat 1600 × 1000 Pixel, 16:10. Gut lesbare deutsche Beschriftungen, ruhige klare Typografie. Keine Markenlogos, Personen, Roboter, Bildschirme, dekorativen Hexagonreihen, erfundenen Zusatzbeschriftungen oder Wasserzeichen.
+
+Überarbeite das Referenzbild zu einer akademischen Infografik. Erhalte die räumlich gestaffelten Papierdokumente, feinen Navy-Konturen und den grünen Belegfaden #5c9e4a. Papiertextur nur auf den dargestellten Dokumenten, der umgebende Hintergrund reinweiß. Fünf unterscheidbare leicht überlappende Blätter mit gut lesbaren Beschriftungen außerhalb der Blätter „Originalquelle“, „Volltext“, „Distillat“, „Aussage“, „Ergebnistext“. Die Originalquelle besitzt zurückhaltende gealterte Materialstruktur; folgende Blätter werden zunehmend geordnet und hell. Eine konkrete Quellenstelle ist grün hervorgehoben. Ein feiner grüner Faden verbindet entsprechende Stellen auf jedem einzelnen Blatt mit kleinen Ankerpunkten. Beschrifte den Zusammenhang „Belegpfad“. Alle Zwischenstufen werden durchlaufen, sodass der Ergebnistext bis zur Originalquelle zurückverfolgt werden kann. Auf den Blättern wenige einfache Linien, die Quellenmarkierung und der Zusammenhang stehen im Mittelpunkt. Ein kleiner räumlich abgesetzter Prüfbereich trägt drei getrennte Funktionen „Formale Validierung“, „Maschinelle Prüfung“, „Menschliche Verifikation“, mit unterscheidbaren verständlichen Symbolen ohne pauschale grüne Erfolgshäkchen. Entferne die drei frei schwebenden Hexagone der Vorlage.
+
+Exact correction prompt applied to the generated image:
+Ändere ausschließlich den unteren grünen Pfeil „Belegpfad“. Der begleitende Text lautet „Vom Ergebnistext zurück zur Originalquelle“. Der Pfeil muss dazu passend RECHTS am Ergebnistext beginnen, unten nach LINKS laufen und mit einer nach OBEN gerichteten Pfeilspitze am linken Originalquellenblatt enden. Keine Pfeilspitze rechts beim Ergebnistext. Alle anderen Motive, Texte, Farben, die fünf Dokumente mit ihrem grünen Faden, der Prüfbereich und der weiße Hintergrund bleiben unverändert.
+Actual format: PNG, 1586 x 992, Format24bppRgb.

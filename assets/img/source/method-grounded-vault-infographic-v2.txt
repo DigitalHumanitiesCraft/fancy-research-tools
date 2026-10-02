@@ -1,0 +1,13 @@
+Date: 2026-10-02
+Tool: built-in image_gen.imagegen
+Model: gpt-image (generic identifier in generated-image metadata); exact version unavailable.
+Reference: C:\Users\Chrisi\Documents\GitHub\fancy-research-tools\assets\img\source\method-grounded-vault-infographic-v1.png
+Requested: 1600 x 1000 PNG, white opaque background.
+No resizing or conversion performed.
+
+Exact edit prompt:
+Überarbeite das beigefügte Bild zu einer deutlich textärmeren akademischen Infografik. Erhalte die Aquarellmotive, Navy-Tintenlinien, methodische Farbe und den vollständig weißen Hintergrund. Entferne ALLE Untertitel, erklärenden Sätze, Pfeilbeschriftungen und Legendentexte. Ausschließlich die unten ausdrücklich zugelassenen Hauptbegriffe dürfen als lesbarer Text stehen bleiben. Keine zusätzlichen Texte erzeugen. Beziehungen und Prüffunktionen werden nur durch bestehende Symbole und gerichtete Pfeile gezeigt. Nutze die frei werdenden Flächen als ruhigen Weißraum und ordne Elemente bei Bedarf kompakter, ohne den Ablauf zu verändern. Keine Logos, Menschen, Roboter, Bildschirme. Querformat 16:10, gewünschte Größe 1600 × 1000 Pixel.
+
+Einzig zugelassene Beschriftungen „Originalquelle“, „Volltext“, „Distillat“, „Aussage“, „Ergebnistext“. Entferne ALLE anderen Wörter, also auch „Belegpfad“, „Prüfbereich“ und alle drei Bezeichnungen der Prüffunktionen. Rechts bleiben ausschließlich die drei kleinen unbeschrifteten Prüfsymbole Dokumentstruktur, Zahnräder und Lupe erhalten. Entferne den Rahmen des Prüfbereichs. Grounded Vault ist fachübergreifend. Ersetze sämtliche historischen, bräunlichen, gealterten, ausgefransten Pergamente durch moderne neutrale wissenschaftliche Dokumente mit klaren Papierkanten. Die Originalquelle kann ein Forschungsartikel aus der Biologie sein und zeigt eine kleine dezente abstrakte biologische Strukturskizze oder Datengrafik sowie angedeutete Textlinien, keine lesbaren Zusatzwörter. Kein Digital-Humanities-spezifisches Motiv. Erhalte die fünf räumlich gestaffelten Dokumente, die grüne Quellenmarkierung und den grünen Faden mit einem Ankerpunkt auf JEDEM Dokument. Erhalte den unteren unbeschrifteten Rückverweis vom Ergebnistext zur Originalquelle mit der Pfeilspitze an der Originalquelle.
+
+Actual: 1586 x 992, Format24bppRgb.

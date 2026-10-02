@@ -1,0 +1,15 @@
+Prompt:
+Watercolour illustration isolated on a completely uniform pure white background (#ffffff), with no paper texture in the background. In the centre a small stack of loose index cards, drawn with thin deep navy ink lines (#1e2749), the lines on the cards are plain strokes without writing. Around it four hexagons in loose violet watercolour (#8a4fa3) sit on a circular path, connected by one continuous looping brushstroke that runs clockwise from hexagon to hexagon and back to the cards, suggesting repeated rounds that return to the same knowledge base. Inside the four hexagons, small navy line pictograms show a plain planning card, a magnifying glass for exploration, a funnel for distillation and a simple wrench for implementation. These are literal object drawings, without symbols resembling letters. Small touches of orange (#e39a3b) and blue (#85aede). Soft bleeding edges, generous empty white space around the motif, calm and scholarly. No text, no letters, no numbers, no people, no logos, no screens. Aspect ratio 16:10.
+
+Output a single PNG image at exactly 1600 by 1000 pixels, sRGB colour space, fully opaque. Keep at least ten percent empty white margin on every side. All marks and watercolour pigment stay inside the central motif. Outside the objects, use only flat pure white (#ffffff), without shadows, grain, vignette, frame or washes. No glow, no 3D rendering, no photorealism. No brand marks, no logos, no lettering, no watermark.
+
+Tool: Built-in image_gen in Codex
+Model identifier: gpt-image (generic identifier in embedded C2PA softwareAgent.version)
+Model version: Not disclosed by the tool or embedded metadata.
+Date: 2026-10-02 (Europe/Vienna)
+
+Delivery observations:
+The native output is 1586 x 992 pixels, opaque RGB PNG. No conversion or resizing was performed.
+No embedded sRGB or ICC profile was returned, so sRGB is not independently verified.
+Pure white (#ffffff) was requested. Background samples show small near-white variations.
+The original prompt was adjusted to the operator's later white-background instruction. Promptotyping pictograms were added to make the steps more recognisable.

@@ -1008,3 +1008,13 @@
   .section { padding-block: 1.5rem; }
   .site-footer { background: none; color: black; }
 }
+
+@layer components {
+  .status-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.9rem;
+    font-size: var(--step--1);
+  }
+}
