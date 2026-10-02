@@ -8,7 +8,7 @@ const fs = require("fs");
 const path = require("path");
 const { chromium } = require(process.env.PLAYWRIGHT || "playwright");
 
-// The site repository root, by default the sibling clone named in the vault's Repo-Verzeichnis.
+// The site repository root, by default the sibling clone `dhcraft-site`, see CLAUDE.md.
 const site = process.env.SITE || path.join(__dirname, "..", "..", "dhcraft-site");
 const out = path.join(site, "public", "fancy-research-tools", "img");
 const wait = (page, ms) => page.waitForTimeout(ms);
@@ -76,6 +76,7 @@ async function encode(page, png, width, file) {
 (async () => {
   const ids = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(recipes);
   const browser = await chromium.launch({ channel: process.env.CHANNEL || undefined });
+  let failures = 0;
   for (const id of ids) {
     const page = await browser.newPage({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2, colorScheme: "light", reducedMotion: "reduce" });
     try {
@@ -87,9 +88,11 @@ async function encode(page, png, width, file) {
       await blank.close();
       console.log(`ok   ${id}`);
     } catch (e) {
+      failures++;
       console.log(`FAIL ${id} ${e.message}`);
     }
     await page.close();
   }
   await browser.close();
+  process.exit(failures ? 1 : 0);
 })();

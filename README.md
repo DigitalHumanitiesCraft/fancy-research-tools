@@ -6,7 +6,7 @@ This repository holds:
 
 - `knowledge/`, the project knowledge about the page, its facts, design, decisions and checks, starting at [knowledge/INDEX.md](knowledge/INDEX.md).
 - `assets/img/source/`, the prompt logs of the generated method images.
-- `tools/`, scripts that take the tool screenshots, encode chosen images and render the share image into the site repository, and run accessibility, layout, image, keyboard and link checks against the site's preview build. They need an existing Playwright installation.
+- `tools/`, scripts that take the tool screenshots, encode chosen images and render the share image into the site repository, and run accessibility, layout, image, keyboard and link checks against the site's preview build. They need an existing Playwright installation and, for the checks, axe-core.
 
 The earlier standalone page remains in Git history. Its last published state is commit 8648a35.
 

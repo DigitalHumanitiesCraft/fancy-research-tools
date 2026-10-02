@@ -6,7 +6,7 @@ const fs = require("fs");
 const path = require("path");
 const { chromium } = require(process.env.PLAYWRIGHT || "playwright");
 
-// The site repository root, by default the sibling clone named in the vault's Repo-Verzeichnis.
+// The site repository root, by default the sibling clone `dhcraft-site`, see CLAUDE.md.
 const site = process.env.SITE || path.join(__dirname, "..", "..", "dhcraft-site");
 
 const [source, slug] = process.argv.slice(2);

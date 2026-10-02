@@ -53,7 +53,7 @@ The site repository, DigitalHumanitiesCraft/digitalhumanitiescraft.github.io, cl
 - `src/components/fancy/FancyPage.astro` renders the page with its scoped styles, `src/components/fancy/FancyPrivacy.astro` the privacy statement.
 - `src/pages/fancy-research-tools/` and `src/pages/en/fancy-research-tools/` hold the route files.
 - `public/fancy-research-tools/img/` holds the published screenshots, method images and share image.
-- `astro.config.mjs` holds the redirects from the former English addresses, `src/components/Nav.astro` the navigation item "Agentic Engineering".
+- `astro.config.mjs` holds the redirects from the former English addresses, `src/components/Nav.astro` the navigation item, a pill labelled "fancy (research) tools".
 
 Git history of this repository keeps the earlier standalone page. Commit [8648a35](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/8648a35) is its last published state, commit [54a6fff](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/54a6fff) holds the five design variants.
 

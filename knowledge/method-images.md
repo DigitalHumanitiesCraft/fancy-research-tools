@@ -25,7 +25,7 @@ Revise the Research Mission Control infographic into a version 4 without the "La
 
 ## Series in use
 
-The page shows the series infographic-v3, chosen by the operator on 2026-10-02. Each image was produced as an edit of its version 2, and its prompt log `assets/img/source/method-<slug>-infographic-v3.txt` holds date, tool, model, reference image and the exact prompts. The earlier rounds remain as committed prompt logs, the watercolour variants `-a` and `-b` without any text and the infographic versions 1 and 2.
+The page shows the series infographic-v3, chosen by the operator on 2026-10-02. Each image was produced as an edit of its version 2, and its prompt log `assets/img/source/method-<slug>-infographic-v3.txt` holds date, tool, model, reference image and the exact prompts. The earlier rounds remain as committed prompt logs, for Promptotyping and Grounded Vault the watercolour variants `-a` and `-b` without any text and the infographic versions 1 and 2.
 
 | Slug | Method | Colour | Only legible labels |
 |---|---|---|---|

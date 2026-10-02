@@ -27,12 +27,12 @@ The facts the page states about its provider, tools, methods and images, with th
 | Fact on the page | Source |
 |---|---|
 | Name, seat, telephone, e-mail | imprint of the site repository, `src/pages/imprint.astro`, published at https://dhcraft.org/imprint/ |
-| Target groups, teaching across Europe, project partnership, GAMS cooperation | `src/i18n/content.ts` of the site repository |
+| Target groups | `src/i18n/content.ts` of the site repository |
 | Teaching at universities in Austria and Germany, role as technical partner in funded projects | operator's records in the vault (teaching portfolio data, Business/Horizon Europe Learnings, offers in Business/Angebote), checked 2026-10-02 |
 | Billing per hour, per working day or as a flat fee, starting from the client's budget, decision after every step | operator statement, 2026-10-02, replacing the statement of 2026-10-01 |
 | Costs for the use of language models may be billed separately, depending on the scope of the project. The effort lies mainly in understanding the project together with the client and making the resulting systems comprehensible. Tools run in the browser without a server where the use case allows | operator statement, 2026-10-02 |
 | Frontier language models, commercial and open from any origin, never named by provider, used by coding agents and inside tools, model and access chosen per project | operator statement, 2026-10-02 |
-| Long-term archiving of research data in GAMS through the framework agreement with the Department of Digital Humanities of the University of Graz | cooperation stated in `src/i18n/content.ts` of the site repository, wording of the offer from the check of the quality claims on 2026-10-02, conditions undocumented, see [plan](plan.md#open-points) |
+| Long-term archiving of research data in the certified repository GAMS | offered through the framework agreement with the Department of Digital Humanities of the University of Graz, conditions undocumented, see [plan](plan.md#open-points) |
 | Training formats (workshops, intensive days) | excellence section of dhcraft.org, `src/i18n/excellence.ts` of the site repository |
 | Privacy statement | the page's own behaviour (no cookies, no third-party request, see NFR-03 in [specification](specification.md#non-functional-requirements)), delivery by GitHub Pages, contact by e-mail and telephone |
 

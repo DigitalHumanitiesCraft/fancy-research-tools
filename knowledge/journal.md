@@ -151,3 +151,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Source: operator decision that the page names no other institutions, after a vault check found the client list partly unsupported, one entry contradicted by the operator's own case study
 - Target: `src/i18n/fancy.ts` and `src/components/fancy/FancyPage.astro` in the site repository, [CR-06](specification.md#content-rules), [data](data.md#provider)
 - Result: the client list and the institute named for GAMS left the page. Wer wir sind now states teaching at universities in Austria and Germany and the role of technical partner in funded projects, as the vault records show.
+
+### 2026-10-02 corrected Checks and knowledge after the site cleanup
+
+- Source: read-only audit of this repository against the current site
+- Target: `tools/check.cjs`, `tools/shoot-tools.cjs`, [testing](testing.md), [project](project.md), [design](design.md), [data](data.md), [INDEX](INDEX.md)
+- Result: the page checks fail on any route that does not answer 200, which a missing route serving the site's 404 page had passed before, and a failed screenshot recipe ends the run with an error. The documented syntax check loops over every script, because `node --check` reads only its first file. The knowledge names the navigation pill fancy (research) tools, drops the client institutions and the institute behind GAMS from the page description, and fixes smaller stale statements.

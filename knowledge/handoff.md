@@ -15,4 +15,4 @@ updated: 2026-10-01
 
 This process inbox lists open handover points only. Before using a point, check its source and current target. Integrate durable content into the responsible document, record subject, source, target and result or reason for rejection briefly in `knowledge/journal.md`, and then remove the point completely.
 
-Keine offenen Handoff-Punkte.
+No open handoff points.

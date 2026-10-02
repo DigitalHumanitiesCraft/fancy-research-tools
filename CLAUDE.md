@@ -40,7 +40,7 @@ The content rules CR-01 to CR-07 in `knowledge/specification.md` bind every text
 
 ## Checks before a push
 
-Run in the site repository `npm run build` and `npx tsc --noEmit`, start `npx astro preview --port 4399`, then run `tools/check.cjs` from this repository with `LINKS=1`. It must end with `all checks passed`. After a change of a script in `tools/`, run `node --check tools/*.cjs`. Commands and environment variables are in `knowledge/testing.md`.
+Run in the site repository `npm run build` and `npx tsc --noEmit`, start `npx astro preview --port 4399`, then run `tools/check.cjs` from this repository with `LINKS=1`. It must end with `all checks passed`. After a change of a script in `tools/`, run `for f in tools/*.cjs; do node --check "$f" || exit 1; done`, because `node --check` reads only its first file. Commands and environment variables are in `knowledge/testing.md`.
 
 ## Git and publication
 

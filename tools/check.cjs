@@ -7,11 +7,11 @@
 const { chromium } = require(process.env.PLAYWRIGHT || "playwright");
 
 const base = process.env.BASE || "http://127.0.0.1:4399";
+// This repository has no node_modules, so both paths come from an existing installation.
 const axePath = process.env.AXE || require.resolve("axe-core/axe.min.js");
 // The site home page is left out, it belongs to the site and has findings of its own.
 const pages = (process.env.PAGES || "/fancy-research-tools/,/en/fancy-research-tools/,/fancy-research-tools/datenschutz/,/en/fancy-research-tools/privacy/").split(",");
 const widths = [1440, 320];
-const schemes = ["light"];
 
 (async () => {
   let failures = 0;
@@ -19,28 +19,28 @@ const schemes = ["light"];
 
   for (const url of pages) {
     for (const width of widths) {
-      for (const colorScheme of schemes) {
-        const page = await browser.newPage({ viewport: { width, height: 900 }, colorScheme, reducedMotion: "reduce" });
-        await page.goto(base + url, { waitUntil: "networkidle" });
-        // Lazy images load only near the viewport, so the page is scrolled through once.
-        await page.evaluate(async () => {
-          for (let y = 0; y < document.body.scrollHeight; y += 600) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 40)); }
-          // Back to the top, otherwise axe reports whatever control the sticky header covers at the last stop.
-          scrollTo(0, 0);
-        });
-        await page.addScriptTag({ path: axePath });
-        const result = await page.evaluate(() => axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa", "best-practice"] }));
-        const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
-        const broken = await page.evaluate(() => [...document.images].filter((i) => i.complete && i.naturalWidth === 0).map((i) => i.src));
-        const problems = [
-          ...result.violations.map((v) => `${v.id} (${v.nodes.map((n) => n.target.join(" ")).slice(0, 3).join(" | ")})`),
-          ...(overflow ? ["horizontal overflow"] : []),
-          ...broken.map((s) => `broken image ${s}`),
-        ];
-        if (problems.length) { failures += problems.length; console.log(`FAIL ${url} ${width} ${colorScheme}\n  ${problems.join("\n  ")}`); }
-        else console.log(`ok   ${url} ${width} ${colorScheme}`);
-        await page.close();
-      }
+      const page = await browser.newPage({ viewport: { width, height: 900 }, colorScheme: "light", reducedMotion: "reduce" });
+      // A missing route serves the site's 404 page, which could otherwise pass every check.
+      const res = await page.goto(base + url, { waitUntil: "networkidle" });
+      // Lazy images load only near the viewport, so the page is scrolled through once.
+      await page.evaluate(async () => {
+        for (let y = 0; y < document.body.scrollHeight; y += 600) { scrollTo(0, y); await new Promise((r) => setTimeout(r, 40)); }
+        // Back to the top, otherwise axe reports whatever control the sticky header covers at the last stop.
+        scrollTo(0, 0);
+      });
+      await page.addScriptTag({ path: axePath });
+      const result = await page.evaluate(() => axe.run(document, { runOnly: ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa", "best-practice"] }));
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
+      const broken = await page.evaluate(() => [...document.images].filter((i) => i.complete && i.naturalWidth === 0).map((i) => i.src));
+      const problems = [
+        ...(res && res.status() === 200 ? [] : [`HTTP ${res ? res.status() : "no response"}`]),
+        ...result.violations.map((v) => `${v.id} (${v.nodes.map((n) => n.target.join(" ")).slice(0, 3).join(" | ")})`),
+        ...(overflow ? ["horizontal overflow"] : []),
+        ...broken.map((s) => `broken image ${s}`),
+      ];
+      if (problems.length) { failures += problems.length; console.log(`FAIL ${url} ${width}\n  ${problems.join("\n  ")}`); }
+      else console.log(`ok   ${url} ${width}`);
+      await page.close();
     }
   }
   // Keyboard pass: every tab stop shows a focus outline and is neither off screen nor hidden
@@ -49,7 +49,7 @@ const schemes = ["light"];
     for (const width of widths) {
       const page = await browser.newPage({ viewport: { width, height: 800 }, reducedMotion: "reduce" });
       const res = await page.goto(base + url, { waitUntil: "networkidle" });
-      if (!res || res.status() !== 200) { await page.close(); continue; }
+      if (!res || res.status() !== 200) { failures++; console.log(`FAIL keyboard ${url} ${width} HTTP ${res ? res.status() : "no response"}`); await page.close(); continue; }
       const problems = [];
       let first = null;
       for (let i = 0; i < 250; i++) {
@@ -88,7 +88,7 @@ const schemes = ["light"];
     let html = "";
     for (const url of pages.slice(0, 2)) html += await (await fetch(base + url)).text();
     const links = [...new Set([...html.matchAll(/href="(https?:\/\/[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, "&")))]
-      // dhcraft.org itself is covered by the page checks above.
+      // The page's own canonical and alternate URLs point to the live site and are left out.
       .filter((link) => !link.startsWith("https://dhcraft.org/fancy-research-tools/") && !link.startsWith("https://dhcraft.org/en/fancy-research-tools/"));
     for (const link of links) {
       const res = await fetch(link, { method: "GET", redirect: "follow" }).catch((e) => ({ status: e.message }));

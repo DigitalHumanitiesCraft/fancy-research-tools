@@ -24,7 +24,7 @@ How the page looks and behaves as built in the dhcraft.org site, where `src/comp
 
 ## Design stance
 
-The page speaks to academic readers and to clients outside academia. It argues with verifiable statements, maturity chips with evidence links and named institutions, and keeps marketing gestures to the name and its exclamation mark.
+The page speaks to academic readers and to clients outside academia. It argues with verifiable statements, and maturity chips with evidence links, and keeps marketing gestures to the name and its exclamation mark.
 
 ## Design system
 
@@ -41,7 +41,7 @@ The page uses the tokens of the site and adds local ones only where the site has
 
 1. User task: understand the offer, judge the fit, send a request by conversation or by documents for a first prototype.
 2. First decision: title, line, lede and the buttons "Projekt anfragen" and "Unser Angebot".
-3. Depth: the offer cards Lernen, Gemeinsam entwickeln and Im Auftrag entwickeln with a hexagon icon each, then the plain blocks Modelle und Daten and Kosten, then tools and methods with maturity and evidence, the principles, who we are, client institutions, process, fit lists and the request. The section order is listed in [specification](specification.md#scope-of-the-page).
+3. Depth: the offer cards Lernen, Gemeinsam entwickeln and Im Auftrag entwickeln with a hexagon icon each, then the plain blocks Modelle und Daten and Kosten, then tools and methods with maturity and evidence, the principles, who we are, process, fit lists and the request. The section order is listed in [specification](specification.md#scope-of-the-page).
 4. Tool rows have four levels, the title, one sentence, a meta row with [maturity chip](INDEX.md#maturity-chip) and [ability icons](INDEX.md#ability-icon), and a link row with the button Werkzeug öffnen and the plain links Code, Belege and Anpassen anfragen. Method cards have the same levels below their image, with their links, the first as a button.
 5. Ability icons carry their name as hidden text for screen readers and as `title` for mouse users. A one-line legend under the tools title names every icon, so touch users can read them without hover.
 6. Maturity chips: Im Einsatz green, Release Candidate blue, Forschungsvorschau, Laufende Demo and Bestand gesichert orange, Experiment pink. The word carries the meaning, the colour repeats it.
@@ -60,7 +60,7 @@ The section `#qualitaet` is titled "Grundsätze" and holds the items Projektwiss
 - Results are prototypes and research tools with declared maturity. Productive use, for example with sensitive data or many users, needs a professional revision and an independent review of the code.
 - Results lie in open, documented formats, TEI, PAGE XML, METS/MODS, JSON-LD or CSV by material, with IIIF for images.
 - For content produced with Large Language Models it stays visible whether it was machine-generated, checked by an agent or confirmed by the client's experts, and only expert-confirmed content counts as established.
-- The client receives the full source code and the knowledge base. Long-term archiving of research data in GAMS is offered through the framework agreement with the Department of Digital Humanities of the University of Graz.
+- The client receives the full source code and the knowledge base. Long-term archiving of research data is offered in the certified repository GAMS.
 
 ### History of the quality claims
 

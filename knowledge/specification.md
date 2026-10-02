@@ -250,7 +250,7 @@ Effect. Training formats stay on the excellence section of dhcraft.org and are l
 
 Context. After ADR-013 the page is the company's offer for agentic engineering and overlaps with the services cards and the Promptotyping box of dhcraft.org. Its design was a copy of the site's look. On 2026-10-02 the operator decided to make it a subpage of dhcraft.org.
 
-Choice. The page is rebuilt in the Astro site of dhcraft.org with the site's layout, navigation and footer, texts and structured data in `src/i18n/fancy.ts` and one page component with scoped styles. German stays at `/fancy-research-tools/`, English moves to `/en/fancy-research-tools/` after the site's convention, the former English addresses redirect. The site navigation gets the item "Agentic Engineering", the consulting card and the Promptotyping box link to the page.
+Choice. The page is rebuilt in the Astro site of dhcraft.org with the site's layout, navigation and footer, texts and structured data in `src/i18n/fancy.ts` and one page component with scoped styles. German stays at `/fancy-research-tools/`, English moves to `/en/fancy-research-tools/` after the site's convention, the former English addresses redirect. The site navigation gets the item "Agentic Engineering", the consulting card and the Promptotyping box link to the page. Amendment, 2026-10-02. The navigation item became a pill labelled "fancy (research) tools".
 
 Reason. One offer with one text on one site drifts less than two pages, and the page uses the real design tokens instead of a copy.
 

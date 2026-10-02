@@ -30,7 +30,7 @@ knowledge-sources:
 
 ## Location
 
-The page is a subpage of dhcraft.org, at https://dhcraft.org/fancy-research-tools/ in German and https://dhcraft.org/en/fancy-research-tools/ in English, with privacy statements at `/fancy-research-tools/datenschutz/` and `/en/fancy-research-tools/privacy/`. The site navigation reaches it through the item "Agentic Engineering", and the consulting card and the Promptotyping box of dhcraft.org link it. The decision is [ADR-014](specification.md#adr-014-the-page-moves-into-the-dhcraftorg-site).
+The page is a subpage of dhcraft.org, at https://dhcraft.org/fancy-research-tools/ in German and https://dhcraft.org/en/fancy-research-tools/ in English, with privacy statements at `/fancy-research-tools/datenschutz/` and `/en/fancy-research-tools/privacy/`. The site navigation reaches it through a pill labelled "fancy (research) tools". The footer, the contact text, the consulting card in `content.ts` and the Promptotyping box in `excellence.ts` of the site link it. The decision is [ADR-014](specification.md#adr-014-the-page-moves-into-the-dhcraftorg-site).
 
 ## Material basis
 

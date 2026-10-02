@@ -34,7 +34,7 @@ Every change of the page builds the site and type-checks it. A change of copy, l
 |---|---|
 | `npm run build` in the site repository | the site with the page builds |
 | `npx tsc --noEmit` in the site repository | `src/i18n/fancy.ts` and the components type-check |
-| `node --check tools/*.cjs` | the scripts of this repository parse |
+| `for f in tools/*.cjs; do node --check "$f" || exit 1; done` | each script of this repository parses |
 | `tools/check.cjs`, axe with WCAG 2.2 AA and best-practice rules | no violation on the page and the privacy statement in both languages, at 1440 and 320 pixels (NFR-01) |
 | `tools/check.cjs`, overflow probe | no horizontal document scroll at 320 pixels (NFR-02) |
 | `tools/check.cjs`, image probe | every image loads after scrolling through the page |
@@ -62,7 +62,7 @@ npx astro preview --port 4399
 In this repository, with the preview running:
 
 ```
-node --check tools/*.cjs
+for f in tools/*.cjs; do node --check "$f" || exit 1; done
 PLAYWRIGHT=/path/to/node_modules/playwright AXE=/path/to/axe-core/axe.min.js CHANNEL=msedge LINKS=1 node tools/check.cjs
 ```
 
