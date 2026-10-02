@@ -22,7 +22,7 @@
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/sora-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/style.css?v=15">
+  <link rel="stylesheet" href="assets/style.css?v=16">
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt</a>
@@ -52,238 +52,10 @@
             <a class="button primary" href="#kontakt">Projekt anfragen</a>
             <a class="button" href="#werkzeuge">Unsere Werkzeuge</a>
           </div>
-          <a class="provider" href="https://dhcraft.org/">
-            <img src="assets/img/dhcraft-logo-96.png" width="48" height="48" alt="">
-            <span>Ein Angebot von Digital Humanities Craft</span>
-          </a>
         </div>
 
-        <figure class="compare">
-          <div class="pane before" aria-hidden="true">
-            <p class="pane-label">Vorher</p>
-            <ul class="files" role="list">
-              <li><span class="file-icon">W</span>Brief_017.docx</li>
-              <li><span class="file-icon">W</span>Brief_018_final_v2.docx</li>
-              <li><span class="file-icon">W</span>Brief_018_final_NEU.docx</li>
-              <li><span class="file-icon x">X</span>Personen_Liste_alt.xlsx</li>
-              <li><span class="file-icon">W</span>Notizen_Korrektur.docx</li>
-            </ul>
-          </div>
-          <div class="pane after" aria-hidden="true">
-            <p class="pane-label">Nachher</p>
-            <div class="app">
-              <div class="app-bar">
-                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                <span class="app-tab is-ok">Brief 016</span>
-                <span class="app-tab is-ok">Brief 017</span>
-                <span class="app-tab is-current">Brief 018</span>
-                <span class="app-search">Suche im Bestand</span>
-              </div>
-              <div class="app-body">
-                <div class="app-facs">
-                  <p class="app-label">Faksimile</p>
-                  <svg viewBox="0 0 120 150" class="facs">
-                    <rect x="4" y="4" width="112" height="142" rx="3" class="facs-paper"/>
-                    <path class="facs-ink" d="M14 22c6-3 10 3 16 0s10-3 16 0 10 3 16 0 10-3 18 0"/>
-                    <path class="facs-ink" d="M14 36c6-3 10 3 16 0s10-3 16 0 10 3 16 0 14-3 22 0 10 3 14 0"/>
-                    <path class="facs-ink" d="M14 50c6-3 10 3 16 0s10-3 16 0 10 3 16 0 10-3 16 0"/>
-                    <path class="facs-ink" d="M14 64c6-3 10 3 16 0s10-3 16 0 10 3 16 0 14-3 22 0 10 3 14 0"/>
-                    <path class="facs-ink" d="M14 78c6-3 10 3 16 0s10-3 16 0 10 3 14 0"/>
-                    <path class="facs-ink" d="M14 92c6-3 10 3 16 0s10-3 16 0 10 3 16 0 14-3 22 0"/>
-                    <rect x="10" y="57" width="64" height="14" rx="2" class="facs-zone"/>
-                    <path class="facs-ink" d="M60 126c5-3 9 3 14 0s9-3 14 0 9 3 16 0"/>
-                  </svg>
-                </div>
-                <div class="app-text">
-                  <p class="app-label">Transkription</p>
-                  <p class="tline"><span class="ent person">Person</span><span class="bar w40"></span></p>
-                  <p class="tline"><span class="bar w60"></span><span class="ent place">Ort</span></p>
-                  <p class="tline is-flagged"><span class="ent date">Datum</span><span class="bar w30"></span></p>
-                  <p class="tline"><span class="bar w70"></span></p>
-                  <p class="tline"><span class="bar w30"></span><span class="ent person">Person</span><span class="bar w20"></span></p>
-                </div>
-                <div class="app-checks">
-                  <p class="app-check ok">Schema gültig</p>
-                  <p class="app-check">Datum weicht vom Poststempel ab</p>
-                  <p class="app-check soft">Name im Register anders geschrieben</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <figcaption class="fig-caption"><span>Abb. 1</span> Briefedition vor und nach der Einführung eines Prüfwerkzeugs, schematisch.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="faehig-title">
-      <div class="wrap">
-        <h2 id="faehig-title" class="section-title">Was unsere Werkzeuge können</h2>
-        <ul class="abilities" role="list">
-          <li>
-            <svg class="ability-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 13h6M7 16h9"/></svg>
-            <span class="ability-name">Gewohnte Oberfläche</span>
-            <a href="#t-tei">teiCrafter</a>
-          </li>
-          <li>
-            <svg class="ability-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg>
-            <span class="ability-name">Überblick über den ganzen Bestand</span>
-            <a href="#t-corresp">CorrespExplorer</a>
-          </li>
-          <li>
-            <svg class="ability-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
-            <span class="ability-name">Prüfung beim Arbeiten</span>
-            <a href="#t-coocr">coOCR/HTR</a>
-          </li>
-          <li>
-            <svg class="ability-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
-            <span class="ability-name">Vorschau des Ergebnisses</span>
-            <a href="#m-aep">Agentic Edition Pipeline</a>
-          </li>
-          <li>
-            <svg class="ability-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 12h8M8 16h5"/></svg>
-            <span class="ability-name">Belege bis zur Quelle</span>
-            <a href="#m-gv">Grounded Vault</a>
-          </li>
-          <li>
-            <svg class="ability-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z"/><path d="M10 20v-5h4v5"/></svg>
-            <span class="ability-name">Daten bleiben im Haus</span>
-            <a href="#t-coocr">coOCR/HTR</a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section tinted" id="werkzeuge" aria-labelledby="werkzeuge-title">
-      <div class="wrap">
-        <h2 id="werkzeuge-title" class="section-title">Werkzeuge zum Anpassen</h2>
-        <ul class="tools" role="list">
-          <li class="tool">
-            <article class="tool-grid" aria-labelledby="t-coocr">
-              <figure class="shot">
-                <img src="assets/img/coocr-htr-1440.webp" srcset="assets/img/coocr-htr-720.webp 720w, assets/img/coocr-htr-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="coOCR/HTR mit dem Scan einer Druckseite links, der erkannten Transkription in der Mitte und dem Prüfbereich rechts.">
-              </figure>
-              <div class="tool-body">
-                <h3 id="t-coocr">coOCR/HTR</h3>
-                <p class="problem">Alte Drucke und Handschriften abzuschreiben kostet Zeit.</p>
-                <p class="solution">coOCR/HTR erkennt den Text und lässt ihn am Seitenbild korrigieren. Über jede Lesung entscheidet die Fachperson.</p>
-                <ul class="traits" role="list"><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Prüfung beim Arbeiten</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z"/><path d="M10 20v-5h4v5"/></svg>Daten bleiben im Haus</li></ul>
-                <p class="status-row"><span class="maturity m-preview">Forschungsvorschau</span><a class="evidence" href="https://dhcraft.org/co-ocr-htr/knowledge.html">Belege</a></p>
-                <details class="more">
-                  <summary>Details</summary>
-                  <p>Erkennung, Korrektur, Prüfungen und Export laufen in einer Browseranwendung. Eine Auswertung der Erkennungsqualität an Vergleichsdaten steht noch aus.</p>
-                </details>
-                <div class="actions">
-                  <a class="button primary" href="mailto:office@dhcraft.org?subject=coOCR%2FHTR%20f%C3%BCr%20unser%20Projekt">Für Ihr Projekt anpassen</a>
-                  <a class="button" href="https://dhcraft.org/co-ocr-htr/">Werkzeug öffnen</a>
-                  <a class="button" href="https://github.com/DigitalHumanitiesCraft/co-ocr-htr">Code</a>
-                </div>
-              </div>
-            </article>
-          </li>
-          <li class="tool">
-            <article class="tool-grid" aria-labelledby="t-tei">
-              <figure class="shot">
-                <img src="assets/img/teicrafter-1440.webp" srcset="assets/img/teicrafter-720.webp 720w, assets/img/teicrafter-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="teiCrafter mit lesbarem Brieftext und markierten Personen und Orten links und dem Register der erwähnten Personen und Orte rechts.">
-              </figure>
-              <div class="tool-body">
-                <h3 id="t-tei">teiCrafter</h3>
-                <p class="problem">TEI-XML von Hand zu bearbeiten ist fehleranfällig.</p>
-                <p class="solution">teiCrafter zeigt lesbaren Text statt Tags und prüft beim Speichern gegen das Schema.</p>
-                <ul class="traits" role="list"><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 13h6M7 16h9"/></svg>Gewohnte Oberfläche</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Prüfung beim Arbeiten</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z"/><path d="M10 20v-5h4v5"/></svg>Daten bleiben im Haus</li></ul>
-                <p class="status-row"><span class="maturity m-preview">Forschungsvorschau</span><a class="evidence" href="https://github.com/DigitalHumanitiesCraft/teiCrafter/blob/main/knowledge/INDEX.md">Belege</a></p>
-                <details class="more">
-                  <summary>Details</summary>
-                  <p>Die Datei ändert sich nur an den bearbeiteten Stellen, und Vorschläge eines Large Language Model bleiben als solche markiert. Technisch ist die Vorschau geprüft, die Erprobung im Arbeitsalltag eines Editionsteams steht noch aus.</p>
-                </details>
-                <div class="actions">
-                  <a class="button primary" href="mailto:office@dhcraft.org?subject=teiCrafter%20f%C3%BCr%20unser%20Projekt">Für Ihr Projekt anpassen</a>
-                  <a class="button" href="https://dhcraft.org/teiCrafter/editor.html">Werkzeug öffnen</a>
-                  <a class="button" href="https://github.com/DigitalHumanitiesCraft/teiCrafter">Code</a>
-                </div>
-              </div>
-            </article>
-          </li>
-          <li class="tool">
-            <article class="tool-grid" aria-labelledby="t-corresp">
-              <figure class="shot">
-                <img src="assets/img/correspexplorer-1440.webp" srcset="assets/img/correspexplorer-720.webp 720w, assets/img/correspexplorer-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="CorrespExplorer mit einer Zeitleiste der Briefe eines Demonstrationsbestands, farbig nach Sprache, und Filtern am linken Rand.">
-              </figure>
-              <div class="tool-body">
-                <h3 id="t-corresp">CorrespExplorer</h3>
-                <p class="problem">In Briefmetadaten ist kaum zu erkennen, wer wem wann von wo geschrieben hat.</p>
-                <p class="solution">CorrespExplorer zeigt eine CMIF-Datei als Karte, Zeitleiste und Netzwerk mit gemeinsamen Filtern.</p>
-                <ul class="traits" role="list"><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg>Überblick über den ganzen Bestand</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z"/><path d="M10 20v-5h4v5"/></svg>Daten bleiben im Haus</li></ul>
-                <p class="status-row"><span class="maturity m-preview">Laufende Demo</span><a class="evidence" href="https://dhcraft.org/CorrespExplorer/vault.html">Belege</a></p>
-                <details class="more">
-                  <summary>Details</summary>
-                  <p>Die Daten kommen aus einer hochgeladenen Datei oder aus correspSearch und bleiben im Browser. Alle Ansichten und der Export laufen. Eine Auswertung mit Nutzenden steht noch aus.</p>
-                </details>
-                <div class="actions">
-                  <a class="button primary" href="mailto:office@dhcraft.org?subject=CorrespExplorer%20f%C3%BCr%20unser%20Projekt">Für Ihr Projekt anpassen</a>
-                  <a class="button" href="https://dhcraft.org/CorrespExplorer/">Werkzeug öffnen</a>
-                  <a class="button" href="https://github.com/DigitalHumanitiesCraft/CorrespExplorer">Code</a>
-                </div>
-              </div>
-            </article>
-          </li>
-          <li class="tool">
-            <article class="tool-grid" aria-labelledby="t-szd">
-              <figure class="shot">
-                <img src="assets/img/szd-htr-1440.webp" srcset="assets/img/szd-htr-720.webp 720w, assets/img/szd-htr-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="Statistikansicht von SZD-HTR mit der Verteilung der Objekte nach Prüfstufe und den Gründen, aus denen Objekte zur Sichtung vorgemerkt sind.">
-              </figure>
-              <div class="tool-body">
-                <h3 id="t-szd">SZD-HTR</h3>
-                <p class="problem">Ein ganzer Nachlass lässt sich nicht Seite für Seite von Hand transkribieren.</p>
-                <p class="solution">SZD-HTR transkribiert einen ganzen Bestand und vermerkt an jedem Objekt, ob es maschinell, von Agenten oder von Menschen geprüft ist.</p>
-                <ul class="traits" role="list"><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg>Überblick über den ganzen Bestand</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Prüfung beim Arbeiten</li></ul>
-                <p class="status-row"><span class="maturity m-experiment">Experiment</span><a class="evidence" href="https://github.com/chpollin/szd-htr-ocr-pipeline/blob/main/knowledge/index.md">Belege</a></p>
-                <details class="more">
-                  <summary>Details</summary>
-                  <p>Der Prompt richtet sich nach dem Dokumenttyp, auffällige Objekte werden zur Sichtung vorgemerkt, und jede menschliche Korrektur bleibt neben der Modellausgabe erhalten. Das Werkzeug ist ein experimentelles Teilprojekt von Stefan Zweig Digital. Zeichengenau geprüfter Referenztext liegt noch nicht vor.</p>
-                </details>
-                <div class="actions">
-                  <a class="button primary" href="mailto:office@dhcraft.org?subject=SZD-HTR%20f%C3%BCr%20unser%20Projekt">Für Ihr Projekt anpassen</a>
-                  <a class="button" href="https://chpollin.github.io/szd-htr-ocr-pipeline/">Werkzeug öffnen</a>
-                  <a class="button" href="https://github.com/chpollin/szd-htr-ocr-pipeline">Code</a>
-                </div>
-              </div>
-            </article>
-          </li>
-          <li class="tool">
-            <article class="tool-grid" aria-labelledby="t-klawiter">
-              <figure class="shot">
-                <img src="assets/img/klawiter-1440.webp" srcset="assets/img/klawiter-720.webp 720w, assets/img/klawiter-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="Oberfläche der Stefan-Zweig-Bibliographie mit Suche über alle Einträge und einer Gliederung nach Werken, Rezeption und Ausgaben.">
-              </figure>
-              <div class="tool-body">
-                <h3 id="t-klawiter">Stefan-Zweig-Bibliographie</h3>
-                <p class="problem">Eine über Jahrzehnte gepflegte Bibliographie droht mit ihrem stillgelegten Wiki verloren zu gehen.</p>
-                <p class="solution">Eine Pipeline überführt sie in Forschungsdaten und eine Rechercheoberfläche, in der jede Angabe ihre Quellseite behält.</p>
-                <ul class="traits" role="list"><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg>Überblick über den ganzen Bestand</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 12h8M8 16h5"/></svg>Belege bis zur Quelle</li></ul>
-                <p class="status-row"><span class="maturity m-preview">Bestand gesichert</span><a class="evidence" href="https://github.com/chpollin/klawiter-rescue/blob/main/knowledge/status.md">Belege</a></p>
-                <details class="more">
-                  <summary>Details</summary>
-                  <p>Die Daten liegen als JSON-LD vor, mit Suche, Zitierexport und Kuratierung. Verknüpfungen mit Normdaten erscheinen erst nach fachlicher Bestätigung. Die vollständige bibliographische Modellierung und die fachliche Abnahme stehen noch aus.</p>
-                </details>
-                <div class="actions">
-                  <a class="button primary" href="mailto:office@dhcraft.org?subject=Bibliographie-Rettung%20f%C3%BCr%20unser%20Projekt">Für Ihr Projekt anpassen</a>
-                  <a class="button" href="https://chpollin.github.io/klawiter-rescue/">Werkzeug öffnen</a>
-                  <a class="button" href="https://github.com/chpollin/klawiter-rescue">Code</a>
-                </div>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="methoden" aria-labelledby="methoden-title">
-      <div class="wrap">
-        <div class="motif" aria-hidden="true">
-          <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
-            <defs>
-              <pattern id="m-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="6" class="m-hatch-line"/></pattern>
-              <filter id="m-glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-            </defs>
+        <div class="motif hero-motif" aria-hidden="true">
+          <svg viewBox="380 0 820 300" preserveAspectRatio="xMidYMid meet">
             <path class="m-beam" d="M0 168 L548 158"/>
             <g class="m-bands">
               <path class="m-band b1" d="M652 150 L1200 40 L1200 72 L654 155 Z"/>
@@ -297,6 +69,84 @@
             <path class="m-prism" d="M600 30 L700 250 L500 250 Z"/>
           </svg>
         </div>
+      </div>
+    </section>
+    <section class="section tinted" id="werkzeuge" aria-labelledby="werkzeuge-title">
+      <div class="wrap">
+        <h2 id="werkzeuge-title" class="section-title">Werkzeuge zum Anpassen</h2>
+        <ul class="legend" role="list" aria-label="Zeichenerklärung"><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="m6.5 6.5 2.5 2.5M15 15l2.5 2.5M6.5 17.5 9 15M15 9l2.5-2.5"/></svg>LLM-gestützt</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>Fachliche Prüfung jeder Änderung</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg>Überblick über den ganzen Bestand</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 13h6M7 16h9"/></svg>Lesbarer Text statt Tags</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Läuft im Browser ohne eigenen Server</li><li><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 12h8M8 16h5"/></svg>Belege bis zur Quelle</li></ul>
+        <ul class="tools" role="list">
+          <li class="tool">
+            <article class="tool-grid" aria-labelledby="t-coocr">
+              <figure class="shot">
+                <img src="assets/img/coocr-htr-1440.webp" srcset="assets/img/coocr-htr-720.webp 720w, assets/img/coocr-htr-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="coOCR/HTR mit dem Scan einer Druckseite links, der erkannten Transkription in der Mitte und dem Prüfbereich rechts.">
+              </figure>
+              <div class="tool-body">
+                <h3 id="t-coocr">coOCR/HTR</h3>
+                <p class="solution">Erkennt den Text alter Drucke und Handschriften und lässt jede Lesung am Seitenbild prüfen.</p>
+                <div class="tool-meta"><span class="maturity m-preview">Forschungsvorschau</span><ul class="traits" role="list"><li title="LLM-gestützt, Modell wählbar bis zum lokalen Modell"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="m6.5 6.5 2.5 2.5M15 15l2.5 2.5M6.5 17.5 9 15M15 9l2.5-2.5"/></svg><span class="visually-hidden">LLM-gestützt, Modell wählbar bis zum lokalen Modell</span></li><li title="Fachliche Prüfung jeder Änderung"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span class="visually-hidden">Fachliche Prüfung jeder Änderung</span></li><li title="Läuft im Browser ohne eigenen Server"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="visually-hidden">Läuft im Browser ohne eigenen Server</span></li></ul></div>
+                <p class="tool-links"><a class="button primary" href="https://dhcraft.org/co-ocr-htr/">Werkzeug öffnen</a><a href="https://github.com/DigitalHumanitiesCraft/co-ocr-htr">Code</a><a href="https://dhcraft.org/co-ocr-htr/knowledge.html">Belege</a><a href="mailto:office@dhcraft.org?subject=coOCR%2FHTR%20f%C3%BCr%20unser%20Projekt">Anpassen anfragen</a></p>
+              </div>
+            </article>
+          </li>
+          <li class="tool">
+            <article class="tool-grid" aria-labelledby="t-tei">
+              <figure class="shot">
+                <img src="assets/img/teicrafter-1440.webp" srcset="assets/img/teicrafter-720.webp 720w, assets/img/teicrafter-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="teiCrafter mit lesbarem Brieftext und markierten Personen und Orten links und dem Register der erwähnten Personen und Orte rechts.">
+              </figure>
+              <div class="tool-body">
+                <h3 id="t-tei">teiCrafter</h3>
+                <p class="solution">Bearbeitet TEI-XML als lesbaren Text und prüft beim Speichern gegen das Schema.</p>
+                <div class="tool-meta"><span class="maturity m-preview">Forschungsvorschau</span><ul class="traits" role="list"><li title="LLM-gestützt, Modell wählbar bis zum lokalen Modell"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="m6.5 6.5 2.5 2.5M15 15l2.5 2.5M6.5 17.5 9 15M15 9l2.5-2.5"/></svg><span class="visually-hidden">LLM-gestützt, Modell wählbar bis zum lokalen Modell</span></li><li title="Lesbarer Text statt Tags"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 13h6M7 16h9"/></svg><span class="visually-hidden">Lesbarer Text statt Tags</span></li><li title="Fachliche Prüfung jeder Änderung"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span class="visually-hidden">Fachliche Prüfung jeder Änderung</span></li><li title="Läuft im Browser ohne eigenen Server"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="visually-hidden">Läuft im Browser ohne eigenen Server</span></li></ul></div>
+                <p class="tool-links"><a class="button primary" href="https://dhcraft.org/teiCrafter/editor.html">Werkzeug öffnen</a><a href="https://github.com/DigitalHumanitiesCraft/teiCrafter">Code</a><a href="https://github.com/DigitalHumanitiesCraft/teiCrafter/blob/main/knowledge/INDEX.md">Belege</a><a href="mailto:office@dhcraft.org?subject=teiCrafter%20f%C3%BCr%20unser%20Projekt">Anpassen anfragen</a></p>
+              </div>
+            </article>
+          </li>
+          <li class="tool">
+            <article class="tool-grid" aria-labelledby="t-corresp">
+              <figure class="shot">
+                <img src="assets/img/correspexplorer-1440.webp" srcset="assets/img/correspexplorer-720.webp 720w, assets/img/correspexplorer-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="CorrespExplorer mit einer Zeitleiste der Briefe eines Demonstrationsbestands, farbig nach Sprache, und Filtern am linken Rand.">
+              </figure>
+              <div class="tool-body">
+                <h3 id="t-corresp">CorrespExplorer</h3>
+                <p class="solution">Zeigt Briefmetadaten aus CMIF als Karte, Zeitleiste und Netzwerk, damit sichtbar wird, wer wem wann von wo schrieb.</p>
+                <div class="tool-meta"><span class="maturity m-preview">Laufende Demo</span><ul class="traits" role="list"><li title="Überblick über den ganzen Bestand"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><span class="visually-hidden">Überblick über den ganzen Bestand</span></li><li title="Läuft im Browser ohne eigenen Server"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="visually-hidden">Läuft im Browser ohne eigenen Server</span></li></ul></div>
+                <p class="tool-links"><a class="button primary" href="https://dhcraft.org/CorrespExplorer/">Werkzeug öffnen</a><a href="https://github.com/DigitalHumanitiesCraft/CorrespExplorer">Code</a><a href="https://dhcraft.org/CorrespExplorer/vault.html">Belege</a><a href="mailto:office@dhcraft.org?subject=CorrespExplorer%20f%C3%BCr%20unser%20Projekt">Anpassen anfragen</a></p>
+              </div>
+            </article>
+          </li>
+          <li class="tool">
+            <article class="tool-grid" aria-labelledby="t-szd">
+              <figure class="shot">
+                <img src="assets/img/szd-htr-1440.webp" srcset="assets/img/szd-htr-720.webp 720w, assets/img/szd-htr-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="Statistikansicht von SZD-HTR mit der Verteilung der Objekte nach Prüfstufe und den Gründen, aus denen Objekte zur Sichtung vorgemerkt sind.">
+              </figure>
+              <div class="tool-body">
+                <h3 id="t-szd">SZD-HTR</h3>
+                <p class="solution">Transkribiert einen ganzen Nachlass und vermerkt an jedem Objekt, ob Maschine, Agent oder Mensch es geprüft hat.</p>
+                <div class="tool-meta"><span class="maturity m-experiment">Experiment</span><ul class="traits" role="list"><li title="LLM-gestützt"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="m6.5 6.5 2.5 2.5M15 15l2.5 2.5M6.5 17.5 9 15M15 9l2.5-2.5"/></svg><span class="visually-hidden">LLM-gestützt</span></li><li title="Überblick über den ganzen Bestand"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><span class="visually-hidden">Überblick über den ganzen Bestand</span></li><li title="Fachliche Prüfung jeder Änderung"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span class="visually-hidden">Fachliche Prüfung jeder Änderung</span></li></ul></div>
+                <p class="tool-links"><a class="button primary" href="https://chpollin.github.io/szd-htr-ocr-pipeline/">Werkzeug öffnen</a><a href="https://github.com/chpollin/szd-htr-ocr-pipeline">Code</a><a href="https://github.com/chpollin/szd-htr-ocr-pipeline/blob/main/knowledge/index.md">Belege</a><a href="mailto:office@dhcraft.org?subject=SZD-HTR%20f%C3%BCr%20unser%20Projekt">Anpassen anfragen</a></p>
+              </div>
+            </article>
+          </li>
+          <li class="tool">
+            <article class="tool-grid" aria-labelledby="t-klawiter">
+              <figure class="shot">
+                <img src="assets/img/klawiter-1440.webp" srcset="assets/img/klawiter-720.webp 720w, assets/img/klawiter-1440.webp 1440w" sizes="(min-width: 60rem) 45vw, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="Oberfläche der Stefan-Zweig-Bibliographie mit Suche über alle Einträge und einer Gliederung nach Werken, Rezeption und Ausgaben.">
+              </figure>
+              <div class="tool-body">
+                <h3 id="t-klawiter">Stefan-Zweig-Bibliographie</h3>
+                <p class="solution">Rettet eine Bibliographie aus einem stillgelegten Wiki in Forschungsdaten, in denen jede Angabe ihre Quellseite behält.</p>
+                <div class="tool-meta"><span class="maturity m-preview">Bestand gesichert</span><ul class="traits" role="list"><li title="LLM-gestützt"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="m6.5 6.5 2.5 2.5M15 15l2.5 2.5M6.5 17.5 9 15M15 9l2.5-2.5"/></svg><span class="visually-hidden">LLM-gestützt</span></li><li title="Überblick über den ganzen Bestand"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5"/></svg><span class="visually-hidden">Überblick über den ganzen Bestand</span></li><li title="Belege bis zur Quelle"><svg class="trait-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4M8 12h8M8 16h5"/></svg><span class="visually-hidden">Belege bis zur Quelle</span></li></ul></div>
+                <p class="tool-links"><a class="button primary" href="https://chpollin.github.io/klawiter-rescue/">Werkzeug öffnen</a><a href="https://github.com/chpollin/klawiter-rescue">Code</a><a href="https://github.com/chpollin/klawiter-rescue/blob/main/knowledge/status.md">Belege</a><a href="mailto:office@dhcraft.org?subject=Bibliographie-Rettung%20f%C3%BCr%20unser%20Projekt">Anpassen anfragen</a></p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="methoden" aria-labelledby="methoden-title">
+      <div class="wrap">
         <h2 id="methoden-title" class="section-title">Methoden und Frameworks</h2>
         <ul class="methods" role="list">
           <li class="method" id="m-pt">
@@ -306,16 +156,8 @@
             </figure>
             <h3>Promptotyping</h3>
             <p class="solution">Promptotyping entwickelt Forschungsartefakte mit KI-Agenten aus einer gepflegten Wissensbasis heraus.</p>
-            <p class="status-row"><span class="maturity m-use">Im Einsatz</span><a class="evidence" href="https://github.com/DigitalHumanitiesCraft/Promptotyping">Belege</a></p>
-            <details class="more">
-              <summary>Details</summary>
-              <p>Quellen, Daten und fachliches Projektverständnis stehen in dieser Wissensbasis. Jede Entwicklungsrunde schöpft aus ihr und schreibt in sie zurück. Die Methode ist die Grundlage unserer Projekte, ein Beitrag auf L.I.S.A. stellt sie vor, ein Zeitschriftenbeitrag ist in Vorbereitung.</p>
-            </details>
-            <div class="actions">
-              <a class="button" href="https://dhcraft.org/Promptotyping/">Zur Methode</a>
-              <a class="button" href="https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin">Beitrag auf L.I.S.A.</a>
-              <a class="button" href="https://github.com/DigitalHumanitiesCraft/Promptotyping">Repository</a>
-            </div>
+            <div class="tool-meta"><span class="maturity m-use">Im Einsatz</span></div>
+            <p class="tool-links"><a class="button primary" href="https://dhcraft.org/Promptotyping/">Zur Methode</a><a href="https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin">Beitrag auf L.I.S.A.</a><a href="https://github.com/DigitalHumanitiesCraft/Promptotyping">Repository</a></p>
           </li>
           <li class="method" id="m-gv">
             <figure class="method-figure">
@@ -324,15 +166,8 @@
             </figure>
             <h3>Grounded Vault</h3>
             <p class="solution">Grounded Vault führt jede tragende Aussage eines Berichts über einen prüfbaren Anker bis zur Quellstelle.</p>
-            <p class="status-row"><span class="maturity m-use">Im Einsatz</span><a class="evidence" href="https://github.com/DigitalHumanitiesCraft/grounded-vault/tree/main/knowledge">Belege</a></p>
-            <details class="more">
-              <summary>Details</summary>
-              <p>Die Repository-Vorlage dient belegter Wissensarbeit mit KI-Agenten, Fachleute können einen Text damit Absatz für Absatz verifizieren. Sie ist in mehreren eigenen Projekten produktiv im Einsatz. Der Nachweis, dass sie sich aus einem frischen Checkout reproduzieren lässt, steht noch aus.</p>
-            </details>
-            <div class="actions">
-              <a class="button" href="https://dhcraft.org/grounded-vault/">Projektseite</a>
-              <a class="button" href="https://github.com/DigitalHumanitiesCraft/grounded-vault">Vorlage</a>
-            </div>
+            <div class="tool-meta"><span class="maturity m-use">Im Einsatz</span></div>
+            <p class="tool-links"><a class="button primary" href="https://dhcraft.org/grounded-vault/">Projektseite</a><a href="https://github.com/DigitalHumanitiesCraft/grounded-vault">Vorlage</a><a href="https://github.com/DigitalHumanitiesCraft/grounded-vault/tree/main/knowledge">Belege</a></p>
           </li>
           <li class="method" id="m-aep">
             <figure class="method-figure">
@@ -341,15 +176,8 @@
             </figure>
             <h3>Agentic Edition Pipeline</h3>
             <p class="solution">Die Agentic Edition Pipeline führt Digitalisate über Transkription und Prüfung zu TEI und einer statischen Leseansicht.</p>
-            <p class="status-row"><span class="maturity m-preview">Forschungsvorschau</span><a class="evidence" href="https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline/blob/main/knowledge/00_INDEX.md">Belege</a></p>
-            <details class="more">
-              <summary>Details</summary>
-              <p>Die kopierbare Vorlage kommt ohne eigenen Server aus, die fachliche Abnahme liegt beim Editionsteam. Eine stabile Version gibt es noch nicht, ein vollständiger Lauf mit einem aktuellen Editionsprojekt steht noch aus.</p>
-            </details>
-            <div class="actions">
-              <a class="button" href="https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline">Vorlage</a>
-              <a class="button" href="https://youtu.be/krL-xMxTa_c">Video</a>
-            </div>
+            <div class="tool-meta"><span class="maturity m-preview">Forschungsvorschau</span></div>
+            <p class="tool-links"><a class="button primary" href="https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline">Vorlage</a><a href="https://youtu.be/krL-xMxTa_c">Video</a><a href="https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline/blob/main/knowledge/00_INDEX.md">Belege</a></p>
           </li>
           <li class="method" id="m-rmc">
             <figure class="method-figure">
@@ -358,15 +186,8 @@
             </figure>
             <h3>Research Mission Control</h3>
             <p class="solution">Research Mission Control verteilt Klären, Umsetzen und Prüfen auf KI-Agenten an einem gemeinsamen Repository.</p>
-            <p class="status-row"><span class="maturity m-rc">Release Candidate</span><a class="evidence" href="https://github.com/DigitalHumanitiesCraft/research-mission-control/blob/main/knowledge/INDEX.md">Belege</a></p>
-            <details class="more">
-              <summary>Details</summary>
-              <p>Ein Agent klärt mit Ihnen Ziele und Kriterien, ein zweiter setzt um, ein dritter prüft unabhängig und berichtet direkt an Sie. Entscheidungen und Abnahme bleiben bei den Menschen im Projekt. Version 0.9.0 dient Abnahmetests auf Modellebene, eine stabile Version gibt es noch nicht.</p>
-            </details>
-            <div class="actions">
-              <a class="button" href="https://dhcraft.org/research-mission-control/">Zur Methode</a>
-              <a class="button" href="https://github.com/DigitalHumanitiesCraft/research-mission-control">Repository</a>
-            </div>
+            <div class="tool-meta"><span class="maturity m-rc">Release Candidate</span></div>
+            <p class="tool-links"><a class="button primary" href="https://dhcraft.org/research-mission-control/">Zur Methode</a><a href="https://github.com/DigitalHumanitiesCraft/research-mission-control">Repository</a><a href="https://github.com/DigitalHumanitiesCraft/research-mission-control/blob/main/knowledge/INDEX.md">Belege</a></p>
           </li>
         </ul>
       </div>
@@ -521,7 +342,6 @@
   <footer class="site-footer">
     <div class="wrap">
       <a class="footer-brand" href="https://dhcraft.org/">
-        <img src="assets/img/dhcraft-logo-96.png" width="48" height="48" alt="">
         <span>Digital Humanities Craft OG<br>Kainbach bei Graz, Österreich</span>
       </a>
       <ul role="list" class="footer-links">

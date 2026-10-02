@@ -1018,3 +1018,60 @@
     font-size: var(--step--1);
   }
 }
+
+@layer components {
+  .visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* The prism as the page's own image: a tool that makes knowledge visible. */
+  .hero-motif {
+    margin: 0;
+    align-self: center;
+    & svg { block-size: auto; aspect-ratio: 820 / 300; }
+  }
+
+  @media (max-width: 30rem) {
+    .hero-motif { display: none; }
+  }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin-block: calc(-1 * var(--space-m)) var(--space-l);
+    font-size: var(--step--1);
+    color: var(--text-muted);
+
+    & li { display: inline-flex; align-items: center; gap: 0.4rem; }
+    & .trait-icon { inline-size: 1.35rem; block-size: 1.5rem; padding: 0.32rem; }
+  }
+
+  .tool-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+
+    & .traits { gap: 0.3rem; }
+  }
+
+  .tool-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.1rem;
+    margin-block-start: var(--space-s);
+    font-size: var(--step--1);
+    font-weight: 500;
+
+    & .button { min-block-size: 2.75rem; padding: 0.5rem 1.1rem; }
+  }
+
+  .method .tool-links { margin-block-start: auto; padding-block-start: var(--space-xs); }
+}

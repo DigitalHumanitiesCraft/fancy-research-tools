@@ -26,7 +26,7 @@ What the page must do and which decisions hold. Requirements and stories change 
 
 ### Functional requirements
 
-- FR-01: The first screen names the offer in one sentence and leads to the request. Acceptance: hero with title, lede, request button and provider line, visible without scrolling at 1440 by 900.
+- FR-01: The first screen names the offer in one sentence and leads to the request. Acceptance: hero with title, lede and request button, visible without scrolling at 1440 by 900.
 - FR-02: Every tool and method shows function, state line and evidence link. Acceptance: each entry carries a "Stand" line ending in "Belege" that resolves with HTTP 200.
 - FR-03: A visitor can send a request in two ways. Acceptance: a conversation path with e-mail and telephone and a documents path with a prefilled e-mail, both in the section `#kontakt`.
 - FR-04: Every section and every tool or method is addressable. Acceptance: each has a unique fragment identifier.
@@ -80,7 +80,7 @@ Derivation:
 
 ## Scope of the page
 
-The page runs from hero over abilities, tools, methods and frameworks, quality, who we are, process and fit to the request section and footer. Each tool row carries screenshot or schematic diagram, capability tags, problem, solution, state line and the actions adapt, open and code.
+The page runs from hero over tools, methods and frameworks, quality, who we are, process and fit to the request section and footer. Each tool row carries a screenshot, title, one sentence, maturity and ability icons, and the links open, code, evidence and request.
 
 ## Decisions
 
@@ -179,7 +179,7 @@ Reason. Each choice keeps facts verifiable and avoids publishing third-party or 
 
 Context. Generated motif images were planned through Codex. The installed Codex CLI offers no image generation, and a paid image API needs the operator's consent.
 
-Choice. One hand-drawn SVG motif, a ray split by a prism into the spectrum, sits above the methods section.
+Choice. One hand-drawn SVG motif, a ray split by a prism into the spectrum, sits in the hero.
 
 Reason. The motif needs no labelling as generated, stays sharp at any size and weighs a few kilobytes. The prompts in [design](design.md#generated-images) remain an option for later.
 

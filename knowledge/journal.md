@@ -110,3 +110,9 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: `index.html`, `assets/style.css`, `tools/encode-images.cjs`, [design](design.md#interaction-patterns), [data](data.md#images)
 - Result: visible text roughly halved by one-sentence solutions, ability icons, maturity chips and `<details>` for state and evidence. The method cards show the generated infographic-v3 series. The English page follows after the operator has reviewed the German draft.
 
+### 2026-10-02 integrated Slimmer rows and the prism in the hero
+
+- Source: operator review of the live page, asking for fewer levels per tool, one logo, no abilities section and correct ability claims
+- Target: `index.html`, `assets/style.css`, [design](design.md#interaction-patterns), [specification](specification.md)
+- Result: the schematic letter figure and the provider line left the hero, the prism motif moved there. The abilities strip became a one-line icon legend. Tool and method rows have four levels with icon-only abilities and plain links. "Daten bleiben im Haus" was replaced by "LLM-gestützt" and "Läuft im Browser", because coOCR/HTR, teiCrafter, SZD-HTR and the bibliography pipeline send data to a model, coOCR/HTR and teiCrafter with a selectable provider including a local one.
+
