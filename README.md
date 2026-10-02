@@ -1,5 +1,7 @@
 # fancy (research) tools!
 
+The page now lives in the dhcraft.org site repository (`DigitalHumanitiesCraft/digitalhumanitiescraft.github.io`, local `dhcraft-site`) as a subpage at `/fancy-research-tools/` and `/en/fancy-research-tools/`, see ADR-014 in [knowledge/specification.md](knowledge/specification.md). Content and styles are edited there, in `src/i18n/fancy.ts` and `src/components/fancy/`. This repository keeps the knowledge base, the image sources and the tools that retake screenshots, and its HTML stays as the state before the move.
+
 Website for a service of Digital Humanities Craft OG: custom tools that speed up a concrete workflow, for research and cultural heritage institutions as well as companies and public administration, plus adaptable tools and the methods and frameworks behind them.
 
 Static HTML and CSS without a build step and without JavaScript, served by GitHub Pages from the repository root.
@@ -10,4 +12,4 @@ Project knowledge lives in [knowledge/INDEX.md](knowledge/INDEX.md).
 
 ## License
 
-Code under the MIT License (see `LICENSE`), texts under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Excluded are the DHCraft logos (`assets/img/dhcraft-logo-96.png`, `assets/img/dhcraft-logo-line.svg`, `assets/img/favicon-32.png` and `assets/img/apple-touch-icon.png`, all rights reserved by Digital Humanities Craft OG), the fonts in `assets/fonts/` (Instrument Sans and Sora, each under the SIL Open Font License) and the screenshots, which show the respective tools under their own licences.
+Code under the MIT License (see `LICENSE`), texts under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Excluded are the DHCraft logos (`assets/img/dhcraft-logo-line.svg`, `assets/img/favicon-32.png` and `assets/img/apple-touch-icon.png`, all rights reserved by Digital Humanities Craft OG), the fonts in `assets/fonts/` (Instrument Sans and Sora, each under the SIL Open Font License) and the screenshots, which show the respective tools under their own licences.

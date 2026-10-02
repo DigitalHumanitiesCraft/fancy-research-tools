@@ -123,3 +123,10 @@ The curated backward-looking provenance index of the project. Current facts and 
 - Target: `index.html`, `en/index.html`, `assets/style.css`, [ADR-013](specification.md#adr-013-positioning-as-an-agentic-engineering-offer), [project](project.md), [data](data.md#provider), [design](design.md#interaction-patterns), `CLAUDE.md`
 - Result: hero line "Agentic Engineering für alle, die mit Wissen arbeiten", a section `#angebot` with learning, building together and building for the client, a models block that names frontier language models without providers and two places of use, a costs block with flexible billing, budget first and structural reasons for low cost, a quality claim on reviewed code, Sichtung in the first process step, two new fit items and a budget question in the request. The English page now mirrors the German structure and no longer claims that data stay in-house.
 - Open: real cases with effort need consent, the offer template needs a clause on model access and AI Act roles.
+
+### 2026-10-02 integrated The page moves into dhcraft.org
+
+- Source: operator decision that the agentic engineering offer belongs on dhcraft.org as a subpage
+- Target: site repository `dhcraft-site` (`src/i18n/fancy.ts`, `src/components/fancy/`, `src/pages/fancy-research-tools/`, `src/pages/en/fancy-research-tools/`), [ADR-014](specification.md#adr-014-the-page-moves-into-the-dhcraftorg-site), `README.md`, `CLAUDE.md`
+- Result: the page is rebuilt in Astro with identical main content, verified by a text and attribute comparison of both languages and the privacy pages, and passes axe, overflow, image and keyboard checks at 1440 and 320. The site navigation got the item "Agentic Engineering" and a later burger breakpoint, the inactive language link a contrast fix. Offer and team links became relative.
+- Open: switching off GitHub Pages of this repository after the site deploy, the contrast of video dates on the dhcraft.org home page.

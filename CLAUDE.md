@@ -1,5 +1,7 @@
 # Project instructions for fancy (research) tools!
 
+The page now lives in the dhcraft.org site repository (`DigitalHumanitiesCraft/digitalhumanitiescraft.github.io`, local `dhcraft-site`) as a subpage at `/fancy-research-tools/` and `/en/fancy-research-tools/`, see ADR-014 in [knowledge/specification.md](knowledge/specification.md). Content and styles are edited there, in `src/i18n/fancy.ts` and `src/components/fancy/`. This repository keeps the knowledge base, the image sources and the tools that retake screenshots, and its HTML stays as the state before the move. Page changes go to the site repository, decisions and facts are still recorded here.
+
 ## Knowledge base
 
 Read `knowledge/INDEX.md` first, then `knowledge/handoff.md`, then the document the task needs. Facts about tools and provider come only from `knowledge/data.md` and its sources. The look follows `knowledge/design.md`, requirements and decisions follow `knowledge/specification.md`, checks follow `knowledge/testing.md`.

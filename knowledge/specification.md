@@ -213,3 +213,13 @@ Choice. The page is the offer for agentic engineering, and the research tools ar
 Reason. "Prompt engineering" is perceived as dated, and dhcraft.org had already replaced it with context engineering. "Agentic engineering" names the practice, the hero line sets it beside the plain audience. The concept's argument of providing paid model subscriptions no longer holds, because consumer plans of at least one provider train on chats unless the user opts out, so client data belongs to API, regional or local access. Speed claims of the concept ("days instead of weeks") are not used, after ADR-003 and because the Promptotyping method claims no general advantage in speed or cost. Reviewed code is the claim the page can back, because agent-built software has documented security and maintenance risks and the tools here carry public code, knowledge bases and a review.
 
 Effect. Training formats stay on dhcraft.org/excellence and are linked, not repeated. Facts for billing and model use come from operator statements recorded in [data](data.md#provider). Real cases with their effort, the strongest argument that a small budget suffices, wait for the consent of the projects behind them. A workshop count is not shown, because the sources disagree and none has a list behind it.
+
+### ADR-014 The page moves into the dhcraft.org site
+
+Context. After ADR-013 the page is the company's offer for agentic engineering and overlaps with the services cards and the Promptotyping box of dhcraft.org. Its design was a copy of the site's look. On 2026-10-02 the operator decided to make it a subpage of dhcraft.org.
+
+Choice. The page is rebuilt in the Astro site of dhcraft.org with the site's layout, navigation and footer, texts in `src/i18n/fancy.ts` and one page component with scoped styles. German stays at `/fancy-research-tools/`, English moves to `/en/fancy-research-tools/` after the site's convention, the old English addresses redirect. The site navigation gets the item "Agentic Engineering", the consulting card and the Promptotyping box link to the page. GitHub Pages of this repository is switched off once the site serves the route.
+
+Reason. One offer with one text on one site drifts less than two pages, and the page uses the real design tokens instead of a copy.
+
+Effect. ADR-001 (no JavaScript) holds for the page content, the site navigation brings its own script. The checks of `tools/check.cjs` run against the site's preview build. This repository keeps the knowledge base, image sources and screenshot tools.
