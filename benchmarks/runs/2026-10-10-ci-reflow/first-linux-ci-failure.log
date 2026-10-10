@@ -1,0 +1,69 @@
+check	Run npm run test:e2e	﻿2026-10-10T19:22:26.6707775Z ##[group]Run npm run test:e2e
+check	Run npm run test:e2e	2026-10-10T19:22:26.6707993Z [36;1mnpm run test:e2e[0m
+check	Run npm run test:e2e	2026-10-10T19:22:26.6763393Z shell: /usr/bin/bash -e {0}
+check	Run npm run test:e2e	2026-10-10T19:22:26.6763590Z ##[endgroup]
+check	Run npm run test:e2e	2026-10-10T19:22:26.7538540Z 
+check	Run npm run test:e2e	2026-10-10T19:22:26.7539123Z > fancy-research-tools@0.1.0 test:e2e
+check	Run npm run test:e2e	2026-10-10T19:22:26.7539372Z > playwright test
+check	Run npm run test:e2e	2026-10-10T19:22:26.7539460Z 
+check	Run npm run test:e2e	2026-10-10T19:22:27.8581888Z 
+check	Run npm run test:e2e	2026-10-10T19:22:27.8582529Z Running 55 tests using 2 workers
+check	Run npm run test:e2e	2026-10-10T19:22:52.8802934Z ·············F·····································F···
+check	Run npm run test:e2e	2026-10-10T19:22:52.8807014Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8812966Z   1) tests/e2e/annotation.spec.ts:363:1 › narrow reading and annotation controls are keyboard accessible and reflow 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8813339Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8813510Z     Error: expect(received).toBe(expected) // Object.is equality
+check	Run npm run test:e2e	2026-10-10T19:22:52.8813690Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8813744Z     Expected: true
+check	Run npm run test:e2e	2026-10-10T19:22:52.8813903Z     Received: false
+check	Run npm run test:e2e	2026-10-10T19:22:52.8814004Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8814188Z       387 |     document.documentElement.style.fontSize = "200%";
+check	Run npm run test:e2e	2026-10-10T19:22:52.8814562Z       388 |   });
+check	Run npm run test:e2e	2026-10-10T19:22:52.8814951Z     > 389 |   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+check	Run npm run test:e2e	2026-10-10T19:22:52.8815426Z           |                                                                                         ^
+check	Run npm run test:e2e	2026-10-10T19:22:52.8815834Z       390 |   await page.getByRole("button", { name: "Cancel", exact: true }).click();
+check	Run npm run test:e2e	2026-10-10T19:22:52.8816370Z       391 |   await expect(page.getByRole("button", { name: "Annotate selection", exact: true })).toBeFocused();
+check	Run npm run test:e2e	2026-10-10T19:22:52.8816740Z       392 | });
+check	Run npm run test:e2e	2026-10-10T19:22:52.8817131Z         at /home/runner/work/fancy-research-tools/fancy-research-tools/tests/e2e/annotation.spec.ts:389:89
+check	Run npm run test:e2e	2026-10-10T19:22:52.8817448Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8817782Z     Error Context: test-results/annotation-narrow-reading--62a72-board-accessible-and-reflow/error-context.md
+check	Run npm run test:e2e	2026-10-10T19:22:52.8818131Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8818376Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+check	Run npm run test:e2e	2026-10-10T19:22:52.8818731Z     test-results/annotation-narrow-reading--62a72-board-accessible-and-reflow/trace.zip
+check	Run npm run test:e2e	2026-10-10T19:22:52.8818972Z     Usage:
+check	Run npm run test:e2e	2026-10-10T19:22:52.8819036Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8819263Z         npx playwright show-trace test-results/annotation-narrow-reading--62a72-board-accessible-and-reflow/trace.zip
+check	Run npm run test:e2e	2026-10-10T19:22:52.8819994Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8820286Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+check	Run npm run test:e2e	2026-10-10T19:22:52.8820503Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8821045Z   2) tests/e2e/workbench.spec.ts:253:1 › corrupt import leaves current work intact and responsive comparison remains operable 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8821391Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8821545Z     Error: expect(received).toBe(expected) // Object.is equality
+check	Run npm run test:e2e	2026-10-10T19:22:52.8821744Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8821818Z     Expected: true
+check	Run npm run test:e2e	2026-10-10T19:22:52.8821996Z     Received: false
+check	Run npm run test:e2e	2026-10-10T19:22:52.8822091Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8822254Z       279 |     document.documentElement.style.fontSize = "200%";
+check	Run npm run test:e2e	2026-10-10T19:22:52.8822507Z       280 |   });
+check	Run npm run test:e2e	2026-10-10T19:22:52.8822886Z     > 281 |   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+check	Run npm run test:e2e	2026-10-10T19:22:52.8823272Z           |                                                                                         ^
+check	Run npm run test:e2e	2026-10-10T19:22:52.8823452Z       282 | });
+check	Run npm run test:e2e	2026-10-10T19:22:52.8823558Z       283 |
+check	Run npm run test:e2e	2026-10-10T19:22:52.8823832Z       284 | test("bare-route draft restoration retains search on view changes and notes export without selection", async ({
+check	Run npm run test:e2e	2026-10-10T19:22:52.8824365Z         at /home/runner/work/fancy-research-tools/fancy-research-tools/tests/e2e/workbench.spec.ts:281:89
+check	Run npm run test:e2e	2026-10-10T19:22:52.8824699Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8825060Z     Error Context: test-results/workbench-corrupt-import-l-a73d2-comparison-remains-operable/error-context.md
+check	Run npm run test:e2e	2026-10-10T19:22:52.8825758Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8826054Z     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+check	Run npm run test:e2e	2026-10-10T19:22:52.8826575Z     test-results/workbench-corrupt-import-l-a73d2-comparison-remains-operable/trace.zip
+check	Run npm run test:e2e	2026-10-10T19:22:52.8826943Z     Usage:
+check	Run npm run test:e2e	2026-10-10T19:22:52.8827003Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8827236Z         npx playwright show-trace test-results/workbench-corrupt-import-l-a73d2-comparison-remains-operable/trace.zip
+check	Run npm run test:e2e	2026-10-10T19:22:52.8827486Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8827730Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+check	Run npm run test:e2e	2026-10-10T19:22:52.8827969Z 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8828033Z   2 failed
+check	Run npm run test:e2e	2026-10-10T19:22:52.8828539Z     tests/e2e/annotation.spec.ts:363:1 › narrow reading and annotation controls are keyboard accessible and reflow 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8829126Z     tests/e2e/workbench.spec.ts:253:1 › corrupt import leaves current work intact and responsive comparison remains operable 
+check	Run npm run test:e2e	2026-10-10T19:22:52.8829425Z   53 passed (25.7s)
+check	Run npm run test:e2e	2026-10-10T19:22:52.8997760Z ##[error]Process completed with exit code 1.

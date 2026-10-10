@@ -278,7 +278,16 @@ test("corrupt import leaves current work intact and responsive comparison remain
   await page.evaluate(() => {
     document.documentElement.style.fontSize = "200%";
   });
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  const enlargedLayout = await page.evaluate(() => ({
+    viewportWidth: innerWidth,
+    documentWidth: document.documentElement.scrollWidth,
+    headingWidth: document.querySelector("#comparison-heading")?.getBoundingClientRect().width,
+    exportWidth: document.querySelector("#export")?.getBoundingClientRect().width,
+    font: getComputedStyle(document.body).font,
+  }));
+  expect(enlargedLayout.documentWidth, JSON.stringify(enlargedLayout)).toBeLessThanOrEqual(
+    enlargedLayout.viewportWidth,
+  );
 });
 
 test("bare-route draft restoration retains search on view changes and notes export without selection", async ({

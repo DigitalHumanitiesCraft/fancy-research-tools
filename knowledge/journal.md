@@ -20,6 +20,12 @@ updated: 2026-10-10
 
 ## Entries
 
+### 2026-10-10 corrected reflow exposed by Linux CI
+
+- Source: the first authorised branch push passed local checks but failed two existing 200% text-size reflow assertions on GitHub's Linux runner.
+- Target: text wrapping in annotation and collection comparison, and retention of failed CI browser artifacts.
+- Result: independent font probes reproduced insufficient wrapping in narrow annotation labels, the comparison heading and export button. Added wrapping rules that preserve visible content and the existing acceptance assertions. The CI reflow run records local verification separately from GitHub's per-commit checks; historical Windows-only success remains scoped to that platform.
+
 ### 2026-10-10 prepared the authorised commit and push
 
 - Source: the operator authorised commit and push after stable checks and controlled closeout.

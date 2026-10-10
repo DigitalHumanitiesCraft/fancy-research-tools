@@ -18,6 +18,12 @@ updated: 2026-10-10
 
 # Testing
 
+## CI reflow correction, 2026-10-10
+
+The first branch push at `37038f0` passed installation, code/data checks, unit tests and build on GitHub's Linux runner. Its [browser run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/actions/runs/38079504011) passed 53 cases and failed two existing 200% text-size reflow checks, in annotation and collection comparison. The preceding Windows run passed all 55; that result did not establish Linux reflow.
+
+Isolated font probes reproduced the problem with wider font metrics: annotation labels exceeded their narrow column, while the comparison heading and export button retained excessive intrinsic widths. The correction permits text wrapping without clipping content or weakening the existing browser assertions. CI now retains failed browser artifacts for seven days to make future failures inspectable. Source identity is `benchmarks/runs/2026-10-10-ci-reflow-source.json`; the matching run directory records the completed local checks and probes. The GitHub check attached to each subsequent commit reports its remote result.
+
 ## Commit preparation, 2026-10-10
 
 The operator authorised commit and push after the controlled closeout. Source identity for the prepared commit is `benchmarks/runs/2026-10-10-commit-preparation-source.json`; the matching run directory records the checks actually completed. Root Git attributes preserve source and evidence bytes across checkouts, while the importer's existing explicit LF rule remains in force. Source capture now includes this root policy. Earlier immutable captures and run records remain unchanged.

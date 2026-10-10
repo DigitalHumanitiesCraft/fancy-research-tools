@@ -1,0 +1,106 @@
+{
+  "recordedAt": "2026-10-10T19:28:43.983Z",
+  "evidence": "Bounded local checks and font probes, with the preceding Linux failure retained separately.",
+  "files": [
+    {
+      "path": "annotation-baseline.json",
+      "bytes": 19100,
+      "sha256": "36558c9546cf093ed61933a58b7d289dabe509cb16a438844020c241b6958c20"
+    },
+    {
+      "path": "annotation-fixed.json",
+      "bytes": 1791,
+      "sha256": "1281b818c26dddc01810bffec19b08d08372476933e498b32f56ae4dd0013577"
+    },
+    {
+      "path": "annotation-form-320-200.png",
+      "bytes": 98405,
+      "sha256": "2fae57bb03260289aab6136a433acdd88226d5d58e9777c683bfd7d097ab2755"
+    },
+    {
+      "path": "annotation-probe.mjs",
+      "bytes": 2143,
+      "sha256": "8b229a3869ccd69575fe17a906f2c1cae7c6064a9e14a8518538d692d7ca9f85"
+    },
+    {
+      "path": "annotation-verification.json",
+      "bytes": 7109,
+      "sha256": "4351e04f5607fd70945dced5288e6ffa074677b1440b99db57e2a022019a3b1e"
+    },
+    {
+      "path": "annotation-verify.mjs",
+      "bytes": 3381,
+      "sha256": "c62dc0628f98396c0898ff20e987aa6f648f18108673f08a6b96a7a8147737cc"
+    },
+    {
+      "path": "assessment.md",
+      "bytes": 2169,
+      "sha256": "4b70b8f5e5afe90c7d4073ac9c352825b5978a307bbe2329b0f3f2236b8b131f"
+    },
+    {
+      "path": "build.log",
+      "bytes": 3976,
+      "sha256": "cd66b594b4dd869d47e8273407131f23e99c0d967ad587907bb9971a3ae2cae0"
+    },
+    {
+      "path": "check-data.log",
+      "bytes": 629,
+      "sha256": "7926e5a1a0b0b0408e5a0e0b7850c6eccb387106cbb6867cd6152320b7c9d599"
+    },
+    {
+      "path": "check.log",
+      "bytes": 119,
+      "sha256": "e80c6a4a9a626e49524f84a03f56f0768342e24fa6a8d1705719da3e016416af"
+    },
+    {
+      "path": "comparison-after.json",
+      "bytes": 469,
+      "sha256": "f4aefecf6abfa90911107231ba3ce48a5d42d34d8b0c3f835e3ea2bffa36ae63"
+    },
+    {
+      "path": "comparison-before.json",
+      "bytes": 1529,
+      "sha256": "324aee214c2660be0400ba7cf942acf42ca66a40ce53452902c2d83ce0dfb611"
+    },
+    {
+      "path": "comparison-interaction.json",
+      "bytes": 246,
+      "sha256": "f09094b5ee93324dd73433dce2dcbc6c5596d53a6c13c876bef143724373e14a"
+    },
+    {
+      "path": "comparison-probe.mjs",
+      "bytes": 3248,
+      "sha256": "ead16bff1fe377a5b0dedd9d683e2d6d59eab92e9d0dd1860ec863733c924cb5"
+    },
+    {
+      "path": "comparison-verdana.png",
+      "bytes": 144601,
+      "sha256": "adfbcbde8e317efc95533271b66d3ffb22691bd08108adc331ba4d8474ed0d5d"
+    },
+    {
+      "path": "first-linux-ci-failure.log",
+      "bytes": 7809,
+      "sha256": "b17dea1db769d8bc95b484ad7680ef27f4acaad4fca1dadbe194f1b66e50635e"
+    },
+    {
+      "path": "markdown-links.json",
+      "bytes": 62,
+      "sha256": "614ef3f0ad16e1b6130641e28576ff20b7a654fd36fd6f56df8aa6b817af6076"
+    },
+    {
+      "path": "source-comparison.json",
+      "bytes": 337,
+      "sha256": "b8ad48b25e8d71c376f964c5c95399805eaf819a07b1456f589c4af830144e24"
+    },
+    {
+      "path": "test-e2e.log",
+      "bytes": 9449,
+      "sha256": "6921c1d3ff5d9643d93284f35896ea1c15a9b4a172d09838040d6462a6a4dd1a"
+    },
+    {
+      "path": "test.log",
+      "bytes": 277,
+      "sha256": "8118df55f17634c8aef1082e0fc57511b140b9ee1570e130f52d22b3d4157ee9"
+    }
+  ]
+}

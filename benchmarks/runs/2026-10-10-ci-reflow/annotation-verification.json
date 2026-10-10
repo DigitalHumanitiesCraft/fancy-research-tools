@@ -1,0 +1,365 @@
+{
+  "results": [
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "100%",
+      "font": "system-ui",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "100%",
+      "font": "Arial",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "100%",
+      "font": "Verdana",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "100%",
+      "font": "Georgia",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "100%",
+      "font": "monospace",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "200%",
+      "font": "system-ui",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "200%",
+      "font": "Arial",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "200%",
+      "font": "Verdana",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "200%",
+      "font": "Georgia",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 320,
+      "size": "200%",
+      "font": "monospace",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "100%",
+      "font": "system-ui",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "100%",
+      "font": "Arial",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "100%",
+      "font": "Verdana",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "100%",
+      "font": "Georgia",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "100%",
+      "font": "monospace",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "200%",
+      "font": "system-ui",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "200%",
+      "font": "Arial",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "200%",
+      "font": "Verdana",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "200%",
+      "font": "Georgia",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "annotations",
+      "width": 1280,
+      "size": "200%",
+      "font": "monospace",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "100%",
+      "font": "system-ui",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "100%",
+      "font": "Arial",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "100%",
+      "font": "Verdana",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "100%",
+      "font": "Georgia",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "100%",
+      "font": "monospace",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "200%",
+      "font": "system-ui",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "200%",
+      "font": "Arial",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "200%",
+      "font": "Verdana",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "200%",
+      "font": "Georgia",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 320,
+      "size": "200%",
+      "font": "monospace",
+      "view": 320,
+      "document": 320,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "100%",
+      "font": "system-ui",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "100%",
+      "font": "Arial",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "100%",
+      "font": "Verdana",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "100%",
+      "font": "Georgia",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "100%",
+      "font": "monospace",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "200%",
+      "font": "system-ui",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "200%",
+      "font": "Arial",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "200%",
+      "font": "Verdana",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "200%",
+      "font": "Georgia",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    },
+    {
+      "route": "letters",
+      "width": 1280,
+      "size": "200%",
+      "font": "monospace",
+      "view": 1280,
+      "document": 1280,
+      "oversize": []
+    }
+  ],
+  "checks": "Keyboard source selection retained exact quotation, review fields opened, no axe violations, Cancel restored focus in each of 4 route/viewport combinations."
+}

@@ -1,0 +1,15 @@
+{
+  "previousEntries": 218,
+  "currentEntries": 218,
+  "changed": [
+    ".github/workflows/check.yml",
+    "benchmarks/README.md",
+    "knowledge/journal.md",
+    "knowledge/plan.md",
+    "knowledge/testing.md",
+    "src/annotation/styles.css",
+    "src/workbench/styles.css",
+    "tests/e2e/workbench.spec.ts"
+  ],
+  "unchanged": 210
+}

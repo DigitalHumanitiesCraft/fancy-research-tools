@@ -1,0 +1,12 @@
+{
+  "font": "Verdana",
+  "viewportWidth": 320,
+  "fontScale": "200%",
+  "keyboardScrollLeft": 40,
+  "keyboardDownload": "instrument-investigation.json",
+  "selectedIds": [
+    "500526",
+    "500527"
+  ],
+  "observation": "Keep this observation"
+}

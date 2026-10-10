@@ -1,0 +1,97 @@
+[
+  {
+    "font": "system-ui",
+    "viewport": 320,
+    "documentWidth": 320,
+    "overflowing": [
+      {
+        "tag": "INPUT",
+        "id": "",
+        "class": "",
+        "text": "",
+        "left": 32,
+        "right": 288,
+        "width": 256,
+        "scroll": 417,
+        "client": 254,
+        "font": "600 32px / 48px system-ui"
+      }
+    ]
+  },
+  {
+    "font": "Arial",
+    "viewport": 320,
+    "documentWidth": 320,
+    "overflowing": [
+      {
+        "tag": "INPUT",
+        "id": "",
+        "class": "",
+        "text": "",
+        "left": 32,
+        "right": 288,
+        "width": 256,
+        "scroll": 442,
+        "client": 254,
+        "font": "600 32px / 48px Arial"
+      }
+    ]
+  },
+  {
+    "font": "Verdana",
+    "viewport": 320,
+    "documentWidth": 320,
+    "overflowing": [
+      {
+        "tag": "INPUT",
+        "id": "",
+        "class": "",
+        "text": "",
+        "left": 32,
+        "right": 288,
+        "width": 256,
+        "scroll": 502,
+        "client": 254,
+        "font": "600 32px / 48px Verdana"
+      }
+    ]
+  },
+  {
+    "font": "Georgia",
+    "viewport": 320,
+    "documentWidth": 320,
+    "overflowing": [
+      {
+        "tag": "INPUT",
+        "id": "",
+        "class": "",
+        "text": "",
+        "left": 32,
+        "right": 288,
+        "width": 256,
+        "scroll": 465,
+        "client": 254,
+        "font": "600 32px / 48px Georgia"
+      }
+    ]
+  },
+  {
+    "font": "monospace",
+    "viewport": 320,
+    "documentWidth": 320,
+    "overflowing": [
+      {
+        "tag": "INPUT",
+        "id": "",
+        "class": "",
+        "text": "",
+        "left": 32,
+        "right": 288,
+        "width": 256,
+        "scroll": 482,
+        "client": 254,
+        "font": "600 32px / 48px monospace"
+      }
+    ]
+  }
+]

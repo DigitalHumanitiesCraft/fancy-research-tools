@@ -106,7 +106,9 @@
   dd,
   th,
   td,
+  h1,
   h2,
+  button,
   a {
     overflow-wrap: anywhere;
   }

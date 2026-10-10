@@ -1,0 +1,9 @@
+
+> fancy-research-tools@0.1.0 check:data
+> node scripts/check-data.mjs && node scripts/check-annotation-data.mjs && node data/hsa-letter/generate.mjs --check && node scripts/import-schoenbach-data.mjs --check
+
+Verified 60 source records and 11 expected queries.
+Frozen source checksums and all derived files verified without changing the dataset.
+Frozen NHC source, rights and text derivation verified without dataset changes.
+HSA letter source, derivation, attribution and hashes match.
+Schönbach CMIF: hash and five record projections checked at C:\Users\chris\Documents\GitHub\fancy-research-tools\data\schoenbach\.

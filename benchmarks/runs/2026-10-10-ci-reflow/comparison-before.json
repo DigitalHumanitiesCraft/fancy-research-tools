@@ -1,0 +1,75 @@
+[
+  {
+    "font": "system-ui",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": []
+  },
+  {
+    "font": "Arial",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": []
+  },
+  {
+    "font": "Verdana",
+    "width": 320,
+    "scrollWidth": 355,
+    "overflow": [
+      {
+        "tag": "BUTTON",
+        "id": "export",
+        "class": "primary",
+        "text": "Export investigation",
+        "width": 309.09375,
+        "right": 341.09375,
+        "font": "32px / 48px Verdana",
+        "overflowWrap": "normal"
+      },
+      {
+        "tag": "H1",
+        "id": "comparison-heading",
+        "class": "",
+        "text": "Comparison",
+        "width": 323.40625,
+        "right": 355.40625,
+        "font": "600 51.2px / 76.8px Verdana",
+        "overflowWrap": "normal"
+      }
+    ]
+  },
+  {
+    "font": "Georgia",
+    "width": 320,
+    "scrollWidth": 338,
+    "overflow": [
+      {
+        "tag": "H1",
+        "id": "comparison-heading",
+        "class": "",
+        "text": "Comparison",
+        "width": 306.28125,
+        "right": 338.28125,
+        "font": "600 51.2px / 76.8px Georgia",
+        "overflowWrap": "normal"
+      }
+    ]
+  },
+  {
+    "font": "monospace",
+    "width": 320,
+    "scrollWidth": 365,
+    "overflow": [
+      {
+        "tag": "BUTTON",
+        "id": "export",
+        "class": "primary",
+        "text": "Export investigation",
+        "width": 333.09375,
+        "right": 365.09375,
+        "font": "32px / 48px monospace",
+        "overflowWrap": "normal"
+      }
+    ]
+  }
+]

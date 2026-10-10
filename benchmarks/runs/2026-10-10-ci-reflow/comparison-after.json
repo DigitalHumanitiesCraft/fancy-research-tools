@@ -1,0 +1,32 @@
+[
+  {
+    "font": "system-ui",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": []
+  },
+  {
+    "font": "Arial",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": []
+  },
+  {
+    "font": "Verdana",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": []
+  },
+  {
+    "font": "Georgia",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": []
+  },
+  {
+    "font": "monospace",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": []
+  }
+]
