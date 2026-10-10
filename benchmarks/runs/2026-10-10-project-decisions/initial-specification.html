@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Fancy Research Tools: a documented, adaptable browser starter."><title>Specification · Fancy Research Tools</title>  <script type="module" crossorigin src="../assets/modulepreload-polyfill-P2Xu9kJm.js"></script>
+  <script type="module" crossorigin src="../assets/icons-B0Zowo1T.js"></script>
+  <script type="module" crossorigin src="../assets/docs-CRq-RwLb.js"></script>
+  <link rel="stylesheet" crossorigin href="../assets/styles-BL0qz-FA.css">
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="../index.html">fancy (research) tools<span aria-hidden="true">!</span></a><nav aria-label="Tools"><a href="../tool/">Collection editor</a><a class="button" data-icon="chart" href="../pilot/">Explore instruments</a></nav></header><div class="docs-layout"><details class="docs-nav"><summary>Documentation</summary><nav aria-label="Documentation"><div class="docs-nav-group"><h2>Build a tool</h2><a  href="../index.html">Overview</a><a  href="../guides/getting-started.html">Get started</a><a  href="../guides/customizing.html">Customize</a><a  href="../guides/research.html">Research basis</a><a  href="../guides/development-study.html">Development study</a></div><div class="docs-nav-group"><h2>Reference</h2><a  href="../reference/project.html">Project</a><a aria-current="page" href="../reference/specification.html">Specification</a><a  href="../reference/architecture.html">Architecture</a><a  href="../reference/data.html">Data</a><a  href="../reference/design.html">Design</a><a  href="../reference/testing.html">Testing</a></div><a href="https://github.com/DigitalHumanitiesCraft/fancy-research-tools">Source repository</a></nav></details><main id="main" class="prose" tabindex="-1"><h1 id="specification">Specification</h1><details class="page-outline"><summary>On this page</summary><nav aria-label="On this page"><ul><li><a href="#dh-pilot-contract">DH pilot contract</a></li><li><a href="#requirements">Requirements</a></li><li><a href="#epics-and-user-stories">Epics and user stories</a></li><li><a href="#functional-scope">Functional scope</a></li><li><a href="#adaptation-scenarios-for-investigation">Adaptation scenarios for investigation</a></li><li><a href="#decisions">Decisions</a></li><li><a href="#provisional-concept-study-requirements">Provisional concept-study requirements</a></li><li><a href="#investigation-workbench-contract">Investigation workbench contract</a></li><li><a href="#development-and-handover-acceptance">Development and handover acceptance</a></li></ul></nav></details><p>The unreleased version 0.1 includes a real-data investigation workbench, three alternative interfaces, the historical catalogue baseline and a separate synthetic collection editor. Requirements describe observable behaviour and are assessed through the <a href="testing.html">testing protocol</a>.</p>
+<h2 id="dh-pilot-contract">DH pilot contract</h2><p>The original filtering and aggregation contract below is retained at <code>/baseline/</code>. The current <code>/pilot/</code> follows the investigation contract added below.</p>
+<p>The subsequent commissioned pilot added the read-only Met instrument explorer now retained at <code>baseline/</code>. Its task is to inspect original catalogue labels, filter a frozen sample, count groups and identify missing metadata, then export selected source records with query parameters and provenance. The task and independently calculated expectations live under <code>benchmarks/cases/met-instruments/</code>. Existing editor behaviour and stored drafts remain on their original route. Pilot results establish bounded engineering evidence, with researcher acceptance and wider adaptation still open.</p>
+<p>Search uses a normalized substring across title, object name, culture, descriptive date and medium. Exact classification/culture filters combine with a missing-field filter. Counts and missingness use the current filtered result as denominator. Empty results are explicit. Grouping retains source labels and a separate missing value. Original date descriptions remain visible. Export includes source identifiers, supported fields, filters, summaries and the snapshot manifest. The pilot makes no claim of representative sampling, precise historical dates or causal explanation.</p>
+<p>Column-header controls sort the current result by title, date, culture or maker in either direction. Date sorting compares the source <code>beginYear</code> numerically while retaining the original descriptive date in the cell. This orders catalogue bounds and does not establish exact historical dates. Missing values sort last in both directions. Equal values use the source object ID as a stable tie-breaker. Sorting preserves the filtered population, group counts and selected record.</p>
+<h2 id="requirements">Requirements</h2><h3 id="ui-refinement-acceptance">UI refinement acceptance</h3><p>The <a href="design.html">design contract</a> governs hierarchy, visual encodings and interaction across documentation, exploration and editing. The following outcomes are acceptance targets for the commissioned UI revision. Verification follows the <a href="testing.html#ui-acceptance-protocol">UI protocol</a>.</p>
+<div class="table-scroll" role="region" aria-label="Table: ID, Observable outcome, Required evidence" tabindex="0"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Observable outcome</th>
+<th>Required evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UI-01</td>
+<td>Each route exposes its primary task before extended explanatory material.</td>
+<td>Desktop and narrow-layout review plus an observed first action.</td>
+</tr>
+<tr>
+<td>UI-02</td>
+<td>Icons support understandable labelled actions across routes.</td>
+<td>Label, focus and keyboard inspection, with local asset verification.</td>
+</tr>
+<tr>
+<td>UI-03</td>
+<td>Baseline distributions and metadata gaps expose exact values and their scope.</td>
+<td>Chart values match the independent oracle, including filtered and empty results.</td>
+</tr>
+<tr>
+<td>UI-04</td>
+<td>Chart interactions and filters share query semantics and reversible state.</td>
+<td>Keyboard selection, reset, URL reload and back navigation retain the expected selected IDs.</td>
+</tr>
+<tr>
+<td>UI-05</td>
+<td>Selected-object details expose source qualifiers directly, with important limitations and recovery messages visible.</td>
+<td>Source comparison, selection interaction and existing editing/storage regression checks.</td>
+</tr>
+<tr>
+<td>UI-06</td>
+<td>A researcher completes the task and correctly explains its result and limits.</td>
+<td>Observed task completion and interpretation recorded separately from automated tests.</td>
+</tr>
+<tr>
+<td>UI-07</td>
+<td>Pending inputs, applied filters, selected record and exported population remain distinguishable through mixed interactions.</td>
+<td>Type a search, operate a chart, inspect and export results; cancel navigation with a dirty editor and check both draft and controls.</td>
+</tr>
+<tr>
+<td>UI-08</td>
+<td>The desktop pilot keeps controls, comparable result rows and selected-object evidence in one working viewport. Narrow layouts retain all content in a usable reading order.</td>
+<td>Inspect 1440×900 and 1366×768 desktop states and 320 CSS-pixel reflow; operate every scroll region by keyboard and inspect long details.</td>
+</tr>
+<tr>
+<td>UI-09</td>
+<td>The table supports understandable, deterministic sorting without changing the result population.</td>
+<td>Operate all sortable headers in both directions, verify <code>aria-sort</code>, source-date order, missing values last, stable ties and preserved selection.</td>
+</tr>
+<tr>
+<td>UI-10</td>
+<td>About exposes provenance and limitations without crowding the working header. Data and code licenses remain distinct in the footer.</td>
+<td>Open and close the dialog by keyboard, verify focus return, sample details, snapshot, guide destination and separate CC0/MIT links.</td>
+</tr>
+</tbody></table>
+</div><p>The historical catalogue at <code>/baseline/</code> applies current form values when grouping or selecting a chart filter. Unsubmitted edits are identified as pending, and exports use the applied result state. The editor exports the complete collection. Filtering retains a selected record and explicitly explains when that record is outside the results. Cancelling a proposed navigation restores the applied search controls while preserving the unfinished form. Documentation&#39;s editing walkthrough includes saving before export.</p>
+<p>The pilot presents results as comparable table rows and one directly visible detail pane. A contextual result count replaces the redundant Objects heading above the Object column. A valid selection remains visible within the result context. When filtering excludes it, select a matching record or expose an empty detail state. All distribution categories remain reachable without a Show more gate. The group area identifies its filtering purpose and its caption explains its relationship to the table. Both derive from the same filtered sample.</p>
+<p>The header contains the tool title and export action. The footer contains About, the data license CC0 and the code license MIT. About opens a native dialog with the Met source, the 60 lowest-ID selection, its non-representative character, snapshot date and research guide link. It supports a close button, Escape and focus return. The pilot has no repeated catalogue accordions or Go to objects workaround.</p>
+<h3 id="planned-version-02-acceptance">Planned version 0.2 acceptance</h3><p>The following criteria define the planned increment. They are not implemented or verified by the planning work. Preparation, Exploration, Distillation and Implementation recur as material and prototypes change the research question. The development harness supports this process. A resulting browser tool needs runtime LLM integration only when its task justifies it.</p>
+<div class="table-scroll" role="region" aria-label="Table: ID, Planned outcome, Required evidence" tabindex="0"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Planned outcome</th>
+<th>Required evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>V02-01</td>
+<td>Start from a question, idea, material, method or existing workflow and develop an explicit research task.</td>
+<td>A worked iteration records inputs, missing context, alternatives, a prototype observation and the resulting knowledge revision.</td>
+</tr>
+<tr>
+<td>V02-02</td>
+<td>Acquire methodological knowledge appropriate to the task.</td>
+<td>Source passages, reading limits, method prerequisites, alternatives and applicability are recorded separately from agent proposals and human decisions.</td>
+</tr>
+<tr>
+<td>V02-03</td>
+<td>Use a browser interface and the simplest stack adequate to the requirements.</td>
+<td>An architecture decision connects dependencies and any additional processing or services to concrete requirements.</td>
+</tr>
+<tr>
+<td>V02-04</td>
+<td>Demonstrate one complete interdisciplinary case with real open data.</td>
+<td>A reproducible source snapshot, rights record, explicit data semantics and a full exploration or analysis workflow with independently checked output.</td>
+</tr>
+<tr>
+<td>V02-05</td>
+<td>Exercise a contrasting capture or annotation adaptation.</td>
+<td>A bounded runnable workflow with real material records reused, modified and replaced parts and preserves its domain distinctions.</td>
+</tr>
+<tr>
+<td>V02-06</td>
+<td>Preserve existing user work while separating responsibilities.</td>
+<td>Regression checks cover import/export, unsaved forms, storage failures, stale copies and deliberate handling of v0.1 drafts and schema versions.</td>
+</tr>
+<tr>
+<td>V02-07</td>
+<td>Make the approach reproducible by another developer or agent.</td>
+<td>An independent attempt uses repository instructions without hidden conversation context, records interventions and reports unresolved limitations.</td>
+</tr>
+<tr>
+<td>V02-08</td>
+<td>Present a reviewable local release candidate.</td>
+<td>Production build, relevant unit and browser checks, manual interaction review and source/knowledge consistency are recorded. Human research acceptance is recorded separately and remains pending until actually provided.</td>
+</tr>
+</tbody></table>
+</div><p>Research activities, material structures, file formats and collaboration requirements are separate description dimensions. TEI Crafter and CorrespExplorer remain useful comparison sources. Version 0.2 case selection should broaden the disciplinary coverage. A tabular case and a contrasting capture or annotation case are planned, with exact datasets and questions selected after inspection. General-purpose format support and a universal plugin API require separate evidence and scope.</p>
+<h3 id="functional-requirements">Functional requirements</h3><div class="table-scroll" role="region" aria-label="Table: ID, Behaviour, Acceptance evidence" tabindex="0"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Behaviour</th>
+<th>Acceptance evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>FR-01</td>
+<td>Explore records through search, kind filtering and selection.</td>
+<td>Browser test exercises combined controls and empty results.</td>
+</tr>
+<tr>
+<td>FR-02</td>
+<td>Restore explorer state from the URL.</td>
+<td>Reload and navigation preserve supported query state.</td>
+</tr>
+<tr>
+<td>FR-03</td>
+<td>Edit title, record type, place, date, source, notes and review status in a working copy.</td>
+<td>Browser test edits and exports a record.</td>
+</tr>
+<tr>
+<td>FR-04</td>
+<td>Validate imported collections before replacing working data.</td>
+<td>Invalid imports leave the existing collection intact.</td>
+</tr>
+<tr>
+<td>FR-05</td>
+<td>Export a collection that can be reimported without field loss.</td>
+<td>Round-trip test compares structured values.</td>
+</tr>
+<tr>
+<td>FR-06</td>
+<td>Preserve the supplied baseline during local edits.</td>
+<td>State test checks baseline immutability.</td>
+</tr>
+<tr>
+<td>FR-07</td>
+<td>Recover supported drafts after reload and expose storage errors.</td>
+<td>Reload and unavailable-storage scenarios.</td>
+</tr>
+<tr>
+<td>FR-08</td>
+<td>Publish selected specifications with practical guides.</td>
+<td>Build and link checks include the publication allowlist.</td>
+</tr>
+</tbody></table>
+</div><h3 id="non-functional-requirements">Non-functional requirements</h3><div class="table-scroll" role="region" aria-label="Table: ID, Requirement, Assessment" tabindex="0"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Requirement</th>
+<th>Assessment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>NFR-01</td>
+<td>Provide labelled controls, visible focus and keyboard operation.</td>
+<td>Automated checks plus manual keyboard review.</td>
+</tr>
+<tr>
+<td>NFR-02</td>
+<td>Reflow on small screens without hiding essential actions.</td>
+<td>Browser viewport review.</td>
+</tr>
+<tr>
+<td>NFR-03</td>
+<td>Render imported values as text and validate external links.</td>
+<td>Hostile-input tests and browser inspection.</td>
+</tr>
+<tr>
+<td>NFR-04</td>
+<td>Build from the committed lockfile with locally bundled assets.</td>
+<td>Clean install and production build.</td>
+</tr>
+<tr>
+<td>NFR-05</td>
+<td>Keep process documents outside the public site build.</td>
+<td>Inspect generated output.</td>
+</tr>
+</tbody></table>
+</div><h2 id="epics-and-user-stories">Epics and user stories</h2><h3 id="explore-a-collection">Explore a collection</h3><p>As a researcher examining a collection, I want to narrow records and inspect their source so that I can decide which material merits closer reading.</p>
+<p>This is an implementation assumption derived from the commissioned starter. Its usefulness requires observation with representative researchers. FR-01 and FR-02 implement the scenario through the explorer.</p>
+<h3 id="prepare-a-correction">Prepare a correction</h3><p>As a researcher correcting descriptive metadata, I want a recoverable working copy and an explicit export so that I can submit my changes for review.</p>
+<p>This is an implementation assumption. FR-03 through FR-07 implement the scenario. A browser workflow does not establish institutional review authority.</p>
+<h2 id="functional-scope">Functional scope</h2><p>The explorer operates on the supplied collection and exposes shareable navigation state. The editor manages a local working copy. Switching research domains requires changes to the <a href="data.html">data contract</a>, validation, controls and tests together.</p>
+<h2 id="adaptation-scenarios-for-investigation">Adaptation scenarios for investigation</h2><div class="table-scroll" role="region" aria-label="Table: Candidate scenario, Adaptation question, Evidence needed" tabindex="0"><table>
+<thead>
+<tr>
+<th>Candidate scenario</th>
+<th>Adaptation question</th>
+<th>Evidence needed</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Structured editing informed by TEI Crafter</td>
+<td>Can an agent adapt the foundation to a project&#39;s text structure and editorial rules?</td>
+<td>Source-preserving import/export, validation examples, editing and recovery tasks, expert assessment</td>
+</tr>
+<tr>
+<td>Correspondence exploration informed by CorrespExplorer</td>
+<td>Can an agent support people, places, dates and their uncertainty without flattening their meaning?</td>
+<td>Documented source mappings, exploration tasks, missing-data cases and review of derived views</td>
+</tr>
+</tbody></table>
+</div><p>These scenarios express intended investigations. Version 0.1 does not implement TEI editing or correspondence-specific views. Reviewing the existing tools and selecting open data must precede implementation. Compare what each adaptation reuses, changes and replaces before fixing shared interfaces.</p>
+<h2 id="decisions">Decisions</h2><h3 id="adr-001-bounded-browser-starter">ADR-001 Bounded browser starter</h3><p>The repository&#39;s purpose is to support agent-assisted development of research tools. Version 0.1 implements a small static application to make adaptation inspectable. A universal module interface has no supporting adaptation evidence yet. Additional cases determine the technical extent of the core.</p>
+<h3 id="adr-002-explicit-interchange">ADR-002 Explicit interchange</h3><p>Local draft storage aids continuity. Export creates a portable file the researcher can inspect and preserve. Browser storage can be cleared or unavailable, so visible error handling and export are part of the workflow.</p>
+<h3 id="adr-003-canonical-specifications">ADR-003 Canonical specifications</h3><p>Selected knowledge files feed the documentation build. Maintaining one authored source reduces contradictory copies. Publication uses an explicit allowlist.</p>
+<h3 id="adr-004-reference-cases-and-evidence">ADR-004 Reference cases and evidence</h3><p>Visible examples should use real open data with documented selection, rights and transformations. Synthetic inputs remain available for deterministic error cases. Simulated stakeholder perspectives can generate requirements and counterexamples, but their output is a hypothesis requiring source checks or assessment by actual stakeholders. Neither simulated agreement nor passing software tests establishes research usefulness.</p>
+<h2 id="provisional-concept-study-requirements">Provisional concept-study requirements</h2><p>The three concept routes support the same research episode: find records using the pilot&#39;s metadata search fields, select two to four candidates, inspect original descriptions and uncertainty, remove/reselect candidates, write an observation and unresolved question, and download a research artefact. Source records and source provenance are preserved; researcher text is separately identified. Search must not erase the retained comparison selection. Empty selection cannot produce a misleading completed comparison. Each concept uses the investigation exchange and local recovery contract in <a href="data.html#investigation-exchange">Data</a>. Save success, failure and replacement are explicit. Export/reopen also preserves notes without selected records, which is unfinished work rather than a completed comparison. Each concept exposes a route back to the concept comparison. These requirements scope the study, not every future research tool.</p>
+<h2 id="investigation-workbench-contract">Investigation workbench contract</h2><ul>
+<li>IW-01: At <code>/pilot/</code>, inspect the real frozen catalogue through search, classification, pagination and title or catalogue-date ordering. Original attribution qualifiers remain visible.</li>
+<li>IW-02: Select up to four records, change search without losing that selection, compare original fields and record a research question, observation and unresolved question. Browser navigation remains usable.</li>
+<li>IW-03: Restore locally saved investigation state after reload. If storage fails or another tab changes the draft, preserve the existing stored bytes and allow export of current work.</li>
+<li>IW-04: Export and reopen the canonical investigation, preserving selected source evidence, provenance and separately authored notes. Reject unsupported or changed evidence before replacing work. Confirm valid replacement and abort a file read if intervening edits would be lost.</li>
+<li>IW-05: Keep readable content selectable, avoid introductory sublines, support keyboard focus and a readable narrow comparison region, and provide explicit source and rights context through About and record links.</li>
+<li>IW-06: Inspect the provenance of each comparison value through a labelled Source control. Show original raw values, transformation, publisher, unknown original producer, source identity and the scope of executed technical checks. Keep source uncertainty visible before opening the dialog and return focus on close without changing work.</li>
+<li>IW-07: Create version 2 exports containing selected field evidence, accept exact version 1 files and drafts, and leave legacy source/stored bytes untouched on opening. Reject changed field evidence before replacing the current investigation. Preserve original exports as the rollback path.</li>
+</ul>
+<p>The instrument study is a candidate research workflow. Human acceptance and interdisciplinary transfer remain separate from engineering checks. The baseline and concepts remain accessible for controlled comparisons, with task scope recorded before comparing results.</p>
+<h2 id="development-and-handover-acceptance">Development and handover acceptance</h2><p>The <a href="project.html#development-commitments">five development commitments</a> govern the whole project. A prepared guide or protocol is implementation of the procedure; empirical acceptance requires its actual use.</p>
+<div class="table-scroll" role="region" aria-label="Table: ID, Observable outcome, Required evidence" tabindex="0"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Observable outcome</th>
+<th>Required evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DEV-01</td>
+<td>A researcher can start with a question, material or existing workflow in ordinary language and inspect a working slice.</td>
+<td>The start guide supplies a copyable prompt and example; a real novice session records prerequisites, assistance, task result and understanding before claiming independent use.</td>
+</tr>
+<tr>
+<td>DEV-02</td>
+<td>An existing tool can be adapted without losing its material or work.</td>
+<td>Reproduce the prior workflow, preserve a referenced baseline and original exports, classify retained/changed/replaced parts, and test old plus new interchange and recovery.</td>
+</tr>
+<tr>
+<td>DEV-03</td>
+<td>Another responsible person can maintain or retire an adaptation from its handover.</td>
+<td>Record ownership or explicit vacancies, environment, supported versions, upgrade and rollback procedure, preservation/export path and outstanding checks. Demonstrate recovery; do not infer a long-term service commitment.</td>
+</tr>
+<tr>
+<td>DEV-04</td>
+<td>Reuse claims reflect independent use.</td>
+<td>Observe people outside implementation on relevant tasks, record failures and help, and bound claims to the observed cases. Agent-only trials remain preparation.</td>
+</tr>
+<tr>
+<td>DEV-05</td>
+<td>Development-method claims have a traceable basis separate from product usefulness.</td>
+<td>Follow the published development study protocol with a declared comparator, task/material/tool identity, interventions, outcome checks and held-out case. Report unperformed comparisons explicitly.</td>
+</tr>
+</tbody></table>
+</div><p>Current delivery implements the procedures and the bounded Met provenance adaptation. Independent researcher sessions and comparative method outcomes are not implied by its completion.</p>
+</main></div><footer>Digital Humanities Craft. Development version 0.1.0. <a href="https://dhcraft.org/fancy-research-tools/">Development and support</a></footer></body></html>

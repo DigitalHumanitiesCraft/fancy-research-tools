@@ -1,0 +1,129 @@
+[
+  {
+    "label": "production-check",
+    "cwd": "C:/Users/chris/Documents/GitHub/fancy-research-tools",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "check"
+    ],
+    "started": "2026-10-10T17:49:52.214Z",
+    "ended": "2026-10-10T17:49:53.099Z",
+    "exitCode": 0
+  },
+  {
+    "label": "production-data",
+    "cwd": "C:/Users/chris/Documents/GitHub/fancy-research-tools",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "check:data"
+    ],
+    "started": "2026-10-10T17:49:53.101Z",
+    "ended": "2026-10-10T17:49:53.617Z",
+    "exitCode": 0
+  },
+  {
+    "label": "production-unit",
+    "cwd": "C:/Users/chris/Documents/GitHub/fancy-research-tools",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "test"
+    ],
+    "started": "2026-10-10T17:49:53.618Z",
+    "ended": "2026-10-10T17:49:54.625Z",
+    "exitCode": 0
+  },
+  {
+    "label": "production-build",
+    "cwd": "C:/Users/chris/Documents/GitHub/fancy-research-tools",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "build"
+    ],
+    "started": "2026-10-10T17:49:54.626Z",
+    "ended": "2026-10-10T17:49:55.406Z",
+    "exitCode": 0
+  },
+  {
+    "label": "production-browser",
+    "cwd": "C:/Users/chris/Documents/GitHub/fancy-research-tools",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "test:e2e"
+    ],
+    "started": "2026-10-10T17:49:55.408Z",
+    "ended": "2026-10-10T17:50:10.840Z",
+    "exitCode": 0
+  },
+  {
+    "label": "fresh-install",
+    "cwd": "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\repository-audit-fresh",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "ci"
+    ],
+    "started": "2026-10-10T17:50:11.059Z",
+    "ended": "2026-10-10T17:50:13.631Z",
+    "exitCode": 0
+  },
+  {
+    "label": "fresh-check",
+    "cwd": "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\repository-audit-fresh",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "check"
+    ],
+    "started": "2026-10-10T17:50:13.636Z",
+    "ended": "2026-10-10T17:50:15.874Z",
+    "exitCode": 0
+  },
+  {
+    "label": "fresh-data",
+    "cwd": "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\repository-audit-fresh",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "check:data"
+    ],
+    "started": "2026-10-10T17:50:15.875Z",
+    "ended": "2026-10-10T17:50:16.469Z",
+    "exitCode": 0
+  },
+  {
+    "label": "fresh-unit",
+    "cwd": "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\repository-audit-fresh",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "test"
+    ],
+    "started": "2026-10-10T17:50:16.471Z",
+    "ended": "2026-10-10T17:50:18.138Z",
+    "exitCode": 0
+  },
+  {
+    "label": "fresh-build",
+    "cwd": "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\repository-audit-fresh",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "build"
+    ],
+    "started": "2026-10-10T17:50:18.139Z",
+    "ended": "2026-10-10T17:50:19.952Z",
+    "exitCode": 0
+  }
+]

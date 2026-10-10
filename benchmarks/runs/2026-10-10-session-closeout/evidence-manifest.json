@@ -1,0 +1,106 @@
+{
+  "recordedAt": "2026-10-10T16:11:53.960Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": ".last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "concepts-atlas-research-co-7b597--download-accessible-layout/atlas-compare.png",
+      "bytes": 84743,
+      "sha256": "c473e915107ac4775995b370682ff23f28ac9ff177f31788ab7e1c8f99de0e7b"
+    },
+    {
+      "path": "concepts-atlas-research-co-7b597--download-accessible-layout/atlas-export.json",
+      "bytes": 17435,
+      "sha256": "c98cda45b91c9db89ff88a97012b9d51f2360672a13c88df977956ed8e04acdb"
+    },
+    {
+      "path": "concepts-atlas-research-co-7b597--download-accessible-layout/atlas-narrow.png",
+      "bytes": 62042,
+      "sha256": "27967517c878c918c99d988e6f9aec107f7b9eee9c3915d668eac41f2a40ef5b"
+    },
+    {
+      "path": "concepts-atlas-research-co-7b597--download-accessible-layout/atlas-start.png",
+      "bytes": 137368,
+      "sha256": "7e20f25f432b8fe5a676c36d3ee4b21094e03286d5f5dd8112084b2f8a6889a9"
+    },
+    {
+      "path": "concepts-bench-research-co-ea06a--download-accessible-layout/bench-compare.png",
+      "bytes": 74644,
+      "sha256": "015c77a5b318045a4877283adbf3dc98de62fa52204c7205df31a698ca892d59"
+    },
+    {
+      "path": "concepts-bench-research-co-ea06a--download-accessible-layout/bench-export.json",
+      "bytes": 17435,
+      "sha256": "c98cda45b91c9db89ff88a97012b9d51f2360672a13c88df977956ed8e04acdb"
+    },
+    {
+      "path": "concepts-bench-research-co-ea06a--download-accessible-layout/bench-narrow.png",
+      "bytes": 59786,
+      "sha256": "f21cb89975e8dabc1bcd2364f22459306266e2eac22645a0aa03f37326097008"
+    },
+    {
+      "path": "concepts-bench-research-co-ea06a--download-accessible-layout/bench-start.png",
+      "bytes": 316169,
+      "sha256": "b835122f89337e7696adca99666e8cab543cd8018f2e3fa7b1895433daba7204"
+    },
+    {
+      "path": "concepts-trail-research-co-458df--download-accessible-layout/trail-compare.png",
+      "bytes": 59934,
+      "sha256": "baaccc55eec0485682750aae5fb058e9554aa1224d7ad3c17b57c8d5571801db"
+    },
+    {
+      "path": "concepts-trail-research-co-458df--download-accessible-layout/trail-export.json",
+      "bytes": 17435,
+      "sha256": "c98cda45b91c9db89ff88a97012b9d51f2360672a13c88df977956ed8e04acdb"
+    },
+    {
+      "path": "concepts-trail-research-co-458df--download-accessible-layout/trail-narrow.png",
+      "bytes": 48840,
+      "sha256": "477bd118e00f9839ee9adeadf7d59cb234c34c1d1524f995382d10359735f299"
+    },
+    {
+      "path": "concepts-trail-research-co-458df--download-accessible-layout/trail-start.png",
+      "bytes": 296959,
+      "sha256": "22ced1f9c66070201bc802debff90ee8873da63c9b1a11edf7a64e0611b3765a"
+    },
+    {
+      "path": "documentation-desktop.png",
+      "bytes": 708566,
+      "sha256": "28b37151902f362c95c3329380873a45cdc8b5f986a9a06f84721fce302dd326"
+    },
+    {
+      "path": "documentation-mobile.png",
+      "bytes": 486051,
+      "sha256": "01a2006b628c3a034f7d5947eb036b6abf14414bece6236bb579be0e6ebcae48"
+    },
+    {
+      "path": "pilot-desktop.png",
+      "bytes": 83748,
+      "sha256": "df845c83dda5be23f8938f1a6d5a3efb2ce8e6f5ffd099a836c16f69175750a0"
+    },
+    {
+      "path": "pilot-mobile.png",
+      "bytes": 83860,
+      "sha256": "e9b014397d2f33911ee3015ba0da39cf394e47d0e822a340121395ea902ffe17"
+    },
+    {
+      "path": "workbench-corrupt-import-l-a73d2-comparison-remains-operable/comparison-narrow.png",
+      "bytes": 51669,
+      "sha256": "beec10623154f850efd63827248088862b6759017b8fa70c10bcc8d26f94e8b6"
+    },
+    {
+      "path": "workbench-investigation-re-dcfed-s-reload-and-file-reopening/comparison-desktop.png",
+      "bytes": 63965,
+      "sha256": "2a725413755aa5185e7cc2d21b7b860c0b1011079d5b04336e4ffb53b21abfb4"
+    },
+    {
+      "path": "workbench-investigation-re-dcfed-s-reload-and-file-reopening/investigation.json",
+      "bytes": 17434,
+      "sha256": "b594b16d6494260d85d8dbdb9b66e05ea603f2f284d6df69a189ced2be2ae3bd"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+[WebServer] (node:31312) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:32024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32024) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:35:1 › archived passage annotation preserves exact source and reopens its actual download (6.8s)
+(node:7708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:87:1 › a changed interpretation clears its earlier explicit review (5.5s)
+(node:11312) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:11312) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:118:1 › unfinished annotations survive declined source changes and block export or replacement (6.0s)
+(node:45252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  4 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:149:1 › rejected and cancelled imports preserve a valid notebook and accepted raw author strings (5.7s)
+(node:34264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34264) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 5 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:208:1 › corrupt and externally changed saved copies remain recoverable without overwrite (1.0s)
+  x  6 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:234:1 › narrow reading and annotation controls are keyboard accessible and reflow (5.5s)
+
+
+  1) ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:35:1 › archived passage annotation preserves exact source and reopens its actual download 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('#quotation')
+    Expected: "Scatterometer data around midday confirmed"
+    Received: ""
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" locator('#quotation') with timeout 5000ms
+      - waiting for locator('#quotation')
+        14 × locator resolved to <pre tabindex="0" id="quotation" aria-labelledby="quotation-label"></pre>
+           - unexpected value ""
+
+
+      23 |   await page.keyboard.up("Shift");
+      24 |   await page.getByRole("button", { name: "Annotate selection", exact: true }).click();
+    > 25 |   await expect(page.locator("#quotation")).toHaveText(passage);
+         |                                            ^
+      26 | }
+      27 | async function exportNotebook(page: Page, info: TestInfo, name: string) {
+      28 |   const pending = page.waitForEvent("download");
+        at selectPassage (C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:25:44)
+        at C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:46:3
+
+    Error Context: test-results\annotation-archived-passag-77160-reopens-its-actual-download\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\annotation-archived-passag-77160-reopens-its-actual-download\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\annotation-archived-passag-77160-reopens-its-actual-download\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:87:1 › a changed interpretation clears its earlier explicit review 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('#quotation')
+    Expected: "Scatterometer data around midday confirmed"
+    Received: ""
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" locator('#quotation') with timeout 5000ms
+      - waiting for locator('#quotation')
+        14 × locator resolved to <pre tabindex="0" id="quotation" aria-labelledby="quotation-label"></pre>
+           - unexpected value ""
+
+
+      23 |   await page.keyboard.up("Shift");
+      24 |   await page.getByRole("button", { name: "Annotate selection", exact: true }).click();
+    > 25 |   await expect(page.locator("#quotation")).toHaveText(passage);
+         |                                            ^
+      26 | }
+      27 | async function exportNotebook(page: Page, info: TestInfo, name: string) {
+      28 |   const pending = page.waitForEvent("download");
+        at selectPassage (C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:25:44)
+        at C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:89:3
+
+    Error Context: test-results\annotation-a-changed-inter-53468-its-earlier-explicit-review\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\annotation-a-changed-inter-53468-its-earlier-explicit-review\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\annotation-a-changed-inter-53468-its-earlier-explicit-review\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:118:1 › unfinished annotations survive declined source changes and block export or replacement 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('#quotation')
+    Expected: "Scatterometer data around midday confirmed"
+    Received: ""
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" locator('#quotation') with timeout 5000ms
+      - waiting for locator('#quotation')
+        14 × locator resolved to <pre tabindex="0" id="quotation" aria-labelledby="quotation-label"></pre>
+           - unexpected value ""
+
+
+      23 |   await page.keyboard.up("Shift");
+      24 |   await page.getByRole("button", { name: "Annotate selection", exact: true }).click();
+    > 25 |   await expect(page.locator("#quotation")).toHaveText(passage);
+         |                                            ^
+      26 | }
+      27 | async function exportNotebook(page: Page, info: TestInfo, name: string) {
+      28 |   const pending = page.waitForEvent("download");
+        at selectPassage (C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:25:44)
+        at C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:124:3
+
+    Error Context: test-results\annotation-unfinished-anno-7c4f9-block-export-or-replacement\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\annotation-unfinished-anno-7c4f9-block-export-or-replacement\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\annotation-unfinished-anno-7c4f9-block-export-or-replacement\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:149:1 › rejected and cancelled imports preserve a valid notebook and accepted raw author strings 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('#quotation')
+    Expected: "Scatterometer data around midday confirmed"
+    Received: ""
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" locator('#quotation') with timeout 5000ms
+      - waiting for locator('#quotation')
+        14 × locator resolved to <pre tabindex="0" id="quotation" aria-labelledby="quotation-label"></pre>
+           - unexpected value ""
+
+
+      23 |   await page.keyboard.up("Shift");
+      24 |   await page.getByRole("button", { name: "Annotate selection", exact: true }).click();
+    > 25 |   await expect(page.locator("#quotation")).toHaveText(passage);
+         |                                            ^
+      26 | }
+      27 | async function exportNotebook(page: Page, info: TestInfo, name: string) {
+      28 |   const pending = page.waitForEvent("download");
+        at selectPassage (C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:25:44)
+        at C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:153:3
+
+    Error Context: test-results\annotation-rejected-and-ca-fd5a2-accepted-raw-author-strings\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\annotation-rejected-and-ca-fd5a2-accepted-raw-author-strings\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\annotation-rejected-and-ca-fd5a2-accepted-raw-author-strings\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:234:1 › narrow reading and annotation controls are keyboard accessible and reflow 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  locator('#quotation')
+    Expected: "Scatterometer data around midday confirmed"
+    Received: ""
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" locator('#quotation') with timeout 5000ms
+      - waiting for locator('#quotation')
+        14 × locator resolved to <pre tabindex="0" id="quotation" aria-labelledby="quotation-label"></pre>
+           - unexpected value ""
+
+
+      23 |   await page.keyboard.up("Shift");
+      24 |   await page.getByRole("button", { name: "Annotate selection", exact: true }).click();
+    > 25 |   await expect(page.locator("#quotation")).toHaveText(passage);
+         |                                            ^
+      26 | }
+      27 | async function exportNotebook(page: Page, info: TestInfo, name: string) {
+      28 |   const pending = page.waitForEvent("download");
+        at selectPassage (C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:25:44)
+        at C:\Users\chris\Documents\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:242:3
+
+    Error Context: test-results\annotation-narrow-reading--62a72-board-accessible-and-reflow\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\annotation-narrow-reading--62a72-board-accessible-and-reflow\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\annotation-narrow-reading--62a72-board-accessible-and-reflow\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:35:1 › archived passage annotation preserves exact source and reopens its actual download 
+    ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:87:1 › a changed interpretation clears its earlier explicit review 
+    ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:118:1 › unfinished annotations survive declined source changes and block export or replacement 
+    ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:149:1 › rejected and cancelled imports preserve a valid notebook and accepted raw author strings 
+    ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:234:1 › narrow reading and annotation controls are keyboard accessible and reflow 
+  1 passed (40.2s)

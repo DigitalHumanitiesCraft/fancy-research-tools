@@ -1,0 +1,38 @@
+[
+  {
+    "path": "src/ui/text-value.ts",
+    "sha256": "fbc030b0937ab993d77de77a3207c6ff37fa1d87423c63ccb707c90c4f9ef9de"
+  },
+  {
+    "path": "src/workbench/main.ts",
+    "sha256": "5393ac78af2b39da791bc3be21dedff39dfbcda5bd372ae537a513564e6e0cc6"
+  },
+  {
+    "path": "src/app/main.ts",
+    "sha256": "176288851940be0afeb78c75f69a564b379dc84240253ce19ac152bc193f9263"
+  },
+  {
+    "path": "src/concepts/atlas/main.ts",
+    "sha256": "07dec120537a67275d5bb1073246d4d475e1548e544604fbff1e7a1539ad862d"
+  },
+  {
+    "path": "src/concepts/bench/main.ts",
+    "sha256": "b945976490c099b1fd7496c2477f7986e5ff87545f2608dac0187efbb59c2e3b"
+  },
+  {
+    "path": "src/concepts/trail/main.ts",
+    "sha256": "fbb61a05253c2d1a7159f47aedfcde121e68fafc4f892cba2ea3c15651a871ef"
+  },
+  {
+    "path": "tests/e2e/workbench.spec.ts",
+    "sha256": "e79e31485b5882223b7c4d598542a049269d33ddf081e41aa53d8e1665b4130f"
+  },
+  {
+    "path": "tests/e2e/workspace.spec.ts",
+    "sha256": "4c2d33f9ef87623b962192adc57a4ba8927eda1363b19d7bbadead005e9b3fce"
+  },
+  {
+    "path": "tests/e2e/concepts.spec.ts",
+    "sha256": "0cabbe6915c37bc7eb132a91f3ecb2a095181893e91d1b22b22190b42fc1b1c7"
+  }
+]

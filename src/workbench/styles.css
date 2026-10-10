@@ -1,0 +1,488 @@
+@layer reset, base, tokens, layout, components, utilities;
+@import "../ui/foundation.css";
+@layer reset {
+  body,
+  h1,
+  h2,
+  p,
+  dl,
+  dd {
+    margin: 0;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+@layer tokens {
+  :root {
+    color-scheme: light;
+    --paper: oklch(98% 0.004 95);
+    --surface: oklch(100% 0 0);
+    --ink: oklch(24% 0.022 175);
+    --muted: oklch(44% 0.02 175);
+    --accent: oklch(36% 0.065 175);
+    --selection: oklch(95% 0.024 170);
+    --rule: oklch(87% 0.009 175);
+    --control: oklch(59% 0.025 175);
+    --focus: oklch(47% 0.14 45);
+  }
+}
+@layer base {
+  body {
+    font:
+      1rem / 1.5 system-ui,
+      sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+  }
+  h1 {
+    font-size: clamp(1.6rem, 1.3rem + 1vw, 2rem);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+  }
+  h2 {
+    font-size: 1.08rem;
+    font-weight: 650;
+    line-height: 1.35;
+  }
+  a {
+    color: var(--accent);
+    text-underline-offset: 0.2em;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid var(--control);
+    background: var(--surface);
+    color: var(--ink);
+    border-radius: 0.3rem;
+    min-block-size: 2.75rem;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background: var(--selection);
+  }
+  button:disabled {
+    cursor: default;
+    opacity: 0.55;
+  }
+  input,
+  select,
+  textarea {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--control);
+    border-radius: 0.3rem;
+    padding: 0.65rem 0.75rem;
+  }
+  textarea {
+    resize: vertical;
+  }
+  label {
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  label input,
+  label textarea,
+  label select {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+  }
+  p,
+  dd,
+  th,
+  td,
+  h2,
+  a {
+    overflow-wrap: anywhere;
+  }
+  .icon {
+    inline-size: 1.1em;
+    block-size: 1.1em;
+    flex: 0 0 auto;
+    vertical-align: -0.12em;
+  }
+  .primary {
+    color: var(--surface);
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .primary:hover {
+    background: var(--ink);
+  }
+  .quiet-button {
+    border-color: transparent;
+    background: transparent;
+    color: var(--accent);
+  }
+}
+@layer layout {
+  .app-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.7rem 2rem;
+    padding: 0.9rem clamp(1rem, 3vw, 3rem);
+    background: var(--surface);
+    border-block-end: 1px solid var(--rule);
+  }
+  .identity {
+    font-size: 1.1rem;
+    font-weight: 750;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  :where(.app-header) nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    flex: 1 1 auto;
+  }
+  :where(.app-header nav) a {
+    padding-block: 0.6rem;
+    text-decoration: none;
+    color: var(--muted);
+    overflow-wrap: normal;
+  }
+  :where(.app-header nav) a[aria-current] {
+    color: var(--ink);
+    box-shadow: 0 2px var(--accent);
+  }
+  main {
+    max-inline-size: 100rem;
+    margin-inline: auto;
+    padding: 1.1rem clamp(1rem, 3vw, 3rem);
+  }
+  .section-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block-end: 1rem;
+  }
+  .section-heading > a {
+    font-weight: 600;
+  }
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 0.75rem;
+  }
+  .search-field {
+    flex: 2 1 22rem;
+  }
+  .search-form > label:nth-child(2) {
+    flex: 1 1 15rem;
+    min-inline-size: 0;
+  }
+  .collection-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block: 1.25rem 0.7rem;
+  }
+  .collection-toolbar label {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .collection-toolbar select {
+    font-size: 0.85rem;
+    padding: 0.35rem;
+  }
+  #result-status {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  #selection-tray {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  #selection-tray:not(:empty) {
+    padding-block-end: 1rem;
+  }
+  :where(#selection-tray) button {
+    background: var(--selection);
+    border-color: var(--rule);
+    font-size: 0.85rem;
+  }
+  .record-list {
+    overflow-x: auto;
+    background: var(--surface);
+  }
+  .record-identity a {
+    display: block;
+    inline-size: fit-content;
+    margin-block-start: 0.15rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .record-identity a .icon {
+    margin-inline-start: 0.35rem;
+  }
+  dt {
+    font-size: 0.72rem;
+    color: var(--muted);
+  }
+  dd {
+    font-size: 0.9rem;
+  }
+  .pagination {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: end;
+    margin-block-start: 1rem;
+    font-size: 0.85rem;
+  }
+  .research-question {
+    margin-block-end: 1rem;
+  }
+  .research-question input {
+    inline-size: 100%;
+  }
+  .notebook {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 23rem), 1fr));
+    gap: 1.5rem;
+    margin-block-start: 1rem;
+  }
+  .notebook textarea {
+    inline-size: 100%;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    align-items: center;
+    padding: 1rem clamp(1rem, 3vw, 3rem);
+    border-block-start: 1px solid var(--rule);
+    font-size: 0.8rem;
+  }
+  footer nav {
+    display: flex;
+    gap: 1rem;
+  }
+  #recovery {
+    flex: 1 1 25rem;
+    min-inline-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+  }
+  #recovery input {
+    font-size: 0.8rem;
+  }
+  #recovery label {
+    font-size: 0.8rem;
+  }
+}
+@layer components {
+  .comparison-region {
+    overflow-x: auto;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 0.3rem;
+  }
+  table {
+    border-collapse: collapse;
+    inline-size: 100%;
+  }
+  :where(#matrix th),
+  :where(#matrix td) {
+    text-align: start;
+    vertical-align: top;
+    padding: 0.65rem 1rem;
+    min-inline-size: 13rem;
+    max-inline-size: 23rem;
+  }
+  :where(#matrix th:first-child) {
+    min-inline-size: 8rem;
+    inline-size: 8rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  :where(#matrix thead) {
+    background: var(--selection);
+  }
+  :where(#matrix thead a) {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-block: 0.3rem;
+  }
+  :where(#matrix thead .quiet-button) {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  :where(#matrix tbody tr) {
+    border-block-start: 1px solid var(--rule);
+  }
+  :where(#matrix tbody tr:first-child td) {
+    font-weight: 550;
+  }
+  caption {
+    caption-side: bottom;
+    text-align: start;
+    padding: 0.7rem 1rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .source-value {
+    display: block;
+  }
+  .source-action {
+    display: inline-block;
+    min-block-size: 1.5rem;
+    padding-block: 0.2rem;
+    margin-block-start: 0.1rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--accent);
+  }
+  .source-details {
+    max-inline-size: 72rem;
+    container-type: inline-size;
+  }
+  .source-details h2 {
+    font-size: 1rem;
+    margin-block: 1.25rem 0.6rem;
+  }
+  .source-details dl {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .source-details dt {
+    font-size: 0.8rem;
+  }
+  .source-details dd {
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .source-details ul {
+    padding-inline-start: 1.25rem;
+  }
+  @container (min-width: 40rem) {
+    .source-details dl > div {
+      display: grid;
+      grid-template-columns: 15rem minmax(0, 1fr);
+      gap: 1rem;
+    }
+  }
+  .catalogue-table {
+    min-inline-size: 52rem;
+    table-layout: fixed;
+    font-size: 0.9rem;
+  }
+  .catalogue-table th,
+  .catalogue-table td {
+    padding: 0.5rem 0.8rem;
+    text-align: start;
+    vertical-align: top;
+    overflow-wrap: anywhere;
+  }
+  .catalogue-table thead th {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    background: var(--paper);
+    padding-block-end: 0.7rem;
+  }
+  .catalogue-table thead th:nth-child(1) {
+    inline-size: 4rem;
+  }
+  .catalogue-table thead th:nth-child(2) {
+    inline-size: 22%;
+  }
+  .catalogue-table thead th:nth-child(3) {
+    inline-size: 18%;
+  }
+  .catalogue-table thead th:nth-child(4) {
+    inline-size: 26%;
+  }
+  .catalogue-table tbody tr {
+    border-block-start: 1px solid var(--rule);
+  }
+  .catalogue-table tbody th {
+    font-weight: 600;
+  }
+  .catalogue-table tr.selected {
+    background: var(--selection);
+  }
+  .selection-input {
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    accent-color: var(--accent);
+    margin: 0.3rem 0;
+    cursor: pointer;
+  }
+  #comparison-empty {
+    padding-block: 1rem;
+  }
+  #status:not(:empty) {
+    padding: 0.8rem;
+    margin-block-start: 1rem;
+    background: var(--selection);
+  }
+  .about-list {
+    max-inline-size: 65ch;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .about-list dt {
+    font-size: 0.9rem;
+    font-weight: 650;
+    margin-block-start: 1rem;
+    color: var(--ink);
+  }
+  .about-list dd {
+    font-size: 1rem;
+  }
+  .skip-link {
+    position: absolute;
+    inset-block-start: -10rem;
+    inset-inline-start: 1rem;
+    background: var(--surface);
+    padding: 1rem;
+    z-index: 10;
+  }
+  .skip-link:focus {
+    inset-block-start: 0.5rem;
+  }
+}
+@layer utilities {
+  [hidden] {
+    display: none;
+  }
+  .visually-hidden {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}

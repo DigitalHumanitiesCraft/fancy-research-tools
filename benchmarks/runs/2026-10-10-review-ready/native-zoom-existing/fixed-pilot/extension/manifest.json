@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"FRT isolated zoom check","version":"1.0","permissions":["tabs"],"host_permissions":["<all_urls>"],"background":{"service_worker":"worker.js"}}

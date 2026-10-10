@@ -1,0 +1,54 @@
+
+> fancy-research-tools@0.1.0 prebuild
+> node scripts/build-docs.mjs
+
+
+> fancy-research-tools@0.1.0 build
+> vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 49 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/concepts/atlas/index.html                    1.35 kB │ gzip:  0.62 kB
+dist/tool/index.html                              3.26 kB │ gzip:  1.18 kB
+dist/concepts/bench/index.html                    3.38 kB │ gzip:  1.38 kB
+dist/index.html                                   3.81 kB │ gzip:  1.48 kB
+dist/concepts/index.html                          3.90 kB │ gzip:  1.33 kB
+dist/concepts/trail/index.html                    4.39 kB │ gzip:  1.71 kB
+dist/baseline/index.html                          5.28 kB │ gzip:  1.95 kB
+dist/pilot/index.html                             5.30 kB │ gzip:  1.94 kB
+dist/reference/project.html                       9.93 kB │ gzip:  3.86 kB
+dist/guides/getting-started.html                 10.40 kB │ gzip:  4.00 kB
+dist/reference/data.html                         14.28 kB │ gzip:  5.49 kB
+dist/reference/architecture.html                 14.77 kB │ gzip:  5.31 kB
+dist/reference/design.html                       16.50 kB │ gzip:  6.15 kB
+dist/guides/customizing.html                     17.17 kB │ gzip:  6.15 kB
+dist/guides/development-study.html               17.18 kB │ gzip:  6.26 kB
+dist/guides/research.html                        20.31 kB │ gzip:  7.33 kB
+dist/reference/specification.html                25.38 kB │ gzip:  8.58 kB
+dist/reference/testing.html                      26.84 kB │ gzip:  9.03 kB
+dist/assets/index-Q-f4PfQC.css                    1.76 kB │ gzip:  0.79 kB
+dist/assets/index-DrkhK5tV.css                    4.74 kB │ gzip:  1.60 kB
+dist/assets/index-D-hMVccb.css                    4.76 kB │ gzip:  1.53 kB
+dist/assets/index-D_pRJlVt.css                    5.27 kB │ gzip:  1.79 kB
+dist/assets/index-n6US5HEp.css                    5.50 kB │ gzip:  1.81 kB
+dist/assets/styles-BL0qz-FA.css                   5.94 kB │ gzip:  2.01 kB
+dist/assets/index-DtOJ4ktX.css                    6.81 kB │ gzip:  2.10 kB
+dist/assets/index-CLJlaqCi.css                    7.11 kB │ gzip:  2.16 kB
+dist/assets/text-value-DPc3ypM1.js                0.14 kB │ gzip:  0.13 kB
+dist/assets/docs-CRq-RwLb.js                      0.24 kB │ gzip:  0.20 kB
+dist/assets/modulepreload-polyfill-P2Xu9kJm.js    0.67 kB │ gzip:  0.38 kB
+dist/assets/index-CO_ajFtz.js                     0.76 kB │ gzip:  0.52 kB
+dist/assets/icons-B0Zowo1T.js                     1.04 kB │ gzip:  0.61 kB
+dist/assets/index-Bf7RW5R1.js                     4.86 kB │ gzip:  2.10 kB
+dist/assets/index-BwB-Vd_i.js                     5.20 kB │ gzip:  2.17 kB
+dist/assets/index-ARDZDro6.js                     8.47 kB │ gzip:  3.44 kB
+dist/assets/index-CRIaihHT.js                     9.49 kB │ gzip:  3.82 kB
+dist/assets/index-DM6ByK_X.js                     9.70 kB │ gzip:  3.93 kB
+dist/assets/index-BlGguEcW.js                    12.80 kB │ gzip:  4.91 kB
+dist/assets/records-B0SmZL-k.js                  34.11 kB │ gzip:  6.97 kB
+dist/assets/browser-ClDs7QqY.js                 158.09 kB │ gzip: 12.64 kB
+
+✓ built in 269ms

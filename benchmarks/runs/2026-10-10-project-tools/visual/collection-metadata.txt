@@ -1,0 +1,67 @@
+Skip to collection
+Edit collection records
+All tools
+Documentation
+Fünf Briefe aus dem Nachlass von Anton Emanuel Schönbach
+Import JSON
+Export collection
+Search records
+Search
+
+Saar, Ferdinand von → Schönbach, Anton Emanuel
+
+1898-12-03, Habrovany
+Open
+
+Saar, Ferdinand von → Schönbach, Anton Emanuel
+
+1888-10-30, Blansko
+Open
+
+Saar, Ferdinand von → Schönbach, Anton Emanuel
+
+1905-10-20, Döbling
+Open
+
+Saar, Ferdinand von → Schönbach, Anton Emanuel
+
+1888-01-03, Blansko
+Open
+
+Ebner-Eschenbach, Marie von → Schönbach, Anna
+
+1911-09-01, Zdislavice
+Open
+Edit record
+Title
+Date
+Place
+Record type
+Working review
+Draft
+Checked
+
+Manual assertion; no reviewer or criterion recorded.
+
+Working source note
+Notes
+Save record
+Cancel editing
+Original source values
+Sender
+Saar, Ferdinand von
+Recipient
+Schönbach, Anton Emanuel
+Sent date
+1898-12-03
+Sent from
+Habrovany
+Letter in the edition
+CMIF snapshot
+CC0
+
+Edition editor: Martin Anton Müller.
+
+The working title joins sender and recipient. Letter is the assigned record type.
+
+No review of historical accuracy recorded.

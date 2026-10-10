@@ -1,0 +1,61 @@
+{
+  "scope": "Forecast reading annotation UI; repository integration and final production suite remain with root runner.",
+  "files": [
+    {
+      "path": "annotations/index.html",
+      "bytes": 5533,
+      "sha256": "950aad220e1189dc079bd7fc72c8079cacefa99647089a69db891e272708e759"
+    },
+    {
+      "path": "src/annotation/main.ts",
+      "bytes": 13812,
+      "sha256": "384c9cabf06d9a2cb777497847809b4705065e6254d92d1d68f19cdea0d9f74b"
+    },
+    {
+      "path": "src/annotation/styles.css",
+      "bytes": 5858,
+      "sha256": "1f34b136714058fced0c3d8c379caf952d794e22ea82bf62913db7ffc8d93ff1"
+    },
+    {
+      "path": "tests/e2e/annotation.spec.ts",
+      "bytes": 16178,
+      "sha256": "82d32a43ce5ccee5ee920610bf26d9de68f69bc8de3b790e13ae730981162e88"
+    }
+  ],
+  "regime": "Existing Vite and TypeScript; no new dependency.",
+  "design": "Original archived bulletin and source attribution beside exact quotation, interpretation, self-declared creator and optional source-fit review. Compact saved annotations with return, edit, remove; question and portable notebook recovery. Independent blue/ink surface, native source selection and All tools exit.",
+  "checks": {
+    "typecheck": "passed",
+    "biome": "passed for owned frontend/test files",
+    "focusedBrowser": "8 passed in13.1s; final narrow/keyboard test repeated after Home-at-first-LF fix and passed",
+    "nativePointer": "actual drag selection retained exact source offsets in download",
+    "keyboard": "readonly fallback uses native textarea selectionStart/End for Shift+Left/Right and Home/End; test exercises leading source LF and domain passage",
+    "recovery": "actual export/reopen, raw imported author preservation, review invalidation, explicit remove, cancelled source navigation/import, pending export/import guards, interrupted asynchronous import, corrupt/external saved copy preservation",
+    "accessibility": "axe passed at320px with annotation/review visible, no page horizontal overflow at320px or200%CSStext; screenshot visually inspected",
+    "unperformed": [
+      "native browser zoom",
+      "screen reader",
+      "human interpretation or research acceptance"
+    ]
+  },
+  "observations": [
+    "Initial Chromium readonly textareas ignored Shift+Arrow selection. A minimal isolated browser reproduction distinguished readonly from editable; initial failed evidence retained. Added bounded keyboard fallback without enabling editing.",
+    "Initial focused screenshot showed source text scrolled to the end after focus; reset source caret and implemented wrapped-text offset revelation. Final screenshot shows selected passage in context."
+  ],
+  "evidence": [
+    "initial-tests.log",
+    "test-results/",
+    "corrected-tests.log",
+    "corrected-results/",
+    "final-tests.log",
+    "final-results/",
+    "keyboard-final.log",
+    "keyboard-final-results/",
+    "native-selection.mjs"
+  ],
+  "servers": {
+    "dev": "http://127.0.0.1:4187/annotations/",
+    "execSession": 43270,
+    "purpose": "Gallery agent screenshot; root can retain or stop after capture."
+  }
+}

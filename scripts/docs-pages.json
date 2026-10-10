@@ -1,0 +1,17 @@
+[
+  ["docs/index.md", "index.html", "Overview"],
+  ["docs/getting-started.md", "guides/getting-started.html", "Get started"],
+  ["docs/customizing.md", "guides/customizing.html", "Customize"],
+  ["docs/research.md", "guides/research.html", "Research basis"],
+  [
+    "benchmarks/development-study-protocol.md",
+    "guides/development-study.html",
+    "Development study"
+  ],
+  ["knowledge/project.md", "reference/project.html", "Project"],
+  ["knowledge/specification.md", "reference/specification.html", "Specification"],
+  ["knowledge/architecture.md", "reference/architecture.html", "Architecture"],
+  ["knowledge/data.md", "reference/data.html", "Data"],
+  ["knowledge/design.md", "reference/design.html", "Design"],
+  ["knowledge/testing.md", "reference/testing.html", "Testing"]
+]

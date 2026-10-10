@@ -1,0 +1,14 @@
+{
+  "stopped": {
+    "ProcessId": 29040,
+    "ParentProcessId": 11936,
+    "ExecutablePath": "C:\\Program Files\\nodejs\\node.exe",
+    "CommandLine": "\"C:\\Program Files\\nodejs\\node.exe\" node_modules/vite/bin/vite.js --host 127.0.0.1 --port 4187 --strictPort"
+  },
+  "developmentListenerRemains": false,
+  "productionListener": {
+    "LocalAddress": "127.0.0.1",
+    "LocalPort": 4173,
+    "OwningProcess": 40200
+  }
+}

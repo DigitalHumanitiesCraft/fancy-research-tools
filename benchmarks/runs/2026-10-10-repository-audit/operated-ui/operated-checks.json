@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:4174/pilot/?q=wood#comparison",
+  "version": "source dev server4174 after text binding fix",
+  "selectionFocus": "Compare Ūd, 500526",
+  "routeFocus": "Comparison",
+  "sourceFocus": "Source for Attribution, Book Harmonium, Met 500531",
+  "narrow": {
+    "scrollWidth": 320,
+    "innerWidth": 320
+  },
+  "selection": "Lepuye (?)",
+  "nativeZoom": "not performed",
+  "screenReader": "not performed"
+}

@@ -1,0 +1,334 @@
+{
+  "capturedAt": "2026-10-10T18:25:19.344Z",
+  "repository": "C:/Users/chris/Documents/GitHub/fancy-research-tools",
+  "scope": "Four changed/new routes at native 200% and 400% browser zoom in Chromium 156.0.8078.4. These eight tasks are additional to earlier existing-route evidence, not a screen-reader acceptance test.",
+  "method": "Native Chromium tab zoom via chrome.tabs.setZoom in automatic/per-tab mode. 1280x900 physical browser viewport, 640x450 CSS pixels at 200%, 320x225 at 400%. Captures use chrome.tabs.captureVisibleTab. Fresh isolated profile per zoom factor; no user profile accessed.",
+  "result": "8/8 passed",
+  "routeRun": {
+    "file": "routes-results.json",
+    "startedAt": "2026-10-10T18:23:48.875Z",
+    "finishedAt": "2026-10-10T18:24:03.370Z"
+  },
+  "annotationRun": {
+    "file": "annotation-results.json",
+    "startedAt": "2026-10-10T18:23:11.478Z",
+    "finishedAt": "2026-10-10T18:23:26.125Z"
+  },
+  "cases": [
+    {
+      "name": "overview",
+      "route": "/",
+      "factor": 2,
+      "status": "passed"
+    },
+    {
+      "name": "documentation",
+      "route": "/guides/getting-started.html",
+      "factor": 2,
+      "status": "passed"
+    },
+    {
+      "name": "gallery",
+      "route": "/tools/",
+      "factor": 2,
+      "status": "passed"
+    },
+    {
+      "name": "overview",
+      "route": "/",
+      "factor": 4,
+      "status": "passed"
+    },
+    {
+      "name": "documentation",
+      "route": "/guides/getting-started.html",
+      "factor": 4,
+      "status": "passed"
+    },
+    {
+      "name": "gallery",
+      "route": "/tools/",
+      "factor": 4,
+      "status": "passed"
+    },
+    {
+      "name": "annotation",
+      "route": "/annotations/",
+      "factor": 2,
+      "status": "passed"
+    },
+    {
+      "name": "annotation",
+      "route": "/annotations/",
+      "factor": 4,
+      "status": "passed"
+    }
+  ],
+  "sources": {
+    "/": [
+      "index.html",
+      "docs/index.md",
+      "scripts/build-docs.mjs",
+      "scripts/docs-pages.json",
+      "src/docs.ts",
+      "src/ui/styles.css",
+      "src/ui/tokens.css"
+    ],
+    "/guides/getting-started.html": [
+      "guides/getting-started.html",
+      "docs/getting-started.md",
+      "scripts/build-docs.mjs",
+      "scripts/docs-pages.json",
+      "src/docs.ts",
+      "src/ui/styles.css",
+      "src/ui/tokens.css"
+    ],
+    "/tools/": [
+      "tools/index.html",
+      "src/gallery.ts",
+      "src/gallery.css",
+      "src/ui/styles.css",
+      "src/ui/tokens.css"
+    ],
+    "/annotations/": [
+      "annotations/index.html",
+      "src/annotation/main.ts",
+      "src/annotation/model.ts",
+      "src/annotation/browser.ts",
+      "src/annotation/styles.css",
+      "src/ui/text-value.ts",
+      "src/ui/tokens.css",
+      "data/nhc-milton/sources.json"
+    ]
+  },
+  "sourceFiles": {
+    "index.html": {
+      "sha256": "9c569ec4003a7f58c37eaca1fa0d5145f3ff5ae9c583904ecc62d348054f5d8b",
+      "bytes": 2598
+    },
+    "docs/index.md": {
+      "sha256": "c1b50da7bccecac9f99f3abae4a229e6132835bb8042f2cf12d93f58b0faffbe",
+      "bytes": 1353
+    },
+    "scripts/build-docs.mjs": {
+      "sha256": "fed9e132da4a50da3c343f7d6db2f788808bf02c3e7355087a57a57b2c7f060f",
+      "bytes": 6753
+    },
+    "scripts/docs-pages.json": {
+      "sha256": "9a0042d2bf4f9c95cbcbaac22584eabddaff0f191a15e9dbc9fee23fcc8442a6",
+      "bytes": 789
+    },
+    "src/docs.ts": {
+      "sha256": "85d2c81a57c8c06dc39be74b67cd5cc083e1d405e466a7df229642eda94c53ef",
+      "bytes": 26
+    },
+    "src/ui/styles.css": {
+      "sha256": "3eef52e26a0b4173d572701999f2bb065e6c9d6abf3b450bf100313273efbc5a",
+      "bytes": 8518
+    },
+    "src/ui/tokens.css": {
+      "sha256": "0e3b2f7c185e1338fd2e4732963395e7ac06cd56099392aa011184ed054514f5",
+      "bytes": 713
+    },
+    "guides/getting-started.html": {
+      "sha256": "c881420c1066413c8cc1b3bc0fbd96e44cca3577366afe3e1dce6885d34d0878",
+      "bytes": 11610
+    },
+    "docs/getting-started.md": {
+      "sha256": "1ffade46236d7c11c5a660021fd857c60e5e109413647d26cc4d1abe13da2ad7",
+      "bytes": 8261
+    },
+    "tools/index.html": {
+      "sha256": "b85d7c988a067054524dff6b35bb5c735de2988e58d7f28427683a0e8ed909c4",
+      "bytes": 6615
+    },
+    "src/gallery.ts": {
+      "sha256": "c9418e635741f423c2c148fdf1e4e217427a78e18dafb7ac80e866190d6dbf02",
+      "bytes": 50
+    },
+    "src/gallery.css": {
+      "sha256": "7dfc022e7fe592e620c9e3758e1580083250493367f1ba18f75e443cefc053e6",
+      "bytes": 1809
+    },
+    "annotations/index.html": {
+      "sha256": "950aad220e1189dc079bd7fc72c8079cacefa99647089a69db891e272708e759",
+      "bytes": 5533
+    },
+    "src/annotation/main.ts": {
+      "sha256": "47cd870f2fbaf572c2f53f2c262c3da2be44c3d62fe601b48b986b696010704b",
+      "bytes": 14498
+    },
+    "src/annotation/model.ts": {
+      "sha256": "527cabd6ed6f3472bff07426e0f422c1daa3c7dcf3306f4100a4ea3dc5543e80",
+      "bytes": 7717
+    },
+    "src/annotation/browser.ts": {
+      "sha256": "1194a8e95a7a9625e8549044696317e08268ed77fb0bf6dcc9c3b5d8fa76bfff",
+      "bytes": 4874
+    },
+    "src/annotation/styles.css": {
+      "sha256": "1f34b136714058fced0c3d8c379caf952d794e22ea82bf62913db7ffc8d93ff1",
+      "bytes": 5858
+    },
+    "src/ui/text-value.ts": {
+      "sha256": "fbc030b0937ab993d77de77a3207c6ff37fa1d87423c63ccb707c90c4f9ef9de",
+      "bytes": 496
+    },
+    "data/nhc-milton/sources.json": {
+      "sha256": "f5e6bc912f03c9ff8d04374fcc2c10ac783bd1285cacabd48c2a404ec0686cea",
+      "bytes": 9714
+    }
+  },
+  "resourceMatches": [
+    {
+      "url": "http://127.0.0.1:4173/",
+      "distPath": "dist/index.html",
+      "sha256": "0c74a2086e7faa63bac9a3a382fdb7082923869ca29361d12354be1444af333d",
+      "bytes": 2795,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/styles-D8Q6zNuV.css",
+      "distPath": "dist/assets/styles-D8Q6zNuV.css",
+      "sha256": "48817ce2d1070dcd449df5d8436b8f482e28cdb1fcca8738ae9b98f122193b00",
+      "bytes": 6760,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "distPath": "dist/assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "bytes": 670,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/docs-DCVcmqxG.js",
+      "distPath": "dist/assets/docs-DCVcmqxG.js",
+      "sha256": "50e80005baa15e14437833a9618ff2311fad3a895ef8653c9c336410c60a8895",
+      "bytes": 29,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/tools/",
+      "distPath": "dist/tools/index.html",
+      "sha256": "c2268af0087b2564e98729aae5d2815a478e1783ecf9c7d15b002dd244f4b85d",
+      "bytes": 6807,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-B_ENSjb8.css",
+      "distPath": "dist/assets/index-B_ENSjb8.css",
+      "sha256": "119f507cbab035c41e0aa1a1f10a8d4abe19217c58d2fb4695ebbab770bcacc2",
+      "bytes": 1356,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/previews/instrument-study.png",
+      "distPath": "dist/previews/instrument-study.png",
+      "sha256": "7fb7eb80b72306ab5609686144690b784f0d52583e45c0696add529452352b69",
+      "bytes": 71711,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/previews/forecast-reading.png",
+      "distPath": "dist/previews/forecast-reading.png",
+      "sha256": "73ac3f347278ff0024bdda09eebe776826a03fa9ee297dd105f22df9d73b7968",
+      "bytes": 95787,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/previews/record-desk.png",
+      "distPath": "dist/previews/record-desk.png",
+      "sha256": "7231f20488c6ceacf9bd35078c9b5a9e0a5eb7784c6174657ae383760463d4a7",
+      "bytes": 64785,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/guides/getting-started.html",
+      "distPath": "dist/guides/getting-started.html",
+      "sha256": "758026bad77e02eeb19da2ed36ef96bb28760d272a389d88bd81fae1c77e3ad0",
+      "bytes": 11809,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/previews/collection-atlas.png",
+      "distPath": "dist/previews/collection-atlas.png",
+      "sha256": "b8577aef9811a494822d0d1d6218a13d4838b1795db69720aa29137a7d2da962",
+      "bytes": 62804,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/previews/instrument-comparison-desk.png",
+      "distPath": "dist/previews/instrument-comparison-desk.png",
+      "sha256": "5bcd115bd02005e2fad02931271f337eb484ba952384942e550dd712627afe11",
+      "bytes": 48071,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/previews/instrument-inquiry.png",
+      "distPath": "dist/previews/instrument-inquiry.png",
+      "sha256": "42b71831aa397da5f327bfdf6434857359ff2f1a6fc50c69f5c14361b48ec785",
+      "bytes": 49900,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/previews/catalogue-baseline.png",
+      "distPath": "dist/previews/catalogue-baseline.png",
+      "sha256": "97a04f134e94b960ea86057c3be1b9610634100ae7dc7781cfb2195e4afdf9ad",
+      "bytes": 108890,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/annotations/",
+      "distPath": "dist/annotations/index.html",
+      "sha256": "acd36e32b03143914bb4d1609b76091b6593f928b83a40a44a159fd469509c66",
+      "bytes": 5801,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-LHIK1Xfr.css",
+      "distPath": "dist/assets/index-LHIK1Xfr.css",
+      "sha256": "b449f79481fe4de924725f7839ef9c21dfd33defaa6cdfe8e6d7624cbe4f6ba3",
+      "bytes": 4301,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/index-BT_WXvOB.js",
+      "distPath": "dist/assets/index-BT_WXvOB.js",
+      "sha256": "2330bacbb36467e1749da175cfbe74644925b34207efe8bfd4db99a5cd2321aa",
+      "bytes": 23185,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/assets/text-value-DPc3ypM1.js",
+      "distPath": "dist/assets/text-value-DPc3ypM1.js",
+      "sha256": "2c6bec3cfe798435c8a6ffab38c1b84296f68c25ae55c229e43513e70976af43",
+      "bytes": 143,
+      "matchedCurrentDist": true
+    },
+    {
+      "url": "http://127.0.0.1:4173/annotations/?source=nhc-al142024-discussion-002",
+      "distPath": "dist/annotations/index.html",
+      "sha256": "acd36e32b03143914bb4d1609b76091b6593f928b83a40a44a159fd469509c66",
+      "bytes": 5801,
+      "matchedCurrentDist": true
+    }
+  ],
+  "visualInspection": [
+    "annotation-4-source-selection.png",
+    "annotation-4-saved-review.png",
+    "annotation-4-review-form.png",
+    "annotation-4-notebook-controls.png",
+    "annotation-4-source-end.png",
+    "gallery-4-selected-description.png",
+    "gallery-4-start.png",
+    "documentation-4-annotation-guide.png"
+  ],
+  "limits": [
+    "Headless browser-managed page zoom is exercised through the Chromium extension API; browser toolbar/menu interaction and OS magnification are not tested.",
+    "Actual saved notebook download and data checks are included at each zoom; the labelled review is performed by an AI agent as an engineering check and is not human research validation.",
+    "Real screen-reader speech/workflow acceptance remains pending.",
+    "Older intermediate route results preserve a missing navigation-wait harness error and a transient native capture error; final routes-results.json is a fresh complete successful run after the gallery layer-order correction.",
+    "Temporary profiles are scratch data and must not be copied into retained repository evidence."
+  ]
+}

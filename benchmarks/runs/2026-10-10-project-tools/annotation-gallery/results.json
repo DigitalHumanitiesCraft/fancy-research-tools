@@ -1,0 +1,275 @@
+{
+  "startedAt": "2026-10-10T18:49:55.634Z",
+  "http": [
+    {
+      "requested": "https://dhcraft.org/teiCrafter/editor.html",
+      "final": "https://dhcraft.org/teiCrafter/editor.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 19897,
+      "sha256": "025087d64fb5b9f71d490dcb0fc599ae15a947a372b355d7a62c746aa83de32c"
+    },
+    {
+      "requested": "https://chpollin.github.io/klawiter-rescue/",
+      "final": "https://chpollin.github.io/klawiter-rescue/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 12476,
+      "sha256": "e7b39b02a334e072553252134b24bcf07f6ea8dce9f85c703e402cc1f1a02685"
+    },
+    {
+      "requested": "https://chpollin.github.io/szd-htr-ocr-pipeline/",
+      "final": "https://chpollin.github.io/szd-htr-ocr-pipeline/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 35604,
+      "sha256": "3e3571daed5ffd06d250203c9349c955a1b010d007e17f1e3d73bc1532c0d2c6"
+    },
+    {
+      "requested": "https://dhcraft.org/CorrespExplorer/",
+      "final": "https://dhcraft.org/CorrespExplorer/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 10330,
+      "sha256": "1778fd56716b85d5f75332a5f5479f2383b3045483487bc6c1b48d4dadea5f09"
+    },
+    {
+      "requested": "https://dhcraft.org/fancy-research-tools/",
+      "final": "https://dhcraft.org/fancy-research-tools/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 45461,
+      "sha256": "b9a87b54b698d955ee118667d3a143d70ef687e20b6916aa88cdde066e335078"
+    },
+    {
+      "requested": "https://dhcraft.org/teiCrafter/data/editor/szd/o_szd.1079.tei.xml",
+      "final": "https://dhcraft.org/teiCrafter/data/editor/szd/o_szd.1079.tei.xml",
+      "status": 200,
+      "contentType": "application/xml",
+      "bytes": 5286,
+      "sha256": "7564514a46dd1a098b6e01b6e7e5518844e03970c1a31011efe5daa6b1b5314e",
+      "tei": true,
+      "title": "\n        <title>Brief an Max Fleischer vom 22. Mai 1901, SZ-LAS/B3.1"
+    },
+    {
+      "requested": "https://dhcraft.org/co-ocr-htr/",
+      "final": "https://dhcraft.org/co-ocr-htr/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 104377,
+      "sha256": "5fb070f3ccc50f76675883ced6a4ea418f582daff6f79f76d2142d951afb7f36"
+    },
+    {
+      "requested": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline/tree/main/knowledge",
+      "final": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline/tree/main/knowledge",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 236256,
+      "sha256": "a2389018e7d3589dcbd64e21c98f4b975bc0fd1967e1a825691c198d8f497843"
+    },
+    {
+      "requested": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline",
+      "final": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 326763,
+      "sha256": "1477db86700ce2c3d70b87f3a9e6e2bc97887ab294727fbc54c213cd12874ed8"
+    }
+  ],
+  "zoom": [
+    {
+      "factor": 2,
+      "captures": [
+        "gallery-2-initial.png",
+        "gallery-2-selected-name.png",
+        "gallery-2-tei-group.png"
+      ],
+      "browser": "156.0.8078.4",
+      "htmlSha256": "81989c4cab32021089fb0c69fdf66f7c04910e334a21b0af1480f541cec3ae95",
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 640,
+        "height": 450,
+        "scrollWidth": 640,
+        "devicePixelRatio": 2,
+        "scale": 1
+      },
+      "links": [
+        {
+          "text": "Transcribe a document ↗",
+          "href": "https://dhcraft.org/co-ocr-htr/"
+        },
+        {
+          "text": "Annotate a letter",
+          "href": "http://127.0.0.1:4173/letters/"
+        },
+        {
+          "text": "Inspect transcriptions ↗",
+          "href": "https://chpollin.github.io/szd-htr-ocr-pipeline/"
+        },
+        {
+          "text": "Edit TEI XML ↗",
+          "href": "https://dhcraft.org/teiCrafter/editor.html"
+        },
+        {
+          "text": "Edit letter metadata",
+          "href": "http://127.0.0.1:4173/tool/"
+        },
+        {
+          "text": "Explore correspondence ↗",
+          "href": "https://dhcraft.org/CorrespExplorer/"
+        },
+        {
+          "text": "Search the bibliography ↗",
+          "href": "https://chpollin.github.io/klawiter-rescue/"
+        },
+        {
+          "text": "Compare catalogue records",
+          "href": "http://127.0.0.1:4173/pilot/"
+        }
+      ],
+      "selectedName": "Source annotat",
+      "launched": "http://127.0.0.1:4173/letters/",
+      "returned": "http://127.0.0.1:4173/tools/",
+      "exampleLink": "https://dhcraft.org/teiCrafter/data/editor/szd/o_szd.1079.tei.xml",
+      "final": {
+        "width": 640,
+        "height": 450,
+        "scrollWidth": 640,
+        "devicePixelRatio": 2,
+        "scale": 1
+      },
+      "status": "passed"
+    },
+    {
+      "factor": 4,
+      "captures": [
+        "gallery-4-initial.png",
+        "gallery-4-selected-name.png",
+        "gallery-4-tei-group.png"
+      ],
+      "browser": "156.0.8078.4",
+      "htmlSha256": "81989c4cab32021089fb0c69fdf66f7c04910e334a21b0af1480f541cec3ae95",
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 320,
+        "height": 225,
+        "scrollWidth": 320,
+        "devicePixelRatio": 4,
+        "scale": 1
+      },
+      "links": [
+        {
+          "text": "Transcribe a document ↗",
+          "href": "https://dhcraft.org/co-ocr-htr/"
+        },
+        {
+          "text": "Annotate a letter",
+          "href": "http://127.0.0.1:4173/letters/"
+        },
+        {
+          "text": "Inspect transcriptions ↗",
+          "href": "https://chpollin.github.io/szd-htr-ocr-pipeline/"
+        },
+        {
+          "text": "Edit TEI XML ↗",
+          "href": "https://dhcraft.org/teiCrafter/editor.html"
+        },
+        {
+          "text": "Edit letter metadata",
+          "href": "http://127.0.0.1:4173/tool/"
+        },
+        {
+          "text": "Explore correspondence ↗",
+          "href": "https://dhcraft.org/CorrespExplorer/"
+        },
+        {
+          "text": "Search the bibliography ↗",
+          "href": "https://chpollin.github.io/klawiter-rescue/"
+        },
+        {
+          "text": "Compare catalogue records",
+          "href": "http://127.0.0.1:4173/pilot/"
+        }
+      ],
+      "selectedName": "Source annotat",
+      "launched": "http://127.0.0.1:4173/letters/",
+      "returned": "http://127.0.0.1:4173/tools/",
+      "exampleLink": "https://dhcraft.org/teiCrafter/data/editor/szd/o_szd.1079.tei.xml",
+      "final": {
+        "width": 320,
+        "height": 225,
+        "scrollWidth": 320,
+        "devicePixelRatio": 4,
+        "scale": 1
+      },
+      "status": "passed"
+    }
+  ],
+  "method": "Real HTTP GET with redirects; Chromium native automatic/per-tab zoom via extension at 200% and 400%; 1280x900 physical viewport and isolated profiles. Pointer selection of tool names, keyboard launch and return, comparison to source catalog.",
+  "previewState": [
+    {
+      "name": "coOCR/HTR",
+      "alt": "coOCR/HTR with the Antidotarium page image beside its transcription",
+      "loaded": true,
+      "src": "http://127.0.0.1:4173/previews/coocr.png"
+    },
+    {
+      "name": "Source annotation",
+      "alt": "Benndorf's letter beside an exact quotation and annotation controls",
+      "loaded": true,
+      "src": "http://127.0.0.1:4173/previews/letter-annotation.png"
+    },
+    {
+      "name": "SZD-HTR",
+      "alt": "SZD-HTR catalogue with manuscript titles, identifiers and recorded review states",
+      "loaded": true,
+      "src": "http://127.0.0.1:4173/previews/szd-htr.png"
+    },
+    {
+      "name": "teiCrafter",
+      "alt": "teiCrafter with a loaded Stefan Zweig letter and its entity register",
+      "loaded": true,
+      "src": "http://127.0.0.1:4173/previews/teicrafter.png"
+    },
+    {
+      "name": "Collection metadata",
+      "alt": "Schönbach correspondence records beside editable metadata and their source",
+      "loaded": true,
+      "src": "http://127.0.0.1:4173/previews/collection-metadata.png"
+    },
+    {
+      "name": "CorrespExplorer",
+      "alt": "CorrespExplorer showing the Hugo Schuchardt correspondence in a loaded analysis view",
+      "loaded": true,
+      "src": "http://127.0.0.1:4173/previews/correspondence.png"
+    },
+    {
+      "name": "Stefan Zweig Bibliography",
+      "alt": "Stefan Zweig Bibliography showing publication records and source provenance",
+      "loaded": true,
+      "src": "http://127.0.0.1:4173/previews/bibliography.png"
+    },
+    {
+      "name": "Collection comparison",
+      "alt": "Met catalogue records in a compact comparison workspace with source values and research notes",
+      "loaded": true,
+      "src": "http://127.0.0.1:4173/previews/collection-comparison.png"
+    }
+  ],
+  "finishedAt": "2026-10-10T18:50:05.356Z"
+}

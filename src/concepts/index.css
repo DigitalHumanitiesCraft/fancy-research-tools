@@ -1,0 +1,122 @@
+@import "../ui/foundation.css";
+@layer tokens {
+  :root {
+    --paper: #f7f6f2;
+    --ink: #202b32;
+    --muted: #53616b;
+    --line: #bac2c5;
+    --accent: #165a55;
+    --white: #fff;
+    --focus: #a04720;
+  }
+}
+@layer base {
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font:
+      1rem / 1.6 system-ui,
+      sans-serif;
+  }
+  a {
+    color: var(--accent);
+  }
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 4px;
+  }
+  h1 {
+    font-size: clamp(2rem, 1rem + 3vw, 3.8rem);
+    line-height: 1.1;
+    max-inline-size: 20ch;
+    font-weight: 650;
+    letter-spacing: -0.04em;
+  }
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  p {
+    max-inline-size: 75ch;
+  }
+  header,
+  footer {
+    padding: 1.25rem 3%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  main {
+    max-inline-size: 76rem;
+    margin: auto;
+    padding: 2rem 3%;
+  }
+  section {
+    margin-block: 3rem;
+  }
+  button {
+    background: var(--accent);
+    color: var(--white);
+    border: 0;
+    padding: 0.8rem 1.1rem;
+    cursor: pointer;
+  }
+  label {
+    display: grid;
+    gap: 0.4rem;
+    margin-block: 1rem;
+  }
+  input,
+  select,
+  textarea {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+    padding: 0.65rem;
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--ink);
+  }
+}
+@layer layout {
+  .concepts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+    gap: 1rem;
+    margin-block: 2rem;
+  }
+  .fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    gap: 1rem;
+  }
+}
+@layer components {
+  .concepts > article {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--white);
+  }
+  .concepts span {
+    color: var(--muted);
+  }
+  .concepts article > a {
+    margin-block-start: auto;
+    align-self: flex-start;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .task {
+    border-block: 1px solid var(--line);
+    padding-block: 1rem;
+  }
+  footer {
+    color: var(--muted);
+    border-block-start: 1px solid var(--line);
+  }
+}

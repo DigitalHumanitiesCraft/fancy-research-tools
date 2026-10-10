@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-10-10T19:19:19.606Z",
+  "evidence": "Executed command output and bounded assessment; no human acceptance or completed push is claimed.",
+  "files": [
+    {
+      "path": "assessment.md",
+      "bytes": 1607,
+      "sha256": "2c9be98c99e5ec5952dca830b9317a5cfcea503f9b4f2548e7cb06dfb0e8b53f"
+    },
+    {
+      "path": "build.log",
+      "bytes": 3976,
+      "sha256": "111decf23b256c0aa86777c896a9b87a5aba558afc734e2a0a81a48264bcf57b"
+    },
+    {
+      "path": "check-data.log",
+      "bytes": 629,
+      "sha256": "7926e5a1a0b0b0408e5a0e0b7850c6eccb387106cbb6867cd6152320b7c9d599"
+    },
+    {
+      "path": "check.log",
+      "bytes": 118,
+      "sha256": "bf84606cf29450c46e734a0c751703a52a6fa6c2b8d52485e2da4d4109416918"
+    },
+    {
+      "path": "markdown-links.json",
+      "bytes": 62,
+      "sha256": "c2a579ffe8e261ee77877cb5ba8ed5eaee78fcfb7bfd2803fffe033cb606e1aa"
+    },
+    {
+      "path": "source-comparison.json",
+      "bytes": 284,
+      "sha256": "d97f006f12fbda6f73b1b2a21ce2db5553075c8e2f56ec1c8cf8ef8b2863edeb"
+    },
+    {
+      "path": "test-e2e.log",
+      "bytes": 9266,
+      "sha256": "b8215ee010487c6a99f1fa89d913fa8b62ed89a975e9f5c81af45bdf933c54c7"
+    },
+    {
+      "path": "test.log",
+      "bytes": 277,
+      "sha256": "c8a6ca2d812c66f57377e7f7810dfd9d669f1b055a1402656e720b2fb0bbc72f"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "path": "ui/assessment.md",
+    "sha256": "4E5EE351C2E7B64EC8CADA0869DFD2C0AB4F7D82CD1AC7A7DC2443E1DFA9366F",
+    "bytes": 5020
+  },
+  {
+    "path": "ui/comparison.png",
+    "sha256": "610850648866ED937BC11EDEFF66836177D5E4F1780FE1532C92A9383664AF8F",
+    "bytes": 62734
+  },
+  {
+    "path": "ui/extra.cjs",
+    "sha256": "C50EA3EAEBA19CBCDDDD3D474047DEFC428CFDE7A87B7B5C065FE074C3DDA198",
+    "bytes": 2569
+  },
+  {
+    "path": "ui/followup-confirm.cjs",
+    "sha256": "74CB5FA268344FF9CD607EFD49D284F1C6BA7232C53A0B6C5922E881D9B9F231",
+    "bytes": 2175
+  },
+  {
+    "path": "ui/followup.cjs",
+    "sha256": "FF1FA8195B84F5A054922CE813B7D09AF18B62633F8787959B88E1A02289EC43",
+    "bytes": 2097
+  },
+  {
+    "path": "ui/inspect.cjs",
+    "sha256": "BFA9F31CF95D6EF51DA7BA328A40C73EB3AB52C617B48D358FF36DB1986C23F8",
+    "bytes": 652
+  },
+  {
+    "path": "ui/instrument-investigation.json",
+    "sha256": "6CD2DCC641EFEA2DD65835A0867BA79242AD44E470F2EEAD57E9F2516BDFAEFA",
+    "bytes": 17632
+  },
+  {
+    "path": "ui/narrow.png",
+    "sha256": "DCBC0456091C1ED066F9D430DEAFD1BDF242EB5A6A6867A05E6838359C222885",
+    "bytes": 60214
+  },
+  {
+    "path": "ui/observations.json",
+    "sha256": "DF9AFD729DD19F56639789C257461FAA37E8ADA0D15D996D00A239F1E4E911DB",
+    "bytes": 24267
+  },
+  {
+    "path": "ui/rebuilt-asset-check.json",
+    "sha256": "99C893C9FCC219C07ED61F90BA67EB7972113F02256641CFF8F3C01918978187",
+    "bytes": 1111
+  },
+  {
+    "path": "ui/reopened-confirmed.png",
+    "sha256": "C9AF8095ECB70575E49D502ADE35D8F792E43B9FC984281B28B5E72A6C67202B",
+    "bytes": 69447
+  },
+  {
+    "path": "ui/reopened.png",
+    "sha256": "CF2FCEFDEC09A3912DF4E327F32CD24AD7966E415D7B5A529FE3F47E8F8EFAE1",
+    "bytes": 37927
+  },
+  {
+    "path": "ui/replacement-narrow.png",
+    "sha256": "67B66DC71A32CAFB1B7FD640AFF9FC81EBFB88E508953B2EE377F15EBC64EB5F",
+    "bytes": 55936
+  },
+  {
+    "path": "ui/served-assets.json",
+    "sha256": "158B883A9ED9C4C5DCA8E68078C266B520524B13577B4210F55D9083E80FB737",
+    "bytes": 1196
+  },
+  {
+    "path": "ui/start.png",
+    "sha256": "74B8299F81F987C606B13BD4D3B4D4E61D63F9CCF43A34138ACE64358F775063",
+    "bytes": 84831
+  },
+  {
+    "path": "ui/workflow.cjs",
+    "sha256": "BD6F5D134263C2E87EF401F9E505F5F87BDB0D7B967E25417AECF89FACB71141",
+    "bytes": 3167
+  },
+  {
+    "path": "source-manifest.json",
+    "sha256": "164F943310B5B0233AD6958862727B151495F2283CA17E57156CDD81B898E786",
+    "bytes": 35785
+  }
+]

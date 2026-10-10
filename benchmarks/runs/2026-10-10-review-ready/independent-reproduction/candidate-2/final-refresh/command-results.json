@@ -1,0 +1,33 @@
+[
+  {
+    "command": "npm run build",
+    "startedAt": "2026-10-10T18:26:17.777Z",
+    "endedAt": "2026-10-10T18:26:18.682Z",
+    "exitCode": 0,
+    "log": "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\combined-reproduction\\candidate-2\\final-refresh\\npm.log"
+  },
+  {
+    "command": "node node_modules/@playwright/test/cli.js test tests/e2e/docs.spec.ts --config \"C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\combined-reproduction\\candidate-2\\final-refresh\\playwright.config.mjs\" --workers 1",
+    "startedAt": "2026-10-10T18:26:18.682Z",
+    "endedAt": "2026-10-10T18:26:19.489Z",
+    "exitCode": 1,
+    "log": "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\combined-reproduction\\candidate-2\\final-refresh\\docs.log"
+  },
+  {
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "node_modules/@playwright/test/cli.js",
+      "test",
+      "tests/e2e/docs.spec.ts",
+      "--config",
+      "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\combined-reproduction\\candidate-2\\final-refresh\\playwright.config.mjs",
+      "--workers",
+      "1"
+    ],
+    "startedAt": "2026-10-10T18:26:38.111Z",
+    "endedAt": "2026-10-10T18:26:46.198Z",
+    "exitCode": 0,
+    "log": "C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\combined-reproduction\\candidate-2\\final-refresh\\docs-direct-node.log",
+    "correction": "The first attempt passed embedded quote characters in the config path through cmd.exe. Direct Node arguments avoid shell quoting; no application or test source was changed."
+  }
+]

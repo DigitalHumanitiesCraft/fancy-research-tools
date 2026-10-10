@@ -1,0 +1,24 @@
+{
+  "protectedFilesUnchanged": 68,
+  "positiveGatePassed": true,
+  "cases": [
+    {
+      "file": "records.json",
+      "intentionalMismatch": "one extra newline",
+      "exitCode": 1,
+      "expectedFailure": true
+    },
+    {
+      "file": "records.sha256",
+      "intentionalMismatch": "one extra newline",
+      "exitCode": 1,
+      "expectedFailure": true
+    },
+    {
+      "file": "field-evidence.json",
+      "intentionalMismatch": "one extra newline",
+      "exitCode": 1,
+      "expectedFailure": true
+    }
+  ]
+}

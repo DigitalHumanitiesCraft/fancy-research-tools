@@ -1,0 +1,14 @@
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: records.sha256 differs from the frozen-source derivation. Inspect the mismatch before updating it.
+    at file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/repository-audit-checks/corrupted-fixture/scripts/check-data.mjs:31:12 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+
+Node.js v22.14.0

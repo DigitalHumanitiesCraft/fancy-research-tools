@@ -1,0 +1,92 @@
+
+> fancy-research-tools@0.1.0 test:e2e
+> playwright test
+
+
+Running 55 tests using 7 workers
+
+(node:28488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:8480) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28488) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:42660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:8480) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17424) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 tests\e2e\pilot.spec.ts:6:1 › source subset filters, download and URL navigation agree (1.9s)
+  ok  5 tests\e2e\workbench.spec.ts:8:1 › imported authored text keeps exact line endings until its own field is edited (2.0s)
+  ok  6 tests\e2e\concepts.spec.ts:23:3 › atlas: imported authored text retains line endings across an unrelated edit (1.9s)
+  ok  7 tests\e2e\workspace.spec.ts:18:1 › Schönbach source values stay separate from working corrections and export (2.1s)
+  ok  3 tests\e2e\letters.spec.ts:11:1 › a real letter annotation exports, restores and rejects a forecast notebook (2.2s)
+  ok  2 tests\e2e\annotation.spec.ts:35:1 › archived passage annotation preserves exact source and reopens its actual download (2.3s)
+  ok  8 tests\e2e\pilot.spec.ts:54:1 › pilot loads and filters below a repository subpath (380ms)
+  ok 11 tests\e2e\workspace.spec.ts:46:1 › Schönbach-looking identifiers do not assign source evidence to unrelated imports (372ms)
+  ok 14 tests\e2e\pilot.spec.ts:67:1 › visual filters preserve source semantics and keyboard focus (682ms)
+  ok 12 tests\e2e\letters.spec.ts:87:1 › letter selection works by keyboard at narrow width with visible source attribution (1.2s)
+  ok 15 tests\e2e\workspace.spec.ts:74:1 › saving one imported field preserves other fields and their exact line endings (828ms)
+  ok 13 tests\e2e\annotation.spec.ts:87:1 › a changed interpretation clears its earlier explicit review (1.3s)
+  ok  1 tests\e2e\docs.spec.ts:4:1 › published documentation routes, headings and local links resolve (3.8s)
+  ok 17 tests\e2e\workspace.spec.ts:107:1 › filtered editor keeps selection context and restores filters when discard is cancelled (651ms)
+  ok  9 tests\e2e\workbench.spec.ts:59:1 › investigation retains source evidence and notes across reload and file reopening (2.1s)
+  ok 10 tests\e2e\concepts.spec.ts:75:3 › atlas: research comparison, actual download, accessible layout (2.2s)
+  ok 16 tests\e2e\pilot.spec.ts:105:1 › keyboard operation, source links and narrow accessible layout (1.3s)
+  ok 20 tests\e2e\workspace.spec.ts:133:1 › search, type and selection survive browser back navigation (386ms)
+  ok 19 tests\e2e\docs.spec.ts:67:1 › relative assets and navigation work below a repository subpath (865ms)
+  ok 18 tests\e2e\annotation.spec.ts:120:1 › reverting unsaved content retains the final deliberate review choice (1.2s)
+  ok 23 tests\e2e\pilot.spec.ts:129:1 › mixed controls retain pending values and expose the applied scope (680ms)
+  ok 22 tests\e2e\concepts.spec.ts:23:3 › bench: imported authored text retains line endings across an unrelated edit (848ms)
+  ok 24 tests\e2e\workspace.spec.ts:151:1 › edit, reload and exported bytes preserve all untouched records (657ms)
+  ok 26 tests\e2e\annotation.spec.ts:183:1 › pointer selection creates a quotation and removal requires an explicit decision (753ms)
+  ok 29 tests\e2e\workspace.spec.ts:178:1 › invalid imports retain the current collection and unsaved form (464ms)
+  ok 27 tests\e2e\pilot.spec.ts:157:1 › desktop workbench keeps controls, results and evidence together (744ms)
+  ok 30 tests\e2e\annotation.spec.ts:224:1 › work entered while an import is reading prevents replacement (499ms)
+  ok 21 tests\e2e\workbench.spec.ts:121:1 › compared values expose an addressable source view without changing the investigation (2.0s)
+  ok 31 tests\e2e\workspace.spec.ts:197:1 › discard clears resolved edit errors while retaining storage warnings (598ms)
+  ok 25 tests\e2e\docs.spec.ts:94:1 › gallery previews, tool entry and return work at narrow width (1.8s)
+  ok 35 tests\e2e\workspace.spec.ts:225:1 › storage failure still permits editing and actual file export (403ms)
+  ok 36 tests\e2e\docs.spec.ts:134:1 › narrow reference tables retain readable columns and keyboard scrolling (271ms)
+  ok 33 tests\e2e\annotation.spec.ts:253:1 › unfinished annotations survive declined source changes and block export or replacement (979ms)
+  ok 37 tests\e2e\workspace.spec.ts:239:1 › invalid stored copy is protected until explicit overwrite consent (395ms)
+  ok 32 tests\e2e\pilot.spec.ts:182:1 › sorting preserves selection and About keeps provenance off the workspace (1.3s)
+  ok 28 tests\e2e\concepts.spec.ts:75:3 › bench: research comparison, actual download, accessible layout (2.3s)
+  ok 34 tests\e2e\workbench.spec.ts:205:1 › source addresses reopen without a selection and return to the filtered catalogue (1.3s)
+  ok 39 tests\e2e\workspace.spec.ts:254:1 › a second tab cannot silently overwrite the first tab's saved revision (684ms)
+  ok 41 tests\e2e\workbench.spec.ts:233:1 › search, selection limit, missing results and back navigation preserve the investigation (589ms)
+  ok 40 tests\e2e\concepts.spec.ts:23:3 › trail: imported authored text retains line endings across an unrelated edit (715ms)
+  ok 38 tests\e2e\annotation.spec.ts:284:1 › rejected and cancelled imports preserve a valid notebook and accepted raw author strings (1.2s)
+  ok 42 tests\e2e\workspace.spec.ts:278:1 › oversized edits are rejected without changing the exportable dataset (651ms)
+  ok 45 tests\e2e\annotation.spec.ts:337:1 › corrupt and externally changed saved copies remain recoverable without overwrite (508ms)
+  ok 43 tests\e2e\workbench.spec.ts:253:1 › corrupt import leaves current work intact and responsive comparison remains operable (1.1s)
+  ok 46 tests\e2e\workspace.spec.ts:292:1 › narrow workspace and editor have no document overflow or axe violations (1.2s)
+  ok 48 tests\e2e\workbench.spec.ts:284:1 › bare-route draft restoration retains search on view changes and notes export without selection (481ms)
+  ok 47 tests\e2e\annotation.spec.ts:363:1 › narrow reading and annotation controls are keyboard accessible and reflow (1.2s)
+  ok 44 tests\e2e\concepts.spec.ts:75:3 › trail: research comparison, actual download, accessible layout (1.9s)
+  ok 51 tests\e2e\concepts.spec.ts:169:3 › atlas: unreadable stored work survives subsequent interactions (207ms)
+  ok 50 tests\e2e\workbench.spec.ts:305:1 › legacy draft bytes survive inspection and export until an actual edit (637ms)
+  ok 49 tests\e2e\workspace.spec.ts:311:1 › desktop editing keeps the record list and save action in the working viewport (746ms)
+  ok 52 tests\e2e\concepts.spec.ts:169:3 › bench: unreadable stored work survives subsequent interactions (200ms)
+  ok 53 tests\e2e\concepts.spec.ts:169:3 › trail: unreadable stored work survives subsequent interactions (204ms)
+  ok 54 tests\e2e\concepts.spec.ts:182:1 › comparison feedback downloads explicit self-report (588ms)
+  ok 55 tests\e2e\concepts.spec.ts:196:1 › Trail keyboard stage change focuses the destination (185ms)
+
+  55 passed (13.2s)

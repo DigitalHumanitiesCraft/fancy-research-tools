@@ -1,0 +1,51 @@
+{
+  "recordedAt": "2026-10-10T19:13:16.797Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": "assessment.md",
+      "bytes": 2724,
+      "sha256": "18f26a0c15f36d91c84cc7ef9254541b95648bdd9337e775b1d2e620124e770c"
+    },
+    {
+      "path": "browser.log",
+      "bytes": 811,
+      "sha256": "a571337f0b1288afc58b63d064acb9aac463d3dda971f52fd508936e1b9ebbc3"
+    },
+    {
+      "path": "build.log",
+      "bytes": 3976,
+      "sha256": "79aa9c5887970e8d0b7a69d7ea728e5cca29eccf9d51fc81802ee03399b6a23e"
+    },
+    {
+      "path": "check.log",
+      "bytes": 118,
+      "sha256": "72c5bad4e9d7f4c10f3eff99d2c3a5ed800ed586087fbc6328fa77cb504cd717"
+    },
+    {
+      "path": "data.log",
+      "bytes": 629,
+      "sha256": "7926e5a1a0b0b0408e5a0e0b7850c6eccb387106cbb6867cd6152320b7c9d599"
+    },
+    {
+      "path": "documentation-desktop.png",
+      "bytes": 131860,
+      "sha256": "e6220c4926d13ecb71ec9e134332ecc6c088661f40339ecb1fd7b6b5cdb0be06"
+    },
+    {
+      "path": "documentation-mobile.png",
+      "bytes": 37924,
+      "sha256": "c69e03383b3a0deb970caa23a1d9a3710e717515693fdf5780fe66d2bff1f99c"
+    },
+    {
+      "path": "markdown-links.json",
+      "bytes": 62,
+      "sha256": "579afd9906a4695d05713b3e62a3a7ac558b3175585f5a0ec4e2fc8e49395ed8"
+    },
+    {
+      "path": "preservation.json",
+      "bytes": 10953,
+      "sha256": "26858c790b40b9c490099e8f1868a057bc634c955e34afa4725aa99bb8a34e4d"
+    }
+  ]
+}

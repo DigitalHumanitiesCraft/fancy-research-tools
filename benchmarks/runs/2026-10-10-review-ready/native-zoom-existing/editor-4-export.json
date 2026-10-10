@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "title": "Synthetische Forschungssammlung",
+  "records": [
+    {
+      "id": "demo-001",
+      "title": "Notizbuch mit Randbemerkungen",
+      "kind": "Text",
+      "place": "Graz",
+      "date": null,
+      "source": "Erfundene Beispieldaten für Fancy Research Tools; keine historische Quelle.",
+      "notes": "Zoom 4 edited note.",
+      "review": "draft"
+    },
+    {
+      "id": "demo-002",
+      "title": "Skizze einer Brücke",
+      "kind": "Bild",
+      "place": "München",
+      "date": "Datierung offen",
+      "source": "Erfundene Beispieldaten für Fancy Research Tools; keine historische Quelle.",
+      "notes": "Die Ortsangabe gehört zum Übungsdatensatz und ist keine Zuschreibung.",
+      "review": "checked"
+    },
+    {
+      "id": "demo-003",
+      "title": "Verzeichnis ohne Ortsangabe",
+      "kind": "Text",
+      "place": null,
+      "date": null,
+      "source": "Erfundene Beispieldaten für Fancy Research Tools; keine historische Quelle.",
+      "notes": "Fehlende Angaben bleiben ausdrücklich unbekannt.",
+      "review": "draft"
+    },
+    {
+      "id": "demo-004",
+      "title": "Übersicht der Geräte",
+      "kind": "Tabelle",
+      "place": "Wien",
+      "date": null,
+      "source": "Erfundene Beispieldaten für Fancy Research Tools; keine historische Quelle.",
+      "notes": "Kategorien können im konkreten Forschungsprojekt anders definiert sein.",
+      "review": "draft"
+    },
+    {
+      "id": "demo-005",
+      "title": "Étude: Formen im Vergleich",
+      "kind": "Bild",
+      "place": "Zürich",
+      "date": null,
+      "source": "Erfundene Beispieldaten für Fancy Research Tools; keine historische Quelle.",
+      "notes": "Dieses Beispiel prüft die Suche mit Akzenten und Umlauten.",
+      "review": "checked"
+    },
+    {
+      "id": "demo-006",
+      "title": "Fragment einer Materialliste",
+      "kind": "Tabelle",
+      "place": null,
+      "date": "Unsichere Reihenfolge",
+      "source": "Erfundene Beispieldaten für Fancy Research Tools; keine historische Quelle.",
+      "notes": "Ein Freitext bewahrt Unsicherheit, ohne ein Datum zu erfinden.",
+      "review": "draft"
+    }
+  ]
+}

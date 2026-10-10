@@ -1,0 +1,342 @@
+{
+  "startedAt": "2026-10-10T18:23:48.875Z",
+  "method": "Native Chromium tab zoom via chrome.tabs.setZoom in automatic/per-tab mode. 1280x900 physical browser viewport, 640x450 CSS pixels at200%,320x225 at400%. Native captures use chrome.tabs.captureVisibleTab.",
+  "cases": [
+    {
+      "name": "overview",
+      "route": "/",
+      "factor": 2,
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "start": "overview-2-start.png",
+      "action": "Keyboard opened gallery from overview",
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "finalCapture": "overview-2-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "documentation",
+      "route": "/guides/getting-started.html",
+      "factor": 2,
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "start": "documentation-2-start.png",
+      "contentOrder": {
+        "mainTop": 124,
+        "navigationTop": 4651.109375
+      },
+      "section": "documentation-2-annotation-guide.png",
+      "action": "Article precedes documentation navigation; keyboard section link reaches archived-discussion instructions",
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "finalCapture": "documentation-2-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "gallery",
+      "route": "/tools/",
+      "factor": 2,
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "start": "gallery-2-start.png",
+      "tools": [
+        {
+          "label": "Open Instrument study",
+          "href": "../pilot/"
+        },
+        {
+          "label": "Open Forecast reading",
+          "href": "../annotations/"
+        },
+        {
+          "label": "Open Record desk",
+          "href": "../tool/"
+        },
+        {
+          "label": "Open Instrument Atlas",
+          "href": "../concepts/atlas/"
+        },
+        {
+          "label": "Open Instrument comparison desk",
+          "href": "../concepts/bench/"
+        },
+        {
+          "label": "Open Instrument inquiry",
+          "href": "../concepts/trail/"
+        },
+        {
+          "label": "Open Catalogue baseline",
+          "href": "../baseline/"
+        }
+      ],
+      "selectedDescription": "Select and comp",
+      "selection": "gallery-2-selected-description.png",
+      "action": "Seven explicit tool links; pointer-selected card description without navigation; keyboard opened Forecast reading",
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "finalCapture": "gallery-2-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "overview",
+      "route": "/",
+      "factor": 4,
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 320
+      },
+      "start": "overview-4-start.png",
+      "action": "Keyboard opened gallery from overview",
+      "final": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 320
+      },
+      "finalCapture": "overview-4-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "documentation",
+      "route": "/guides/getting-started.html",
+      "factor": 4,
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 320
+      },
+      "start": "documentation-4-start.png",
+      "contentOrder": {
+        "mainTop": 221.12109375,
+        "navigationTop": 7309.03125
+      },
+      "section": "documentation-4-annotation-guide.png",
+      "action": "Article precedes documentation navigation; keyboard section link reaches archived-discussion instructions",
+      "final": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 320
+      },
+      "finalCapture": "documentation-4-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "gallery",
+      "route": "/tools/",
+      "factor": 4,
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 320
+      },
+      "start": "gallery-4-start.png",
+      "tools": [
+        {
+          "label": "Open Instrument study",
+          "href": "../pilot/"
+        },
+        {
+          "label": "Open Forecast reading",
+          "href": "../annotations/"
+        },
+        {
+          "label": "Open Record desk",
+          "href": "../tool/"
+        },
+        {
+          "label": "Open Instrument Atlas",
+          "href": "../concepts/atlas/"
+        },
+        {
+          "label": "Open Instrument comparison desk",
+          "href": "../concepts/bench/"
+        },
+        {
+          "label": "Open Instrument inquiry",
+          "href": "../concepts/trail/"
+        },
+        {
+          "label": "Open Catalogue baseline",
+          "href": "../baseline/"
+        }
+      ],
+      "selectedDescription": "Select and comp",
+      "selection": "gallery-4-selected-description.png",
+      "action": "Seven explicit tool links; pointer-selected card description without navigation; keyboard opened Forecast reading",
+      "final": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 320
+      },
+      "finalCapture": "gallery-4-final.png",
+      "status": "passed"
+    }
+  ],
+  "resources": {
+    "http://127.0.0.1:4173/": {
+      "sha256": "0c74a2086e7faa63bac9a3a382fdb7082923869ca29361d12354be1444af333d",
+      "bytes": 2795
+    },
+    "http://127.0.0.1:4173/assets/styles-D8Q6zNuV.css": {
+      "sha256": "48817ce2d1070dcd449df5d8436b8f482e28cdb1fcca8738ae9b98f122193b00",
+      "bytes": 6760
+    },
+    "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js": {
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "bytes": 670
+    },
+    "http://127.0.0.1:4173/assets/docs-DCVcmqxG.js": {
+      "sha256": "50e80005baa15e14437833a9618ff2311fad3a895ef8653c9c336410c60a8895",
+      "bytes": 29
+    },
+    "http://127.0.0.1:4173/tools/": {
+      "sha256": "c2268af0087b2564e98729aae5d2815a478e1783ecf9c7d15b002dd244f4b85d",
+      "bytes": 6807
+    },
+    "http://127.0.0.1:4173/assets/index-B_ENSjb8.css": {
+      "sha256": "119f507cbab035c41e0aa1a1f10a8d4abe19217c58d2fb4695ebbab770bcacc2",
+      "bytes": 1356
+    },
+    "http://127.0.0.1:4173/previews/instrument-study.png": {
+      "sha256": "7fb7eb80b72306ab5609686144690b784f0d52583e45c0696add529452352b69",
+      "bytes": 71711
+    },
+    "http://127.0.0.1:4173/previews/forecast-reading.png": {
+      "sha256": "73ac3f347278ff0024bdda09eebe776826a03fa9ee297dd105f22df9d73b7968",
+      "bytes": 95787
+    },
+    "http://127.0.0.1:4173/previews/record-desk.png": {
+      "sha256": "7231f20488c6ceacf9bd35078c9b5a9e0a5eb7784c6174657ae383760463d4a7",
+      "bytes": 64785
+    },
+    "http://127.0.0.1:4173/guides/getting-started.html": {
+      "sha256": "758026bad77e02eeb19da2ed36ef96bb28760d272a389d88bd81fae1c77e3ad0",
+      "bytes": 11809
+    },
+    "http://127.0.0.1:4173/previews/collection-atlas.png": {
+      "sha256": "b8577aef9811a494822d0d1d6218a13d4838b1795db69720aa29137a7d2da962",
+      "bytes": 62804
+    },
+    "http://127.0.0.1:4173/previews/instrument-comparison-desk.png": {
+      "sha256": "5bcd115bd02005e2fad02931271f337eb484ba952384942e550dd712627afe11",
+      "bytes": 48071
+    },
+    "http://127.0.0.1:4173/previews/instrument-inquiry.png": {
+      "sha256": "42b71831aa397da5f327bfdf6434857359ff2f1a6fc50c69f5c14361b48ec785",
+      "bytes": 49900
+    },
+    "http://127.0.0.1:4173/previews/catalogue-baseline.png": {
+      "sha256": "97a04f134e94b960ea86057c3be1b9610634100ae7dc7781cfb2195e4afdf9ad",
+      "bytes": 108890
+    },
+    "http://127.0.0.1:4173/annotations/": {
+      "sha256": "acd36e32b03143914bb4d1609b76091b6593f928b83a40a44a159fd469509c66",
+      "bytes": 5801
+    },
+    "http://127.0.0.1:4173/assets/index-LHIK1Xfr.css": {
+      "sha256": "b449f79481fe4de924725f7839ef9c21dfd33defaa6cdfe8e6d7624cbe4f6ba3",
+      "bytes": 4301
+    },
+    "http://127.0.0.1:4173/assets/index-BT_WXvOB.js": {
+      "sha256": "2330bacbb36467e1749da175cfbe74644925b34207efe8bfd4db99a5cd2321aa",
+      "bytes": 23185
+    },
+    "http://127.0.0.1:4173/assets/text-value-DPc3ypM1.js": {
+      "sha256": "2c6bec3cfe798435c8a6ffab38c1b84296f68c25ae55c229e43513e70976af43",
+      "bytes": 143
+    }
+  },
+  "browser": "156.0.8078.4",
+  "finishedAt": "2026-10-10T18:24:03.370Z"
+}

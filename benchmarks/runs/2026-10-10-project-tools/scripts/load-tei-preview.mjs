@@ -1,0 +1,12 @@
+import { chromium } from 'file:///C:/Users/chris/Documents/GitHub/fancy-research-tools/node_modules/@playwright/test/index.mjs';
+import { readFile, writeFile } from 'node:fs/promises';
+const browser=await chromium.launch();
+const page=await browser.newPage({viewport:{width:1440,height:960}});
+await page.goto('https://dhcraft.org/teiCrafter/editor.html',{waitUntil:'networkidle'});
+const text=await readFile('C:/Users/chris/Documents/GitHub/DHCraft/teiCrafter/docs/data/editor/szd/o_szd.1079.tei.xml','utf8');
+const transfer=await page.evaluateHandle(text=>{const data=new DataTransfer();data.items.add(new File([text],'o_szd.1079.tei.xml',{type:'text/xml'}));return data;},text);
+await page.locator('body').dispatchEvent('drop',{dataTransfer:transfer});
+await page.waitForTimeout(1500);
+await page.screenshot({path:'C:/Users/chris/Documents/Codex/2026-10-10/ana/work/portfolio-previews/teicrafter-loaded.png'});
+await writeFile('C:/Users/chris/Documents/Codex/2026-10-10/ana/work/portfolio-previews/teicrafter-loaded.txt',await page.locator('body').innerText());
+await browser.close();

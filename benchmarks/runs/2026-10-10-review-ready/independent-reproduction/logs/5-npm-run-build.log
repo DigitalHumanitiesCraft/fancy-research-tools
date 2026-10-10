@@ -1,0 +1,20 @@
+
+> fancy-research-tools@0.1.0 prebuild
+> node scripts/build-docs.mjs
+
+file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/scripts/build-docs.mjs:43
+      if (!destination) throw new Error(`Unpublished Markdown link in ${currentSource}: ${href}`);
+                              ^
+
+Error: Unpublished Markdown link in docs/customizing.md: ../data/nhc-milton/README.md
+Please report this to https://github.com/markedjs/marked.
+    at renderer.link (file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/scripts/build-docs.mjs:43:31)
+    at l.parseInline (file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/node_modules/marked/lib/marked.esm.js:78:2958)
+    at S.paragraph (file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/node_modules/marked/lib/marked.esm.js:70:140)
+    at l.parse (file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/node_modules/marked/lib/marked.esm.js:78:2291)
+    at parse (file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/node_modules/marked/lib/marked.esm.js:78:1358)
+    at F.parse (file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/node_modules/marked/lib/marked.esm.js:78:8309)
+    at k (file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/node_modules/marked/lib/marked.esm.js:79:238)
+    at file:///C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout/scripts/build-docs.mjs:85:22
+
+Node.js v22.14.0

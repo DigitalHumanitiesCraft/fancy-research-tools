@@ -1,0 +1,8 @@
+{"label":"fresh-install","cwd":"C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\repository-audit-fresh","command":["C:\\Program Files\\nodejs\\node.exe","C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js","ci"],"started":"2026-10-10T17:50:11.059Z","ended":"2026-10-10T17:50:13.631Z","exitCode":0}
+
+added 76 packages, and audited 77 packages in 2s
+
+34 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities

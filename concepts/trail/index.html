@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Instrument inquiry</title></head>
+<body>
+<a class="skip" href="#workspace">Skip to workspace</a>
+<header class="app-header"><a class="identity" href="#find">Instrument inquiry</a><a href="../">All concepts</a></header>
+<main>
+<div class="question-block"><label for="research-question">Your research question</label><input id="research-question" value="How are materials and makers described in these instruments?" /></div>
+<nav class="workflow" aria-label="Investigation"><a href="#find" data-view="find"><span aria-hidden="true">01</span> Find material</a><a href="#compare" data-view="compare"><span aria-hidden="true">02</span> Compare evidence</a><a href="#reflect" data-view="reflect"><span aria-hidden="true">03</span> Record observation</a></nav>
+<div id="workspace" tabindex="-1">
+<section id="find" aria-labelledby="find-title">
+<div class="section-heading"><h1 id="find-title">Build your evidence set</h1><a class="primary action" href="#compare" id="compare-link">Compare selection</a></div>
+<form id="search-form" role="search"><label for="search">Search catalogue descriptions</label><div class="search-row"><input id="search" type="search" placeholder="Try wood, a culture, or an instrument…"><button class="primary" type="submit">Search</button><button type="button" id="clear-search">Clear</button></div></form>
+<p id="result-status" role="status"></p><p id="selection-status" role="status"></p>
+<div id="results"></div>
+</section>
+<section id="compare" aria-labelledby="compare-title" hidden>
+<div class="section-heading"><h1 id="compare-title">Read the evidence together</h1><a class="primary action" href="#reflect">Record observation</a></div>
+<div id="comparison"></div>
+<a class="back-link" href="#find">← Find more material</a>
+</section>
+<section id="reflect" aria-labelledby="reflect-title" hidden>
+<div class="section-heading"><h1 id="reflect-title">What does the evidence support?</h1><button class="primary" id="export" type="button">Download investigation ↓</button></div>
+<div class="reflection"><div class="notes"><label for="observation">Your observation</label><textarea id="observation" rows="7" placeholder="Describe what you observed in the selected catalogue entries…"></textarea><label for="unresolved">Unresolved question</label><textarea id="unresolved" rows="4" placeholder="What would you need to examine next?"></textarea><p class="quiet">Your interpretation is exported separately from the source records.</p></div><aside aria-labelledby="evidence-title"><h2 id="evidence-title">Evidence attached</h2><div id="evidence"></div><a class="back-link" href="#compare">← Revisit the comparison</a></aside></div><p id="export-status" role="status"></p>
+</section></div>
+<section id="about" hidden aria-labelledby="about-title"><h1 id="about-title">About this investigation</h1><p>A catalogue investigation of musical instruments in the Metropolitan Museum of Art. Compare material descriptions, original date wording, and attribution qualifiers before recording an interpretation.</p><p>The snapshot contains the 60 lowest numeric IDs returned for the Musical Instruments department on 10 October 2026. It is a convenience sample, not representative of the collection or musical history. Missing values mean missing catalogue information.</p><p><a href="https://github.com/metmuseum/openaccess">Met Open Access source</a>. Downloads include the source snapshot manifest and the unmodified selected records.</p><a href="#find">Return to material</a></section>
+</main><footer><a href="../../tools/">All tools</a><a href="#about">About &amp; source</a><span><a href="https://creativecommons.org/publicdomain/zero/1.0/">Data CC0</a><a href="https://opensource.org/license/mit">Code MIT</a></span></footer>
+<script type="module" src="../../src/concepts/trail/main.ts"></script>
+</body></html>

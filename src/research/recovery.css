@@ -1,0 +1,36 @@
+@layer components {
+  .draft-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    min-inline-size: 0;
+    padding: 0.75rem clamp(1rem, 3vw, 3rem);
+    color: var(--ink);
+  }
+  .draft-controls label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    min-inline-size: 0;
+    margin: 0;
+  }
+  .draft-controls input[type="file"] {
+    inline-size: 17rem;
+    max-inline-size: 100%;
+    min-inline-size: 0;
+    padding: 0.3rem;
+  }
+  .draft-controls input::file-selector-button {
+    font: inherit;
+    color: inherit;
+    padding: 0.35rem 0.5rem;
+    cursor: pointer;
+  }
+  .draft-controls [role="status"] {
+    flex: 1 1 16rem;
+    font-size: 0.875rem;
+    overflow-wrap: anywhere;
+  }
+}

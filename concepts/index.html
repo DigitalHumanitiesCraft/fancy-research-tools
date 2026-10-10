@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Research interface study</title>
+  </head>
+  <body>
+    <header>
+      <a href="../">Fancy Research Tools</a>
+      <a href="../tools/">All tools</a>
+    </header>
+    <main>
+      <h1>Research interfaces</h1>
+      <div class="concepts">
+        <article>
+          
+          <h2>Collection atlas</h2>
+          
+          <a href="atlas/">Open Atlas →</a>
+        </article>
+        <article>
+          
+          <h2>Comparison bench</h2>
+          
+          <a href="bench/">Open Bench →</a>
+        </article>
+        <article>
+          
+          <h2>Investigation trail</h2>
+          
+          <a href="trail/">Open Trail →</a>
+        </article>
+      </div>
+      <section class="task">
+        <h2>Try the same task in each</h2>
+        <p>Find instruments whose catalogue material mentions wood. Compare two to four entries. Inspect dates and attribution wording, write a sourced observation and an unresolved question, then export your investigation.</p>
+        <p>The frozen sample has 60 Met catalogue entries. It supports comparison of those descriptions, not representative claims about instrument history.</p>
+      </section>
+      <section>
+        <h2>Record your experience</h2>
+        <p>Complete this after trying a concept. Responses stay in this page until downloaded; nothing is sent. These project questions are not a validated composite score.</p>
+        <form id="feedback">
+          <div class="fields">
+            <label>Concept<select name="concept" required>
+                <option value="">Choose</option>
+                <option>A / Atlas</option>
+                <option>B / Bench</option>
+                <option>C / Trail</option>
+              </select>
+            </label>
+            <label>Order tried<input name="order" placeholder="e.g. B, A, C">
+            </label>
+            <label>Task outcome<select name="outcome" required>
+                <option value="">Choose</option>
+                <option>Completed unaided</option>
+                <option>Completed with help</option>
+                <option>Could not complete</option>
+                <option>Not attempted</option>
+              </select>
+            </label>
+            <label>Task difficulty<select name="ease" required>
+                <option value="">Choose</option>
+                <option value="1">1 — Very difficult</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option value="7">7 — Very easy</option>
+              </select>
+            </label>
+          </div>
+          <label>Where did you hesitate, get stuck or need help?<textarea name="friction" rows="3">
+            </textarea>
+          </label>
+          <label>What helped you understand and compare the evidence?<textarea name="benefit" rows="3">
+            </textarea>
+          </label>
+          <label>Would you want to continue working here? What about its appearance or behaviour influenced that?<textarea name="experience" rows="3">
+            </textarea>
+          </label>
+          <button type="submit">Download this assessment</button>
+          <p id="status" role="status">
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>Development concepts. Research acceptance pending.</footer>
+    <script type="module" src="../src/concepts/index.ts">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+
+> fancy-research-tools@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.3 C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/checkout
+
+
+ Test Files  8 passed (8)
+      Tests  87 passed (87)
+   Start at  20:15:35
+   Duration  546ms (transform 53%, tests 21%, import 16%, worker 10%)
+

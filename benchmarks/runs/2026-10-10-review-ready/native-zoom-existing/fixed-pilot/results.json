@@ -1,0 +1,159 @@
+{
+  "startedAt": "2026-10-10T18:07:19.821Z",
+  "method": "Headless Chromium native page zoom via chrome.tabs.setZoom, automatic mode, per-tab scope. No CSS zoom, font-size override, CDP page scale, or OS setting used.",
+  "references": [
+    "https://developer.chrome.com/docs/extensions/reference/api/tabs#method-setZoom",
+    "https://playwright.dev/docs/chrome-extensions"
+  ],
+  "screenReader": {
+    "status": "not run",
+    "installed": "Windows Narrator",
+    "reason": "Native desktop operation/audio observation unavailable. No speech or real screen-reader task is claimed."
+  },
+  "cases": [
+    {
+      "name": "pilot",
+      "route": "/pilot/",
+      "requestedZoom": 2,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 720,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 720,
+        "bodyWidth": 720
+      },
+      "startImage": "pilot-2-start.png",
+      "dialogImage": "pilot-2-source.png",
+      "task": "Searched wood, selected two records, inspected Source by keyboard, closed with Escape/focus return, wrote observation and downloaded matching investigation",
+      "final": {
+        "width": 720,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 720,
+        "bodyWidth": 720
+      },
+      "finalImage": "pilot-2-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "pilot",
+      "route": "/pilot/",
+      "requestedZoom": 4,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "startImage": "pilot-4-start.png",
+      "dialogImage": "pilot-4-source.png",
+      "task": "Searched wood, selected two records, inspected Source by keyboard, closed with Escape/focus return, wrote observation and downloaded matching investigation",
+      "final": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "finalImage": "pilot-4-final.png",
+      "status": "passed"
+    }
+  ],
+  "resources": {
+    "http://127.0.0.1:4176/pilot/": {
+      "sha256": "ce59400d8d525e28955dcc8941ed442d9c623babed35deef6ef34e0b09b0d23e",
+      "bytes": 4860
+    },
+    "http://127.0.0.1:4176/src/workbench/main.ts": {
+      "sha256": "a500167b0493dc12a9d937228954783b41dcd1d4ddd0979e467ac4ad329cfc90",
+      "bytes": 55586
+    },
+    "http://127.0.0.1:4176/data/met-instruments/records.json?import": {
+      "sha256": "fcff1ec53b753708a4709aefdaf607b4b4b18e4d78f57da974d5ff8ccd157df9",
+      "bytes": 115694
+    },
+    "http://127.0.0.1:4176/src/ui/text-value.ts": {
+      "sha256": "46f155f1b64a7734226aa8b8834fb4449091f2958a3af8fda61f05dc558a4a54",
+      "bytes": 1517
+    },
+    "http://127.0.0.1:4176/src/ui/icons.ts": {
+      "sha256": "74fba61d1ec438c3c68253a32d6bee5e8753fd79dabfd77cec2ec6373472e331",
+      "bytes": 4141
+    },
+    "http://127.0.0.1:4176/src/research/browser.ts": {
+      "sha256": "ab58622a408ff5533995b41e20666ebc7c506b3da91451d896268f84dbca72f3",
+      "bytes": 15788
+    },
+    "http://127.0.0.1:4176/src/research/evidence.ts": {
+      "sha256": "54a6ed6e344460937c96cb3f9113462f32d4282afd0d1225fad3626263afffe8",
+      "bytes": 4726
+    },
+    "http://127.0.0.1:4176/src/research/investigation.ts": {
+      "sha256": "cf5ec3aa44a7766019b94d4e2a014854c5a90bd8f4fa9ffdc80893007a875b6c",
+      "bytes": 16159
+    },
+    "http://127.0.0.1:4176/@vite/client": {
+      "sha256": "f3251be2f885d0d0878a152d955bf94a37e4b2bcaa5f048d1b73a627416baf43",
+      "bytes": 222118
+    },
+    "http://127.0.0.1:4176/data/met-instruments/manifest.json?import": {
+      "sha256": "b14303927b3c89c6c2a46d4d1c45e4ed3803f225266a6d00f9488ca8e405f0ca",
+      "bytes": 55692
+    },
+    "http://127.0.0.1:4176/node_modules/vite/dist/client/env.mjs": {
+      "sha256": "87a1e6adc3833b1e0d8fd872e39e822401c8f0d593d5358f7e142f34d335946a",
+      "bytes": 3478
+    },
+    "http://127.0.0.1:4176/data/met-instruments/field-evidence.json?import": {
+      "sha256": "5cdfc5e27a8f67bcca0ed3551fdf6503c94aee8b78702c3c032406f170dde6ac",
+      "bytes": 804998
+    },
+    "http://127.0.0.1:4176/src/workbench/styles.css": {
+      "sha256": "ea6c130b3ad2c2c6faf583287b22f578b5e17bd43a4b5e9d9c5616e0f1ce5aa3",
+      "bytes": 11125
+    },
+    "http://127.0.0.1:4176/pilot/?q=wood": {
+      "sha256": "ce59400d8d525e28955dcc8941ed442d9c623babed35deef6ef34e0b09b0d23e",
+      "bytes": 4860
+    }
+  },
+  "browser": "156.0.8078.4",
+  "finishedAt": "2026-10-10T18:07:25.655Z"
+}

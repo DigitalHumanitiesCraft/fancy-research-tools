@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "title": "Fünf Briefe aus dem Nachlass von Anton Emanuel Schönbach",
+  "records": [
+    {
+      "id": "schoenbach-001",
+      "title": "Saar, Ferdinand von → Schönbach, Anton Emanuel",
+      "kind": "Letter",
+      "place": "Habrovany",
+      "date": "1898-12-03",
+      "source": "https://schoenbach.acdh.oeaw.ac.at/schoenbach001.html\nCMIF record 1: https://raw.githubusercontent.com/acdh-oeaw/schoenbach/main/cmif_schoenbach.xml\nCC0. Frozen source SHA-256: b00003df5d308953a055cd960385fc5ed74c6e37ceabc35644a5f6e356559c77\nTitle joins sender and recipient; type Letter is the projection label.",
+      "notes": "Native zoom 4 retained note.",
+      "review": "draft"
+    },
+    {
+      "id": "schoenbach-002",
+      "title": "Saar, Ferdinand von → Schönbach, Anton Emanuel",
+      "kind": "Letter",
+      "place": "Blansko",
+      "date": "1888-10-30",
+      "source": "https://schoenbach.acdh.oeaw.ac.at/schoenbach002.html\nCMIF record 2: https://raw.githubusercontent.com/acdh-oeaw/schoenbach/main/cmif_schoenbach.xml\nCC0. Frozen source SHA-256: b00003df5d308953a055cd960385fc5ed74c6e37ceabc35644a5f6e356559c77\nTitle joins sender and recipient; type Letter is the projection label.",
+      "notes": "",
+      "review": "draft"
+    },
+    {
+      "id": "schoenbach-003",
+      "title": "Saar, Ferdinand von → Schönbach, Anton Emanuel",
+      "kind": "Letter",
+      "place": "Döbling",
+      "date": "1905-10-20",
+      "source": "https://schoenbach.acdh.oeaw.ac.at/schoenbach003.html\nCMIF record 3: https://raw.githubusercontent.com/acdh-oeaw/schoenbach/main/cmif_schoenbach.xml\nCC0. Frozen source SHA-256: b00003df5d308953a055cd960385fc5ed74c6e37ceabc35644a5f6e356559c77\nTitle joins sender and recipient; type Letter is the projection label.",
+      "notes": "",
+      "review": "draft"
+    },
+    {
+      "id": "schoenbach-004",
+      "title": "Saar, Ferdinand von → Schönbach, Anton Emanuel",
+      "kind": "Letter",
+      "place": "Blansko",
+      "date": "1888-01-03",
+      "source": "https://schoenbach.acdh.oeaw.ac.at/schoenbach004.html\nCMIF record 4: https://raw.githubusercontent.com/acdh-oeaw/schoenbach/main/cmif_schoenbach.xml\nCC0. Frozen source SHA-256: b00003df5d308953a055cd960385fc5ed74c6e37ceabc35644a5f6e356559c77\nTitle joins sender and recipient; type Letter is the projection label.",
+      "notes": "",
+      "review": "draft"
+    },
+    {
+      "id": "schoenbach-005",
+      "title": "Ebner-Eschenbach, Marie von → Schönbach, Anna",
+      "kind": "Letter",
+      "place": "Zdislavice",
+      "date": "1911-09-01",
+      "source": "https://schoenbach.acdh.oeaw.ac.at/schoenbach005.html\nCMIF record 5: https://raw.githubusercontent.com/acdh-oeaw/schoenbach/main/cmif_schoenbach.xml\nCC0. Frozen source SHA-256: b00003df5d308953a055cd960385fc5ed74c6e37ceabc35644a5f6e356559c77\nTitle joins sender and recipient; type Letter is the projection label.",
+      "notes": "",
+      "review": "draft"
+    }
+  ]
+}

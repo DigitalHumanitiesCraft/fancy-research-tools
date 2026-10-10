@@ -1,0 +1,11 @@
+Error: C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\"C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\final-refresh\playwright.config.mjs" does not exist
+    at resolveConfigFile2 (C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright\lib\common\index.js:1498:11)
+    at resolveConfigLocation (C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright\lib\common\index.js:1479:30)
+    at Object.loadConfigFromFile (C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright\lib\common\index.js:1508:27)
+    at runTests (C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright\lib\cli\testActions.js:44:51)
+    at _Command.<anonymous> (C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright\lib\program.js:55:45)
+    at _Command.listener [as _actionHandler] (C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright-core\lib\utilsBundle.js:54088:17)
+    at C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright-core\lib\utilsBundle.js:54946:20
+    at _Command._chainOrCall (C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright-core\lib\utilsBundle.js:54854:12)
+    at _Command._parseCommand (C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright-core\lib\utilsBundle.js:54944:27)
+    at C:\Users\chris\Documents\Codex\2026-10-10\ana\work\combined-reproduction\candidate-2\checkout\node_modules\playwright-core\lib\utilsBundle.js:54755:27

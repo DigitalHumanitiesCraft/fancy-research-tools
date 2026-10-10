@@ -1,0 +1,18 @@
+[
+  {
+    "case": "failed asynchronous file read preserves valid draft",
+    "passed": true
+  },
+  {
+    "case": "confirmed import and no-op save retain original bytes",
+    "passed": true
+  },
+  {
+    "case": "canceled valid import leaves current notebook and bytes unchanged",
+    "passed": true
+  },
+  {
+    "case": "import over corruption remains exportable and protects corrupt bytes",
+    "passed": true
+  }
+]

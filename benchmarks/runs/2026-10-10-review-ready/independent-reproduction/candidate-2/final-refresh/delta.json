@@ -1,0 +1,23 @@
+{
+  "synchronizedAt": "2026-10-10T18:26:17.487Z",
+  "originalManifest": "../source-manifest.json",
+  "finalRootManifest": "root-source-manifest.json",
+  "changes": [
+    {
+      "path": "knowledge/plan.md",
+      "previousSha256": "36d7c4ec677e5e54df53640d3486bc7362f3bc881dcf166dc21d4c41766f4ddb",
+      "finalSha256": "6477a5c218de807568c979d17a223145953577147d1055273173848b1ef5fa56"
+    },
+    {
+      "path": "knowledge/testing.md",
+      "previousSha256": "f5f69a2b9550580a62b2c937eabbde783a11e73daebaf3f14b364582fc03883b",
+      "finalSha256": "d0119d3034a5000680a69e66865d8b7c4c68625b120bc2067afd922c027f5f46"
+    },
+    {
+      "path": "src/gallery.css",
+      "previousSha256": "fce0d5eb8e325edf2864aac85f0d8a5eee3380d3880d08a0f3204249a73773d1",
+      "finalSha256": "7dfc022e7fe592e620c9e3758e1580083250493367f1ba18f75e443cefc053e6"
+    }
+  ],
+  "verificationScope": "Build and all documentation/gallery browser cases repeated. Unit/data tests and the actual export workflows remain attached to candidate 2 because their code and inputs are identical."
+}

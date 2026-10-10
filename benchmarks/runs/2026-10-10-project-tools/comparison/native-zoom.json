@@ -1,0 +1,32 @@
+[
+  {
+    "factor": 2,
+    "collection": {
+      "width": 640,
+      "scrollWidth": 640,
+      "dpr": 2
+    },
+    "source": {
+      "width": 640,
+      "scrollWidth": 640,
+      "dpr": 2
+    },
+    "selection": "2",
+    "focusRestored": true
+  },
+  {
+    "factor": 4,
+    "collection": {
+      "width": 320,
+      "scrollWidth": 320,
+      "dpr": 4
+    },
+    "source": {
+      "width": 320,
+      "scrollWidth": 320,
+      "dpr": 4
+    },
+    "selection": "2",
+    "focusRestored": true
+  }
+]

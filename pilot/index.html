@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare collection records</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <header class="app-header">
+    <a class="identity" href="#collection">Compare collection records</a>
+    <nav aria-label="Workspace">
+      <a href="#collection" id="collection-link">Collection</a>
+      <a href="#comparison" id="comparison-link">Comparison <span id="selection-count"></span></a>
+    </nav>
+    <button id="export" class="primary" type="button">Export investigation</button>
+  </header>
+  <main id="main" tabindex="-1">
+    <section id="collection" aria-labelledby="collection-heading">
+      <div class="section-heading"><h1 id="collection-heading">Musical instruments</h1><a href="#comparison" id="compare-action">Compare selection</a></div>
+      <form id="search-form" role="search" class="search-form">
+        <label class="search-field">Search catalogue<input id="query" type="search" placeholder="Title, material, culture or date" autocomplete="off"></label>
+        <label>Classification<select id="classification"><option value="">All classifications</option></select></label>
+        <button type="submit" id="search-submit">Search</button>
+        <button type="button" id="reset" class="quiet-button">Reset</button>
+      </form>
+      <div class="collection-toolbar"><p id="result-status" role="status"></p><label>Sort<select id="sort"><option value="source">Source order</option><option value="title">Title A–Z</option><option value="date">Catalogue date, earliest first</option></select></label></div>
+      <div id="selection-tray" role="group" aria-label="Selected instruments" hidden></div>
+      <div id="records" class="record-list" role="region" aria-label="Catalogue records" tabindex="0"></div>
+      <nav class="pagination" aria-label="Result pages"><button id="previous" type="button">Previous</button><span id="page-status"></span><button id="next" type="button">Next</button></nav>
+    </section>
+    <section id="comparison" aria-labelledby="comparison-heading" hidden>
+      <div class="section-heading"><h1 id="comparison-heading">Comparison</h1><a href="#collection">Change selection</a></div>
+      <label class="research-question">Research question<input id="research-question" placeholder="What do you want to investigate?"></label>
+      <div id="comparison-empty" hidden>Select at least two instruments from the collection to compare their catalogue evidence.</div>
+      <div id="comparison-region" class="comparison-region" role="region" aria-label="Source evidence comparison" tabindex="0"><table id="matrix"></table></div>
+      <div class="notebook">
+        <label>Observation<textarea id="observation" rows="4" placeholder="Record what the selected sources support…"></textarea></label>
+        <label>Unresolved question<textarea id="unresolved" rows="4" placeholder="What still needs checking?"></textarea></label>
+      </div>
+    </section>
+    <section id="source" aria-labelledby="source-heading" hidden>
+      <div class="section-heading"><h1 id="source-heading">Source</h1><a id="source-return" href="#comparison">Return to comparison</a></div>
+      <div id="source-details" class="source-details"></div>
+    </section>
+    <section id="about" aria-labelledby="about-heading" hidden>
+      <div class="section-heading"><h1 id="about-heading">About</h1><a href="#collection">Return to collection</a></div>
+      <dl class="about-list">
+        <dt>Source</dt><dd><a href="https://github.com/metmuseum/openaccess">The Metropolitan Museum of Art Open Access</a></dd>
+        <dt>Material</dt><dd>Metadata for the 60 lowest numeric IDs in the Musical Instruments department, retrieved on 10 October 2026. This convenience sample is not representative of the collection or musical history.</dd>
+        <dt>Interpretation</dt><dd>Descriptions, attribution qualifiers and historical culture labels retain the catalogue wording. Missing values describe the catalogue. Catalogue date bounds are indexing ranges, not precise historical dates.</dd>
+        <dt>Working copy</dt><dd>Your selection and notes are saved in this browser when storage is available. Export an investigation to retain a portable copy and reopen it through Open investigation. Clearing browser data removes local copies.</dd>
+        <dt>Development</dt><dd><a href="../concepts/">Interface experiments</a> / <a href="../guides/research.html">Research basis</a> / <a href="../baseline/">Earlier catalogue baseline</a></dd>
+      </dl>
+    </section>
+    <p id="status" role="status"></p>
+  </main>
+  <footer>
+    <a href="../tools/">All tools</a>
+    <a href="#about">About</a>
+    <div id="recovery"></div>
+    <nav aria-label="Licenses"><a href="https://creativecommons.org/publicdomain/zero/1.0/">Data CC0</a><a href="https://opensource.org/license/mit">Code MIT</a></nav>
+  </footer>
+  <script type="module" src="../src/workbench/main.ts"></script>
+</body>
+</html>

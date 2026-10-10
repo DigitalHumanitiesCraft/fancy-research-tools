@@ -1,0 +1,17 @@
+
+Running 8 tests using 1 worker
+
+(node:45100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:35:1 › archived passage annotation preserves exact source and reopens its actual download (2.5s)
+  ok 2 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:87:1 › a changed interpretation clears its earlier explicit review (1.1s)
+  ok 3 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:120:1 › pointer selection creates a quotation and removal requires an explicit decision (760ms)
+  ok 4 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:161:1 › work entered while an import is reading prevents replacement (564ms)
+  ok 5 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:190:1 › unfinished annotations survive declined source changes and block export or replacement (983ms)
+  ok 6 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:221:1 › rejected and cancelled imports preserve a valid notebook and accepted raw author strings (1.7s)
+  ok 7 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:274:1 › corrupt and externally changed saved copies remain recoverable without overwrite (837ms)
+  ok 8 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:300:1 › narrow reading and annotation controls are keyboard accessible and reflow (1.6s)
+
+  8 passed (13.1s)

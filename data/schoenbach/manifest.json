@@ -1,0 +1,16 @@
+{
+  "title": "Fünf Briefe aus dem Nachlass von Anton Emanuel Schönbach",
+  "acquiredOn": "2026-10-10",
+  "acquisition": "Copied without changing bytes from the local CorrespExplorer checkout. The original upstream CMIF header and edition page were read on this date; no direct upstream download is claimed.",
+  "sourceRepository": "https://github.com/DigitalHumanitiesCraft/CorrespExplorer",
+  "sourceRevision": "cedf6b870299122e1794cae5b81fa549cce89c0e",
+  "sourcePath": "docs/data/schoenbach.xml",
+  "originalUrl": "https://raw.githubusercontent.com/acdh-oeaw/schoenbach/main/cmif_schoenbach.xml",
+  "editionUrl": "https://schoenbach.acdh.oeaw.ac.at/",
+  "sourceEditor": "Martin Anton Müller",
+  "licence": "CC0",
+  "licenceUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licenceBasis": "teiHeader/fileDesc/publicationStmt/availability/licence in the frozen CMIF source",
+  "sha256": "b00003df5d308953a055cd960385fc5ed74c6e37ceabc35644a5f6e356559c77",
+  "review": "No review of historical accuracy is recorded. Source comparison checks the deterministic projection only."
+}

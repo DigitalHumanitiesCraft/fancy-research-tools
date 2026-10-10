@@ -1,0 +1,22 @@
+{
+  "input": {
+    "id": "demo-001",
+    "title": "  First\r\nSecond  ",
+    "kind": "Text",
+    "place": "  Graz  ",
+    "date": null,
+    "source": "  Source\r\nretained  ",
+    "notes": "  note\r\nretained  ",
+    "review": "draft"
+  },
+  "output": {
+    "id": "demo-001",
+    "title": "  FirstSecond  ",
+    "kind": "Text",
+    "place": "  Graz  ",
+    "date": "Edited date only",
+    "source": "  Sourceretained  ",
+    "notes": "  note\nretained  ",
+    "review": "draft"
+  }
+}

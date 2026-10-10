@@ -1,0 +1,14 @@
+{"label":"fresh-unit","cwd":"C:\\Users\\chris\\Documents\\Codex\\2026-10-10\\ana\\work\\repository-audit-fresh","command":["C:\\Program Files\\nodejs\\node.exe","C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js","test"],"started":"2026-10-10T17:50:16.471Z","ended":"2026-10-10T17:50:18.138Z","exitCode":0}
+
+> fancy-research-tools@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.3 C:/Users/chris/Documents/Codex/2026-10-10/ana/work/repository-audit-fresh
+
+
+ Test Files  6 passed (6)
+      Tests  51 passed (51)
+   Start at  19:50:17
+   Duration  639ms (transform 53%, tests 20%, import 18%, worker 9%)
+

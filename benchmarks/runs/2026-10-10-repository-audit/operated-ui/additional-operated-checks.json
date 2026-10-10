@@ -1,0 +1,18 @@
+{
+  "version": "dev4174 source after binding fix",
+  "sourceNarrow": {
+    "scrollWidth": 286,
+    "clientWidth": 286
+  },
+  "emptyText": "No matches. Change the search or reset the filters; your selection is retained.",
+  "keptSelection": "2",
+  "resetFocus": "query",
+  "cancelResult": {
+    "note": "Kept after cancelling dirty navigation",
+    "query": ""
+  },
+  "editorNarrow": {
+    "scrollWidth": 320,
+    "innerWidth": 320
+  }
+}

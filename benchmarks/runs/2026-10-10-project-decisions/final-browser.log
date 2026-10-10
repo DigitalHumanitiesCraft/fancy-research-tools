@@ -1,0 +1,14 @@
+
+Running 9 tests using 2 workers
+
+  ok 2 tests\e2e\workbench.spec.ts:8:1 › investigation retains source evidence and notes across reload and file reopening (2.2s)
+  ok 1 tests\e2e\docs.spec.ts:4:1 › published documentation routes, headings and local links resolve (3.4s)
+  ok 3 tests\e2e\workbench.spec.ts:70:1 › compared values expose raw origin without changing the investigation (1.4s)
+  ok 4 tests\e2e\docs.spec.ts:63:1 › relative assets and navigation work below a repository subpath (307ms)
+  ok 6 tests\e2e\docs.spec.ts:77:1 › narrow reference tables retain readable columns and keyboard scrolling (184ms)
+  ok 5 tests\e2e\workbench.spec.ts:151:1 › search, selection limit, missing results and back navigation preserve the investigation (548ms)
+  ok 7 tests\e2e\workbench.spec.ts:171:1 › corrupt import leaves current work intact and responsive comparison remains operable (987ms)
+  ok 8 tests\e2e\workbench.spec.ts:202:1 › bare-route draft restoration retains search on view changes and notes export without selection (393ms)
+  ok 9 tests\e2e\workbench.spec.ts:223:1 › legacy draft bytes survive inspection and export until an actual edit (554ms)
+
+  9 passed (7.8s)

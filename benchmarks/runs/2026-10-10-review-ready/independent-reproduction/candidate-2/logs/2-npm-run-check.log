@@ -1,0 +1,5 @@
+
+> fancy-research-tools@0.1.0 check
+> tsc --noEmit && biome check .
+
+Checked 60 files in 91ms. No fixes applied.

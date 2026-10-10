@@ -1,0 +1,16 @@
+{
+  "previousEntries": 217,
+  "currentEntries": 218,
+  "added": [
+    ".gitattributes"
+  ],
+  "changed": [
+    "README.md",
+    "benchmarks/capture-source.mjs",
+    "knowledge/journal.md",
+    "knowledge/plan.md",
+    "knowledge/testing.md"
+  ],
+  "removed": [],
+  "unchanged": 212
+}

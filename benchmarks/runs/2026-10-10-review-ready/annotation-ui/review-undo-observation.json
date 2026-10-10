@@ -1,0 +1,12 @@
+{
+  "unchangedNote": true,
+  "beforeReview": {
+    "reviewer": {
+      "kind": "human",
+      "name": "Test reviewer"
+    },
+    "criterion": "The quotation explicitly names measured source data.",
+    "result": "supports"
+  },
+  "afterReview": null
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "hsa-letter-7711",
+    "title": "Benndorf to Schuchardt, 14 February 1879",
+    "issuedAt": "1879-02-14",
+    "author": "Friedrich August Otto Benndorf",
+    "recipient": "Hugo Schuchardt",
+    "place": "Vienna",
+    "editor": "Hubert Szemethy (2022)",
+    "publisher": "Hugo Schuchardt Archiv, Bernhard Hurch (ed.)",
+    "rights": "Public-domain letter text; editorial apparatus and images excluded.",
+    "url": "https://gams.uni-graz.at/o:hsa.letter.7711",
+    "derivation": "teiCrafter transcription: footnote numerals removed; |2| page marker retained. Here, line endings normalized to LF only.",
+    "upstream": "https://github.com/DigitalHumanitiesCraft/teiCrafter/tree/5e76308/docs/data/editor/hsa-7711",
+    "text": "Wien 14/2 79\nIV Victorg. 5\n\nAuf Ihre freundlichen Zeilen vom 8. d. M., die mir erst am 11. zukamen, verehrter Herr College, würde ich gern umgehend geantwortet haben, wenn sich nicht gerade in diesen Tagen sehr Viel gehäuft hätte. Leider bin ich ausser Stande das befremdliche Verhalten aufzuklären, das Ihnen einen so unwillkommenen Eindruck mit allem Recht macht. Ich kenne E. Hübner fast gar nicht, bin überhaupt nur zwei Mal mit ihm persönlich zusammengekommen, sonst nur aber auch das selten in brieflichem Verkehr gewesen aus geschäftlichem Anlass. Aber ich sollte meinen dass ein objectives offenes Wort den Zwischenfall von Ihrer Seite ohne Weiteres begleichen müsste.\n\nEin Missbehagen wie Sie es schildern |2| ist mir leider aus eigener Erfahrung nur zu bekannt. Möchte es sich Ihnen rasch beheben. Munterkeit brauchen wir zu unserm Beruf so gar mehr als viele andere.\n\nMit hochachtungsvollem Gruss\nIhr ergebener\nBdf\n",
+    "rawSha256": "4112f7ecc0a0fba7d78be22945da9ee4c912e5132b8035134b2dfdead917d0b4",
+    "textSha256": "e4b692ce4a858b7c18d136106282446c2ef10586f382eaec1a9d72f3a72bc8e7"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "legacyInitialStoredBytesUnchanged": true,
+  "inspectStoredBytesUnchanged": true,
+  "exportVersion": 2,
+  "reopenedFieldEvidence": true,
+  "dialogText": "Source: Attribution\nClose\nRecord\nBook Harmonium · Met 500531\nDisplayed value\nLepuye (?)\nProjection field: artistPrefix\nOriginal API field: artistPrefix\n\"\"\nProjected value\nnull\nMapping rule\nEmpty source strings become null; other values stay unchanged.\nProjection field: artist\nOriginal API field: artistDisplayName\n\"Lepuye\"\nProjected value\n\"Lepuye\"\nMapping rule\nEmpty source strings become null; other values stay unchanged.\nProjection field: artistSuffix\nOriginal API field: artistSuffix\n\"(?)\"\nProjected value\n\"(?)\"\nMapping rule\nEmpty source strings become null; other values stay unchanged.\nSnapshot and review\nCatalogue publisher\nThe Metropolitan Museum of Art\nOriginal author and creation process\nUnknown; not recorded in this snapshot.\nHuman or AI review\nNo human or AI review is recorded for this value.\nResearch validation\nNo research validation is recorded for this value.\nOriginal API URL\nhttps://collectionapi.metmuseum.org/public/collection/v1/objects/500531\nSnapshot file\nraw/500531.json\nSnapshot SHA-256\n15ffa245d5621e761fc12ad265a7c69779bb8b09c43afac19b8277d9091faac2\nProjection producer\nscripts/import-dh-data.mjs\nProjection producer SHA-256\n4d7314b7051b3aedfb17fad0c678f40f10cf26b4e4fa411d845438244e0756fd\nTechnical checks\nFrozen source file matches its recorded SHA-256.\nSource object ID matches the projected record.\nSource department matches the Musical Instruments sample.\nProjected field matches the deterministic source mapping.",
+  "textSize200At320NoDocumentOverflow": true,
+  "omissions": [
+    "native browser zoom",
+    "screen reader",
+    "human research validation"
+  ]
+}

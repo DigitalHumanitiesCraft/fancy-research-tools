@@ -1,0 +1,43 @@
+{
+  "caseId": "nhc-milton-2024",
+  "title": "Milton forecast discussions, 5–6 October 2024",
+  "publisher": "NOAA National Weather Service, National Hurricane Center",
+  "retrievedOn": "2026-10-10",
+  "selection": "Discussions 2 and 6 for cyclone AL142024, selected for a bounded annotation exercise on observations, forecasts and explicit uncertainty. This is a purposive sample, not the full forecast sequence.",
+  "rights": {
+    "status": "Public domain under the NWS use policy, unless separately noted",
+    "url": "https://www.weather.gov/disclaimer",
+    "rawPath": "raw/nws-disclaimer.html",
+    "sha256": "82b668f73f46d622ebdd106e6570c4ae760e44214d39804a1929f5c0e4a00bbb",
+    "conditions": "Credit NWS content. Do not imply NOAA/NWS endorsement, claim source content as your own, or present altered content or annotations as official government information. No separate restriction was observed on the selected discussion text."
+  },
+  "extraction": "Literal UTF-8 content of the single pre element. Preserve every character, including the first and last newline. Both selected products contain ASCII text without nested markup or character entities. Display labels collapse runs of header spaces, while the complete text retains source spacing.",
+  "sources": [
+    {
+      "id": "nhc-al142024-discussion-002",
+      "title": "Tropical Storm Milton Discussion Number 2",
+      "issuedAt": "400 PM CDT Sat Oct 05 2024",
+      "forecaster": "Brown",
+      "url": "https://www.nhc.noaa.gov/archive/2024/al14/al142024.discus.002.shtml",
+      "rawPath": "raw/milton-discussion-002.html",
+      "rawSha256": "95792ba66a017e5b32dbee94edfc7425625304c2d3da981b93461b50b96bf006",
+      "textSha256": "20d9b9233c5fd77237663b98ac6e98cb51e3d5d711e597067e641236e61f8805"
+    },
+    {
+      "id": "nhc-al142024-discussion-006",
+      "title": "Hurricane Milton Discussion Number 6",
+      "issuedAt": "400 PM CDT Sun Oct 06 2024",
+      "forecaster": "Blake",
+      "url": "https://www.nhc.noaa.gov/archive/2024/al14/al142024.discus.006.shtml",
+      "rawPath": "raw/milton-discussion-006.html",
+      "rawSha256": "79b288b7a446b2342041c4f97ff6cfcdbd11cbf918d3577bebfbdf72bb199102",
+      "textSha256": "612b3538ef5f7c4633762e61acb2f85c759e0d56bce0e59ce02dcbc72715c0bb"
+    }
+  ],
+  "limits": [
+    "Historical issued forecasts are source assertions. This sample is not current weather advice.",
+    "The sample cannot establish forecast skill, actual later conditions, a full event chronology or general communication patterns.",
+    "The source byline is the published attribution, not independently authenticated authorship. Annotator and reviewer identities are separately declared.",
+    "Matching hashes and quotation offsets tests source agreement. It does not validate meteorology or a research interpretation."
+  ]
+}

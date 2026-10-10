@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Edit collection descriptions beside their original source values." />
+    <title>Edit collection records. Fancy Research Tools</title>
+  </head>
+  <body class="editor-body">
+    <a class="skip-link" href="#main">Skip to collection</a>
+    <header class="site-header">
+      <h1>Edit collection records</h1>
+      <nav aria-label="Project"><a href="../tools/">All tools</a><a href="../guides/getting-started.html">Documentation</a></nav>
+    </header>
+    <main id="main" class="container">
+      <div class="collection-bar">
+        <div class="collection-context">
+          <h2 id="collection-title">Collection</h2>
+        </div>
+        <div class="toolbar collection-actions">
+          <label class="file-label" for="import-file">Import JSON<input id="import-file" type="file" accept=".json,application/json" aria-label="Import collection (JSON, up to 1 MiB)" /></label>
+          <button id="export" class="button button-secondary" type="button" aria-describedby="export-scope">Export collection</button>
+        </div>
+      </div>
+      <p id="provenance" class="meta" hidden></p>
+      <p id="export-scope" class="meta" hidden></p>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <p id="error" class="error" role="alert" hidden></p>
+      <p id="storage-error" class="error" role="alert" hidden></p>
+      <div class="workspace">
+        <section class="list-pane" aria-labelledby="browse-heading">
+          <form id="search-form" role="search">
+            <label for="query" id="browse-heading">Search records</label>
+            <input id="query" name="q" type="search" />
+            <label id="kind-label" for="kind">Record type</label>
+            <select id="kind" name="kind"><option value="">All types</option></select>
+            <button class="button button-secondary" type="submit">Search</button>
+            <button id="clear-filters" class="button button-secondary" type="button" hidden>Clear filters</button>
+          </form>
+          <p id="results" role="status"></p>
+          <ul id="records" class="record-list" role="list" aria-label="Records" tabindex="0"></ul>
+        </section>
+        <section id="detail" class="detail-pane" aria-labelledby="detail-heading">
+          <h2 id="detail-heading" tabindex="-1">Record details</h2>
+          <p id="selection-context" class="status" role="status" hidden></p>
+          <div id="record-content"></div>
+        </section>
+        <aside id="source-evidence" class="source-pane" aria-labelledby="source-heading" hidden></aside>
+      </div>
+      <noscript><p>This workspace requires JavaScript. The documentation remains available from the header.</p></noscript>
+    </main>
+    <script type="module" src="../src/app/main.ts"></script>
+  </body>
+</html>

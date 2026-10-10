@@ -1,0 +1,37 @@
+[
+  {
+    "url": "http://127.0.0.1:4173/pilot/",
+    "sha256": "d8d11ed0fffe875003c1ba2f7e63b8cf6282b3d3d5c28b11a7467f4a52e6ef0d",
+    "bytes": 5219
+  },
+  {
+    "url": "http://127.0.0.1:4173/assets/index-DDsAN4Zs.js",
+    "sha256": "9b0443c5494a4734be69d79010df0b5f3c13cc85f5d04df3f2a2e70e7ea93bc8",
+    "bytes": 6789
+  },
+  {
+    "url": "http://127.0.0.1:4173/assets/index-Do7qhQJp.css",
+    "sha256": "06a9ed559fc922907317398aa8aedaaf1772d66c7d61104081229ae1d766263b",
+    "bytes": 6030
+  },
+  {
+    "url": "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js",
+    "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+    "bytes": 670
+  },
+  {
+    "url": "http://127.0.0.1:4173/assets/icons-B0Zowo1T.js",
+    "sha256": "2d638c9d21e06774cf5e2715d4507d2dc4dbc65ac9297f1ab9b4b39d1196d9b3",
+    "bytes": 1049
+  },
+  {
+    "url": "http://127.0.0.1:4173/assets/browser-IL32m_Fe.js",
+    "sha256": "1b6947a70c178edc209601fd918e2c78f688cafdc69d37b3e6dd9bd154fc07de",
+    "bytes": 4930
+  },
+  {
+    "url": "http://127.0.0.1:4173/assets/records-B0SmZL-k.js",
+    "sha256": "c7558b17efc1eb84cd369dd4deeeb2de362e1e0c560625da14fdc9a4548d54a1",
+    "bytes": 34114
+  }
+]

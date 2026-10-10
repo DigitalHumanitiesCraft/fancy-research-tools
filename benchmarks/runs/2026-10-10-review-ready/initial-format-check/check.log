@@ -1,0 +1,33 @@
+
+> fancy-research-tools@0.1.0 check
+> tsc --noEmit && biome check .
+
+Checked 60 files in 50ms. No fixes applied.
+Found 1 error.
+tests\e2e\annotation.spec.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    149 149 │     for (const choice of ["retain", "remove", "replace"] as const) {
+    150 150 │       page.once("dialog", (dialog) => dialog.accept());
+    151     │ - ····await·page
+    152     │ - ······.getByLabel("Open·notebook")
+    153     │ - ······.setInputFiles({
+    154     │ - ········name:·"reviewed.json",
+    155     │ - ········mimeType:·"application/json",
+    156     │ - ········buffer:·Buffer.from(JSON.stringify(reviewed)),
+    157     │ - ······});
+        151 │ + ····await·page.getByLabel("Open·notebook").setInputFiles({
+        152 │ + ······name:·"reviewed.json",
+        153 │ + ······mimeType:·"application/json",
+        154 │ + ······buffer:·Buffer.from(JSON.stringify(reviewed)),
+        155 │ + ····});
+    158 156 │       await expect(page.locator("#notebook-status")).toHaveText("Saved locally");
+    159 157 │       await page.getByRole("button", { name: "Edit", exact: true }).click();
+  
+
+check ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+

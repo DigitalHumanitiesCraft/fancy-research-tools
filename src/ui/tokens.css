@@ -1,0 +1,26 @@
+@layer tokens {
+  :root {
+    color-scheme: light;
+    --paper: #ffffff;
+    --ink: #18202b;
+    --accent: #245577;
+    --accent-bright: #245577;
+    --surface: #ffffff;
+    --muted: #4d5967;
+    --border: #7c8794;
+    --soft: #edf1f4;
+    --error: #8f2635;
+    --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-display: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --space: clamp(1rem, 0.8rem + 1vw, 2rem);
+    --radius: 0.3rem;
+  }
+  @supports (color: oklch(from white l c h)) {
+    :root {
+      --paper: oklch(from #ffffff l c h);
+      --ink: oklch(from #18202b l c h);
+      --accent: oklch(from #245577 l c h);
+      --accent-bright: oklch(from #245577 l c h);
+    }
+  }
+}

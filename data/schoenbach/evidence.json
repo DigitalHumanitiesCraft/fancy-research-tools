@@ -1,0 +1,57 @@
+[
+  {
+    "id": "schoenbach-001",
+    "key": "1",
+    "url": "https://schoenbach.acdh.oeaw.ac.at/schoenbach001.html",
+    "sender": "Saar, Ferdinand von",
+    "recipient": "Schönbach, Anton Emanuel",
+    "date": "1898-12-03",
+    "sentPlace": "Habrovany",
+    "receivedPlace": null,
+    "xml": "<correspDesc ref=\"https://schoenbach.acdh.oeaw.ac.at/schoenbach001.html\" source=\"#d010a412-a337-4bec-bc09-3a15537dc8ff\" key=\"1\">\n                <correspAction type=\"sent\">\n                    <persName ref=\"https://d-nb.info/gnd/118604449\">Saar, Ferdinand von</persName>\n                    <date when=\"1898-12-03\"/>\n                    <placeName ref=\"http://www.geonames.org/3076059\">Habrovany</placeName>\n                </correspAction>\n                <correspAction type=\"received\">\n                    <persName ref=\"https://d-nb.info/gnd/116859989\">Schönbach, Anton Emanuel</persName>\n                </correspAction>\n            </correspDesc>"
+  },
+  {
+    "id": "schoenbach-002",
+    "key": "2",
+    "url": "https://schoenbach.acdh.oeaw.ac.at/schoenbach002.html",
+    "sender": "Saar, Ferdinand von",
+    "recipient": "Schönbach, Anton Emanuel",
+    "date": "1888-10-30",
+    "sentPlace": "Blansko",
+    "receivedPlace": null,
+    "xml": "<correspDesc ref=\"https://schoenbach.acdh.oeaw.ac.at/schoenbach002.html\" source=\"#d010a412-a337-4bec-bc09-3a15537dc8ff\" key=\"2\">\n                <correspAction type=\"sent\">\n                    <persName ref=\"https://d-nb.info/gnd/118604449\">Saar, Ferdinand von</persName>\n                    <date when=\"1888-10-30\"/>\n                    <placeName ref=\"http://www.geonames.org/3079273\">Blansko</placeName>\n                </correspAction>\n                <correspAction type=\"received\">\n                    <persName ref=\"https://d-nb.info/gnd/116859989\">Schönbach, Anton Emanuel</persName>\n                </correspAction>\n            </correspDesc>"
+  },
+  {
+    "id": "schoenbach-003",
+    "key": "3",
+    "url": "https://schoenbach.acdh.oeaw.ac.at/schoenbach003.html",
+    "sender": "Saar, Ferdinand von",
+    "recipient": "Schönbach, Anton Emanuel",
+    "date": "1905-10-20",
+    "sentPlace": "Döbling",
+    "receivedPlace": null,
+    "xml": "<correspDesc ref=\"https://schoenbach.acdh.oeaw.ac.at/schoenbach003.html\" source=\"#d010a412-a337-4bec-bc09-3a15537dc8ff\" key=\"3\">\n                <correspAction type=\"sent\">\n                    <persName ref=\"https://d-nb.info/gnd/118604449\">Saar, Ferdinand von</persName>\n                    <date when=\"1905-10-20\"/>\n                    <placeName ref=\"http://www.geonames.org/2600996\">Döbling</placeName>\n                </correspAction>\n                <correspAction type=\"received\">\n                    <persName ref=\"https://d-nb.info/gnd/116859989\">Schönbach, Anton Emanuel</persName>\n                </correspAction>\n            </correspDesc>"
+  },
+  {
+    "id": "schoenbach-004",
+    "key": "4",
+    "url": "https://schoenbach.acdh.oeaw.ac.at/schoenbach004.html",
+    "sender": "Saar, Ferdinand von",
+    "recipient": "Schönbach, Anton Emanuel",
+    "date": "1888-01-03",
+    "sentPlace": "Blansko",
+    "receivedPlace": null,
+    "xml": "<correspDesc ref=\"https://schoenbach.acdh.oeaw.ac.at/schoenbach004.html\" source=\"#d010a412-a337-4bec-bc09-3a15537dc8ff\" key=\"4\">\n                <correspAction type=\"sent\">\n                    <persName ref=\"https://d-nb.info/gnd/118604449\">Saar, Ferdinand von</persName>\n                    <date when=\"1888-01-03\"/>\n                    <placeName ref=\"http://www.geonames.org/3079273\">Blansko</placeName>\n                </correspAction>\n                <correspAction type=\"received\">\n                    <persName ref=\"https://d-nb.info/gnd/116859989\">Schönbach, Anton Emanuel</persName>\n                </correspAction>\n            </correspDesc>"
+  },
+  {
+    "id": "schoenbach-005",
+    "key": "5",
+    "url": "https://schoenbach.acdh.oeaw.ac.at/schoenbach005.html",
+    "sender": "Ebner-Eschenbach, Marie von",
+    "recipient": "Schönbach, Anna",
+    "date": "1911-09-01",
+    "sentPlace": "Zdislavice",
+    "receivedPlace": "Graz",
+    "xml": "<correspDesc ref=\"https://schoenbach.acdh.oeaw.ac.at/schoenbach005.html\" source=\"#d010a412-a337-4bec-bc09-3a15537dc8ff\" key=\"5\">\n                <correspAction type=\"sent\">\n                    <persName ref=\"https://d-nb.info/gnd/118528661\">Ebner-Eschenbach, Marie von</persName>\n                    <date when=\"1911-09-01\"/>\n                    <placeName ref=\"http://www.geonames.org/3061643\">Zdislavice</placeName>\n                </correspAction>\n                <correspAction type=\"received\">\n                    <persName ref=\"https://d-nb.info/gnd/116859970\">Schönbach, Anna</persName>\n                    <placeName ref=\"http://www.geonames.org/2778067\">Graz</placeName>\n                </correspAction>\n            </correspDesc>"
+  }
+]

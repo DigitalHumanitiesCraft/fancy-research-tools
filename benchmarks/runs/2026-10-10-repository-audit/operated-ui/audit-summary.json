@@ -1,0 +1,65 @@
+{
+  "reviewType": "bounded agent-operated review; no human participant evidence",
+  "baseline": "http://127.0.0.1:4173 served build before fixes",
+  "postFix": "http://127.0.0.1:4174 Vite source server; hashes in changed-source-identity.json",
+  "findings": [
+    {
+      "id": "authored-text-normalization",
+      "consequence": "Accepted imports lost CR/LF from researchQuestion and editor title/source; textarea notes changed CRLF on immediate export or unrelated save.",
+      "status": "fixed with per-control retained backing text; own input event adopts native control value; schemas unchanged",
+      "evidence": [
+        "crlf-result.json",
+        "crlf-investigation-input.json",
+        "crlf-investigation-output.json",
+        "editor-crlf-result.json",
+        "editor-crlf-input.json",
+        "editor-crlf-output.json"
+      ]
+    },
+    {
+      "id": "home-introductory-lead",
+      "consequence": "Homepage introductory sentence below h1 conflicts with explicit design constraint.",
+      "status": "root owns bounded correction",
+      "evidence": [
+        "01-docs-home.png"
+      ]
+    }
+  ],
+  "regressionChecks": {
+    "newTests": 5,
+    "checkedRoutes": [
+      "pilot",
+      "concepts/atlas",
+      "concepts/bench",
+      "concepts/trail",
+      "tool"
+    ],
+    "result": "all passed against dev4174; query extension tested in 6-test run with 5 passes and one test-selector timeout, then corrected pilot locator passed isolated rerun",
+    "additional": "legacy draft view-only regression passed; targeted Biome9 files and tsc passed",
+    "initialTestHarnessIssues": [
+      "Source TS runtime import required JSON attributes; replaced with independent JSON fixture assembly.",
+      "Expected opened status corrected to actual Saved locally status.",
+      "Implicit select label locator corrected to role+accessible name."
+    ]
+  },
+  "workflow": {
+    "selectedIds": [
+      "500526",
+      "500531"
+    ],
+    "normalDownload": "normal-investigation.json",
+    "reloadRestored": true,
+    "rejectedImportPreserved": true,
+    "cancelledReplacementPreserved": true,
+    "acceptedReopenPreserved": true,
+    "sourceQualifier": "Lepuye (?)"
+  },
+  "operated": "See operated-checks.json, additional-operated-checks.json, docs-route-checks.json",
+  "limits": [
+    "Native browser zoom not operated.",
+    "Screen reader not operated.",
+    "No scientific validation or researcher usability acceptance.",
+    "Full final production suite delegated to root.",
+    "No full adverse-state matrix; storage conflict reviewed by separate agent."
+  ]
+}

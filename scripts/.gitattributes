@@ -1,0 +1,2 @@
+# The field-evidence registry embeds the importer's exact source digest.
+import-dh-data.mjs text eol=lf

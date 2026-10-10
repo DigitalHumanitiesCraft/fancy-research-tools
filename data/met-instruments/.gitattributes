@@ -1,0 +1,5 @@
+# Preserve hashed snapshot bytes across Windows and Unix checkouts.
+raw/** -text
+records.json -text
+records.sha256 -text
+field-evidence.json -text

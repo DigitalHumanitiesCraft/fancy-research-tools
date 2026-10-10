@@ -1,0 +1,415 @@
+{
+  "startedAt": "2026-10-10T18:04:33.900Z",
+  "method": "Headless Chromium native page zoom via chrome.tabs.setZoom, automatic mode, per-tab scope. No CSS zoom, font-size override, CDP page scale, or OS setting used.",
+  "references": [
+    "https://developer.chrome.com/docs/extensions/reference/api/tabs#method-setZoom",
+    "https://playwright.dev/docs/chrome-extensions"
+  ],
+  "screenReader": {
+    "status": "not run",
+    "installed": "Windows Narrator",
+    "reason": "Native desktop operation/audio observation unavailable. No speech or real screen-reader task is claimed."
+  },
+  "cases": [
+    {
+      "name": "home",
+      "route": "/",
+      "requestedZoom": 4,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "startImage": "home-4-start.png",
+      "task": "Opened Start a project, reapplied per-tab zoom after navigation, and inspected tutorial",
+      "final": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "finalImage": "home-4-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "pilot",
+      "route": "/pilot/",
+      "requestedZoom": 4,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "startImage": "pilot-4-start.png",
+      "dialogImage": "pilot-4-source.png",
+      "task": "Searched wood, selected two records, inspected Source by keyboard, closed with Escape/focus return, wrote observation and downloaded matching investigation",
+      "final": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "finalImage": "pilot-4-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "baseline",
+      "route": "/baseline/",
+      "requestedZoom": 4,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "startImage": "baseline-4-start.png",
+      "task": "Filtered missing culture and downloaded five matching records",
+      "final": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "finalImage": "baseline-4-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "editor",
+      "route": "/tool/?id=demo-001",
+      "requestedZoom": 4,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "startImage": "editor-4-start.png",
+      "task": "Edited and saved note, then downloaded collection with exact new note",
+      "final": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "finalImage": "editor-4-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "atlas",
+      "route": "/concepts/atlas/",
+      "requestedZoom": 4,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "startImage": "atlas-4-start.png",
+      "task": "Searched wood, selected two records, compared, wrote observation and downloaded matching investigation",
+      "final": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "finalImage": "atlas-4-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "bench",
+      "route": "/concepts/bench/",
+      "requestedZoom": 4,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "startImage": "bench-4-start.png",
+      "task": "Searched wood, selected two records, compared, wrote observation and downloaded matching investigation",
+      "final": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "finalImage": "bench-4-final.png",
+      "status": "passed"
+    },
+    {
+      "name": "trail",
+      "route": "/concepts/trail/",
+      "requestedZoom": 4,
+      "before": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1,
+        "visualScale": 1,
+        "scrollWidth": 1440,
+        "bodyWidth": 1440
+      },
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "after": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "startImage": "trail-4-start.png",
+      "task": "Searched wood, selected two records, compared, wrote observation and downloaded matching investigation",
+      "final": {
+        "width": 360,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 360,
+        "bodyWidth": 360
+      },
+      "finalImage": "trail-4-final.png",
+      "status": "passed"
+    }
+  ],
+  "resources": {
+    "http://127.0.0.1:4173/": {
+      "sha256": "733146635056a010d42c56bb2cf2334085f23ffc1f7d3143b4eaf999bfe227be",
+      "bytes": 3812
+    },
+    "http://127.0.0.1:4173/assets/styles-BL0qz-FA.css": {
+      "sha256": "605705128b8b1c20c6d9932502870e7de7f5307ef88877080989d212ec4ef495",
+      "bytes": 5948
+    },
+    "http://127.0.0.1:4173/assets/icons-B0Zowo1T.js": {
+      "sha256": "2d638c9d21e06774cf5e2715d4507d2dc4dbc65ac9297f1ab9b4b39d1196d9b3",
+      "bytes": 1049
+    },
+    "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js": {
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "bytes": 670
+    },
+    "http://127.0.0.1:4173/assets/docs-CRq-RwLb.js": {
+      "sha256": "1940804123db72b6c089ec70f9e633b52a3b5f7727fc3ff00aa3ce96349a8335",
+      "bytes": 245
+    },
+    "http://127.0.0.1:4173/guides/getting-started.html": {
+      "sha256": "b8a02a3bf97006a7d51c4ccf5943cd5c362ee6973a4c2107305e29a769753f51",
+      "bytes": 10401
+    },
+    "http://127.0.0.1:4173/pilot/": {
+      "sha256": "f592e1ebc3f3395ff5eca3753f3fdcd8b2a27d4854afa2ffb6b44024654cccb1",
+      "bytes": 5300
+    },
+    "http://127.0.0.1:4173/assets/index-DM6ByK_X.js": {
+      "sha256": "77900613e5d96931138f7d33ad04d04b2ea0185d063a4b9e950eacc5493553e6",
+      "bytes": 9701
+    },
+    "http://127.0.0.1:4173/assets/records-B0SmZL-k.js": {
+      "sha256": "c7558b17efc1eb84cd369dd4deeeb2de362e1e0c560625da14fdc9a4548d54a1",
+      "bytes": 34114
+    },
+    "http://127.0.0.1:4173/assets/text-value-DPc3ypM1.js": {
+      "sha256": "2c6bec3cfe798435c8a6ffab38c1b84296f68c25ae55c229e43513e70976af43",
+      "bytes": 143
+    },
+    "http://127.0.0.1:4173/assets/index-CLJlaqCi.css": {
+      "sha256": "bce1e5707e29985434e6ddfc593c0fc14da0e71f4f4a44836d5ad67ef1cfb4c4",
+      "bytes": 7119
+    },
+    "http://127.0.0.1:4173/assets/browser-ClDs7QqY.js": {
+      "sha256": "7a7686dc834f7056103ca0fe3965a37ab8f19e1e260fe0a33ad09c6f4750ca9b",
+      "bytes": 158094
+    },
+    "http://127.0.0.1:4173/baseline/": {
+      "sha256": "1caf41b0329ec10bfcba46504d7e5bc0eb984284e1489c43eeec6d07f68e85cc",
+      "bytes": 5282
+    },
+    "http://127.0.0.1:4173/assets/index-ARDZDro6.js": {
+      "sha256": "ac7f86bf6ed08f8b4a2ac8d7c8d14807a72b983aa6cf4089774a852f71dcce54",
+      "bytes": 8478
+    },
+    "http://127.0.0.1:4173/assets/index-D-hMVccb.css": {
+      "sha256": "0e5fce496b2b882c1937f898895faa08f2e878ecce8ba77c667a7e32d35f19e7",
+      "bytes": 4761
+    },
+    "http://127.0.0.1:4173/tool/?id=demo-001": {
+      "sha256": "d7008a8258cc071097a83e84aa9d718d91999729edab9ce2c324076aeb54e28a",
+      "bytes": 3263
+    },
+    "http://127.0.0.1:4173/assets/index-BlGguEcW.js": {
+      "sha256": "613903c1b5dd4b61fc7c6b5a642161cb3bf6dfdb856ad766901663b4bb1ce74d",
+      "bytes": 12808
+    },
+    "http://127.0.0.1:4173/assets/index-DrkhK5tV.css": {
+      "sha256": "7e7cc7ce2e5d717371385c5bec600810959e54c83aa502e1fe4f8ae5e75b0a75",
+      "bytes": 4744
+    },
+    "http://127.0.0.1:4173/concepts/atlas/": {
+      "sha256": "85f07cd61e7d426c540ae1f1f93840a6bd636ecff2c11b05fc9524893ca9fb03",
+      "bytes": 1358
+    },
+    "http://127.0.0.1:4173/assets/index-CRIaihHT.js": {
+      "sha256": "38aa368331b971e46e5860f27cba6f9bce5f54bb7511a07d940d2d2dc6d7dfc0",
+      "bytes": 9495
+    },
+    "http://127.0.0.1:4173/assets/index-DtOJ4ktX.css": {
+      "sha256": "95935a20e31643d07afd91375f38122b3b28a62acca5fe66fcb9ed53d6e226b9",
+      "bytes": 6819
+    },
+    "http://127.0.0.1:4173/concepts/bench/": {
+      "sha256": "ca78ff66349b4965bfe0a413934315bad530105a0c78170b5386e509a5463be8",
+      "bytes": 3386
+    },
+    "http://127.0.0.1:4173/assets/index-Bf7RW5R1.js": {
+      "sha256": "d7e328e62c5e00c1fb21e041847eb204c05a9551d3f8cef88ec7c6fe90d53ade",
+      "bytes": 4867
+    },
+    "http://127.0.0.1:4173/assets/index-n6US5HEp.css": {
+      "sha256": "c41ce15d9c114e59221176b237c288d332db82304643fe63b892f35ae73b6710",
+      "bytes": 5509
+    },
+    "http://127.0.0.1:4173/concepts/trail/": {
+      "sha256": "35ad05c4ce9af86e9d2cb8e58cda9f6196af28665822e34b9c8497e824c9c924",
+      "bytes": 4395
+    },
+    "http://127.0.0.1:4173/assets/index-BwB-Vd_i.js": {
+      "sha256": "d3f1291663f82390a1d387dfd3c8b319c0ea8634a60b78e9b139772251d8dcf1",
+      "bytes": 5207
+    },
+    "http://127.0.0.1:4173/assets/index-D_pRJlVt.css": {
+      "sha256": "44279881c9e5e0c568aaa2e327efd3335a783edb8b3b0ddc0952d6c667534c97",
+      "bytes": 5270
+    }
+  },
+  "browser": "156.0.8078.4",
+  "finishedAt": "2026-10-10T18:04:40.836Z"
+}

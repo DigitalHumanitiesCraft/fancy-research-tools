@@ -1,0 +1,97 @@
+
+ZCZC MIATCDAT4 ALL
+TTAA00 KNHC DDHHMM
+ 
+Hurricane Milton Discussion Number   6
+NWS National Hurricane Center Miami FL       AL142024
+400 PM CDT Sun Oct 06 2024
+ 
+Milton is rapidly intensifying.  Satellite images indicate very
+deep convection in the eyewall and hints of an eye starting to
+appear.  The last fix from the aircraft showed that the
+central pressure was down to 985 mb, about 3 mb less than 80
+minutes prior, and winds supporting 70 kt at the surface.  Since
+that time, satellite images continue to show further organization,
+and the initial wind speed is set to 75 kt.
+ 
+Milton is moving just south of due east at about 6 kt.  This
+equatorward motion has been more than expected probably due to a
+stronger low/ mid-level frontal low over the northeastern Gulf of 
+Mexico. The frontal feature is forecast to weaken while it moves 
+across Florida and gradually lose its influence on Milton.  This 
+evolution should allow the hurricane to turn eastward on Monday and 
+then accelerate to the northeast on Tuesday and Wednesday toward the 
+Florida Peninsula ahead of a trough moving offshore of Texas.  The 
+NHC forecast is a bit south of the previous one through 48 hours, 
+following the trend of the guidance at that time, and the government 
+of Mexico has issued a Hurricane Watch for a portion of the northern 
+coast of Yucatan.  Later on, the guidance is similar to, or slightly 
+north of the last cycle, and very little change is made to the 
+forecast near Florida. It should be noted that the average NHC track 
+error at day 3 is around 100 miles, and users should not focus on 
+the exact track.
+ 
+The intensity forecast appears straightforward at first, with rapid 
+intensification likely while the small hurricane remains within 
+light shear and over very deep warm waters.  Intensity guidance is 
+about as bullish as I've seen in this part of the basin, with 
+almost everything showing a peak intensity of category 4 or 5 in 
+the southern Gulf of Mexico in a day or two.  The NHC forecast is 
+raised from the previous one and lies near the intensity consensus 
+model and still could be too low.  Later on, vertical wind shear is
+forecast to markedly increase as Milton approaches Florida, and 
+some weakening is anticipated.  However, the regional hurricane 
+models are showing the system growing even if it weakens, and we are 
+expecting Milton to be a large hurricane at landfall, with very 
+dangerous impacts spread out over a big area. There is increasing 
+confidence that a powerful hurricane with life- threatening hazards 
+will be affecting portions of the Florida west coast around the 
+middle of this week. Residents there should closely monitor this 
+system and listen to local officials.
+ 
+ 
+Key Messages:
+ 
+1. Milton is forecast to be a major hurricane when it reaches the 
+west coast of the Florida Peninsula midweek. Users are reminded to 
+not focus on the details of the forecast as there remains 
+significant uncertainty in the eventual track and intensity of 
+Milton. 
+
+2. While it is too soon to specify the exact magnitude and location 
+of the greatest impacts, there is an increasing risk of life- 
+threatening storm surge and damaging winds for portions of the west 
+coast of the Florida Peninsula beginning early Wednesday and Storm 
+Surge and Hurricane Watches will likely be issued tonight or early 
+Monday.  Residents in the Florida Peninsula should follow any advice 
+given by local officials and monitor updates to the forecast. 
+
+3. Areas of heavy rainfall will impact portions of Florida through 
+Monday well ahead of Milton, with heavy rainfall more directly 
+related to Milton expected on Tuesday through Wednesday night. This 
+rainfall will bring the risk of considerable flash, urban, and areal 
+flooding, along with the potential for moderate to major river 
+flooding.
+
+4. Tropical storm conditions are expected with hurricane conditions 
+possible beginning Monday across portions of the northern Yucatan 
+Peninsula of Mexico where a Tropical Storm Warning and Hurricane 
+Watch are in effect. 
+ 
+ 
+FORECAST POSITIONS AND MAX WINDS
+ 
+INIT  06/2100Z 22.4N  93.8W   75 KT  85 MPH
+ 12H  07/0600Z 22.2N  92.6W   90 KT 105 MPH
+ 24H  07/1800Z 22.2N  90.9W  110 KT 125 MPH
+ 36H  08/0600Z 22.6N  89.0W  120 KT 140 MPH
+ 48H  08/1800Z 23.6N  86.9W  125 KT 145 MPH
+ 60H  09/0600Z 25.2N  85.1W  120 KT 140 MPH
+ 72H  09/1800Z 27.0N  83.1W  105 KT 120 MPH
+ 96H  10/1800Z 29.8N  77.5W   65 KT  75 MPH...POST-TROP/EXTRATROP
+120H  11/1800Z 31.4N  68.8W   55 KT  65 MPH...POST-TROP/EXTRATROP
+ 
+$$
+Forecaster Blake
+ 
+NNNN

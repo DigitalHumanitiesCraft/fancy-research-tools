@@ -1,0 +1,13 @@
+{
+  "matches": "2026-10-10-repository-audit-source.json",
+  "matchedFiles": 163,
+  "documentationSynchronizedAfterInitialBuild": [
+    "CHANGELOG.md",
+    "README.md",
+    "benchmarks/README.md",
+    "knowledge/architecture.md",
+    "knowledge/journal.md",
+    "knowledge/plan.md",
+    "knowledge/testing.md"
+  ]
+}

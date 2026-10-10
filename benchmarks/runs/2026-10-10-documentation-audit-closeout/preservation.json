@@ -1,0 +1,329 @@
+{
+  "checkedAt": "2026-10-10T19:12:24.154Z",
+  "reviewer": "Separate contributing agent with inherited project context; this is not a blinded assessment.",
+  "scope": "Read-only comparison against the preceding project-tools source manifest and eight retained evidence manifests. No application tests or build were rerun by this reviewer.",
+  "baseline": {
+    "manifest": "benchmarks/runs/2026-10-10-project-tools-source.json",
+    "manifestSha256": "762be1b6a585bb3e88d9d8d021b559fbcb00dbe80c86e90e4d8f5d2d7a6b8311",
+    "capturedAt": "2026-10-10T18:54:06.746Z",
+    "files": 217
+  },
+  "source": {
+    "unchanged": 201,
+    "changed": 16,
+    "changedPaths": [
+      "CHANGELOG.md",
+      "README.md",
+      "benchmarks/README.md",
+      "benchmarks/development-study-protocol.md",
+      "data/hsa-letter/README.md",
+      "docs/customizing.md",
+      "docs/research.md",
+      "knowledge/INDEX.md",
+      "knowledge/architecture.md",
+      "knowledge/data.md",
+      "knowledge/design.md",
+      "knowledge/journal.md",
+      "knowledge/plan.md",
+      "knowledge/project.md",
+      "knowledge/specification.md",
+      "knowledge/testing.md"
+    ],
+    "changes": [
+      {
+        "path": "CHANGELOG.md",
+        "status": "changed",
+        "before": {
+          "bytes": 3038,
+          "sha256": "b6e38920c75f5a7f117e10b9d3561f1c7ce91b14bb2e1ed377f3a249d2e5996d"
+        },
+        "after": {
+          "bytes": 3639,
+          "sha256": "0e5f649bda4089c10390601a29dad512a6ca5457dfa5038eb3a09c6a26daafc2"
+        }
+      },
+      {
+        "path": "README.md",
+        "status": "changed",
+        "before": {
+          "bytes": 5624,
+          "sha256": "0d6cba5562f7b619874879e1847f834180b53f9cbc028dc1932ad8531693ed2e"
+        },
+        "after": {
+          "bytes": 5765,
+          "sha256": "38ebd481caa59c23277f24e3b9171d699d32e350234b5e75a53b386a7ad9c39e"
+        }
+      },
+      {
+        "path": "benchmarks/README.md",
+        "status": "changed",
+        "before": {
+          "bytes": 7704,
+          "sha256": "93510babcd1f9a6f79162b925cb9d37b97911635f010362a538a549f41834868"
+        },
+        "after": {
+          "bytes": 7982,
+          "sha256": "b89496a2053a20c7e72157c2bccc03f5cfd552aa8889e443bdd3329361640d2a"
+        }
+      },
+      {
+        "path": "benchmarks/development-study-protocol.md",
+        "status": "changed",
+        "before": {
+          "bytes": 13320,
+          "sha256": "69868b65b99c58f93826da58ad4a300a319a5898bc1c0a6f4a5611cf02afe3dd"
+        },
+        "after": {
+          "bytes": 13364,
+          "sha256": "1c0d6c03375ad905be030057cde74a05679d08c68ee7e0e799bcf633a93d2a86"
+        }
+      },
+      {
+        "path": "data/hsa-letter/README.md",
+        "status": "changed",
+        "before": {
+          "bytes": 1833,
+          "sha256": "356b0edd4dc3dd6fab516cc07aba0c9b4eb6c4dd2f6a8eaffcd220375c2ae52b"
+        },
+        "after": {
+          "bytes": 2056,
+          "sha256": "93c835efd1d2c3ffb7ee3d39c53c594f4841febee8e9a20a2b8f6398b767f95f"
+        }
+      },
+      {
+        "path": "docs/customizing.md",
+        "status": "changed",
+        "before": {
+          "bytes": 17211,
+          "sha256": "fc037766eb8ec1167ac55c77691eed12468ffc45d91cbf4564034dff10bab43b"
+        },
+        "after": {
+          "bytes": 17160,
+          "sha256": "33a9c19bfd7c2cd84b45b504c80cee6ac0a1ae00ec3c293fb8d70d87c5f3fdee"
+        }
+      },
+      {
+        "path": "docs/research.md",
+        "status": "changed",
+        "before": {
+          "bytes": 15747,
+          "sha256": "efa2c5493ced9f65905e2c6b34c6a39ad3bf3013ce80c94d00eb5ecd3c625cb5"
+        },
+        "after": {
+          "bytes": 16046,
+          "sha256": "803145637afef1b364905191db1f00583676afa6a80ec49348e8a0d6de123a36"
+        }
+      },
+      {
+        "path": "knowledge/INDEX.md",
+        "status": "changed",
+        "before": {
+          "bytes": 4320,
+          "sha256": "0fcf5b714a5168e1b9a7c692092292c541d99b62ae8309ea2b5a780ba4c7f481"
+        },
+        "after": {
+          "bytes": 4488,
+          "sha256": "def905588d4e970d6c7933339c59b3df3778b640c7dcadaf29f85b44748581c1"
+        }
+      },
+      {
+        "path": "knowledge/architecture.md",
+        "status": "changed",
+        "before": {
+          "bytes": 14182,
+          "sha256": "b59cb1552697c63fe0baf0cd1aa4da687c4bb6f341653ae201156cf719259344"
+        },
+        "after": {
+          "bytes": 14344,
+          "sha256": "03169dc7aaf0723a115ac4fed3b55ee55015c471f2e6606d2748fd64c9504736"
+        }
+      },
+      {
+        "path": "knowledge/data.md",
+        "status": "changed",
+        "before": {
+          "bytes": 15906,
+          "sha256": "7cee8d3bef02c318601ffa87bfc97089e9c5a994eb623c2528d5a426ab8863d2"
+        },
+        "after": {
+          "bytes": 16474,
+          "sha256": "ac802c4dcbfbef601cb94cc773e17ed982045a001d856001da7b8033ddebfc08"
+        }
+      },
+      {
+        "path": "knowledge/design.md",
+        "status": "changed",
+        "before": {
+          "bytes": 21183,
+          "sha256": "84960255e91d99d800e4392fd93936554733b8ba7df5376ef49c6f1ff15cd78b"
+        },
+        "after": {
+          "bytes": 21212,
+          "sha256": "7a38b68c4f7694e6a437ce95a72ed4143c045474ac7bd3939f34d4d1c8a3e32d"
+        }
+      },
+      {
+        "path": "knowledge/journal.md",
+        "status": "changed",
+        "before": {
+          "bytes": 18706,
+          "sha256": "915586569e1046147e0265c79f8350ecd624a03486513c95c46a8b9cfbf27c73"
+        },
+        "after": {
+          "bytes": 19796,
+          "sha256": "c02c7a2e527ad7a6da107ec40408bdc9b79661ca3197e7fc055c35ba96962d61"
+        }
+      },
+      {
+        "path": "knowledge/plan.md",
+        "status": "changed",
+        "before": {
+          "bytes": 30655,
+          "sha256": "7c406ea751d572b60d1d9cb296097a0b68ed805968a5960775a2c42afff3b938"
+        },
+        "after": {
+          "bytes": 32181,
+          "sha256": "97d11a7de0233fcabfbc67271e92275ee7d94b1695654cf626b82eded58e41b3"
+        }
+      },
+      {
+        "path": "knowledge/project.md",
+        "status": "changed",
+        "before": {
+          "bytes": 7453,
+          "sha256": "9f28d24a816505f13303630025ab2e29ca07686d9752819d1858bfbb8ee53844"
+        },
+        "after": {
+          "bytes": 7666,
+          "sha256": "1fad219b68bf8a10a1fab535bf4181d5f7bc5079ef5efbad605b939fa781ac60"
+        }
+      },
+      {
+        "path": "knowledge/specification.md",
+        "status": "changed",
+        "before": {
+          "bytes": 23860,
+          "sha256": "a33cc4683f5ec8beb9bb92eac2265090d0b978367e42ad5278cad0455af65666"
+        },
+        "after": {
+          "bytes": 24008,
+          "sha256": "64e6e7da3c9401618b52fbdcca964ac5d7fef6655d5dbb11fa4b3fb040fff709"
+        }
+      },
+      {
+        "path": "knowledge/testing.md",
+        "status": "changed",
+        "before": {
+          "bytes": 30479,
+          "sha256": "3be6f9a6a16b4ed9971b8eec14df13fb4f7df6a3f2f2636a5aa853586afda129"
+        },
+        "after": {
+          "bytes": 33233,
+          "sha256": "8d17e645479008970949d00411962fcb1af2bf21f1db1b5479198264a193a95f"
+        }
+      }
+    ],
+    "missing": [],
+    "additions": []
+  },
+  "nonMarkdown": {
+    "files": 186,
+    "unchanged": 186,
+    "failures": []
+  },
+  "sourceDataAndFixtures": {
+    "files": 89,
+    "unchanged": 89,
+    "failures": [],
+    "allowedDocumentationChange": "data/hsa-letter/README.md",
+    "upstreamNotice": {
+      "path": "data/hsa-letter/raw/upstream-notice.md",
+      "status": "unchanged",
+      "before": {
+        "bytes": 1044,
+        "sha256": "43ab0bf97125abef72193c09329d65d6503d28d7fc7b33c3597d8df004ce760a"
+      },
+      "after": {
+        "bytes": 1044,
+        "sha256": "43ab0bf97125abef72193c09329d65d6503d28d7fc7b33c3597d8df004ce760a"
+      }
+    }
+  },
+  "historicalEvidence": {
+    "manifests": 8,
+    "entries": 727,
+    "unchanged": 727,
+    "results": [
+      {
+        "manifest": "benchmarks/runs/2026-10-10-clear-scope-review/evidence-manifest.json",
+        "manifestSha256": "84d6081ba0d19d4a3a93416b12a8166bafbdaad70c95fc290eb255efc7f204f6",
+        "files": 17,
+        "unchanged": 17,
+        "failures": []
+      },
+      {
+        "manifest": "benchmarks/runs/2026-10-10-closeout-docs/evidence-manifest.json",
+        "manifestSha256": "c5b9b1a09b37a48c70fb2876520a0c281d1e68d1503158cbe14dd56ffb6ffd6d",
+        "files": 3,
+        "unchanged": 3,
+        "failures": []
+      },
+      {
+        "manifest": "benchmarks/runs/2026-10-10-documentation-reconciliation/evidence-manifest.json",
+        "manifestSha256": "babab6bd3f60086adb64eb152a3a5d8545e958a6535d1d1f934119d1a9f8ccc9",
+        "files": 3,
+        "unchanged": 3,
+        "failures": []
+      },
+      {
+        "manifest": "benchmarks/runs/2026-10-10-project-decisions/evidence-manifest.json",
+        "manifestSha256": "9c71db037f87f41c33887fc7933d27c4957f1600a8097f84090c18392cc72f94",
+        "files": 62,
+        "unchanged": 62,
+        "failures": []
+      },
+      {
+        "manifest": "benchmarks/runs/2026-10-10-project-tools/evidence-manifest.json",
+        "manifestSha256": "d0a4de73c9137eccf2fc640d4efa606335005e29ada48aa3e285a819e0067d49",
+        "files": 144,
+        "unchanged": 144,
+        "failures": []
+      },
+      {
+        "manifest": "benchmarks/runs/2026-10-10-repository-audit/evidence-manifest.json",
+        "manifestSha256": "6ab0314fa3273767a1bd626a41f0f44a9473b83d4db5d612a2ee7d6f39b63ac3",
+        "files": 97,
+        "unchanged": 97,
+        "failures": []
+      },
+      {
+        "manifest": "benchmarks/runs/2026-10-10-review-ready/evidence-manifest.json",
+        "manifestSha256": "fa9eefb138190676a847d9e24ed862969247d46745b6fd6fdb44a4e71156785e",
+        "files": 381,
+        "unchanged": 381,
+        "failures": []
+      },
+      {
+        "manifest": "benchmarks/runs/2026-10-10-session-closeout/evidence-manifest.json",
+        "manifestSha256": "d63f77c38ed939b614ac6467439d5e259813224d83dc6a5f86bd5dc7b4022ffb",
+        "files": 20,
+        "unchanged": 20,
+        "failures": []
+      }
+    ]
+  },
+  "assertions": {
+    "allChangesAreMarkdown": true,
+    "allNonMarkdownUnchanged": true,
+    "protectedDataAndFixturesUnchanged": true,
+    "noSourceFilesMissing": true,
+    "noSourceFilesAdded": true,
+    "allHistoricalEvidenceMatches": true
+  },
+  "limitations": [
+    "Comparison covers the preceding manifest entries and the same capture inclusion rules. Generated HTML/dist, dependencies, Git internals and runner-owned temporary output are outside source capture.",
+    "Historical integrity covers only files listed in the eight evidence manifests. Unlisted historical assessments and previously overwritten concept artifacts are not retrospectively verified.",
+    "Hash equality establishes byte preservation, not historical accuracy, usability, researcher acceptance or publication status.",
+    "This public report contains no Vault content or private project material."
+  ]
+}

@@ -1,0 +1,13 @@
+
+Running 4 tests using 1 worker
+
+(node:28640) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28640) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 tests\e2e\docs.spec.ts:4:1 › published documentation routes, headings and local links resolve (2.9s)
+  ok 2 tests\e2e\docs.spec.ts:67:1 › relative assets and navigation work below a repository subpath (638ms)
+  ok 3 tests\e2e\docs.spec.ts:91:1 › gallery previews, tool entry and return work at narrow width (2.0s)
+  ok 4 tests\e2e\docs.spec.ts:119:1 › narrow reference tables retain readable columns and keyboard scrolling (202ms)
+
+  4 passed (7.3s)

@@ -1,0 +1,6 @@
+{"label":"production-check","cwd":"C:/Users/chris/Documents/GitHub/fancy-research-tools","command":["C:\\Program Files\\nodejs\\node.exe","C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js","run","check"],"started":"2026-10-10T17:49:52.214Z","ended":"2026-10-10T17:49:53.099Z","exitCode":0}
+
+> fancy-research-tools@0.1.0 check
+> tsc --noEmit && biome check .
+
+Checked 49 files in 33ms. No fixes applied.

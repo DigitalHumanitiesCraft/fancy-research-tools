@@ -1,0 +1,11 @@
+import { chromium } from 'file:///C:/Users/chris/Documents/GitHub/fancy-research-tools/node_modules/@playwright/test/index.mjs';
+import {writeFile} from 'node:fs/promises';
+const browser=await chromium.launch();const page=await browser.newPage({viewport:{width:1440,height:960}});
+await page.goto('https://chpollin.github.io/klawiter-rescue/',{waitUntil:'networkidle'});
+console.log(await page.getByRole('link',{name:'Browse Catalogue',exact:true}).getAttribute('href'));
+await page.getByRole('link',{name:'Browse Catalogue',exact:true}).click();
+await page.waitForTimeout(500);
+console.log(page.url());
+await page.screenshot({path:'C:/Users/chris/Documents/GitHub/fancy-research-tools/public/previews/bibliography.png'});
+await writeFile('C:/Users/chris/Documents/Codex/2026-10-10/ana/work/portfolio-previews/bibliography-explore.txt',await page.locator('body').innerText());
+await browser.close();

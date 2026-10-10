@@ -1,0 +1,56 @@
+{
+  "kind": "Independent engineering reproduction with inherited project context",
+  "participant": "Coding agent, not a representative researcher or a blinded comparison",
+  "instructions": [
+    "AGENTS.md",
+    "docs/getting-started.md",
+    "knowledge/INDEX.md",
+    "knowledge/handoff.md",
+    "knowledge/data.md",
+    "knowledge/specification.md",
+    "playwright.config.ts",
+    "tests/e2e/annotation.spec.ts",
+    "tests/e2e/workbench.spec.ts"
+  ],
+  "sourceScope": "The repository capture-source mechanism's enumerated source, data, public assets, tests and documentation. Historical runs, dependencies, generated HTML, dist and Git internals are excluded.",
+  "initialAttempt": {
+    "capturedSource": "source-manifest.json",
+    "installation": "Passed",
+    "check": "Failed on formatting in src/docs.ts and tests/e2e/docs.spec.ts. Shared CSS specificity warnings also recorded.",
+    "dataCheck": "Passed for both source cases",
+    "unitTests": "Passed",
+    "build": "Failed because docs/customizing.md linked a dataset README outside the publication allowlist.",
+    "intervention": "Reported the concrete failures to the root implementer. Kept this copy unchanged. Waited for a corrected candidate."
+  },
+  "successfulCandidate": {
+    "capturedSource": "candidate-2/source-manifest.json",
+    "installation": "Passed with npm ci in a separate directory",
+    "check": "Passed",
+    "dataCheck": "Passed for both source cases",
+    "unitTests": "Passed",
+    "build": "Passed",
+    "workflowEvidence": "workflow-evidence/",
+    "workflowResults": "workflow-results.json",
+    "originalInputIdentity": "input-manifest.json"
+  },
+  "operationalIntervention": "An attempted PowerShell npm run preview argument forwarding command dropped its port flags. The direct Node/Vite preview command already specified by playwright.config.ts worked with port 4191 substituted to keep this copy isolated. The application itself needed no intervention.",
+  "limits": [
+    "This checks reproducibility and preservation within an agent-operated case.",
+    "Browser binaries were already present in the local Playwright cache.",
+    "No human research acceptance, screen-reader outcome or comparative development-method effect is inferred."
+  ],
+  "finalRefresh": {
+    "synchronizedChanges": [
+      "knowledge/plan.md",
+      "knowledge/testing.md",
+      "src/gallery.css"
+    ],
+    "sourceManifest": "candidate-2/final-refresh/source-manifest.json",
+    "delta": "candidate-2/final-refresh/delta.json",
+    "build": "Passed",
+    "documentationAndGalleryBrowserCases": "All 4 cases passed against isolated preview port 4191",
+    "buildComparison": "All 54 files have exactly the same bytes as the final root build",
+    "applicationAndTestSourceChanged": false,
+    "operationalCorrection": "Initial browser command kept literal quote characters around a config path. Direct Node arguments worked; the failed invocation log is retained."
+  }
+}

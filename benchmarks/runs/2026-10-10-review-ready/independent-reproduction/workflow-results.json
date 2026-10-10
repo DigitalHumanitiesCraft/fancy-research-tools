@@ -1,0 +1,29 @@
+{
+  "origin": "http://127.0.0.1:4191",
+  "browser": "156.0.8078.4",
+  "results": [
+    {
+      "workflow": "annotation source selection, declared agent provenance, review reset, reload, real download and fresh-context reopening",
+      "passed": true,
+      "sourceId": "nhc-al142024-discussion-002",
+      "start": 672,
+      "end": 781,
+      "reviewAfterEdit": null
+    },
+    {
+      "workflow": "real Met version 1 import and version2 export",
+      "passed": true,
+      "originalSha256": "6cd2dcc641efea2dd65835a0867ba79242ad44e470f2eead57e9f2516bdfaefa",
+      "persistedOriginalBytesUnchanged": true,
+      "sourceAndAuthorFieldsUnchanged": true
+    },
+    {
+      "workflow": "real Met version 2 import and version2 export",
+      "passed": true,
+      "originalSha256": "2727fc982bb3315c977269dc905f76382cf8137b4b079a2aa18f684f6b675b48",
+      "persistedOriginalBytesUnchanged": true,
+      "sourceAndAuthorFieldsUnchanged": true
+    }
+  ],
+  "errors": []
+}

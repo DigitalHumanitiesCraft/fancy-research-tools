@@ -1,0 +1,938 @@
+[
+  {
+    "path": "vitest.config.ts",
+    "sha256": "7675CAE1A1C373510D29F55B887F631D70D47210AE710CA44902A0C6CC300248"
+  },
+  {
+    "path": "vite.config.ts",
+    "sha256": "9C25A4FFD9B7ED5B36BBC322369D3543DBD3633772FB6F9CC9BD8F72159CDC7B"
+  },
+  {
+    "path": "tsconfig.json",
+    "sha256": "68D66C6E0485D455137FF142370B8429DC748E889F541035EB11B8E56E64931A"
+  },
+  {
+    "path": "tool\\index.html",
+    "sha256": "39451EA228716AAB508C8FB6A7FCC5D1BB6052BAD4E94B301CD9D79811BACA93"
+  },
+  {
+    "path": "tests\\storage.test.ts",
+    "sha256": "D940338A9AD1CC0E4C1DF5EB5809C83A5A7A3171D12177CAB482AF744AC02E98"
+  },
+  {
+    "path": "tests\\pilot.test.ts",
+    "sha256": "8776C28C4046CFD0B6E8C0415196084DA52ED9E355BE2A009F6AB75A42FF7487"
+  },
+  {
+    "path": "tests\\investigation.test.ts",
+    "sha256": "CD02049363BF46A9BF0D18A07D0107B1DB9979EB35A8DBE82937A6938F15DB47"
+  },
+  {
+    "path": "tests\\investigation-browser.test.ts",
+    "sha256": "64FC50D809EB020FB73341FBB2BAE1C4E8A048AD6A2C28FDA8A837C4F5D49F55"
+  },
+  {
+    "path": "docs\\research.md",
+    "sha256": "BBEF9B5F65B6C404A92AE6907C225044230BA01A89BE7F9876B1B6DFB4199FBB"
+  },
+  {
+    "path": "docs\\index.md",
+    "sha256": "40F0C6956FBDE59CE483EEF3829C14D47F6962FCA503482E79F802F49B6107DC"
+  },
+  {
+    "path": "docs\\getting-started.md",
+    "sha256": "87F4D1A5578323EF759CCC2C1090BA287DB0F5671955F9102BEEEE569CF8E65B"
+  },
+  {
+    "path": "docs\\customizing.md",
+    "sha256": "4461B8E69F859D3DB5265F3D0958F7A5EE7DE2DCAD2022B97AB9BF119EABE2B9"
+  },
+  {
+    "path": "tests\\e2e\\workspace.spec.ts",
+    "sha256": "D2ECDB071F8E43925AC3EA1097A27E4D6A51D692011566BF05566D8D40F1BAFB"
+  },
+  {
+    "path": "tests\\e2e\\workbench.spec.ts",
+    "sha256": "19709BD454EE6FE8F904E0256F92D01578CCFA9BF50FAD8C5B0F64E7C2882CC0"
+  },
+  {
+    "path": "tests\\e2e\\pilot.spec.ts",
+    "sha256": "83BC734A2C048794B3B0EF3849C52BF72D70FB29D2A1B91884D5C67137F07563"
+  },
+  {
+    "path": "tests\\e2e\\docs.spec.ts",
+    "sha256": "9091A2F512F18C491CB5747D9E96990FFE12312C155A845B7440353E54A611D2"
+  },
+  {
+    "path": "tests\\e2e\\concepts.spec.ts",
+    "sha256": "062366B406AED66B82C03AD61965956B1E3B01CCCE9BFDB7F8238E88B54715E4"
+  },
+  {
+    "path": "tests\\domain.test.ts",
+    "sha256": "40E325C9FEA257217B02CAFAD53A5A55D013188AE7955F26602784D6230777B9"
+  },
+  {
+    "path": "data\\met-instruments\\records.sha256",
+    "sha256": "4F1CFE98CD1C54CADD88A7CE9F57AB0D073378CE78FB91A15EB10333BC13C07D"
+  },
+  {
+    "path": "data\\met-instruments\\records.json",
+    "sha256": "FD45BE72D636115EBE04D8D3E196915A667101FB2380674961917A6A60D0274C"
+  },
+  {
+    "path": "data\\met-instruments\\README.md",
+    "sha256": "0E78602E80101AE846609909350FF7FFF1ED8F9922CBE8A6598CB647736A2939"
+  },
+  {
+    "path": "src\\workbench\\styles.css",
+    "sha256": "1C778DF95012597C2911991CEEDBCBFF406E9D592406E407852A6E976D197142"
+  },
+  {
+    "path": "src\\workbench\\main.ts",
+    "sha256": "EF72981EC92744BBFFC5AF1C0B12683C055B299F15DE67F27CB2132625ED245B"
+  },
+  {
+    "path": "src\\ui\\tokens.css",
+    "sha256": "0E3B2F7C185E1338FD2E4732963395E7AC06CD56099392AA011184ED054514F5"
+  },
+  {
+    "path": "src\\ui\\styles.css",
+    "sha256": "54FF35E657541DA82E6CEC7389EAD4C04E4346AF54B98616EEF8CE8790FB77C7"
+  },
+  {
+    "path": "src\\ui\\icons.ts",
+    "sha256": "6663F2A9B76ADB3AD7AFF068A40972C23D00956506DB1A608F986E306753B731"
+  },
+  {
+    "path": "src\\ui\\foundation.css",
+    "sha256": "20A428A93732F8BE22387D8F9633D4529F20D8A59CB732A367CF2304874CDDDA"
+  },
+  {
+    "path": "src\\research\\recovery.css",
+    "sha256": "19535D6597A082187F913EE30EDD8280C941998B7E5F06B9EF25EDBEE38BCDBA"
+  },
+  {
+    "path": "src\\research\\investigation.ts",
+    "sha256": "00FB2347E3AB9511E3637918F64AABE78C5B1F440D165839A1E392DB3481B1FB"
+  },
+  {
+    "path": "src\\research\\browser.ts",
+    "sha256": "4BC666EFAF7D224FBDA8F439A15529592333A2F1AC40DB8F9B7F2E56FCFB5ADE"
+  },
+  {
+    "path": "src\\pilot\\styles.css",
+    "sha256": "523C80CC8584DBA0AEB08CDA141FD50964E4B8AF565FF9DF50C7325D33184BF5"
+  },
+  {
+    "path": "src\\pilot\\main.ts",
+    "sha256": "DEBBA37DC39DB62FF59CD61E086F3BE69C7F05E82C9D0866D1A4676F9FEAE516"
+  },
+  {
+    "path": "src\\pilot\\domain.ts",
+    "sha256": "12375CB0599B647204EFFA2938D7F40B0EE87A1281E9B5696A7D5BC9BEB86DD2"
+  },
+  {
+    "path": "src\\domain\\dataset.ts",
+    "sha256": "4D8514995376063449ACD3201C010B1C6D592C050A75C641F4BD3B68DFB0C577"
+  },
+  {
+    "path": "src\\docs.ts",
+    "sha256": "E26F767FB703F13C774EF615AA3FD5DF5CDBF7C38B7508C3602A40CCE5BCA2A8"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\listing.json",
+    "sha256": "D6B8AA49FA8B6B1408D2A19BBDE9F040C6A7A05F0A7D1AD2BEA6230712BEA54B"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\LICENSE",
+    "sha256": "36FFD9DC085D529A7E60E1276D73AE5A030B020313E6C5408593A6AE2AF39673"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500589.json",
+    "sha256": "3F1DF712DA2904982EA7DCF32AFF54E7968A50C5DC9C946D13AC6E482393EE19"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500588.json",
+    "sha256": "9FEDE2CDE69D4011D94F26620FE4505D5C8497488A6EB7630A541199A14EF54E"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500587.json",
+    "sha256": "0D6C93AB9DF44C76323853338BD04CE0B3D8F6779F3309FDCAB634F8C0DCD781"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500586.json",
+    "sha256": "869CD38A7F48DB2E6038B631D32D163A66CE371CF7F6927945FE8A1D5EDC0EDC"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500585.json",
+    "sha256": "234FC7BA99C76C51F3427EC466C47701348A82487B86521012188DFFC13328CE"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500584.json",
+    "sha256": "4C82267EA532B435D30707D5600CBEE8FF577219DFE0FF3B24B1BBAA07B1C65F"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500583.json",
+    "sha256": "49A0E3540DDC3CD09C5D7CD694787946BA9CB650EB87C771E9B316A89DF55DD1"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500582.json",
+    "sha256": "E88D7FD52CCBCFEC92D806D2D3FC07563C96D25D1DEFFEF0FED8A516CFBFEC63"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500581.json",
+    "sha256": "E86AA2BEBEC64F98A2B90BAB8E4E24A571529E923FDC17E5F3E5720B3EFB21C8"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500580.json",
+    "sha256": "0B1178AB04D78E8AAC7BF1DC1F78E312525980BAE89494ECA68DDEBF7E63477A"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500579.json",
+    "sha256": "79AAF5C6091E78C71838F627708F84A68CA2B5018A52D544AAF35D2E417F681B"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500578.json",
+    "sha256": "26D35976299E1A85B1FC73CF46EFDFE52219466996B70BFF58BC884ECB74B0F5"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500577.json",
+    "sha256": "87A5ED3FEB051B4DF8F96F3A5968803FEA04ED1B7EB54A9F167B7B563F159172"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500576.json",
+    "sha256": "ACA6B6E9383114259B0A6E5D5EFFE4193207A9F66931CAE06D529A81FE2CC02A"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500574.json",
+    "sha256": "4FE47DEADF19604304FEA76D03C0E7D1B26A3FF7CAEB0831CBADB35A1CB11FDE"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500573.json",
+    "sha256": "2C4F60D7252601932509AAB23740D47BB0B5620977A3104D715070ADBF110C9D"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500572.json",
+    "sha256": "F867DDF501185F36F903356D21DE6FF7E90F21AD86E7BAD0BEC46B24331839B7"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500571.json",
+    "sha256": "4E2D1AD9CBBE6212911F199C6B33E70FE7F98A2F4E068B13FF5192B64EC6DF55"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500570.json",
+    "sha256": "E4D8B4D127104679DF3B8646D37736E8D00EB60D04C9E2B91658F9289757F5F3"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500569.json",
+    "sha256": "99E220F2F836490E0C53610E18D599B16A10D4F955335681D53F9C37D0BDFCEF"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500568.json",
+    "sha256": "1F5920F26DBBB10593441407727C7A6BCC4993CFA7164BA38BBA5D06148B8867"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500567.json",
+    "sha256": "5DA8FF8991C461E0C941118038A697F8E713DEEBFF9256A8450B09DF82667C4A"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500566.json",
+    "sha256": "3F1167BAF8307049E5670F303B481C9CCB0EBD48A40E242CAB7B44CBB17E313B"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500565.json",
+    "sha256": "6CF2DCB46F5E810435D533C324769B489982617BF84428CBF165D6EEC492B6E8"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500564.json",
+    "sha256": "1DC8A70BADD1FEB8F56717407EE7B5AA156A9D3CC172D372E6AF6F7FA3D13894"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500563.json",
+    "sha256": "1B6271D4A7DD3276CC791AA7FA1C98E1E16C0D4916F069375C8E066A61528F7D"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500562.json",
+    "sha256": "EBDCAC4D163ADDBE77913006D7A8521A9F06377B61C86753629303599EA9E640"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500561.json",
+    "sha256": "6A490EA58B6029038FC732C9B27CFDD4E04BECA442636514EBDADD15B906F33A"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500560.json",
+    "sha256": "6B4571F841BE8246305CD5C2E12DBEBF091E467A45546C63D7ECE2905AA1AB1E"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500559.json",
+    "sha256": "678C2FDD3AFA416EF22C4622AA500321975E8B5C4C98C2C1AC449F439DB69D4A"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500558.json",
+    "sha256": "E22C407FE70C2AC4C281241C92965C9777690AA1F44E2129E9A757C979CF43FD"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500557.json",
+    "sha256": "A915E4B9FDBDA6C10B371CCA064F4D9EDA72E85BB97056F868A787ABDA17A553"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500555.json",
+    "sha256": "A2F862CAF03575910852E78E56B4578732574811552B4308C84660F3D8F2BF26"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500554.json",
+    "sha256": "A92AEAC9672D5E2FD1A8D8E4568C980ED870E10A44906657377F247A933841B6"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500553.json",
+    "sha256": "F05529EB6D77F11EE93E05B419D8FFC282EAFF06A1E959DC4A076412FD93A871"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500552.json",
+    "sha256": "074DFC914FFB9C9F3147BE705560A19118CD8A6571D7D4A80FF984CFA50115A4"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500551.json",
+    "sha256": "44F566DBCFA4F98CC45AF522F8C2DF208DA26028204FCA83AE203ED7ECFE2D11"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500550.json",
+    "sha256": "BE013963E9DEDD174E3D9A6CC8B48B46C2F27C50D6FD2E279B2427E612B9514E"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500549.json",
+    "sha256": "B4F7D626B8C8E64BE3665F92A60EA426DAE5959324CCBD18F75786E464ABEB80"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500548.json",
+    "sha256": "78541A7BA1E841B06301D1BFB496992C52D721CC32C9844D2941BAED64A135FE"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500547.json",
+    "sha256": "8E5D04BA0CA3DCEF609F9A66BF433BCFBF0A97C37CE213BDC3F37690B365FA7D"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500544.json",
+    "sha256": "B41ADF507FB025E23D43DB652943CCBA8A66FB101416F26F3ADF56432B10D210"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500543.json",
+    "sha256": "A1FFA006141198DEF76CA261598B7A6B191036D2EF0C094F66707175640F833B"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500542.json",
+    "sha256": "7A1E770D5B4898B076A200B4F6C2B287106A0196027310C2B84986E843E48212"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500541.json",
+    "sha256": "C31131D5B6F9840001D9F0943C1F209512EA59F1C4D72A69B39F660276277E30"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500540.json",
+    "sha256": "11B33AEA405DE6E172733D6EFC8D2983CFBB33509A943D7AA4AB5199C6FE88B1"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500539.json",
+    "sha256": "2AA6427939B972DB6E5DE772B65BA192438BFFBA1E293995687CE437604D154E"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500538.json",
+    "sha256": "6482C7E728A48BD13E1AF597392692054E5E9E6E0E330775117A67DFC763F980"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500537.json",
+    "sha256": "50D8D6A7FB9E6082F86A7B9A3C53507BA9D984B2BB76E9AB1A5E7E315F0638E7"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500536.json",
+    "sha256": "6555399AF6CB9F7848ACB13FE7B256583EE3E3D2207BF490162A5A2D37B9C5AF"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500535.json",
+    "sha256": "2633D941F226A175A70B840754C83AE194527E69C2D9FC3CE382868BBB8DA5B5"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500534.json",
+    "sha256": "9F643FA3BAD69B26212C8A7F462B09DC9401A8592FD171558605B39FCF836263"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500533.json",
+    "sha256": "DE01A1C99FCF934371729DFC747C0D57159ED3FD9ED65B5274BE46FB5E6FB8DD"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500532.json",
+    "sha256": "53C875708D902C18BFB6FE91CBEFC1DC93AD179087370E833A91A31886D06C89"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500531.json",
+    "sha256": "15FFA245D5621E761FC12AD265A7C69779BB8B09C43AFAC19B8277D9091FAAC2"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500530.json",
+    "sha256": "0535D043A7B5DDE8FED43AEFE0ABEBF5E18FF1C8B1B37AC0033C55BB106CC76B"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500529.json",
+    "sha256": "6573F7323ACA63CF78F77BF7E2D5B05604DEF67708562ED0D4F25CC1170CE55C"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500528.json",
+    "sha256": "A4ADB6EAD368024B11FC1FA153F799A797B24F4E9A81539BD2C8A31561FCDF80"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500527.json",
+    "sha256": "7282886BCDB1119A86F337693EBEC3E24495DCC12BA3F14D6FEB242D15D66398"
+  },
+  {
+    "path": "data\\met-instruments\\raw\\500526.json",
+    "sha256": "FDC8233980C4F472849BA8AF4E62B1FE932F8DA92AA29A271F2FFC079722EF82"
+  },
+  {
+    "path": "data\\met-instruments\\manifest.json",
+    "sha256": "BE42E96C47CDC31A2FFF5EE913D441707AD62632F54A6CA4034623818218D6A0"
+  },
+  {
+    "path": "data\\met-instruments\\.gitattributes",
+    "sha256": "9E9ECCC430591CF069079EDD13612875DF922CE9418FB9C0D74F9FF2DF64909D"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "093BF9DBF0CAC776E50818E85636A069ACF5ED20579B542DEC70179D116C831C"
+  },
+  {
+    "path": "LICENSE",
+    "sha256": "51B1E1CC6710BF45661CED88CD52C7D309F542CB63D872A0EE4ADC7A96A505AA"
+  },
+  {
+    "path": "package.json",
+    "sha256": "37FA3FB910C84235FC536E939014DCC8433A76A6CA0E9305C4E69BC779EE0169"
+  },
+  {
+    "path": "README.md",
+    "sha256": "A4A13059E91B6F5DBD0A3007CE2835831688F9D52DA9445210EEE76BC4CA7E0A"
+  },
+  {
+    "path": "playwright.config.ts",
+    "sha256": "1DF405D6E98D3C08D9B14CB9DEF186A2243FC11BD8B400F3070465969D35A0A8"
+  },
+  {
+    "path": "src\\concepts\\trail\\styles.css",
+    "sha256": "EEC2BF3EAE36A92BCF8E6CD16640BD315A8E2F050B3B5C9B250041C8FC5E9A63"
+  },
+  {
+    "path": "src\\concepts\\trail\\main.ts",
+    "sha256": "E4C13DD1B3DF02C8946D7BBE40FFA42F3ECD3BC756256241E5DF1EF3885DE4AA"
+  },
+  {
+    "path": "src\\concepts\\index.ts",
+    "sha256": "7C5B0DD06C12BD324CE3A326BC8810EA8147521B7333FC61E1B6B5568A62C78F"
+  },
+  {
+    "path": "src\\concepts\\index.css",
+    "sha256": "9FA6CA6A22739EDC09E00EE76B4354720AFD7D77C6F8B2F5A04DF1589E41108B"
+  },
+  {
+    "path": "scripts\\build-docs.mjs",
+    "sha256": "C6D589CC77BBCB27922018949323AE5B9F8078A9E4E3F0B660A5848997106A22"
+  },
+  {
+    "path": "scripts\\docs-pages.json",
+    "sha256": "01C46BF515EC84B31F9F014AB83B3A3432B9B32DB4316E98B11C20CE92A7E832"
+  },
+  {
+    "path": "scripts\\import-dh-data.mjs",
+    "sha256": "668F8D652EB3B46768F80F0A237E9014F63378144C1A6DFBE5B0DFBD9634D2D2"
+  },
+  {
+    "path": ".gitignore",
+    "sha256": "C4898B048E50D5B68AF75340850E5B81FD77B86F809D9FFFACCA562BDA34E92C"
+  },
+  {
+    "path": "AGENTS.md",
+    "sha256": "E4EF01EADC2D22E31122F57FA211A9213D3E841E6FF8C8EE5CD30C007826251A"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "sha256": "9953BEAF6DEBC9D634682C1D82CC7F301152614940334F681571670CEF2373D6"
+  },
+  {
+    "path": "biome.json",
+    "sha256": "94A2B445DAC884E50A42AB92D0E52354F3594ADB56BD1B198648F8FD5A5237C3"
+  },
+  {
+    "path": "concepts\\trail\\index.html",
+    "sha256": "BB10A4B44663F54175D787C07BA4A88745C7138C30A49214C19B8EC5894B83C3"
+  },
+  {
+    "path": "concepts\\index.html",
+    "sha256": "242323C0CC6E4EA00F041AD38E10AC456D66798F474C4096005115929530E7D4"
+  },
+  {
+    "path": "baseline\\index.html",
+    "sha256": "84130B012708E1F4F4B3E4B2FA01423E50F627ECDF43ED45A6C6FF11B131A3C6"
+  },
+  {
+    "path": "src\\app\\styles.css",
+    "sha256": "78002ECF1C9E23825AEDCEB066C53BAAE8E3B53FBB8CA8E9219587E454D76CC0"
+  },
+  {
+    "path": "concepts\\bench\\index.html",
+    "sha256": "622AD240444BA99C382DBBCEC1114A870B46CED6F9B00616EDE50D94DA5DDA38"
+  },
+  {
+    "path": "src\\app\\storage.ts",
+    "sha256": "EEC5FD38CED758CAD5AB272CB251085CCE1C8188FC2E86F4BD76517E5E0EA1F4"
+  },
+  {
+    "path": "src\\app\\main.ts",
+    "sha256": "DFEE5A8F98EC4E6E324E5AB4E4B3F24A350BC760CC59AB16ECE2D8D72DC2DFCD"
+  },
+  {
+    "path": "concepts\\atlas\\index.html",
+    "sha256": "B46F81F58EF1155019EF2EE770FDD787A4DAA140642643B6B21868953D6EDB58"
+  },
+  {
+    "path": "pilot\\index.html",
+    "sha256": "DF99F5AD06CCE0664CE14A84EE38B75F4FEC40FE0A4FF9660F42110064570A5C"
+  },
+  {
+    "path": "fixtures\\demo.json",
+    "sha256": "7464E2E726385C5F5D13044040930FF152F4191DA8D0F26F0B501DA671031C53"
+  },
+  {
+    "path": "src\\adapters\\json.ts",
+    "sha256": "3C72B5DB6A12FB6B88115F495D910B517F07FE6DB2E120802AF86755F7A20D90"
+  },
+  {
+    "path": "public\\LICENSE",
+    "sha256": "51B1E1CC6710BF45661CED88CD52C7D309F542CB63D872A0EE4ADC7A96A505AA"
+  },
+  {
+    "path": "benchmarks\\README.md",
+    "sha256": "D096E12334B289AABE7FB2C3583A1858EA6E87FCEFD1F26F0463139DB464D4BE"
+  },
+  {
+    "path": "benchmarks\\ui-concepts-protocol.md",
+    "sha256": "99E69F17C5BA5B32A7E2479A28F4AE94B08301E0A58214876DDDC0A0BCA5D3F7"
+  },
+  {
+    "path": "benchmarks\\capture-source.mjs",
+    "sha256": "85886D7D1890F4A4092DED10AC4838A537A4175A18828CFD036DD4B00EB2AA46"
+  },
+  {
+    "path": "benchmarks\\ui-concepts-brief.md",
+    "sha256": "C1707F3812C7D95C5D4A4C08E25CA9048502CE5F86F82E0BE7131AE2D571B959"
+  },
+  {
+    "path": "benchmarks\\record-run.mjs",
+    "sha256": "136090391E9814FA486689B30512D32917BC358E4DDB5F6226C6D4185BCCC33D"
+  },
+  {
+    "path": "src\\concepts\\atlas\\main.ts",
+    "sha256": "A62FE02F8E3B49FBEE2C5377E69E461F38827A2BAB848068C6866437005EF5E6"
+  },
+  {
+    "path": "src\\concepts\\atlas\\styles.css",
+    "sha256": "6AAB72EE76599E931BFE3678D44AD629B4BCF935441FFB7D1C092AB801B5A911"
+  },
+  {
+    "path": "src\\concepts\\bench\\main.ts",
+    "sha256": "2AD2AB1B9BC3AC6F5692A65EA711CE870105D3C7E0C5A007A7CCFF7867245BC8"
+  },
+  {
+    "path": "knowledge\\architecture.md",
+    "sha256": "58FF6CF232C5553FB782DE4A5742CA2BA59CB4F12467C476D42725F015A6D65A"
+  },
+  {
+    "path": "src\\concepts\\bench\\styles.css",
+    "sha256": "4E1C0BADD8BDBD79387C268BC0F2C99E5D4E5B5B87C6D431224FE225E7A6247B"
+  },
+  {
+    "path": "knowledge\\data.md",
+    "sha256": "52075B961182861914CB410DA3B51AFA3D3CE8E244FBD19B6E81B74DDFCCA4D6"
+  },
+  {
+    "path": "public\\licenses\\sora.txt",
+    "sha256": "1EC9623D38C445EB4DFE5FCC783E0F0EE728CC97CA157CE1F8CB2B3BF9D9B0D9"
+  },
+  {
+    "path": "knowledge\\testing.md",
+    "sha256": "DC3D3B313C3BBAF3C3EFDB2C31164433E54B6DC3BE3FFE1A73E34986D31EB846"
+  },
+  {
+    "path": "public\\licenses\\instrument-sans.txt",
+    "sha256": "C27A3C53C3BEED7F5C26853AFA15991478FF7145D3754A36B0382F84E10C0D03"
+  },
+  {
+    "path": "knowledge\\specification.md",
+    "sha256": "8F6C7A30ADACCDF37B299B1EFF527BD0F66FA3F3E7AB3C41D14D02394FC6B719"
+  },
+  {
+    "path": "knowledge\\project.md",
+    "sha256": "8B5585014BCD89799E0AA9181A13EA7D7ADB534C12AF7E29D2D92041F1CD5459"
+  },
+  {
+    "path": "knowledge\\plan.md",
+    "sha256": "03756D12CE0213879A5018F4681224C1D1ED30BF19F3B25A60A86F6607FED0A5"
+  },
+  {
+    "path": "knowledge\\journal.md",
+    "sha256": "C9679FC1F8BA65841996038780A98B5CDED568C449206830418D8EB92A42A9BA"
+  },
+  {
+    "path": "knowledge\\INDEX.md",
+    "sha256": "91874B5B3F595FB279E2CC7E3C21C7D158C1572DF1C099734EABD00DC6488298"
+  },
+  {
+    "path": "knowledge\\handoff.md",
+    "sha256": "6576390DD5F6232D27156887D4969E7AD822C57A43C85249FCFC9B3D6DFBA0E0"
+  },
+  {
+    "path": "knowledge\\design.md",
+    "sha256": "95B463EC8E5F805FD94248E5E89FE572A4A827FCED765307EE558E1DA8607BDA"
+  },
+  {
+    "path": ".agents\\skills\\research-ui-improve\\SKILL.md",
+    "sha256": "6C22CD11E07970A6535235FEB99B2D5CB96B33D6DF866822C2BBC611B7B273F2"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-documentation-reconciliation-source.json",
+    "sha256": "1C4BD8D5885FCB21A6F769896D2D171BA9CE2336EF9D9C5A51088B503F99D0AA"
+  },
+  {
+    "path": ".agents\\skills\\research-ui-design\\SKILL.md",
+    "sha256": "BD124F33F1C9AE48E3AB3B1CCBC4290DBCA29455661BF199C2199C483E1BA7C2"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-ui-concepts-source.json",
+    "sha256": "0D603A60FB2780A8180F064D63A578B95AA478C3C94D378218E5C4B5384EE20F"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout-source.json",
+    "sha256": "1CBBFE8968DD6BB6D6EFB706E4A0A39B75E2558D98196D1CEB6CB6F376712350"
+  },
+  {
+    "path": ".github\\workflows\\pages.yml",
+    "sha256": "00F396634760CB87BA548126DA2BC8867796E8BF1857CCBD4C7BE604B6906D80"
+  },
+  {
+    "path": ".github\\workflows\\check.yml",
+    "sha256": "79129FF01BA29BB4F5DD17D33DCB4BA75A81381CF1D2E7DB38A758821409BC4F"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-met-instruments-source.json",
+    "sha256": "7083A4607AE731A01E12F5875D6208E7B013BBED3453EFD099E33FCCD8DE987C"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-met-instruments.md",
+    "sha256": "BF5686A8E0B46B93F96361ADA477FA762420713249601A59639045780FE003B5"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-ui-walkthrough-source.json",
+    "sha256": "959FAA4C91EE9D720727961B8A95F11472AA9FED79241EF9A396A9ED1A078D49"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-ui-walkthrough-final-source.json",
+    "sha256": "01DD217D5DFF3648D91F28A1D3897FE940B0088EFEBECBA5BE0EEA25BAE22CE9"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-ui-refinement.md",
+    "sha256": "1308E77F556871643AA1CB929DB36E67955BFC295AA36E6DF398FE1D2AE3AF80"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-ui-refinement-source.json",
+    "sha256": "9BE9D922DD946D22AFE90356E0332F49599DC0C8341CDD448DB066A1E747055B"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-ui-concepts.md",
+    "sha256": "27EBAC1478825E2AD86024D38141B8401CEA42B0D88BD2A550B8A54B4C464A6F"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-workspace-redesign.md",
+    "sha256": "6BD964E28E5AE646B80FC0FEBAE75FBFB29F394C1DCE2A2355FDB120C41428FA"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-workspace-redesign-source.json",
+    "sha256": "CD4E5BC6517883141B21722A3E74E998E0F002B6AC382E63B5E450DC3B780475"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-ui-walkthrough.md",
+    "sha256": "F830BBD444AD3C2AD28CDE830312611643831F1E26CBEB533EAFF1988DF72815"
+  },
+  {
+    "path": ".agents\\skills\\research-ui-evaluate\\SKILL.md",
+    "sha256": "E6BB098E29ACF0E001396FF96E0EBE73614120F7391373DFA30522E7F4E8CE07"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-documentation-reconciliation\\evidence-manifest.json",
+    "sha256": "BABAB6BD3F60086ADB64EB152A3A5D8545E958A6535D1D1F934119D1A9F8CCC9"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-documentation-reconciliation\\documentation-mobile.png",
+    "sha256": "523976651DD95189307A10C9A084118B3D1F32006044B39A9DFBE22E6829BD84"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-documentation-reconciliation\\documentation-desktop.png",
+    "sha256": "B3007226F7C012A5DF6DFA2032C2358FD71CB0678F5C4A593A49A31F576E02CA"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-documentation-reconciliation\\assessment.md",
+    "sha256": "6ED74F167EE10064ACBEBC3A2737C11797FF36133FFF11711B5C82D11A8DFA06"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-documentation-reconciliation\\.last-run.json",
+    "sha256": "91D1C43004802CD49950D78EB11C8FA7D05DA8FFFFE219A8B13B2F561BC00903"
+  },
+  {
+    "path": "benchmarks\\cases\\met-instruments\\task.md",
+    "sha256": "2EE6B3A5DB046622B9C2C9BDA7D9B87F57C9605CF5F8FFEF30DD8174FA5B7704"
+  },
+  {
+    "path": "benchmarks\\cases\\met-instruments\\oracle.mjs",
+    "sha256": "EF49519672A359BE784C75BA20A70898C9BB86B3D4CC875F085A2D6AEFA0B57C"
+  },
+  {
+    "path": "benchmarks\\cases\\met-instruments\\expected.json",
+    "sha256": "3CC0E9E08DF64328FFCDFF3462A7D426DF9355E4F413D297EB4997D46AB640FB"
+  },
+  {
+    "path": "benchmarks\\runs\\workspace-redesign\\pilot.png",
+    "sha256": "830CE9AD958A24966AB77E4F6EC469B38C52D1653E5BF30D987A633DA90A524F"
+  },
+  {
+    "path": "benchmarks\\runs\\workspace-redesign\\editor.png",
+    "sha256": "086A5FED382DA1CF0760193953E81971C798590E9B0B37BB7222F66A6E7677F0"
+  },
+  {
+    "path": "benchmarks\\runs\\workspace-redesign\\documentation.png",
+    "sha256": "7B775393200B4E600B36BAD40447B4F809EDB6BC2DF0FAF9E3CE4707BB3D9DA3"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-closeout-docs\\evidence-manifest.json",
+    "sha256": "C5B9B1A09B37A48C70FB2876520A0C281D1E68D1503158CBE14DD56FFB6FFD6D"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-closeout-docs\\documentation-mobile.png",
+    "sha256": "01A2006B628C3A034F7D5947EB036B6ABF14414BECE6236BB579BE0E6EBCAE48"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-closeout-docs\\documentation-desktop.png",
+    "sha256": "28B37151902F362C95C3329380873A45CDC8B5F986A9A06F84721FCE302DD326"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-closeout-docs\\.last-run.json",
+    "sha256": "91D1C43004802CD49950D78EB11C8FA7D05DA8FFFFE219A8B13B2F561BC00903"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\atlas-narrow.png",
+    "sha256": "F52CC97A5FEDF51BA1E252C15627B935845BBCD95102DF330F75984B268465F9"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\atlas-export.json",
+    "sha256": "48799BEE98E05AD8A63EB0FC7EF91888F256C612E2860FAF00D6BAC0EBB142FC"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\atlas-compare.png",
+    "sha256": "1F082399D475E220ABD61926BB707E32081C17010475C8BC0DA3A63B5A1BF14B"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\atlas-start.png",
+    "sha256": "A24779735C00405E7D966FD402591D368955DA22F90292FCF793A6F61B4D34EB"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\bench-compare.png",
+    "sha256": "DFCD2A0B8001C89652C79AF2C11E1C9B99790B9376589291D6A7A9A6CAD90E30"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\bench-export.json",
+    "sha256": "DF2A8DC5A50693AD4EF322ECBC4A929732DB72499FBA2EB0495D49BAD8C9FE44"
+  },
+  {
+    "path": "benchmarks\\runs\\ui-walkthrough\\documentation.png",
+    "sha256": "C84D5346ED026E4F1457DFA432C3B3090876125CE51337F9A312D5120CC72B43"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\documentation-desktop.png",
+    "sha256": "28B37151902F362C95C3329380873A45CDC8B5F986A9A06F84721FCE302DD326"
+  },
+  {
+    "path": "benchmarks\\runs\\ui-walkthrough\\table-mobile.png",
+    "sha256": "ED43267C5FF743F8D618FB440B8D04A1189AF15393146A1F6391FCF25669D17D"
+  },
+  {
+    "path": "benchmarks\\runs\\ui-walkthrough\\pilot.png",
+    "sha256": "ADF9BA5824F316DB04906249EEA854EC797D08AAC67506F81174E0DD972DE422"
+  },
+  {
+    "path": "benchmarks\\runs\\ui-walkthrough\\editor.png",
+    "sha256": "0F2020BE329A31A7CFA0F25A0D0201CF80E5F58511ACD67921449019C4434E33"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\pilot-desktop.png",
+    "sha256": "DF845C83DDA5BE23F8938F1A6D5A3EFB2CE8E6F5FFD099A836C16F69175750A0"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\evidence-manifest.json",
+    "sha256": "D63F77C38ED939B614AC6467439D5E259813224D83DC6A5F86BD5DC7B4022FFB"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\documentation-mobile.png",
+    "sha256": "01A2006B628C3A034F7D5947EB036B6ABF14414BECE6236BB579BE0E6EBCAE48"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\pilot-mobile.png",
+    "sha256": "E9B014397D2F33911EE3015BA0DA39CF394E47D0E822A340121395EA902FFE17"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\trail-start.png",
+    "sha256": "75233037D9E04CDED3BF49C205E7FED99F5491E5E59991C9C7A2B7589ECB2C0B"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-trail-research-co-458df--download-accessible-layout\\trail-start.png",
+    "sha256": "22CED1F9C66070201BC802DEBFF90EE8873DA63C9B1A11EDF7A64E0611B3765A"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\workbench-investigation-re-dcfed-s-reload-and-file-reopening\\investigation.json",
+    "sha256": "B594B16D6494260D85D8DBDB9B66E05EA603F2F284D6DF69A189CED2BE2AE3BD"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-trail-research-co-458df--download-accessible-layout\\trail-narrow.png",
+    "sha256": "477BD118E00F9839EE9ADEADF7D59CB234C34C1D1524F995382D10359735F299"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\trail-narrow.png",
+    "sha256": "3CA87DB07B0720436A1ACF4C8775B57395FB1760378C4284EF4E2C1C18733F4A"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-trail-research-co-458df--download-accessible-layout\\trail-export.json",
+    "sha256": "C98CDA45B91C9DB89FF88A97012B9D51F2360672A13C88DF977956ED8E04ACDB"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\trail-export.json",
+    "sha256": "357CDA55E40F1105C0581475E963FABBC7EB7D5AC120CC8D3EF1CDA6864EA631"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\workbench-investigation-re-dcfed-s-reload-and-file-reopening\\comparison-desktop.png",
+    "sha256": "2A725413755AA5185E7CC2D21B7B860C0B1011079D5B04336E4FFB53B21ABFB4"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-trail-research-co-458df--download-accessible-layout\\trail-compare.png",
+    "sha256": "BAACCC55EEC0485682750AAE5FB058E9554AA1224D7AD3C17B57C8D5571801DB"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\trail-compare.png",
+    "sha256": "DB4FF3ABA688DA5153D9CCD8E3E098B8F74A777C3E8FAECC6468388F3F191DAC"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-trail-task.mjs",
+    "sha256": "C58A9CC0CC929330E2669238C57AB94221602910F090723C55581C121F5F1163"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-trail-probe.mjs",
+    "sha256": "8ABC691268A52382B0FFF7C798826A242F03C6B5376054A2F74C4AF14E505AFB"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-trail-narrow.png",
+    "sha256": "1FA16719F41252C34A7A014A93A8661D91F56ADA22D58CF919839B27AF0C8129"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-trail-evidence.json",
+    "sha256": "BE27B4B69F4B62C09B46B35E2050D0A399CD7E4D5BEA3B83F679F203BEF92E58"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-trail-download.json",
+    "sha256": "3C64496CCAA0374255A0F89A4B4C06754EC01EFA8E196C7C03142E633D2F1506"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-trail-compare.png",
+    "sha256": "318A3F209105AE3C6A299D6879C3C4DC66054CA149254FF5105E14CF3F0E0123"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-bench.md",
+    "sha256": "0D01E5598DCEA9405AD8857E4D105EA262174D3D1DBCF38565B8EAD6003EDDCE"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\assessment.md",
+    "sha256": "E606DD248957FBDE298286AE4BF2A9CC929E48E47B1FABECE976CDACA58ECBB8"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-bench-narrow.png",
+    "sha256": "F0448E817D509A47B2DD2022329CE84BA262903EEA2838378875DA3332902261"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\.last-run.json",
+    "sha256": "91D1C43004802CD49950D78EB11C8FA7D05DA8FFFFE219A8B13B2F561BC00903"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-bench-export.json",
+    "sha256": "FA5B86279C67F0D1AEB36B4ABB20160E9739DE12990DEA62104F3F3794AB384B"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-bench-desktop.png",
+    "sha256": "4F2F43DFBCD9B6A872B49AD5DF4DF9A4923B6B8197BDEFEC3B816A457FFCC3AB"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-atlas.json",
+    "sha256": "1495BB4C0589515125B0CFF5634826B701A9C626850C56420B711CB76EFCF287"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-atlas-start.png",
+    "sha256": "1D391B64B4C7499FEA276053DAB98AD86D7FD3C40BC070868DC86D6396AF2F60"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-atlas-narrow.png",
+    "sha256": "F19E7CC3A3F6CEBFE792D7125A61C44BF65D8420D3140E0988F4737638668D7C"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-atlas-download.json",
+    "sha256": "B431723177DBB884FB51C65BF26700A03783B5BD005C191EF9497DB981BFDD9E"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\review-atlas-comparison.png",
+    "sha256": "9B486EE5D5856A8474F6B751B996D2984FF4CB8980B741DF6F0132D9D081296F"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\bench-start.png",
+    "sha256": "190F741B321C76A0CD3E0282F3B2095699725A847253CCD93DB1697DC164584C"
+  },
+  {
+    "path": "benchmarks\\runs\\concepts\\bench-narrow.png",
+    "sha256": "99E03CCC967DD9012488129A0B285C9F2B957A3DBE77079D3154A1E0C2EB943D"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\workbench-corrupt-import-l-a73d2-comparison-remains-operable\\comparison-narrow.png",
+    "sha256": "BEEC10623154F850EFD63827248088862B6759017B8FA70C10BCC8D26F94E8B6"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-atlas-research-co-7b597--download-accessible-layout\\atlas-start.png",
+    "sha256": "7E20F25F432B8FE5A676C36D3EE4B21094E03286D5F5DD8112084B2F8A6889A9"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-atlas-research-co-7b597--download-accessible-layout\\atlas-narrow.png",
+    "sha256": "27967517C878C918C99D988E6F9AEC107F7B9EEE9C3915D668EAC41F2A40EF5B"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-atlas-research-co-7b597--download-accessible-layout\\atlas-export.json",
+    "sha256": "C98CDA45B91C9DB89FF88A97012B9D51F2360672A13C88DF977956ED8E04ACDB"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-atlas-research-co-7b597--download-accessible-layout\\atlas-compare.png",
+    "sha256": "C473E915107AC4775995B370682FF23F28AC9FF177F31788AB7E1C8F99DE0E7B"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-bench-research-co-ea06a--download-accessible-layout\\bench-start.png",
+    "sha256": "B835122F89337E7696ADCA99666E8CAB543CD8018F2E3FA7B1895433DABA7204"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-bench-research-co-ea06a--download-accessible-layout\\bench-narrow.png",
+    "sha256": "F21CB89975E8DABC1BCD2364F22459306266E2EAC22645A0AA03F37326097008"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-bench-research-co-ea06a--download-accessible-layout\\bench-export.json",
+    "sha256": "C98CDA45B91C9DB89FF88A97012B9D51F2360672A13C88DF977956ED8E04ACDB"
+  },
+  {
+    "path": "benchmarks\\runs\\2026-10-10-session-closeout\\concepts-bench-research-co-ea06a--download-accessible-layout\\bench-compare.png",
+    "sha256": "015C77A5B318045A4877283ADBF3DC98DE62FA52204C7205DF31A698CA892D59"
+  }
+]

@@ -1,0 +1,110 @@
+import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+import { pathToFileURL } from 'node:url';
+
+const work = 'C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction';
+const checkout = join(work, process.argv[2] ?? 'candidate-2/checkout');
+const { chromium } = await import(pathToFileURL(join(checkout,'node_modules/playwright/index.mjs')).href);
+const origin = 'http://127.0.0.1:4191';
+const output = join(work,'workflow-evidence');
+await mkdir(output,{recursive:true});
+const results=[];
+const errors=[];
+const browser = await chromium.launch();
+const download = async (page,button,name) => {
+  const event=page.waitForEvent('download');
+  await page.getByRole('button',{name:button,exact:true}).click();
+  const target=join(output,name);
+  await (await event).saveAs(target);
+  return {path:target,value:JSON.parse(await readFile(target,'utf8'))};
+};
+async function pageInFreshContext(route) {
+  const context=await browser.newContext({viewport:{width:1440,height:900}});
+  const page=await context.newPage();
+  page.on('pageerror',error=>errors.push(error.message));
+  await page.goto(`${origin}${route}`);
+  return {context,page};
+}
+try {
+  const {context,page}=await pageInFreshContext('/annotations/');
+  await page.getByLabel('Research question',{exact:true}).fill('How does the forecaster qualify the initial-motion estimate?');
+  const source=page.getByLabel('Original bulletin text',{exact:true});
+  const text=await source.inputValue();
+  const passage='Given that the system is still in its development stage, the initial\nmotion is a somewhat uncertain 020/3 kt.';
+  const start=text.indexOf(passage);
+  assert.ok(start>=0);
+  await source.focus();
+  await source.evaluate((node,start)=>node.setSelectionRange(start,start),start);
+  await page.keyboard.down('Shift');
+  for(let i=0;i<passage.length;i++) await page.keyboard.press('ArrowRight');
+  await page.keyboard.up('Shift');
+  await page.getByRole('button',{name:'Annotate selection',exact:true}).click();
+  assert.equal(await page.locator('#quotation').textContent(),passage);
+  await page.getByLabel('Category',{exact:true}).selectOption('uncertainty');
+  await page.getByLabel('Interpretation',{exact:true}).fill('The source explicitly qualifies the motion estimate.');
+  await page.getByLabel('Creator kind',{exact:true}).selectOption('agent');
+  await page.getByLabel('Creator name',{exact:true}).fill('Reproduction agent');
+  await page.getByLabel('Record a source-fit review',{exact:true}).check();
+  await page.getByLabel('Reviewer kind',{exact:true}).selectOption('agent');
+  await page.getByLabel('Reviewer name',{exact:true}).fill('Reproduction agent');
+  await page.getByLabel('Review criterion',{exact:true}).fill('The quotation explicitly marks the initial-motion estimate as uncertain.');
+  await page.getByLabel('Does the quotation support this interpretation?',{exact:true}).selectOption('supports');
+  await page.getByRole('button',{name:'Save annotation',exact:true}).click();
+  await page.locator('#annotations li').waitFor();
+  const reviewed=await download(page,'Export notebook','annotation-reviewed.json');
+  assert.equal(reviewed.value.annotations[0].review.reviewer.kind,'agent');
+  await page.getByRole('button',{name:'Edit',exact:true}).click();
+  await page.getByLabel('Interpretation',{exact:true}).fill('This qualification concerns the motion estimate at the time of issue.');
+  await page.getByRole('button',{name:'Save annotation',exact:true}).click();
+  const revised=await download(page,'Export notebook','annotation-revised.json');
+  assert.equal(revised.value.annotations[0].review,null);
+  assert.equal(revised.value.annotations[0].quote,passage);
+  assert.equal(revised.value.sources[0].text.slice(start,start+passage.length),passage);
+  await page.reload();
+  await page.locator('#annotations li').waitFor();
+  const restored=await download(page,'Export notebook','annotation-reloaded.json');
+  assert.deepEqual(restored.value,revised.value);
+  await page.screenshot({path:join(output,'annotation-reloaded.png'),fullPage:true});
+  const second=await pageInFreshContext('/annotations/');
+  second.page.once('dialog',dialog=>dialog.accept());
+  await second.page.getByLabel('Open notebook').setInputFiles(revised.path);
+  await second.page.waitForFunction(()=>document.getElementById('notebook-status')?.textContent==='Saved locally');
+  const reopened=await download(second.page,'Export notebook','annotation-reopened.json');
+  assert.deepEqual(reopened.value,revised.value);
+  results.push({workflow:'annotation source selection, declared agent provenance, review reset, reload, real download and fresh-context reopening',passed:true,sourceId:revised.value.annotations[0].sourceId,start,end:start+passage.length,reviewAfterEdit:null});
+  await second.context.close();
+  await context.close();
+
+  const inputs=JSON.parse(await readFile(join(work,'input-manifest.json'),'utf8'));
+  for(const input of inputs.files) {
+    const inputPath=join(work,input.file);
+    const raw=await readFile(inputPath);
+    const original=JSON.parse(raw);
+    const run=await pageInFreshContext('/pilot/');
+    run.page.once('dialog',dialog=>dialog.accept());
+    await run.page.getByLabel('Open investigation').setInputFiles(inputPath);
+    await run.page.waitForFunction(()=>document.getElementById('draft-status')?.textContent==='Saved locally');
+    const before=await run.page.evaluate(()=>Object.fromEntries(Object.entries(localStorage).filter(([name])=>name.startsWith('frt.investigation.'))));
+    assert.ok(Object.values(before).includes(raw.toString('utf8')));
+    await run.page.locator('#comparison-link').click();
+    const exported=await download(run.page,'Export investigation',`met-v${input.schemaVersion}-reexport.json`);
+    assert.equal(exported.value.schemaVersion,2);
+    const {fieldEvidence:_evidence,schemaVersion:_version,...common}=exported.value;
+    const {fieldEvidence:_oldEvidence,schemaVersion:_oldVersion,...originalCommon}=original;
+    assert.deepEqual(common,originalCommon);
+    if(original.schemaVersion===2) assert.deepEqual(exported.value,original);
+    const after=await run.page.evaluate(()=>Object.fromEntries(Object.entries(localStorage).filter(([name])=>name.startsWith('frt.investigation.'))));
+    assert.deepEqual(after,before);
+    assert.equal(createHash('sha256').update(await readFile(inputPath)).digest('hex'),input.sha256);
+    await run.page.screenshot({path:join(output,`met-v${input.schemaVersion}-reopened.png`),fullPage:true});
+    results.push({workflow:`real Met version ${input.schemaVersion} import and version2 export`,passed:true,originalSha256:input.sha256,persistedOriginalBytesUnchanged:true,sourceAndAuthorFieldsUnchanged:true});
+    await run.context.close();
+  }
+  assert.deepEqual(errors,[]);
+} finally {
+  await browser.close();
+  await writeFile(join(work,'workflow-results.json'),JSON.stringify({origin,browser:browser.version(),results,errors},null,2)+'\n');
+}
+console.log(JSON.stringify(results,null,2));

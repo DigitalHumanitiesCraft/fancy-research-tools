@@ -1,0 +1,19 @@
+{
+  "copiedAt": "2026-10-10T18:16:22.697Z",
+  "files": [
+    {
+      "file": "inputs/legacy-v1.json",
+      "source": "benchmarks/runs/2026-10-10-clear-scope-review/ui/instrument-investigation.json",
+      "bytes": 17632,
+      "sha256": "6cd2dcc641efea2dd65835a0867ba79242ad44e470f2eead57e9f2516bdfaefa",
+      "schemaVersion": 1
+    },
+    {
+      "file": "inputs/previous-v2.json",
+      "source": "benchmarks/runs/2026-10-10-project-decisions/export-v2.json",
+      "bytes": 28185,
+      "sha256": "2727fc982bb3315c977269dc905f76382cf8137b4b079a2aa18f684f6b675b48",
+      "schemaVersion": 2
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "route": "/",
+    "title": "Overview · Fancy Research Tools",
+    "narrowOverflow": false
+  },
+  {
+    "route": "/tools/",
+    "title": "Tools. Fancy Research Tools",
+    "narrowOverflow": false
+  },
+  {
+    "route": "/reference/testing.html",
+    "title": "Testing · Fancy Research Tools",
+    "narrowOverflow": false
+  },
+  {
+    "route": "/annotations/",
+    "title": "Forecast reading",
+    "narrowOverflow": false
+  }
+]

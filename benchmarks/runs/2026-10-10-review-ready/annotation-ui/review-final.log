@@ -1,0 +1,11 @@
+
+Running 2 tests using 1 worker
+
+(node:36696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:36696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:87:1 › a changed interpretation clears its earlier explicit review (2.2s)
+  ok 2 ..\..\..\..\..\GitHub\fancy-research-tools\tests\e2e\annotation.spec.ts:120:1 › reverting unsaved content retains the final deliberate review choice (1.0s)
+
+  2 passed (5.0s)

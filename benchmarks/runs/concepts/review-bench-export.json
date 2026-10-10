@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "concept": "comparison-bench",
+  "exportedAt": "2026-10-10T15:42:35.913Z",
+  "provenance": {
+    "datasetId": "met-instruments",
+    "title": "Musical instruments in The Metropolitan Museum of Art",
+    "source": "https://github.com/metmuseum/openaccess",
+    "documentation": "https://metmuseum.github.io/",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "startedAt": "2026-10-10T14:44:37.337Z",
+    "retrievedAt": "2026-10-10T14:44:50.977Z",
+    "selection": "First 60 unique numeric object IDs in ascending order from department 18 listing",
+    "sourceListingTotal": 5269,
+    "selectedIds": [
+      500526,
+      500527,
+      500528,
+      500529,
+      500530,
+      500531,
+      500532,
+      500533,
+      500534,
+      500535,
+      500536,
+      500537,
+      500538,
+      500539,
+      500540,
+      500541,
+      500542,
+      500543,
+      500544,
+      500547,
+      500548,
+      500549,
+      500550,
+      500551,
+      500552,
+      500553,
+      500554,
+      500555,
+      500557,
+      500558,
+      500559,
+      500560,
+      500561,
+      500562,
+      500563,
+      500564,
+      500565,
+      500566,
+      500567,
+      500568,
+      500569,
+      500570,
+      500571,
+      500572,
+      500573,
+      500574,
+      500576,
+      500577,
+      500578,
+      500579,
+      500580,
+      500581,
+      500582,
+      500583,
+      500584,
+      500585,
+      500586,
+      500587,
+      500588,
+      500589
+    ],
+    "limitations": [
+      "Convenience sample ordered by identifier, not random or representative of the collection.",
+      "Catalogue assertions and classifications retain the museum's wording.",
+      "Missing source values do not establish absence of the historical property.",
+      "Date bounds are museum indexing ranges, not precise event dates or confidence intervals.",
+      "Metadata only. Image URLs in raw API responses are retained as source bytes but no images are downloaded or displayed."
+    ],
+    "files": [
+      {
+        "path": "raw/listing.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects?departmentIds=18",
+        "sha256": "d6b8aa49fa8b6b1408d2a19bbde9f040c6a7a05f0a7d1ad2bea6230712bea54b"
+      },
+      {
+        "path": "raw/500526.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500526",
+        "sha256": "fdc8233980c4f472849ba8af4e62b1fe932f8da92aa29a271f2ffc079722ef82"
+      },
+      {
+        "path": "raw/500527.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500527",
+        "sha256": "7282886bcdb1119a86f337693ebec3e24495dcc12ba3f14d6feb242d15d66398"
+      },
+      {
+        "path": "raw/500528.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500528",
+        "sha256": "a4adb6ead368024b11fc1fa153f799a797b24f4e9a81539bd2c8a31561fcdf80"
+      },
+      {
+        "path": "raw/500529.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500529",
+        "sha256": "6573f7323aca63cf78f77bf7e2d5b05604def67708562ed0d4f25cc1170ce55c"
+      },
+      {
+        "path": "raw/500530.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500530",
+        "sha256": "0535d043a7b5dde8fed43aefe0abebf5e18ff1c8b1b37ac0033c55bb106cc76b"
+      },
+      {
+        "path": "raw/500531.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500531",
+        "sha256": "15ffa245d5621e761fc12ad265a7c69779bb8b09c43afac19b8277d9091faac2"
+      },
+      {
+        "path": "raw/500532.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500532",
+        "sha256": "53c875708d902c18bfb6fe91cbefc1dc93ad179087370e833a91a31886d06c89"
+      },
+      {
+        "path": "raw/500533.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500533",
+        "sha256": "de01a1c99fcf934371729dfc747c0d57159ed3fd9ed65b5274be46fb5e6fb8dd"
+      },
+      {
+        "path": "raw/500534.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500534",
+        "sha256": "9f643fa3bad69b26212c8a7f462b09dc9401a8592fd171558605b39fcf836263"
+      },
+      {
+        "path": "raw/500535.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500535",
+        "sha256": "2633d941f226a175a70b840754c83ae194527e69c2d9fc3ce382868bbb8da5b5"
+      },
+      {
+        "path": "raw/500536.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500536",
+        "sha256": "6555399af6cb9f7848acb13fe7b256583ee3e3d2207bf490162a5a2d37b9c5af"
+      },
+      {
+        "path": "raw/500537.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500537",
+        "sha256": "50d8d6a7fb9e6082f86a7b9a3c53507ba9d984b2bb76e9ab1a5e7e315f0638e7"
+      },
+      {
+        "path": "raw/500538.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500538",
+        "sha256": "6482c7e728a48bd13e1af597392692054e5e9e6e0e330775117a67dfc763f980"
+      },
+      {
+        "path": "raw/500539.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500539",
+        "sha256": "2aa6427939b972db6e5de772b65ba192438bffba1e293995687ce437604d154e"
+      },
+      {
+        "path": "raw/500540.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500540",
+        "sha256": "11b33aea405de6e172733d6efc8d2983cfbb33509a943d7aa4ab5199c6fe88b1"
+      },
+      {
+        "path": "raw/500541.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500541",
+        "sha256": "c31131d5b6f9840001d9f0943c1f209512ea59f1c4d72a69b39f660276277e30"
+      },
+      {
+        "path": "raw/500542.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500542",
+        "sha256": "7a1e770d5b4898b076a200b4f6c2b287106a0196027310c2b84986e843e48212"
+      },
+      {
+        "path": "raw/500543.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500543",
+        "sha256": "a1ffa006141198def76ca261598b7a6b191036d2ef0c094f66707175640f833b"
+      },
+      {
+        "path": "raw/500544.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500544",
+        "sha256": "b41adf507fb025e23d43db652943ccba8a66fb101416f26f3adf56432b10d210"
+      },
+      {
+        "path": "raw/500547.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500547",
+        "sha256": "8e5d04ba0ca3dcef609f9a66bf433bcfbf0a97c37ce213bdc3f37690b365fa7d"
+      },
+      {
+        "path": "raw/500548.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500548",
+        "sha256": "78541a7ba1e841b06301d1bfb496992c52d721cc32c9844d2941baed64a135fe"
+      },
+      {
+        "path": "raw/500549.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500549",
+        "sha256": "b4f7d626b8c8e64be3665f92a60ea426dae5959324ccbd18f75786e464abeb80"
+      },
+      {
+        "path": "raw/500550.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500550",
+        "sha256": "be013963e9dedd174e3d9a6cc8b48b46c2f27c50d6fd2e279b2427e612b9514e"
+      },
+      {
+        "path": "raw/500551.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500551",
+        "sha256": "44f566dbcfa4f98cc45af522f8c2df208da26028204fca83ae203ed7ecfe2d11"
+      },
+      {
+        "path": "raw/500552.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500552",
+        "sha256": "074dfc914ffb9c9f3147be705560a19118cd8a6571d7d4a80ff984cfa50115a4"
+      },
+      {
+        "path": "raw/500553.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500553",
+        "sha256": "f05529eb6d77f11ee93e05b419d8ffc282eaff06a1e959dc4a076412fd93a871"
+      },
+      {
+        "path": "raw/500554.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500554",
+        "sha256": "a92aeac9672d5e2fd1a8d8e4568c980ed870e10a44906657377f247a933841b6"
+      },
+      {
+        "path": "raw/500555.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500555",
+        "sha256": "a2f862caf03575910852e78e56b4578732574811552b4308c84660f3d8f2bf26"
+      },
+      {
+        "path": "raw/500557.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500557",
+        "sha256": "a915e4b9fdbda6c10b371cca064f4d9eda72e85bb97056f868a787abda17a553"
+      },
+      {
+        "path": "raw/500558.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500558",
+        "sha256": "e22c407fe70c2ac4c281241c92965c9777690aa1f44e2129e9a757c979cf43fd"
+      },
+      {
+        "path": "raw/500559.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500559",
+        "sha256": "678c2fdd3afa416ef22c4622aa500321975e8b5c4c98c2c1ac449f439db69d4a"
+      },
+      {
+        "path": "raw/500560.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500560",
+        "sha256": "6b4571f841be8246305cd5c2e12dbebf091e467a45546c63d7ece2905aa1ab1e"
+      },
+      {
+        "path": "raw/500561.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500561",
+        "sha256": "6a490ea58b6029038fc732c9b27cfdd4e04beca442636514ebdadd15b906f33a"
+      },
+      {
+        "path": "raw/500562.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500562",
+        "sha256": "ebdcac4d163addbe77913006d7a8521a9f06377b61c86753629303599ea9e640"
+      },
+      {
+        "path": "raw/500563.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500563",
+        "sha256": "1b6271d4a7dd3276cc791aa7fa1c98e1e16c0d4916f069375c8e066a61528f7d"
+      },
+      {
+        "path": "raw/500564.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500564",
+        "sha256": "1dc8a70badd1feb8f56717407ee7b5aa156a9d3cc172d372e6af6f7fa3d13894"
+      },
+      {
+        "path": "raw/500565.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500565",
+        "sha256": "6cf2dcb46f5e810435d533c324769b489982617bf84428cbf165d6eec492b6e8"
+      },
+      {
+        "path": "raw/500566.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500566",
+        "sha256": "3f1167baf8307049e5670f303b481c9ccb0ebd48a40e242cab7b44cbb17e313b"
+      },
+      {
+        "path": "raw/500567.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500567",
+        "sha256": "5da8ff8991c461e0c941118038a697f8e713deebff9256a8450b09df82667c4a"
+      },
+      {
+        "path": "raw/500568.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500568",
+        "sha256": "1f5920f26dbbb10593441407727c7a6bcc4993cfa7164ba38bba5d06148b8867"
+      },
+      {
+        "path": "raw/500569.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500569",
+        "sha256": "99e220f2f836490e0c53610e18d599b16a10d4f955335681d53f9c37d0bdfcef"
+      },
+      {
+        "path": "raw/500570.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500570",
+        "sha256": "e4d8b4d127104679df3b8646d37736e8d00eb60d04c9e2b91658f9289757f5f3"
+      },
+      {
+        "path": "raw/500571.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500571",
+        "sha256": "4e2d1ad9cbbe6212911f199c6b33e70fe7f98a2f4e068b13ff5192b64ec6df55"
+      },
+      {
+        "path": "raw/500572.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500572",
+        "sha256": "f867ddf501185f36f903356d21de6ff7e90f21ad86e7bad0bec46b24331839b7"
+      },
+      {
+        "path": "raw/500573.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500573",
+        "sha256": "2c4f60d7252601932509aab23740d47bb0b5620977a3104d715070adbf110c9d"
+      },
+      {
+        "path": "raw/500574.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500574",
+        "sha256": "4fe47deadf19604304fea76d03c0e7d1b26a3ff7caeb0831cbadb35a1cb11fde"
+      },
+      {
+        "path": "raw/500576.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500576",
+        "sha256": "aca6b6e9383114259b0a6e5d5effe4193207a9f66931cae06d529a81fe2cc02a"
+      },
+      {
+        "path": "raw/500577.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500577",
+        "sha256": "87a5ed3feb051b4df8f96f3a5968803fea04ed1b7eb54a9f167b7b563f159172"
+      },
+      {
+        "path": "raw/500578.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500578",
+        "sha256": "26d35976299e1a85b1fc73cf46efdfe52219466996b70bff58bc884ecb74b0f5"
+      },
+      {
+        "path": "raw/500579.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500579",
+        "sha256": "79aaf5c6091e78c71838f627708f84a68ca2b5018a52d544aaf35d2e417f681b"
+      },
+      {
+        "path": "raw/500580.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500580",
+        "sha256": "0b1178ab04d78e8aac7bf1dc1f78e312525980bae89494eca68ddebf7e63477a"
+      },
+      {
+        "path": "raw/500581.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500581",
+        "sha256": "e86aa2bebec64f98a2b90bab8e4e24a571529e923fdc17e5f3e5720b3efb21c8"
+      },
+      {
+        "path": "raw/500582.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500582",
+        "sha256": "e88d7fd52ccbcfec92d806d2d3fc07563c96d25d1deffef0fed8a516cfbfec63"
+      },
+      {
+        "path": "raw/500583.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500583",
+        "sha256": "49a0e3540ddc3cd09c5d7cd694787946ba9cb650eb87c771e9b316a89df55dd1"
+      },
+      {
+        "path": "raw/500584.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500584",
+        "sha256": "4c82267ea532b435d30707d5600cbee8ff577219dfe0ff3b24b1bbaa07b1c65f"
+      },
+      {
+        "path": "raw/500585.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500585",
+        "sha256": "234fc7ba99c76c51f3427ec466c47701348a82487b86521012188dffc13328ce"
+      },
+      {
+        "path": "raw/500586.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500586",
+        "sha256": "869cd38a7f48db2e6038b631d32d163a66ce371cf7f6927945fe8a1d5edc0edc"
+      },
+      {
+        "path": "raw/500587.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500587",
+        "sha256": "0d6c93ab9df44c76323853338bd04ce0b3d8f6779f3309fdcab634f8c0dcd781"
+      },
+      {
+        "path": "raw/500588.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500588",
+        "sha256": "9fede2cde69d4011d94f26620fe4505d5c8497488a6eb7630a541199a14ef54e"
+      },
+      {
+        "path": "raw/500589.json",
+        "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/500589",
+        "sha256": "3f1df712da2904982ea7dcf32aff54e7968a50c5dc9c946d13ac6e482393ee19"
+      },
+      {
+        "path": "raw/LICENSE",
+        "url": "https://raw.githubusercontent.com/metmuseum/openaccess/master/LICENSE",
+        "sha256": "36ffd9dc085d529a7e60e1276d73ae5a030b020313e6c5408593a6ae2af39673"
+      }
+    ]
+  },
+  "search": "",
+  "records": [
+    {
+      "id": "500526",
+      "title": "Ūd",
+      "department": "Musical Instruments",
+      "objectName": "Ūd",
+      "culture": null,
+      "objectDate": "19th century",
+      "beginYear": 1801,
+      "endYear": 1900,
+      "medium": "wood",
+      "artist": null,
+      "artistPrefix": null,
+      "artistSuffix": null,
+      "classification": "Chordophone-Lute-plucked-unfretted",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/500526"
+    },
+    {
+      "id": "500527",
+      "title": "Pipe Organ",
+      "department": "Musical Instruments",
+      "objectName": "Pipe Organ",
+      "culture": "American",
+      "objectDate": "ca. 1850",
+      "beginYear": 1840,
+      "endYear": 1860,
+      "medium": "Wood, metal, various materials",
+      "artist": "Richard M. Ferris",
+      "artistPrefix": null,
+      "artistSuffix": null,
+      "classification": "Aerophone-Organ",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/500527"
+    }
+  ],
+  "interpretation": {
+    "author": "user",
+    "observation": "Both entries mention wood; their material descriptions differ in detail.",
+    "unresolvedQuestion": "Why does the Ūd entry lack a maker?"
+  },
+  "limitations": "Convenience sample of the 60 lowest IDs. Not representative. Notes are user interpretation, not source assertions."
+}

@@ -1,0 +1,7 @@
+
+> fancy-research-tools@0.1.0 check:data
+> node scripts/check-data.mjs && node scripts/check-annotation-data.mjs
+
+Verified 60 source records and 11 expected queries.
+Frozen source checksums and all derived files verified without changing the dataset.
+Frozen NHC source, rights and text derivation verified without dataset changes.

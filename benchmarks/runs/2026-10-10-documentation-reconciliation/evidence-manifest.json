@@ -1,0 +1,21 @@
+{
+  "recordedAt": "2026-10-10T16:15:45.023Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": ".last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "documentation-desktop.png",
+      "bytes": 717336,
+      "sha256": "b3007226f7c012a5df6dfa2032c2358fd71cb0678f5c4a593a49a31f576e02ca"
+    },
+    {
+      "path": "documentation-mobile.png",
+      "bytes": 495522,
+      "sha256": "523976651dd95189307a10c9a084118b3d1f32006044b39a9dfbe22e6829bd84"
+    }
+  ]
+}

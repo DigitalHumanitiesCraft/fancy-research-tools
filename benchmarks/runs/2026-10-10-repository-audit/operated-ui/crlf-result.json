@@ -1,0 +1,34 @@
+{
+  "input": {
+    "query": "wood\r\nmetal",
+    "researchQuestion": "First\r\nSecond",
+    "interpretation": {
+      "observation": "a\r\nb",
+      "unresolvedQuestion": "why\r\nwhat",
+      "author": "user"
+    },
+    "ids": [
+      "500526",
+      "500531"
+    ]
+  },
+  "output": {
+    "query": "wood\r\nmetal",
+    "researchQuestion": "FirstSecond",
+    "interpretation": {
+      "observation": "a\nb",
+      "unresolvedQuestion": "why\nwhat",
+      "author": "user"
+    },
+    "ids": [
+      "500526",
+      "500531"
+    ]
+  },
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "Replace the current investigation with this file? Export current work first if you want to keep it."
+    }
+  ]
+}

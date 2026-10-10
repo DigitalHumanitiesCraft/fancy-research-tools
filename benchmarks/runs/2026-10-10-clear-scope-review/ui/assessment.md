@@ -1,0 +1,25 @@
+# Bounded operated /pilot/ review, 2026-10-10
+
+Agent: gpt-6.1-sol. No human participant, researcher acceptance, rating, timing metric or winning concept is claimed. This applies research-ui-evaluate once to the current workbench, not a cross-project validation of the skill.
+
+Skill SHA256: E6BB098E29ACF0E001396FF96E0EBE73614120F7391373DFA30522E7F4E8CE07. Read AGENTS, knowledge INDEX/handoff/plan/design/specification/testing, common comparison brief/protocol, web-style and its two vault source documents. Long tool outputs were truncated; the relevant design/protocol documents were subsequently retrieved separately. No implementation edits, build or shared final test suite were performed.
+
+Context: Windows PowerShell, installed repository Playwright and fresh headless Chromium contexts, HTTP http://127.0.0.1:4173/pilot/, desktop 1440x900 and narrow 320x700. PID 40200 runs Vite preview. Parent identifies baseline HEAD 85353dd942ebdcc1a53dd976c42b762f7a1a0be2 plus uncommitted/untracked source capture. served-assets.json records response-byte SHA256; all listed HTTP resources match the current dist files. The current dist-to-uncommitted-source equivalence was not independently rebuilt, so build freshness remains uncertain. Original selected exported records were deep-equal to data/met-instruments/records.json rows.
+
+Observed task:
+1. Rendered and inspected collection screenshot before source diagnosis. Search wood via Enter yielded 41 matching instruments.
+2. Focused explicit Compare buttons for Book Harmonium 500531 and Oboe 500533, used Space/Enter, and activated Compare selection via Enter. Selection button retained focus and aria-pressed=true. Settled hash navigation focused Comparison h1; screenshot shows its visible keyboard ring.
+3. Compared Wood, various materials / Boxwood, brass, second half 19th century / ca. 1806–13, Lepuye (?) / Johann Heinrich Grenser, and indexing date bounds. Wrote a bounded catalogue observation, research question and unresolved attribution question. No historical prevalence inference.
+4. Reload restored selection, question and observation. Downloaded actual instrument-investigation.json (17,632 bytes), inspected its JSON separation of interpretation/source/provenance, and deep-compared both complete original selected records with local source projection.
+5. Fresh context reopened actual file after explicitly accepting the native replacement confirmation. Question, original source evidence and observation reappeared in Comparison (reopened-confirmed.png).
+6. Drag-selected the original Material text (Wood, various mat) without navigation. At 320px document scrollWidth=320; comparison remains a local labelled tabindex=0 region, width286/scrollWidth544, and ArrowRight moved scrollLeft 0→40. Screenshot narrow.png retains writing controls and file recovery in document flow.
+7. Reopened isolated work, made an empty search (0 matching instruments) retaining both selected objects; Reset restored collection. Removed Oboe (focus moved to heading), added Pipe Organ, returned to comparison: note remained intact. This demonstrates retained notes; it does not automatically revise a note referring to a removed record.
+8. Operated About and inspected provenance/sample limits. Headings on Collection, Comparison and About lead to controls/evidence, with no introductory subline observed. Caption and note qualifications stay beside evidence/writing.
+
+Interventions/errors in harness: initial focus read immediately after hash activation observed BODY before asynchronous focus completed. Initial import attempts let Playwright automatically dismiss confirm, so they read blank notes. Neither is a product defect; repeated settled navigation and explicit dialog acceptance established correct behavior. observations.json deliberately retains the original provisional readings; followup-confirm.cjs records the corrective procedure. Initial start.png was captured before asynchronous result-status filled; no missing-count defect is inferred.
+
+Confirmed defects: none in this bounded operation. No corrective implementation proposed.
+
+Limits/omissions: only current /pilot/ operated; no fair three-concept comparison, documentation/editor tutorial review or screen-reader task. No native browser zoom, full keyboard-only traversal, automated contrast/axe scan, storage-failure/corrupt-import trial, browser Back verification, or human interpretation/experience assessment. Focus() was used to target controls before keyboard activation, so this is bounded keyboard evidence, not complete keyboard-only usability. No real browser drafts touched. No dependency/source/build mutation.
+
+Evidence: start.png, comparison.png, narrow.png, reopened-confirmed.png, replacement-narrow.png; instrument-investigation.json; served-assets.json; observations.json; inspect.cjs/workflow.cjs/followup-confirm.cjs/extra.cjs. Earlier failed followup.cjs is retained as harness history. All evidence is in this fresh scratch directory, outside historical benchmarks.

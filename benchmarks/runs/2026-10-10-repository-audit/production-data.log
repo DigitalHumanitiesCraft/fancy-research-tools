@@ -1,0 +1,7 @@
+{"label":"production-data","cwd":"C:/Users/chris/Documents/GitHub/fancy-research-tools","command":["C:\\Program Files\\nodejs\\node.exe","C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js","run","check:data"],"started":"2026-10-10T17:49:53.101Z","ended":"2026-10-10T17:49:53.617Z","exitCode":0}
+
+> fancy-research-tools@0.1.0 check:data
+> node scripts/check-data.mjs
+
+Verified 60 source records and 11 expected queries.
+Frozen source checksums and all derived files verified without changing the dataset.

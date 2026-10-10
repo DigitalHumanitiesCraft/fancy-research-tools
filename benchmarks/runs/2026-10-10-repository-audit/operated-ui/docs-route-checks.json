@@ -1,0 +1,190 @@
+{
+  "version": "production4173 before rebuild",
+  "pages": [
+    {
+      "title": "Overview",
+      "url": "http://127.0.0.1:4173/index.html",
+      "status": 200,
+      "headings": [
+        "Fancy Research Tools",
+        "Try the workflow",
+        "Understand the contracts",
+        "DHCraft context"
+      ]
+    },
+    {
+      "title": "Get started",
+      "url": "http://127.0.0.1:4173/guides/getting-started.html",
+      "status": 200,
+      "headings": [
+        "Getting started",
+        "Work with a coding agent",
+        "Create your repository",
+        "Run locally",
+        "Exercise a complete workflow",
+        "Exercise local metadata editing",
+        "Check the project",
+        "Publish a static site"
+      ]
+    },
+    {
+      "title": "Customize",
+      "url": "http://127.0.0.1:4173/guides/customizing.html",
+      "status": 200,
+      "headings": [
+        "Customizing a research tool",
+        "Define the task",
+        "Adapt an existing tool",
+        "Give an agent a bounded adaptation",
+        "Worked adaptation of Instrument study",
+        "Replace the data contract",
+        "Adapt the interface",
+        "Maintain the knowledge base",
+        "Plan updates",
+        "Hand over maintenance"
+      ]
+    },
+    {
+      "title": "Research basis",
+      "url": "http://127.0.0.1:4173/guides/research.html",
+      "status": 200,
+      "headings": [
+        "Research basis",
+        "Development commitments",
+        "Research tools",
+        "Compare existing tools",
+        "Open-data candidates",
+        "Simulate stakeholder perspectives",
+        "Research work and design requirements",
+        "Recent empirical and system evidence",
+        "Evaluate an adaptation",
+        "Method"
+      ]
+    },
+    {
+      "title": "Development study",
+      "url": "http://127.0.0.1:4173/guides/development-study.html",
+      "status": 200,
+      "headings": [
+        "Research-tool development study, protocol 1",
+        "Questions and evidence",
+        "Stages",
+        "Episode record",
+        "Tasks and criteria",
+        "Comparisons",
+        "Agent-only preparation cases",
+        "Acceptance and reporting"
+      ]
+    },
+    {
+      "title": "Project",
+      "url": "http://127.0.0.1:4173/reference/project.html",
+      "status": 200,
+      "headings": [
+        "Project",
+        "Data basis",
+        "Context",
+        "Purpose",
+        "Development commitments",
+        "Standards",
+        "Technical implementation",
+        "Functional scope",
+        "Terms",
+        "License"
+      ]
+    },
+    {
+      "title": "Specification",
+      "url": "http://127.0.0.1:4173/reference/specification.html",
+      "status": 200,
+      "headings": [
+        "Specification",
+        "DH pilot contract",
+        "Requirements",
+        "Epics and user stories",
+        "Functional scope",
+        "Adaptation scenarios for investigation",
+        "Decisions",
+        "Provisional concept-study requirements",
+        "Investigation workbench contract",
+        "Development and handover acceptance"
+      ]
+    },
+    {
+      "title": "Architecture",
+      "url": "http://127.0.0.1:4173/reference/architecture.html",
+      "status": 200,
+      "headings": [
+        "Architecture",
+        "Core and adaptation boundaries",
+        "Stack",
+        "Components",
+        "Data flow",
+        "Field evidence and compatibility",
+        "Security",
+        "Accessibility",
+        "Repository structure",
+        "Build and deployment",
+        "Investigation workbench and concepts"
+      ]
+    },
+    {
+      "title": "Data",
+      "url": "http://127.0.0.1:4173/reference/data.html",
+      "status": 200,
+      "headings": [
+        "Data",
+        "Subject",
+        "Sources",
+        "Model",
+        "Limits",
+        "Workflow",
+        "Relationship to source material",
+        "Investigation exchange",
+        "Provenance of individual values"
+      ]
+    },
+    {
+      "title": "Design",
+      "url": "http://127.0.0.1:4173/reference/design.html",
+      "status": 200,
+      "headings": [
+        "Design",
+        "Task hierarchy",
+        "Design system",
+        "Information visualisation",
+        "Interaction patterns",
+        "Accessibility basis",
+        "Action-layer connection",
+        "Interaction concept study",
+        "Task-based interface review",
+        "Interface copy constraint",
+        "Selectable content"
+      ]
+    },
+    {
+      "title": "Testing",
+      "url": "http://127.0.0.1:4173/reference/testing.html",
+      "status": 200,
+      "headings": [
+        "Testing",
+        "Test strategy",
+        "Claims and evidence",
+        "Acceptance",
+        "UI acceptance protocol",
+        "Coverage limits",
+        "How to run",
+        "Earlier catalogue verification evidence",
+        "Earlier three-concept study evidence",
+        "Introductory subline acceptance check",
+        "Session closeout verification, 2026-10-10",
+        "Documentation reconciliation, 2026-10-10",
+        "Project decisions and provenance, 2026-10-10"
+      ]
+    }
+  ],
+  "narrow": {
+    "scrollWidth": 320,
+    "innerWidth": 320
+  }
+}

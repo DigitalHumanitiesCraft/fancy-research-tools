@@ -1,0 +1,62 @@
+
+> fancy-research-tools@0.1.0 prebuild
+> node scripts/build-docs.mjs && node scripts/build-gallery.mjs
+
+Built gallery with 8 tools and one edition template.
+
+> fancy-research-tools@0.1.0 build
+> vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 64 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/concepts/atlas/index.html                    1.39 kB │ gzip:  0.63 kB
+dist/index.html                                   2.52 kB │ gzip:  1.09 kB
+dist/tool/index.html                              3.30 kB │ gzip:  1.17 kB
+dist/concepts/bench/index.html                    3.42 kB │ gzip:  1.39 kB
+dist/concepts/index.html                          3.90 kB │ gzip:  1.33 kB
+dist/concepts/trail/index.html                    4.43 kB │ gzip:  1.72 kB
+dist/assets/cmif-schoenbach-B_DriOfp.xml          4.87 kB │ gzip:  0.96 kB
+dist/baseline/index.html                          5.31 kB │ gzip:  1.96 kB
+dist/pilot/index.html                             5.62 kB │ gzip:  1.99 kB
+dist/annotations/index.html                       5.78 kB │ gzip:  1.80 kB
+dist/letters/index.html                           6.31 kB │ gzip:  2.03 kB
+dist/tools/index.html                             8.14 kB │ gzip:  1.99 kB
+dist/reference/project.html                      10.34 kB │ gzip:  4.01 kB
+dist/guides/getting-started.html                 15.50 kB │ gzip:  5.72 kB
+dist/guides/development-study.html               17.36 kB │ gzip:  6.31 kB
+dist/reference/architecture.html                 18.80 kB │ gzip:  6.46 kB
+dist/reference/data.html                         19.45 kB │ gzip:  7.30 kB
+dist/guides/research.html                        20.36 kB │ gzip:  7.31 kB
+dist/guides/customizing.html                     22.57 kB │ gzip:  7.74 kB
+dist/reference/design.html                       25.75 kB │ gzip:  9.05 kB
+dist/reference/specification.html                29.98 kB │ gzip: 10.03 kB
+dist/reference/testing.html                      37.28 kB │ gzip: 12.12 kB
+dist/assets/index-Q-f4PfQC.css                    1.76 kB │ gzip:  0.79 kB
+dist/assets/index-D7LIzqSV.css                    1.81 kB │ gzip:  0.74 kB
+dist/assets/index-D-hMVccb.css                    4.76 kB │ gzip:  1.53 kB
+dist/assets/main-O7Oh13Fr.css                     5.01 kB │ gzip:  1.71 kB
+dist/assets/index-D_pRJlVt.css                    5.27 kB │ gzip:  1.79 kB
+dist/assets/index-DuHF-w7n.css                    5.42 kB │ gzip:  1.69 kB
+dist/assets/index-n6US5HEp.css                    5.50 kB │ gzip:  1.81 kB
+dist/assets/styles-D8Q6zNuV.css                   6.76 kB │ gzip:  2.21 kB
+dist/assets/index-DtOJ4ktX.css                    6.81 kB │ gzip:  2.10 kB
+dist/assets/index-882kvd1y.css                    7.17 kB │ gzip:  2.16 kB
+dist/assets/docs-DCVcmqxG.js                      0.02 kB │ gzip:  0.03 kB
+dist/assets/text-value-DPc3ypM1.js                0.14 kB │ gzip:  0.13 kB
+dist/assets/modulepreload-polyfill-P2Xu9kJm.js    0.67 kB │ gzip:  0.38 kB
+dist/assets/index-CO_ajFtz.js                     0.76 kB │ gzip:  0.52 kB
+dist/assets/icons-B0Zowo1T.js                     1.04 kB │ gzip:  0.61 kB
+dist/assets/index-Bf7RW5R1.js                     4.86 kB │ gzip:  2.10 kB
+dist/assets/index-BwB-Vd_i.js                     5.20 kB │ gzip:  2.17 kB
+dist/assets/index-7TveG9Jo.js                     8.47 kB │ gzip:  3.43 kB
+dist/assets/index-CRIaihHT.js                     9.49 kB │ gzip:  3.82 kB
+dist/assets/index-Cyw9_6ay.js                    10.05 kB │ gzip:  4.10 kB
+dist/assets/index-DakvI9Wv.js                    21.05 kB │ gzip:  6.40 kB
+dist/assets/main-DgJXR74Q.js                     25.85 kB │ gzip: 10.44 kB
+dist/assets/records-B0SmZL-k.js                  34.11 kB │ gzip:  6.97 kB
+dist/assets/browser-ClDs7QqY.js                 158.09 kB │ gzip: 12.64 kB
+
+✓ built in 299ms

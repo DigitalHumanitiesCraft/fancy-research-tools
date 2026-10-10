@@ -1,0 +1,3 @@
+# Keep frozen source and deterministic output bytes stable across checkouts.
+raw/** -text
+sources.json -text

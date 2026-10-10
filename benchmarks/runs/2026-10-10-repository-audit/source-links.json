@@ -1,0 +1,11 @@
+{
+  "markdownFiles": 26,
+  "localLinks": 133,
+  "unresolvedApartFromPendingAssessmentPromotion": [],
+  "stagedAssessmentLinks": [
+    {
+      "path": "benchmarks/README.md",
+      "href": "runs/2026-10-10-repository-audit/assessment.md"
+    }
+  ]
+}

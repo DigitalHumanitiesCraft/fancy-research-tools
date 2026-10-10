@@ -1,0 +1,11 @@
+# UI refinement, 2026-10-10
+
+The operator judged the initial pilot too text-heavy and asked for icons, information visualisation and repository-wide UI knowledge. The lead coordinated one pilot implementation agent and one knowledge-refactoring agent, then integrated shared components, editor presentation and documentation. All agents shared the previous context and working tree. This remains an assisted development review.
+
+The source metadata and independent query oracle are unchanged. The UI adds categorical bars, missingness filters, preserved focus on chart interactions, compact object context and optional catalogue details. Documentation gains grouped navigation and section links. The editor reuses labelled action symbols and a compact metadata layout while retaining persistence behaviour.
+
+The integrated checks passed type/lint, 24 unit tests, production build and 14 Playwright Chromium tests. Chromium version is 156.0.8078.4 on Windows, Node.js 22.14.0. Download tests inspect actual selection data and provenance. The original source oracle still supplies the expected query results. Automated axe checks passed in the tested states. Desktop and narrow screenshots were reviewed. The new interaction test initially failed because its exact text-label locator did not identify the culture select. Locating the combobox by role and accessible name fixed the test. A narrow landing-page table wrapped words excessively and was replaced with workflow links.
+
+The source identity is `2026-10-10-ui-refinement-source.json`. The earlier run manifest remains unchanged and identifies the earlier implementation, so its source check is expected to differ after this revision. Verify the new identity with `node benchmarks/capture-source.mjs --output 2026-10-10-ui-refinement-source.json --check`.
+
+Keyboard evidence covers named automated interactions, including chart toggling and focus retention. Reflow at 320 CSS pixels and 200% text enlargement were checked. Native browser zoom, screen-reader completion, full keyboard-only research workflow, independent reproduction and researcher interpretation are not run. Screenshots establish appearance at selected states. No time savings, aggregate UX score or research acceptance is inferred.

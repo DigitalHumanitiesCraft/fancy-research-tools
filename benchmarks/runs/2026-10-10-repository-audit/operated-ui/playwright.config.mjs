@@ -1,0 +1,1 @@
+export default {testDir:'C:/Users/chris/Documents/GitHub/fancy-research-tools/tests/e2e',use:{baseURL:'http://127.0.0.1:4174',trace:'retain-on-failure'},outputDir:'C:/Users/chris/Documents/Codex/2026-10-10/ana/work/repository-audit-ui/test-results',reporter:'list'};

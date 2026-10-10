@@ -1,0 +1,37 @@
+[
+  {
+    "name": "check",
+    "command": "npm run check",
+    "startedAt": "2026-10-10T18:19:43.803Z",
+    "finishedAt": "2026-10-10T18:19:44.825Z",
+    "exitCode": 0
+  },
+  {
+    "name": "data",
+    "command": "npm run check:data",
+    "startedAt": "2026-10-10T18:19:44.827Z",
+    "finishedAt": "2026-10-10T18:19:45.545Z",
+    "exitCode": 0
+  },
+  {
+    "name": "unit",
+    "command": "npm test",
+    "startedAt": "2026-10-10T18:19:45.545Z",
+    "finishedAt": "2026-10-10T18:19:46.695Z",
+    "exitCode": 0
+  },
+  {
+    "name": "build",
+    "command": "npm run build",
+    "startedAt": "2026-10-10T18:19:46.696Z",
+    "finishedAt": "2026-10-10T18:19:47.716Z",
+    "exitCode": 0
+  },
+  {
+    "name": "browser",
+    "command": "npm run test:e2e -- --output C:/Users/chris/Documents/Codex/2026-10-10/ana/work/review-ready-checks-final/browser",
+    "startedAt": "2026-10-10T18:19:47.717Z",
+    "finishedAt": "2026-10-10T18:20:05.712Z",
+    "exitCode": 0
+  }
+]

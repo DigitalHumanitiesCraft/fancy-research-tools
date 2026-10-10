@@ -1,0 +1,21 @@
+[
+  {
+    "name": "other-case",
+    "message": "Notebook not opened: Unsupported annotation notebook version or case. Open it in its original research case. Current work is unchanged.",
+    "unchanged": true
+  },
+  {
+    "name": "forged-editor",
+    "message": "Notebook not opened: Unknown or changed source snapshot. Preserve the original source text. Current work is unchanged.",
+    "unchanged": true
+  },
+  {
+    "name": "other-source-under-valid-case",
+    "message": "Notebook not opened: Unsupported or missing notebook fields. Current work is unchanged.",
+    "unchanged": true
+  },
+  {
+    "name": "imported-same-id-different-source",
+    "hiddenOriginalEvidence": true
+  }
+]

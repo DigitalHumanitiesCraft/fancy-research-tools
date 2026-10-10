@@ -1,0 +1,206 @@
+{
+  "startedAt": "2026-10-10T18:23:11.478Z",
+  "method": "Native Chromium tab zoom via chrome.tabs.setZoom in automatic/per-tab mode. 1280x900 physical browser viewport, 640x450 CSS pixels at 200%, 320x225 at 400%. Captures use chrome.tabs.captureVisibleTab. Fresh isolated profile per zoom factor; no user profile accessed.",
+  "cases": [
+    {
+      "name": "annotation",
+      "route": "/annotations/",
+      "factor": 2,
+      "captures": [
+        "annotation-2-start.png",
+        "annotation-2-source-end.png",
+        "annotation-2-source-selection.png",
+        "annotation-2-review-form.png",
+        "annotation-2-saved-review.png",
+        "annotation-2-returned-quotation.png",
+        "annotation-2-notebook-controls.png"
+      ],
+      "initialLocalKeys": [],
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "sourceTitle": "Tropical Storm Milton Discussion Number 2",
+      "sourceAttribution": {
+        "issued": "400 PM CDT Sat Oct 05 2024",
+        "forecaster": "Brown",
+        "url": "https://www.nhc.noaa.gov/archive/2024/al14/al142024.discus.002.shtml"
+      },
+      "endReading": {
+        "caret": 4077,
+        "length": 4077,
+        "scrollTop": 2359,
+        "scrollHeight": 2709,
+        "clientHeight": 350
+      },
+      "selection": {
+        "start": 168,
+        "end": 309,
+        "text": "Scatterometer data around midday confirmed that the circulation of\nthe depression was well-defined, and it also revealed peak winds of\n35 kt.",
+        "scrollTop": 0
+      },
+      "returnedSelection": {
+        "focused": true,
+        "start": 168,
+        "end": 309,
+        "text": "Scatterometer data around midday confirmed that the circulation of\nthe depression was well-defined, and it also revealed peak winds of\n35 kt.",
+        "scrollTop": 157
+      },
+      "download": "annotation-2-notebook.json",
+      "downloadName": "milton-annotation-notebook.json",
+      "exportHash": "f4dcb56aae0962b4c44099c2d8d2ca1ea3aeb91d2dd34eac9583bc2fd1dfcc8d",
+      "exportSummary": {
+        "annotations": 1,
+        "sourceId": "nhc-al142024-discussion-002",
+        "sourceTextSha256": "20d9b9233c5fd77237663b98ac6e98cb51e3d5d711e597067e641236e61f8805",
+        "review": {
+          "reviewer": {
+            "kind": "agent",
+            "name": "Engineering reviewer"
+          },
+          "criterion": "Exported quotation equals the selected source span.",
+          "result": "supports"
+        },
+        "creator": {
+          "kind": "agent",
+          "name": "Engineering review agent"
+        }
+      },
+      "restoredAfterReload": true,
+      "finalNoopEditPreservesReview": true,
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "status": "passed"
+    },
+    {
+      "name": "annotation",
+      "route": "/annotations/",
+      "factor": 4,
+      "captures": [
+        "annotation-4-start.png",
+        "annotation-4-source-end.png",
+        "annotation-4-source-selection.png",
+        "annotation-4-review-form.png",
+        "annotation-4-saved-review.png",
+        "annotation-4-returned-quotation.png",
+        "annotation-4-notebook-controls.png"
+      ],
+      "initialLocalKeys": [],
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 320
+      },
+      "sourceTitle": "Tropical Storm Milton Discussion Number 2",
+      "sourceAttribution": {
+        "issued": "400 PM CDT Sat Oct 05 2024",
+        "forecaster": "Brown",
+        "url": "https://www.nhc.noaa.gov/archive/2024/al14/al142024.discus.002.shtml"
+      },
+      "endReading": {
+        "caret": 4077,
+        "length": 4077,
+        "scrollTop": 4494.75,
+        "scrollHeight": 4845,
+        "clientHeight": 350
+      },
+      "selection": {
+        "start": 168,
+        "end": 309,
+        "text": "Scatterometer data around midday confirmed that the circulation of\nthe depression was well-defined, and it also revealed peak winds of\n35 kt.",
+        "scrollTop": 301
+      },
+      "returnedSelection": {
+        "focused": true,
+        "start": 168,
+        "end": 309,
+        "text": "Scatterometer data around midday confirmed that the circulation of\nthe depression was well-defined, and it also revealed peak winds of\n35 kt.",
+        "scrollTop": 205
+      },
+      "download": "annotation-4-notebook.json",
+      "downloadName": "milton-annotation-notebook.json",
+      "exportHash": "34e201d52268c6d7730984483dd4e01b357bf4063e00805b0f82893c8a0a11fd",
+      "exportSummary": {
+        "annotations": 1,
+        "sourceId": "nhc-al142024-discussion-002",
+        "sourceTextSha256": "20d9b9233c5fd77237663b98ac6e98cb51e3d5d711e597067e641236e61f8805",
+        "review": {
+          "reviewer": {
+            "kind": "agent",
+            "name": "Engineering reviewer"
+          },
+          "criterion": "Exported quotation equals the selected source span.",
+          "result": "supports"
+        },
+        "creator": {
+          "kind": "agent",
+          "name": "Engineering review agent"
+        }
+      },
+      "restoredAfterReload": true,
+      "finalNoopEditPreservesReview": true,
+      "final": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "visualScale": 1,
+        "scrollWidth": 320
+      },
+      "status": "passed"
+    }
+  ],
+  "resources": {
+    "http://127.0.0.1:4173/annotations/": {
+      "sha256": "acd36e32b03143914bb4d1609b76091b6593f928b83a40a44a159fd469509c66",
+      "bytes": 5801
+    },
+    "http://127.0.0.1:4173/assets/text-value-DPc3ypM1.js": {
+      "sha256": "2c6bec3cfe798435c8a6ffab38c1b84296f68c25ae55c229e43513e70976af43",
+      "bytes": 143
+    },
+    "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js": {
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "bytes": 670
+    },
+    "http://127.0.0.1:4173/assets/index-LHIK1Xfr.css": {
+      "sha256": "b449f79481fe4de924725f7839ef9c21dfd33defaa6cdfe8e6d7624cbe4f6ba3",
+      "bytes": 4301
+    },
+    "http://127.0.0.1:4173/assets/index-BT_WXvOB.js": {
+      "sha256": "2330bacbb36467e1749da175cfbe74644925b34207efe8bfd4db99a5cd2321aa",
+      "bytes": 23185
+    },
+    "http://127.0.0.1:4173/annotations/?source=nhc-al142024-discussion-002": {
+      "sha256": "acd36e32b03143914bb4d1609b76091b6593f928b83a40a44a159fd469509c66",
+      "bytes": 5801
+    }
+  },
+  "browser": "156.0.8078.4",
+  "finishedAt": "2026-10-10T18:23:26.125Z"
+}

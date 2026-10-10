@@ -1,0 +1,192 @@
+{
+  "added": 3,
+  "changed": 34,
+  "removed": 0,
+  "files": [
+    {
+      "path": ".github/workflows/check.yml",
+      "previousHash": "79129ff01ba29bb4f5dd17d33dcb4ba75a81381cf1d2e7db38a758821409bc4f",
+      "currentHash": "9dfc0e9e2443230b7e1443c5f1df6852ba56c5d53e34c7e8d6ffde88049eaa5b"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "previousHash": "00f396634760cb87ba548126da2bc8867796e8bf1857ccbd4c7be604b6906d80",
+      "currentHash": "6679602c4ef573e096ec0f92809bd40cfd08f0ad507cd68ecee8b7c4ffb4978c"
+    },
+    {
+      "path": "AGENTS.md",
+      "previousHash": "7cdff150bb0370544aec2a04cc7323645ccc02cb9bf17837b012fce943246058",
+      "currentHash": "870cdf50229476860f71905f84b76d1815648e1b73e4728b0d3cfb52abb1b348"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "previousHash": "9953beaf6debc9d634682c1d82cc7f301152614940334f681571670cef2373d6",
+      "currentHash": "950a40a4d56d8b6b5f2ac89f79a4304faed0c9cced8f412cfe7d6845249cf061"
+    },
+    {
+      "path": "README.md",
+      "previousHash": "035c70c1444a5e669c33f89e80b29bc52dd5bb97b7698295d7c5b08d895cc4e6",
+      "currentHash": "b0b5ffa84c44c75031116836bb4096373761107f56ce586c1ad99b79e0c1df70"
+    },
+    {
+      "path": "benchmarks/README.md",
+      "previousHash": "d096e12334b289aabe7fb2c3583a1858ea6e87fcefd1f26f0463139db464d4be",
+      "currentHash": "d10da6fa03d274e2290236ca97bbcfc7d24ff54326095faca2c88460eae1df54"
+    },
+    {
+      "path": "benchmarks/development-study-protocol.md",
+      "previousHash": "570c4bb52ab01f22210d0dd2331dfd394a0f350c43198dfec57ee88c05ffb824",
+      "currentHash": "35d979526f60220303e1f248c40d350b7014a742a46f82219ff109c603fd78e0"
+    },
+    {
+      "path": "data/met-instruments/.gitattributes",
+      "previousHash": "9e9eccc430591cf069079edd13612875df922ce9418fb9c0d74f9ff2df64909d",
+      "currentHash": "36e14708166b1da6944d1e5ba86107a05e5c21b5802b8610eb3707a0ffe54b95"
+    },
+    {
+      "path": "docs/customizing.md",
+      "previousHash": "899b4a4255af8ab1510826e2a07736a9a76cf50c22ae3e4f2ce264305b5e5bb4",
+      "currentHash": "5f1beb9e030ac9a74f2fceb5b35d8a42fe7b83699efea0b78ff6f3b58f75fade"
+    },
+    {
+      "path": "docs/getting-started.md",
+      "previousHash": "c2675e03976d460d6fe3066020aca351e10111b04be8fdc15971f880bf72d92c",
+      "currentHash": "fec00f8ee52eaa2f9d89291be4a1c7588ac66f3adddd7ebb9190e069ab0ccea2"
+    },
+    {
+      "path": "docs/index.md",
+      "previousHash": "40f0c6956fbde59ce483eef3829c14d47f6962fca503482e79f802f49b6107dc",
+      "currentHash": "80e5f35d8b7f342c702cdccbe44b6b7b97f68f8e4f8c88ef4df6c2fe6d9ad223"
+    },
+    {
+      "path": "docs/research.md",
+      "previousHash": "008d42429b4aea63f117c2ae1f222de72eef0cad1d5bcd919095ffc1a1fb4b96",
+      "currentHash": "f9cbc150fba68b0de6d76ae9bbaad84d83bf479bdc493a03d1578a586f93e26d"
+    },
+    {
+      "path": "knowledge/architecture.md",
+      "previousHash": "e406d7b454e1bc990b3630433f6f27e1de0245221e78acf15a85fe5ad730a0a9",
+      "currentHash": "da996f85ffb2b0004f51ca76dff7534836daaf6616f9ff7709223ea52d39c7ef"
+    },
+    {
+      "path": "knowledge/data.md",
+      "previousHash": "238fe8ad46fd3d060793783d9f368bd6c0edb8cf3091ffe116f3314f6e157d49",
+      "currentHash": "cf64180565f15573081812149ba590b9954eff946738086617dd5fcc5e48e83d"
+    },
+    {
+      "path": "knowledge/design.md",
+      "previousHash": "13c71b8e7ff512f24c6597c121451ab5550fbeab18bebac4aec404762b858bc6",
+      "currentHash": "b721b2d49f3bf8ae30dadbde08b6f6ccc9e50928e68b0225e7d29a907b6bf9fd"
+    },
+    {
+      "path": "knowledge/journal.md",
+      "previousHash": "261faf36655e66c6c7f23f1bf5dbc39d42402b447248894b6f5dee2182fe885a",
+      "currentHash": "8457582c954e4333f464b7c60371ef2944d83fa8435f9cd51f86a5c694831c4d"
+    },
+    {
+      "path": "knowledge/plan.md",
+      "previousHash": "183a323f9a582f7269d2d4972e7c75d4ccf38fa1be4d5479650b44f4fcad0d0c",
+      "currentHash": "ca2fcecd16f9840e0197933da5763ed7dd945e8a3a04b1cbbcd057718a0a9892"
+    },
+    {
+      "path": "knowledge/specification.md",
+      "previousHash": "3780dde5cff3576913eed8d7a1846ec56023614e7522e6bea0b83a58abde78fa",
+      "currentHash": "d4eb51b130b5808caecc31b0795496d4b3793b5d385813d36f3674e596a89987"
+    },
+    {
+      "path": "knowledge/testing.md",
+      "previousHash": "40d490e805d5543b56addc8b9f17fa1aac2b449d99b1b558d2010b58315b8182",
+      "currentHash": "f9152958daa14475971755c882428b60f192cdcb7757679e4a3e8c55e9b16e7d"
+    },
+    {
+      "path": "package.json",
+      "previousHash": "37fa3fb910c84235fc536e939014dcc8433a76a6ca0e9305c4e69bc779ee0169",
+      "currentHash": "7c1abb56f7285a4379adc68e4a836d8f5e145fbc99014bac8f15dd174822a6be"
+    },
+    {
+      "path": "scripts/.gitattributes",
+      "previousHash": null,
+      "currentHash": "6fadfb5ae8f22cedb6f5344a4f37ce89943972414ccc189cda3411788c1aa45b"
+    },
+    {
+      "path": "scripts/build-docs.mjs",
+      "previousHash": "a7161fdea3eee95461694fa1cec3c25c699b00268b03ecb1ae0c1941d11bf8b1",
+      "currentHash": "7a50fe87f38db961b60a021439635bdf8eb1709064f1bbba476c5fa56530a57c"
+    },
+    {
+      "path": "scripts/check-data.mjs",
+      "previousHash": null,
+      "currentHash": "9309cf69c1fb5dcec3ff2fde516ff6cc843852f9fc77a168de2fbd3a7a5fa8d9"
+    },
+    {
+      "path": "src/app/main.ts",
+      "previousHash": "dfee5a8f98ec4e6e324e5ab4e4b3f24a350bc760cc59ab16ece2d8d72dc2dfcd",
+      "currentHash": "176288851940be0afeb78c75f69a564b379dc84240253ce19ac152bc193f9263"
+    },
+    {
+      "path": "src/app/storage.ts",
+      "previousHash": "eec5fd38ced758cad5ab272cb251085cce1c8188fc2e86f4bd76517e5e0ea1f4",
+      "currentHash": "b2f80d6d34d5629fdc3f21557cf08cf7a44b19635fa6550a2cb1a89bfe291410"
+    },
+    {
+      "path": "src/concepts/atlas/main.ts",
+      "previousHash": "a62fe02f8e3b49fbee2c5377e69e461f38827a2bab848068c6866437005ef5e6",
+      "currentHash": "07dec120537a67275d5bb1073246d4d475e1548e544604fbff1e7a1539ad862d"
+    },
+    {
+      "path": "src/concepts/bench/main.ts",
+      "previousHash": "2ad2ab1b9bc3ac6f5692a65ea711ce870105d3c7e0c5a007a7ccff7867245bc8",
+      "currentHash": "b945976490c099b1fd7496c2477f7986e5ff87545f2608dac0187efbb59c2e3b"
+    },
+    {
+      "path": "src/concepts/trail/main.ts",
+      "previousHash": "e4c13dd1b3df02c8946d7bbe40ffa42f3ecd3bc756256241e5df1ef3885de4aa",
+      "currentHash": "fbb61a05253c2d1a7159f47aedfcde121e68fafc4f892cba2ea3c15651a871ef"
+    },
+    {
+      "path": "src/research/browser.ts",
+      "previousHash": "9f0e54ef5cea964e214b92c9ccff7e9ffe8a1c93e8c12a3c7d91997106015ebd",
+      "currentHash": "8c6d5b635cf950728cac26e76137730ab9872588eed5e821a619de59e841af55"
+    },
+    {
+      "path": "src/ui/text-value.ts",
+      "previousHash": null,
+      "currentHash": "fbc030b0937ab993d77de77a3207c6ff37fa1d87423c63ccb707c90c4f9ef9de"
+    },
+    {
+      "path": "src/workbench/main.ts",
+      "previousHash": "949e8785c4b08c0deca884948c18b4f8606fc0b51bc6d1fd467eadcb0d1f728f",
+      "currentHash": "5393ac78af2b39da791bc3be21dedff39dfbcda5bd372ae537a513564e6e0cc6"
+    },
+    {
+      "path": "tests/e2e/concepts.spec.ts",
+      "previousHash": "062366b406aed66b82c03ad61965956b1e3b01ccce9bfdb7f8238e88b54715e4",
+      "currentHash": "0cabbe6915c37bc7eb132a91f3ecb2a095181893e91d1b22b22190b42fc1b1c7"
+    },
+    {
+      "path": "tests/e2e/docs.spec.ts",
+      "previousHash": "9091a2f512f18c491cb5747d9e96990ffe12312c155a845b7440353e54a611d2",
+      "currentHash": "f90e2448517734e2f92a3f2d2608c674ab98f83dbb56b03bec1886fcd323381c"
+    },
+    {
+      "path": "tests/e2e/workbench.spec.ts",
+      "previousHash": "a8382a0f224c4949c4717a1fa939683bdc73a0c603fd5fafaca0114e1b20a2b9",
+      "currentHash": "e79e31485b5882223b7c4d598542a049269d33ddf081e41aa53d8e1665b4130f"
+    },
+    {
+      "path": "tests/e2e/workspace.spec.ts",
+      "previousHash": "d2ecdb071f8e43925ac3ea1097a27e4d6a51d692011566bf05566d8d40f1bafb",
+      "currentHash": "4c2d33f9ef87623b962192adc57a4ba8927eda1363b19d7bbadead005e9b3fce"
+    },
+    {
+      "path": "tests/investigation-browser.test.ts",
+      "previousHash": "da9792bad5c1fe8111a4e0547b516f945582410d23d96555be08eb78bd8c8ed8",
+      "currentHash": "04658b771ea68ce03d37629ee1d3180973ed7fdbac8377877588a993707e14ca"
+    },
+    {
+      "path": "tests/storage.test.ts",
+      "previousHash": "d940338a9ad1cc0e4c1df5eb5809c83a5a7a3171d12177cab482af744ac02e98",
+      "currentHash": "3733d06ee1c231eeba5ebdcceefca61c926437687c0d9711de361c46b445ef74"
+    }
+  ]
+}

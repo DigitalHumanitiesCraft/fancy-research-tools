@@ -1,0 +1,23 @@
+import { spawn } from 'node:child_process';
+import { createWriteStream } from 'node:fs';
+import { readFile, writeFile } from 'node:fs/promises';
+import { join } from 'node:path';
+const base = 'C:/Users/chris/Documents/Codex/2026-10-10/ana/work/combined-reproduction/candidate-2';
+const checkout = join(base, 'checkout');
+const final = join(base, 'final-refresh');
+const args = ['node_modules/@playwright/test/cli.js', 'test', 'tests/e2e/docs.spec.ts', '--config', join(final, 'playwright.config.mjs'), '--workers', '1'];
+const startedAt = new Date().toISOString();
+const log = join(final, 'docs-direct-node.log');
+const output = createWriteStream(log, {flags: 'wx'});
+const exitCode = await new Promise((resolve, reject) => {
+  const child = spawn(process.execPath, args, {cwd: checkout, env: process.env, windowsHide: true});
+  child.stdout.pipe(output, {end: false});
+  child.stderr.pipe(output, {end: false});
+  child.once('error', reject);
+  child.once('close', code => {output.end(); resolve(code);});
+});
+const outcomes = JSON.parse(await readFile(join(final, 'command-results.json'), 'utf8'));
+outcomes.push({command: [process.execPath, ...args], startedAt, endedAt: new Date().toISOString(), exitCode, log, correction: 'The first attempt passed embedded quote characters in the config path through cmd.exe. Direct Node arguments avoid shell quoting; no application or test source was changed.'});
+await writeFile(join(final, 'command-results.json'), JSON.stringify(outcomes, null, 2) + '\n');
+console.log(`Documentation/gallery cases: exit ${exitCode}`);
+process.exitCode = exitCode;

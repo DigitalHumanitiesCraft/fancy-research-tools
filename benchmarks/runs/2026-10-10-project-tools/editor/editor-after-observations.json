@@ -1,0 +1,26 @@
+[
+  {
+    "width": 1366,
+    "state": "reading",
+    "overflow": false,
+    "axe": []
+  },
+  {
+    "width": 320,
+    "state": "reading",
+    "overflow": false,
+    "axe": []
+  },
+  {
+    "width": 1366,
+    "state": "editing",
+    "overflow": false,
+    "axe": []
+  },
+  {
+    "width": 320,
+    "state": "editing",
+    "overflow": false,
+    "axe": []
+  }
+]

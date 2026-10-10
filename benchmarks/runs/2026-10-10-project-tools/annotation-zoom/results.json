@@ -1,0 +1,239 @@
+{
+  "startedAt": "2026-10-10T18:47:04.548Z",
+  "method": "Chromium native tab zoom, chrome.tabs.setZoom in automatic/per-tab mode; fresh isolated profile for every case and zoom, 1280x900 physical viewport; native captureVisibleTab screenshots. Source selection, save, download, empty-notebook reopen, exact-byte re-export. No user browser touched.",
+  "cases": [
+    {
+      "route": "letters",
+      "factor": 2,
+      "captures": [
+        "letters-2-initial.png",
+        "letters-2-source-end.png",
+        "letters-2-form.png",
+        "letters-2-reopened-source.png"
+      ],
+      "browser": "156.0.8078.4",
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scale": 1,
+        "scrollWidth": 640
+      },
+      "sourceEnd": {
+        "caret": 926,
+        "length": 926,
+        "scrollTop": 325,
+        "scrollHeight": 723,
+        "clientHeight": 398,
+        "scrollWidth": 600,
+        "clientWidth": 600
+      },
+      "selection": {
+        "start": 0,
+        "end": 12,
+        "text": "Wien 14/2 79"
+      },
+      "download": {
+        "file": "letters-2-notebook.json",
+        "name": "benndorf-letter-notebook.json",
+        "sha256": "8a6be27a59d9a9c8b31ed7e9419306bfe63131a5360c903f42c54ab189873539",
+        "sourceId": "hsa-letter-7711",
+        "caseId": "hsa-benndorf-1879"
+      },
+      "reloadRestored": true,
+      "storageKey": "frt.notebook./letters/.hsa-benndorf-1879.v1",
+      "reopenedByteIdentical": true,
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scale": 1,
+        "scrollWidth": 640
+      },
+      "status": "passed"
+    },
+    {
+      "route": "letters",
+      "factor": 4,
+      "captures": [
+        "letters-4-initial.png",
+        "letters-4-source-end.png",
+        "letters-4-form.png",
+        "letters-4-reopened-source.png"
+      ],
+      "browser": "156.0.8078.4",
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "scale": 1,
+        "scrollWidth": 320
+      },
+      "sourceEnd": {
+        "caret": 926,
+        "length": 926,
+        "scrollTop": 859.75,
+        "scrollHeight": 1258,
+        "clientHeight": 398,
+        "scrollWidth": 286,
+        "clientWidth": 286
+      },
+      "selection": {
+        "start": 0,
+        "end": 12,
+        "text": "Wien 14/2 79"
+      },
+      "download": {
+        "file": "letters-4-notebook.json",
+        "name": "benndorf-letter-notebook.json",
+        "sha256": "9aca5a28fe2974c556fcbb2b428df0897410d9f3853e1d29e19b2b7b9650f724",
+        "sourceId": "hsa-letter-7711",
+        "caseId": "hsa-benndorf-1879"
+      },
+      "reloadRestored": true,
+      "storageKey": "frt.notebook./letters/.hsa-benndorf-1879.v1",
+      "reopenedByteIdentical": true,
+      "final": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "scale": 1,
+        "scrollWidth": 320
+      },
+      "status": "passed"
+    },
+    {
+      "route": "annotations",
+      "factor": 2,
+      "captures": [
+        "annotations-2-initial.png",
+        "annotations-2-source-end.png",
+        "annotations-2-form.png",
+        "annotations-2-reopened-source.png"
+      ],
+      "browser": "156.0.8078.4",
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scale": 1,
+        "scrollWidth": 640
+      },
+      "sourceEnd": {
+        "caret": 4077,
+        "length": 4077,
+        "scrollTop": 2359,
+        "scrollHeight": 2709,
+        "clientHeight": 350,
+        "scrollWidth": 600,
+        "clientWidth": 600
+      },
+      "selection": {
+        "start": 1,
+        "end": 19,
+        "text": "ZCZC MIATCDAT4 ALL"
+      },
+      "download": {
+        "file": "annotations-2-notebook.json",
+        "name": "milton-annotation-notebook.json",
+        "sha256": "ce4bd8551fface0f091cd1368dfb724fa916343894662aae83c048faf7a6737e",
+        "sourceId": "nhc-al142024-discussion-002",
+        "caseId": "nhc-milton-2024"
+      },
+      "reloadRestored": true,
+      "storageKey": "frt.notebook./annotations/.nhc-milton.v1",
+      "reopenedByteIdentical": true,
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scale": 1,
+        "scrollWidth": 640
+      },
+      "status": "passed"
+    },
+    {
+      "route": "annotations",
+      "factor": 4,
+      "captures": [
+        "annotations-4-initial.png",
+        "annotations-4-source-end.png",
+        "annotations-4-form.png",
+        "annotations-4-reopened-source.png"
+      ],
+      "browser": "156.0.8078.4",
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "scale": 1,
+        "scrollWidth": 320
+      },
+      "sourceEnd": {
+        "caret": 4077,
+        "length": 4077,
+        "scrollTop": 4494.75,
+        "scrollHeight": 4845,
+        "clientHeight": 350,
+        "scrollWidth": 286,
+        "clientWidth": 286
+      },
+      "selection": {
+        "start": 1,
+        "end": 19,
+        "text": "ZCZC MIATCDAT4 ALL"
+      },
+      "download": {
+        "file": "annotations-4-notebook.json",
+        "name": "milton-annotation-notebook.json",
+        "sha256": "728fdafe8701f79ab67c058bb580b6ea669a67dac192ce106d146722de508905",
+        "sourceId": "nhc-al142024-discussion-002",
+        "caseId": "nhc-milton-2024"
+      },
+      "reloadRestored": true,
+      "storageKey": "frt.notebook./annotations/.nhc-milton.v1",
+      "reopenedByteIdentical": true,
+      "final": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "scale": 1,
+        "scrollWidth": 320
+      },
+      "status": "passed"
+    }
+  ],
+  "finishedAt": "2026-10-10T18:47:22.304Z"
+}

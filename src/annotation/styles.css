@@ -1,0 +1,359 @@
+@layer reset, tokens, base, layout, components, utilities;
+
+@layer reset {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+  h1,
+  h2,
+  p,
+  dl,
+  pre {
+    margin: 0;
+  }
+}
+
+@layer utilities {
+  [hidden] {
+    display: none;
+  }
+  .source-measure {
+    position: fixed;
+    visibility: hidden;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+}
+
+@layer tokens {
+  :root {
+    color-scheme: light;
+    --paper: oklch(1 0 0);
+    --surface: oklch(1 0 0);
+    --ink: oklch(0.27 0.035 250);
+    --muted: oklch(0.43 0.035 250);
+    --blue: oklch(0.41 0.12 250);
+    --line: oklch(0.59 0.035 250);
+    --selection: oklch(0.9 0.04 250);
+    --space: clamp(1rem, 0.4rem + 2vw, 2.5rem);
+    --notebook: oklch(0.975 0.008 250);
+  }
+}
+
+@layer base {
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font:
+      1rem / 1.5 system-ui,
+      sans-serif;
+  }
+  a {
+    color: var(--blue);
+    text-underline-offset: 0.2em;
+  }
+  h1 {
+    font-size: clamp(1.35rem, 1.2rem + 0.5vw, 1.7rem);
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-block-end: 0.65rem;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    max-inline-size: 100%;
+    color: inherit;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 0.2rem;
+  }
+  button,
+  input,
+  select {
+    min-block-size: 2.75rem;
+    padding: 0.5rem 0.7rem;
+  }
+  button {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  textarea {
+    inline-size: 100%;
+    padding: 0.65rem;
+    resize: vertical;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-block-end: 0.3rem;
+  }
+  select,
+  input {
+    inline-size: 100%;
+  }
+  :focus-visible {
+    outline: 3px solid var(--blue);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--selection);
+    color: var(--ink);
+  }
+  dd {
+    margin: 0;
+  }
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 1.15rem 0;
+    min-inline-size: 0;
+  }
+  legend {
+    padding: 0;
+    margin-block-end: 0.5rem;
+    font-weight: 600;
+  }
+}
+
+@layer layout {
+  .page-header,
+  main,
+  footer {
+    max-inline-size: 96rem;
+    margin-inline: auto;
+    padding-inline: var(--space);
+  }
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.1rem;
+  }
+  main {
+    container-type: inline-size;
+  }
+  .reading-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(1.5rem, 4vw, 4rem);
+    align-items: start;
+  }
+  @container (min-width: 62rem) {
+    .reading-layout {
+      grid-template-columns: minmax(0, 1.8fr) minmax(22rem, 1fr);
+    }
+    .source-pane {
+      position: sticky;
+      inset-block-start: 1rem;
+    }
+  }
+  .source-pane,
+  .annotation-pane {
+    min-inline-size: 0;
+  }
+  .annotation-pane {
+    padding: 1.1rem;
+    background: var(--notebook);
+  }
+  .source-toolbar,
+  :where(.page-header) nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  .source-toolbar > div {
+    min-inline-size: 0;
+    flex: 1 1 20rem;
+  }
+  .source-toolbar h2 {
+    margin: 0;
+  }
+  .actor-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+    gap: 0.75rem;
+  }
+  .actions,
+  footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem 1rem;
+  }
+  footer {
+    padding-block: 2rem;
+  }
+  footer nav {
+    margin-block-start: 1rem;
+  }
+}
+
+@layer components {
+  #annotate-selection,
+  button[type="submit"] {
+    background: var(--blue);
+    color: var(--surface);
+    border-color: var(--blue);
+  }
+  .source-attribution {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.5rem;
+    margin-block: 0.7rem 0.3rem;
+  }
+  .source-attribution > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .source-attribution dt {
+    font-weight: 600;
+  }
+  .source-context {
+    color: var(--muted);
+  }
+  #source-link {
+    display: inline-block;
+  }
+  .source-text-label {
+    margin-block-start: 1rem;
+  }
+  #bulletin-text {
+    display: block;
+    min-block-size: 22rem;
+    block-size: clamp(22rem, 65vh, 46rem);
+    font-family: ui-monospace, Consolas, monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-block-end: 0.65rem;
+  }
+  [data-case="hsa-benndorf-1879"] #bulletin-text {
+    font:
+      1.125rem / 1.65 system-ui,
+      sans-serif;
+    padding: 1.25rem;
+    block-size: clamp(25rem, 65vh, 46rem);
+  }
+  .edition-credit,
+  .source-rights {
+    font-size: 0.9rem;
+    margin-block-start: 0.35rem;
+  }
+  .source-details {
+    margin-block-start: 1rem;
+  }
+  summary {
+    cursor: pointer;
+    padding-block: 0.5rem;
+  }
+  .source-details dl {
+    font-size: 0.9rem;
+  }
+  .source-details dd {
+    overflow-wrap: anywhere;
+    margin-block-end: 0.65rem;
+  }
+  #annotation-form {
+    margin-block-start: 1.1rem;
+  }
+  .annotation-save {
+    margin-block-end: 1.25rem;
+  }
+  .creator-fields legend,
+  .creator-fields label {
+    font-size: 0.925rem;
+  }
+  #annotation-form > textarea,
+  #annotation-form > select,
+  #review-fields > textarea {
+    margin-block-end: 0.85rem;
+  }
+  #quotation {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font: inherit;
+    padding-block: 0.5rem;
+    margin-block-end: 1rem;
+    max-block-size: 12rem;
+    overflow: auto;
+  }
+  .check-label {
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    margin-block: 1rem;
+  }
+  .check-label input {
+    inline-size: 1.25rem;
+    min-block-size: 1.25rem;
+    accent-color: var(--blue);
+  }
+  #review-change:not(:empty),
+  #annotation-status:not(:empty),
+  #selection-status:not(:empty),
+  #notebook-status:not(:empty) {
+    margin-block: 0.7rem;
+  }
+  .saved-section {
+    margin-block-start: 1.4rem;
+  }
+  #annotations {
+    padding-inline-start: 1.5rem;
+    margin-block: 0;
+  }
+  #annotations li {
+    padding-inline-start: 0.35rem;
+    margin-block-end: 1.5rem;
+    overflow-wrap: anywhere;
+  }
+  #annotations blockquote {
+    white-space: pre-wrap;
+    margin: 0.5rem 0;
+    font-style: italic;
+  }
+  #annotations .annotation-note {
+    white-space: pre-wrap;
+    margin-block-end: 0.5rem;
+  }
+  #annotations .annotation-meta {
+    font-size: 0.925rem;
+    margin-block-end: 0.4rem;
+  }
+  #annotations .actions {
+    margin-block-start: 0.6rem;
+  }
+  #notebook-files input {
+    inline-size: auto;
+    display: block;
+  }
+  #notebook-files input::file-selector-button {
+    font: inherit;
+  }
+  .skip-link {
+    position: absolute;
+    inset-inline-start: 1rem;
+    inset-block-start: -5rem;
+    background: var(--surface);
+    padding: 0.8rem;
+    z-index: 1;
+  }
+  .skip-link:focus {
+    inset-block-start: 0.5rem;
+  }
+}

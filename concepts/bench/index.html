@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Instrument comparison desk</title></head>
+<body>
+<a class="skip" href="#main">Skip to workspace</a>
+<header><a href="../">All concepts</a><h1>Instrument comparison desk</h1><button id="download" class="primary" type="button">Download evidence</button></header>
+<main id="main">
+<nav class="view-nav" aria-label="Workspace"><button id="find-view" type="button" aria-current="page">Find material</button><button id="compare-view" type="button">Compare selection <span id="selection-count">0</span></button></nav>
+<p id="status" role="status"></p>
+<section id="find-pane" aria-label="Find material">
+<form id="search-form" class="search"><label for="search">Search catalogue</label><div class="search-row"><input id="search" type="search" placeholder="Title, material, culture or date" autocomplete="off"><button type="submit" class="primary">Search</button><button id="reset" type="button">Reset</button></div></form>
+<div class="catalogue-heading"><p id="results-status"></p><p>Select up to four records to compare.</p></div>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Catalogue results"><table class="catalogue"><thead><tr><th scope="col">Select</th><th scope="col">Instrument</th><th scope="col">Material</th><th scope="col">Date</th><th scope="col">Attribution</th></tr></thead><tbody id="results"></tbody></table></div>
+<p id="empty" hidden>No records match this search. Try a broader term or reset.</p>
+</section>
+<section id="compare-pane" aria-label="Compare evidence" hidden>
+<div class="compare-heading"><h2>Evidence, side by side</h2><button id="add-more" type="button">Add or change material</button></div>
+<p id="compare-empty">Choose two to four records from Find material to examine their descriptions together.</p>
+<div class="table-wrap matrix-wrap" tabindex="0" role="region" aria-label="Evidence comparison"><table id="matrix"></table></div>
+<section class="notes" aria-labelledby="notes-title"><div><h2 id="notes-title">Your reading of the evidence</h2></div><div class="note-fields"><label for="observation">Observation<textarea id="observation" rows="3" placeholder="What do these descriptions support?"></textarea></label><label for="question">Unresolved question<textarea id="question" rows="3" placeholder="What would you need to check next?"></textarea></label></div></section>
+</section>
+</main>
+<footer><a href="../../tools/">All tools</a><a href="../../guides/research.html">Source and method</a><p>Met catalogue sample. <a href="https://creativecommons.org/publicdomain/zero/1.0/">Data CC0</a> · <a href="https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/main/LICENSE">Code MIT</a></p><p>Non-representative sample; catalogue descriptions are not historical facts.</p></footer>
+<script type="module" src="../../src/concepts/bench/main.ts"></script>
+</body></html>

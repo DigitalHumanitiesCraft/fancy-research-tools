@@ -1,0 +1,31 @@
+{
+  "coreAutocrlf": true,
+  "committed": false,
+  "files": [
+    {
+      "path": "scripts/import-dh-data.mjs",
+      "unchanged": true,
+      "sha256": "4d7314b7051b3aedfb17fad0c678f40f10cf26b4e4fa411d845438244e0756fd"
+    },
+    {
+      "path": "data/met-instruments/records.json",
+      "unchanged": true,
+      "sha256": "fd45be72d636115ebe04d8d3e196915a667101fb2380674961917a6a60d0274c"
+    },
+    {
+      "path": "data/met-instruments/records.sha256",
+      "unchanged": true,
+      "sha256": "4f1cfe98cd1c54cadd88a7ce9f57ab0d073378ce78fb91a15eb10333bc13c07d"
+    },
+    {
+      "path": "data/met-instruments/field-evidence.json",
+      "unchanged": true,
+      "sha256": "843d2a7151deea1fe69fbc784078f3d7cbb23e681ad57f0b1f7cd8921fec4e63"
+    },
+    {
+      "path": "data/met-instruments/raw/500526.json",
+      "unchanged": true,
+      "sha256": "fdc8233980c4f472849ba8af4e62b1fe932f8da92aa29a271f2ffc079722ef82"
+    }
+  ]
+}

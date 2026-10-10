@@ -1,0 +1,93 @@
+{
+  "startedAt": "2026-10-10T18:20:42.601Z",
+  "method": "Native Chromium tab zoom via chrome.tabs.setZoom in automatic/per-tab mode. 1280x900 physical browser viewport, 640x450 CSS pixels at200%,320x225 at400%. Native captures use chrome.tabs.captureVisibleTab.",
+  "cases": [
+    {
+      "name": "overview",
+      "route": "/",
+      "factor": 2,
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "metrics": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "start": "overview-2-start.png",
+      "action": "Keyboard opened gallery from overview",
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "visualScale": 1,
+        "scrollWidth": 640
+      },
+      "finalCapture": "overview-2-final.png",
+      "status": "passed"
+    }
+  ],
+  "resources": {
+    "http://127.0.0.1:4173/": {
+      "sha256": "0c74a2086e7faa63bac9a3a382fdb7082923869ca29361d12354be1444af333d",
+      "bytes": 2795
+    },
+    "http://127.0.0.1:4173/assets/styles-D8Q6zNuV.css": {
+      "sha256": "48817ce2d1070dcd449df5d8436b8f482e28cdb1fcca8738ae9b98f122193b00",
+      "bytes": 6760
+    },
+    "http://127.0.0.1:4173/assets/docs-DCVcmqxG.js": {
+      "sha256": "50e80005baa15e14437833a9618ff2311fad3a895ef8653c9c336410c60a8895",
+      "bytes": 29
+    },
+    "http://127.0.0.1:4173/assets/modulepreload-polyfill-P2Xu9kJm.js": {
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "bytes": 670
+    },
+    "http://127.0.0.1:4173/tools/": {
+      "sha256": "c3265a70fec3a62e2d30d8e1b0fa7046a8276846dbb92ea9c25d3b828eade045",
+      "bytes": 6807
+    },
+    "http://127.0.0.1:4173/assets/index-MXiXdX7Q.css": {
+      "sha256": "51e67c0c23ae90c307c19a3478dac120e160f56173feebe0ae35ae66d28b4d0d",
+      "bytes": 1314
+    },
+    "http://127.0.0.1:4173/previews/instrument-study.png": {
+      "sha256": "7fb7eb80b72306ab5609686144690b784f0d52583e45c0696add529452352b69",
+      "bytes": 71711
+    },
+    "http://127.0.0.1:4173/previews/forecast-reading.png": {
+      "sha256": "73ac3f347278ff0024bdda09eebe776826a03fa9ee297dd105f22df9d73b7968",
+      "bytes": 95787
+    },
+    "http://127.0.0.1:4173/previews/record-desk.png": {
+      "sha256": "7231f20488c6ceacf9bd35078c9b5a9e0a5eb7784c6174657ae383760463d4a7",
+      "bytes": 64785
+    },
+    "http://127.0.0.1:4173/previews/collection-atlas.png": {
+      "sha256": "b8577aef9811a494822d0d1d6218a13d4838b1795db69720aa29137a7d2da962",
+      "bytes": 62804
+    },
+    "http://127.0.0.1:4173/previews/instrument-comparison-desk.png": {
+      "sha256": "5bcd115bd02005e2fad02931271f337eb484ba952384942e550dd712627afe11",
+      "bytes": 48071
+    },
+    "http://127.0.0.1:4173/previews/instrument-inquiry.png": {
+      "sha256": "42b71831aa397da5f327bfdf6434857359ff2f1a6fc50c69f5c14361b48ec785",
+      "bytes": 49900
+    },
+    "http://127.0.0.1:4173/previews/catalogue-baseline.png": {
+      "sha256": "97a04f134e94b960ea86057c3be1b9610634100ae7dc7781cfb2195e4afdf9ad",
+      "bytes": 108890
+    }
+  },
+  "browser": "156.0.8078.4",
+  "finishedAt": "2026-10-10T18:20:44.746Z"
+}

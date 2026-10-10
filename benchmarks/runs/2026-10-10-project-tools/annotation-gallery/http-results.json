@@ -1,0 +1,76 @@
+[
+  {
+    "requested": "https://dhcraft.org/teiCrafter/editor.html",
+    "final": "https://dhcraft.org/teiCrafter/editor.html",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 19897,
+    "sha256": "025087d64fb5b9f71d490dcb0fc599ae15a947a372b355d7a62c746aa83de32c"
+  },
+  {
+    "requested": "https://chpollin.github.io/klawiter-rescue/",
+    "final": "https://chpollin.github.io/klawiter-rescue/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 12476,
+    "sha256": "e7b39b02a334e072553252134b24bcf07f6ea8dce9f85c703e402cc1f1a02685"
+  },
+  {
+    "requested": "https://chpollin.github.io/szd-htr-ocr-pipeline/",
+    "final": "https://chpollin.github.io/szd-htr-ocr-pipeline/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 35604,
+    "sha256": "3e3571daed5ffd06d250203c9349c955a1b010d007e17f1e3d73bc1532c0d2c6"
+  },
+  {
+    "requested": "https://dhcraft.org/CorrespExplorer/",
+    "final": "https://dhcraft.org/CorrespExplorer/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 10330,
+    "sha256": "1778fd56716b85d5f75332a5f5479f2383b3045483487bc6c1b48d4dadea5f09"
+  },
+  {
+    "requested": "https://dhcraft.org/fancy-research-tools/",
+    "final": "https://dhcraft.org/fancy-research-tools/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 45461,
+    "sha256": "b9a87b54b698d955ee118667d3a143d70ef687e20b6916aa88cdde066e335078"
+  },
+  {
+    "requested": "https://dhcraft.org/teiCrafter/data/editor/szd/o_szd.1079.tei.xml",
+    "final": "https://dhcraft.org/teiCrafter/data/editor/szd/o_szd.1079.tei.xml",
+    "status": 200,
+    "contentType": "application/xml",
+    "bytes": 5286,
+    "sha256": "7564514a46dd1a098b6e01b6e7e5518844e03970c1a31011efe5daa6b1b5314e",
+    "tei": true,
+    "title": "\n        <title>Brief an Max Fleischer vom 22. Mai 1901, SZ-LAS/B3.1"
+  },
+  {
+    "requested": "https://dhcraft.org/co-ocr-htr/",
+    "final": "https://dhcraft.org/co-ocr-htr/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 104377,
+    "sha256": "5fb070f3ccc50f76675883ced6a4ea418f582daff6f79f76d2142d951afb7f36"
+  },
+  {
+    "requested": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline/tree/main/knowledge",
+    "final": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline/tree/main/knowledge",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 236256,
+    "sha256": "a2389018e7d3589dcbd64e21c98f4b975bc0fd1967e1a825691c198d8f497843"
+  },
+  {
+    "requested": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline",
+    "final": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 326763,
+    "sha256": "1477db86700ce2c3d70b87f3a9e6e2bc97887ab294727fbc54c213cd12874ed8"
+  }
+]

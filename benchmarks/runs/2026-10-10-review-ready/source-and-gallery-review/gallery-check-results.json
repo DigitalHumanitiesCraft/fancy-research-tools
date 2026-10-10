@@ -1,0 +1,86 @@
+[
+  {
+    "name": "desktop axe",
+    "violations": []
+  },
+  {
+    "name": "native pointer text selection",
+    "selection": "Select and compare cata",
+    "navigationUnchanged": true
+  },
+  {
+    "name": "explicit link keyboard focus",
+    "width": "3px",
+    "style": "solid"
+  },
+  {
+    "name": "narrow",
+    "viewport": 320,
+    "width": 320,
+    "links": [
+      {
+        "w": 100.546875,
+        "h": 44
+      },
+      {
+        "w": 100.546875,
+        "h": 44
+      },
+      {
+        "w": 100.546875,
+        "h": 44
+      },
+      {
+        "w": 100.546875,
+        "h": 44
+      },
+      {
+        "w": 100.546875,
+        "h": 44
+      },
+      {
+        "w": 100.546875,
+        "h": 44
+      },
+      {
+        "w": 100.546875,
+        "h": 44
+      }
+    ]
+  },
+  {
+    "name": "double-text",
+    "viewport": 1440,
+    "width": 1440,
+    "links": [
+      {
+        "w": 199.078125,
+        "h": 88
+      },
+      {
+        "w": 199.078125,
+        "h": 88
+      },
+      {
+        "w": 199.078125,
+        "h": 88
+      },
+      {
+        "w": 199.078125,
+        "h": 88
+      },
+      {
+        "w": 199.078125,
+        "h": 88
+      },
+      {
+        "w": 199.078125,
+        "h": 88
+      },
+      {
+        "w": 199.078125,
+        "h": 88
+      }
+    ]
+  }
+]

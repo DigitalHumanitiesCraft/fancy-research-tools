@@ -1,0 +1,125 @@
+
+> fancy-research-tools@0.1.0 check
+> tsc --noEmit && biome check .
+
+src\ui\styles.css:247:3 lint/style/noDescendingSpecificity ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! Descending specificity selector found. This selector specificity is (0, 1, 1)
+  
+    245 │     overflow-wrap: normal;
+    246 │   }
+  > 247 │   .docs-nav a {
+        │   ^^^^^^^^^^^
+    248 │     padding: 0.45rem 0.75rem;
+    249 │     border-radius: 0.4rem;
+  
+  i This selector specificity is (0, 1, 2)
+  
+    206 │     align-items: center;
+    207 │   }
+  > 208 │   .site-header nav a {
+        │   ^^^^^^^^^^^^^^^^^^
+    209 │     display: inline-flex;
+    210 │     align-items: center;
+  
+  i Descending specificity selector may not be applied. Consider rearranging the order of the selectors. See MDN web docs for more details.
+  
+
+src\ui\styles.css:252:3 lint/style/noDescendingSpecificity ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ! Descending specificity selector found. This selector specificity is (0, 2, 1)
+  
+    250 │     text-decoration: none;
+    251 │   }
+  > 252 │   .docs-nav a[aria-current] {
+        │   ^^^^^^^^^^^^^^^^^^^^^^^^^
+    253 │     color: var(--accent);
+    254 │     background: var(--soft);
+  
+  i This selector specificity is (0, 2, 2)
+  
+    212 │     padding-inline: 0.5rem;
+    213 │   }
+  > 214 │   .site-header nav a[aria-current] {
+        │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    215 │     color: var(--ink);
+    216 │     font-weight: 700;
+  
+  i Descending specificity selector may not be applied. Consider rearranging the order of the selectors. See MDN web docs for more details.
+  
+
+src\docs.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    1   │ - import·"./ui/styles.css";␍
+      1 │ + import·"./ui/styles.css";
+    2 2 │   
+  
+
+tests\e2e\docs.spec.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     53  53 │     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+     54  54 │     await page.screenshot({ path: "test-results/documentation-mobile.png", fullPage: true });
+     55     │ - ··await·page.getByRole("navigation",·{·name:·"Documentation",·exact:·true·})
+     56     │ - ····.getByRole("link",·{·name:·"Design",·exact:·true·}).click();
+         55 │ + ··await·page
+         56 │ + ····.getByRole("navigation",·{·name:·"Documentation",·exact:·true·})
+         57 │ + ····.getByRole("link",·{·name:·"Design",·exact:·true·})
+         58 │ + ····.click();
+     57  59 │     await expect(page.getByRole("heading", { name: "Design", exact: true })).toBeVisible();
+     58     │ - ··await·page.getByRole("navigation",·{·name:·"On·this·page",·exact:·true·})
+     59     │ - ····.getByRole("link",·{·name:·"Information·visualisation",·exact:·true·}).click();
+         60 │ + ··await·page
+         61 │ + ····.getByRole("navigation",·{·name:·"On·this·page",·exact:·true·})
+         62 │ + ····.getByRole("link",·{·name:·"Information·visualisation",·exact:·true·})
+         63 │ + ····.click();
+     60  64 │     await expect(page).toHaveURL(/#information-visualisation$/);
+     61  65 │   });
+    ······· │ 
+     80  84 │     await page.goto("/fancy-research-tools/");
+     81  85 │     await page.getByRole("link", { name: "Open the tool gallery" }).click();
+     82     │ - ··await·page
+     83     │ - ····.getByRole("main")
+     84     │ - ····.getByRole("link",·{·name:·"Open·Record·desk",·exact:·true·})
+     85     │ - ····.click();
+         86 │ + ··await·page.getByRole("main").getByRole("link",·{·name:·"Open·Record·desk",·exact:·true·}).click();
+     86  87 │     await expect(page).toHaveURL(/\/fancy-research-tools\/tool\/$/);
+     87  88 │     await expect(page.getByRole("main")).toBeVisible();
+    ······· │ 
+     91  92 │     await page.setViewportSize({ width: 320, height: 800 });
+     92  93 │     await page.goto("/tools/");
+     93     │ - ··const·destinations·=·await·page.locator(".open-tool").evaluateAll((links)·=>
+     94     │ - ····links.map((link)·=>·(link·as·HTMLAnchorElement).href),
+     95     │ - ··);
+         94 │ + ··const·destinations·=·await·page
+         95 │ + ····.locator(".open-tool")
+         96 │ + ····.evaluateAll((links)·=>·links.map((link)·=>·(link·as·HTMLAnchorElement).href));
+     96  97 │     expect(destinations).toHaveLength(7);
+     97  98 │     for (const preview of await page.locator(".tool-card img").all()) {
+     98  99 │       await preview.scrollIntoViewIfNeeded();
+     99     │ - ····await·expect.poll(()·=>·preview.evaluate((image)·=>
+    100     │ - ······(image·as·HTMLImageElement).complete·&&·(image·as·HTMLImageElement).naturalWidth·>·0,
+    101     │ - ····)).toBe(true);
+        100 │ + ····await·expect
+        101 │ + ······.poll(()·=>
+        102 │ + ········preview.evaluate(
+        103 │ + ··········(image)·=>
+        104 │ + ············(image·as·HTMLImageElement).complete·&&·(image·as·HTMLImageElement).naturalWidth·>·0,
+        105 │ + ········),
+        106 │ + ······)
+        107 │ + ······.toBe(true);
+    102 108 │     }
+    103 109 │     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  
+
+Checked 60 files in 105ms. No fixes applied.
+Found 2 errors.
+Found 2 warnings.
+check ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+

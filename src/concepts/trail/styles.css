@@ -1,0 +1,321 @@
+@import "../../ui/foundation.css";
+@import "../../research/recovery.css";
+@layer reset {
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+}
+@layer tokens {
+  :root {
+    color-scheme: light;
+    --paper: oklch(98% 0.004 180);
+    --surface: oklch(100% 0 0);
+    --ink: oklch(25% 0.035 190);
+    --muted: oklch(43% 0.025 190);
+    --accent: oklch(36% 0.07 185);
+    --soft: oklch(93% 0.025 185);
+    --line: oklch(63% 0.025 185);
+    --focus: oklch(45% 0.13 45);
+    --space: clamp(1rem, 3vw, 3rem);
+  }
+}
+@layer base {
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font:
+      1rem / 1.5 system-ui,
+      -apple-system,
+      "Segoe UI",
+      sans-serif;
+    container-type: inline-size;
+  }
+  a {
+    color: var(--accent);
+    text-underline-offset: 0.2em;
+  }
+  button,
+  a,
+  input,
+  textarea {
+    touch-action: manipulation;
+  }
+  button,
+  .action {
+    min-block-size: 2.75rem;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 0.3rem;
+    background: var(--surface);
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .action {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  input,
+  textarea {
+    inline-size: 100%;
+    min-inline-size: 0;
+    padding: 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 0.3rem;
+    background: var(--surface);
+    color: var(--ink);
+  }
+  textarea {
+    resize: vertical;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-block-end: 0.4rem;
+  }
+  :focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 4px;
+  }
+  h1 {
+    font-size: clamp(1.6rem, 1.2rem + 1.1vw, 2.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+    font-weight: 650;
+  }
+  h2,
+  h3 {
+    font-size: 1.05rem;
+  }
+  p {
+    max-inline-size: 75ch;
+  }
+  .quiet {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+}
+@layer layout {
+  .app-header,
+  footer {
+    padding: 1rem var(--space);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  main {
+    max-inline-size: 85rem;
+    margin-inline: auto;
+    padding: 1.5rem var(--space) 3rem;
+    min-block-size: calc(100dvh - 9rem);
+  }
+  .question-block {
+    max-inline-size: 65rem;
+    margin-block-end: 1.6rem;
+  }
+  .question-block input {
+    font-size: clamp(1.1rem, 0.95rem + 0.55vw, 1.5rem);
+    border: 0;
+    border-block-end: 1px solid var(--line);
+    border-radius: 0;
+    padding: 0.5rem 0;
+    background: transparent;
+  }
+  .question-block label {
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+  .workflow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-block-end: 2.6rem;
+  }
+  .workflow a {
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+  }
+  .section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-block-end: 1.8rem;
+  }
+  #search-form {
+    max-inline-size: 52rem;
+  }
+  .search-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .search-row input {
+    flex: 1 1 18rem;
+  }
+  #result-status {
+    margin-block: 1rem 0.2rem;
+  }
+  #selection-status {
+    min-block-size: 1.5rem;
+    color: var(--muted);
+    margin-block-end: 1rem;
+  }
+  #results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr));
+    gap: 0 2.5rem;
+  }
+  .record {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.4rem 1rem;
+    padding-block: 1.2rem;
+    border-block-start: 1px solid var(--line);
+  }
+  .record p {
+    grid-column: 1 / -1;
+  }
+  .record .record-meta {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .record a {
+    font-weight: 650;
+  }
+  .reflection {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+  .notes label:not(:first-child) {
+    margin-block-start: 1.5rem;
+  }
+  .notes .quiet {
+    margin-block-start: 1rem;
+  }
+  aside {
+    padding: 1.5rem;
+    background: var(--soft);
+    align-self: start;
+  }
+  aside h2 {
+    margin-block-end: 1rem;
+  }
+  footer {
+    color: var(--muted);
+    font-size: 0.875rem;
+  }
+  footer span {
+    display: flex;
+    gap: 1rem;
+  }
+  @container (min-width: 55rem) {
+    .reflection {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    }
+  }
+}
+@layer components {
+  .identity {
+    font-size: 1.2rem;
+    font-weight: 750;
+    text-decoration: none;
+    color: var(--ink);
+    letter-spacing: -0.03em;
+  }
+  .primary {
+    background: var(--accent);
+    color: var(--surface);
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+  .workflow a[aria-current="step"] {
+    background: var(--accent);
+    color: var(--surface);
+  }
+  .workflow span {
+    font-size: 0.8em;
+    margin-inline-end: 0.5rem;
+    font-variant-numeric: tabular-nums;
+  }
+  button:hover,
+  .action:hover {
+    box-shadow: inset 0 0 0 1px currentColor;
+  }
+  button[aria-pressed="true"] {
+    background: var(--soft);
+    border-color: var(--accent);
+  }
+  .back-link {
+    display: inline-block;
+    margin-block-start: 1.5rem;
+    min-block-size: 2.75rem;
+  }
+  .comparison-scroll {
+    overflow: auto;
+    max-inline-size: 100%;
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  table {
+    border-collapse: collapse;
+    min-inline-size: 100%;
+    text-align: start;
+  }
+  th,
+  td {
+    vertical-align: top;
+    padding: 1rem;
+    min-inline-size: 14rem;
+    max-inline-size: 24rem;
+    border-block-end: 1px solid var(--line);
+    overflow-wrap: anywhere;
+  }
+  tbody th {
+    min-inline-size: 9rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  thead th {
+    background: var(--soft);
+  }
+  thead button {
+    display: block;
+    margin-block-start: 0.7rem;
+    font-size: 0.875rem;
+    padding: 0.3rem 0.65rem;
+  }
+  .source-entry {
+    margin-block-end: 1.2rem;
+  }
+  .source-entry p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-block-start: 0.25rem;
+  }
+  #about {
+    max-inline-size: 70ch;
+  }
+  #about p {
+    margin-block: 1.5rem;
+  }
+  .skip {
+    position: absolute;
+    inset-block-start: -10rem;
+    background: var(--surface);
+    padding: 1rem;
+    z-index: 10;
+  }
+  .skip:focus {
+    inset-block-start: 0;
+  }
+}

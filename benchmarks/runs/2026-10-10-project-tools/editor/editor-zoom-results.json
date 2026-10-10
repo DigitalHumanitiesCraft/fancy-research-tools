@@ -1,0 +1,119 @@
+{
+  "method": "Native Chromium zoom through chrome.tabs.setZoom, automatic/per-tab. Physical viewport 1280x900; 640 CSS px at200%, 320 CSS px at400%. Isolated local profile; source server is Vite dev4189.",
+  "startedAt": "2026-10-10T18:49:33.469Z",
+  "cases": [
+    {
+      "factor": 2,
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scrollWidth": 640
+      },
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scrollWidth": 640
+      },
+      "task": "Keyboard entered editor, saved note, original source values remained, actual JSON export preserved five records and exact note.",
+      "status": "passed"
+    },
+    {
+      "factor": 4,
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "scrollWidth": 320
+      },
+      "final": {
+        "width": 320,
+        "height": 225,
+        "dpr": 4,
+        "scrollWidth": 320
+      },
+      "task": "Keyboard entered editor, saved note, original source values remained, actual JSON export preserved five records and exact note.",
+      "status": "passed"
+    }
+  ],
+  "resources": {
+    "http://127.0.0.1:4189/tool/": {
+      "sha256": "560a3f3fecee095852564929ca97d7b846b34258daba4ac57ef49ac14d693532",
+      "bytes": 3028
+    },
+    "http://127.0.0.1:4189/src/app/main.ts?t=1791658153665": {
+      "sha256": "44c39ed330241146c5d0d585f867382c9cfe8cd82a5d0d16aa4f0b562c9c2a5f",
+      "bytes": 45526
+    },
+    "http://127.0.0.1:4189/@vite/client": {
+      "sha256": "e9f4b21e87c228cc09dcee07218c88a6ca84da33f10c02024004a4a39c4ee956",
+      "bytes": 222118
+    },
+    "http://127.0.0.1:4189/src/app/styles.css?t=1791657836914": {
+      "sha256": "02f4c0dfd241b3e5a82b392396a5e8d6c4da01c8d266c903eb6f5bb21671e1c6",
+      "bytes": 8445
+    },
+    "http://127.0.0.1:4189/src/adapters/json.ts": {
+      "sha256": "0b4099a390840220f58b56287a23b438d12cba5ce6dd9bc1e07f4c367db25a0c",
+      "bytes": 1693
+    },
+    "http://127.0.0.1:4189/data/schoenbach/collection.json?import": {
+      "sha256": "192bcf522f7422e6c288e280a5b2b3e7da16fab263dc0eb104830ebc6fb59d6f",
+      "bytes": 12825
+    },
+    "http://127.0.0.1:4189/src/ui/icons.ts": {
+      "sha256": "74fba61d1ec438c3c68253a32d6bee5e8753fd79dabfd77cec2ec6373472e331",
+      "bytes": 4141
+    },
+    "http://127.0.0.1:4189/src/domain/dataset.ts": {
+      "sha256": "d8ca61d092df58fad5655678466ec1bdbc41e218a51c539867fb4f5c767fe490",
+      "bytes": 15299
+    },
+    "http://127.0.0.1:4189/src/ui/text-value.ts": {
+      "sha256": "46f155f1b64a7734226aa8b8834fb4449091f2958a3af8fda61f05dc558a4a54",
+      "bytes": 1517
+    },
+    "http://127.0.0.1:4189/src/app/source.ts": {
+      "sha256": "b5bafeff90456f2a3a08d85a879c62cefcadd989a156bdc4bd893e0c87abd717",
+      "bytes": 7642
+    },
+    "http://127.0.0.1:4189/src/app/storage.ts": {
+      "sha256": "5225bb47b99ae82318b45cc7d863e6ec522dfe89dd5ecb41f40087511c404261",
+      "bytes": 7800
+    },
+    "http://127.0.0.1:4189/node_modules/vite/dist/client/env.mjs": {
+      "sha256": "87a1e6adc3833b1e0d8fd872e39e822401c8f0d593d5358f7e142f34d335946a",
+      "bytes": 3478
+    },
+    "http://127.0.0.1:4189/data/schoenbach/cmif-schoenbach.xml?import&url": {
+      "sha256": "b3371b8cda0c33535349a8ddcc9f50fd7aa5d2267096e29d8086fc214a03199f",
+      "bytes": 424
+    },
+    "http://127.0.0.1:4189/data/schoenbach/evidence.json?import": {
+      "sha256": "ff289b819ec297697d7596e13070dca7bc9f9bfed59789a0c5a16dbf943757cc",
+      "bytes": 27936
+    },
+    "http://127.0.0.1:4189/data/schoenbach/manifest.json?import": {
+      "sha256": "c63e53338b7a8328583a5497f0df3442531a260edd4ac87acff3491ab770b131",
+      "bytes": 6508
+    }
+  },
+  "finishedAt": "2026-10-10T18:49:39.901Z"
+}

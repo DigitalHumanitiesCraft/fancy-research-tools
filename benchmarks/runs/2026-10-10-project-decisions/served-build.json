@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-10T17:20:09.828Z",
+  "evidence": [
+    {
+      "path": "/pilot/",
+      "sha256": "ff4dec8b8612436d73661c0ef78e0a4463ae112dee408423404b22b04ce7e1af",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/guides/getting-started.html",
+      "sha256": "807b26fef99b6594cf86a85c9e992f696070c787ce290d5cbf59b257eab5eef6",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/guides/customizing.html",
+      "sha256": "06867653f6a60fec7080cf63fc0911c3649c568525143706419a8634959000cf",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/guides/development-study.html",
+      "sha256": "5820d9ee85ec1af330ce6a6a97480dd40723437209e52f66976c5a7df1291d63",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/reference/testing.html",
+      "sha256": "1f3cccb5633ea9b5dda3e59613f3f6c0ec9644e7f4a44963a53fce39c05d3701",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/assets/index-CmEu9f0g.js",
+      "sha256": "523c415f4ada4f7282ecb7a358266b9bfca767f813aeb4bf4cf19740ff64c251",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/assets/icons-B0Zowo1T.js",
+      "sha256": "2d638c9d21e06774cf5e2715d4507d2dc4dbc65ac9297f1ab9b4b39d1196d9b3",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/assets/records-B0SmZL-k.js",
+      "sha256": "c7558b17efc1eb84cd369dd4deeeb2de362e1e0c560625da14fdc9a4548d54a1",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/assets/browser-C_aznHux.js",
+      "sha256": "1dfcc78b0610c1af882c76dc7211b90c63013ad4be0d9fdbb771576a442d3382",
+      "matchesFreshDist": true
+    },
+    {
+      "path": "/assets/index-CLJlaqCi.css",
+      "sha256": "bce1e5707e29985434e6ddfc593c0fc14da0e71f4f4a44836d5ad67ef1cfb4c4",
+      "matchesFreshDist": true
+    }
+  ]
+}

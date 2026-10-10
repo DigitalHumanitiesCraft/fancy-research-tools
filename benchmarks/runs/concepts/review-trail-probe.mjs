@@ -1,0 +1,10 @@
+import {chromium} from 'playwright';
+const browser=await chromium.launch();const page=await browser.newPage({viewport:{width:1440,height:900}});
+await page.goto('http://127.0.0.1:4173/concepts/trail/');
+await page.getByRole('searchbox').fill('wood');await page.getByRole('button',{name:'Search',exact:true}).click();
+await page.getByRole('button',{name:'Add Ūd',exact:true}).click();await page.getByRole('button',{name:'Add Book Harmonium',exact:true}).click();
+await page.getByRole('link',{name:'Compare evidence',exact:true}).focus();await page.keyboard.press('Enter');
+console.log('COMPARE',await page.locator('main').ariaSnapshot());
+await page.getByRole('navigation',{name:'Investigation'}).getByRole('link',{name:'Record observation',exact:true}).focus();await page.keyboard.press('Enter');
+console.log('REFLECT',await page.locator('main').ariaSnapshot());
+await browser.close();

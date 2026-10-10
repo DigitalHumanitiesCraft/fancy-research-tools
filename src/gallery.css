@@ -1,0 +1,117 @@
+@layer reset, base, tokens, layout, components, utilities;
+
+@layer layout {
+  .tool-gallery {
+    max-inline-size: 88rem;
+    margin-inline: auto;
+    padding: 1rem var(--space) 3rem;
+    container-type: inline-size;
+  }
+  .tool-gallery section {
+    margin-block-start: 2.5rem;
+  }
+  .tool-gallery h1 {
+    font-size: 2.1rem;
+    margin-block-end: 1rem;
+  }
+  .tool-gallery h2 {
+    font-size: 1.4rem;
+    margin-block: 0 1.25rem;
+    scroll-margin-block-start: 1rem;
+  }
+  .tool-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 32rem), 1fr));
+    gap: 1.7rem 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tool-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+    gap: 1.1rem;
+    align-items: start;
+  }
+  @container (inline-size < 35rem) {
+    .tool-entry {
+      grid-template-columns: 1fr;
+    }
+    .tool-preview {
+      max-inline-size: 30rem;
+    }
+  }
+}
+@layer components {
+  .task-navigation,
+  .tool-gallery + footer nav,
+  .template-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+  }
+  .task-navigation a,
+  .tool-actions a,
+  .template-actions a,
+  .tool-gallery + footer a {
+    display: inline-flex;
+    align-items: center;
+    min-block-size: 2.75rem;
+  }
+  .task-navigation {
+    padding-block: 0.25rem;
+  }
+  .tool-info h3 {
+    font-size: 1.15rem;
+    margin: 0 0 0.6rem;
+  }
+  .tool-facts {
+    padding: 0;
+    margin: 0 0 0.35rem;
+    list-style: none;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .tool-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .tool-actions .open-tool {
+    font-weight: 650;
+  }
+  .tool-preview {
+    display: block;
+    background: var(--soft);
+    outline: 1px solid var(--border);
+    outline-offset: -1px;
+  }
+  .tool-preview img {
+    display: block;
+    inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+  }
+  .edition-template h3 {
+    margin-block: 0 0.75rem;
+  }
+  .edition-stages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2.5rem;
+    padding-inline-start: 1.3rem;
+    margin-block: 0.75rem;
+  }
+  .gallery-skip-link {
+    position: absolute;
+    inset-inline-start: var(--space);
+    inset-block-start: -5rem;
+    padding: 0.65rem;
+    background: var(--surface);
+    z-index: 1;
+  }
+  .gallery-skip-link:focus {
+    inset-block-start: 0.5rem;
+  }
+}

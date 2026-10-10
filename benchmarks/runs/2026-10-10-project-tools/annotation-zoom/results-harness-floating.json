@@ -1,0 +1,155 @@
+{
+  "startedAt": "2026-10-10T18:46:28.545Z",
+  "method": "Chromium native tab zoom, chrome.tabs.setZoom in automatic/per-tab mode; fresh isolated profile for every case and zoom, 1280x900 physical viewport; native captureVisibleTab screenshots. Source selection, save, download, empty-notebook reopen, exact-byte re-export. No user browser touched.",
+  "cases": [
+    {
+      "route": "letters",
+      "factor": 2,
+      "captures": [
+        "letters-2-initial.png",
+        "letters-2-source-end.png",
+        "letters-2-form.png",
+        "letters-2-reopened-source.png"
+      ],
+      "browser": "156.0.8078.4",
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scale": 1,
+        "scrollWidth": 640
+      },
+      "sourceEnd": {
+        "caret": 926,
+        "length": 926,
+        "scrollTop": 325,
+        "scrollHeight": 723,
+        "clientHeight": 398,
+        "scrollWidth": 600,
+        "clientWidth": 600
+      },
+      "selection": {
+        "start": 0,
+        "end": 12,
+        "text": "Wien 14/2 79"
+      },
+      "download": {
+        "file": "letters-2-notebook.json",
+        "name": "benndorf-letter-notebook.json",
+        "sha256": "e7e4cbfb6533e15704b45e37851e07b767eb62787e3cabf04312cfc1deed1d2d",
+        "sourceId": "hsa-letter-7711",
+        "caseId": "hsa-benndorf-1879"
+      },
+      "reloadRestored": true,
+      "storageKey": "frt.notebook./letters/.hsa-benndorf-1879.v1",
+      "reopenedByteIdentical": true,
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scale": 1,
+        "scrollWidth": 640
+      },
+      "status": "passed"
+    },
+    {
+      "route": "letters",
+      "factor": 4,
+      "captures": [],
+      "browser": "156.0.8078.4",
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 3.9999999999999996\n- 4\n"
+    },
+    {
+      "route": "annotations",
+      "factor": 2,
+      "captures": [
+        "annotations-2-initial.png",
+        "annotations-2-source-end.png",
+        "annotations-2-form.png",
+        "annotations-2-reopened-source.png"
+      ],
+      "browser": "156.0.8078.4",
+      "zoom": {
+        "factor": 2,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "initial": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scale": 1,
+        "scrollWidth": 640
+      },
+      "sourceEnd": {
+        "caret": 4077,
+        "length": 4077,
+        "scrollTop": 2359,
+        "scrollHeight": 2709,
+        "clientHeight": 350,
+        "scrollWidth": 600,
+        "clientWidth": 600
+      },
+      "selection": {
+        "start": 1,
+        "end": 19,
+        "text": "ZCZC MIATCDAT4 ALL"
+      },
+      "download": {
+        "file": "annotations-2-notebook.json",
+        "name": "milton-annotation-notebook.json",
+        "sha256": "f38e526f4f46713c7fc00772d95d260e32757da289708def4a8209d5019b5929",
+        "sourceId": "nhc-al142024-discussion-002",
+        "caseId": "nhc-milton-2024"
+      },
+      "reloadRestored": true,
+      "storageKey": "frt.notebook./annotations/.nhc-milton.v1",
+      "reopenedByteIdentical": true,
+      "final": {
+        "width": 640,
+        "height": 450,
+        "dpr": 2,
+        "scale": 1,
+        "scrollWidth": 640
+      },
+      "status": "passed"
+    },
+    {
+      "route": "annotations",
+      "factor": 4,
+      "captures": [],
+      "browser": "156.0.8078.4",
+      "zoom": {
+        "factor": 3.9999999999999996,
+        "settings": {
+          "defaultZoomFactor": 1,
+          "mode": "automatic",
+          "scope": "per-tab"
+        }
+      },
+      "status": "failed",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 3.9999999999999996\n- 4\n"
+    }
+  ],
+  "finishedAt": "2026-10-10T18:46:38.541Z"
+}

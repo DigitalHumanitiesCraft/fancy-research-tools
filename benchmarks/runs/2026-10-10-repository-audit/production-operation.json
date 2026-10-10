@@ -1,0 +1,56 @@
+{
+  "originalV2": "benchmarks/runs/2026-10-10-project-decisions/export-v2.json",
+  "originalV2Hash": "2727fc982bb3315c977269dc905f76382cf8137b4b079a2aa18f684f6b675b48",
+  "originalBytesRetainedOnOpen": true,
+  "exportedValuesUnchanged": true,
+  "conflictNavigationDialog": "beforeunload",
+  "cancelledNavigationRetainsLocalText": true,
+  "externalStorageBytesPreserved": true,
+  "recoveryExportVerified": true,
+  "servedFilesMatchFinalBuild": [
+    {
+      "path": "index.html",
+      "sha256": "733146635056a010d42c56bb2cf2334085f23ffc1f7d3143b4eaf999bfe227be"
+    },
+    {
+      "path": "assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f"
+    },
+    {
+      "path": "assets/styles-BL0qz-FA.css",
+      "sha256": "605705128b8b1c20c6d9932502870e7de7f5307ef88877080989d212ec4ef495"
+    },
+    {
+      "path": "assets/docs-CRq-RwLb.js",
+      "sha256": "1940804123db72b6c089ec70f9e633b52a3b5f7727fc3ff00aa3ce96349a8335"
+    },
+    {
+      "path": "assets/icons-B0Zowo1T.js",
+      "sha256": "2d638c9d21e06774cf5e2715d4507d2dc4dbc65ac9297f1ab9b4b39d1196d9b3"
+    },
+    {
+      "path": "pilot/index.html",
+      "sha256": "f592e1ebc3f3395ff5eca3753f3fdcd8b2a27d4854afa2ffb6b44024654cccb1"
+    },
+    {
+      "path": "assets/index-DM6ByK_X.js",
+      "sha256": "77900613e5d96931138f7d33ad04d04b2ea0185d063a4b9e950eacc5493553e6"
+    },
+    {
+      "path": "assets/text-value-DPc3ypM1.js",
+      "sha256": "2c6bec3cfe798435c8a6ffab38c1b84296f68c25ae55c229e43513e70976af43"
+    },
+    {
+      "path": "assets/index-CLJlaqCi.css",
+      "sha256": "bce1e5707e29985434e6ddfc593c0fc14da0e71f4f4a44836d5ad67ef1cfb4c4"
+    },
+    {
+      "path": "assets/records-B0SmZL-k.js",
+      "sha256": "c7558b17efc1eb84cd369dd4deeeb2de362e1e0c560625da14fdc9a4548d54a1"
+    },
+    {
+      "path": "assets/browser-ClDs7QqY.js",
+      "sha256": "7a7686dc834f7056103ca0fe3965a37ab8f19e1e260fe0a33ad09c6f4750ca9b"
+    }
+  ]
+}
