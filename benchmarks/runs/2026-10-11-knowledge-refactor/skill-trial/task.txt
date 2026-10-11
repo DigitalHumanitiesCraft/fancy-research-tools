@@ -1,0 +1,4 @@
+Agent-only forward trial, 2026-10-11.
+Task chosen after first rendered collection inspection: Compare the catalogue date wording, creator attribution and photographic process for Bridal Veil, Yosemite and Yosemite Falls. Inspect both images and original catalogue evidence, inspect their order using Timeline, retain exactly these two records, and download the selected evidence. Explain only what the small sample supports.
+No expected defects supplied; no implementation files read before operation. Necessary knowledge contracts and evaluate skill read. No human acceptance, no participant timing, no baseline comparator.
+Starting URL: http://127.0.0.1:4187/photographs/ . New hidden Codex in-app browser tab. Initial Collection has no selected checkboxes or active filters. Browser profile isolation not independently established; new tab only. No edits to application or repository documents authorised.

@@ -18,140 +18,48 @@ updated: 2026-10-11
 
 # Testing
 
-## Task gallery and documentation audit, 2026-10-11
+Quality checks establish bounded software behaviour, source preservation and observable interaction. Research fitness and human acceptance require the relevant person's task observation. [Specification](specification.md) owns the acceptance targets; the procedures below identify how to examine them.
 
-The operator replaced the previous reference/workflow/external grouping with five research-task entry points. Earlier local studies remain reachable from development guidance. Collection Explorer remains the first runnable reference; capture, correction and edition entries identify their preparation and external-tool boundaries. The source package for the Fleischer letter retains machine-production status, a source-specific rights statement and exact source identities.
+## Current evidence
 
-| Reviewed current material | Result and responsibility |
-|---|---|
-| Root README, AGENTS and changelog | Reconciled task entry, technical examples and settled dual audience. AGENTS owns operational instructions; the added CLAUDE file points to it. |
-| All ten top-level knowledge documents | Checked current purpose, navigation, requirements, architecture, data, design, evidence, plan, index and handoff routing. Updated affected contracts and restart instructions. The empty handoff remains valid. |
-| All four public guides | Reconciled the overview, research framing, adaptation guidance and concrete task paths. Preserved existing walkthrough anchors and format/recovery limits. |
-| Three local research UI skills | Added lookup of settled decisions before clarification, cross-component visual and code review of redundancy, and project-specific inclusion policy. All three passed the skill creator's UTF-8 structural validator. This is not a new comparative effectiveness trial. |
-| Data package READMEs | Reviewed Cleveland, Met, Schönbach, Benndorf, NOAA/NHC, tool directory and the new SZD package against their described source/route boundaries. Updated the tool directory; preserved frozen source notices. The SZD package owns its parser/schema checks. |
-| Current benchmark instructions | Reviewed the benchmark README, concept brief and protocol, development-study protocol and synthetic skill-trial instructions. Corrected stale latest-evidence and material-count wording in the benchmark README. Existing protocols keep their bounded tasks and evidence limits. |
-| Dated journal, test and benchmark records | Retained as historical evidence with their original scope. They are not current route instructions and were not rewritten to claim later outcomes. |
+The implementation baseline is [a217446](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/commit/a217446f720282c347864dc710c8502db8d6ecbe). Its local sequence passed 96 unit tests, a full 60-case browser run, all six source gates, type/lint checks and the production build. After two gallery corrections, the five affected documentation/browser cases were repeated. The separate [Linux CI run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/actions/runs/38162240871) passed for the committed state. The [task-gallery record](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-11-task-gallery) preserves that sequence.
 
-The SZD package's `verification.json` records exact TEI parser preservation, schema checks and the edition parser's image/text correspondence. Full browser editing and reopening, a separate edition frontend build, human transcription review and offline facsimile use remain distinct checks. Klawiter's documented correction-propagation gap remains an upstream dependency. Relevant integrated checks for this candidate are recorded with the final run rather than inferred from earlier passing results.
+The subsequent [knowledge-refactor run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/codex/version-0.1/benchmarks/runs/2026-10-11-knowledge-refactor) passed type/lint, the documentation/production build and five affected browser cases. It corrected unpublished Markdown links detected by the build. Application, source data, dependency and test files remain unchanged. All existing requirement identifiers survived the independent loss review. The three local skills passed structural validation. A fresh agent applied the evaluation skill to a real photograph comparison and actual export; source values and selected identities agreed. The requested narrow viewport measured 487 CSS pixels, so that trial cannot claim 390-pixel coverage. Human interpretation, screen-reader operation and comparative skill effectiveness remain untested. The run manifest identifies the exact changed knowledge and procedure state.
 
-The integrated Windows run passed TypeScript/Biome, all six source-data gates, 96 unit tests, the production build and all 60 browser cases. After two small gallery corrections, all five documentation/browser cases passed again. That repeat includes the real TEI download and byte equality with its frozen source, local links, repository subpaths, narrow gallery entry and reference-table keyboard scrolling. Production dependency audit reported zero known vulnerabilities. The operated Collection Explorer review also verified retained zoom/pan, focus after clearing filters and byte-preserving selection export. Screenshots were inspected at desktop and 320 CSS pixels.
-
-The final gallery source identity is `benchmarks/runs/2026-10-11-task-gallery-source.json`; corresponding evidence is under `benchmarks/runs/2026-10-11-task-gallery/`. An independent screenshot review corrected a repeated product name, distinguished the bibliography's public reading preview from local curation, and corrected the correspondence preview's description. The source review found no concrete executable security or data-loss blocker in its bounded scope. Public benchmark copies redact local account paths and private working-context names with a recorded byte-level redaction manifest. Original evidence and a browser trace containing that context remain local. Generated last-run metadata is excluded from the commit.
-
-The teiCrafter browser attempt reached a native file picker unavailable to the browser automation. Its complete import, edit and reopen sequence remains unverified. A successful schema or parser check does not resolve that limitation. No screen-reader conformance, human usability acceptance or complete external edition workflow is claimed.
-
-## Collection Explorer hierarchy, 2026-10-11
-
-The gallery and overview now lead with Collection Explorer, followed by contrasting workflow studies and separately maintained external tools. README, the first walkthrough and current knowledge contracts follow that hierarchy. Existing application routes and old gallery fragments remain usable. Two independent read-only reviews checked the repository hierarchy and its conceptual documentation; their findings led to four contract corrections and two wording fixes.
-
-TypeScript/Biome, all five source-data gates, 96 unit tests and the eight documentation/photograph browser cases passed. The browser cases cover the gallery grouping, narrow width, links and repository subpaths, source-to-export selection, keyboard context, image fallback and chronology. The operated wide-browser review followed gallery entry, Yosemite search, two-record comparison and Timeline, confirming retained query and attribution qualifiers. The gallery preview was refreshed to the current application name. A final gallery-only browser repeat passed after adjusting its preview aspect ratio; wide and 320-pixel screenshots were inspected. Artifacts are retained in `benchmarks/runs/2026-10-11-collection-explorer-hierarchy/`; source identity is `benchmarks/runs/2026-10-11-collection-explorer-hierarchy-source.json`.
-
-These checks concern this bounded change. They do not establish human research acceptance, screen-reader conformance or a new full regression of all other workflows. No publication was performed.
-
-## Open photographs and UI skills, 2026-10-11
-
-The separate Photograph study adds a frozen forty-image CC0 sample, catalogue chronology, local image inspection and evidence-preserving comparison. Its implementation and schema are separate from existing edited collections and notebooks. The run is recorded in `benchmarks/runs/2026-10-11-open-photographs/`, with browser artifacts in `benchmarks/runs/2026-10-11-open-photographs-browser/`.
-
-TypeScript and Biome, all five data derivation gates and 96 unit tests passed. The dependency audit reported no known vulnerabilities at execution. JSON Schema Draft 2020-12 validation also passed for the schema and complete photograph collection. The first integrated browser run passed 58 of 59 cases, including all four photograph scenarios. Its failure exposed duplicate accessible table-region names in the generated specification after adding a second table with the same column headings. The shared renderer now adds section context when a table name repeats. All four affected documentation cases passed on repeat, including photograph assets and reload below a repository subpath. A subsequent visual correction separates narrow date labels from timeline marks and compacts the mobile header; all four photograph cases passed again. These are one full run and bounded repetitions, not a newly claimed full run. Their artifacts are retained in `2026-10-11-photograph-docs-correction` and `2026-10-11-photo-reflow-correction` under `benchmarks/runs/`.
-
-Operated inspection exercised search, selection, comparison, direct chronological marks, return context, real export, pointer pan and keyboard zoom. The independent code review found a skip-link fragment that reset route state and selection focus that jumped to a different control. Both are corrected and covered by the passing photograph browser cases. Visual inspection also corrected the comparison icon, duplicate comparison tray, image-control placement, dense timeline image sizing and a broken guide destination. Automated narrow-screen and axe checks are bounded engineering evidence. A manual viewport request in the in-app browser did not change its measured width; the narrow evidence comes from the browser test runner.
-
-The three local UI skills now define concrete design, evaluation and repair outputs and link to the portable profile and reuse patterns. Independent collection and annotation trials use synthetic cases without private project context or intended answers. Their artifacts and a separately guided repair trial remain distinguishable from the real photograph example. A negative collection result exposed an incomplete profile transfer: field production was preserved, but verbose status text and repeated separators survived. The owning profile and procedure were clarified instead of claiming that the first trial proved skill effectiveness.
-
-The retained runs are `2026-10-11-ui-skill-collection`, `2026-10-11-ui-skill-annotation`, `2026-10-11-ui-skill-repair` and `2026-10-11-ui-skill-initial-context`. The annotation trial preserved exact source anchors, review invalidation, recovery and byte-identical downloaded/reopened output. Its full keyboard passage selection remained unverified, and rendered inspection still found ISO date labels and repeated separators. These are prototype findings, not recommended product components. The guided collection repair corrected separators, field-bound status icons and authority access while preserving source and export bytes. It also introduced and then corrected a narrow overflow. Native touch and screen-reader use remain unexecuted. All three skill files pass structural validation with Python's UTF-8 mode. The final integrated source identity is `benchmarks/runs/2026-10-11-open-photographs-source.json`.
-
-Operator approval, a formative session with another person, real screen-reader operation and a comparative study of skill effectiveness remain unperformed. This run does not certify general accessibility, historical correctness or research fitness.
-
-## CI reflow correction, 2026-10-10
-
-The first branch push at `37038f0` passed installation, code/data checks, unit tests and build on GitHub's Linux runner. Its [browser run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/actions/runs/38079504011) passed 53 cases and failed two existing 200% text-size reflow checks, in annotation and collection comparison. The preceding Windows run passed all 55; that result did not establish Linux reflow.
-
-Isolated font probes reproduced the problem with wider font metrics: annotation labels exceeded their narrow column, while the comparison heading and export button retained excessive intrinsic widths. The correction permits text wrapping without clipping content or weakening the existing browser assertions. CI now retains failed browser artifacts for seven days to make future failures inspectable. Source identity is `benchmarks/runs/2026-10-10-ci-reflow-source.json`; the matching run directory records the completed local checks and probes. The GitHub check attached to each subsequent commit reports its remote result.
-
-## Commit preparation, 2026-10-10
-
-The operator authorised commit and push after the controlled closeout. Source identity for the prepared commit is `benchmarks/runs/2026-10-10-commit-preparation-source.json`; the matching run directory records the checks actually completed. Root Git attributes preserve source and evidence bytes across checkouts, while the importer's existing explicit LF rule remains in force. Source capture now includes this root policy. Earlier immutable captures and run records remain unchanged.
-
-Publishing the development branch does not constitute a release, Pages deployment or human UI acceptance. The documentation closeout below describes the state before this commit preparation.
-
-## Documentation audit closeout, 2026-10-10
-
-This increment reconciles maintained documentation with the implemented project-tool revision. It corrects the scope of the HSA metadata check, correspondence functionality, local and external navigation, current material and evidence references, license wording and public links. The maintained acceptance matrix now includes letter annotation, original versus working metadata and the addressable source view. Historical run reports retain their original wording and limitations.
-
-The closing source identity is `benchmarks/runs/2026-10-10-documentation-audit-closeout-source.json`. The matching run directory records the source comparison, code/data checks, production build, focused documentation/gallery browser checks and local Markdown-link audit. The source comparison establishes the exact changed Markdown files and verifies that application code, fixtures and frozen data bytes still match the preceding project-tools capture. The prior full software suite remains the [project-tool revision](#project-tool-revision-2026-10-10), with its own source identity and 91 unit and 55 browser results. Those tests were not relabelled as a new full run.
-
-At this documentation closeout, before preparation for branch publication, the working tree was a local, unpublished development candidate. Operator UI assessment, representative research use, screen-reader operation and comparative evaluation of the development method remain open. Technical documentation reconciliation does not establish those outcomes.
-
-## Project tool revision, 2026-10-10
-
-The revised candidate groups existing public applications by research activity and adds real Schönbach correspondence metadata and a Benndorf letter to the local workspaces. Catalogue comparison now uses a semantic selection table and addressable source evidence. Source identity and the retained evidence are recorded in `benchmarks/runs/2026-10-10-project-tools-source.json` and `benchmarks/runs/2026-10-10-project-tools/`.
-
-| Scope | Observed evidence | Limit |
+| Claim | Evidence available | Boundary |
 |---|---|---|
-| Integrated software | TypeScript and Biome, four frozen-source derivation gates, 91 unit tests, production build and 55 browser cases passed. | These checks establish bounded software behaviour. |
-| Existing work | Existing Met version 1 and 2 investigations, original collection fixtures, notebook recovery, invalid imports and cancelled replacements passed. An actual pre-change NHC export reopened and re-exported byte-identically. | Browser storage is a convenience, not an archival or collaborative service. |
-| New material | Letter quotation anchors and case vocabulary, cross-case rejection, source-role tampering rejection, Schönbach source identity and original-versus-working values were exercised. | Source matching does not verify the edition's historical accuracy. |
-| Working layouts | Desktop and 320px layouts, selectable text, keyboard actions, axe and actual downloads were checked. Catalogue, editor and both annotation cases were operated at native 200% and 400% Chromium zoom. Gallery navigation and text selection passed at both factors. | Screen-reader operation and broader browser coverage remain unobserved. |
-| Existing applications | Public destinations were checked by HTTP and selected actual working states were opened. coOCR's Wecker example, CorrespExplorer's HSA data, teiCrafter's SZD XML and the bibliography catalogue were inspected. | No provider-backed LLM run, full external regression suite or external interface rewrite is claimed. |
-| Independent review | A separate agent checked annotation case validation and editor source matching, then exercised hostile case/source changes against the production build. | Agent review is not blinded researcher observation or human design acceptance. |
-
-The operator's rejection of the preceding design remains below. This revision awaits a new UI review. Local data, source roles and declared interpretation/review are separated, and the gallery's existing-tool links do not imply that those external designs satisfy every local design rule. Private internal coordination documents and institutional datasets were not incorporated.
-
-Checks establish bounded evidence about software behaviour. Research usefulness and domain correctness require assessment with the intended material and accountable researchers.
-
-## Operator design review, 2026-10-10
-
-The operator inspected the preceding gallery screenshots and rejected the gallery and presented interfaces. The feedback identifies unclear names, development-oriented categories such as alternative interfaces, eyebrows and subtitles, excessive text and insufficiently task-specific design. It is a negative design assessment of that state, distinct from a recorded end-to-end researcher workflow and from the preservation tests below.
-
-A subsequent static review of the retained previews identified repeated per-row field labels in the catalogue, large cards containing few metadata values, and annotation/administrative controls competing with source reading. These are supporting design observations and revision hypotheses. Reassess the gallery's organization and actual working layouts with the operator. The historical passing checks below remain scoped to their captured source and behaviour.
-
-## Review-ready candidate, 2026-10-10
-
-This preceding candidate added Forecast reading, a gallery and project overview with visible documentation navigation. Type/lint checks, both data gates, 87 unit tests, the production build and 50 browser cases passed for that captured state. Documentation and gallery cases passed again after its stylesheet correction. A separate agent reproduced installation, checks, build and export/reopening workflows in an isolated copy. Each evidence record identifies its tested state; these results do not cover the subsequent portfolio revision.
-
-| Area | Current evidence | Remaining acceptance |
-|---|---|---|
-| Met workbench, concepts, catalogue and editor | Production regression passed. All 68 Met data files and the importer match the prior audit. Actual version 1 and 2 exports reopened with original source/author fields and stored bytes preserved. | Operator and representative researcher assessment. |
-| Forecast reading | Source extraction, exact anchors, declared actors, review invalidation, raw author-text preservation, recovery, rejected/cancelled imports and actual download/reopening passed. Restoring an annotation's final content also retains its review choice, including deliberate removal or replacement. | Domain assessment of categories, interpretation and review criteria. |
-| Overview and tool gallery | Published routes, local fragments, repository-subpath delivery, all seven tool/return links, previews, keyboard interaction, text selection and narrow reflow passed. Maintained Markdown links and headings were checked separately. | Operator feedback on entry, naming and grouping. |
-| Native browser zoom | Existing workflows passed at 200% and 400%. The revised overview, documentation, gallery and new annotation task were then operated at both factors, including actual notebook downloads and source-return checks. | Broader browser and assistive-technology observations. |
-| Pilot navigation correction | Comparison, Source dialog and export passed at 200% and 400% after correcting word wrapping. The 1280px browser window supplied 320 CSS pixels at 400%. The final production suite includes this stylesheet. | User assessment of working density. |
-| Separate repository reproduction | A contributing agent used the repository instructions in an isolated source copy for fresh installation, code/data/unit/build checks, annotation export/reopen and Met legacy-file preservation. It received prior conversation context, so this was not a blinded trial. | Independent researcher and subsequent maintainer episodes. |
-| Human and assistive-technology use | No representative researcher session or real screen-reader task has been recorded. | Observe task interpretation, screen-reader operation and human acceptance. |
-
-The zoom check used an isolated Chromium profile with `chrome.tabs.setZoom` in automatic, per-tab mode. It recorded the returned zoom factor, effective CSS viewport, downloaded JSON and native viewport captures. CSS text enlargement and CDP page-scale emulation were not used for that check. Native browser zoom evidence remains bounded to the recorded browser and tasks. Narrator is installed on the test host, but this agent environment cannot operate and observe its speech workflow, so screen-reader acceptance remains unperformed.
-
-Execution logs and browser evidence belong to `benchmarks/runs/2026-10-10-review-ready/`, with final source identity in `benchmarks/runs/2026-10-10-review-ready-source.json`. Preliminary formatting, documentation-link and browser-harness failures remain in the evidence alongside their corrections. The preservation probe verifies the listed historical evidence files; the older closeout assessment itself was absent from its original hash manifest. Researcher acceptance, autonomous novice use, comparative benefit of the development method and maintenance over time require their own evidence under the [development study protocol](../benchmarks/development-study-protocol.md).
+| Source semantics and preservation | Frozen-source regeneration, independent expected cases, actual downloads compared with their source and author values | Correct bytes do not establish correct historical interpretation |
+| Interaction and recovery | Browser cases for filtered selection, source addresses, retained image state, rejected/cancelled inputs, legacy drafts and export/reopen where supported | Each application's declared state and format under [Data](data.md) remain distinct |
+| Accessible operation | Automated axe checks, tested keyboard/focus sequences, 320px reflow and earlier source-bound native-zoom observations | No general conformance or real screen-reader acceptance |
+| UI design | Operated agent reviews and bounded screenshot review, including negative findings and repairs | Operator and representative researcher acceptance remain pending |
+| SZD interoperability | Pinned schema/parser checks in `data/szd-example/verification.json`; source-preserving package download | Native file picker blocked complete editor import/edit/reopen; full edition build remains unperformed |
+| Reusable procedures | Recorded agent-only collection/annotation trials and separately guided repair | No causal old/new comparison, novice-use finding or general skill-effectiveness claim |
 
 ## Test strategy
 
-Domain tests cover validation, transformations and round trips. Browser tests cover interactions that unit tests cannot observe. Build checks exercise dependency installation and static output. Manual review covers keyboard use, responsive layout and the clarity of recovery messages.
+| Risk | Appropriate check |
+|---|---|
+| Invalid data, semantic transformation or format compatibility | Domain tests and independent raw-source expectations |
+| Data mutation during interaction or recovery | Browser sequence with actual exported bytes and preserved starting state |
+| Source or derivative drift | `check:data` regeneration/hash checks against frozen inputs |
+| Broken published routes, fragments or relative assets | Documentation build and browser navigation below root and repository subpath |
+| Visual hierarchy, redundant controls or misleading encoding | Operated task, screenshot inspection and component/caller review against [Design](design.md) |
+| Maintained knowledge drift | Trace each changed claim to its owner, inspect inbound restatements, verify links and compare removed substance against Git |
+| Private material entering a public repository | Inspect new files, generated output and retained browser artifacts before publication |
 
-## Claims and evidence
-
-The latest dated section above records current documentation checks. The [documentation closeout](#documentation-audit-closeout-2026-10-10) retains its earlier evidence. The [project-tool revision](#project-tool-revision-2026-10-10) retains the preceding full software checks. The table below summarises the [earlier repository audit](#repository-audit-2026-10-10). Its passing results apply to that source state. Dated sections retain their original scope.
-
-| Claim | Required evidence | Recorded result |
-|---|---|---|
-| Import rejects invalid data without replacing state | Unit and browser tests | Passed locally, including an unsaved form |
-| Export preserves supported values | Round-trip test | Actual downloaded JSON reimported; untouched records compared |
-| Explorer restores URL state | Browser test | Search, type, selection, reload and back/forward passed |
-| Local edits preserve baseline | State test | Immutable updates and untouched records passed |
-| Storage failure is visible and recoverable through export | Browser test | Blocked storage and corrupt stored copy passed |
-| Static site builds with approved public documents | Build and output inspection | Public routes and links passed; only allowlisted documentation emitted |
-| Changed browser copies are detected before persistence | Two-tab browser test | Sequential stale-copy scenario passed; concurrent atomic writes are outside the guarantee |
-| Export remains within the import limit | Oversized-edit browser test | Oversized edit rejected, previous collection remains exportable |
+Run checks appropriate to the changed boundary. Repeat affected checks after a correction; report a partial repeat separately from a full run. Do not replace invariant or recovery tests with tests that merely mirror implementation wording. For documentation-only changes, verify references, rendered output and unaffected source bytes. Keep research data and historical evidence immutable unless an explicit correction has a recorded derivation or redaction.
 
 ## Acceptance
 
 | Question | Method | Authority |
 |---|---|---|
-| Can someone adapt the starter from its instructions? | Fresh setup and example replacement | Developer review |
-| Can a researcher complete exploration and correction tasks? | Observe representative tasks with real material | Researcher and product owner |
-| Are field meanings and review decisions appropriate? | Compare exports with domain rules | Accountable domain expert |
-| Can keyboard and assistive technology users complete tasks? | Manual interaction review with relevant technology | Accessibility review |
+| Can someone adapt the starter from its instructions? | Fresh setup and a bounded adaptation with assistance recorded | Developer review |
+| Can a researcher complete and interpret the task? | Observe representative use with real material | Researcher and product owner |
+| Are meanings and review decisions appropriate? | Compare evidence and exports with domain rules | Accountable domain expert |
+| Can keyboard and assistive-technology users complete the task? | Actual operation with relevant technology | Accessibility review |
 
 ## UI acceptance protocol
+
 
 The [design contract](design.md) and [UI requirements](specification.md#ui-refinement-acceptance) are assessed for each affected route. Historical benchmark records retain their original results and source identity.
 
@@ -177,19 +85,22 @@ The [design contract](design.md) and [UI requirements](specification.md#ui-refin
 
 Run the relevant tasks with representative researchers on real material. Record participant role, task wording, dataset and code identity, device, browser and assistance. Record completion as unaided, assisted, unsuccessful or not run. Preserve wrong turns, interpretation errors and the participant's own explanation. Time or action counts are useful only when actually measured under comparable conditions. No universal speed threshold or aggregate usability score is set by this protocol.
 
-Engineering review checks exact chart counts, zero and empty states, matching query/export scope, keyboard operation and visible focus. Inspect desktop and narrow layouts, native zoom, and an assistive-technology task. Record each check separately, including unperformed checks. Automated accessibility scans and screenshots supplement these observations. A screenshot establishes appearance at its captured state, without establishing task completion.
+Engineering review checks exact chart counts, zero and empty states, matching query/export scope, keyboard operation and visible focus. Inspect desktop and narrow layouts, native zoom, and an assistive-technology task. Record each check separately, including unperformed checks. Record the requested viewport and the measured CSS viewport separately. Distinguish keyboard activation after programmatic focus from a complete task in natural Tab order. Automated accessibility scans and screenshots supplement these observations. A screenshot establishes appearance at its captured state, without establishing task completion.
 
 Agent walkthroughs operate the rendered controls before reading the implementation for causes. Cover all published routes, mixed control sequences, rejected and cancelled actions, zero results, actual downloaded files and the documented tutorial. Use isolated browser contexts so test edits do not touch user drafts. Each finding records its starting state, actions, observed outcome and consequence. Code inspection can explain a finding but does not replace the interaction evidence. Browser agents use separate evidence paths, and one integrating runner owns the shared production build and final test output. Preserve accepted evidence outside runner-owned temporary output before the suite cleans that directory.
 
 Researcher task success, interpretation and assistive-technology acceptance remain unverified until observed with the relevant users and technology. Agent walkthroughs establish only the operated sequences and can detect defects or generate hypotheses.
 
-## Coverage limits
 
-Synthetic fixtures cannot establish scholarly correctness or usability in a real project. Automated accessibility checks cover detectable violations and require complementary manual review. Local storage has browser-dependent quotas and persistence. Large collections, multi-user edits and server workflows need separate assessment.
+## Introductory subline acceptance check
 
-Agent-based stakeholder simulations yield hypotheses and possible counterexamples. Their agreement does not establish observed needs or acceptance. Evaluating customization requires a referenced task and data state, an inspectable adaptation, recorded checks and review of the resulting workflow. Forecast and letter annotation provide concrete contrasts with catalogue comparison. Disciplinary fitness and broader reuse still require assessment. teiCrafter and CorrespExplorer are integrated through links to their existing applications; their runtime code is outside this repository's checks.
+Inspect page and section headings on changed rendered routes against the [interface copy constraint](design.md#interface-copy-constraint). Record the route and heading for a violation, including an introduction moved into an adjacent banner. Keep necessary guidance attached to the control or evidence it explains.
 
-Annotation recovery persists the research question and saved annotations. An unfinished annotation form stays in memory, blocks import/export until saved or discarded, and requests confirmation before leaving. It is not restored after a browser crash. Sequential storage checks protect detected stale copies without providing atomic collaboration or authenticated identity.
+## Knowledge and skill acceptance
+
+For a knowledge refactor, compare the before and after holdings. Record which unique claim remains, moves to a canonical owner, is corrected with evidence, or survives only as historical provenance in Git. Follow affected links and restatements. A smaller document is useful only if its reader can still make the required decision and retrieve its evidence.
+
+Validate a changed skill's structure and then exercise its consequential procedure on a bounded task when the change warrants it. Supply an independent agent with the skill, task and raw inputs without the intended answer or suspected defect. Keep generated artifacts isolated. Review the actual output, assistance and unexecuted steps. Agent trials establish procedural observations; representative human use and comparative effectiveness need separate evidence under the [development study protocol](../benchmarks/development-study-protocol.md).
 
 ## How to run
 
@@ -203,69 +114,72 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-## Earlier catalogue verification evidence
+Use the lockfile runtime requirements and current package scripts. [Benchmark preservation](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/codex/version-0.1/benchmarks/README.md#preserve-a-run) records the task, data identity, working-tree hashes, failures and output. A dirty tree cannot be identified by its base commit alone. Publishable evidence must be checked for private context and local account paths.
 
-The following dated records describe earlier source states. Statements about work remaining apply at the time of each record. The [documentation closeout](#documentation-audit-closeout-2026-10-10) and [project-tool revision](#project-tool-revision-2026-10-10) identify the subsequent checks and their limits.
+## Evidence index
 
-The header/footer, About and sorting revision passed TypeScript/Biome and production build. After correcting a footer-height overflow, all seven pilot browser tests passed. New checks cover alphabetical title ordering, descending URL restoration, missing culture values last in both directions, About content, Escape and focus return, and axe in the dialog. Existing pilot checks cover filtered exports, linked groups and desktop/narrow layout. A 1440×900 screenshot was visually inspected. The preceding full run passed the other 13 tests; only the affected pilot suite was repeated after the footer fix. Date-bound ordering and stable ID tie-breaking were inspected in code; dedicated behavioural cases remain open.
+Earlier checks apply to their recorded code, data, browser and task. Full narratives remain in the [pre-refactor Testing revision](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/a217446f720282c347864dc710c8502db8d6ecbe/knowledge/testing.md). Source manifests and execution artifacts remain in `benchmarks/runs/`. The index preserves useful incoming anchors.
 
-The 2026-10-10 agent walkthrough operated all public documentation routes, the Met explorer and the collection editor. The integrated revision passed type/lint checks, unit tests, production build and the browser suite. Historical counts, failed attempts and source identities remain in the individual run records below.
+### Task gallery and documentation audit, 2026-10-11
 
-| Criterion | Evidence and scope |
-|---|---|
-| Working navigation and tutorial | Agents operated all documentation routes and section links, then edited and downloaded a collection. The corrected guide includes Save record before export. |
-| Coherent state | Browser regressions exercise mixed pilot controls, cancelled editor navigation, selected records outside results and resolved error messages. |
-| Source and export correctness | The independent raw-data oracle covers the fixed sample. Actual downloads are compared with displayed selection or full collection, according to the tool's export contract. |
-| Keyboard and focus | Operated searches, editing, chart toggles, selected-object details, section navigation and table scrolling. These bounded sequences do not establish complete assistive-technology usability. |
-| Readable responsive layout | Reference tables retain readable widths within local scroll regions. The pilot passes desktop viewport-fit at 1440×900 and 1366×768; the editor keeps the list and Save action visible at 1366×768. Narrow layouts pass overflow checks at 320px. Visual review additionally caught and corrected CSS layer precedence and overlapping distribution labels. |
-| Contrast and semantics | Existing tokens and native controls inspected in code. Automated axe scans passed in tested states; a full conformance audit remains open. |
-| Text enlargement | Browser tests exercise 200% text size. Native browser zoom remains untested. |
-| Research acceptance | Representative researcher task completion, interpretation and screen-reader review remain unperformed. |
+Full local suite and Linux CI for a217446. SZD download bytes checked; editor round trip and human acceptance remain open. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-11-task-gallery).
 
-Run records live under `benchmarks/runs/`: `2026-10-10-met-instruments.md` records the initial data pilot, `2026-10-10-ui-refinement.md` the first visual revision, and `2026-10-10-ui-walkthrough.md` the operated review and corrections. `2026-10-10-workspace-redesign.md` records the independent tool identities and continuous workspace. Each record identifies its own source state. Agent findings are engineering evidence and design hypotheses.
+### Collection Explorer hierarchy, 2026-10-11
 
-## Earlier three-concept study evidence
+Former gallery hierarchy and operated photograph task. Its grouping was superseded by the task gallery. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-11-collection-explorer-hierarchy).
 
-The concept comparison uses the common task and protocol in `benchmarks/ui-concepts-brief.md` and `benchmarks/ui-concepts-protocol.md`. All three variants were operated in isolated browser contexts, with actual JSON downloads compared against the original selected source records. The integrated suite passed 25 browser tests and 24 unit tests. Independent cross-reviews exercised keyboard selection, empty-search recovery, selection retention, note retention and exports. Trail lost keyboard focus on stage navigation; a bounded correction focuses the destination heading. All five concept tests passed after that change, including its new regression. Type/lint and production build passed. Screenshots and raw exports are under `benchmarks/runs/concepts/`.
+### Open photographs and UI skills, 2026-10-11
 
-The provisional design/evaluate/improve skills were used in this round and passed structural validation. This is one real use case, not a cross-project skill benchmark. Independent reviewers are agents, not human participants; one reviewer read part of Trail's code before operation, so that review was not blind. Mobile comparison panning, Atlas's spatial cost, and separation of Trail evidence from notes remain design tradeoffs for human review. A suspected Atlas skip-link overlay in a full-page capture was not reproduced in live viewport geometry (unfocused bounds -160 to -104px); it is not recorded as a confirmed product defect. Native zoom and screen-reader acceptance remain untested. No human ratings, timing results or winning concept are claimed.
+First full run passed 58 of 59 browser cases. Duplicate table-region names were corrected in a focused repeat. Separate skill trials retain profile-transfer failures, guided repairs and unperformed keyboard/touch observations. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-11-open-photographs).
 
-## Introductory subline acceptance check
+### CI reflow correction, 2026-10-10
 
-Inspect every page and section heading on changed rendered routes against the [interface copy constraint](design.md#interface-copy-constraint). An introductory subline fails design acceptance, including informative subtitles and introductions moved into nearby banners. Necessary contextual field guidance and source qualifications remain with the controls or evidence they explain. Record the route and heading for each violation.
+Linux exposed two reflow failures after Windows success. Font probes and corrections preserve the original assertions. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-ci-reflow).
 
-## Session closeout verification, 2026-10-10
+### Commit preparation, 2026-10-10
 
-The integrated workbench revision passes TypeScript/Biome (45 files), 38 unit tests across five files, production build and all 33 Playwright tests. The independent source oracle verifies 60 records and 11 expected queries; the importer verifies 62 stored source files. A separate temporary checkout assembled only from Git-visible tracked and untracked files passes fresh installation, code checks, all 38 unit tests and build without copying dependencies or generated output.
+Introduced explicit Git byte preservation for source identities and evidence. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-commit-preparation).
 
-Browser cases cover comparison, preserved source values, reload, actual download and reopening in a fresh browser context, empty selections with notes, selection limits, corrupt import preservation, corrupt local draft preservation, restored queries across hash navigation, narrow layouts, bounded keyboard sequences and 200% text size. All three alternatives exercise the common recovery and interchange contract. The earlier catalogue tests now target `/baseline/`. Automated accessibility checks pass in the tested states. The final comparison screenshot was inspected; the page uses document scrolling and a locally scrollable comparison on narrow screens.
+### Documentation audit closeout, 2026-10-10
 
-Evidence is retained in `benchmarks/runs/2026-10-10-session-closeout/`, with the matching source capture beside it. Earlier counts above describe earlier runs. The historical `runs/concepts` directory was overwritten by the previous test setup and cannot establish immutable evidence for its original run. Routine tests now write temporary output; explicit promotion refuses to overwrite an existing retained run.
+Reconciled source roles, rights, routes and canonical contract claims without claiming a new full software run. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-documentation-audit-closeout).
 
-This is engineering verification. Representative researcher sessions, native browser zoom, screen-reader acceptance and contrasting-domain adaptation remain open. The bounded increment does not establish a winning interface, a validated usability benchmark or completion of version 0.2.
+### Project tool revision, 2026-10-10
 
-## Documentation reconciliation, 2026-10-10
+Added real letter/metadata examples, native zoom and source-role preservation. Source-bound software checks passed; human assessment remained open. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-project-tools).
 
-The later documentation pass corrects completed milestone states, distinguishes `/pilot/` from `/baseline/`, and updates recovery descriptions and session entry instructions. It changes no application code or source records. The earlier source capture continues to identify its historical working tree. The subsequent capture is `benchmarks/runs/2026-10-10-documentation-reconciliation-source.json`. The matching documentation run records build and link verification separately from the earlier full engineering suite.
+### Review-ready candidate, 2026-10-10
 
-## Project decisions and provenance, 2026-10-10
+Fresh reproduction received prior conversation context. Native zoom used chrome.tabs.setZoom at 200% and 400%; that observation differs from CSS text enlargement. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-review-ready).
 
-That increment implemented the five development commitments through the public guides, canonical contracts and development study protocol. Instrument study added field-level source inspection and investigation schema 2; version 1 files and drafts remain supported. Its acceptance checks require original raw values and qualifiers, separately bounded technical checks, selectable text, keyboard dismissal/focus return, narrow dialog reflow, exact v1 preservation on opening and view-only navigation, and v2 export/reopening. Changed evidence and JSON number overflow must be rejected before replacing work.
+### Session closeout verification, 2026-10-10
 
-An independent read-only agent review checked all 840 projected values, original values and the generator hash against the frozen snapshot, and confirmed unchanged raw sources, records and manifest. It detected a non-finite-number comparison defect and unnecessary v1 storage migration. Their repairs are covered by focused regressions and the integrated suite. Final execution results and source identity are recorded in `benchmarks/runs/2026-10-10-project-decisions/` and its matching source manifest.
+Introduced shared investigation recovery, retained exports and clean-source reproduction. Earlier runs/concepts artifacts were overwritten by an old runner and cannot establish immutable original evidence. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-session-closeout).
 
-TypeScript/Biome pass for 47 files, all 46 unit tests in six files pass, and the production build succeeds. The integrated browser run passed 34 of 35 cases; a duplicate accessible table-region label on the specification page failed. A more specific table label corrected it. All nine affected documentation and workbench cases then passed, including the final persistent Close control, plain-language mapping rules and v1 byte-preservation checks. The other 26 cases were unchanged after their passing run. The raw-source oracle still verifies 60 records and 11 queries. A separate production-browser operation uses the previously downloaded version 1 file, retains its stored bytes, exports version 2 and reopens the actual download with identical source detail. Desktop and narrow screenshots were inspected; 200% CSS text size is distinct from native browser zoom.
+### Documentation reconciliation, 2026-10-10
 
-Two fresh-context read-only agents exercised the entry instructions. The question-first case located a source-grounded two-record comparison and identified an interim legacy-export wording conflict, which was corrected. That trial overlapped final guide editing and is not a frozen comparative run. The reserved resumption case then used the final guide hashes; it requested the missing target repository, old file and annotation example, retained unknown ownership/compatibility, and proposed reversible adaptation without inventing execution. It caused no further guide changes. Full trial scope and source-reading limits are retained with the run.
+Corrected completed milestones, baseline routing and recovery descriptions after the workbench increment. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-documentation-reconciliation).
 
-The development-study preparation trials are agent-only instruction checks. They cannot establish autonomous novice use, human research acceptance, transfer across disciplines or benefit of the method. Independent researcher sessions, native browser zoom, screen-reader assessment, a contrasting adaptation, a measured method comparison and maintenance over time remain unperformed.
+### Project decisions and provenance, 2026-10-10
 
-## Repository audit, 2026-10-10
+Field-level source inspection and v2 investigation compatibility. Fixed non-finite equality and premature v1 migration. Question-first trial overlapped guide editing; later resumption trial used frozen guide hashes. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-project-decisions).
 
-The repository audit checks agreement between decisions, implementation, published guides and execution evidence. New regressions cover empty-but-present editor drafts, unload protection after external investigation changes, exact accepted author text through form restoration and unrelated edits, and application links from documentation below a site subpath. `npm run check:data` independently regenerates all derived dataset files in temporary storage and compares them byte for byte before running the raw-source oracle. An intentionally corrupted disposable copy must fail this gate.
+### Repository audit, 2026-10-10
 
-The integrated production run passed TypeScript/Biome for 49 files, all 51 unit tests in six files, the data gate, production build and all 40 browser tests. A new directory assembled from 163 Git-visible source files, excluding historical run evidence, generated output and dependencies, passed `npm ci`, code/data checks, the same 51 unit tests and build. No installed dependencies were copied. Three deliberate derived-file byte mismatches were rejected in a disposable copy. The frozen dataset content, provenance registry and importer remained unchanged against the preceding source capture. Git checkout with `core.autocrlf=true` preserved the importer's digest and protected dataset files after adding explicit attributes.
+Source regeneration, actual export/reopen, fresh installation, line-ending preservation and rejected corrupted derivatives. [Retained run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-10-repository-audit).
 
-Operated agent review covered the tutorial's real download and reopening, rejected and cancelled replacement, retained editor inputs after cancelled navigation, keyboard selection and source-dialog focus return, pointer selection of an uncertain attribution, and 320px reflow. Native zoom, screen-reader operation and researcher task interpretation remain unperformed. The run retains the earlier failing downloads separately from passing regression exports; normal control display normalization is distinct from changing the underlying author text.
+### Operator design review, 2026-10-10
 
-The integrating runner retains execution logs, source identity, downloads and screenshots in `benchmarks/runs/2026-10-10-repository-audit/`, with `2026-10-10-repository-audit-source.json` beside it. Final documentation changes were rebuilt in both directories and their output compared. Historical runs remain unchanged. The audit does not substitute for the unperformed human, accessibility and contrasting-domain work listed above.
+The operator rejected excessive text, generic layouts and unclear grouping despite passing software checks. This decision grounds the task hierarchy and profile in [Design](design.md). Subsequent implementation has separate engineering evidence and still requires human acceptance.
+
+### Earlier catalogue verification evidence
+
+The initial pilot, UI refinement and walkthrough records remain under `benchmarks/runs/`. They cover sorting, missingness, mixed controls, actual exports and narrow tables at their original states. Dedicated date-bound ordering and deterministic-tie behavioural cases were still open in that review; historical prose must not be read as current coverage.
+
+### Earlier three-concept study evidence
+
+Atlas, Bench and Trail share the [concept protocol](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/codex/version-0.1/benchmarks/ui-concepts-protocol.md). Recorded agent operation included original data/export comparison and a Trail focus repair. One reviewer read code first, and no human ratings or winning concept were established. The subsequent session closeout records the overwritten early evidence limitation.
+
+## Provenance
+
+Verdichtet on 11 October 2026 from clean baseline a217446. Durable procedures remain above, future actions are in [Plan](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/codex/version-0.1/knowledge/plan.md), decision transitions are in [Journal](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/codex/version-0.1/knowledge/journal.md), and the linked Git revision retains every earlier test narrative. No previous result is reclassified as a new run.

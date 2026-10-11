@@ -1,0 +1,26 @@
+[
+  {
+    "path": "skill-trial/check-export.mjs",
+    "reason": "remove local account paths and optional BOM; original retained privately",
+    "originalSha256": "ddef436e99746064416523c8146a9a2ce408aec581aec410856714c97ff3abbc",
+    "publishedSha256": "4aa41332fe608c4fd61c42919bdefc819eb654445dd2370c9dc6e5f5982d05c6"
+  },
+  {
+    "path": "skill-trial/lockfile-hash.json",
+    "reason": "remove local account paths and optional BOM; original retained privately",
+    "originalSha256": "6b8a3e6c52d42286efe2c47aaa962a87eb532ce9d2990a7b87ae632dfcfb6574",
+    "publishedSha256": "c57b53b07d27f580e867af2757a13e48747ed848f161912c6fb1443cfb1ce557"
+  },
+  {
+    "path": "skill-trial/served-build-asset-hashes.json",
+    "reason": "remove local account paths and optional BOM; original retained privately",
+    "originalSha256": "5c4d6bba2ed6a2743f4c8fa7688551213dcc0f4e9440c87325923a937995b81f",
+    "publishedSha256": "e6d0dbda5185e65483afe0184241fdca77207bb08317f13e938b3514cfd7a31e"
+  },
+  {
+    "path": "skill-trial/source-hashes.json",
+    "reason": "remove local account paths and optional BOM; original retained privately",
+    "originalSha256": "f1f3c03234747dc5787f7057ac2dc9ec926aa79033d5d2743874a1f51412f350",
+    "publishedSha256": "88f526165e9a5a3372c6185241010441cd1313f30fd38f5fac4791a0396333c6"
+  }
+]

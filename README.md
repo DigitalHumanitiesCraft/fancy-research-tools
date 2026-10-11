@@ -8,7 +8,7 @@ The unreleased browser starter includes public guides, maintained specifications
 
 Start with Collection Explorer at `photographs/`: search historical photographs, follow their qualified catalogue chronology, inspect images and retain up to four records for comparison and evidence export. Its [source and rights record](data/photographs/README.md) documents the independent open sample. It has no map because the source does not establish suitable geographic relations.
 
-The gallery leads with the runnable Collection Explorer. Its other task entries distinguish existing applications from guided local setup. [Getting started](docs/getting-started.md) covers teiCrafter, correspondence analysis, bibliographic correction and the SZD edition example. The [technical examples](docs/getting-started.md#technical-examples) retain the earlier catalogue, metadata and annotation routes, draft formats and reproducible test cases.
+[Getting started](docs/getting-started.md) covers teiCrafter, correspondence analysis, bibliographic correction and the SZD edition example. The [technical examples](docs/getting-started.md#technical-examples) retain the earlier catalogue, metadata and annotation routes, draft formats and reproducible test cases.
 
 ```sh
 npm ci
@@ -27,7 +27,7 @@ Read [project purpose](knowledge/project.md), [requirements](knowledge/specifica
 
 The examples have separate data contracts and local drafts. Their explicit JSON exports provide portable copies. The [worked annotation adaptation](docs/customizing.md#contrasting-text-annotation) records shared and replaced responsibilities. Additional research settings require their own material rules and acceptance evidence.
 
-The [five project commitments](knowledge/project.md#development-commitments) cover assisted development without programming experience, adaptation of existing tools, maintainable handover, independent researcher evidence and investigation of the development method. The guides provide a copyable start brief and maintenance record. The [development study protocol](benchmarks/development-study-protocol.md) distinguishes prepared procedures, agent-only trials and actual participant results. No independent novice-use or general-reuse claim follows from this implementation.
+The [customization guide](docs/customizing.md) provides a copyable start brief and maintenance record under the [project commitments](knowledge/project.md#development-commitments). The [development study protocol](benchmarks/development-study-protocol.md) distinguishes prepared procedures, agent-only trials and actual participant results. No independent novice-use or general-reuse claim follows from this implementation.
 
 ## Verify
 

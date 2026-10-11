@@ -1,0 +1,72 @@
+- link "Skip to photographs":
+  - /url: "#content"
+- banner:
+  - link "Collection Explorer":
+    - /url: "#view=collection&q=Yosemite&selected=1992.12%2C1974.47"
+  - navigation "Study views":
+    - link "Collection":
+      - /url: "#view=collection&q=Yosemite&selected=1992.12%2C1974.47"
+    - link "Timeline":
+      - /url: "#view=timeline&q=Yosemite&selected=1992.12%2C1974.47"
+    - link "Comparison":
+      - /url: "#view=comparison&q=Yosemite&selected=1992.12%2C1974.47"
+  - link "All tools":
+    - /url: ../tools/
+- main:
+  - generic "Selected photographs":
+    - link "Compare 2":
+      - /url: "#view=comparison&q=Yosemite&selected=1992.12%2C1974.47"
+    - list:
+      - link "Inspect Bridal Veil, Yosemite":
+        - /url: "#view=photograph&from=collection&q=Yosemite&selected=1992.12%2C1974.47&record=1992.12"
+      - link "Inspect Yosemite Falls":
+        - /url: "#view=photograph&from=collection&q=Yosemite&selected=1992.12%2C1974.47&record=1974.47"
+      - button "Remove Yosemite Falls from comparison" [pressed]:
+    - button "Export selection":
+      - text: Export selection
+  - navigation "Photograph navigation":
+    - link "← Collection":
+      - /url: "#view=collection&q=Yosemite&selected=1992.12%2C1974.47"
+    - 'link "Next in collection: Yosemite Falls, 1868"':
+      - /url: "#view=photograph&from=collection&q=Yosemite&selected=1992.12%2C1974.47&record=1974.47"
+      - generic: "Next: Yosemite Falls"
+  - figure:
+    - group "Bridal Veil, Yosemite, zoomable image"
+    - button "Zoom in": +
+    - button "Zoom out": −
+    - button "Fit image"
+    - paragraph: "Image controls: arrow keys to pan, + and − to zoom, 0 to fit."
+  - heading "Bridal Veil, Yosemite" [active] [level=1]
+  - term: Catalogue date
+  - definition: 1865–66
+  - term: Artist
+  - definition: Carleton E. Watkins (American, 1829–1916)
+  - term: Process
+  - definition: albumen print from wet collodion negative
+  - term: Catalogue culture
+  - definition: America
+  - term: Accession
+  - definition: "1992.12"
+  - term: Source
+  - definition:
+    - link "Cleveland Museum of Art":
+      - /url: https://clevelandart.org/art/1992.12
+      - text: Cleveland Museum of Art
+  - term: Image
+  - definition:
+    - link "Open image":
+      - /url: http://127.0.0.1:4187/assets/156283-Cr7Zp9og.jpg
+  - term: Image rights
+  - definition:
+    - link "CC0 public domain dedication":
+      - /url: https://creativecommons.org/publicdomain/zero/1.0/
+      - text: CC0 public domain dedication
+  - button "Remove Bridal Veil, Yosemite from comparison" [pressed]:
+    - text: Remove from comparison
+- contentinfo:
+  - link "Cleveland Museum of Art Open Access":
+    - /url: https://www.clevelandart.org/open-access
+  - link "Research guide":
+    - /url: ../guides/research.html
+  - 'link "Data and images: CC0"':
+    - /url: https://creativecommons.org/publicdomain/zero/1.0/

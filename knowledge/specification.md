@@ -18,7 +18,7 @@ updated: 2026-10-11
 
 # Specification
 
-The unreleased starter leads with Collection Explorer and provides task-based entry points for capture, correspondence analysis, correction and edition building. Catalogue comparison, source annotation and collection metadata editing remain technical examples. Design variants and the historical catalogue remain available for development comparisons. Requirements describe observable behaviour. The [testing record](testing.md) identifies evidence and remaining acceptance.
+The [project scope](project.md#functional-scope) defines the reference tool, guided applications and technical examples. The requirements below specify observable behaviour for those routes. [Testing](testing.md) records execution evidence and pending acceptance.
 
 ## Project entry and navigation
 
@@ -28,19 +28,24 @@ The unreleased starter leads with Collection Explorer and provides task-based en
 
 ## Prepared SZD workflow
 
-The capture and edition guides use one source-bound letter package. Downloads preserve its attribution and explicit machine-produced status. Import into teiCrafter, schema checking, edition parsing, browser editing and full frontend generation are distinct acceptance steps. The external-TEI preview has no claimed correction-server round trip. Source package checks and outstanding operated tasks are recorded separately in [Testing](testing.md).
-
-The correction guide distinguishes the published Klawiter reading interface from local edit mode, patch export and downstream application. Its unresolved propagation boundary must remain visible before promising canonical correction of all outputs.
+| ID | Behaviour | Acceptance evidence |
+|---|---|---|
+| SZD-01 | Capture and edition guides use the same attributed, explicitly machine-produced source package. Downloads preserve the published file bytes. | Compare downloads with the package manifest and [source contract](data.md#szd-edition-example). |
+| SZD-02 | The capture exercise can be imported, edited, exported and reopened in teiCrafter without unexplained source loss. | Operate the complete browser sequence and compare retained source, page references and declared changes. Schema validity alone does not satisfy this criterion. |
+| SZD-03 | The edition exercise produces a reading frontend with the expected source text and facsimile references. | Build and inspect the complete frontend. Parser compatibility alone does not satisfy this criterion. The external-TEI adapter makes no correction-server round-trip claim. |
+| SZD-04 | The Klawiter guide distinguishes public reading, local correction, patch export and downstream application. | Inspect the actual correction path and disclose the unresolved propagation boundary before claiming canonical correction of all outputs. |
 
 ## DH pilot contract
 
-The original filtering and aggregation contract below is retained at `/baseline/`. The current `/pilot/` follows the investigation contract added below.
+`/baseline/` retains the read-only Met catalogue for controlled comparisons. `/pilot/` uses the [investigation workbench contract](#investigation-workbench-contract). The baseline task and independent expected results are in `benchmarks/cases/met-instruments/`.
 
-The subsequent commissioned pilot added the read-only Met instrument explorer now retained at `baseline/`. Its task is to inspect original catalogue labels, filter a frozen sample, count groups and identify missing metadata, then export selected source records with query parameters and provenance. The task and independently calculated expectations live under `benchmarks/cases/met-instruments/`. Existing editor behaviour and stored drafts remain on their original route. Pilot results establish bounded engineering evidence, with researcher acceptance and wider adaptation still open.
+Search matches a normalized substring across title, object name, culture, descriptive date and medium. Exact classification and culture filters combine with a missing-field filter. Counts, group distributions and missingness use the current filtered population. Original labels and descriptive dates remain visible, with a distinct missing group and explicit empty results. Export preserves the applied filters, summaries, selected source records and snapshot provenance.
 
-Search uses a normalized substring across title, object name, culture, descriptive date and medium. Exact classification/culture filters combine with a missing-field filter. Counts and missingness use the current filtered result as denominator. Empty results are explicit. Grouping retains source labels and a separate missing value. Original date descriptions remain visible. Export includes source identifiers, supported fields, filters, summaries and the snapshot manifest. The pilot makes no claim of representative sampling, precise historical dates or causal explanation.
+Title, date, culture and maker headers sort in both directions. Date order uses the source `beginYear`, which is an indexing bound under the [source semantics](data.md#sources). Missing values remain last in both directions and object ID resolves ties. Sorting preserves the result population, counts and selection.
 
-Column-header controls sort the current result by title, date, culture or maker in either direction. Date sorting compares the source `beginYear` numerically while retaining the original descriptive date in the cell. This orders catalogue bounds and does not establish exact historical dates. Missing values sort last in both directions. Equal values use the source object ID as a stable tie-breaker. Sorting preserves the filtered population, group counts and selected record.
+Grouping and chart filtering apply current form values through the same query transition. Pending search inputs remain identifiable, while rendering and export consume applied state. A matching selection stays visible. A filter that excludes it selects a matching record or exposes an empty detail state. This differs from the editor's retained out-of-result selection under [recovery and replacement](#recovery-and-replacement).
+
+All distribution categories remain reachable. The distribution and table share a population, and the chart's filtering purpose is visible. A single contextual result count, comparable rows and one directly visible detail pane support the baseline task. The header carries the tool title and export action. A native About dialog provides the source, declared sample selection, snapshot, limitations and guide. The footer carries About and distinguishes data and code licences. The dialog supports a close button, Escape and focus return.
 
 ## Requirements
 
@@ -61,15 +66,9 @@ The [design contract](design.md) governs hierarchy, visual encodings and interac
 | UI-09 | The catalogue table at `/baseline/` supports understandable, deterministic sorting without changing the result population. | Operate all sortable headers in both directions, verify `aria-sort`, source-date order, missing values last, stable ties and preserved selection. |
 | UI-10 | About exposes provenance and limitations without crowding the working header. Data and code licenses remain distinct in the footer. | Open and close the dialog by keyboard, verify focus return, sample details, snapshot, guide destination and separate CC0/MIT links. |
 
-The historical catalogue at `/baseline/` applies current form values when grouping or selecting a chart filter. Unsubmitted edits are identified as pending, and exports use the applied result state. The editor exports the complete collection. Filtering retains a selected record and explicitly explains when that record is outside the results. Cancelling a proposed navigation restores the applied search controls while preserving the unfinished form. Documentation's editing walkthrough includes saving before export.
-
-The catalogue at `/baseline/` presents results as comparable table rows and one directly visible detail pane. A contextual result count replaces the redundant Objects heading above the Object column. A valid selection remains visible within the result context. When filtering excludes it, select a matching record or expose an empty detail state. All distribution categories remain reachable without a Show more gate. The group area identifies its filtering purpose and its caption explains its relationship to the table. Both derive from the same filtered sample. The investigation at `/pilot/` follows IW-01 through IW-07 below, with separate Collection and Comparison views and retained multi-record selection.
-
-The catalogue header contains the tool title and export action. The footer contains About, the data license CC0 and the code license MIT. About opens a native dialog with the Met source, the 60 lowest-ID selection, its non-representative character, snapshot date and research guide link. It supports a close button, Escape and focus return. The catalogue has no repeated accordions or Go to objects workaround.
-
 ### Planned version 0.2 acceptance
 
-The following criteria define the planned increment. The [testing record](testing.md) identifies execution evidence, while `knowledge/plan.md` in the repository maintains remaining work. Preparation, Exploration, Distillation and Implementation recur as material and prototypes change the research question. Runtime LLM integration depends on the resulting tool's task.
+These criteria govern the version 0.2 increment. [Testing](testing.md) identifies satisfied and pending criteria, while `knowledge/plan.md` maintains the remaining work. The development approach is defined by [Project](project.md#purpose).
 
 | ID | Planned outcome | Required evidence |
 |---|---|---|
@@ -82,9 +81,11 @@ The following criteria define the planned increment. The [testing record](testin
 | V02-07 | Make the approach reproducible by another developer or agent. | An independent attempt uses repository instructions without hidden conversation context, records interventions and reports unresolved limitations. |
 | V02-08 | Present a reviewable local release candidate. | Production build, relevant unit and browser checks, manual interaction review and source/knowledge consistency are recorded. Human research acceptance is recorded separately and remains pending until actually provided. |
 
-Research activities, material structures, file formats and collaboration requirements are separate dimensions. Implemented cases cover catalogue comparison, letter and forecast annotation, and a descriptive projection of real correspondence metadata. teiCrafter and CorrespExplorer are integrated as existing applications through links; their runtime code and private project states are separate. General-purpose format support and a universal plugin API require separate evidence and scope.
+Acceptance must name the research activity, material structure, file format and collaboration context. The [project scope](project.md#functional-scope) bounds supported cases and linked applications.
 
 ### Functional requirements
+
+FR-01 through FR-07 apply to the flat metadata editor at `/tool/`. FR-08 applies to publication of project guidance.
 
 | ID | Behaviour | Acceptance evidence |
 |---|---|---|
@@ -106,6 +107,18 @@ Research activities, material structures, file formats and collaboration require
 | NFR-03 | Render imported values as text and validate external links. | Hostile-input tests and browser inspection. |
 | NFR-04 | Build from the committed lockfile with locally bundled assets. | Clean install and production build. |
 | NFR-05 | Keep process documents outside the public site build. | Inspect generated output. |
+
+## Recovery and replacement
+
+The editor preserves its supplied baseline and edits a separate working collection. Export downloads a new file containing the complete collection, including records outside the current filter. It writes neither to the original file nor to a remote repository. Keep an exported copy for recovery because browser storage can be unavailable or cleared.
+
+An invalid import leaves current work intact. An edit exceeding the [collection limit](data.md#limits) remains in the form for correction. Filtering may retain a selected record outside the results and must explain that state. Cancelling dirty-form navigation restores applied search controls while preserving the unfinished form. Saving the form precedes export in the editing walkthrough.
+
+All author-editable workflows preserve accepted text under [the exact-string rule](data.md#relationship-to-source-material). An unrelated edit, view transition or export must not normalize another field. Imports validate completely before replacement and protect edits made while a file is being read.
+
+The editor, investigations and notebooks keep independent recovery state. Each reports unavailable storage and preserves a detected stale or corrupt copy before offering recovery. A protected corrupt editor copy requires explicit overwrite confirmation. Investigations and notebooks block further persistence after detected conflicts and keep export available. A missing storage key differs from a stored empty string. An unchanged restored investigation, including version 1, requires no write or unload warning. Sequential stale-copy detection provides no atomic collaboration guarantee.
+
+Investigations preserve saved notes even with no selected records, while identifying that state as unfinished work. Annotation crash recovery covers saved notebook state only. Pending annotation forms remain in memory and require save or discard before import, export or source navigation, with a leaving warning for unsaved work. Route-specific requirements below define compatibility and source checks.
 
 ## Epics and user stories
 
@@ -154,20 +167,19 @@ These scenarios express intended investigations. The local editor implements a d
 
 ### ADR-001 Bounded browser starter
 
-The repository's purpose is to support agent-assisted development of research tools. Version 0.1 implements a small static application to make adaptation inspectable. A universal module interface has no supporting adaptation evidence yet. Additional cases determine the technical extent of the core.
+The [project scope](project.md#functional-scope) limits the starter to inspectable static-browser adaptations. Actual cases must justify any additional shared interface or service.
 
 ### ADR-002 Explicit interchange
 
-Local draft storage aids continuity. Export creates a portable file the researcher can inspect and preserve. Browser storage can be cleared or unavailable, so visible error handling and export are part of the workflow.
+Portable export is the durable recovery path. The [recovery contract](#recovery-and-replacement) defines behaviour when local continuity fails, and [Data](data.md) defines supported formats and rollback.
 
 ### ADR-003 Canonical specifications
 
-Selected knowledge files feed the documentation build. Maintaining one authored source reduces contradictory copies. Publication uses an explicit allowlist.
+The documentation build publishes selected maintained contracts through the [explicit architecture allowlist](architecture.md#documentation-and-gallery). Each fact has one authored maintenance location.
 
 ### ADR-004 Reference cases and evidence
 
-Visible examples should use real open data with documented selection, rights and transformations. Synthetic inputs remain available for deterministic error cases. Simulated stakeholder perspectives can generate requirements and counterexamples, but their output is a hypothesis requiring source checks or assessment by actual stakeholders. Neither simulated agreement nor passing software tests establishes research usefulness.
-
+The [project data policy](project.md#data-basis) requires real open material for visible examples and permits synthetic boundary tests. Acceptance follows [UI-06](#ui-refinement-acceptance) and [DEV-04](#development-and-handover-acceptance), with source and production claims under [Data](data.md#provenance-of-individual-values).
 
 ## Provisional concept-study requirements
 
@@ -214,4 +226,4 @@ The [five development commitments](project.md#development-commitments) govern th
 | DEV-04 | Reuse claims reflect independent use. | Observe people outside implementation on relevant tasks, record failures and help, and bound claims to the observed cases. Agent-only trials remain preparation. |
 | DEV-05 | Development-method claims have a traceable basis separate from product usefulness. | Follow the published development study protocol with a declared comparator, task/material/tool identity, interventions, outcome checks and held-out case. Report unperformed comparisons explicitly. |
 
-Current delivery implements the procedures, the Met provenance adaptation and the contrasting annotation case. Independent researcher sessions and comparative method outcomes remain separate acceptance work.
+The [testing record](testing.md) identifies executed procedure trials. The project plan retains independent researcher sessions and comparative method work until evidence is recorded.

@@ -22,7 +22,7 @@ Each research tool has an interface and visual identity derived from its researc
 
 ## Reference hierarchy
 
-Collection Explorer at `/photographs/` is the first reference tool. Its open photograph sample supports search, catalogue chronology, image inspection and comparison. The overview and gallery lead to it first. The other gallery entries follow research tasks, Capture and encode, Analyse correspondence, Review and correct, and Build editions. Existing applications and setup guides have explicit destinations. Earlier bundled applications and concept variants remain technical and design examples in the development guide. The task categories are a project navigation decision, with no universal taxonomy claim. Existing routes, saved work and export contracts remain unchanged.
+The [project scope](project.md) establishes Collection Explorer as the first reference and distinguishes gallery tasks from technical examples. The gallery's current destinations and previews are maintained in `data/tools/catalog.json`. [Project navigation](#project-navigation) defines how that hierarchy appears.
 
 ### Reusable review decisions
 
@@ -37,8 +37,12 @@ Each rule below carries a task condition. A presentation preference is distinct 
 | Explicit data semantics | Format dates without inventing precision; distinguish named places from supported coordinates. | An ordinal chronology must not imply elapsed-time distance. No map is supplied by the current photograph data. |
 | Defined inclusion policy | Decide which source and derived assertions may contribute before rendering them. If permitted, mark LLM-produced values consistently at the affected field. | Excluded assertions must also be absent from search, counts, diagrams and exports. A source-only tool needs no LLM badge. |
 | Useful missingness | Comparable cells may be blank when the column establishes meaning. Missing categories remain available in filters, coverage and source inspection. | An unresolved attribution, access restriction or failed load needs an explicit state. |
+| Stable filter context | Common filters occupy a stable location; view-specific controls expose their scope, active constraints and reversal. Searchable choices combine lookup and selection where that helps. | Hidden filters must not silently affect another view. A small fixed vocabulary can work better as visible choices. |
+| Source evidence in context | A source action beside the affected value opens original wording, mapping and recorded checks, then returns to the same working context. | Uncertainty affecting interpretation stays visible before opening detail. Optional hashes and processing traces may be disclosed. |
+| Meaningful identity links | Authority links name their destination and expose the full identifier and copying when useful. | A shared name or authority link must not silently merge distinct people or assertions. Citation identifiers remain recoverable in export. |
+| Source-linked writing | The exact quotation, interpretation and saved or unsaved state remain adjacent during annotation. | Prose can require more space than a catalogue row. Source navigation and export must preserve the anchor. |
 
-The current Collection Explorer is a source-only example. Its timeline is an ordinal catalogue chronology and its forty-record sample is fully available without pagination. Lanes, map views and a larger shared framework remain adaptation candidates that require their own source data and measured need.
+The source-only Collection Explorer applies these decisions through the [photograph study](#photograph-study). Lanes, maps and a larger shared framework require their own source data and measured need.
 
 ## Operator default profile
 
@@ -52,29 +56,21 @@ Format structured calendar dates for human reading in the interface language. Ke
 
 ## Task hierarchy
 
-The operator rejected the preceding gallery and its interfaces on 2026-10-10. The critique concerned opaque tool names, development-history categories, eyebrows and introductory copy, excessive text and generic layouts. The revised candidate below uses real project examples and task-based entry points. Operator assessment of this revision remains open. Successful engineering checks do not establish design acceptance.
-
-The revision must make the activity, material and useful result understandable at entry, then organize each workspace around the actual research action. The gallery groups entry points by research task, with Collection Explorer first. Each entry names its activity, material and whether it opens an application or preparation guide. Prototype variants and historical status belong in development context. The reference hierarchy is the operator’s current product decision. Its rendered layout still requires operator review. Reducing copy must preserve source wording, uncertainty, field meaning and actionable state feedback.
+Entry makes the activity, material and useful result understandable. Workspaces expose the evidence needed for the next decision. Prototype history belongs in development context. Current operator acceptance is recorded in [Testing](testing.md), separately from engineering checks.
 
 | Surface | Primary content | Supporting content |
 |---|---|---|
-| Project overview | Collection Explorer, then the other examples and development guides | Project scope and research basis |
-| Tool gallery | Explore collections, capture and encode, analyse correspondence, review and correct, build editions | One task example per entry, real material and an honest application or setup destination |
-| Documentation | Adaptation guide and maintained contracts | Visible section navigation, page outline and evidence references |
-| Collection comparison | Comparable catalogue columns, retained selection and authored observations | Addressable field provenance, recovery and explicit export |
-| Collection editor | Selected source record and editable fields | Validation, draft recovery and import/export |
-| Concept study | Alternative research interactions on the same material | Comparable evaluation and explicit human feedback |
-| Source annotation | Original letter or forecast beside an exact quotation and interpretation | Source authorship, date, declared annotation creator and recorded review |
+| Project overview and gallery | Research-task entry points with actual material and an honest application or setup destination | Development guides and project context |
+| Documentation | The requested guide or maintained contract | Section navigation, page outline and evidence references |
+| Collection comparison | Comparable source fields, retained selection and authored observations | Field provenance, recovery and export |
+| Collection editor | Selected source record beside editable fields | Validation and import/export |
+| Source annotation | Original text beside quotation and interpretation | Source identity, declared creator and recorded review |
 
-The current `/pilot/` is Compare collection records. Collection and Comparison are separate addressable views. A semantic table places object, catalogue date, material and attribution in shared columns, with selection beside each record. A retained selection connects the table to the comparison matrix. Research question and notes belong to that investigation. The comparison keeps original wording alongside the writing area. Field evidence has its own addressable source view. Horizontal scroll regions preserve readable columns on narrow screens, with ordinary document flow outside them.
-
-The previous three-pane catalogue is preserved at `/baseline/` for the earlier filter/aggregation task and regression checks. It is not the current design recommendation. Its outcomes are not interchangeable with the new investigation workflow.
-
-At `/pilot/`, the header carries identity, Collection/Comparison navigation and export. About and separate data/code license links live in the footer. Source selection, sample limitations and snapshot context live in About. Source links and uncertainty remain with the evidence. No blanket hiding of information required for interpretation follows from reducing introductory copy.
+At `/pilot/`, separate Collection and Comparison views connect a semantic record table to an aligned comparison matrix. The header carries identity, these views and export. About and data/code licence links live in the footer. Source wording remains beside the writing area, and field evidence has an addressable reading view. Bounded horizontal regions preserve readable comparison columns on narrow screens. The older `/baseline/` tests filtering and aggregation, a different task whose outcomes are not interchangeable with a retained investigation.
 
 ## Photograph study
 
-The new `/photographs/` reference supports comparing catalogue descriptions of historical photographs and examining their images and sources. It uses a separate openly licensed sample. Collection, Timeline and a selected-image route preserve the same query and selection. The operated review is recorded in [Testing](testing.md#open-photographs-and-ui-skills-2026-10-11); human assessment remains pending.
+The `/photographs/` reference supports comparing catalogue descriptions of historical photographs and examining their images and sources. It uses a separate openly licensed sample. Collection, Timeline and a selected-image route preserve the same query and selection. The operated review is recorded in [Testing](testing.md#open-photographs-and-ui-skills-2026-10-11); human assessment remains pending.
 
 | View | First decision and visible evidence | Action and optional depth | Wide and narrow layout |
 |---|---|---|---|
@@ -87,27 +83,23 @@ The visual direction uses a neutral light surface, dark ink and one restrained b
 
 ## Project navigation
 
-Overview, Tools and Documentation are equal navigation links in the project header. Overview gives direct access to research activities and development guides. The gallery identifies each tool's action, material and destination. Local workspaces provide All tools as a return link. External applications retain their published navigation and open through ordinary links, so browser Back remains available.
+Overview, Tools and Documentation are equal header links. Gallery entries name their action, material and actual destination, distinguish external hosts, and use screenshots of observed working states. A preview does not promise that an external application opens in that state. Explicit action links leave surrounding text selectable. Local workspaces provide All tools; external applications retain their own navigation and ordinary browser Back.
 
-The gallery uses compact entries with actual working-state screenshots and explicit action links. Text stays selectable. Categories distinguish research tasks. Individual entries describe activities, and published applications retain their established names. Hosting domains distinguish external applications from local workspaces. Build editions opens the prepared SZD workflow guide, with the Agentic Edition Pipeline repository as a secondary setup resource. A prepared source package does not establish a completed end-to-end tool integration. Earlier local workflows and interface variants are reachable through [Technical examples](../docs/getting-started.md#technical-examples). The [historical catalogue](../baseline/) remains available as a development baseline outside the gallery's tool categories. Integration does not assert design acceptance or operational readiness of an external application.
+The gallery follows the [reference hierarchy](#reference-hierarchy). Prepared workflow entries open guides, with source repositories as setup resources. Source-package preparation does not establish a complete integration or the operational readiness of another application. Older routes remain in [Technical examples](../docs/getting-started.md#technical-examples).
 
-Documentation navigation and the page outline remain visible. Wide layouts place them beside the article. Narrow layouts show the article first, followed by the outline and section navigation, with a skip link to the content. Disclosure is appropriate for additional detail requested during a task, such as field hashes and derivation records. Keep information needed to choose an action or interpret evidence visible, including source identity, uncertainty, errors and unsaved work. Compactness alone does not justify a disclosure control.
+Documentation places section navigation and the page outline beside wide articles. Narrow layouts show article, outline and navigation in that order, with a content skip link. This reading layout does not impose the same shell on research workspaces.
 
 ## Annotation workspace
 
-The letter workflow study opens `/letters/` with Benndorf's letter to Schuchardt of 14 February 1879. It uses the public-domain plaintext supplied with teiCrafter, excluding the edition's apparatus and images. Person, Place, Research topic and Editorial question are proposed annotation categories. Author, recipient, edition editor and publisher describe the source, independently of the annotation creator and reviewer. The letter and frozen source identifiers remain selectable. The source panel occupies the larger share of a wide workspace; annotation controls start with the quotation and interpretation, followed by compact creator and optional review fields.
+Annotation places original text beside an exact quotation and its interpretation. The wide layout gives the source the larger share of the workspace, followed by compact creator and optional review controls. Narrow layouts use source, form and saved annotations in reading order. Saved annotations offer return, edit and remove actions.
 
-The contrasting annotation tool at `/annotations/` supports reading archived NOAA/NHC Hurricane Milton discussions 2 and 6 from October 2024, selecting an exact passage and recording how that passage functions as observation, forecast or stated uncertainty. This is a research task hypothesis for operator review. It does not supply current weather guidance. The full frozen bulletin, issue time, forecaster and original source link remain visible beside the annotation controls. Attribution printed in the source is distinguishable from a self-declared annotation creator and a separate recorded reviewer.
+The [letter task](../docs/getting-started.md#annotate-a-historical-letter) displays its historical author and modern edition attribution separately from the annotation creator. The [archived-discussion task](../docs/getting-started.md#annotate-an-archived-discussion) keeps issue time, forecaster, archived status and source link visible. Its monospace text preserves meaningful bulletin lines. These different source roles remain legible before optional technical details.
 
-The initial view starts with the bulletin selector and source text. A read-only text control supports pointer and keyboard range selection, followed by Annotate selection. The quotation stays visible while the researcher chooses its category and writes a note. Saved annotations form a compact list with actions to return to their source, edit or remove them. The selected bulletin is addressable in the URL. Changing source while an annotation form is unfinished requires deliberate discard; saved work and other annotations remain intact.
-
-On wide screens the source and annotation form remain adjacent because editing depends on the wording being visible. Narrow layouts use source, form and saved annotations in reading order. The tool uses its own restrained blue/ink tokens, ordinary system typography and monospace bulletin text to preserve the source's line structure. There are no introductory sublines, generic dashboard metrics or decorative cards. Technical hashes belong in source details; dates and the archived character of the material remain visible where they affect interpretation.
-
-A review records whether the quotation supports the annotation under an explicit criterion. Creator kind and name are self-declarations. Reviewed annotations display the named reviewer, criterion and result. Changing the anchor, category, note or creator clears that review, because it describes the earlier annotation. No default identity, automatic confidence score or successful scientific-validation claim is inferred.
+The [annotation contract](specification.md#contrasting-annotation-contract) owns selection, unfinished-form guards and review invalidation. Source rights, case-specific categories, quotation offsets and preservation rules belong to the [notebook data contract](data.md#annotation-notebook).
 
 ## Design system
 
-Each tool owns its typography, spacing, density and semantic colours. Collection comparison uses green/ink tokens and compact source columns. The annotation tool prioritizes readable source text, with monospace reserved for the bulletin's meaningful line structure. The editor retains amber accents and places the record list beside the selected source and correction form. Icons accompany action labels. The gallery uses the project's system type and blue links with ordinary document flow, without enclosing every entry in a padded card.
+Each tool owns its typography, spacing, density and semantic colours. Collection comparison uses green/ink tokens and compact source columns. The annotation tool prioritizes readable source text, with monospace reserved for the bulletin's meaningful line structure. The editor retains amber accents and places the record list beside the selected source and correction form. Icons use accessible names and visible focus. Familiar compact actions may use an icon with an explanation available on focus and tap. Meaning needed for the next decision remains perceivable without hover or colour alone. The gallery uses the project's system type and blue links with ordinary document flow, without enclosing every entry in a padded card.
 
 `src/ui/foundation.css` supplies the shared reset and hidden-state rule used by the concepts. `src/research/recovery.css` styles their recovery controls. Documentation and the historical catalogue share `src/ui/styles.css`; the editor and current workbench own separate stylesheets. Shared code establishes accessible behaviour without requiring one appearance.
 
@@ -134,13 +126,9 @@ Source categories retain their original labels. Derived grouping and selection a
 
 ## Interaction patterns
 
-In the Met comparison study, search and classification change the visible collection while retaining the comparison selection. Its pagination keeps the list bounded; the Collection Explorer displays its complete forty-record sample. Title sorting is alphabetical; chronological sorting uses catalogue indexing starts with missing values last. This ordering does not infer precise creation dates. Collection filters are represented in the URL. Browser navigation restores that view state.
+Search, selection, navigation and saved work have different lifetimes. The interface exposes those differences and offers a clear recovery action when local saving fails. Browser navigation restores the addressable view. A route change focuses its heading, selection controls retain focus through state changes, and removing an item moves focus to an existing destination. Source links use checked URLs and announce external navigation.
 
-The investigation contains up to four original source records, the question and separately authored notes. Local recovery and portable export/reopen share a validated contract. Invalid imports preserve the existing work, and replacement requires confirmation. Blocked storage or a changed copy in another tab produces actionable feedback without overwriting that copy. These protections are not atomic collaboration.
-
-A route change focuses the destination heading. Selection buttons retain focus when their state changes. Removing a comparison record moves focus to an existing destination. All readable text remains selectable. Source links use a checked URL and announce external navigation.
-
-The collection editor keeps its own schema and persistence key. Its selected identity can remain outside the current filtered list. Cancelling a dirty-form navigation preserves inputs. Its `draft` or `checked` state is a manual user assertion under the [data contract](data.md#limits); it does not record an automated check or establish scholarly correctness.
+Format-specific behaviour belongs to the [workbench](specification.md#investigation-workbench-contract), [photograph](specification.md#open-photograph-reference), [annotation](specification.md#contrasting-annotation-contract) and [metadata-editor](specification.md#correspondence-metadata-contract) requirements. The [data contract](data.md) owns import compatibility, preservation and review semantics. Those distinct formats must not be flattened into one generic interaction or save model.
 
 ## Accessibility basis
 
@@ -148,44 +136,29 @@ The collection editor keeps its own schema and persistence key. Its selected ide
 
 ## Action-layer connection
 
-The Design principles section of the repository's `AGENTS.md` translates this design into implementation rules. Adaptation establishes a tool-specific design from the research workflow and preserves the shared accessibility and state-integrity contracts. Existing institutional branding is a separate project choice.
+[AGENTS.md](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/codex/version-0.1/AGENTS.md) routes implementation into this design contract. The three local UI skills apply it through concept work, operated evaluation and bounded improvement. The [UI acceptance protocol](testing.md#ui-acceptance-protocol) owns execution and evidence recording. This document owns design decisions and their task conditions.
 
 ## Interaction concept study
 
-Three alternative research workflows are implemented under `concepts/`, with a shared task and real frozen Met records. Atlas tests object-led discovery and a collection tray. Bench tests comparison-first work. Trail tests a question-led sequence with revisitable state. Their visual identities and interaction models are hypotheses under comparison, not a combined product specification. The shared benchmark task, source-data constraints and evaluation protocol live in `benchmarks/ui-concepts-brief.md` and `benchmarks/ui-concepts-protocol.md`.
-
-The common outcome is a selected set of source records plus a separately identified observation and unresolved question, downloadable with provenance. This tests a transition from lookup to a retained research artefact. It does not establish scientific usefulness before researcher review. No fabricated images are used; the source projection contains textual catalogue metadata.
+Atlas tests object-led discovery and a collection tray. Bench tests comparison-first work. Trail tests a question-led sequence with revisitable state. They are alternative hypotheses on the same frozen Met metadata, without fabricated images. They do not form a combined product design. Their [shared brief](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/codex/version-0.1/benchmarks/ui-concepts-brief.md) and [comparison protocol](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/codex/version-0.1/benchmarks/ui-concepts-protocol.md) define the material, retained outcome and evaluation conditions.
 
 ## Task-based interface review
 
-The subline rule below is one concrete design constraint within a broader review. Every component, label, number and disclosure must support a named research action, interpretation or recovery need. Remove duplicated orientation, decorative metrics and status badges without defined semantics. Choose table, list, comparison or visualisation from the material and task rather than imposing a recurring card-and-dashboard layout. Required evidence must remain near the decision it qualifies. Colour and visual prominence must not imply a degree of certainty that the data cannot support.
+Every component supports a research action, interpretation or recovery need. Required evidence stays near the decision it qualifies. Colour and prominence cannot imply unsupported certainty. A repeated count is justified only by a different population or decision, not by separate components requesting the same summary.
 
-Source, interpretation and uncertainty remain distinguishable in ordinary reading. Original qualifiers stay in the comparison cell. The workbench's Source control opens an addressable reading view with raw values, mapping and limited technical checks. Missing authorship and absent recorded reviews are explicit. Implementation identifiers and checksums belong in that requested view. Return to comparison restores focus without changing the question, selection, notes or saved state.
+The [reusable decisions](#reusable-review-decisions) supply conditions and counterexamples. The [testing protocol](testing.md#ui-acceptance-protocol) supplies the rendered and code-level review, including dense states and shared callers. Appearance, interaction correctness, source fidelity and human research acceptance remain separate evidence.
 
 ## Project examples
 
-The [DHCraft portfolio](https://dhcraft.org/fancy-research-tools/) supplied the starting inventory. The linked applications and selected working states were inspected on 2026-10-10. The gallery is generated from `data/tools/catalog.json`, which records destinations, material, access limits and source repositories. The table below also retains technical antecedents that are outside the main gallery. Its screenshots show observed application states, including local files loaded into existing tools. A preview is not a claim that an external application starts with that exact state.
+The [DHCraft portfolio](https://dhcraft.org/fancy-research-tools/) supplied the initial inventory inspected on 2026-10-10. `data/tools/catalog.json` owns current gallery metadata. The [task walkthroughs](../docs/getting-started.md) own instructions, prerequisites and external-tool limitations. Source packages and the [data contract](data.md) own rights and transformations. [Research basis](../docs/research.md) explains what can be inferred from these comparisons.
 
-| Project | Useful task and integration | Boundary |
-|---|---|---|
-| [coOCR/HTR](https://dhcraft.org/co-ocr-htr/) | Inspect a page image beside its transcription; launch the existing application. | LLM actions require provider configuration. No scan collection is republished here. |
-| [teiCrafter](https://dhcraft.org/teiCrafter/editor.html) | Edit TEI while retaining source text and structural checks; launch the existing editor. | The published editor and current local development differ. The preview uses its real SZD sample. |
-| [CorrespExplorer](https://dhcraft.org/CorrespExplorer/) | Explore correspondence through explicit people, dates and places; launch the existing application. | The preview uses the real HSA dataset, distinct from its synthetic feature demonstration. |
-| [SZD-HTR](https://chpollin.github.io/szd-htr-ocr-pipeline/) | Inspect transcription and recorded review states in their source collection. | The hosted viewer does not provide the local project's full editorial service. |
-| [Stefan Zweig Bibliography](https://chpollin.github.io/klawiter-rescue/) | Read the published catalogue; use the [local curation guide](../docs/getting-started.md#review-bibliography) for source-supported corrections and patches. | The public site is read-only. Full propagation of field corrections remains an upstream acceptance dependency. |
-| [Agentic Edition Pipeline](https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline) | Prepare a local edition preview with the [real SZD package](../docs/getting-started.md#build-szd-edition). | The template retains its synthetic quickstart. External TEI enters the frontend stage; correction-server round trips and automatic publication are unsupported for this package. |
-
-The local letter annotation and metadata editor reuse published project material under the [data contract](data.md). The selective internal workflow review also informed source inspection and the separation of original values from corrections. No internal project records, institutional datasets or credentials were copied into the gallery. The observed existing interfaces also contain excess introduction, empty panels and development controls; their inclusion is not an endorsement of those patterns.
-
-Assess these rules through a complete task with actual output. A more polished screenshot or fewer words alone does not establish an improvement.
+Observed examples include excess introduction, empty panels and development controls as well as useful mechanisms. Their inclusion does not endorse all their design choices. Only public material enters the examples; internal workflow lessons transfer through separately sourced material. A polished screenshot alone does not establish improvement.
 
 ## Interface copy constraint
 
-Introductory sublines are prohibited across this project: tool interfaces, concept and comparison pages, and documentation interfaces. Do not place an introductory subtitle, tagline, strapline or explanatory lead beneath a page or section heading. This applies even when the text is informative, concise or intended to explain the workflow. It is an explicit operator design constraint, not a claim about universal usability.
+Introductory subtitles, taglines, straplines and explanatory leads beneath page or section headings are prohibited in tool, concept, comparison and documentation interfaces. The operator's presentation preference applies even to concise informative sublines and designs generated with external skills. A nearby banner or renamed helper text does not change an introductory subline's function.
 
-A heading leads directly into the relevant content or working controls. Do not evade this rule by renaming the subline as helper text or moving it into a nearby banner. Necessary field guidance, state and error messages, source qualifications and substantive documentation belong with the specific control, evidence or topic they explain. They must not become a standing introduction beneath the heading.
-
-During design review, inspect every page and section heading in the rendered interface. An introductory subline is a failed design acceptance check and must be removed before acceptance. The rule applies to new designs and subsequent iterations, including designs generated with external skills.
+Headings lead into substantive content or working controls. Necessary field guidance, actionable state and errors, source qualifications and substantive documentation remain with the specific control, evidence or topic they explain. They are not prohibited by this constraint. [UI acceptance](testing.md#ui-acceptance-protocol) checks the rendered headings against this distinction.
 
 ## Selectable content
 

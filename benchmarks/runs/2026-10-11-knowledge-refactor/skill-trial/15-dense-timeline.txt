@@ -1,0 +1,574 @@
+- link "Skip to photographs":
+  - /url: "#content"
+- banner:
+  - link "Collection Explorer":
+    - /url: "#view=collection&selected=1974.47%2C1992.12"
+  - navigation "Study views":
+    - link "Collection":
+      - /url: "#view=collection&selected=1974.47%2C1992.12"
+    - link "Timeline":
+      - /url: "#view=timeline&selected=1974.47%2C1992.12"
+    - link "Comparison":
+      - /url: "#view=comparison&selected=1974.47%2C1992.12"
+  - link "All tools":
+    - /url: ../tools/
+- main:
+  - generic "Selected photographs":
+    - link "Compare 2":
+      - /url: "#view=comparison&selected=1974.47%2C1992.12"
+    - list:
+      - link "Inspect Yosemite Falls":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.47"
+      - button "Remove Yosemite Falls from comparison" [pressed]:
+      - link "Inspect Bridal Veil, Yosemite":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1992.12"
+      - button "Remove Bridal Veil, Yosemite from comparison" [pressed]:
+    - button "Export selection":
+      - text: Export selection
+  - heading "Timeline" [active] [level=1]
+  - generic: Search photographs
+  - searchbox "Search photographs"
+  - generic: Creators
+  - combobox "Creators":
+    - option "All creators" [selected]
+    - option "Carleton E. Watkins (American, 1829–1916)"
+    - option "Charles Marville (French, 1813–1879)"
+    - option "Clarence H. White (American, 1871–1925)"
+    - option "David Octavius Hill (British, 1802–1870)"
+    - option "Eadweard J. Muybridge (American, 1830–1904)"
+    - option "Eugène Atget (French, 1857–1927)"
+    - option "Felice A. Beato (British, 1832–1909)"
+    - option "Frederick H. Evans (British, 1853–1943)"
+    - option "Henri Béchard (French)"
+    - option "Izaak Walton (British (modern), 1593–1683)"
+    - option "John R. Edis (British)"
+    - option "John Thomson (Scottish, 1837–1921)"
+    - option "Joseph Lawton (British, d. 1874)"
+    - option "Julia Margaret Cameron (British, 1815–1879)"
+    - option "Louis-Rémy Robert (French, 1811–1882)"
+    - option "Nadar (French, 1820–1910)"
+    - option "Paul Martin (British, 1864–1944)"
+    - option "Peter Henry Emerson (British, 1856–1936)"
+    - option "Robert Adamson (British, 1821–1848)"
+    - option "Roger Fenton (British, 1819–1869)"
+    - option "Sampson Low, Marston, Seale and Riverton (with T.F. Goodall)"
+    - option "Sampson Low, Marston, Searle and Rivington"
+    - option "Unidentified Photographer"
+    - option "University of Pennsylvania"
+    - option "William Henry Fox Talbot (British, 1800–1877)"
+  - generic: Processes
+  - combobox "Processes":
+    - option "All processes" [selected]
+    - option "albumen print"
+    - option "Albumen print from wet collodion negative"
+    - option "albumen print, gold toned"
+    - option "collotype"
+    - option "gelatin silver print"
+    - option "Gelatin silver print, toned, on collodion printing-out paper"
+    - option "photogravure"
+    - option "platinum print"
+    - option "platinum print with crayon"
+    - option "platinum print with gouache"
+    - option "platinum print with graphite"
+    - option "platinum print with pencil"
+    - option "platinum print with watercolor and gouache"
+    - option "salted paper print from calotype negative"
+    - option "salted paper print from wet collodion negative"
+    - option "woodburytype"
+  - region "Photographs":
+    - list "Photographs in chronological order; spacing does not represent elapsed time":
+      - heading "1840s" [level=2]
+      - paragraph: c. 1844
+      - link "Inspect Unknown Woman, c. 1844":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.167"
+      - article:
+        - link "Inspect Unknown Woman":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.167"
+        - button "Add Unknown Woman to comparison"
+        - heading "Unknown Woman" [level=3]:
+          - link "Unknown Woman":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.167"
+        - paragraph: David Octavius Hill (British, 1802–1870); and Robert Adamson (British, 1821–1848)
+        - paragraph: salted paper print from calotype negative
+      - paragraph: "1845"
+      - link "Inspect A Scene in York, 1845":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.163"
+      - article:
+        - link "Inspect A Scene in York":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.163"
+        - button "Add A Scene in York to comparison"
+        - heading "A Scene in York" [level=3]:
+          - link "A Scene in York":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.163"
+        - paragraph: William Henry Fox Talbot (British, 1800–1877)
+        - paragraph: salted paper print from calotype negative
+      - heading "1850s" [level=2]
+      - paragraph: c. 1853
+      - link "Inspect Fountain of Notre-Dame at Saint-Brieuc, Brittany, c. 1853":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.17"
+      - article:
+        - link "Inspect Fountain of Notre-Dame at Saint-Brieuc, Brittany":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.17"
+        - button "Add Fountain of Notre-Dame at Saint-Brieuc, Brittany to comparison"
+        - heading "Fountain of Notre-Dame at Saint-Brieuc, Brittany" [level=3]:
+          - link "Fountain of Notre-Dame at Saint-Brieuc, Brittany":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.17"
+        - paragraph: Louis-Rémy Robert (French, 1811–1882)
+        - paragraph: salted paper print from calotype negative
+      - paragraph: "1855"
+      - link "Inspect Alexandre Dumas père (1802–1870), 1855":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1983.198"
+      - article:
+        - link "Inspect Alexandre Dumas père (1802–1870)":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1983.198"
+        - button "Add Alexandre Dumas père (1802–1870) to comparison"
+        - heading "Alexandre Dumas père (1802–1870)" [level=3]:
+          - link "Alexandre Dumas père (1802–1870)":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1983.198"
+        - paragraph: Nadar (French, 1820–1910)
+        - paragraph: salted paper print from wet collodion negative
+      - paragraph: c. 1856
+      - link "Inspect Tintern Abbey, c. 1856":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.164"
+      - article:
+        - link "Inspect Tintern Abbey":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.164"
+        - button "Add Tintern Abbey to comparison"
+        - heading "Tintern Abbey" [level=3]:
+          - link "Tintern Abbey":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.164"
+        - paragraph: Roger Fenton (British, 1819–1869)
+        - paragraph: salted paper print from wet collodion negative
+      - heading "1860s" [level=2]
+      - paragraph: 1860s
+      - link "Inspect Karnak, Les Pylônes d'Horus, 1860s":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=2018.252"
+      - article:
+        - link "Inspect Karnak, Les Pylônes d'Horus":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=2018.252"
+        - button "Add Karnak, Les Pylônes d'Horus to comparison"
+        - heading "Karnak, Les Pylônes d'Horus" [level=3]:
+          - link "Karnak, Les Pylônes d'Horus":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=2018.252"
+        - paragraph: Henri Béchard (French)
+        - paragraph: Albumen print from wet collodion negative
+      - paragraph: 1865–66
+      - link "Inspect Bridal Veil, Yosemite, 1865–66":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1992.12"
+      - article:
+        - link "Inspect Bridal Veil, Yosemite":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1992.12"
+        - button "Remove Bridal Veil, Yosemite from comparison" [pressed]:
+        - heading "Bridal Veil, Yosemite" [level=3]:
+          - link "Bridal Veil, Yosemite":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1992.12"
+        - paragraph: Carleton E. Watkins (American, 1829–1916)
+        - paragraph: albumen print from wet collodion negative
+      - paragraph: c. 1865
+      - link "Inspect Rue de la Ferronnerie, c. 1865":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.24"
+      - article:
+        - link "Inspect Rue de la Ferronnerie":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.24"
+        - button "Add Rue de la Ferronnerie to comparison"
+        - heading "Rue de la Ferronnerie" [level=3]:
+          - link "Rue de la Ferronnerie":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.24"
+        - paragraph: Charles Marville (French, 1813–1879)
+        - paragraph: albumen print from wet collodion negative
+      - paragraph: c. 1867
+      - link "Inspect Japanese Temple Graveyard, Shuntoji, Nagasaki, c. 1867":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.51"
+      - article:
+        - link "Inspect Japanese Temple Graveyard, Shuntoji, Nagasaki":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.51"
+        - button "Add Japanese Temple Graveyard, Shuntoji, Nagasaki to comparison"
+        - heading "Japanese Temple Graveyard, Shuntoji, Nagasaki" [level=3]:
+          - link "Japanese Temple Graveyard, Shuntoji, Nagasaki":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.51"
+        - paragraph: Felice A. Beato (British, 1832–1909)
+        - paragraph: albumen print
+      - paragraph: "1868"
+      - link "Inspect Mnemosyne (Marie Spartali, 1844-1927), 1868":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.52"
+      - article:
+        - link "Inspect Mnemosyne (Marie Spartali, 1844-1927)":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.52"
+        - button "Add Mnemosyne (Marie Spartali, 1844-1927) to comparison"
+        - heading "Mnemosyne (Marie Spartali, 1844-1927)" [level=3]:
+          - link "Mnemosyne (Marie Spartali, 1844-1927)":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.52"
+        - paragraph: Julia Margaret Cameron (British, 1815–1879)
+        - paragraph: albumen print from wet collodion negative
+      - paragraph: "1868"
+      - link "Inspect Yosemite Falls, 1868":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.47"
+      - article:
+        - link "Inspect Yosemite Falls":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.47"
+        - button "Remove Yosemite Falls from comparison" [pressed]:
+        - heading "Yosemite Falls" [level=3]:
+          - link "Yosemite Falls":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.47"
+        - paragraph: attributed to Eadweard J. Muybridge (American, 1830–1904)
+        - paragraph: albumen print
+      - heading "1870s" [level=2]
+      - paragraph: 1870–71
+      - link "Inspect The Paranirvana of Buddha, Gal Vihara, Polonnaruva, Ceylon, 1870–71":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1976.156"
+      - article:
+        - link "Inspect The Paranirvana of Buddha, Gal Vihara, Polonnaruva, Ceylon":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1976.156"
+        - button "Add The Paranirvana of Buddha, Gal Vihara, Polonnaruva, Ceylon to comparison"
+        - heading "The Paranirvana of Buddha, Gal Vihara, Polonnaruva, Ceylon" [level=3]:
+          - link "The Paranirvana of Buddha, Gal Vihara, Polonnaruva, Ceylon":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1976.156"
+        - paragraph: Joseph Lawton (British, d. 1874)
+        - paragraph: albumen print
+      - paragraph: "1874"
+      - link "Inspect Julia Jackson Duckworth (1846-1895), 1874":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.165"
+      - article:
+        - link "Inspect Julia Jackson Duckworth (1846-1895)":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.165"
+        - button "Add Julia Jackson Duckworth (1846-1895) to comparison"
+        - heading "Julia Jackson Duckworth (1846-1895)" [level=3]:
+          - link "Julia Jackson Duckworth (1846-1895)":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.165"
+        - paragraph: Julia Margaret Cameron (British, 1815–1879)
+        - paragraph: albumen print from wet collodion negative
+      - paragraph: "1875"
+      - link "Inspect Queen of the May, 1875":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.166"
+      - article:
+        - link "Inspect Queen of the May":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.166"
+        - button "Add Queen of the May to comparison"
+        - heading "Queen of the May" [level=3]:
+          - link "Queen of the May":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.166"
+        - paragraph: Julia Margaret Cameron (British, 1815–1879)
+        - paragraph: albumen print from wet collodion negative
+      - paragraph: "1876"
+      - link "Inspect A Convict's Home, 1876":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.48"
+      - article:
+        - link "Inspect A Convict's Home":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.48"
+        - button "Add A Convict's Home to comparison"
+        - heading "A Convict's Home" [level=3]:
+          - link "A Convict's Home":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.48"
+        - paragraph: "John Thomson (Scottish, 1837–1921); publisher: Sampson Low, Marston, Searle and Rivington published by"
+        - paragraph: woodburytype
+      - heading "1880s" [level=2]
+      - paragraph: "1886"
+      - link "Inspect Rowing Home the Schoof-Stuff, 1886":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1983.206"
+      - article:
+        - link "Inspect Rowing Home the Schoof-Stuff":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1983.206"
+        - button "Add Rowing Home the Schoof-Stuff to comparison"
+        - heading "Rowing Home the Schoof-Stuff" [level=3]:
+          - link "Rowing Home the Schoof-Stuff":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1983.206"
+        - paragraph: "Peter Henry Emerson (British, 1856–1936); published by: Sampson Low, Marston, Seale and Riverton (with T.F. Goodall)"
+        - paragraph: platinum print
+      - paragraph: "1887"
+      - link "Inspect \"Dread\" Trotting, 1887":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1978.97"
+      - article:
+        - link "Inspect \"Dread\" Trotting":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1978.97"
+        - button "Add \"Dread\" Trotting to comparison"
+        - heading "\"Dread\" Trotting" [level=3]:
+          - link "\"Dread\" Trotting":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1978.97"
+        - paragraph: "Eadweard J. Muybridge (American, 1830–1904); published by: University of Pennsylvania"
+        - paragraph: collotype
+      - paragraph: "1888"
+      - link "Inspect Footbridge Near Chingford, 1888":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.49"
+      - article:
+        - link "Inspect Footbridge Near Chingford":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.49"
+        - button "Add Footbridge Near Chingford to comparison"
+        - heading "Footbridge Near Chingford" [level=3]:
+          - link "Footbridge Near Chingford":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.49"
+        - paragraph: "Peter Henry Emerson (British, 1856–1936); author: Izaak Walton (British (modern), 1593–1683) written by; publisher: Sampson Low, Marston, Searle and Rivington published by"
+        - paragraph: photogravure
+      - heading "1890s" [level=2]
+      - paragraph: "1896"
+      - link "Inspect Along the Old Canal, 1896":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.128"
+      - article:
+        - link "Inspect Along the Old Canal":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.128"
+        - button "Add Along the Old Canal to comparison"
+        - heading "Along the Old Canal" [level=3]:
+          - link "Along the Old Canal":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.128"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print
+      - paragraph: "1896"
+      - link "Inspect At the Window, 1896":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.129"
+      - article:
+        - link "Inspect At the Window":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.129"
+        - button "Add At the Window to comparison"
+        - heading "At the Window" [level=3]:
+          - link "At the Window":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.129"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with watercolor and gouache
+      - paragraph: "1896"
+      - link "Inspect By the Window, 1896":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.132"
+      - article:
+        - link "Inspect By the Window":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.132"
+        - button "Add By the Window to comparison"
+        - heading "By the Window" [level=3]:
+          - link "By the Window":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.132"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with crayon
+      - paragraph: "1896"
+      - link "Inspect What Shall I Say?, 1896":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.130"
+      - article:
+        - link "Inspect What Shall I Say?":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.130"
+        - button "Add What Shall I Say? to comparison"
+        - heading "What Shall I Say?" [level=3]:
+          - link "What Shall I Say?":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.130"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with gouache
+      - paragraph: "1896"
+      - link "Inspect What Shall I Say?, 1896":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.131"
+      - article:
+        - link "Inspect What Shall I Say?":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.131"
+        - button "Add What Shall I Say? to comparison"
+        - heading "What Shall I Say?" [level=3]:
+          - link "What Shall I Say?":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.131"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with graphite
+      - paragraph: c. 1897
+      - link "Inspect Boulogne Fisherman, c. 1897":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.50"
+      - article:
+        - link "Inspect Boulogne Fisherman":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.50"
+        - button "Add Boulogne Fisherman to comparison"
+        - heading "Boulogne Fisherman" [level=3]:
+          - link "Boulogne Fisherman":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1974.50"
+        - paragraph: Paul Martin (British, 1864–1944)
+        - paragraph: gelatin silver print
+      - paragraph: c. 1897
+      - link "Inspect Julia Hall McCune, c. 1897":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.135"
+      - article:
+        - link "Inspect Julia Hall McCune":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.135"
+        - button "Add Julia Hall McCune to comparison"
+        - heading "Julia Hall McCune" [level=3]:
+          - link "Julia Hall McCune":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.135"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with pencil
+      - paragraph: c. 1897
+      - link "Inspect On the Porch (Julia Hall McCune), c. 1897":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.133"
+      - article:
+        - link "Inspect On the Porch (Julia Hall McCune)":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.133"
+        - button "Add On the Porch (Julia Hall McCune) to comparison"
+        - heading "On the Porch (Julia Hall McCune)" [level=3]:
+          - link "On the Porch (Julia Hall McCune)":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.133"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print
+      - paragraph: "1897"
+      - link "Inspect The Readers, 1897":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.134"
+      - article:
+        - link "Inspect The Readers":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.134"
+        - button "Add The Readers to comparison"
+        - heading "The Readers" [level=3]:
+          - link "The Readers":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.134"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with graphite
+      - paragraph: c. 1898
+      - link "Inspect Letitia Felix, c. 1898":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.137"
+      - article:
+        - link "Inspect Letitia Felix":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.137"
+        - button "Add Letitia Felix to comparison"
+        - heading "Letitia Felix" [level=3]:
+          - link "Letitia Felix":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.137"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print
+      - paragraph: "1898"
+      - link "Inspect Telegraph Poles, 1898":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.136"
+      - article:
+        - link "Inspect Telegraph Poles":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.136"
+        - button "Add Telegraph Poles to comparison"
+        - heading "Telegraph Poles" [level=3]:
+          - link "Telegraph Poles":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.136"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: photogravure
+      - paragraph: "1899"
+      - link "Inspect Letitia Felix, 1899":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.138"
+      - article:
+        - link "Inspect Letitia Felix":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.138"
+        - button "Add Letitia Felix to comparison"
+        - heading "Letitia Felix" [level=3]:
+          - link "Letitia Felix":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.138"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print
+      - paragraph: "1899"
+      - link "Inspect Rue du Regard, 1899":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.35"
+      - article:
+        - link "Inspect Rue du Regard":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.35"
+        - button "Add Rue du Regard to comparison"
+        - heading "Rue du Regard" [level=3]:
+          - link "Rue du Regard":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.35"
+        - paragraph: Eugène Atget (French, 1857–1927)
+        - paragraph: albumen print, gold toned
+      - heading "1900s" [level=2]
+      - paragraph: c. 1900
+      - 'link "Inspect Gloucester Cathedral - Cloisters: South and West Alleys, c. 1900"':
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1975.37"
+      - article:
+        - 'link "Inspect Gloucester Cathedral - Cloisters: South and West Alleys"':
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1975.37"
+        - 'button "Add Gloucester Cathedral - Cloisters: South and West Alleys to comparison"'
+        - 'heading "Gloucester Cathedral - Cloisters: South and West Alleys" [level=3]':
+          - 'link "Gloucester Cathedral - Cloisters: South and West Alleys"':
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1975.37"
+        - paragraph: Frederick H. Evans (British, 1853–1943)
+        - paragraph: platinum print
+      - paragraph: c. 1900
+      - link "Inspect Julia Hall McCune, c. 1900":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.139"
+      - article:
+        - link "Inspect Julia Hall McCune":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.139"
+        - button "Add Julia Hall McCune to comparison"
+        - heading "Julia Hall McCune" [level=3]:
+          - link "Julia Hall McCune":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.139"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print
+      - paragraph: c. 1900
+      - link "Inspect The Azalea Plant (Julia Hall McCune), c. 1900":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.140"
+      - article:
+        - link "Inspect The Azalea Plant (Julia Hall McCune)":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.140"
+        - button "Add The Azalea Plant (Julia Hall McCune) to comparison"
+        - heading "The Azalea Plant (Julia Hall McCune)" [level=3]:
+          - link "The Azalea Plant (Julia Hall McCune)":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.140"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with pencil
+      - paragraph: c. 1900
+      - link "Inspect Westminster Abbey, Tomb of Sir Georges Villiers (d. 1605), c. 1900":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.215"
+      - article:
+        - link "Inspect Westminster Abbey, Tomb of Sir Georges Villiers (d. 1605)":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.215"
+        - button "Add Westminster Abbey, Tomb of Sir Georges Villiers (d. 1605) to comparison"
+        - heading "Westminster Abbey, Tomb of Sir Georges Villiers (d. 1605)" [level=3]:
+          - link "Westminster Abbey, Tomb of Sir Georges Villiers (d. 1605)":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1984.215"
+        - paragraph: Frederick H. Evans (British, 1853–1943)
+        - paragraph: platinum print
+      - paragraph: c. 1900
+      - link "Inspect Winter Landscape, c. 1900":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.141"
+      - article:
+        - link "Inspect Winter Landscape":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.141"
+        - button "Add Winter Landscape to comparison"
+        - heading "Winter Landscape" [level=3]:
+          - link "Winter Landscape":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.141"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print
+      - paragraph: c. 1902
+      - link "Inspect The Peacock Feather, c. 1902":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.145"
+      - article:
+        - link "Inspect The Peacock Feather":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.145"
+        - button "Add The Peacock Feather to comparison"
+        - heading "The Peacock Feather" [level=3]:
+          - link "The Peacock Feather":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.145"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with graphite
+      - paragraph: c. 1902
+      - link "Inspect The Peacock Feather, c. 1902":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.146"
+      - article:
+        - link "Inspect The Peacock Feather":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.146"
+        - button "Add The Peacock Feather to comparison"
+        - heading "The Peacock Feather" [level=3]:
+          - link "The Peacock Feather":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1980.146"
+        - paragraph: Clarence H. White (American, 1871–1925)
+        - paragraph: platinum print with gouache
+      - heading "Other catalogue dates" [level=2]
+      - paragraph: 1890s-1930s
+      - link "Inspect Durham Cathedral, 1890s-1930s":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1972.1090"
+      - article:
+        - link "Inspect Durham Cathedral":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1972.1090"
+        - button "Add Durham Cathedral to comparison"
+        - heading "Durham Cathedral" [level=3]:
+          - link "Durham Cathedral":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=1972.1090"
+        - paragraph: John R. Edis (British)
+        - paragraph: platinum print
+      - paragraph: c. 1900s
+      - link "Inspect Krishna's Butter Ball, Mahabalipuram, c. 1900s":
+        - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=2019.68"
+      - article:
+        - link "Inspect Krishna's Butter Ball, Mahabalipuram":
+          - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=2019.68"
+        - button "Add Krishna's Butter Ball, Mahabalipuram to comparison"
+        - heading "Krishna's Butter Ball, Mahabalipuram" [level=3]:
+          - link "Krishna's Butter Ball, Mahabalipuram":
+            - /url: "#view=photograph&from=timeline&selected=1974.47%2C1992.12&record=2019.68"
+        - paragraph: Unidentified Photographer
+        - paragraph: Gelatin silver print, toned, on collodion printing-out paper
+- contentinfo:
+  - link "Cleveland Museum of Art Open Access":
+    - /url: https://www.clevelandart.org/open-access
+  - link "Research guide":
+    - /url: ../guides/research.html
+  - 'link "Data and images: CC0"':
+    - /url: https://creativecommons.org/publicdomain/zero/1.0/

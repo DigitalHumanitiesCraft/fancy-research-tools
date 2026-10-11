@@ -1,7 +1,7 @@
 import { copyFile, mkdir } from "node:fs/promises";
 
-// Only this reviewed source package is copied; other research data stay private
-// unless their own publication contract explicitly includes them.
+// Only this reviewed source package is copied by this publication step.
+// Other repository files remain subject to their own publication contracts.
 const files = [
   "letter.tei.xml",
   "manifest.json",

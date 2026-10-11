@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {isDeepStrictEqual} from 'node:util';
+const repo='<repository>';
+const out='<trial-directory>';
+const raw=JSON.parse(fs.readFileSync(repo+'/data/photographs/raw/artworks.json','utf8'));
+const exported=JSON.parse(fs.readFileSync(out+'/photograph-selection.json','utf8'));
+const projection=JSON.parse(fs.readFileSync(repo+'/data/photographs/collection.jsonld','utf8'));
+const selectedRaw=raw.data.filter(r=>['1992.12','1974.47'].includes(r.accession_number));
+fs.writeFileSync(out+'/selected-raw-records.json',JSON.stringify(selectedRaw,null,2));
+const results=exported.selected.map(item=>{const source=selectedRaw.find(r=>r.accession_number===item.accession);return {accession:item.accession,title:item.title,date:item.date,creators:item.creators,technique:item.technique,projectedRecordUnchanged:isDeepStrictEqual(item,projection.items.find(r=>r.accession===item.accession)),originalFieldChecks:Object.entries(item.source.fields).map(([key,value])=>({key,agrees:isDeepStrictEqual(value,key==='image'?source.images.web:source[key])})),rawHashMatches:item.source.sha256===crypto.createHash('sha256').update(fs.readFileSync(repo+'/data/photographs/raw/artworks.json')).digest('hex')};});
+const result={actualExportBytes:fs.statSync(out+'/photograph-selection.json').size,actualExportSha256:crypto.createHash('sha256').update(fs.readFileSync(out+'/photograph-selection.json')).digest('hex'),count:exported.selected.length,query:exported.query,records:results};
+fs.writeFileSync(out+'/source-export-check.json',JSON.stringify(result,null,2));
+console.log(JSON.stringify(result,null,2));

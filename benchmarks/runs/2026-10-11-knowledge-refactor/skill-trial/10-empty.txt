@@ -1,0 +1,92 @@
+- link "Skip to photographs":
+  - /url: "#content"
+- banner:
+  - link "Collection Explorer":
+    - /url: "#view=collection&q=no-such-photograph-forward-trial&selected=1992.12%2C1974.47"
+  - navigation "Study views":
+    - link "Collection":
+      - /url: "#view=collection&q=no-such-photograph-forward-trial&selected=1992.12%2C1974.47"
+    - link "Timeline":
+      - /url: "#view=timeline&q=no-such-photograph-forward-trial&selected=1992.12%2C1974.47"
+    - link "Comparison":
+      - /url: "#view=comparison&q=no-such-photograph-forward-trial&selected=1992.12%2C1974.47"
+  - link "All tools":
+    - /url: ../tools/
+- main:
+  - generic "Selected photographs":
+    - link "Compare 2":
+      - /url: "#view=comparison&q=no-such-photograph-forward-trial&selected=1992.12%2C1974.47"
+    - list:
+      - link "Inspect Bridal Veil, Yosemite":
+        - /url: "#view=photograph&from=collection&q=no-such-photograph-forward-trial&selected=1992.12%2C1974.47&record=1992.12"
+      - button "Remove Bridal Veil, Yosemite from comparison" [pressed]:
+      - link "Inspect Yosemite Falls":
+        - /url: "#view=photograph&from=collection&q=no-such-photograph-forward-trial&selected=1992.12%2C1974.47&record=1974.47"
+      - button "Remove Yosemite Falls from comparison" [pressed]:
+    - button "Export selection":
+      - text: Export selection
+  - heading "Collection" [level=1]
+  - generic: Search photographs
+  - searchbox "Search photographs" [active]: no-such-photograph-forward-trial
+  - generic: Creators
+  - combobox "Creators":
+    - option "All creators" [selected]
+    - option "Carleton E. Watkins (American, 1829–1916)"
+    - option "Charles Marville (French, 1813–1879)"
+    - option "Clarence H. White (American, 1871–1925)"
+    - option "David Octavius Hill (British, 1802–1870)"
+    - option "Eadweard J. Muybridge (American, 1830–1904)"
+    - option "Eugène Atget (French, 1857–1927)"
+    - option "Felice A. Beato (British, 1832–1909)"
+    - option "Frederick H. Evans (British, 1853–1943)"
+    - option "Henri Béchard (French)"
+    - option "Izaak Walton (British (modern), 1593–1683)"
+    - option "John R. Edis (British)"
+    - option "John Thomson (Scottish, 1837–1921)"
+    - option "Joseph Lawton (British, d. 1874)"
+    - option "Julia Margaret Cameron (British, 1815–1879)"
+    - option "Louis-Rémy Robert (French, 1811–1882)"
+    - option "Nadar (French, 1820–1910)"
+    - option "Paul Martin (British, 1864–1944)"
+    - option "Peter Henry Emerson (British, 1856–1936)"
+    - option "Robert Adamson (British, 1821–1848)"
+    - option "Roger Fenton (British, 1819–1869)"
+    - option "Sampson Low, Marston, Seale and Riverton (with T.F. Goodall)"
+    - option "Sampson Low, Marston, Searle and Rivington"
+    - option "Unidentified Photographer"
+    - option "University of Pennsylvania"
+    - option "William Henry Fox Talbot (British, 1800–1877)"
+  - generic: Processes
+  - combobox "Processes":
+    - option "All processes" [selected]
+    - option "albumen print"
+    - option "Albumen print from wet collodion negative"
+    - option "albumen print, gold toned"
+    - option "collotype"
+    - option "gelatin silver print"
+    - option "Gelatin silver print, toned, on collodion printing-out paper"
+    - option "photogravure"
+    - option "platinum print"
+    - option "platinum print with crayon"
+    - option "platinum print with gouache"
+    - option "platinum print with graphite"
+    - option "platinum print with pencil"
+    - option "platinum print with watercolor and gouache"
+    - option "salted paper print from calotype negative"
+    - option "salted paper print from wet collodion negative"
+    - option "woodburytype"
+  - generic: Order by
+  - combobox "Order by":
+    - option "Catalogue date" [selected]
+    - option "Title A–Z"
+  - region "Photographs":
+    - status: 0 matching photographs
+    - button "Clear filters"
+    - heading "No photographs match these filters" [level=2]
+- contentinfo:
+  - link "Cleveland Museum of Art Open Access":
+    - /url: https://www.clevelandart.org/open-access
+  - link "Research guide":
+    - /url: ../guides/research.html
+  - 'link "Data and images: CC0"':
+    - /url: https://creativecommons.org/publicdomain/zero/1.0/

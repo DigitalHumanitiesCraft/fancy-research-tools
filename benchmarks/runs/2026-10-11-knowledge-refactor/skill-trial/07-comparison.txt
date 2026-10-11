@@ -1,0 +1,65 @@
+- link "Skip to photographs":
+  - /url: "#content"
+- banner:
+  - link "Collection Explorer":
+    - /url: "#view=collection&q=Yosemite&selected=1992.12%2C1974.47"
+  - navigation "Study views":
+    - link "Collection":
+      - /url: "#view=collection&q=Yosemite&selected=1992.12%2C1974.47"
+    - link "Timeline":
+      - /url: "#view=timeline&q=Yosemite&selected=1992.12%2C1974.47"
+    - link "Comparison":
+      - /url: "#view=comparison&q=Yosemite&selected=1992.12%2C1974.47"
+  - link "All tools":
+    - /url: ../tools/
+- main:
+  - heading "Comparison" [active] [level=1]
+  - button "Export selection":
+    - text: Export selection
+  - region "Selected photograph comparison":
+    - table:
+      - rowgroup:
+        - row "Photograph Bridal Veil, Yosemite Remove Bridal Veil, Yosemite from comparison Yosemite Falls Remove Yosemite Falls from comparison":
+          - columnheader "Photograph"
+          - columnheader "Bridal Veil, Yosemite Remove Bridal Veil, Yosemite from comparison":
+            - link "Bridal Veil, Yosemite":
+              - /url: "#view=photograph&from=comparison&q=Yosemite&selected=1992.12%2C1974.47&record=1992.12"
+            - button "Remove Bridal Veil, Yosemite from comparison" [pressed]:
+          - columnheader "Yosemite Falls Remove Yosemite Falls from comparison":
+            - link "Yosemite Falls":
+              - /url: "#view=photograph&from=comparison&q=Yosemite&selected=1992.12%2C1974.47&record=1974.47"
+            - button "Remove Yosemite Falls from comparison" [pressed]:
+      - rowgroup:
+        - row "Catalogue date 1865–66 1868":
+          - rowheader "Catalogue date"
+          - cell "1865–66"
+          - cell "1868"
+        - 'row "Creators artist: Carleton E. Watkins (American, 1829–1916) artist: attributed to Eadweard J. Muybridge (American, 1830–1904)"':
+          - rowheader "Creators"
+          - 'cell "artist: Carleton E. Watkins (American, 1829–1916)"'
+          - 'cell "artist: attributed to Eadweard J. Muybridge (American, 1830–1904)"'
+        - row "Process albumen print from wet collodion negative albumen print":
+          - rowheader "Process"
+          - cell "albumen print from wet collodion negative"
+          - cell "albumen print"
+        - row "Catalogue culture America America":
+          - rowheader "Catalogue culture"
+          - cell "America"
+          - cell "America"
+        - row "Source Cleveland Museum of Art 1992.12 Cleveland Museum of Art 1974.47":
+          - rowheader "Source"
+          - cell "Cleveland Museum of Art 1992.12":
+            - link "Cleveland Museum of Art 1992.12":
+              - /url: https://clevelandart.org/art/1992.12
+              - text: Cleveland Museum of Art 1992.12
+          - cell "Cleveland Museum of Art 1974.47":
+            - link "Cleveland Museum of Art 1974.47":
+              - /url: https://clevelandart.org/art/1974.47
+              - text: Cleveland Museum of Art 1974.47
+- contentinfo:
+  - link "Cleveland Museum of Art Open Access":
+    - /url: https://www.clevelandart.org/open-access
+  - link "Research guide":
+    - /url: ../guides/research.html
+  - 'link "Data and images: CC0"':
+    - /url: https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,0 +1,5 @@
+Browser tab: 2, Title: "147949-DUfk4cye.jpg (603×893)", URL: "http://127.0.0.1:4187/assets/147949-DUfk4cye.jpg".
+1 AXWebArea 147949-DUfk4cye.jpg (603×893), URL: 127.0.0.1:4187/assets/147949-DUfk4cye.jpg
+	2 image
+
+The focused UI element is 1 AXWebArea 147949-DUfk4cye.jpg (603×893), URL: 127.0.0.1:4187/assets/147949-DUfk4cye.jpg

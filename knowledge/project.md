@@ -18,62 +18,70 @@ updated: 2026-10-11
 
 # Project
 
-Fancy Research Tools is a documented and tested foundation for developing research software with Large Language Models (LLMs) and coding agents. A shared core combines inspectable code, architecture knowledge, explicit adaptation points and quality checks. Humans and agents use this foundation to develop project-specific data models, research workflows and interfaces.
-
-## Data basis
-
-The separate [Collection Explorer](../photographs/) demonstrates compact visual exploration, catalogue chronology, image inspection and comparison using forty independently sourced CC0 Cleveland Museum of Art photographs. Its data and implementation are separate from commissioned collection work. The [data contract](data.md#open-photograph-reference) records its bounded selection and provenance. A map is outside this slice because the source does not supply verified spatial roles and coordinates.
-
-The technical metadata example starts with a frozen descriptive projection of real Schönbach correspondence metadata under CC0. Its original synthetic collection remains a regression fixture, and existing local drafts take precedence over the new default. Catalogue comparison uses real Met musical-instrument metadata. Selection, rights, transformations and interpretation are maintained in [data](data.md). Technical observations leave researcher acceptance explicit.
-
-Source annotation supports Benndorf's 1879 letter to Schuchardt and archived NOAA/NHC discussions of Hurricane Milton from October 2024. Each case retains its own source roles, category vocabulary and notebook. The working hypothesis is close reading with anchored quotations and explicit interpretation. Source-fit reviews have declared actors and criteria. These cases do not establish disciplinary acceptance or general interdisciplinary reuse.
-
-## Context
-
-The repository supports understanding, building and checking research tools. Its documentation and specifications are prepared for GitHub Pages alongside runnable examples. DHCraft can also use this foundation in its project services, associated with the [existing offer](https://dhcraft.org/fancy-research-tools/). Commercial adoption does not determine the repository's requirements.
-
-Research tools can also be pipelines, notebooks, desktop applications or server systems. Version 0.1 addresses a bounded browser workflow. teiCrafter and CorrespExplorer provide source material used by the current examples, and the gallery links their existing public applications. The [worked adaptations](../docs/customizing.md) record this material reuse. Adapting their complete editing and exploration workflows to a common core remains a candidate investigation.
+Fancy Research Tools provides runnable examples and maintained contracts for developing research software with Large Language Models (LLMs) and coding agents. The foundation combines inspectable code, explicit adaptation points and quality checks. Each adaptation develops its own research task, data model and interface.
 
 ## Purpose
 
-Fancy Research Tools serves researchers carrying out a concrete task and researchers developing or adapting a tool with a coding agent. These are complementary entry paths, confirmed by the operator. A directly adaptable starting application is accompanied by worked examples and design explanations. Adopters can replace the material and develop a tool for their own research question. The operator confirmed this purpose on 2026-10-11. The public repository must contain enough guidance to support that work without access to a private Vault or the originating conversation. The [operator default profile](design.md#operator-default-profile) supplies adaptable presentation choices.
+Researchers use the project both to carry out a concrete task and to develop or adapt a tool with a coding agent. The operator confirmed these complementary entry paths on 2026-10-11. The public repository must support both without access to a private Vault or the originating conversation. Reusable presentation choices are maintained in the [operator default profile](design.md#operator-default-profile).
 
-A human working with an agent can begin with a question, idea, material, method or existing workflow. Preparation, Exploration, Distillation and Implementation recur as prototype observations revise project knowledge. The development harness supplies the LLM and its tools, while runtime LLM features depend on the research task. Browser interfaces and the simplest adequate stack are the default. The core's extent will be established through contrasting adaptations.
+Work may begin with a question, idea, material, method or existing workflow. Preparation, Exploration, Distillation and Implementation recur as observations revise project knowledge. The development harness supplies the LLM and its tools. Runtime LLM features require a separate justification in the research task. Browser interfaces and the simplest adequate stack are the default.
 
-The implemented cases examine source comparison, text annotation and metadata editing with separate schemas. Their [behavioural contracts](specification.md) define research actions and preservation requirements. The [testing record](testing.md) separates demonstrated software behaviour from research acceptance and broader reuse claims.
-
-## Development commitments
-
-On 2026-10-10 the operator delegated reasoned answers to five project questions and implementation of their consequences. The following qualified commitments are the resulting project decisions. They are requirements and research questions; they are not observed user outcomes.
-
-| Question | Decision and reason | Concrete consequence |
-|---|---|---|
-| Should researchers without programming experience be able to develop tools with an agent? | Yes, through an assisted workflow. They can supply the research judgement while the agent makes implementation inspectable. Independent use must be demonstrated with actual participants. | A copyable start brief, a runnable small slice, plain explanations of decisions and escalation when source meaning or technical risk exceeds the available evidence. |
-| Should existing tools be supported? | Yes. Research knowledge and working data already reside in tools whose contracts must survive adaptation. | Inspect and reproduce the existing workflow; preserve originals, drafts and formats; document reused, modified and replaced responsibilities. |
-| Does the project include long-term maintenance? | Yes, as maintainable handover and an explicit maintenance agreement. A prototype's future cannot depend on unrecorded chat context. | Named or explicitly unassigned responsibilities, versioned data, recovery instructions, dependency baseline and evidence for later changes. No indefinite support or scheduled service is implied. |
-| Are independent researchers needed before broad reuse claims? | Yes. Engineering tests and agent reviews cannot establish that other researchers understand or benefit from the tool. | Record real tasks, errors, help and interpretations with people outside implementation. The operator confirmed a formative session with an additional person and their own research question on 2026-10-11. Participant and timing remain unassigned. Limit every claim to the cases and participants actually observed. |
-| Should the development method itself be investigated? | Yes. How the tool was developed and whether it serves research are different questions. | Preserve development episodes, interventions and failures; use a declared comparison and held-out task before attributing improvement to the method. |
-
-The [start guide](../docs/getting-started.md), [adaptation and maintenance guide](../docs/customizing.md), and [development study protocol](../benchmarks/development-study-protocol.md) make these commitments actionable. The Met provenance extension is one existing-tool adaptation; the NOAA annotation case implements a bounded contrast in material and workflow. Neither establishes autonomous novice development or broad reuse across projects.
-
-## Standards
-
-JSON provides interchange. HTML supplies native controls and document structure. CSS supplies layout and visual tokens. TypeScript makes internal contracts explicit. These choices support inspection and adaptation, while research validity remains dependent on the project's data and methods.
-
-## Technical implementation
-
-The [architecture](architecture.md) uses Vite, TypeScript and browser APIs. Documentation and tools can be served as static assets. More complex deployments require an explicit architectural revision.
+Research fitness and acceptance belong to the responsible human. Engineering checks, agent reviews and prepared guides provide evidence for that decision. Simulated stakeholder perspectives can propose requirements or counterexamples, which remain hypotheses until source checks or actual stakeholder assessment. Claims about independent use, broad reuse or development-method effectiveness require the [declared research observations](../benchmarks/development-study-protocol.md).
 
 ## Functional scope
 
-Collection Explorer is the first reference tool. The start page and gallery lead to its independent open photograph sample; the other main entries are Capture and encode, Analyse correspondence, Review and correct, and Build editions. Earlier comparison, metadata and annotation implementations remain technical examples in the development guide. Each entry distinguishes an existing application from a guided setup. Documentation supports development. Local tools keep their own research navigation and provide a return link to the gallery. Linked external applications retain their published navigation, with browser Back available after ordinary navigation. Local drafts and explicit exports preserve working state under the relevant [data contract](data.md).
+Collection Explorer is the first reference tool. It supports photograph selection, chronological inspection, image viewing and comparison. The gallery organizes further entries by research task.
 
-Missingness remains inspectable and quantitatively correct. Comparison cells may be blank when their column establishes meaning; uncertainty, restrictions and load failures remain explicit. A reviewer flag is a workflow value whose scholarly meaning must be established in each project.
+| Research task | Entry | Scope of the example |
+|---|---|---|
+| Explore collections | Collection Explorer | Runnable local tool using independently sourced open photographs |
+| Capture and encode | teiCrafter | Existing application with a prepared real SZD letter exercise |
+| Analyse correspondence | CorrespExplorer | Existing application with a real correspondence case |
+| Review and correct | Bibliographic curation | Local Klawiter correction setup, distinguished from its public reading interface |
+| Build an edition | Agentic Edition Pipeline | Repository setup using the same SZD letter package |
+
+Catalogue comparison, source annotation and flat metadata editing remain technical examples for studying adaptation and preserving earlier work. They provide contrasting domain contracts, rather than five additional primary products. Route behaviour and compatibility requirements are maintained in [Specification](specification.md), with demonstrated and pending acceptance in [Testing](testing.md).
+
+Version 0.1 is a static browser starter with local working state and explicit exports. Shared editing, authenticated identity, protected services and a universal plugin API require additional scope and architecture decisions. Actual adaptations determine which responsibilities belong in the shared core.
+
+## Data basis
+
+The reference material is public and independently sourced. The [data contract](data.md) identifies source selection, rights, transformations, uncertainty and supported formats for each case. Customer data and private project context do not belong in public examples, fixtures, documentation or commit history. Synthetic inputs remain useful for deterministic failure and boundary cases.
+
+Collection Explorer uses Cleveland Museum of Art photographs. The SZD example connects capture and edition preparation through one letter. Technical examples use Met catalogue records, Schönbach correspondence metadata, the Benndorf letter and archived NOAA/NHC discussions. Their distinct models preserve the relevant source roles and research meanings.
+
+## Development commitments
+
+The operator delegated the following decisions on 2026-10-10. The commitments define how adaptations are developed and assessed. Their observable criteria are [DEV-01 through DEV-05](specification.md#development-and-handover-acceptance).
+
+| Commitment | Reason and consequence |
+|---|---|
+| Assisted development is open to researchers without programming experience. | Researchers supply the task and research judgement. An agent makes implementation decisions inspectable through a runnable small slice and plain explanations. Independent use must be demonstrated with actual participants. |
+| Existing tools and working material are supported. | Reproduce the original workflow, preserve its drafts and formats, and distinguish retained, modified and replaced responsibilities before adapting it. |
+| Maintenance is part of handover. | Record owners or explicit vacancies, supported versions, dependencies, recovery and retirement paths. A support agreement must be explicit. No indefinite service is implied. |
+| Broad reuse claims require independent researchers. | Observe relevant tasks, errors, assistance and interpretation with people outside implementation. The operator confirmed a formative session with an additional person and their own research question on 2026-10-11. Recruitment and scheduling remain in the project plan. |
+| The development method is investigated separately from product usefulness. | Preserve development episodes, interventions and failures. Declare a comparator and held-out task before attributing improvement to the method. |
+
+The [start guide](../docs/getting-started.md), [adaptation and maintenance guide](../docs/customizing.md) and [development study protocol](../benchmarks/development-study-protocol.md) provide the working procedures.
+
+## Context
+
+The documentation and runnable examples can be served as a static website. DHCraft can use the foundation in project services associated with the [existing offer](https://dhcraft.org/fancy-research-tools/). Commercial adoption does not determine research requirements or imply ongoing maintenance responsibility.
+
+Research tools may also be pipelines, notebooks, desktop applications or server systems. The current browser scope supplies a bounded starting point. Integrating the full runtimes of linked applications requires an explicit adaptation, with preserved source contracts and evidence of the resulting workflow.
+
+## Standards
+
+JSON supplies interchange, HTML native controls and document structure, CSS layout and visual tokens, and TypeScript internal contracts. The [technical implementation](architecture.md#stack) and [data models](data.md) define how these standards apply to each case. Research validity depends on the material and method used.
+
+## Technical implementation
+
+The [architecture](architecture.md) separates workflow domains, recovery and rendering in a Vite/TypeScript static build. The core and its adaptation boundaries are established through implemented cases.
 
 ## Terms
 
-The Terms section of `knowledge/INDEX.md` in the repository defines core, reference tool, starter, collection and draft for the maintained knowledge base.
+The Terms section of `knowledge/INDEX.md` defines core, reference tool, starter, collection and draft.
 
 ## License
 
-Code retains the repository's [MIT license](../LICENSE). Documentation and image prompts retain [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party assets retain their own notices. Adopters must establish rights for their own data and branding.
+Code retains the repository's [MIT license](../LICENSE). Documentation and image prompts retain [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party assets retain their source-specific notices under [Data](data.md). Adopters must establish rights for their own material and branding.

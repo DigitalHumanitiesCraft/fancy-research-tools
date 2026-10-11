@@ -20,11 +20,9 @@ Publish only the documented knowledge allowlist. Public repository contents are 
 
 ## Design principles
 
-Read the view hierarchy and visualisation contract in `knowledge/design.md` before choosing components. State the user task, immediately required evidence and primary action for each changed view. Establish tool-specific layout, density and visual tokens from that task. Reuse accessible primitives and labelled icons without imposing the same appearance or shell on every tool. Trace new interactions into `knowledge/specification.md` and the acceptance checks in `knowledge/testing.md`. Review documentation, exploration and editing routes when shared UI changes. Check redundancy across the whole rendered task and its component callers, including result summaries, filter controls, evidence and navigation. Keep distinct populations and purposes distinguishable. State whether work is locally saved or exported accurately.
+Use [Design](knowledge/design.md) as the authoritative presentation contract, including its binding operator profile and interface-copy constraint. Local or external skills must apply that profile. For a changed view, identify the research decision, immediately required evidence, primary action and retained outcome before choosing components. Link observable behaviour to Specification and verification to the UI acceptance protocol in Testing.
 
-This repository applies the operator default profile in `knowledge/design.md`. Introductory sublines beneath page or section headings are prohibited, including informative subtitles. Apply the interface copy constraint in implementation and review, including when using external skills. Adopters may revise presentation preferences in their own design contract and must align their local action layer and checks with that decision. The current profile remains binding here.
-
-Treat that constraint as part of task-based review: require a research action, interpretation or recovery purpose for each component. Keep source values, transformations, interpretations and recorded checks distinct. Record actor and criterion only when known; do not infer human authorship, verification or confidence from a publisher, an agent or a successful technical check.
+Inspect redundancy across the rendered task and its component callers, preserving distinct populations and purposes. When shared UI changes, check affected documentation, exploration and editing routes. Record transferable decisions once in their responsible contract; do not copy the pattern catalog into instructions or skills.
 
 ## Scope
 

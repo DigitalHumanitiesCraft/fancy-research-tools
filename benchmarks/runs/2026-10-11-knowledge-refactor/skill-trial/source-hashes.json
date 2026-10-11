@@ -1,0 +1,246 @@
+[
+  {
+    "Path": "src\\photographs\\main.ts",
+    "Hash": "71A5FF92D840DD700A6B863042BC110B0ABBFD8B9945E0D6B68E593DBECBBC3E"
+  },
+  {
+    "Path": "src\\photographs\\model.ts",
+    "Hash": "0CFF63492106061E64FE6318C5313BCF0001BCE7BD7CCCE13AE3B13FC6F1D455"
+  },
+  {
+    "Path": "src\\photographs\\style.css",
+    "Hash": "C1131576CB3EDAC48806D11A43B2ED3ABCFD5D2DE860E32225C899774B150CB5"
+  },
+  {
+    "Path": "src\\photographs\\viewer.ts",
+    "Hash": "ABD971E4A9786BABE389BBCF2086BAA93657254D22418C03166311842E329D29"
+  },
+  {
+    "Path": "data\\photographs\\collection.jsonld",
+    "Hash": "98E328F93EB4C9F138D5DE91BA23C672E9519799FFEBC8EE75EC9102025462D8"
+  },
+  {
+    "Path": "data\\photographs\\manifest.json",
+    "Hash": "75694E213FB05F80ACBB8BB23424AEBDBB3AFF615E3D3C7381D44AB31F8F3407"
+  },
+  {
+    "Path": "data\\photographs\\README.md",
+    "Hash": "839E9B71AC6286A45286628872101F5DED952BD4ACB5D75549FCD7679AF23186"
+  },
+  {
+    "Path": "data\\photographs\\schema.json",
+    "Hash": "4927621EF6D0D384C5400182DBE91A95A217CD57E77F6943598713ED71D4742D"
+  },
+  {
+    "Path": "data\\photographs\\semantic-cases.json",
+    "Hash": "87C84A08A6CF6F997A35557CDB736335EF38100997039B741518566D765BDED1"
+  },
+  {
+    "Path": "data\\photographs\\images\\146322.jpg",
+    "Hash": "09D16127C352FCE787E3BD2C938D0FD45E04019787E8879E9ED6EE09D72D7937"
+  },
+  {
+    "Path": "data\\photographs\\images\\147949.jpg",
+    "Hash": "137650E038E8DFB447A7E7B1CB3509E9A37C1BBA8B7E56217518304BC9346FFE"
+  },
+  {
+    "Path": "data\\photographs\\images\\147950.jpg",
+    "Hash": "1F9A369CDEDB010CCA66BDA7218B111ADB88F5E168FE8C137A87B7D42857750D"
+  },
+  {
+    "Path": "data\\photographs\\images\\147951.jpg",
+    "Hash": "BE424A276969B7A077F75864F2BC488ABF20E64C5AE48749B57F8AECE7DD332B"
+  },
+  {
+    "Path": "data\\photographs\\images\\147952.jpg",
+    "Hash": "CE03243E3DAA0BA83C4AC011CA8A3031E956B4B9B84F81082DC4376FDADC3948"
+  },
+  {
+    "Path": "data\\photographs\\images\\147953.jpg",
+    "Hash": "DF0C5C192D0E924F060011B05393DA2E211FFBE32E4C27C34EBB09689CB026A8"
+  },
+  {
+    "Path": "data\\photographs\\images\\147954.jpg",
+    "Hash": "E7ED1B8EDECD93F8206E3E0526939ABE1B9D9FD9F6CEEEBC2501FDFBC03AC83E"
+  },
+  {
+    "Path": "data\\photographs\\images\\148309.jpg",
+    "Hash": "6701E69A54FAE4B925BC3D3BE1F318432AD204B0954FFD591E372A2BD18AAEC7"
+  },
+  {
+    "Path": "data\\photographs\\images\\148703.jpg",
+    "Hash": "E0E8A8674D183686C79B7176CB110619C0C02EEE6F64A7C1D639C9FE8AE12E65"
+  },
+  {
+    "Path": "data\\photographs\\images\\149462.jpg",
+    "Hash": "13170DF4F19E6FFE728FA7C4380D183D5A95F535924009FDA27DA77EDA2F66D1"
+  },
+  {
+    "Path": "data\\photographs\\images\\149889.jpg",
+    "Hash": "F089696654F4EA92D7AB70F752E14A95C139FC557B63567092129B6EFF7E9539"
+  },
+  {
+    "Path": "data\\photographs\\images\\149890.jpg",
+    "Hash": "113130700B183FFE4448E7519D4CD11F2C56FDDCE3D7696DEE7F51D2EC1FB8CF"
+  },
+  {
+    "Path": "data\\photographs\\images\\149892.jpg",
+    "Hash": "63EB6D73AEEA17FFCCD84FC80F92960064BD71E3F96CED2BCE6D5784DAC4EE58"
+  },
+  {
+    "Path": "data\\photographs\\images\\149893.jpg",
+    "Hash": "7E991BDD07F08C67E62A5C8EFB86244A73837C81D7A57A9E8473A4E7412E92CE"
+  },
+  {
+    "Path": "data\\photographs\\images\\149894.jpg",
+    "Hash": "5B895B87B6586F7946F33F68996F9EC750D29C60628DFCF65C1F2E84B7C0DB27"
+  },
+  {
+    "Path": "data\\photographs\\images\\149895.jpg",
+    "Hash": "F6E501D9AE5C8DF399EE0493E4A87890FBCAC189992171EAD580A2FA4B919FD8"
+  },
+  {
+    "Path": "data\\photographs\\images\\149896.jpg",
+    "Hash": "93720204A1467318BC4CD9AA335489E8655AAF9B4EEFC9C7A5C56251B4835008"
+  },
+  {
+    "Path": "data\\photographs\\images\\149897.jpg",
+    "Hash": "A8B9C494AC73D11A9FB65BD06F1CB26DB2B31368AAA95617595D4BFCDC928A96"
+  },
+  {
+    "Path": "data\\photographs\\images\\149898.jpg",
+    "Hash": "7DD13E44FF87A11FB66A203BE1E617DBFDFBCCCFAFC5C94727A6CFFBE387DDD5"
+  },
+  {
+    "Path": "data\\photographs\\images\\149899.jpg",
+    "Hash": "BAFF272BBAAE279D049E8AE8FEFE8E58AD9F7FDCC4D74426CB32021BECFB602B"
+  },
+  {
+    "Path": "data\\photographs\\images\\149900.jpg",
+    "Hash": "6D63DE30C6DF62CE2954BB477B46949E9F3055C3E01EF783B19952F70921F7F7"
+  },
+  {
+    "Path": "data\\photographs\\images\\149901.jpg",
+    "Hash": "7C3A7232D4708829A51264C38D681672AD253B4D935F7A2469F8759D7368FF10"
+  },
+  {
+    "Path": "data\\photographs\\images\\149903.jpg",
+    "Hash": "BAD3C61E488B9D9EA2348A1D9A59AC621C6813B1B9F859161ECB17513E1160B6"
+  },
+  {
+    "Path": "data\\photographs\\images\\149904.jpg",
+    "Hash": "8992B0D07E1511C0CCEC0E47103BDA30116ABDC374F134C170082816C63A28E6"
+  },
+  {
+    "Path": "data\\photographs\\images\\149908.jpg",
+    "Hash": "06B3271CD7C7B4D236831B94864FBABA9A071DBA8F0238324D999005704F2044"
+  },
+  {
+    "Path": "data\\photographs\\images\\149909.jpg",
+    "Hash": "EDD2ED4F659EEFE07DDFB859021A95E9184B81BC477556ABF7D3C593012E5076"
+  },
+  {
+    "Path": "data\\photographs\\images\\150113.jpg",
+    "Hash": "07B499EBAED9C93429148292C92B43B38BA37DCEC5E4A3B9658EC60DF57DE708"
+  },
+  {
+    "Path": "data\\photographs\\images\\151356.jpg",
+    "Hash": "1B23BA5101A58C9B3A55AFB6F2F04F3DFC745899C8BE9FC1313C5C1558A24441"
+  },
+  {
+    "Path": "data\\photographs\\images\\151365.jpg",
+    "Hash": "9FD8D999A1E3AC3462A34D2DC887298E4B92FB3A0B63D372A881C6E2EAACCC88"
+  },
+  {
+    "Path": "data\\photographs\\images\\151837.jpg",
+    "Hash": "8537586464C0CC7AEC7CB1F13B8C19902C65A3D9F9BE3D3A7DBB6C8C1839679D"
+  },
+  {
+    "Path": "data\\photographs\\images\\151838.jpg",
+    "Hash": "1CB16FE51EDDBBD829B2EAAEFAA80739BFD428B6FFF217F259EC7CF2CB6CAC08"
+  },
+  {
+    "Path": "data\\photographs\\images\\151839.jpg",
+    "Hash": "802CABE1141F8CBA4E200CD6816DBF75FB443198716AFD04F339F25B6039ADD7"
+  },
+  {
+    "Path": "data\\photographs\\images\\151840.jpg",
+    "Hash": "0464AC4936587C32083998F3545A8108FBF608DC87F125E9E04B813E43CBC611"
+  },
+  {
+    "Path": "data\\photographs\\images\\151841.jpg",
+    "Hash": "19D01D6D519C3B337A416B0214D2C6E8F3041CCC60439B050A409274A8443BEB"
+  },
+  {
+    "Path": "data\\photographs\\images\\151844.jpg",
+    "Hash": "2FCA728D9CE4E2090D164A20831334BD14A99D9464608E359A979590ABF2089B"
+  },
+  {
+    "Path": "data\\photographs\\images\\151932.jpg",
+    "Hash": "0C4BF6BA0D69148784107464686286E1694E15820052B4D6B636C5CE978796CF"
+  },
+  {
+    "Path": "data\\photographs\\images\\151948.jpg",
+    "Hash": "151AE5BC6F4ACF96A66EE7442F5145062948E73545F5F141A346F25E3042EE61"
+  },
+  {
+    "Path": "data\\photographs\\images\\156283.jpg",
+    "Hash": "0C2D6E79FAB189E4338AF900FBAB67F543D8D7FBD617B270C1AED4855D84F793"
+  },
+  {
+    "Path": "data\\photographs\\images\\85863.jpg",
+    "Hash": "CFAE8EF33E70F23E737F1D5AFEA9BB37CC969A018AD3E4A72103060CBDFC4362"
+  },
+  {
+    "Path": "data\\photographs\\images\\92759.jpg",
+    "Hash": "333E74271E1FAAAA4D8DDF8201BAE6869B73E21C3CEDF670BAF4166F3E002D8B"
+  },
+  {
+    "Path": "data\\photographs\\raw\\artworks.json",
+    "Hash": "705C0FEC1A413AAFDEACBCDA077F643336204D35C850F7FF6FA9B4D8F68562AF"
+  },
+  {
+    "Path": ".agents\\skills\\research-ui-evaluate\\SKILL.md",
+    "Hash": "3DEDEE855BE504456BC48A96E48C3ACE4DA766506F3E032D29DCB9C50A731D1A"
+  },
+  {
+    "Path": "knowledge\\architecture.md",
+    "Hash": "AC643D6B689147F7A1152676F4D89FB2B2298CA058EBC47F97D402DA205D6D1C"
+  },
+  {
+    "Path": "knowledge\\data.md",
+    "Hash": "D6D5FF5D28FC82E92CFD52F3160266B7475B9718BA79F39B915A6F8C736832E2"
+  },
+  {
+    "Path": "knowledge\\design.md",
+    "Hash": "BB9340C037581D47A5E8481F7083A559142006EDEE09A26E8C040CDCC6754460"
+  },
+  {
+    "Path": "knowledge\\handoff.md",
+    "Hash": "6576390DD5F6232D27156887D4969E7AD822C57A43C85249FCFC9B3D6DFBA0E0"
+  },
+  {
+    "Path": "knowledge\\INDEX.md",
+    "Hash": "694918B330BB3588FB5B70AEFFCF63B3B3F1E2350DAC146CB261983830206BFE"
+  },
+  {
+    "Path": "knowledge\\journal.md",
+    "Hash": "4F11E768E392FE91B3DB64890A4544C054C77922B0330617DDC9BDDF672B27C9"
+  },
+  {
+    "Path": "knowledge\\plan.md",
+    "Hash": "76C362AFD5DA4B53DC00C139A63AB1A0A000DBBB54E6AF02711188D299CC1F01"
+  },
+  {
+    "Path": "knowledge\\project.md",
+    "Hash": "794118122C0C6A22A25E5F3B1577C63AC2CCFD9DE20942D98CC4AFBD73412B28"
+  },
+  {
+    "Path": "knowledge\\specification.md",
+    "Hash": "1FF65FFB23301D5743EABEEEBED72A254CC8A513A1B49961A490AB37C3A43094"
+  },
+  {
+    "Path": "knowledge\\testing.md",
+    "Hash": "865F2DDA7CBA81D10A47F7C4B739BD24DDEB961CF4127B8E17F88C62A156A952"
+  }
+]

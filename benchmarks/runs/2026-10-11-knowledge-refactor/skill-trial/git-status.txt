@@ -1,0 +1,13 @@
+ M .agents/skills/research-ui-design/SKILL.md
+ M .agents/skills/research-ui-evaluate/SKILL.md
+ M .agents/skills/research-ui-improve/SKILL.md
+ M docs/customizing.md
+ M docs/index.md
+ M docs/research.md
+ M knowledge/architecture.md
+ M knowledge/data.md
+ M knowledge/design.md
+ M knowledge/plan.md
+ M knowledge/project.md
+ M knowledge/specification.md
+ M knowledge/testing.md

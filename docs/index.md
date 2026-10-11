@@ -8,7 +8,7 @@
 ## Capture, analyse and edit
 
 - [Capture and encode](getting-started.md#capture-szd) with teiCrafter and a real SZD example.
-- [Analyse correspondence](https://dhcraft.org/CorrespExplorer/) in CorrespExplorer.
+- [Analyse correspondence](getting-started.md#analyse-correspondence) with the real HSA dataset in CorrespExplorer.
 - [Review and correct](getting-started.md#review-bibliography) with the local Klawiter curation workflow.
 - [Build an edition](getting-started.md#build-szd-edition) using the SZD source package and Agentic Edition Pipeline.
 

@@ -1,0 +1,153 @@
+{
+  "actualExportBytes": 10857,
+  "actualExportSha256": "4f831c36337e2eb577bd5db7b6186ef30ad544289f457d352ed0a9b1d315903a",
+  "count": 2,
+  "query": {
+    "text": "Yosemite",
+    "creator": "",
+    "technique": "",
+    "sort": "date"
+  },
+  "records": [
+    {
+      "accession": "1992.12",
+      "title": "Bridal Veil, Yosemite",
+      "date": {
+        "label": "1865–66",
+        "start": 1865,
+        "end": 1866,
+        "kind": "range",
+        "indexStart": 1865,
+        "indexEnd": 1866
+      },
+      "creators": [
+        {
+          "name": "Carleton E. Watkins (American, 1829–1916)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1061",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print from wet collodion negative",
+      "projectedRecordUnchanged": true,
+      "originalFieldChecks": [
+        {
+          "key": "title",
+          "agrees": true
+        },
+        {
+          "key": "accession_number",
+          "agrees": true
+        },
+        {
+          "key": "creation_date",
+          "agrees": true
+        },
+        {
+          "key": "creation_date_earliest",
+          "agrees": true
+        },
+        {
+          "key": "creation_date_latest",
+          "agrees": true
+        },
+        {
+          "key": "creators",
+          "agrees": true
+        },
+        {
+          "key": "culture",
+          "agrees": true
+        },
+        {
+          "key": "technique",
+          "agrees": true
+        },
+        {
+          "key": "share_license_status",
+          "agrees": true
+        },
+        {
+          "key": "url",
+          "agrees": true
+        },
+        {
+          "key": "image",
+          "agrees": true
+        }
+      ],
+      "rawHashMatches": true
+    },
+    {
+      "accession": "1974.47",
+      "title": "Yosemite Falls",
+      "date": {
+        "label": "1868",
+        "start": 1868,
+        "end": 1868,
+        "kind": "exact-year",
+        "indexStart": 1868,
+        "indexEnd": 1868
+      },
+      "creators": [
+        {
+          "name": "Eadweard J. Muybridge (American, 1830–1904)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/716",
+          "role": "artist",
+          "qualifier": "attributed to",
+          "extent": null
+        }
+      ],
+      "technique": "albumen print",
+      "projectedRecordUnchanged": true,
+      "originalFieldChecks": [
+        {
+          "key": "title",
+          "agrees": true
+        },
+        {
+          "key": "accession_number",
+          "agrees": true
+        },
+        {
+          "key": "creation_date",
+          "agrees": true
+        },
+        {
+          "key": "creation_date_earliest",
+          "agrees": true
+        },
+        {
+          "key": "creation_date_latest",
+          "agrees": true
+        },
+        {
+          "key": "creators",
+          "agrees": true
+        },
+        {
+          "key": "culture",
+          "agrees": true
+        },
+        {
+          "key": "technique",
+          "agrees": true
+        },
+        {
+          "key": "share_license_status",
+          "agrees": true
+        },
+        {
+          "key": "url",
+          "agrees": true
+        },
+        {
+          "key": "image",
+          "agrees": true
+        }
+      ],
+      "rawHashMatches": true
+    }
+  ]
+}

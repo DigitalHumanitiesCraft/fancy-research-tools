@@ -18,15 +18,25 @@ updated: 2026-10-11
 
 # Data
 
-The first reference uses independent Cleveland Museum of Art photographs. A separate SZD package prepares a real letter for capture and edition work. The examples use separate data contracts and persisted working state. The editor starts with real Schönbach correspondence metadata, comparison uses frozen Met catalogue records, and annotation supports a historical letter and archived NOAA/NHC discussions. Each export preserves its defined material and authored work. Existing drafts and synthetic regression fixtures remain supported.
+Each example preserves a defined source snapshot and uses its own interchange contract. Source values, deterministic derivations, authored interpretation and recorded checks remain distinguishable. A format accepted by one tool is not implicitly accepted by another.
 
 ## Subject
 
-The flat collection editor represents items with descriptive metadata and a manual review state. The photograph, annotation and edition examples have their own contracts below. Projects must define the meaning and provenance of their own fields before importing real material.
+The flat collection editor represents descriptive records with a manual review state. Investigations preserve selected catalogue evidence and notes. Notebooks preserve exact source quotations and interpretations. The photograph selection is an evidence packet, while the SZD package carries TEI and its source manifest.
+
+| Format | Supported version and identity | Preservation boundary |
+|---|---|---|
+| [Collection](#model) | `schemaVersion: 1` | Complete flat record set, including imported author text |
+| [Met investigation](#investigation-exchange) | Exact version 1 input, version 2 creation | Selected frozen records, snapshot and separately authored notes; version 2 adds canonical field evidence |
+| [Annotation notebook](#annotation-notebook) | `schemaVersion: 1` and declared case | Exact sources, quote anchors, annotations and recorded reviews |
+| [Photograph selection](#open-photograph-reference) | Current frozen projection and derivation identity | Selected source evidence; no editable-file reopening or image archive |
+| [SZD package](#szd-edition-example) | Manifest-pinned TEI source and declared adapter | Retained source files, prepared TEI and facsimile references |
+
+Projects must define field meaning and provenance before importing material. [Recovery and replacement](specification.md#recovery-and-replacement) defines what users observe when work is saved, imported or exported.
 
 ## Sources
 
-The editor's default collection is derived from the CC0 Schönbach CMIF sample retained in CorrespExplorer. The frozen XML, source identity, rights statement and deterministic projection live in `data/schoenbach/`. The projection combines sender and recipient in a title, retains the source date and sending place, and records the original description identity. Original CMIF remains available because the flat JSON format does not represent the complete correspondence structure. New baseline records have manual review state `draft`; no check or historical verification is inferred. Existing local drafts take precedence over this new default.
+The editor's default collection is derived from the CC0 Schönbach CMIF sample retained in CorrespExplorer. [Its material record](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/a217446/data/schoenbach/README.md) identifies the frozen XML, source, rights statement and deterministic projection. The projection combines sender and recipient in a title, retains the source date and sending place, and records the original description identity. Original CMIF remains available because the flat JSON format does not represent the complete correspondence structure. New baseline records have manual review state `draft`; no check or historical verification is inferred. CM-01 in [Specification](specification.md#correspondence-metadata-contract) preserves existing drafts when choosing this default.
 
 `fixtures/demo.json` remains the original synthetic collection for failure, compatibility and recovery tests. Synthetic source descriptions must remain distinguishable from citations to real objects.
 
@@ -34,9 +44,9 @@ The pilot snapshot in `data/met-instruments/` contains the first sixty numeric o
 
 `node scripts/import-dh-data.mjs` verifies the frozen source bytes and deterministically regenerates derived records. Network retrieval is an explicit acquisition step, outside the production browser path. Empty source strings become null. Descriptive dates and original classification/culture labels remain available. Artist names retain their separate attribution prefix and suffix, including uncertain attributions. Date indexing bounds are not treated as exact event dates or uncertainty intervals. A missing catalogue value does not establish that a historical property was absent.
 
-`npm run check:data` executes that unchanged importer against temporary copies, compares the generated records, checksum and field-evidence registry byte for byte, and runs the independent raw-source oracle. It leaves the repository dataset unchanged and runs in both CI workflows. A changed importer digest changes the registry identity and therefore requires the compatibility decision described below before adoption.
+The importer digest is part of the field-evidence identity. Changing it requires the [investigation compatibility decision](#investigation-exchange), even if visible catalogue values remain the same. The [architecture](architecture.md#field-evidence-and-compatibility) and [testing contract](testing.md) define reproducibility and independent-oracle checks.
 
-The [research guide](../docs/research.md) lists candidates for inspection. Domain-specific material such as TEI structures or correspondence relations may require a different data contract. Mapping it into the current flat records must not silently discard meaningful structure. Synthetic fixtures remain appropriate for deterministic failure and boundary tests.
+A descriptive projection must retain its original material separately when structures such as TEI markup or correspondence relations exceed the flat model. The [adaptation guide](../docs/customizing.md) requires an explicit decision about retained and replaced meaning.
 
 ## Open photograph reference
 
@@ -44,7 +54,7 @@ The [research guide](../docs/research.md) lists candidates for inspection. Domai
 
 The JSON-LD separates catalogue date wording, conservatively parsed nominal bounds and the publisher's indexing bounds. Approximate dates remain approximate. Bare decades form a decade interval; unsupported compound descriptions retain their wording without a plotted date. Creator roles, attribution qualifiers, extents and authority references stay together. An attribution reference does not merge people or imply verified identity. No locations are inferred from culture, title or museum address.
 
-`schema.json` defines the structural contract. `scripts/check-photographs.mjs`, included in `npm run check:data`, verifies frozen source and image hashes, actual JPEG dimensions, reproducible derivation and independently specified source cases in `semantic-cases.json`. These checks establish the named properties of the projection, not historical correctness. The original source fields and derivation identity accompany exported selections. The selection file is a JSON evidence packet; it is not a supported editable investigation or an image archive.
+[The photograph schema](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/a217446/data/photographs/schema.json) defines structure. Its material checks cover frozen source and image hashes, decoded JPEG dimensions, reproducible derivation and independently specified `semantic-cases.json`. Those criteria establish projection agreement and declared date cases. Historical correctness requires additional source assessment. The original source fields and derivation identity accompany exported selections. The selection file is a JSON evidence packet; it is not a supported editable investigation or an image archive.
 
 The example contains no customer material and no LLM-produced catalogue values. Its interface therefore shows no LLM status marker. Synthetic skill trials exercise uncertain extraction separately under `benchmarks/cases/research-ui-skills/`.
 
@@ -52,9 +62,9 @@ The example contains no customer material and no LLM-produced catalogue values. 
 
 `data/szd-example/` retains the public METS inventory and pinned pipeline transcription for Stefan Zweig's letter to Max Fleischer of 22 May 1901, SZ-LAS/B3.1. Its manifest identifies every frozen file and the upstream pipeline revision. The inventory distinguishes envelope scans, text pages and a colour reference. No facsimile bytes are bundled.
 
-The source-specific rights statement names Literaturarchiv Salzburg and CC-BY without a version. Preserve that exact statement and attribution; a repository software licence does not relicense the archive material. The upstream transcription and review were produced by an LLM. The derived TEI marks its local state as `machine_unreviewed` and does not claim human verification. Derivation retains source text and zones while making page-image pointers explicit and recording attribution. The package README and checker define its exact reproducibility boundary.
+The source-specific rights statement names Literaturarchiv Salzburg and CC-BY without a version. Preserve that exact statement and attribution. A repository software licence does not relicense the archive material. The upstream transcription and review were produced by an LLM. The derived TEI marks its local state as `machine_unreviewed` and does not claim human verification. Derivation retains source text and zones while making page-image pointers explicit and recording attribution. The package README and checker define its exact reproducibility boundary.
 
-The [capture and edition guide](../docs/getting-started.md#capture-szd) uses this material. A frozen source package, a valid TEI file and a reading adapter check establish different properties. They do not prove that an external editor, correction server and generic pipeline exchange the full source without loss. Each actual transfer needs its own source-to-output verification.
+The [package manifest](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/a217446/data/szd-example/manifest.json) and [README](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/a217446/data/szd-example/README.md) identify retained inputs and declared changes. The [capture and edition guide](../docs/getting-started.md#capture-szd) uses this material under SZD-01 through SZD-03 in [Specification](specification.md#prepared-szd-workflow). Source hashes, TEI schema validity, browser editing and full edition generation are separate verification targets.
 
 ## Model
 
@@ -73,21 +83,19 @@ The validator in `src/domain/dataset.ts` implements the runtime contract, and `s
 
 Unknown fields and unsupported versions are rejected rather than silently discarded. The source field is plain-text provenance. The domain freezes validated objects and returns new values for edits.
 
-Unknown or invalid input is rejected with actionable feedback. A successful import replaces the working collection only after complete validation. Updating the contract requires a coordinated change to validation, fixtures, import/export tests and the editor.
+Updating the contract requires coordinated changes to validation, fixtures, interchange tests and the editor under FR-04 through FR-07 in [Specification](specification.md#functional-requirements).
 
 ## Limits
 
-Both the imported file and the formatted export must fit within 1 MiB. An edit that would exceed the export limit stays in the form for correction and does not replace the working collection. Browser persistence compares the last observed storage snapshot before writing. A detected change from another tab leaves that copy intact and offers export of the current in-memory state. This recovery mechanism does not implement collaborative editing or an atomic multi-tab transaction.
+Imported collection files and formatted exports must fit within 1 MiB (1,048,576 bytes). The implementation uses the same bound when validating an edited candidate. [Recovery and replacement](specification.md#recovery-and-replacement) defines overflow and storage-conflict behaviour.
 
-Dates are descriptive strings. The starter does not infer chronology, geographic identity or source authenticity. Empty metadata requires domain-specific interpretation. The `checked` review value is a manual user assertion, not automated scholarly verification. It remains selected when other fields change. A real project needs an accountable review policy, including whether edits should reset that state.
+The flat editor stores dates as descriptive strings and does not infer chronology, geographic identity or source authenticity. Empty metadata requires domain-specific interpretation. The `checked` review value is a manual user assertion with no recorded reviewer, criterion or check history. It remains selected when other fields change. A project adopting this editor must decide whether that policy fits its review task. Annotation reviews have the different invalidation rule defined below.
 
 ## Workflow
 
-Keep a copy of source material outside the browser. Import a supported JSON collection, inspect it, make changes in the local draft and export a new file. Draft recovery depends on browser storage availability. Clearing site data can remove drafts. Exported JSON is the portable recovery route.
+The [recovery contract](specification.md#recovery-and-replacement) governs separate working copies, explicit exports and storage failure. The [editing walkthrough](../docs/getting-started.md) provides the operated sequence.
 
 ## Relationship to source material
-
-The supplied input file and bundled baseline remain separate from edited working state. Export creates a new download. It does not write back to the selected source file or to a remote repository.
 
 Accepted author text retains its exact string value, including whitespace and line endings, until that particular field is edited. Native form controls can normalize their displayed value. Restoring a form, exporting, or editing another field must not adopt that normalization into the underlying data. Editing a field adopts its current control value without trimming other fields. This rule applies to collection metadata, investigation questions and notes, and annotation notebook text.
 
@@ -97,13 +105,13 @@ Collection comparison and Atlas, Bench and Trail share the investigation exchang
 
 Exact version 1 investigations remain readable. They contain the same fields except `fieldEvidence`. Parsing and directly serializing a version 1 object preserve that shape. Opening a legacy file or restoring a legacy draft does not rewrite its source file or stored bytes. A subsequent explicit export or edit creates version 2 using the current derivation evidence; it does not assert that the earlier author recorded or checked that evidence. Storage keys remain unchanged. Older software that only accepts version 1 cannot reopen version 2. Keep original exports and a matching software copy for rollback. A future dataset or derivation change must provide an explicit compatibility strategy before replacing this registry; exact matching is a bounded snapshot contract, not an archive migration service.
 
-The same validated serializer governs file export and reopening. Byte and text bounds are defined in that module and tested symmetrically. Earlier experimental concept exports used different shapes and are historical evidence, not supported input to this contract. They are never silently converted or overwritten. Tool-specific filter presentation remains distinct from the retained selected evidence.
+The same validated serializer governs file export and reopening. Input and formatted output are bounded at 2,000,000 UTF-8 bytes. Each text field is bounded at 50,000 UTF-16 code units under `MAX_INVESTIGATION_BYTES` and `MAX_INVESTIGATION_TEXT` in the exchange module. The experimental exports retained under `benchmarks/runs/concepts/` used different shapes and remain historical evidence, outside supported input to this contract. They are never silently converted or overwritten. Tool-specific filter presentation remains distinct from the retained selected evidence.
 
 ## Annotation notebook
 
 Forecast annotation uses the National Hurricane Center's Milton [discussion 2](https://www.nhc.noaa.gov/archive/2024/al14/al142024.discus.002.shtml) and [discussion 6](https://www.nhc.noaa.gov/archive/2024/al14/al142024.discus.006.shtml) from October 2024. The repository material record `data/nhc-milton/README.md` and manifest identify the preserved HTML, published bylines, selection and hashes. The retained [National Weather Service use policy](https://www.weather.gov/disclaimer) places page information in the public domain unless otherwise noted; no separate restriction was observed on the selected bulletin text. Reuse credits the source and keeps annotations separate from official information. This purposive sample supports examining wording and evidence references; measuring forecast accuracy requires additional observations and a different method.
 
-`scripts/import-annotation-data.mjs` verifies the frozen source and rights-page hashes, then extracts each bulletin's literal `pre` text without normalizing spaces or newlines. `npm run check:data` also repeats this extraction in a temporary copy and compares the derived file byte for byte. Production tools make no live source requests.
+Bulletin extraction preserves literal `pre` text, including spaces and newlines. The [offline adapters](architecture.md#bulletin-annotation) verify the frozen source and rights-page hashes before derivation.
 
 `src/annotation/model.ts` defines notebook schema version 1 with a case-specific canonical source set and category vocabulary. Case `nhc-milton-2024` embeds both exact source snapshots. Case `hsa-benndorf-1879` embeds the real Benndorf letter. A notebook contains a research question and up to 200 annotations. Each annotation has a stable ID, source ID, start-inclusive and end-exclusive UTF-16 offsets, exact quote, category, note, declared creator and optional review. `source.text.slice(start, end)` must equal the quote. Overlapping annotations are permitted. The contract does not claim W3C Web Annotation compliance. Each route rejects a notebook for the other case before replacing work, and the existing NHC key, exported fields and file naming remain compatible.
 
@@ -115,16 +123,25 @@ Creator kinds are human, LLM, agent and unknown. A supplied name declares an ide
 
 Unknown fields, unsupported versions, changed sources, duplicate IDs and invalid quote anchors are rejected before replacement. Input and formatted output must fit within 1,000,000 UTF-8 bytes. Each authored text field is bounded at 20,000 UTF-16 code units. Source changes require a new snapshot and an explicit compatibility decision. The Met investigation and collection-editor formats remain independent.
 
-The annotation controller uses a separate route-specific local storage key. Opening a valid notebook preserves its imported bytes until an actual change. Corrupt or externally changed stored copies remain intact. Local-save failures expose export as the recovery route. Save or discard an unfinished annotation before importing, exporting or changing its source. A leaving warning protects an unfinished form, but crash recovery covers saved notebook state only.
+Notebook import preserves accepted bytes until an actual change. [AN-04 and AN-05](specification.md#contrasting-annotation-contract) and [Recovery and replacement](specification.md#recovery-and-replacement) define saved-state recovery, pending forms and protected stored copies. Separate case identities do not authorize conversion between the Met, editor and notebook formats.
 
 ## Provenance of individual values
 
 Source, production and checking are separate dimensions. A publisher can supply a value whose original author is unknown. An LLM or agent may generate, transform or review a value; none of those actions alone makes it human-verified or suitable for a research claim. The terms verification and validation require a project-specific target and criterion. Multiple or contradictory assertions remain a domain decision, rather than a mandatory feature of every tool.
 
-For a reviewable check, record the checked value and version, who or what checked it, the method or criterion, result and available execution evidence. Record a time only when actually known. Distinguish not checked, no check recorded, a failed check and a successful check. Do not infer confidence from the actor category or assign an undocumented percentage. These are adaptation rules; the current pilot has no editable review workflow or identity authentication.
+For a reviewable check, record the checked value and version, actor, method or criterion, result and available execution evidence. Record a time only when known. Distinguish not checked, no check recorded, a failed check and a successful check. Changed values require reassessment rather than inheriting the earlier result. The collection editor's bare manual flag and the annotation review's explicit invalidation rule remain distinct domain policies.
+
+| Term | Required meaning |
+|---|---|
+| AI-generated | An LLM or agent produced the value. Record the available producer and derivation evidence. This says nothing about correctness. |
+| Deterministically checked | A specified procedure checked a named property of the identified value/version and recorded its result. A passing structural or hash check establishes only that property. |
+| AI-reviewed | An LLM or agent assessed the value under a stated criterion. Preserve the assessment as such, including negative or unresolved findings. |
+| Human-verified | An identifiable human recorded a successful check of the identified value/version against a stated criterion. Do not infer this state from a publisher, institution or software result. |
+
+These terms describe different acts and form no quality ladder. Actor category supplies no confidence percentage. The current Met pilot exposes recorded derivation evidence but has no editable review or identity-authentication workflow.
 
 `data/met-instruments/field-evidence.json` is generated with the derived records by `scripts/import-dh-data.mjs`. It records each original API field and value, the mapped value and transformation, raw-file path/URL/SHA-256, publisher, and the derivation script path/SHA-256. The original producer is explicitly unknown. Executed checks cover frozen-file hash agreement, object identity, department identity and field-projection agreement. These checks establish agreement with the frozen source and mapping. They do not test historical truth, catalogue authorship, source completeness or research fitness. No human or AI review and no check timestamp is invented.
 
-The field-evidence registry has its own schema version 1, independent of investigation version 2 and the editor's collection version 1. It covers all projected source fields. Attribution combines name, prefix and suffix without dropping qualifiers. Date bounds include the descriptive-date dependency: a blank source date causes the displayed bounds to be null even when raw numeric indexing values exist. Empty strings mapped to null remain visible as original empty strings in the source reading view. The original records, raw snapshot and manifest remain unchanged.
+The field-evidence registry has its own schema version 1, independent of investigation version 2 and the editor's collection version 1. It covers all projected source fields. Attribution combines name, prefix and suffix without dropping qualifiers. Date bounds depend on descriptive-date presence. A blank source date causes displayed bounds to be null even when raw numeric indexing values exist. Empty strings mapped to null remain visible as original empty strings in the source reading view. The original records, raw snapshot and manifest remain unchanged.
 
-`src/research/evidence.ts` exposes copied evidence for display and export. New portable investigations embed evidence for the selected records, including the common derivation and check declarations. The workbench shows it beside each comparison value; the alternative concepts preserve it in export through the shared exchange. The structure borrows the distinction between entities, activities and agents from the [W3C PROV Primer](https://www.w3.org/TR/prov-primer/), but does not implement PROV-O or claim standards-compliant interchange.
+Version 2 investigations embed selected-record evidence together with the common derivation and check declarations. IW-06 and IW-07 in [Specification](specification.md#investigation-workbench-contract) govern source inspection and export, implemented through the [field-evidence boundary](architecture.md#field-evidence-and-compatibility). The structure borrows the distinction between entities, activities and agents from the [W3C PROV Primer](https://www.w3.org/TR/prov-primer/), but does not implement PROV-O or claim standards-compliant interchange.

@@ -1,0 +1,72 @@
+- link "Skip to photographs":
+  - /url: "#content"
+- banner:
+  - link "Collection Explorer":
+    - /url: "#view=collection&q=Yosemite&selected=1992.12%2C1974.47"
+  - navigation "Study views":
+    - link "Collection":
+      - /url: "#view=collection&q=Yosemite&selected=1992.12%2C1974.47"
+    - link "Timeline":
+      - /url: "#view=timeline&q=Yosemite&selected=1992.12%2C1974.47"
+    - link "Comparison":
+      - /url: "#view=comparison&q=Yosemite&selected=1992.12%2C1974.47"
+  - link "All tools":
+    - /url: ../tools/
+- main:
+  - generic "Selected photographs":
+    - link "Compare 2":
+      - /url: "#view=comparison&q=Yosemite&selected=1992.12%2C1974.47"
+    - list:
+      - link "Inspect Bridal Veil, Yosemite":
+        - /url: "#view=photograph&from=collection&q=Yosemite&selected=1992.12%2C1974.47&record=1992.12"
+      - button "Remove Bridal Veil, Yosemite from comparison" [pressed]:
+      - link "Inspect Yosemite Falls":
+        - /url: "#view=photograph&from=collection&q=Yosemite&selected=1992.12%2C1974.47&record=1974.47"
+    - button "Export selection":
+      - text: Export selection
+  - navigation "Photograph navigation":
+    - link "← Collection":
+      - /url: "#view=collection&q=Yosemite&selected=1992.12%2C1974.47"
+    - 'link "Previous in collection: Bridal Veil, Yosemite, 1865–66"':
+      - /url: "#view=photograph&from=collection&q=Yosemite&selected=1992.12%2C1974.47&record=1992.12"
+      - generic: "Previous: Bridal Veil, Yosemite"
+  - figure:
+    - group "Yosemite Falls, zoomable image"
+    - button "Zoom in": +
+    - button "Zoom out": −
+    - button "Fit image"
+    - paragraph: "Image controls: arrow keys to pan, + and − to zoom, 0 to fit."
+  - heading "Yosemite Falls" [active] [level=1]
+  - term: Catalogue date
+  - definition: "1868"
+  - term: Artist
+  - definition: attributed to Eadweard J. Muybridge (American, 1830–1904)
+  - term: Process
+  - definition: albumen print
+  - term: Catalogue culture
+  - definition: America
+  - term: Accession
+  - definition: "1974.47"
+  - term: Source
+  - definition:
+    - link "Cleveland Museum of Art":
+      - /url: https://clevelandart.org/art/1974.47
+      - text: Cleveland Museum of Art
+  - term: Image
+  - definition:
+    - link "Open image":
+      - /url: http://127.0.0.1:4187/assets/147949-DUfk4cye.jpg
+  - term: Image rights
+  - definition:
+    - link "CC0 public domain dedication":
+      - /url: https://creativecommons.org/publicdomain/zero/1.0/
+      - text: CC0 public domain dedication
+  - button "Remove Yosemite Falls from comparison" [pressed]:
+    - text: Remove from comparison
+- contentinfo:
+  - link "Cleveland Museum of Art Open Access":
+    - /url: https://www.clevelandart.org/open-access
+  - link "Research guide":
+    - /url: ../guides/research.html
+  - 'link "Data and images: CC0"':
+    - /url: https://creativecommons.org/publicdomain/zero/1.0/

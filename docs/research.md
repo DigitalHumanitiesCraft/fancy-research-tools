@@ -4,15 +4,9 @@ Fancy Research Tools investigates how a documented foundation supports human and
 
 ## Development commitments
 
-| Commitment | Reason and practical consequence | Claim to test |
-|---|---|---|
-| Support researchers without programming knowledge | Research expertise can establish the task while a coding agent handles implementation and the technical environment. The [entry workflow](getting-started.md#work-with-a-coding-agent) keeps consequential research judgements with the researcher. | Whether researchers can develop, explain and resume a useful tool, with the actual assistance they need recorded. |
-| Adapt existing research tools | Existing data, tested behaviour and accumulated work are valuable starting conditions. Adaptation begins with inventory and reproduction, then preserves the relevant research properties. | Whether a bounded change retains source meaning, prior files and required workflows. |
-| Prepare tools for maintenance | Continued use depends on ownership, a reproducible environment and recoverable data. A [maintenance handover](customizing.md#hand-over-maintenance) makes these conditions inspectable. | Whether another session or maintainer can start, change and recover the tool without hidden context. |
-| Require independent human research assessment for broader claims | Developers and agents can miss assumptions shared during construction. Relevant researchers must assess the claimed tasks and settings. | Which outcomes, difficulties and transfer limits occur beyond the development team. |
-| Study the development method alongside the product | A working application and a successful development approach are different objects of evaluation. Retained development episodes expose decisions, assistance and revisions. | How maintained knowledge contributes to development and which conditions explain reuse, rework or failure. |
+The [project commitments](../knowledge/project.md#development-commitments) establish the intended development approach. The [development-study protocol](../benchmarks/development-study-protocol.md) turns them into questions about assistance, preservation during adaptation, maintainability and transfer to other research settings. It separates agent-only preparation, formative human work, contrasting adaptations and later maintenance. A working product and an effective development method require different evidence.
 
-The [development-study protocol](../benchmarks/development-study-protocol.md) implements the [project decisions](../knowledge/project.md#development-commitments) through agent-only preparation, formative human work, contrasting adaptations and subsequent maintenance. It specifies questions, observations and comparison limits. Product acceptance remains a separate decision about the identified tool, data state and research purpose.
+The public [agent starting request](getting-started.md#work-with-a-coding-agent), [adaptation procedure](customizing.md#adapt-an-existing-tool) and [maintenance handover](customizing.md#hand-over-maintenance) make those commitments exercisable. Product acceptance remains a decision about the identified tool, data state and research purpose.
 
 ## Research tools
 
@@ -50,7 +44,7 @@ Simulated findings can guide interviews, source inspection and prototype tasks. 
 
 ## Research work and design requirements
 
-The project purpose is settled: a human and a coding agent develop task-specific tools from questions, ideas, material and existing practice. Each tool establishes its own workflow and visual identity. Shared engineering is extracted from demonstrated needs across cases. The following answers replace the broad discovery questions previously put to the operator. They are grounded design inputs; personal preference and successful use remain separate evidence.
+Source and workflow inspection supplies the design inputs below. The [design contract](../knowledge/design.md) owns the resulting presentation decisions. Personal preference and observed successful use remain separate evidence.
 
 ### Where work becomes difficult
 
@@ -60,7 +54,7 @@ Correspondence exploration connects people, places and uncertain dates. [Corresp
 
 For provenance research, a mapped location needs an explicit role and evidence. An acquisition location cannot automatically establish where a photograph was taken or where its collector travelled. Our design must preserve those distinctions before choosing a map, timeline or network. This is a domain requirement derived from project material, not a claim that a particular display has passed evaluation.
 
-The FRT repository review also reproduced loss of Bench and Trail notes after reload without a warning. The shared recovery implementation now addresses this defect, with reload and export/reopen regressions recorded in [Testing](../knowledge/testing.md#session-closeout-verification-2026-10-10).
+The repository's recovery review reproduced note loss after reload in Bench and Trail. Its correction and regressions are recorded in [Testing](../knowledge/testing.md). This local finding motivates interruption and recovery tasks, without measuring their usability for independent researchers.
 
 ### Which existing mechanisms deserve testing
 
@@ -81,7 +75,7 @@ These are proposed acceptance outcomes. They are not already implemented across 
 
 Deterministic operations can retrieve, filter, count, validate structure, preserve identifiers and export a documented selection. Suggested entity matches, inferred relationships or LLM annotations retain their producer and evidence and remain proposals until accepted. Researchers decide interpretive relevance, ambiguous identity, editorial reading and the scope of a defensible claim. Passing a schema check does not answer those questions. Runtime LLM assistance is optional; the coding harness used to develop a tool is a separate concern.
 
-At an individual data point, distinguish its producer from its checks. AI-generated, deterministic check, AI-reviewed and human-verified identify executed activities. Their outcomes and inspected versions remain separate. The [customization guide](customizing.md#replace-the-data-contract) explains this vocabulary. The [W3C PROV Primer](https://www.w3.org/TR/prov-primer/) distinguishes entities, activities and agents, including roles and revisions, as a conceptual reference. The current investigation JSON is a project-specific format, with no PROV-O conformance claim.
+The [W3C PROV Primer](https://www.w3.org/TR/prov-primer/) distinguishes entities, activities and agents, including roles and revisions. It informs the project's [provenance vocabulary](../knowledge/data.md#provenance-of-individual-values). The current investigation JSON remains a project-specific format without a PROV-O conformance claim.
 
 ### Who can evaluate the work
 

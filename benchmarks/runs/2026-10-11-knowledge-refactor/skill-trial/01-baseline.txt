@@ -1,0 +1,3 @@
+Browser tab: 1, Title: "Collection — Collection Explorer", URL: "http://127.0.0.1:4187/photographs/".
+There has been no change in the accessibility tree.
+The focused UI element is 0 AXWebArea Collection — Collection Explorer, URL: 127.0.0.1:4187/photographs/

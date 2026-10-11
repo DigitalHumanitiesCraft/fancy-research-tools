@@ -1,30 +1,24 @@
 ---
 name: research-ui-design
-description: Develop task-specific research interfaces from questions, material and observed workflows; use for interaction alternatives and prototypes, not cosmetic-only fixes.
+description: Develop task-specific research interfaces from questions, material and observed workflows. Use for interaction alternatives and inspectable prototypes, rather than cosmetic-only fixes.
 ---
 
 # research-ui-design
 
-Use the repository's [design contract](../../../knowledge/design.md), [data contract](../../../knowledge/data.md) and active task brief. The current [operator default profile](../../../knowledge/design.md#operator-default-profile), including its interface copy constraint, remains binding here. These local sources support execution without a private Vault or earlier conversation. Read the [adaptation patterns](../../../docs/customizing.md#reusable-interface-patterns) when choosing an interaction.
+Read the repository instructions, settled [purpose](../../../knowledge/project.md#purpose), active task brief and relevant [data contract](../../../knowledge/data.md). The [design contract](../../../knowledge/design.md) owns the current operator profile, pattern conditions and counterexamples. It is binding in this repository and available without the private Vault or original conversation.
 
-Read the settled purpose and audience in [Project](../../../knowledge/project.md#purpose) and the current task in [Plan](../../../knowledge/plan.md#resume-in-the-next-session) before asking conceptual questions. Reuse recorded answers unless the user changes them. Ask only for a consequential unresolved decision.
+## Establish a view decision
 
-## Establish the decision
+Inspect representative records and reproduce the existing task. State the next research decision, evidence visible on entry, primary action, retained outcome and context that must survive navigation. Separate observed needs from hypotheses. Reuse recorded conceptual decisions before asking a consequential unresolved question.
 
-Inspect representative source records and the existing workflow. Record the research question, the material needed to answer it, the consequential action and the retained outcome. Separate observed needs from hypotheses. For each changed view, name the information that must be visible on entry, its primary action and the context that must survive navigation. Preserve existing drafts, exports and source meanings during an adaptation.
+Choose an encoding from the material and task using the design contract. Explore different interactions when the concept remains uncertain. Establish the inclusion policy before introducing derived assertions. A spatial, temporal or quantitative view must be supportable by the actual values. The [adaptation guide](../../../docs/customizing.md#reusable-interface-patterns) demonstrates how to apply a pattern without erasing its counterexample.
 
-Choose a representation from the data's meaning and the research action. Explore genuinely different alternatives when the concept is uncertain. Runtime LLM functionality needs its own research purpose and inclusion policy. Excluded assertions must stay out of search, counts, visualisations and exports; permitted assertions follow the field-level treatment in the design contract. A map, timeline or diagram requires source values that support its spatial, temporal or quantitative claims.
+## Build and operate one episode
 
-## Build an inspectable slice
+Implement a complete small task before spreading its components. Preserve source meaning and existing work under the affected behaviour and data contracts. Include a dense state, a long label and relevant missing or qualified evidence. Distinguish synthetic boundary inputs from source material. Explain in development evidence why optional detail can wait until requested.
 
-Implement one complete research episode before repeating its components across views. Use actual material, including a dense state, a long label and a relevant missing or uncertain value. Synthetic boundary cases remain explicitly synthetic. Make comparison fields, source qualifiers and working state visible where they affect the next decision. Optional derivation records may use disclosure. State why any hidden information can wait.
+Operate through the retained outcome under the [UI acceptance protocol](../../../knowledge/testing.md#ui-acceptance-protocol). Inspect the actual output and the rendered profile, including heading copy, identifiers, focus and source-status treatment. Correct the shared component before expanding it. Report unavailable browser observations as unexecuted.
 
-Give controls a purpose within the task. Preserve directly manipulable views with keyboard alternatives. An icon needs an accessible name, visible focus and a meaning available on focus and touch. Required uncertainty or production status must remain perceivable without hover. Filters should expose their scope, current state and a way back to the previous result.
+## Hand over
 
-## Inspect before expanding
-
-Operate the slice through its retained outcome, such as a saved annotation or downloaded comparison. Inspect the dense rendered state and source fidelity. When browser access is unavailable, report the interaction and visual checks as unexecuted. Correct shared components before applying them elsewhere.
-
-Before handover, compare the actual copy and controls with the named profile. Keep that correspondence in development evidence rather than adding explanation panels to the product. A source-status rule must be visible in the affected field, not merely described in the implementation report.
-
-Hand over the view decision, executable slice, observed evidence and remaining assumptions. Distinguish implementation checks from human assessment of research usefulness. Record accepted design decisions in their canonical contract and retain run evidence under the project's benchmark procedure.
+Return the view decision, executable slice, evidence paths and unresolved assumptions. Write durable decisions into their canonical contract and preserve run evidence through the [benchmark procedure](../../../benchmarks/README.md#preserve-a-run). Human research acceptance remains separate from implementation checks.

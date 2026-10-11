@@ -1,0 +1,16 @@
+1. AGENTS, evaluate-Skill und relevante Knowledge-Verträge gelesen. Breiter Sammelread wurde gekürzt, deshalb Abschnitte gezielt nachgelesen. Keine Implementation vor erster Bedienung gelesen.
+2. Neuen versteckten IAB-Tab auf /photographs/ geöffnet. Ungefilterte Ausgangslage als 01-baseline erhalten. Aufgabe nach Sichtung selbst festgelegt.
+3. Search photographs mit Yosemite gefüllt. Zwei Treffer, 02-filtered.
+4. Fehlgeschlagener Locator getByRole checkbox. DOM-Snapshot zeigte button. Mit Space beide Toggle-Buttons betätigt.
+5. Inspect-Link war nach Auswahl mehrdeutig. Aktuellen Zustand gelesen und eindeutigen Titellink mit Enter geöffnet.
+6. Bridal Veil-Bild und Daten aufgenommen, 03. Viewer mit + gezoomt, 04, mit 0 zurückgesetzt. Next in collection mit Enter geöffnet, Yosemite Falls in 05.
+7. Timeline mit Enter geöffnet, 06. Comparison mit Enter geöffnet, 07.
+8. Download-Listener registriert, Export selection mit Enter ausgelöst. Tatsächliche Datei aus temporärem Browser-Downloadziel in den Evidence-Ordner verschoben. Kein Ersatzexport konstruiert.
+9. Browser-Binding zuerst nicht definiert, dann anhand bekannter Browser-ID bezogen. Viewport-API-Dokumentation gelesen. 390 × 844 gesetzt, tatsächliche Breite 487 gemessen. Vergleich 08, fokussierten Scrollbereich mit End geprüft, 09.
+10. Collection geöffnet, unmögliche Suche gesetzt, 10. Clear filters ausgeführt, Yosemite erneut gesucht, Comparison geöffnet. ArrowRight zweimal betätigt, horizontale Verschiebung gemessen, 11. Yosemite Falls geöffnet, schmale Detailansicht 12.
+11. Zur Comparison zurück, Bridal Veil entfernt, verbliebener Fokus und Datensatz in 13. In Collection wieder hinzugefügt, Reload, 14. Viewport zurückgesetzt.
+12. Nach Bedienung Export mit eingefrorener Quelle und unveränderter Projection verglichen. check-export.mjs und source-export-check.json erhalten. Ausgewählte Originaldatensätze in selected-raw-records.json gespeichert. Ein versehentlicher Get-Content-Read der einzeiligen Rohdatei lieferte zu viel Konsolenoutput und wurde gekürzt. Die anschließend verwendete Prüfung las gezielt per JSON.
+13. Gesamte Timeline ohne Filter geöffnet, dichten oberen Zustand 15 und per fokussiertem Link/Tab gescrollten unteren Zustand 16 aufgenommen. Source-Code danach nur zur Erklärung der beobachteten Layout-/Timeline-Semantik gelesen.
+14. Read-only Versuch navigator.userAgent zu lesen scheiterte im eingeschränkten Evaluationskontext. Browserversion bleibt unbekannt. DOM-basierte Asset-Namen und Viewport in environment.json erhalten. Finalen Vergleich in 17 aufgenommen. Tab geschlossen.
+15. Neuen Tab an der erhaltenen Detailadresse geöffnet, Open image per Enter geöffnet. JPEG-Zustand in 18 gespeichert. Browser Back, gleicher Detail-/Query-/Selection-Zustand in 19, Tab geschlossen.
+16. Keine menschliche Hilfestellung, keine vorgeschlagenen Defekte und keine Änderungen am Repository. Knowledge-Verträge und Quellen-README waren vor Teilen der Aufgabe verfügbar. Das Beispiel der Muybridge-Zuschreibung im Quellen-README war daher keine blinde Entdeckung.

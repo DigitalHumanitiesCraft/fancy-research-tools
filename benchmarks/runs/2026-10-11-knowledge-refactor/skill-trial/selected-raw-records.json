@@ -1,0 +1,362 @@
+[
+  {
+    "id": 156283,
+    "accession_number": "1992.12",
+    "share_license_status": "CC0",
+    "tombstone": "Bridal Veil, Yosemite, 1865–66. Carleton E. Watkins (American, 1829–1916). Albumen print from wet collodion negative; image: 40.1 x 52.4 cm (15 13/16 x 20 5/8 in.); matted: 61 x 76.2 cm (24 x 30 in.). The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund, 1992.12",
+    "current_location": null,
+    "title": "Bridal Veil, Yosemite",
+    "creation_date": "1865–66",
+    "creation_date_earliest": 1865,
+    "creation_date_latest": 1866,
+    "artists_tags": [
+      "male"
+    ],
+    "culture": [
+      "America"
+    ],
+    "technique": "albumen print from wet collodion negative",
+    "support_materials": [],
+    "department": "Photography",
+    "collection": "Photography",
+    "type": "Photograph",
+    "measurements": "Image: 40.1 x 52.4 cm (15 13/16 x 20 5/8 in.); Matted: 61 x 76.2 cm (24 x 30 in.)",
+    "dimensions": {
+      "image": {
+        "height": 0.401,
+        "height_inch": 15,
+        "height_inch_fraction": 0.8125,
+        "width": 0.524,
+        "width_inch": 20,
+        "width_inch_fraction": 0.625
+      },
+      "matted": {
+        "height": 0.61,
+        "height_inch": 24,
+        "height_inch_fraction": 0,
+        "width": 0.762,
+        "width_inch": 30,
+        "width_inch_fraction": 0
+      }
+    },
+    "state_of_the_work": null,
+    "edition_of_the_work": null,
+    "copyright": null,
+    "inscriptions": [
+      {
+        "inscription": "Written in pencil on recto of mount: \"THE BRIDAL VEIL--900 FEET--YOSEMITE\"; \"/2\"",
+        "inscription_translation": null,
+        "inscription_remark": null,
+        "sortorder": null
+      }
+    ],
+    "exhibitions": {
+      "current": [
+        {
+          "id": 311552,
+          "title": "Selected Acquisitions",
+          "description": "<i>Selected Acquisitions</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (February 9-April 11, 1993).",
+          "opening_date": "1993-02-09T05:00:00"
+        },
+        {
+          "id": 311875,
+          "title": "Legacy of Light: Master Photographs from the Cleveland Museum of Art",
+          "description": "<i>Legacy of Light: Master Photographs from the Cleveland Museum of Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (November 24, 1996-February 2, 1997).",
+          "opening_date": "1996-11-24T05:00:00"
+        },
+        {
+          "id": 212265,
+          "title": "Carleton Watkins: The Art of Perception",
+          "description": "<i>Carleton Watkins: The Art of Perception</i>. San Francisco Museum of Modern Art, San Francisco, CA (organizer) (May 28-September 7, 1999); The Metropolitan Museum of Art, New York, NY (October 11, 1999-January 9, 2000); National Gallery of Art, Landover, MD (February 20-May 7, 2000).",
+          "opening_date": "1999-05-28T00:00:00"
+        },
+        {
+          "id": 194095,
+          "title": "Icons of American Photography: A Century of Photographs from the Cleveland Museum of Art",
+          "description": "<i>Icons of American Photography: A Century of Photographs from the Cleveland Museum of Art</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (June 24-September 16, 2007); Frick Art and Historical Center, Pittsburgh, PA (October 3, 2009-January 3, 2010).",
+          "opening_date": "2007-06-24T00:00:00"
+        },
+        {
+          "id": 383281,
+          "title": "Stories from Storage",
+          "description": "<i>Stories from Storage</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (February 7-May 16, 2021).",
+          "opening_date": "2021-02-06T05:00:00"
+        }
+      ],
+      "legacy": [
+        {
+          "description": "CMA, January 28 - March 15, 1992: \"Selected Acquisitions,\" CMA Bulletin, 80 (February 1993), p. 69, no. 134.",
+          "opening_date": "1992-01-28T00:00:00"
+        },
+        {
+          "description": "CMA, January 14 - March 27, 1994: \"Land of Sky and Water: 19th Century Photographs of the American West,\" Gallery 105, no exhibition catalogue.",
+          "opening_date": "1994-01-14T00:00:00"
+        },
+        {
+          "description": "CMA, November 20,1996 - February 2, 1997: \"Legacy of Light: Master Photographs from the Cleveland Museum of Art.\"",
+          "opening_date": "1997-02-02T00:00:00"
+        },
+        {
+          "description": "San Francisco Museum of Modern Art; Metropolitan Museum of Art; National Gallery of Art; \"Carleton Watkins: The Art of Perception\" 5/28/99 - 5/7/00. 71, Pl. 25.",
+          "opening_date": "1999-05-28T00:00:00"
+        },
+        {
+          "description": "The Cleveland Museum of Art (6/24/07 - 9/16/07) and Frick Art and Historical Center, Pittburgh, PA (10/3/2009 - 1/3/2010); \"Icons of American Photography: A Century of Photographs from the Cleveland Museum of Art\", no exhibition catalogue.",
+          "opening_date": "2007-06-24T00:00:00"
+        }
+      ]
+    },
+    "provenance": [],
+    "find_spot": null,
+    "related_works": [],
+    "former_accession_numbers": [],
+    "did_you_know": "In the spring, Bridal Veil Falls drops a torrent of rushing water 620 feet down into the Yosemite Valley.",
+    "early_education_description": null,
+    "artlens_description": null,
+    "description": "The grand scale of the American West was difficult to convey in early photographs, which were intimately scaled objects meant for the hand and the album. Starting in the late 1850s, a handful of photographers shooting landscapes and historical settings began producing “mammoth” prints, including the San Francisco-based Carleton E. Watkins. The seemingly gargantuan scale of these prints allowed a new, immersive relationship between the viewer and the image, enhancing that “you are there” feeling.",
+    "external_resources": {
+      "wikidata": [
+        "https://www.wikidata.org/wiki/Q60760319"
+      ],
+      "internet_archive": [
+        "https://archive.org/details/clevelandart-1992.12-bridal-veil-yosemite"
+      ]
+    },
+    "citations": [
+      {
+        "citation": "Turner, Evan H. “The Year in Review for 1992.” <em>The Bulletin of the Cleveland Museum of Art</em> 80, no. 2 (February 1993): 38–79.",
+        "page_number": "Mentioned: p. 69",
+        "url": "http://www.jstor.org/stable/25161388"
+      },
+      {
+        "citation": "Cleveland Museum of Art, Tom E Hinson. <em>Catalogue of Photography</em>. Cleveland, OH: Cleveland Museum of Art, 1996.",
+        "page_number": "Reproduced: P. 369",
+        "url": ""
+      }
+    ],
+    "url": "https://clevelandart.org/art/1992.12",
+    "images": {
+      "annotation": null,
+      "web": {
+        "url": "https://openaccess-cdn.clevelandart.org/1992.12/1992.12_web.jpg",
+        "width": "1109",
+        "height": "893",
+        "filesize": "806175",
+        "filename": "1992.12_web.jpg"
+      },
+      "print": {
+        "url": "https://openaccess-cdn.clevelandart.org/1992.12/1992.12_print.jpg",
+        "width": "3400",
+        "height": "2738",
+        "filesize": "5784628",
+        "filename": "1992.12_print.jpg"
+      },
+      "full": {
+        "url": "https://openaccess-cdn.clevelandart.org/1992.12/1992.12_full.tif",
+        "width": "4192",
+        "height": "3376",
+        "filesize": "42490492",
+        "filename": "1992.12_full.tif"
+      }
+    },
+    "alternate_images": [],
+    "creditline": "Andrew R. and Martha Holden Jennings Fund",
+    "image_credit": null,
+    "sketchfab_id": null,
+    "sketchfab_url": null,
+    "gallery_donor_text": null,
+    "athena_id": 156283,
+    "creators": [
+      {
+        "id": 1061,
+        "description": "Carleton E. Watkins (American, 1829–1916)",
+        "extent": null,
+        "qualifier": null,
+        "role": "artist",
+        "biography": "Carleton E. Watkins American, 1829-1916\r\n\r\nBorn in Oneonta, New York, Carleton Watkins traveled west to California in the early 1850s, shortly after the gold rush. He learned photography in 1854 from Robert Vance, one of the earliest and best of San Francisco's daguerreotypists. Vance's landscape photography, unusually skilled for the time, may have influenced Watkins's work.\r\n\tWatkins was among the first photographers in the Yosemite valley, shooting there in 1861, and his mammoth-plate landscape photographs of the area are believed to have contributed to Yosemite's early designation as a national park. His Yosemite Art Gallery opened in San Francisco in 1867, but unlike most photographers of the time, Watkins is not known to have done much portrait work. His subjects included topographical, scenic, survey, agricultural, and urban views of California and surrounding states, including Oregon, Arizona, Nevada, and Utah. Through his friendship with railroad magnate Collis Huntington, Watkins photographed along railway lines and was able to reach distant sites. Huntington later bought him the farm where he retired. Watkins's landscapes were well received; he was awarded an international medal at the Paris Exposition (1867) and a medal of progress at the Vienna International Exposition (1873).\r\n\tThe numerous commissions and the work produced for the public market by Watkins combine clarity of vision with technical expertise. His work set the standard for subsequent photographers of western views, such as William Henry Jackson, Timothy O'Sullivan, and John K. Hillers. Although his life was difficult and his business sense lacking, his photographic efforts were protracted and indefatigable. Watkins's negatives were destroyed in the San Francisco earthquake and fire of 1906. He died several years later blind and insane. T.W.F.",
+        "name_in_original_language": null,
+        "birth_year": "1829",
+        "death_year": "1916",
+        "use_in_caption": true,
+        "include_extent": false,
+        "weight": 1
+      }
+    ],
+    "legal_status": "accessioned",
+    "accession_date": "1992-02-24T00:00:00",
+    "sortable_date": 1865,
+    "date_added_to_oa": null,
+    "date_text": "1865–66",
+    "collapse_artists": false,
+    "on_loan": false,
+    "recently_acquired": false,
+    "record_type": "object",
+    "conservation_statement": null,
+    "has_conservation_images": false,
+    "cover_accession_number": null,
+    "is_nazi_era_provenance": false,
+    "impression": null,
+    "alternate_titles": [],
+    "is_highlight": false,
+    "updated_at": "2026-05-29 08:07:40.479000"
+  },
+  {
+    "id": 147949,
+    "accession_number": "1974.47",
+    "share_license_status": "CC0",
+    "tombstone": "Yosemite Falls, 1868. Attributed to Eadweard J. Muybridge (American, 1830–1904). Albumen print; image: 30.8 x 20.8 cm (12 1/8 x 8 3/16 in.); matted: 50.8 x 40.6 cm (20 x 16 in.). The Cleveland Museum of Art, Andrew R. and Martha Holden Jennings Fund, 1974.47",
+    "current_location": null,
+    "title": "Yosemite Falls",
+    "creation_date": "1868",
+    "creation_date_earliest": 1868,
+    "creation_date_latest": 1868,
+    "artists_tags": [
+      "male"
+    ],
+    "culture": [
+      "America"
+    ],
+    "technique": "albumen print",
+    "support_materials": [],
+    "department": "Photography",
+    "collection": "Photography",
+    "type": "Photograph",
+    "measurements": "Image: 30.8 x 20.8 cm (12 1/8 x 8 3/16 in.); Matted: 50.8 x 40.6 cm (20 x 16 in.)",
+    "dimensions": {
+      "image": {
+        "height": 0.308,
+        "height_inch": 12,
+        "height_inch_fraction": 0.125,
+        "width": 0.208,
+        "width_inch": 8,
+        "width_inch_fraction": 0.1875
+      },
+      "matted": {
+        "height": 0.508,
+        "height_inch": 20,
+        "height_inch_fraction": 0,
+        "width": 0.406,
+        "width_inch": 16,
+        "width_inch_fraction": 0
+      }
+    },
+    "state_of_the_work": null,
+    "edition_of_the_work": null,
+    "copyright": null,
+    "inscriptions": [],
+    "exhibitions": {
+      "current": [
+        {
+          "id": 302084,
+          "title": "Year in Review: 1974",
+          "description": "<i>Year in Review: 1974</i>. The Cleveland Museum of Art, Cleveland, OH (organizer) (March 11-April 6, 1975).",
+          "opening_date": "1975-03-11T04:00:00"
+        }
+      ],
+      "legacy": []
+    },
+    "provenance": [
+      {
+        "description": "Geology Department, Harvard University, Cambridge, MA",
+        "citations": [],
+        "footnotes": null,
+        "date": null,
+        "sortorder": null
+      },
+      {
+        "description": "Geology Department, Harvard University, Cambridge, MA",
+        "citations": [],
+        "footnotes": null,
+        "date": null,
+        "sortorder": null
+      }
+    ],
+    "find_spot": null,
+    "related_works": [],
+    "former_accession_numbers": [],
+    "did_you_know": null,
+    "early_education_description": null,
+    "artlens_description": null,
+    "description": null,
+    "external_resources": {
+      "wikidata": [
+        "https://www.wikidata.org/wiki/Q79927749"
+      ],
+      "internet_archive": [
+        "https://archive.org/details/clevelandart-1974.47-yosemite-falls"
+      ]
+    },
+    "citations": [
+      {
+        "citation": "Cleveland Museum of Art, Tom E Hinson. <em>Catalogue of Photography</em>. Cleveland, OH: Cleveland Museum of Art, 1996.",
+        "page_number": "Reproduced: P. 251",
+        "url": ""
+      }
+    ],
+    "url": "https://clevelandart.org/art/1974.47",
+    "images": {
+      "annotation": null,
+      "web": {
+        "url": "https://openaccess-cdn.clevelandart.org/1974.47/1974.47_web.jpg",
+        "width": "603",
+        "height": "893",
+        "filesize": "465464",
+        "filename": "1974.47_web.jpg"
+      },
+      "print": {
+        "url": "https://openaccess-cdn.clevelandart.org/1974.47/1974.47_print.jpg",
+        "width": "2295",
+        "height": "3400",
+        "filesize": "5172994",
+        "filename": "1974.47_print.jpg"
+      },
+      "full": {
+        "url": "https://openaccess-cdn.clevelandart.org/1974.47/1974.47_full.tif",
+        "width": "3948",
+        "height": "5850",
+        "filesize": "69320296",
+        "filename": "1974.47_full.tif"
+      }
+    },
+    "alternate_images": [],
+    "creditline": "Andrew R. and Martha Holden Jennings Fund",
+    "image_credit": null,
+    "sketchfab_id": null,
+    "sketchfab_url": null,
+    "gallery_donor_text": null,
+    "athena_id": 147949,
+    "creators": [
+      {
+        "id": 716,
+        "description": "Eadweard J. Muybridge (American, 1830–1904)",
+        "extent": null,
+        "qualifier": "attributed to",
+        "role": "artist",
+        "biography": "Eadweard J. Muybridge (Edward James Muggeridge) American, b. England, 1830-1904\r\n\r\nAround 1852 Edward James Muggeridge, born in Kingston-on-Thames in Surrey, immigrated to California and by 1856 had established himself in the book business in San Francisco. He learned the art of photography in 1867, possibly from his friend Silas Selleck. Soon after, he emerged as the \"artist-photographer\" Eadweard Muybridge. Also known as \"Helios,\" the proprietor of a mobile photo wagon called the Flying Studio, he became associated with Selleck's cosmopolitan gallery.\r\n\tMuybridge was one of the best early western landscape photographers. His work included a coastal survey for the U.S. government, as well as topographical, landscape, and portrait photographs made from Alaska to Central America. His large wet plate views of Yosemite rank with those of Carleton Watkins as among the finest ever taken, and his multiprint panoramas of San Francisco are highly prized.\r\n\tIn 1872 Muybridge began the experimental study that occupied him for the remainder of his life and for which he is best known. It stemmed from a commission by former California governor Leland Stanford, Jr., who asked him to capture photographically the movement of a galloping horse. Muybridge quickly became a renowned lecturer and authority on the photography of motion, developing one of the first camera shutters in 1869 and the zoogyroscope (an early machine for projecting pictures that appeared to move) in 1880. His work contributed to the development of the motion picture.\r\n\tMuybridge continued his investigations for three years at the University of Pennsylvania (1883-86) and in 1887 published the result of some 15 years of accumulated research in the 11 volumes of his immense study, Animal Locomotion, which consisted of 19,347 negatives. Muybridge's own stride was broken temporarily by his trial in 1874 for the murder of his wife's lover, a charge that he acknowledged but of which he was acquitted. T.W.F.",
+        "name_in_original_language": null,
+        "birth_year": "1830",
+        "death_year": "1904",
+        "use_in_caption": true,
+        "include_extent": false,
+        "weight": 1
+      }
+    ],
+    "legal_status": "accessioned",
+    "accession_date": "1974-05-21T00:00:00",
+    "sortable_date": 1868,
+    "date_added_to_oa": null,
+    "date_text": "1868",
+    "collapse_artists": false,
+    "on_loan": false,
+    "recently_acquired": false,
+    "record_type": "object",
+    "conservation_statement": null,
+    "has_conservation_images": false,
+    "cover_accession_number": null,
+    "is_nazi_era_provenance": false,
+    "impression": null,
+    "alternate_titles": [],
+    "is_highlight": false,
+    "updated_at": "2026-08-03 14:19:08.855000"
+  }
+]

@@ -1,28 +1,24 @@
 ---
 name: research-ui-improve
-description: Improve research interfaces from recorded evaluation findings and retest changed workflows; use for evidence-led iterations, not unrelated redesign.
+description: Correct research interfaces from reproduced evaluation findings and retest affected workflows. Use for bounded evidence-led improvements rather than unrelated redesign.
 ---
 
 # research-ui-improve
 
-Read the recorded evaluation, [design contract](../../../knowledge/design.md) and affected data or behaviour contract. Apply the current [operator default profile](../../../knowledge/design.md#operator-default-profile), including its interface copy constraint. Use the local [adaptation guide](../../../docs/customizing.md#adapt-an-existing-tool) and [testing contract](../../../knowledge/testing.md) so the procedure remains usable without a private Vault.
+Read the recorded finding, current [design contract](../../../knowledge/design.md) and affected behaviour/data contract. The [adaptation guide](../../../docs/customizing.md#adapt-an-existing-tool) supplies preservation steps and the [UI acceptance protocol](../../../knowledge/testing.md#ui-acceptance-protocol) supplies verification. Recover settled purpose and scope from the project before asking about them again.
 
-Read the settled purpose and audience in [Project](../../../knowledge/project.md#purpose) and the current task in [Plan](../../../knowledge/plan.md#resume-in-the-next-session) before asking conceptual questions. Reuse recorded answers unless the user changes them. Ask only for a consequential unresolved decision.
+## Identify cause and scope
 
-## Identify the cause and scope
+Reproduce the task against a recoverable baseline. Distinguish a task or data mismatch from an interaction, formatting or implementation defect. Prioritise lost or misleading evidence, then blocked work, then visual clarity. State a falsifiable hypothesis connecting the change to an observable improvement.
 
-Reproduce the reported task against a recoverable baseline. Distinguish a task or data mismatch from an interaction, formatting or implementation defect. Prioritise data loss and misleading evidence, then blocked work, then clarity and visual refinement. Form a falsifiable hypothesis that names the change and the observable consequence it should improve.
+Inspect the shared cause and its callers before editing individual views. For repeated controls or counts, identify their data population and action owner before consolidation. Name affected surfaces and the source meanings, existing drafts and exports that must survive. Keep the correction within the demonstrated cause and consequences.
 
-Search for the shared cause and its callers before patching individual views. For redundant controls or summaries, compare the rendered task across components with their data and action owners before consolidating them. A date formatter, evidence renderer or selection controller may affect several workflows. Name those affected surfaces and preserve their supported source values, drafts and exports. Limit the change to the demonstrated cause and its consequences.
+## Correct and repeat
 
-## Change and repeat
+Implement the smallest complete correction and replay the task with the same material. Check affected callers and relevant dense, keyboard, narrow and recovery states through the protocol. Apply the operator profile without hiding necessary evidence. A compact icon or disclosure must still communicate its purpose through the supported input methods.
 
-Implement the smallest complete correction and replay the failed task with the same material. Inspect the shared callers and relevant dense, keyboard, narrow and recovery states. Preserve original source meaning when reducing copy or compacting controls. An icon replacement still needs accessible naming and focus/touch access to its meaning. Disclosure remains appropriate for optional detail whose absence does not obstruct the task.
+Add a regression check when the failure exposes a meaningful observable invariant. Prefer source-to-outcome checks over implementation mirrors or preferred-wording assertions. Record unexecuted browser and human checks honestly.
 
-Add a regression check when the failure has a meaningful observable invariant. Prefer a source-to-outcome check to a test that mirrors implementation or matches preferred wording. Record any remaining browser or human checks as unexecuted.
+## Consolidate
 
-## Consolidate the result
-
-Retain before/after evidence under the [benchmark procedure](../../../benchmarks/README.md#preserve-a-run). Report fixed, unresolved and newly introduced issues separately. Reconcile superseded statements in the owning contract and any repeated instructions. Distinguish an accepted project decision, an observation from this run and a proposed reusable pattern.
-
-Promote a pattern with its task, prerequisites and counterexample. Preserve negative findings and human acceptance as separate evidence. A single successful repair does not establish general skill effectiveness.
+Retain before/after evidence through the [benchmark procedure](../../../benchmarks/README.md#preserve-a-run). Report fixed, unresolved and newly introduced issues separately. Update the owning contract and remove superseded repetitions. A proposed reusable pattern needs its task, prerequisites and counterexample in the design contract. Preserve distinctions among an accepted decision, this run's observation and a general hypothesis. One repair does not establish general skill effectiveness.
