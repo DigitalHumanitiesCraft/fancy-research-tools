@@ -11,6 +11,8 @@ const outputs = new Map();
 let currentSource;
 let currentDestination;
 let headingIds;
+let tableLabels;
+let sectionLabel;
 const internalLinks = [];
 const escapeHtml = (value) =>
   value
@@ -21,8 +23,15 @@ const escapeHtml = (value) =>
 const renderer = new marked.Renderer();
 const renderTable = renderer.table.bind(renderer);
 renderer.table = (token) => {
-  const label = token.header.map((cell) => cell.text).join(", ");
-  return `<div class="table-scroll" role="region" aria-label="Table: ${escapeHtml(label)}" tabindex="0">${renderTable(token)}</div>`;
+  const columns = token.header.map((cell) => cell.text).join(", ");
+  const base = `Table: ${columns}`;
+  let label = base;
+  if (tableLabels.has(label)) label = `${base} (${sectionLabel})`;
+  let suffix = 2;
+  const contextual = label;
+  while (tableLabels.has(label)) label = `${contextual} ${suffix++}`;
+  tableLabels.add(label);
+  return `<div class="table-scroll" role="region" aria-label="${escapeHtml(label)}" tabindex="0">${renderTable(token)}</div>`;
 };
 renderer.html = ({ text }) => escapeHtml(text);
 renderer.link = function ({ href, tokens }) {
@@ -54,7 +63,8 @@ renderer.link = function ({ href, tokens }) {
       internalLinks.push({ source: currentSource, target, fragment: decodeURIComponent(fragment) });
     }
   }
-  return `<a href="${escapeHtml(href)}">${this.parser.parseInline(tokens)}</a>`;
+  const download = href === "../examples/szd/letter.tei.xml" ? " download" : "";
+  return `<a href="${escapeHtml(href)}"${download}>${this.parser.parseInline(tokens)}</a>`;
 };
 renderer.image = ({ href, text }) => {
   if (/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i.test(href))
@@ -63,6 +73,7 @@ renderer.image = ({ href, text }) => {
 };
 renderer.heading = function ({ tokens, depth }) {
   const content = this.parser.parseInline(tokens);
+  sectionLabel = content.replace(/<[^>]*>/g, "");
   const slug = content
     .replace(/<[^>]*>/g, "")
     .toLowerCase()
@@ -81,6 +92,8 @@ for (const [source, destination, label] of pages) {
   currentSource = source;
   currentDestination = destination;
   headingIds = new Set(["main"]);
+  tableLabels = new Set();
+  sectionLabel = label;
   const markdown = (await readFile(source, "utf8")).replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, "");
   const html = await marked(markdown, { renderer });
   rendered.set(destination, { html, ids: headingIds });
@@ -103,7 +116,7 @@ for (const [source, destination, label] of pages) {
   outputs.set(
     destination,
     `<!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Fancy Research Tools: a documented, adaptable browser starter."><title>${escapeHtml(label)} · Fancy Research Tools</title><script type="module" src="${root}src/docs.ts"></script></head>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Fancy Research Tools: a documented, adaptable browser starter."><title>${escapeHtml(label)} — Fancy Research Tools</title><script type="module" src="${root}src/docs.ts"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="${root}index.html">Fancy Research Tools</a><nav aria-label="Project"><a ${destination === "index.html" ? 'aria-current="page"' : ""} href="${root}index.html">Overview</a><a href="${root}tools/">Tools</a><a ${destination !== "index.html" ? 'aria-current="true"' : ""} href="${root}guides/getting-started.html">Documentation</a></nav></header>${content}<footer>Digital Humanities Craft. Development version ${escapeHtml(version)}. <a href="https://dhcraft.org/fancy-research-tools/">Development and support</a></footer></body></html>`,
   );
 }

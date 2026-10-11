@@ -1,0 +1,50 @@
+Browser tab: 1, Title: "Compare catalogue records", URL: "http://127.0.0.1:4193/candidate/#collection?text=zzz-no-match&attribution=Northfield+workshop&role=photographer".
+1 AXWebArea Compare catalogue records, URL: 127.0.0.1:4193/candidate/#collection?text=zzz-no-match&attribution=Northfield+workshop&role=photographer
+	2 link Description: Skip to workspace, Value: 127.0.0.1:4193/candidate/#main
+	3 container
+		4 heading Compare catalogue records, Value: 1
+			5 text Compare catalogue records
+		6 text Synthetic catalogue
+		7 container Workspace
+			8 link Description: Collection, ID: collection-link, Value: 127.0.0.1:4193/candidate/#collection?text=zzz-no-match&attribution=Northfield+workshop&role=photographer
+			9 link Description: Comparison (3), ID: comparison-link, Value: 127.0.0.1:4193/candidate/#comparison?text=zzz-no-match&attribution=Northfield+workshop&role=photographer
+	52 container main
+		53 heading Collection, Value: 2, ID: view-heading
+			54 text Collection
+		55 container
+			56 text Search catalogue text
+			57 search text field (settable) Search catalogue text, Value: zzz-no-match, ID: search
+		58 container
+			59 text Attribution label
+			60 pop up button (collapsed, settable) Attribution label, Value: Northfield workshop, ID: attribution, Secondary Actions: Expand
+				61 menu
+					62 All labels
+					63 (selected) Northfield workshop
+					64 A. Vale
+					65 R. Brook
+		66 container
+			67 text Attribution role
+			68 pop up button (collapsed, settable) Attribution role, Value: Photographer, ID: role, Secondary Actions: Expand
+				69 menu
+					70 All roles
+					71 (selected) Photographer
+					72 Publisher
+		73 button Reset filters
+		74 text Search matches all typed words in descriptive fields. Attribution label and role must occur in the same entry; a label does not establish shared identity.
+		75 container results
+			76 container
+				77 text 0 matching records 3 selected across the catalogue
+			78 text No catalogue records match these filters.
+			79 button Reset filters
+		80 container Description: Retained selection, ID: selection-tray
+			81 text 3 selected
+			82 button Remove DEMO-A-01
+			83 button Remove DEMO-A-03
+			84 button Remove DEMO-A-02
+			85 link Description: Compare selected records, Value: 127.0.0.1:4193/candidate/#comparison?text=zzz-no-match&attribution=Northfield+workshop&role=photographer
+	48 container
+		49 link Description: Source & limits, Value: 127.0.0.1:4193/candidate/#about?text=zzz-no-match&attribution=Northfield+workshop&role=photographer, ID: about-link
+		86 text Draft saved in this browser. Export for a portable copy.
+		87 text No download requested
+
+The focused UI element is 57 search text field (settable) Search catalogue text, Value: zzz-no-match, ID: search

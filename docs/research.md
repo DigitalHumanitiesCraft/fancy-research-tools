@@ -1,6 +1,6 @@
 # Research basis
 
-Fancy Research Tools investigates how a documented foundation supports human and agent development of research tools. The bundled workspaces compare Met catalogue records, edit Schönbach correspondence metadata and annotate Benndorf's letter or archived NOAA/NHC discussions. Their [engineering evidence](../knowledge/testing.md) remains separate from researcher acceptance and claims about the development method.
+Fancy Research Tools investigates how a documented foundation supports human and agent development of research tools. The first reference is Collection Explorer with open Cleveland Museum of Art photographs. Earlier Met comparison, Schönbach metadata and source annotation remain technical examples. The main gallery organizes additional entry points by capture, analysis, correction and edition building. Their [engineering evidence](../knowledge/testing.md) remains separate from researcher acceptance and claims about the development method.
 
 ## Development commitments
 
@@ -30,7 +30,7 @@ teiCrafter and CorrespExplorer supplied inspected material and workflow referenc
 
 ## Open-data candidates
 
-The first implemented data case uses a frozen Met musical-instrument sample. GerDraCor and correspSearch remain candidates for later case inspection.
+The first reference tool uses open Cleveland Museum of Art photographs. The earlier frozen Met musical-instrument sample remains an implemented technical case. GerDraCor and correspSearch remain candidates for later case inspection.
 
 | Candidate source | Possible task | Questions for inspection |
 |---|---|---|

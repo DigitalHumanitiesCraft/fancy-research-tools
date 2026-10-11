@@ -1,0 +1,182 @@
+
+> fancy-research-tools@0.1.0 test:e2e
+> playwright test
+
+[WebServer] (node:31288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 59 tests using 8 workers
+
+(node:33328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:29388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35180) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:33328) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38288) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41684) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14912) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:29388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35180) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  7 tests\e2e\pilot.spec.ts:6:1 › source subset filters, download and URL navigation agree (3.7s)
+  ok  1 tests\e2e\concepts.spec.ts:23:3 › atlas: imported authored text retains line endings across an unrelated edit (3.8s)
+  ok  6 tests\e2e\workbench.spec.ts:8:1 › imported authored text keeps exact line endings until its own field is edited (3.8s)
+  ok  8 tests\e2e\workspace.spec.ts:18:1 › Schönbach source values stay separate from working corrections and export (3.9s)
+  ok  3 tests\e2e\letters.spec.ts:11:1 › a real letter annotation exports, restores and rejects a forecast notebook (4.1s)
+  ok  5 tests\e2e\annotation.spec.ts:35:1 › archived passage annotation preserves exact source and reopens its actual download (4.1s)
+  ok  9 tests\e2e\pilot.spec.ts:54:1 › pilot loads and filters below a repository subpath (449ms)
+  ok 12 tests\e2e\workspace.spec.ts:46:1 › Schönbach-looking identifiers do not assign source evidence to unrelated imports (460ms)
+  ok  4 tests\e2e\photographs.spec.ts:5:1 › photographs retain query, qualified evidence and comparison across views and export (4.5s)
+  ok 15 tests\e2e\pilot.spec.ts:67:1 › visual filters preserve source semantics and keyboard focus (794ms)
+  ok 17 tests\e2e\photographs.spec.ts:69:1 › skip navigation and comparison changes preserve route and keyboard context (500ms)
+  x   2 tests\e2e\docs.spec.ts:4:1 › published documentation routes, headings and local links resolve (4.4s)
+  ok 16 tests\e2e\workspace.spec.ts:74:1 › saving one imported field preserves other fields and their exact line endings (1.0s)
+  ok 13 tests\e2e\letters.spec.ts:87:1 › letter selection works by keyboard at narrow width with visible source attribution (1.5s)
+  ok 14 tests\e2e\annotation.spec.ts:87:1 › a changed interpretation clears its earlier explicit review (1.5s)
+(node:39504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:39504) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 20 tests\e2e\workspace.spec.ts:107:1 › filtered editor keeps selection context and restores filters when discard is cancelled (875ms)
+  ok 10 tests\e2e\concepts.spec.ts:75:3 › atlas: research comparison, actual download, accessible layout (2.9s)
+  ok 11 tests\e2e\workbench.spec.ts:59:1 › investigation retains source evidence and notes across reload and file reopening (3.0s)
+  ok 18 tests\e2e\pilot.spec.ts:105:1 › keyboard operation, source links and narrow accessible layout (1.9s)
+  ok 22 tests\e2e\workspace.spec.ts:133:1 › search, type and selection survive browser back navigation (665ms)
+  ok 19 tests\e2e\photographs.spec.ts:94:1 › image supports keyboard zoom, pointer pan and native image fallback without external requests (2.0s)
+  ok 21 tests\e2e\annotation.spec.ts:120:1 › reverting unsaved content retains the final deliberate review choice (1.7s)
+  ok 26 tests\e2e\pilot.spec.ts:129:1 › mixed controls retain pending values and expose the applied scope (925ms)
+  ok 24 tests\e2e\concepts.spec.ts:23:3 › bench: imported authored text retains line endings across an unrelated edit (1.2s)
+  ok 27 tests\e2e\workspace.spec.ts:151:1 › edit, reload and exported bytes preserve all untouched records (897ms)
+  ok 29 tests\e2e\annotation.spec.ts:183:1 › pointer selection creates a quotation and removal requires an explicit decision (941ms)
+  ok 32 tests\e2e\workspace.spec.ts:178:1 › invalid imports retain the current collection and unsaved form (613ms)
+  ok 23 tests\e2e\docs.spec.ts:67:1 › relative assets and navigation work below a repository subpath (1.8s)
+  ok 28 tests\e2e\photographs.spec.ts:130:1 › narrow chronological and image views reflow and expose direct evidence access (1.8s)
+  ok 30 tests\e2e\pilot.spec.ts:157:1 › desktop workbench keeps controls, results and evidence together (1.0s)
+  ok 33 tests\e2e\annotation.spec.ts:224:1 › work entered while an import is reading prevents replacement (644ms)
+  ok 34 tests\e2e\workspace.spec.ts:197:1 › discard clears resolved edit errors while retaining storage warnings (718ms)
+  ok 25 tests\e2e\workbench.spec.ts:121:1 › compared values expose an addressable source view without changing the investigation (2.7s)
+  ok 38 tests\e2e\workspace.spec.ts:225:1 › storage failure still permits editing and actual file export (503ms)
+  ok 37 tests\e2e\annotation.spec.ts:253:1 › unfinished annotations survive declined source changes and block export or replacement (1.2s)
+  ok 40 tests\e2e\workspace.spec.ts:239:1 › invalid stored copy is protected until explicit overwrite consent (493ms)
+  ok 36 tests\e2e\pilot.spec.ts:182:1 › sorting preserves selection and About keeps provenance off the workspace (1.7s)
+  ok 31 tests\e2e\concepts.spec.ts:75:3 › bench: research comparison, actual download, accessible layout (3.0s)
+  ok 39 tests\e2e\workbench.spec.ts:205:1 › source addresses reopen without a selection and return to the filtered catalogue (1.6s)
+  ok 42 tests\e2e\workspace.spec.ts:254:1 › a second tab cannot silently overwrite the first tab's saved revision (892ms)
+  ok 35 tests\e2e\docs.spec.ts:94:1 › gallery previews, tool entry and return work at narrow width (2.6s)
+  ok 46 tests\e2e\docs.spec.ts:139:1 › narrow reference tables retain readable columns and keyboard scrolling (249ms)
+  ok 43 tests\e2e\concepts.spec.ts:23:3 › trail: imported authored text retains line endings across an unrelated edit (850ms)
+  ok 41 tests\e2e\annotation.spec.ts:284:1 › rejected and cancelled imports preserve a valid notebook and accepted raw author strings (1.6s)
+  ok 44 tests\e2e\workbench.spec.ts:233:1 › search, selection limit, missing results and back navigation preserve the investigation (646ms)
+  ok 45 tests\e2e\workspace.spec.ts:278:1 › oversized edits are rejected without changing the exportable dataset (748ms)
+  ok 48 tests\e2e\annotation.spec.ts:337:1 › corrupt and externally changed saved copies remain recoverable without overwrite (596ms)
+  ok 49 tests\e2e\workbench.spec.ts:253:1 › corrupt import leaves current work intact and responsive comparison remains operable (1.2s)
+  ok 50 tests\e2e\workspace.spec.ts:292:1 › narrow workspace and editor have no document overflow or axe violations (1.3s)
+  ok 52 tests\e2e\workbench.spec.ts:293:1 › bare-route draft restoration retains search on view changes and notes export without selection (498ms)
+  ok 51 tests\e2e\annotation.spec.ts:363:1 › narrow reading and annotation controls are keyboard accessible and reflow (1.3s)
+  ok 47 tests\e2e\concepts.spec.ts:75:3 › trail: research comparison, actual download, accessible layout (2.0s)
+  ok 55 tests\e2e\concepts.spec.ts:169:3 › atlas: unreadable stored work survives subsequent interactions (228ms)
+  ok 53 tests\e2e\workspace.spec.ts:311:1 › desktop editing keeps the record list and save action in the working viewport (793ms)
+  ok 56 tests\e2e\concepts.spec.ts:169:3 › bench: unreadable stored work survives subsequent interactions (229ms)
+  ok 54 tests\e2e\workbench.spec.ts:314:1 › legacy draft bytes survive inspection and export until an actual edit (675ms)
+  ok 57 tests\e2e\concepts.spec.ts:169:3 › trail: unreadable stored work survives subsequent interactions (197ms)
+  ok 58 tests\e2e\concepts.spec.ts:182:1 › comparison feedback downloads explicit self-report (617ms)
+  ok 59 tests\e2e\concepts.spec.ts:196:1 › Trail keyboard stage change focuses the destination (206ms)
+
+
+  1) tests\e2e\docs.spec.ts:4:1 › published documentation routes, headings and local links resolve ─
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 45
+
+    - Array []
+    + Array [
+    +   Object {
+    +     "description": "Ensure landmarks are unique",
+    +     "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+    +     "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/landmark-unique?application=playwright",
+    +     "id": "landmark-unique",
+    +     "impact": "moderate",
+    +     "nodes": Array [
+    +       Object {
+    +         "all": Array [],
+    +         "any": Array [
+    +           Object {
+    +             "data": Object {
+    +               "accessibleText": "table: id, behaviour, acceptance evidence",
+    +               "role": "region",
+    +             },
+    +             "id": "landmark-is-unique",
+    +             "impact": "moderate",
+    +             "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+    +             "relatedNodes": Array [
+    +               Object {
+    +                 "html": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Table: ID, Behaviour, Acceptance evidence\" tabindex=\"0\">",
+    +                 "target": Array [
+    +                   ".table-scroll[role=\"region\"]:nth-child(35)",
+    +                 ],
+    +               },
+    +             ],
+    +           },
+    +         ],
+    +         "failureSummary": "Fix any of the following:
+    +   The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+    +         "html": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Table: ID, Behaviour, Acceptance evidence\" tabindex=\"0\">",
+    +         "impact": "moderate",
+    +         "none": Array [],
+    +         "target": Array [
+    +           ".table-scroll[role=\"region\"]:nth-child(22)",
+    +         ],
+    +       },
+    +     ],
+    +     "tags": Array [
+    +       "cat.semantics",
+    +       "best-practice",
+    +     ],
+    +   },
+    + ]
+
+      48 |   }
+      49 |   await page.goto("/reference/specification.html");
+    > 50 |   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+         |                                                                 ^
+      51 |   await page.screenshot({ path: "test-results/documentation-desktop.png", fullPage: true });
+      52 |   await page.setViewportSize({ width: 320, height: 800 });
+      53 |   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+        at <LOCAL_USER>\Documents\GitHub\fancy-research-tools\tests\e2e\docs.spec.ts:50:65
+
+    Error Context: test-results\docs-published-documentati-9e0c7-ngs-and-local-links-resolve\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\docs-published-documentati-9e0c7-ngs-and-local-links-resolve\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\docs-published-documentati-9e0c7-ngs-and-local-links-resolve\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    tests\e2e\docs.spec.ts:4:1 › published documentation routes, headings and local links resolve ──
+  58 passed (18.4s)

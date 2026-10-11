@@ -1,0 +1,1 @@
+PASS: source bytes and SHA-256; scoped filters and zero results; all selected fields; exact authored whitespace; round trip; rejection of changed, extra, duplicate and oversized fields; actual browser download with source semantics and field production.

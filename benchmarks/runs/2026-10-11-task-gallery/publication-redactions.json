@@ -1,0 +1,66 @@
+{
+  "reason": "Public copies redact local account paths and named private working contexts. Original bytes retained privately. Technical observations and source exports are unchanged. Historical hashes identify their original state, not the redacted publication copies.",
+  "files": [
+    {
+      "path": "benchmarks/runs/2026-10-11-open-photographs/browser.log",
+      "originalSha256": "dbc7bf53a38d5afacab02793bf19e445e3c2bbb449133147a3b1f80ee713ca7c",
+      "publishedSha256": "c34dd7240ce82ed5b3457afe30ba0141ba58e693a99d7c0bba26bdc98d942142"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-annotation/evidence/model-checks-initial.txt",
+      "originalSha256": "e9ffbf27544a29ddd70dec4acc1076d869128e87f65f1b46d18f1162470e1f3e",
+      "publishedSha256": "b3ee6a9111669d114f9c1d233aba385c29e2d1e59e463b34094da8a8c7544130"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-collection/evidence/browser-checks.md",
+      "originalSha256": "7a0df6c13570cb83f4e7ac0fa54f28e1894751d7b926439d803234b1302fcc5e",
+      "publishedSha256": "8c878260aa42a0c6e894ed196db1b84880ba17d6ce53d8f4b05131eda94b4e7e"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-initial-context/knowledge/journal.md",
+      "originalSha256": "e888942129077ae973aa54619e7686401b7c5e18037c0774bf4eacb05278c982",
+      "publishedSha256": "3975241e19a2834b60526f378c6410847d4949341941ffda2191a2704fb4973a"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-initial-context/knowledge/testing.md",
+      "originalSha256": "21c4406d67eddc121979b5d49786453aacf5f0a9eec86e147ce40fcdd3c75131",
+      "publishedSha256": "495296a1df68f3c787ce4adf6706d53362ad69c3ef08a652dd56e2cdaad9060d"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-repair/baseline/evidence/browser-checks.md",
+      "originalSha256": "7a0df6c13570cb83f4e7ac0fa54f28e1894751d7b926439d803234b1302fcc5e",
+      "publishedSha256": "8c878260aa42a0c6e894ed196db1b84880ba17d6ce53d8f4b05131eda94b4e7e"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-repair/candidate/evidence/browser-checks.md",
+      "originalSha256": "7a0df6c13570cb83f4e7ac0fa54f28e1894751d7b926439d803234b1302fcc5e",
+      "publishedSha256": "8c878260aa42a0c6e894ed196db1b84880ba17d6ce53d8f4b05131eda94b4e7e"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-repair/knowledge/journal.md",
+      "originalSha256": "e888942129077ae973aa54619e7686401b7c5e18037c0774bf4eacb05278c982",
+      "publishedSha256": "3975241e19a2834b60526f378c6410847d4949341941ffda2191a2704fb4973a"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-repair/knowledge/testing.md",
+      "originalSha256": "21c4406d67eddc121979b5d49786453aacf5f0a9eec86e147ce40fcdd3c75131",
+      "publishedSha256": "495296a1df68f3c787ce4adf6706d53362ad69c3ef08a652dd56e2cdaad9060d"
+    },
+    {
+      "path": "data/tools/README.md",
+      "originalSha256": "1e872813d890c33e670259960b27f080afdea3012ea3232e91f699b2db6680bb",
+      "publishedSha256": "d4cda240de92e9dbd15364cd5b594531a45e8a4d51682bfccffae8489bd65fcc"
+    },
+    {
+      "path": "knowledge/journal.md",
+      "originalSha256": "f8cc99a1af219a552ee43edf107bf631cefb46a11a249ba07e51d1ab1e3845b7",
+      "publishedSha256": "4f11e768e392fe91b3db64890a4544c054c77922b0330617ddc9bddf672b27c9"
+    },
+    {
+      "path": "knowledge/testing.md",
+      "originalSha256": "cad5caa833791be80f2e3702162737107e65785a6fd03175e70c967d104b10ad",
+      "publishedSha256": "869d04724b4d028476de26089538d6e3af6f842413ea9592c072d5f27060a695"
+    }
+  ],
+  "excluded": "One browser trace archive containing private context remains local and is excluded from Git; generated last-run metadata is also excluded."
+}

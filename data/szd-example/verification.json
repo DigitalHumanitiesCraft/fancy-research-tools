@@ -1,0 +1,46 @@
+{
+  "checked": "2026-10-11",
+  "adaptedTeiSha256": "1dd5a7e55f32b9bcb9f8dbaa6b2ea560db295ada4d615f0b56e8dea014089717",
+  "teiCrafter": {
+    "repository": "https://github.com/DigitalHumanitiesCraft/teiCrafter",
+    "revision": "5e763089ee10d3a0dc63ce6c977cdb00a5632152",
+    "parser": "src/core/tei-document.js",
+    "parserSha256": "34c2a154b5beff536f45445ed7946e183b49d4cf081ff37cb3613d2952a632a9",
+    "checks": [
+      "parseDocument preserves the complete UTF-8 source string",
+      "Five TEI page breaks found",
+      "Original and adapted source conform to vendored TEI P5 4.11.0 Relax NG"
+    ],
+    "schemaSha256": "ecc49f00c37f490b5df716b672e3dba635eb1e49ccd88fb969859498df42c084"
+  },
+  "editionPipeline": {
+    "repository": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline",
+    "revision": "3cd5af370af04d462221bbf96635256916370953",
+    "parser": "pipeline/06_build_frontend.py",
+    "parserSha256": "cd4f6c5bd9fe9e59121925ca6c8b15747c14f1c9b08439ba3094469860d2dcaa",
+    "checks": [
+      "Five pages in document order",
+      "Every adapted image pointer resolves to the corresponding GAMS URL",
+      "All extracted page text equals the upstream TEI extraction",
+      "Status is machine_unreviewed"
+    ]
+  },
+  "unperformed": [
+    "Browser editing and output-reopen sequence in teiCrafter",
+    "Full frontend build in a separate edition project",
+    "Human transcription review",
+    "Image materialisation and offline facsimile viewing"
+  ],
+  "browserAttempt": {
+    "application": "Local teiCrafter docs application, same recorded repository revision",
+    "origin": "http://127.0.0.1:4199/",
+    "actions": [
+      "Opened editor",
+      "Disabled AI assistance",
+      "Selected Load > Open TEI or text"
+    ],
+    "result": "The application chose the native File System Access picker. The browser automation filechooser event timed out after 10 seconds and no DOM file input was exposed. Native Windows dialogs are unavailable in this browser session.",
+    "limitation": "Packaged-file browser import, editing and output reopening remain unverified. A new-document source view was inspected as a fallback but exposes only page XML, so it was not used to substitute the package.",
+    "cleanup": "Temporary browser tab and local server closed. No source repository files changed."
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "recordedAt": "2026-10-11T14:00:40.571Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": ".last-run.json",
+      "bytes": 96,
+      "sha256": "53c569213f1b348aa7b6651e29576785e45ffa15d4119ad3f09a236a19302168"
+    },
+    {
+      "path": "annotation-a-changed-inter-53468-its-earlier-explicit-review/review-cleared.json",
+      "bytes": 10282,
+      "sha256": "e3f34588b97ab06160cb8c4c686398e87c4c652266f5ce5bc279ba2f8a77a3ee"
+    },
+    {
+      "path": "annotation-a-changed-inter-53468-its-earlier-explicit-review/reviewed.json",
+      "bytes": 10484,
+      "sha256": "b965330e8efdae9d5f40bfe140b0114dadec8228ad64405f7bd191096f6541fb"
+    },
+    {
+      "path": "annotation-archived-passag-77160-reopens-its-actual-download/annotation-notebook.json",
+      "bytes": 10365,
+      "sha256": "5f8dcb123b3db7336487cf7bc3cca65275244be3e4fc8e2c332b7a5902c8b3a2"
+    },
+    {
+      "path": "annotation-archived-passag-77160-reopens-its-actual-download/reopened-notebook.json",
+      "bytes": 10365,
+      "sha256": "5f8dcb123b3db7336487cf7bc3cca65275244be3e4fc8e2c332b7a5902c8b3a2"
+    },
+    {
+      "path": "annotation-corrupt-and-ext-a4328-coverable-without-overwrite/conflict-recovery.json",
+      "bytes": 9896,
+      "sha256": "b06c0a00c1d01de7b2523ae9cdbbaae61f71f9ea35c0c390af5e19b38ecaed13"
+    },
+    {
+      "path": "annotation-corrupt-and-ext-a4328-coverable-without-overwrite/corrupt-recovery.json",
+      "bytes": 9889,
+      "sha256": "64503cf996d536fed0a3beb1caf7db3e34b8240a485f36fb42b84edbe91a93f8"
+    },
+    {
+      "path": "annotation-narrow-reading--62a72-board-accessible-and-reflow/annotation-narrow.png",
+      "bytes": 100717,
+      "sha256": "73902c3e878944b19a1d11b1a4e027dd128025e248c8d93b98aba9890e13c46e"
+    },
+    {
+      "path": "annotation-pointer-selecti-b7ce8-quires-an-explicit-decision/pointer-selection.json",
+      "bytes": 10203,
+      "sha256": "9e45fc75f387bfe278b80dc7adfc6322bc33d571e3b1f27a80a554e9ef5b433c"
+    },
+    {
+      "path": "annotation-rejected-and-ca-fd5a2-accepted-raw-author-strings/after-cancelled.json",
+      "bytes": 10283,
+      "sha256": "5a0b02fba1dae0f0ec0ef6140cde9fd35b371cf3f9ea57eda10cc7d4017f4e08"
+    },
+    {
+      "path": "annotation-rejected-and-ca-fd5a2-accepted-raw-author-strings/after-rejected.json",
+      "bytes": 10283,
+      "sha256": "5a0b02fba1dae0f0ec0ef6140cde9fd35b371cf3f9ea57eda10cc7d4017f4e08"
+    },
+    {
+      "path": "annotation-rejected-and-ca-fd5a2-accepted-raw-author-strings/category-only-edit.json",
+      "bytes": 10283,
+      "sha256": "c059fb06b0b75ac67c599553c7db43dedb61d287bda8401f5f23790997f56010"
+    },
+    {
+      "path": "annotation-rejected-and-ca-fd5a2-accepted-raw-author-strings/initial.json",
+      "bytes": 10233,
+      "sha256": "7cd46165826b990574276eb7cec0b9d2502b0c8438c034652f5ba7f702fdd51e"
+    },
+    {
+      "path": "annotation-rejected-and-ca-fd5a2-accepted-raw-author-strings/unmodified-author-text.json",
+      "bytes": 10283,
+      "sha256": "5a0b02fba1dae0f0ec0ef6140cde9fd35b371cf3f9ea57eda10cc7d4017f4e08"
+    },
+    {
+      "path": "annotation-reverting-unsav-9ec10-al-deliberate-review-choice/review-undo-remove.json",
+      "bytes": 10287,
+      "sha256": "60333d14c6a5543c2d98f42706921811a1cd11e7bdde8ef1562faf622f91c3cd"
+    },
+    {
+      "path": "annotation-reverting-unsav-9ec10-al-deliberate-review-choice/review-undo-replace.json",
+      "bytes": 10473,
+      "sha256": "9ced8a32a716a93d0110565aa355f4f50c8cedd7f9f1a0b9180cb4eaa06ed213"
+    },
+    {
+      "path": "annotation-reverting-unsav-9ec10-al-deliberate-review-choice/review-undo-retain.json",
+      "bytes": 10466,
+      "sha256": "c0df119e63d37c1fb88762dcc2fb8a5d2fc49291c04df8fef04479c1f200a8bd"
+    },
+    {
+      "path": "annotation-unfinished-anno-7c4f9-block-export-or-replacement/before-pending.json",
+      "bytes": 9890,
+      "sha256": "7c2d4f5ecbb76ceeda89d0d5b6317ee34b463fa2f624c9eb21e95d478eaa6947"
+    },
+    {
+      "path": "annotation-work-entered-wh-3ca0d-eading-prevents-replacement/after-slow-import.json",
+      "bytes": 9893,
+      "sha256": "e3d1a501e353350a8b3f834e5f58fb085676cf514f59e29b7d8dda510a04000a"
+    },
+    {
+      "path": "annotation-work-entered-wh-3ca0d-eading-prevents-replacement/before-slow-import.json",
+      "bytes": 9889,
+      "sha256": "ebf128936a2127cf0b0b1d26d12d38a849822fcd56a38038fa6db24dfd619cf8"
+    },
+    {
+      "path": "concepts-atlas-imported-au-8a554-gs-across-an-unrelated-edit/one-field-edited.json",
+      "bytes": 27843,
+      "sha256": "3c86007f09018487645f7c9cc05bd48e7d253c55d05638f712e17368b81a1628"
+    },
+    {
+      "path": "concepts-atlas-imported-au-8a554-gs-across-an-unrelated-edit/recovered-line-endings.json",
+      "bytes": 27843,
+      "sha256": "3c86007f09018487645f7c9cc05bd48e7d253c55d05638f712e17368b81a1628"
+    },
+    {
+      "path": "concepts-atlas-imported-au-8a554-gs-across-an-unrelated-edit/unmodified-line-endings.json",
+      "bytes": 27841,
+      "sha256": "135b305b318a3de1323c37be87acb07a800820d8a8493caadeee9d32459e6600"
+    },
+    {
+      "path": "concepts-atlas-research-co-7b597--download-accessible-layout/atlas-compare.png",
+      "bytes": 85026,
+      "sha256": "32657755a32c97e2406de566656e087695a8f7943693e357a77604e708585cba"
+    },
+    {
+      "path": "concepts-atlas-research-co-7b597--download-accessible-layout/atlas-export.json",
+      "bytes": 27832,
+      "sha256": "177720fbc22e5635c4a8ec4ff67d58ddf1ca28d3dbae2b6d4b3c5c103972e12f"
+    },
+    {
+      "path": "concepts-atlas-research-co-7b597--download-accessible-layout/atlas-narrow.png",
+      "bytes": 62385,
+      "sha256": "ca6f25a3604fb16cdf9207e45d30dbf0a7d29b0de3014e592a3976903e406a72"
+    },
+    {
+      "path": "concepts-atlas-research-co-7b597--download-accessible-layout/atlas-start.png",
+      "bytes": 137660,
+      "sha256": "0e7fe83646a1af67690f6b856dddbb70607261ada33e34d7e3905c455ba372bd"
+    },
+    {
+      "path": "concepts-bench-imported-au-10d2d-gs-across-an-unrelated-edit/one-field-edited.json",
+      "bytes": 27843,
+      "sha256": "3c86007f09018487645f7c9cc05bd48e7d253c55d05638f712e17368b81a1628"
+    },
+    {
+      "path": "concepts-bench-imported-au-10d2d-gs-across-an-unrelated-edit/recovered-line-endings.json",
+      "bytes": 27843,
+      "sha256": "3c86007f09018487645f7c9cc05bd48e7d253c55d05638f712e17368b81a1628"
+    },
+    {
+      "path": "concepts-bench-imported-au-10d2d-gs-across-an-unrelated-edit/unmodified-line-endings.json",
+      "bytes": 27841,
+      "sha256": "135b305b318a3de1323c37be87acb07a800820d8a8493caadeee9d32459e6600"
+    },
+    {
+      "path": "concepts-bench-research-co-ea06a--download-accessible-layout/bench-compare.png",
+      "bytes": 75076,
+      "sha256": "4451d69a49e8de99c21cb112f76526d67bb20dad3dcc7e54045a7e7501cb5b2f"
+    },
+    {
+      "path": "concepts-bench-research-co-ea06a--download-accessible-layout/bench-export.json",
+      "bytes": 27832,
+      "sha256": "177720fbc22e5635c4a8ec4ff67d58ddf1ca28d3dbae2b6d4b3c5c103972e12f"
+    },
+    {
+      "path": "concepts-bench-research-co-ea06a--download-accessible-layout/bench-narrow.png",
+      "bytes": 60019,
+      "sha256": "17ac3f59021d72289e145157f6fb17cf85f980600bd9c39cd7d26bfe531b8f6f"
+    },
+    {
+      "path": "concepts-bench-research-co-ea06a--download-accessible-layout/bench-start.png",
+      "bytes": 316609,
+      "sha256": "1a1ef35369c902f752e19814eba58e6a37074c1eb9d73a56e3059e963bb42eba"
+    },
+    {
+      "path": "concepts-trail-imported-au-d0b9a-gs-across-an-unrelated-edit/one-field-edited.json",
+      "bytes": 27843,
+      "sha256": "3c86007f09018487645f7c9cc05bd48e7d253c55d05638f712e17368b81a1628"
+    },
+    {
+      "path": "concepts-trail-imported-au-d0b9a-gs-across-an-unrelated-edit/recovered-line-endings.json",
+      "bytes": 27843,
+      "sha256": "3c86007f09018487645f7c9cc05bd48e7d253c55d05638f712e17368b81a1628"
+    },
+    {
+      "path": "concepts-trail-imported-au-d0b9a-gs-across-an-unrelated-edit/unmodified-line-endings.json",
+      "bytes": 27841,
+      "sha256": "135b305b318a3de1323c37be87acb07a800820d8a8493caadeee9d32459e6600"
+    },
+    {
+      "path": "concepts-trail-research-co-458df--download-accessible-layout/trail-compare.png",
+      "bytes": 60214,
+      "sha256": "d56ad8e241d70d40a030761900f7055308fc11d0d472acbc2cf90e831bd0e305"
+    },
+    {
+      "path": "concepts-trail-research-co-458df--download-accessible-layout/trail-export.json",
+      "bytes": 27832,
+      "sha256": "177720fbc22e5635c4a8ec4ff67d58ddf1ca28d3dbae2b6d4b3c5c103972e12f"
+    },
+    {
+      "path": "concepts-trail-research-co-458df--download-accessible-layout/trail-narrow.png",
+      "bytes": 49298,
+      "sha256": "57c8f992091cbf6ed79f54dea9d781a9d54c34ad673ea3719eb2daa76921d3af"
+    },
+    {
+      "path": "concepts-trail-research-co-458df--download-accessible-layout/trail-start.png",
+      "bytes": 297248,
+      "sha256": "c47f3005cb11aeed37d55d6fe593a1209df15968d82794d4e1464fa19375c4c4"
+    },
+    {
+      "path": "docs-published-documentati-9e0c7-ngs-and-local-links-resolve/error-context.md",
+      "bytes": 52447,
+      "sha256": "3edbb1c955afa4b418f0207afbdbdf03855c4379ea27cf58c46617e4ff1a482f"
+    },
+    {
+      "path": "docs-published-documentati-9e0c7-ngs-and-local-links-resolve/trace.zip",
+      "bytes": 1291088,
+      "sha256": "8fbca31e5b285c076c6233cef6d952879cbd2a3c175fb0de0632676d94be845f"
+    },
+    {
+      "path": "letters-a-real-letter-anno-d6398-rejects-a-forecast-notebook/letter-notebook.json",
+      "bytes": 2411,
+      "sha256": "01495a8733b8b11dbc825ec17815c2c8efcd4d927cbf2432bc339a45b4f33ca6"
+    },
+    {
+      "path": "letters-letter-selection-w-5f236--visible-source-attribution/letter-narrow.png",
+      "bytes": 91350,
+      "sha256": "0789ca94cba550d27e370ffe3531b7ebd57a227ec52e6a6159880af50e7f6a7c"
+    },
+    {
+      "path": "photographs-image-supports-7ee7d-k-without-external-requests/image-pan.png",
+      "bytes": 411125,
+      "sha256": "5c36f4b92d83600946f8cf34ac2c774205d3c68f7012362db3913d5c85bf977b"
+    },
+    {
+      "path": "photographs-narrow-chronol-12ef6-pose-direct-evidence-access/photograph-narrow.png",
+      "bytes": 212656,
+      "sha256": "f26dbca1839d4e69c123a6216d35999e50e10eed468f467c6f0b5b3c270015d7"
+    },
+    {
+      "path": "photographs-narrow-chronol-12ef6-pose-direct-evidence-access/timeline-narrow.png",
+      "bytes": 118962,
+      "sha256": "dddf14dd9825c1457d66189af709865cb8eddac66c9c8bee3eafa2d059eaa3fb"
+    },
+    {
+      "path": "photographs-photographs-re-63cdb-son-across-views-and-export/comparison.png",
+      "bytes": 168251,
+      "sha256": "d57ea45a579b06d5cb13d1547bb8e359b912ed7aa78face3a817916458b5ed47"
+    },
+    {
+      "path": "photographs-photographs-re-63cdb-son-across-views-and-export/photograph-selection.json",
+      "bytes": 10867,
+      "sha256": "fcce989f385e4759c3d03fec0fbabd5d12f4f0d2c62cc5dfc6e2305c9ec8d382"
+    },
+    {
+      "path": "pilot-desktop.png",
+      "bytes": 84270,
+      "sha256": "b63449e3f14383f8be513b906323247ffa914c754e125058aba120913115010f"
+    },
+    {
+      "path": "pilot-mobile.png",
+      "bytes": 84418,
+      "sha256": "aca0c704efcbc1e7792a9a52d1786f44f773f9eb0d6b46cebc0cd5d89ad9792b"
+    },
+    {
+      "path": "workbench-corrupt-import-l-a73d2-comparison-remains-operable/comparison-narrow.png",
+      "bytes": 52900,
+      "sha256": "96660e95a0bf5a1e23e1d4ba88b4e11d2772010c8f5582df2c81af90969cf9b0"
+    },
+    {
+      "path": "workbench-imported-authore-f17c3-til-its-own-field-is-edited/one-field-edited.json",
+      "bytes": 27843,
+      "sha256": "3c86007f09018487645f7c9cc05bd48e7d253c55d05638f712e17368b81a1628"
+    },
+    {
+      "path": "workbench-imported-authore-f17c3-til-its-own-field-is-edited/recovered-line-endings.json",
+      "bytes": 27843,
+      "sha256": "3c86007f09018487645f7c9cc05bd48e7d253c55d05638f712e17368b81a1628"
+    },
+    {
+      "path": "workbench-imported-authore-f17c3-til-its-own-field-is-edited/unmodified-line-endings.json",
+      "bytes": 27841,
+      "sha256": "135b305b318a3de1323c37be87acb07a800820d8a8493caadeee9d32459e6600"
+    },
+    {
+      "path": "workbench-investigation-re-dcfed-s-reload-and-file-reopening/comparison-desktop.png",
+      "bytes": 67592,
+      "sha256": "6563ae7b2c939d83ff44bd972eae0c084994aea09560c1e5d4fccb1623952f7c"
+    },
+    {
+      "path": "workbench-investigation-re-dcfed-s-reload-and-file-reopening/investigation.json",
+      "bytes": 27831,
+      "sha256": "a9061ab2cff6b5cb1fc59dfe52541e3f2553d8faeee1f47392b9bf14ae1586d8"
+    }
+  ]
+}

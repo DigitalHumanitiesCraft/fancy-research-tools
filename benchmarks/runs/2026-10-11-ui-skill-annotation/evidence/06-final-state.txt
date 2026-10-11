@@ -1,0 +1,85 @@
+Browser tab: 2, Title: "Field-note annotations", URL: "http://127.0.0.1:4192/".
+1 AXWebArea Field-note annotations, URL: 127.0.0.1:4192/
+	2 link Description: Skip to source, Value: 127.0.0.1:4192/#source-text
+	3 container
+		4 heading Field-note annotations, Value: 1
+			5 text Field-note annotations
+		6 button Open notebook, ID: open
+		7 button Download notebook, ID: export
+	8 container
+		99 text Notebook saved in browser recovery · download for a portable copy
+		100 text Annotation saved to this notebook. Download to retain a portable copy.
+		11 container Source
+			12 heading Source, Value: 2, ID: source-heading
+				13 text Source
+			14 text Synthetic material
+			15 text Field note
+			16 pop up button (collapsed, settable) Field note, Value: Notebook B, evening visit, ID: source-choice, Secondary Actions: Expand
+				17 menu
+					18 Notebook A, morning visit
+					19 (selected) Notebook B, evening visit
+			20 definition list
+				21 container Source author
+					22 text Source author
+				23 text Fictional observer Ellis
+				24 container Source date
+					25 text Source date
+				26 text 2042-05-04
+			27 text Full source text
+			28 text entry area Full source text, ID: source-text, Value: A bird stood beside the café terrace. By evening the water reached the lowest step. It may have risen after the gate opened, although I did not see the gate move. The cause remains uncertain.
+			29 button Annotate selection, ID: annotate
+			30 text Selected range 84–162 (end exclusive)
+			31 text Select text with the pointer or use Shift + arrow keys in the source. Ranges distinguish repeated passages.
+			32 button (collapsed) Source details, Secondary Actions: Expand
+				33 text Source details
+		34 container Annotation
+			35 heading Annotation, Value: 2, ID: annotation-heading
+				36 text Annotation
+			101 text No draft
+			102 text Select a passage, then choose Annotate selection. To revise saved work, choose Edit below.
+		55 container Saved annotations
+			56 heading Saved annotations, Value: 2, ID: notebook-heading
+				57 text Saved annotations
+			103 text 3 saved
+			59 container annotations
+				104 container Annotation 1
+					105 heading Notebook A, morning visit, Value: 3
+						106 text Notebook A, morning visit
+					107 text At noon the water was still.
+					108 text Range 0–28 · demo-note-1
+					109 text Observation
+					110 text The first occurrence records the visible water condition; the later repetition may be copied.
+					111 text Annotation creator: Demonstration researcher · self-declared
+					112 text No review recorded
+					113 button Show passage annotation 1
+					114 button Edit annotation 1
+					115 button Delete annotation 1
+				116 container Annotation 2
+					117 heading Notebook A, morning visit, Value: 3
+						118 text Notebook A, morning visit
+					119 text At noon the water was still.
+					120 text Range 120–148 · demo-note-1
+					121 text Question
+					122 text Does the repeated wording reflect a second observation or copying?
+					123 text Annotation creator: Synthetic trial agent · self-declared
+					124 text No review recorded
+					125 button Show passage annotation 2
+					126 button Edit annotation 2
+					127 button Delete annotation 2
+				128 container Annotation 3
+					129 heading Notebook B, evening visit, Value: 3
+						130 text Notebook B, evening visit
+					131 text It may have risen after the gate opened, although I did not see the gate move.
+					132 text Range 84–162 · demo-note-2
+					133 text Speculation
+					134 text The gate is proposed as a cause, but its movement was not observed.
+					135 text Annotation creator: Synthetic trial agent · self-declared
+					136 text No review recorded
+					137 button Show passage annotation 3
+					138 button Edit annotation 3
+					139 button Delete annotation 3
+	96 container
+		97 text Browser recovery is local to this browser and address. Download a notebook for a portable copy.
+		98 text Original synthetic fixture under the repository licence
+
+The focused UI element is 29 button Annotate selection, ID: annotate

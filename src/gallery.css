@@ -33,8 +33,20 @@
     gap: 1.1rem;
     align-items: start;
   }
+  section[aria-labelledby="explore-collections"] .tool-list {
+    grid-template-columns: 1fr;
+  }
+  section[aria-labelledby="explore-collections"] .tool-entry {
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    align-items: center;
+  }
   @container (inline-size < 35rem) {
-    .tool-entry {
+    .task-navigation {
+      flex-direction: column;
+      align-items: start;
+    }
+    .tool-entry,
+    section[aria-labelledby="explore-collections"] .tool-entry {
       grid-template-columns: 1fr;
     }
     .tool-preview {
@@ -44,15 +56,13 @@
 }
 @layer components {
   .task-navigation,
-  .tool-gallery + footer nav,
-  .template-actions {
+  .tool-gallery + footer nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem 1.5rem;
   }
   .task-navigation a,
   .tool-actions a,
-  .template-actions a,
   .tool-gallery + footer a {
     display: inline-flex;
     align-items: center;
@@ -86,6 +96,14 @@
     outline: 1px solid var(--border);
     outline-offset: -1px;
   }
+  .tool-figure {
+    margin: 0;
+  }
+  .tool-figure figcaption {
+    margin-block-start: 0.4rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
   .tool-preview img {
     display: block;
     inline-size: 100%;
@@ -93,15 +111,11 @@
     aspect-ratio: 3 / 2;
     object-fit: contain;
   }
-  .edition-template h3 {
-    margin-block: 0 0.75rem;
+  section[aria-labelledby="explore-collections"] .tool-preview img {
+    aspect-ratio: 16 / 9;
   }
-  .edition-stages {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 2.5rem;
-    padding-inline-start: 1.3rem;
-    margin-block: 0.75rem;
+  .tool-entry-text {
+    display: block;
   }
   .gallery-skip-link {
     position: absolute;

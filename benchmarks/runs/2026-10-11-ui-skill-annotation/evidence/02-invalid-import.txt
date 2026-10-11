@@ -1,0 +1,18 @@
+Browser tab: 2, Title: "Field-note annotations", URL: "http://127.0.0.1:4192/".
+0 AXWebArea Field-note annotations, URL: 127.0.0.1:4192/
+	1 container Open notebook, ID: import-dialog
+		2 heading Open notebook, Value: 2, ID: import-heading
+			3 text Open notebook
+		4 text Notebook JSON file
+		5 button Notebook JSON file, ID: file
+		6 button Open supplied notebook, ID: example
+		7 container
+			8 button (expanded) Open pasted JSON, Secondary Actions: Collapse
+				9 text Open pasted JSON
+			10 text Notebook JSON
+			11 text entry area (settable) Notebook JSON, ID: json, Value: {"schemaVersion":1,"caseId":"synthetic-annotation-procedure-trial-v1","annotations":[],"extra":"unsupported"}
+			12 button Check and open JSON, ID: paste
+		13 text Not opened: Notebook has missing or unsupported fields. Expected: schemaVersion, caseId, annotations. Current work was kept.
+		14 button Cancel, ID: close-import
+
+The focused UI element is 12 button Check and open JSON, ID: paste

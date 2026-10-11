@@ -1,0 +1,66 @@
+[
+  {
+    "path": "baseline\\app.mjs",
+    "sha256": "8BE2CEC739E227B17177688A6C1B876608238380EA8E12081142D3B5BF8D7C66"
+  },
+  {
+    "path": "baseline\\catalogue.json",
+    "sha256": "9897CFFD1990DAC5B5476A0ED6AA7630EED0802A6FBC4196C9FDF4D285FC382C"
+  },
+  {
+    "path": "baseline\\check.mjs",
+    "sha256": "C614D11ADDEE2028860B72010962D5A573D2D6F98C282627B1B3406A1C5BB348"
+  },
+  {
+    "path": "baseline\\decisions.md",
+    "sha256": "D9DEC3B3EC4DCAD0666625138B3629E538C37B57AE7473359915A0882D164A8A"
+  },
+  {
+    "path": "baseline\\index.html",
+    "sha256": "090A4696AE67FDEAB4C81CEDD0567F0B1DDA66E3621990D6201F17A29858AC06"
+  },
+  {
+    "path": "baseline\\model.mjs",
+    "sha256": "4E2EC292CB8E444A889BBAD8D04BE0F8B2E80D1944F9D82454DB83C7FC45EC91"
+  },
+  {
+    "path": "baseline\\README.md",
+    "sha256": "D857439976CF4307179AF830266BA401D7AAC1F28185D29350080E761EE3A872"
+  },
+  {
+    "path": "baseline\\style.css",
+    "sha256": "93AE0E5CC8EF0A34053FF46937B9BE3F07DBE003F9ACBA54853A9C9F6DE2FB4F"
+  },
+  {
+    "path": "baseline\\evidence\\browser-checks.md",
+    "sha256": "7A0DF6C13570CB83F4E7AC0FA54F28E1894751D7B926439D803234B1302FCC5E"
+  },
+  {
+    "path": "baseline\\evidence\\browser-download.json",
+    "sha256": "F28D543F8B761DBEF04967B538AB1A2F38D1575C030186FF948D99131EBCC88A"
+  },
+  {
+    "path": "baseline\\evidence\\check.log",
+    "sha256": "9A9066BA8FFA45BDBC78860B8FD2408E8765878CCCD695D3CAF77A91537BF4B0"
+  },
+  {
+    "path": "baseline\\evidence\\collection-dense-dom.txt",
+    "sha256": "D597AC5A4ED9B14DC0449BA07077E8C61FEBD92CA04309E4AA9A7EA16806C454"
+  },
+  {
+    "path": "baseline\\evidence\\collection-desktop.jpg",
+    "sha256": "6C0074DFAA3CA1CBE23F92A6EF7863B28C95148E954A1402F4FF6CC7C2488E4D"
+  },
+  {
+    "path": "baseline\\evidence\\comparison-desktop.jpg",
+    "sha256": "28C17933B5C0958E2DE2FDBB63B4EB9D30B2A87CFC43EECB59B169BE21A48C1E"
+  },
+  {
+    "path": "baseline\\evidence\\comparison-narrow.jpg",
+    "sha256": "D7D52B56175BE6ED91EBF3F902FEB009E0129C41D40F6664DA9A83A727B31CA7"
+  },
+  {
+    "path": "baseline\\evidence\\rejected-source.json",
+    "sha256": "928E91071C2FB090F02FAEA5B8009BAC36BA6E99F32450CBE4FB9C3CE7A8B81E"
+  }
+]

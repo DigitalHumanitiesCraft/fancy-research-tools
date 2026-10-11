@@ -1,0 +1,36 @@
+{
+  "recordedAt": "2026-10-11T14:06:08.756Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": ".last-run.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "photographs-image-supports-7ee7d-k-without-external-requests/image-pan.png",
+      "bytes": 412793,
+      "sha256": "4bebeb06c41615ca78ce7480f25f83ec8be2f702d26e4c5f7e0d5be9a3963b90"
+    },
+    {
+      "path": "photographs-narrow-chronol-12ef6-pose-direct-evidence-access/photograph-narrow.png",
+      "bytes": 212076,
+      "sha256": "514aa83f3912f6d378ae04d128f523aa8f9801f16d09a56a17202af89b2033cb"
+    },
+    {
+      "path": "photographs-narrow-chronol-12ef6-pose-direct-evidence-access/timeline-narrow.png",
+      "bytes": 118526,
+      "sha256": "1642ab753ac88abf307f8a84324d215138ef9b4c9cc07617f8db1ff8b2c428c3"
+    },
+    {
+      "path": "photographs-photographs-re-63cdb-son-across-views-and-export/comparison.png",
+      "bytes": 168251,
+      "sha256": "d57ea45a579b06d5cb13d1547bb8e359b912ed7aa78face3a817916458b5ed47"
+    },
+    {
+      "path": "photographs-photographs-re-63cdb-son-across-views-and-export/photograph-selection.json",
+      "bytes": 10867,
+      "sha256": "fcce989f385e4759c3d03fec0fbabd5d12f4f0d2c62cc5dfc6e2305c9ec8d382"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ Begin with a research question, an idea, source material, data, a method or an e
 
 ## Define the task
 
-Preparation establishes what is available and what is unknown. Exploration examines real material and possible methods. Distillation records justified findings in project knowledge. Implementation produces a small inspectable workflow. Return to earlier activities when a prototype exposes unsuitable assumptions. An initial question can change, and a data-only start can lead to competing questions rather than a forced conclusion.
+Read existing decisions before asking new questions. This repository supports both immediate research use and development with coding agents; that audience decision is settled. Preparation establishes what is available and what is unknown. Exploration examines real material and possible methods. Distillation records justified findings in project knowledge. Implementation produces a small inspectable workflow. Return to earlier activities when a prototype exposes unsuitable assumptions. An initial question can change, and a data-only start can lead to competing questions rather than a forced conclusion.
 
 Separate research activity, material structure, file format and collaboration needs. A spreadsheet can contain measurements, catalogue records or coded observations. Its extension alone does not determine an appropriate analysis. Prefer a browser interface and the simplest stack that meets the actual requirements. Add processing or services when the task justifies them.
 
@@ -99,9 +99,31 @@ The editor's flat collection is a descriptive contract, while the Met explorer p
 
 ## Adapt the interface
 
+The [operator default profile](../knowledge/design.md#operator-default-profile) is the starting presentation choice. When your research task calls for different choices, revise the copied design contract and align the local agent instructions and checks with it. Preserve the separate accessibility, source, rights and working-state requirements. The repository's guides and contracts must support this adaptation without private Vault access or the original chat.
+
 Begin with the view hierarchy in the [design contract](../knowledge/design.md). Identify the researcher's next decision, the material needed for it and the action that follows. Choose a visualisation only when the data supports that comparison. Implement through task-specific visual tokens and shared accessible primitives with labelled icons, then verify the relevant [acceptance scenarios](../knowledge/specification.md) and record evidence in [testing](../knowledge/testing.md). Include long titles, missing values, filter reversal and import errors in the review.
 
 Give each tool its own interaction layout, information density, typography and colour semantics based on the actual research work. The starter's examples demonstrate different tasks and do not prescribe a universal shell or DHCraft branding. Reuse accessible primitives, state handling and checks where appropriate. Record the tool's design decisions and rights explicitly.
+
+### Reusable interface patterns
+
+Choose a pattern for a named research action and inspect its prerequisites in the actual material. The current operator profile favours compact views, while each task determines what must remain visible. The following patterns are starting hypotheses to evaluate in an adaptation.
+
+| Research action | Useful arrangement | Boundary and verification |
+|---|---|---|
+| Compare people or collection records | Align comparable fields in compact rows. Keep the name, role, relevant date or place, and the action needed next visible. Let selection operate beside the row. | A prose source needs a reading surface. Several attributions need their own qualifiers and cannot be collapsed into one authoritative name. Inspect a dense state with long labels. |
+| Inspect a statement's evidence | Place a source action beside the affected value. Open the original wording and derivation in context, with a reliable return to the selected record. | Source identity and an uncertainty that changes interpretation remain visible before opening detail. Technical hashes and processing traces may use optional disclosure. |
+| Narrow a research set | Keep common filters in a stable location and add controls that serve the current view. Show active constraints and provide an explicit reversal. A searchable choice can combine lookup and selection. | Hidden filters must not silently alter another view. Confirm the same selected identities, counts and export population through navigation. A small fixed vocabulary may work better as ordinary visible choices. |
+| Read dates and places | Preserve the source expression and its role. Display readable dates, intervals and open bounds. Distinguish the place depicted, place of production and current holding location. | Indexing bounds may serve sorting without being event dates. An unknown location remains unknown. Inspect examples where a precise-looking mark would overstate the source. |
+| Follow a stable identifier | Use a meaningful authority link near the entity. Expose the full identifier through an accessible explanation and a copy action when needed. Keep a shelfmark or other identifier visible when researchers use it to distinguish records. | An authority reference applies to its recorded entity or assertion. It must not merge similarly named people by implication. Identifiers used in citations remain recoverable and exports retain them. |
+| Recognise a permitted LLM-produced value | Establish the project inclusion policy first. For permitted values, attach one consistent status icon to the affected value, with an accessible name and an explanation available on focus and tap. Keep the source and recorded review reachable from that value. | Excluded values must not contribute to search, counts, diagrams or exports. Production and verification describe different activities. A badge on an entire record can wrongly qualify unrelated fields. Essential status cannot depend on hover or colour alone. |
+| Annotate a source | Keep the exact quotation beside the interpretation and its saved or unsaved state. Source navigation, editing and export preserve the annotation's anchor. | An annotation can need more reading space than a collection row. Optional technical provenance may be collapsed while the quotation and unfinished work remain visible. |
+
+The [review decision table](../knowledge/design.md#reusable-review-decisions) defines task conditions and exceptions, including identifiers, missingness and cross-component redundancy.
+
+For each proposed reuse, build a complete small research episode before spreading its components to other views. Use a dense case, a relevant unknown value and a recovery action. Compare the original source, visible statement, selected record identities and retained result. Keep any deliberately synthetic boundary inputs separate from historical evidence.
+
+The repository procedures `research-ui-design`, `research-ui-evaluate` and `research-ui-improve` under `.agents/skills/` apply these decisions. Their evidence follows the [UI acceptance protocol](../knowledge/testing.md#ui-acceptance-protocol). A new public example requires its own source snapshot, rights record and screenshots. Transfer general patterns from commissioned work through a fresh example without copying customer material or private project history.
 
 ## Maintain the knowledge base
 

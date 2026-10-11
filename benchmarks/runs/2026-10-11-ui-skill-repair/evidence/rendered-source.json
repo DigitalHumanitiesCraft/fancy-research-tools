@@ -1,0 +1,14 @@
+{
+  "heading": "Place sourceDEMO-A-03",
+  "icons": [
+    {
+      "expanded": "false",
+      "name": "LLM-produced value"
+    }
+  ],
+  "middleDots": false,
+  "values": [
+    "[\n  {\n    \"label\": \"North Harbour\",\n    \"role\": \"depicted\",\n    \"coordinates\": null\n  }\n]",
+    "{\n  \"places[0]\": {\n    \"kind\": \"llm-extracted\",\n    \"sourceText\": \"Possibly taken by the harbour in the north.\",\n    \"review\": null\n  }\n}"
+  ]
+}

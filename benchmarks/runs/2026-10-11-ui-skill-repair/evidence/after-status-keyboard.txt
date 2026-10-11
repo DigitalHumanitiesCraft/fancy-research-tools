@@ -1,0 +1,7 @@
+Browser tab: 1, Title: "Compare catalogue records", URL: "http://127.0.0.1:4193/candidate/#comparison?text=&attribution=Northfield+workshop&role=photographer".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+~						200 button (expanded) Description: LLM-produced value, Secondary Actions: Collapse
++						241 container production-2
++							242 text LLM-extracted
++							243 text No review recorded. Source text: Possibly taken by the harbour in the north.
+The focused UI element is 200 button (expanded) Description: LLM-produced value, Secondary Actions: Collapse

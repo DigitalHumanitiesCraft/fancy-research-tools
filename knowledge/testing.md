@@ -13,10 +13,54 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Testing
+
+## Task gallery and documentation audit, 2026-10-11
+
+The operator replaced the previous reference/workflow/external grouping with five research-task entry points. Earlier local studies remain reachable from development guidance. Collection Explorer remains the first runnable reference; capture, correction and edition entries identify their preparation and external-tool boundaries. The source package for the Fleischer letter retains machine-production status, a source-specific rights statement and exact source identities.
+
+| Reviewed current material | Result and responsibility |
+|---|---|
+| Root README, AGENTS and changelog | Reconciled task entry, technical examples and settled dual audience. AGENTS owns operational instructions; the added CLAUDE file points to it. |
+| All ten top-level knowledge documents | Checked current purpose, navigation, requirements, architecture, data, design, evidence, plan, index and handoff routing. Updated affected contracts and restart instructions. The empty handoff remains valid. |
+| All four public guides | Reconciled the overview, research framing, adaptation guidance and concrete task paths. Preserved existing walkthrough anchors and format/recovery limits. |
+| Three local research UI skills | Added lookup of settled decisions before clarification, cross-component visual and code review of redundancy, and project-specific inclusion policy. All three passed the skill creator's UTF-8 structural validator. This is not a new comparative effectiveness trial. |
+| Data package READMEs | Reviewed Cleveland, Met, Schönbach, Benndorf, NOAA/NHC, tool directory and the new SZD package against their described source/route boundaries. Updated the tool directory; preserved frozen source notices. The SZD package owns its parser/schema checks. |
+| Current benchmark instructions | Reviewed the benchmark README, concept brief and protocol, development-study protocol and synthetic skill-trial instructions. Corrected stale latest-evidence and material-count wording in the benchmark README. Existing protocols keep their bounded tasks and evidence limits. |
+| Dated journal, test and benchmark records | Retained as historical evidence with their original scope. They are not current route instructions and were not rewritten to claim later outcomes. |
+
+The SZD package's `verification.json` records exact TEI parser preservation, schema checks and the edition parser's image/text correspondence. Full browser editing and reopening, a separate edition frontend build, human transcription review and offline facsimile use remain distinct checks. Klawiter's documented correction-propagation gap remains an upstream dependency. Relevant integrated checks for this candidate are recorded with the final run rather than inferred from earlier passing results.
+
+The integrated Windows run passed TypeScript/Biome, all six source-data gates, 96 unit tests, the production build and all 60 browser cases. After two small gallery corrections, all five documentation/browser cases passed again. That repeat includes the real TEI download and byte equality with its frozen source, local links, repository subpaths, narrow gallery entry and reference-table keyboard scrolling. Production dependency audit reported zero known vulnerabilities. The operated Collection Explorer review also verified retained zoom/pan, focus after clearing filters and byte-preserving selection export. Screenshots were inspected at desktop and 320 CSS pixels.
+
+The final gallery source identity is `benchmarks/runs/2026-10-11-task-gallery-source.json`; corresponding evidence is under `benchmarks/runs/2026-10-11-task-gallery/`. An independent screenshot review corrected a repeated product name, distinguished the bibliography's public reading preview from local curation, and corrected the correspondence preview's description. The source review found no concrete executable security or data-loss blocker in its bounded scope. Public benchmark copies redact local account paths and private working-context names with a recorded byte-level redaction manifest. Original evidence and a browser trace containing that context remain local. Generated last-run metadata is excluded from the commit.
+
+The teiCrafter browser attempt reached a native file picker unavailable to the browser automation. Its complete import, edit and reopen sequence remains unverified. A successful schema or parser check does not resolve that limitation. No screen-reader conformance, human usability acceptance or complete external edition workflow is claimed.
+
+## Collection Explorer hierarchy, 2026-10-11
+
+The gallery and overview now lead with Collection Explorer, followed by contrasting workflow studies and separately maintained external tools. README, the first walkthrough and current knowledge contracts follow that hierarchy. Existing application routes and old gallery fragments remain usable. Two independent read-only reviews checked the repository hierarchy and its conceptual documentation; their findings led to four contract corrections and two wording fixes.
+
+TypeScript/Biome, all five source-data gates, 96 unit tests and the eight documentation/photograph browser cases passed. The browser cases cover the gallery grouping, narrow width, links and repository subpaths, source-to-export selection, keyboard context, image fallback and chronology. The operated wide-browser review followed gallery entry, Yosemite search, two-record comparison and Timeline, confirming retained query and attribution qualifiers. The gallery preview was refreshed to the current application name. A final gallery-only browser repeat passed after adjusting its preview aspect ratio; wide and 320-pixel screenshots were inspected. Artifacts are retained in `benchmarks/runs/2026-10-11-collection-explorer-hierarchy/`; source identity is `benchmarks/runs/2026-10-11-collection-explorer-hierarchy-source.json`.
+
+These checks concern this bounded change. They do not establish human research acceptance, screen-reader conformance or a new full regression of all other workflows. No publication was performed.
+
+## Open photographs and UI skills, 2026-10-11
+
+The separate Photograph study adds a frozen forty-image CC0 sample, catalogue chronology, local image inspection and evidence-preserving comparison. Its implementation and schema are separate from existing edited collections and notebooks. The run is recorded in `benchmarks/runs/2026-10-11-open-photographs/`, with browser artifacts in `benchmarks/runs/2026-10-11-open-photographs-browser/`.
+
+TypeScript and Biome, all five data derivation gates and 96 unit tests passed. The dependency audit reported no known vulnerabilities at execution. JSON Schema Draft 2020-12 validation also passed for the schema and complete photograph collection. The first integrated browser run passed 58 of 59 cases, including all four photograph scenarios. Its failure exposed duplicate accessible table-region names in the generated specification after adding a second table with the same column headings. The shared renderer now adds section context when a table name repeats. All four affected documentation cases passed on repeat, including photograph assets and reload below a repository subpath. A subsequent visual correction separates narrow date labels from timeline marks and compacts the mobile header; all four photograph cases passed again. These are one full run and bounded repetitions, not a newly claimed full run. Their artifacts are retained in `2026-10-11-photograph-docs-correction` and `2026-10-11-photo-reflow-correction` under `benchmarks/runs/`.
+
+Operated inspection exercised search, selection, comparison, direct chronological marks, return context, real export, pointer pan and keyboard zoom. The independent code review found a skip-link fragment that reset route state and selection focus that jumped to a different control. Both are corrected and covered by the passing photograph browser cases. Visual inspection also corrected the comparison icon, duplicate comparison tray, image-control placement, dense timeline image sizing and a broken guide destination. Automated narrow-screen and axe checks are bounded engineering evidence. A manual viewport request in the in-app browser did not change its measured width; the narrow evidence comes from the browser test runner.
+
+The three local UI skills now define concrete design, evaluation and repair outputs and link to the portable profile and reuse patterns. Independent collection and annotation trials use synthetic cases without private project context or intended answers. Their artifacts and a separately guided repair trial remain distinguishable from the real photograph example. A negative collection result exposed an incomplete profile transfer: field production was preserved, but verbose status text and repeated separators survived. The owning profile and procedure were clarified instead of claiming that the first trial proved skill effectiveness.
+
+The retained runs are `2026-10-11-ui-skill-collection`, `2026-10-11-ui-skill-annotation`, `2026-10-11-ui-skill-repair` and `2026-10-11-ui-skill-initial-context`. The annotation trial preserved exact source anchors, review invalidation, recovery and byte-identical downloaded/reopened output. Its full keyboard passage selection remained unverified, and rendered inspection still found ISO date labels and repeated separators. These are prototype findings, not recommended product components. The guided collection repair corrected separators, field-bound status icons and authority access while preserving source and export bytes. It also introduced and then corrected a narrow overflow. Native touch and screen-reader use remain unexecuted. All three skill files pass structural validation with Python's UTF-8 mode. The final integrated source identity is `benchmarks/runs/2026-10-11-open-photographs-source.json`.
+
+Operator approval, a formative session with another person, real screen-reader operation and a comparative study of skill effectiveness remain unperformed. This run does not certify general accessibility, historical correctness or research fitness.
 
 ## CI reflow correction, 2026-10-10
 
@@ -51,7 +95,7 @@ The revised candidate groups existing public applications by research activity a
 | Existing applications | Public destinations were checked by HTTP and selected actual working states were opened. coOCR's Wecker example, CorrespExplorer's HSA data, teiCrafter's SZD XML and the bibliography catalogue were inspected. | No provider-backed LLM run, full external regression suite or external interface rewrite is claimed. |
 | Independent review | A separate agent checked annotation case validation and editor source matching, then exercised hostile case/source changes against the production build. | Agent review is not blinded researcher observation or human design acceptance. |
 
-The operator's rejection of the preceding design remains below. This revision awaits a new UI review. Local data, source roles and declared interpretation/review are separated, and the gallery's existing-tool links do not imply that those external designs satisfy every local design rule. Private ACTIVE-WORK and institutional datasets were not incorporated.
+The operator's rejection of the preceding design remains below. This revision awaits a new UI review. Local data, source roles and declared interpretation/review are separated, and the gallery's existing-tool links do not imply that those external designs satisfy every local design rule. Private internal coordination documents and institutional datasets were not incorporated.
 
 Checks establish bounded evidence about software behaviour. Research usefulness and domain correctness require assessment with the intended material and accountable researchers.
 
@@ -85,7 +129,7 @@ Domain tests cover validation, transformations and round trips. Browser tests co
 
 ## Claims and evidence
 
-The [documentation closeout](#documentation-audit-closeout-2026-10-10) records the latest documentation checks. The [project-tool revision](#project-tool-revision-2026-10-10) retains the preceding full software checks. The table below summarises the [earlier repository audit](#repository-audit-2026-10-10). Its passing results apply to that source state. Dated sections retain their original scope.
+The latest dated section above records current documentation checks. The [documentation closeout](#documentation-audit-closeout-2026-10-10) retains its earlier evidence. The [project-tool revision](#project-tool-revision-2026-10-10) retains the preceding full software checks. The table below summarises the [earlier repository audit](#repository-audit-2026-10-10). Its passing results apply to that source state. Dated sections retain their original scope.
 
 | Claim | Required evidence | Recorded result |
 |---|---|---|
@@ -113,6 +157,8 @@ The [design contract](design.md) and [UI requirements](specification.md#ui-refin
 
 | Task | Route | Observable success | Evidence to record |
 |---|---|---|---|
+| Explore the photograph reference | `/photographs/` | Search, inspect a qualified source date/creator, retain photographs and export the intended evidence | Source values, selected IDs, actual export, image fallback and retained navigation context |
+| Prepare the SZD editing and edition task | Guides and external tools | Obtain the real TEI, understand its machine-production state and follow the supported external-TEI path | Source hashes, rights, schema/parser results and separately observed edit/save/reopen or build |
 | Find an entry point from the overview | `/`, `/tools/` and guides | Open the relevant tool or adaptation guidance without coaching | First action, detours and any facilitator intervention |
 | Compare instrument categories | `/baseline/` | Identify a category and correctly explain its count and filtered denominator | Answer compared with the independent oracle, plus any misinterpretation |
 | Inspect missing culture values | `/baseline/` | Activate the missing-field view and inspect a corresponding source record | Selected IDs, route to the source and participant explanation of missingness |

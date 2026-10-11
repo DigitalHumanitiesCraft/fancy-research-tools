@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "caseId": "synthetic-annotation-procedure-trial-v1",
+  "annotations": [
+    {
+      "id": "demo-annotation-1",
+      "sourceId": "demo-note-1",
+      "start": 0,
+      "end": 28,
+      "quote": "At noon the water was still.",
+      "category": "observation",
+      "note": "The first occurrence records the visible water condition; the later repetition may be copied.",
+      "creator": "Demonstration researcher",
+      "review": null
+    },
+    {
+      "id": "0b2b5010-d4a7-4993-b57e-77de049b7552",
+      "sourceId": "demo-note-1",
+      "start": 120,
+      "end": 148,
+      "quote": "At noon the water was still.",
+      "category": "question",
+      "note": "Does the repeated wording reflect a second observation or copying?",
+      "creator": "Synthetic trial agent",
+      "review": null
+    },
+    {
+      "id": "054a7208-5e87-41d1-8805-461eac9bcbe4",
+      "sourceId": "demo-note-2",
+      "start": 84,
+      "end": 162,
+      "quote": "It may have risen after the gate opened, although I did not see the gate move.",
+      "category": "speculation",
+      "note": "The gate is proposed as a cause, but its movement was not observed.",
+      "creator": "Synthetic trial agent",
+      "review": null
+    }
+  ]
+}

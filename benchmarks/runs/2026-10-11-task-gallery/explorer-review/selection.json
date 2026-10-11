@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "kind": "photograph-selection",
+  "collection": "urn:frt:cma-photographs:2026-10-11",
+  "context": {
+    "@version": 1.1,
+    "@vocab": "https://schema.org/",
+    "frt": "https://github.com/DigitalHumanitiesCraft/fancy-research-tools#",
+    "id": "@id",
+    "title": "name",
+    "schemaVersion": "frt:schemaVersion",
+    "items": {
+      "@id": "hasPart",
+      "@container": "@set"
+    },
+    "date": "frt:catalogueDate",
+    "label": "name",
+    "start": "frt:nominalStartYear",
+    "end": "frt:nominalEndYear",
+    "kind": "frt:dateKind",
+    "indexStart": "frt:publisherIndexStartYear",
+    "indexEnd": "frt:publisherIndexEndYear",
+    "creators": {
+      "@id": "frt:creatorAttribution",
+      "@container": "@set",
+      "@context": {
+        "id": {
+          "@id": "frt:sourceCreator",
+          "@type": "@id"
+        }
+      }
+    },
+    "role": "roleName",
+    "qualifier": "frt:sourceQualifier",
+    "extent": "frt:sourceExtent",
+    "technique": "artMedium",
+    "culture": {
+      "@id": "frt:catalogueCulture",
+      "@container": "@set"
+    },
+    "accession": "identifier",
+    "sourceUrl": {
+      "@id": "url",
+      "@type": "@id"
+    },
+    "src": "frt:localImagePath",
+    "source": "frt:sourceEvidence",
+    "rawPath": "frt:rawSnapshotPath",
+    "sha256": "frt:sha256",
+    "fields": {
+      "@id": "frt:originalFields",
+      "@type": "@json"
+    },
+    "derivation": {
+      "@id": "frt:derivation",
+      "@type": "@json"
+    }
+  },
+  "derivation": {
+    "script": "scripts/import-photographs.mjs",
+    "sha256": "46aa7facc7e610e7a89fc5c336d2ad0c62f773396cae1fcfec86bf208a7fe206",
+    "method": "Deterministic projection from the frozen CMA response. Literal year, year range, circa-year and decade date labels receive nominal plotting years. Source numeric index bounds remain separate. No historic truth or human review is asserted."
+  },
+  "query": {
+    "text": "Peacock",
+    "creator": "",
+    "technique": "",
+    "sort": "date"
+  },
+  "selected": [
+    {
+      "id": "https://clevelandart.org/art/1980.145",
+      "@type": "Photograph",
+      "title": "The Peacock Feather",
+      "date": {
+        "label": "c. 1902",
+        "start": 1902,
+        "end": 1902,
+        "kind": "approximate",
+        "indexStart": 1897,
+        "indexEnd": 1907
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with graphite",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.145",
+      "sourceUrl": "https://clevelandart.org/art/1980.145",
+      "image": {
+        "src": "data/photographs/images/149908.jpg",
+        "width": 724,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.145/1980.145_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149908",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "The Peacock Feather",
+          "accession_number": "1980.145",
+          "creation_date": "c. 1902",
+          "creation_date_earliest": 1897,
+          "creation_date_latest": 1907,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with graphite",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.145",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.145/1980.145_web.jpg",
+            "width": "724",
+            "height": "893",
+            "filesize": "437493",
+            "filename": "1980.145_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.146",
+      "@type": "Photograph",
+      "title": "The Peacock Feather",
+      "date": {
+        "label": "c. 1902",
+        "start": 1902,
+        "end": 1902,
+        "kind": "approximate",
+        "indexStart": 1897,
+        "indexEnd": 1907
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with gouache",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.146",
+      "sourceUrl": "https://clevelandart.org/art/1980.146",
+      "image": {
+        "src": "data/photographs/images/149909.jpg",
+        "width": 728,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.146/1980.146_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149909",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "The Peacock Feather",
+          "accession_number": "1980.146",
+          "creation_date": "c. 1902",
+          "creation_date_earliest": 1897,
+          "creation_date_latest": 1907,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with gouache",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.146",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.146/1980.146_web.jpg",
+            "width": "728",
+            "height": "893",
+            "filesize": "443811",
+            "filename": "1980.146_web.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "license": "CC0-1.0"
+}

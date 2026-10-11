@@ -1,0 +1,5 @@
+Browser tab: 1, Title: "Compare catalogue records", URL: "http://127.0.0.1:4193/candidate/#comparison?text=&attribution=Northfield+workshop&role=photographer".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 153
++	155 text Could not reopen: The source evidence, metadata or format has changed. Existing work was kept. Current work retained.
+The focused UI element is 150 button Reopen investigation JSON, ID: reopen-trigger

@@ -1,0 +1,420 @@
+- link "Skip to workspace":
+  - /url: "#main"
+- banner:
+  - heading "Compare catalogue records" [level=1]
+  - generic: Synthetic catalogue
+  - navigation "Workspace":
+    - link "Collection":
+      - /url: "#collection?text=&attribution=&role="
+    - link "Comparison (3)":
+      - /url: "#comparison?text=&attribution=&role="
+- main:
+  - heading "Collection" [level=2]
+  - text: Search catalogue text
+  - searchbox "Search catalogue text" [active]
+  - text: Attribution label
+  - combobox "Attribution label":
+    - option "All labels" [selected]
+    - option "Northfield workshop"
+    - option "A. Vale"
+    - option "R. Brook"
+  - text: Attribution role
+  - combobox "Attribution role":
+    - option "All roles" [selected]
+    - option "Photographer"
+    - option "Publisher"
+  - button "Reset filters"
+  - paragraph: Search matches all typed words in descriptive fields. Attribution label and role must occur in the same entry; a label does not establish shared identity.
+  - status: 12 matching records · 3 selected across the catalogue
+  - region "Matching catalogue records; scroll horizontally for all fields":
+    - table:
+      - rowgroup:
+        - row "Select Object Catalogue date Attribution Place Material":
+          - columnheader "Select"
+          - columnheader "Object"
+          - columnheader "Catalogue date"
+          - columnheader "Attribution"
+          - columnheader "Place"
+          - columnheader "Material"
+      - rowgroup:
+        - 'row "Select DEMO-A-01: Construction of the north pier Construction of the north pier DEMO-A-01 Object source for DEMO-A-01 before 2031 Catalogue date source for DEMO-A-01 attributed to Northfield workshop photographer Attribution source for DEMO-A-01 North Harbour depicted Place source for DEMO-A-01 Paper print Material source for DEMO-A-01"':
+          - 'cell "Select DEMO-A-01: Construction of the north pier"':
+            - 'checkbox "Select DEMO-A-01: Construction of the north pier" [checked]'
+          - cell "Construction of the north pier DEMO-A-01 Object source for DEMO-A-01":
+            - generic: Construction of the north pier
+            - generic: DEMO-A-01
+            - link "Object source for DEMO-A-01":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-01&field=title&from=collection"
+              - text: Source
+          - cell "before 2031 Catalogue date source for DEMO-A-01":
+            - text: before 2031
+            - link "Catalogue date source for DEMO-A-01":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-01&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "attributed to Northfield workshop photographer Attribution source for DEMO-A-01":
+            - text: attributed to Northfield workshop
+            - generic: photographer
+            - link "Attribution source for DEMO-A-01":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-01&field=attributions&from=collection"
+              - text: Source
+          - cell "North Harbour depicted Place source for DEMO-A-01":
+            - text: North Harbour
+            - generic: depicted
+            - link "Place source for DEMO-A-01":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-01&field=places&from=collection"
+              - text: Source
+          - cell "Paper print Material source for DEMO-A-01":
+            - text: Paper print
+            - link "Material source for DEMO-A-01":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-01&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-02: Workers beside the unfinished north pier Workers beside the unfinished north pier DEMO-A-02 Object source for DEMO-A-02 between 2030 and 2034 Catalogue date source for DEMO-A-02 Northfield workshop photographer Attribution source for DEMO-A-02 East Harbour holding institution Place source for DEMO-A-02 Glass negative Material source for DEMO-A-02"':
+          - 'cell "Select DEMO-A-02: Workers beside the unfinished north pier"':
+            - 'checkbox "Select DEMO-A-02: Workers beside the unfinished north pier" [checked]'
+          - cell "Workers beside the unfinished north pier DEMO-A-02 Object source for DEMO-A-02":
+            - generic: Workers beside the unfinished north pier
+            - generic: DEMO-A-02
+            - link "Object source for DEMO-A-02":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-02&field=title&from=collection"
+              - text: Source
+          - cell "between 2030 and 2034 Catalogue date source for DEMO-A-02":
+            - text: between 2030 and 2034
+            - link "Catalogue date source for DEMO-A-02":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-02&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "Northfield workshop photographer Attribution source for DEMO-A-02":
+            - text: Northfield workshop
+            - generic: photographer
+            - link "Attribution source for DEMO-A-02":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-02&field=attributions&from=collection"
+              - text: Source
+          - cell "East Harbour holding institution Place source for DEMO-A-02":
+            - text: East Harbour
+            - generic: holding institution
+            - link "Place source for DEMO-A-02":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-02&field=places&from=collection"
+              - text: Source
+          - cell "Glass negative Material source for DEMO-A-02":
+            - text: Glass negative
+            - link "Material source for DEMO-A-02":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-02&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-03: View across the construction basin and temporary railway at the western end of the harbour View across the construction basin and temporary railway at the western end of the harbour DEMO-A-03 Object source for DEMO-A-03 circa 2032 Catalogue date source for DEMO-A-03 possibly Northfield workshop photographer Authority not recorded Attribution source for DEMO-A-03 North Harbour depicted LLM-extracted · no review recorded Place source for DEMO-A-03 Not recorded Material source for DEMO-A-03"':
+          - 'cell "Select DEMO-A-03: View across the construction basin and temporary railway at the western end of the harbour"':
+            - 'checkbox "Select DEMO-A-03: View across the construction basin and temporary railway at the western end of the harbour" [checked]'
+          - cell "View across the construction basin and temporary railway at the western end of the harbour DEMO-A-03 Object source for DEMO-A-03":
+            - generic: View across the construction basin and temporary railway at the western end of the harbour
+            - generic: DEMO-A-03
+            - link "Object source for DEMO-A-03":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-03&field=title&from=collection"
+              - text: Source
+          - cell "circa 2032 Catalogue date source for DEMO-A-03":
+            - text: circa 2032
+            - link "Catalogue date source for DEMO-A-03":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-03&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "possibly Northfield workshop photographer Authority not recorded Attribution source for DEMO-A-03":
+            - text: possibly Northfield workshop
+            - generic: photographer
+            - generic: Authority not recorded
+            - link "Attribution source for DEMO-A-03":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-03&field=attributions&from=collection"
+              - text: Source
+          - cell "North Harbour depicted LLM-extracted · no review recorded Place source for DEMO-A-03":
+            - text: North Harbour
+            - generic: depicted
+            - generic: LLM-extracted · no review recorded
+            - link "Place source for DEMO-A-03":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-03&field=places&from=collection"
+              - text: Source
+          - cell "Not recorded Material source for DEMO-A-03":
+            - text: Not recorded
+            - link "Material source for DEMO-A-03":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-03&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-04: Completed north pier Completed north pier DEMO-A-04 Object source for DEMO-A-04 12 June 2038 Catalogue date source for DEMO-A-04 Northfield workshop publisher Attribution source for DEMO-A-04 North Harbour depicted Place source for DEMO-A-04 Postcard Material source for DEMO-A-04"':
+          - 'cell "Select DEMO-A-04: Completed north pier"':
+            - 'checkbox "Select DEMO-A-04: Completed north pier"'
+          - cell "Completed north pier DEMO-A-04 Object source for DEMO-A-04":
+            - generic: Completed north pier
+            - generic: DEMO-A-04
+            - link "Object source for DEMO-A-04":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-04&field=title&from=collection"
+              - text: Source
+          - cell "12 June 2038 Catalogue date source for DEMO-A-04":
+            - text: 12 June 2038
+            - link "Catalogue date source for DEMO-A-04":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-04&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "Northfield workshop publisher Attribution source for DEMO-A-04":
+            - text: Northfield workshop
+            - generic: publisher
+            - link "Attribution source for DEMO-A-04":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-04&field=attributions&from=collection"
+              - text: Source
+          - cell "North Harbour depicted Place source for DEMO-A-04":
+            - text: North Harbour
+            - generic: depicted
+            - link "Place source for DEMO-A-04":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-04&field=places&from=collection"
+              - text: Source
+          - cell "Postcard Material source for DEMO-A-04":
+            - text: Postcard
+            - link "Material source for DEMO-A-04":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-04&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-05: Timber unloaded beside the pier Timber unloaded beside the pier DEMO-A-05 Object source for DEMO-A-05 Not recorded Catalogue date source for DEMO-A-05 A. Vale photographer Attribution source for DEMO-A-05 Not recorded Place source for DEMO-A-05 Paper print Material source for DEMO-A-05"':
+          - 'cell "Select DEMO-A-05: Timber unloaded beside the pier"':
+            - 'checkbox "Select DEMO-A-05: Timber unloaded beside the pier"'
+          - cell "Timber unloaded beside the pier DEMO-A-05 Object source for DEMO-A-05":
+            - generic: Timber unloaded beside the pier
+            - generic: DEMO-A-05
+            - link "Object source for DEMO-A-05":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-05&field=title&from=collection"
+              - text: Source
+          - cell "Not recorded Catalogue date source for DEMO-A-05":
+            - text: Not recorded
+            - link "Catalogue date source for DEMO-A-05":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-05&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "A. Vale photographer Attribution source for DEMO-A-05":
+            - text: A. Vale
+            - generic: photographer
+            - link "Attribution source for DEMO-A-05":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-05&field=attributions&from=collection"
+              - text: Source
+          - cell "Not recorded Place source for DEMO-A-05":
+            - text: Not recorded
+            - link "Place source for DEMO-A-05":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-05&field=places&from=collection"
+              - text: Source
+          - cell "Paper print Material source for DEMO-A-05":
+            - text: Paper print
+            - link "Material source for DEMO-A-05":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-05&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-06: Workshop courtyard Workshop courtyard DEMO-A-06 Object source for DEMO-A-06 2032 Catalogue date source for DEMO-A-06 Northfield workshop photographer Attribution source for DEMO-A-06 Northfield depicted Place source for DEMO-A-06 Paper print Material source for DEMO-A-06"':
+          - 'cell "Select DEMO-A-06: Workshop courtyard"':
+            - 'checkbox "Select DEMO-A-06: Workshop courtyard"'
+          - cell "Workshop courtyard DEMO-A-06 Object source for DEMO-A-06":
+            - generic: Workshop courtyard
+            - generic: DEMO-A-06
+            - link "Object source for DEMO-A-06":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-06&field=title&from=collection"
+              - text: Source
+          - cell "2032 Catalogue date source for DEMO-A-06":
+            - text: "2032"
+            - link "Catalogue date source for DEMO-A-06":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-06&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "Northfield workshop photographer Attribution source for DEMO-A-06":
+            - text: Northfield workshop
+            - generic: photographer
+            - link "Attribution source for DEMO-A-06":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-06&field=attributions&from=collection"
+              - text: Source
+          - cell "Northfield depicted Place source for DEMO-A-06":
+            - text: Northfield
+            - generic: depicted
+            - link "Place source for DEMO-A-06":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-06&field=places&from=collection"
+              - text: Source
+          - cell "Paper print Material source for DEMO-A-06":
+            - text: Paper print
+            - link "Material source for DEMO-A-06":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-06&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-07: Bridge construction Bridge construction DEMO-A-07 Object source for DEMO-A-07 after 2034 Catalogue date source for DEMO-A-07 attributed to A. Vale photographer Attribution source for DEMO-A-07 North Harbour depicted Place source for DEMO-A-07 Glass negative Material source for DEMO-A-07"':
+          - 'cell "Select DEMO-A-07: Bridge construction"':
+            - 'checkbox "Select DEMO-A-07: Bridge construction"'
+          - cell "Bridge construction DEMO-A-07 Object source for DEMO-A-07":
+            - generic: Bridge construction
+            - generic: DEMO-A-07
+            - link "Object source for DEMO-A-07":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-07&field=title&from=collection"
+              - text: Source
+          - cell "after 2034 Catalogue date source for DEMO-A-07":
+            - text: after 2034
+            - link "Catalogue date source for DEMO-A-07":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-07&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "attributed to A. Vale photographer Attribution source for DEMO-A-07":
+            - text: attributed to A. Vale
+            - generic: photographer
+            - link "Attribution source for DEMO-A-07":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-07&field=attributions&from=collection"
+              - text: Source
+          - cell "North Harbour depicted Place source for DEMO-A-07":
+            - text: North Harbour
+            - generic: depicted
+            - link "Place source for DEMO-A-07":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-07&field=places&from=collection"
+              - text: Source
+          - cell "Glass negative Material source for DEMO-A-07":
+            - text: Glass negative
+            - link "Material source for DEMO-A-07":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-07&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-08: New harbour wall New harbour wall DEMO-A-08 Object source for DEMO-A-08 2032 Catalogue date source for DEMO-A-08 Not recorded Attribution source for DEMO-A-08 West Basin depicted Place source for DEMO-A-08 Paper print Material source for DEMO-A-08"':
+          - 'cell "Select DEMO-A-08: New harbour wall"':
+            - 'checkbox "Select DEMO-A-08: New harbour wall"'
+          - cell "New harbour wall DEMO-A-08 Object source for DEMO-A-08":
+            - generic: New harbour wall
+            - generic: DEMO-A-08
+            - link "Object source for DEMO-A-08":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-08&field=title&from=collection"
+              - text: Source
+          - cell "2032 Catalogue date source for DEMO-A-08":
+            - text: "2032"
+            - link "Catalogue date source for DEMO-A-08":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-08&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "Not recorded Attribution source for DEMO-A-08":
+            - text: Not recorded
+            - link "Attribution source for DEMO-A-08":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-08&field=attributions&from=collection"
+              - text: Source
+          - cell "West Basin depicted Place source for DEMO-A-08":
+            - text: West Basin
+            - generic: depicted
+            - link "Place source for DEMO-A-08":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-08&field=places&from=collection"
+              - text: Source
+          - cell "Paper print Material source for DEMO-A-08":
+            - text: Paper print
+            - link "Material source for DEMO-A-08":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-08&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-09: Harbour crane under repair Harbour crane under repair DEMO-A-09 Object source for DEMO-A-09 2032 Catalogue date source for DEMO-A-09 R. Brook photographer Authority not recorded Attribution source for DEMO-A-09 Not recorded Place source for DEMO-A-09 Paper print Material source for DEMO-A-09"':
+          - 'cell "Select DEMO-A-09: Harbour crane under repair"':
+            - 'checkbox "Select DEMO-A-09: Harbour crane under repair"'
+          - cell "Harbour crane under repair DEMO-A-09 Object source for DEMO-A-09":
+            - generic: Harbour crane under repair
+            - generic: DEMO-A-09
+            - link "Object source for DEMO-A-09":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-09&field=title&from=collection"
+              - text: Source
+          - cell "2032 Catalogue date source for DEMO-A-09":
+            - text: "2032"
+            - link "Catalogue date source for DEMO-A-09":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-09&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "R. Brook photographer Authority not recorded Attribution source for DEMO-A-09":
+            - text: R. Brook
+            - generic: photographer
+            - generic: Authority not recorded
+            - link "Attribution source for DEMO-A-09":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-09&field=attributions&from=collection"
+              - text: Source
+          - cell "Not recorded Place source for DEMO-A-09":
+            - text: Not recorded
+            - link "Place source for DEMO-A-09":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-09&field=places&from=collection"
+              - text: Source
+          - cell "Paper print Material source for DEMO-A-09":
+            - text: Paper print
+            - link "Material source for DEMO-A-09":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-09&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-10: Harbour office Harbour office DEMO-A-10 Object source for DEMO-A-10 2032 Catalogue date source for DEMO-A-10 R. Brook photographer Authority not recorded Attribution source for DEMO-A-10 Not recorded Place source for DEMO-A-10 Glass negative Material source for DEMO-A-10"':
+          - 'cell "Select DEMO-A-10: Harbour office"':
+            - 'checkbox "Select DEMO-A-10: Harbour office"'
+          - cell "Harbour office DEMO-A-10 Object source for DEMO-A-10":
+            - generic: Harbour office
+            - generic: DEMO-A-10
+            - link "Object source for DEMO-A-10":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-10&field=title&from=collection"
+              - text: Source
+          - cell "2032 Catalogue date source for DEMO-A-10":
+            - text: "2032"
+            - link "Catalogue date source for DEMO-A-10":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-10&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "R. Brook photographer Authority not recorded Attribution source for DEMO-A-10":
+            - text: R. Brook
+            - generic: photographer
+            - generic: Authority not recorded
+            - link "Attribution source for DEMO-A-10":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-10&field=attributions&from=collection"
+              - text: Source
+          - cell "Not recorded Place source for DEMO-A-10":
+            - text: Not recorded
+            - link "Place source for DEMO-A-10":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-10&field=places&from=collection"
+              - text: Source
+          - cell "Glass negative Material source for DEMO-A-10":
+            - text: Glass negative
+            - link "Material source for DEMO-A-10":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-10&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-11: Temporary footbridge Temporary footbridge DEMO-A-11 Object source for DEMO-A-11 2032 Catalogue date source for DEMO-A-11 Not recorded Attribution source for DEMO-A-11 Not recorded Place source for DEMO-A-11 Not recorded Material source for DEMO-A-11"':
+          - 'cell "Select DEMO-A-11: Temporary footbridge"':
+            - 'checkbox "Select DEMO-A-11: Temporary footbridge"'
+          - cell "Temporary footbridge DEMO-A-11 Object source for DEMO-A-11":
+            - generic: Temporary footbridge
+            - generic: DEMO-A-11
+            - link "Object source for DEMO-A-11":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-11&field=title&from=collection"
+              - text: Source
+          - cell "2032 Catalogue date source for DEMO-A-11":
+            - text: "2032"
+            - link "Catalogue date source for DEMO-A-11":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-11&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "Not recorded Attribution source for DEMO-A-11":
+            - text: Not recorded
+            - link "Attribution source for DEMO-A-11":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-11&field=attributions&from=collection"
+              - text: Source
+          - cell "Not recorded Place source for DEMO-A-11":
+            - text: Not recorded
+            - link "Place source for DEMO-A-11":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-11&field=places&from=collection"
+              - text: Source
+          - cell "Not recorded Material source for DEMO-A-11":
+            - text: Not recorded
+            - link "Material source for DEMO-A-11":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-11&field=material&from=collection"
+              - text: Source
+        - 'row "Select DEMO-A-12: Harbour from the signal tower Harbour from the signal tower DEMO-A-12 Object source for DEMO-A-12 2032 Catalogue date source for DEMO-A-12 Not recorded Attribution source for DEMO-A-12 West Basin depicted Place source for DEMO-A-12 Paper print Material source for DEMO-A-12"':
+          - 'cell "Select DEMO-A-12: Harbour from the signal tower"':
+            - 'checkbox "Select DEMO-A-12: Harbour from the signal tower"'
+          - cell "Harbour from the signal tower DEMO-A-12 Object source for DEMO-A-12":
+            - generic: Harbour from the signal tower
+            - generic: DEMO-A-12
+            - link "Object source for DEMO-A-12":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-12&field=title&from=collection"
+              - text: Source
+          - cell "2032 Catalogue date source for DEMO-A-12":
+            - text: "2032"
+            - link "Catalogue date source for DEMO-A-12":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-12&field=catalogueDate&from=collection"
+              - text: Source
+          - cell "Not recorded Attribution source for DEMO-A-12":
+            - text: Not recorded
+            - link "Attribution source for DEMO-A-12":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-12&field=attributions&from=collection"
+              - text: Source
+          - cell "West Basin depicted Place source for DEMO-A-12":
+            - text: West Basin
+            - generic: depicted
+            - link "Place source for DEMO-A-12":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-12&field=places&from=collection"
+              - text: Source
+          - cell "Paper print Material source for DEMO-A-12":
+            - text: Paper print
+            - link "Material source for DEMO-A-12":
+              - /url: "#source?text=&attribution=&role=&id=demo-image-12&field=material&from=collection"
+              - text: Source
+  - generic "Retained selection":
+    - strong: 3 selected
+    - button "Remove DEMO-A-01"
+    - button "Remove DEMO-A-02"
+    - button "Remove DEMO-A-03"
+    - link "Compare selected records":
+      - /url: "#comparison?text=&attribution=&role="
+- contentinfo:
+  - link "Source & limits":
+    - /url: "#about?text=&attribution=&role="
+  - generic: Draft saved in this browser · export for a portable copy
+  - generic: No download requested

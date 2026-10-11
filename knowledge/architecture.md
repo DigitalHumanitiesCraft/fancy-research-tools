@@ -13,12 +13,12 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Architecture
 
-The starter separates domain validation, browser recovery and rendering for each research workflow. Comparison uses frozen catalogue records. Annotation supports explicit letter and forecast cases with exact source spans. The collection editor maintains its flat-record contract while starting with a real correspondence projection. The gallery links these workspaces and existing external applications without merging their state, runtime dependencies or credentials.
+The starter separates domain validation, browser recovery and rendering for each research workflow. Comparison uses frozen catalogue records. Annotation supports explicit letter and forecast cases with exact source spans. The collection editor maintains its flat-record contract while starting with a real correspondence projection. The gallery groups primary destinations by research task. Development guidance retains the earlier workspaces without merging their state, runtime dependencies or credentials.
 
 ## Core and adaptation boundaries
 
@@ -48,6 +48,7 @@ TypeScript supports explicit interfaces and compile-time checks. Native DOM cont
 | Overview and documentation | `docs/`, `scripts/build-docs.mjs`, `src/docs.ts` | Entry guidance and allowlisted contracts with source-relative links |
 | Tool gallery at `/tools/` | `tools/index.html`, `src/gallery.ts`, `src/gallery.css` | Explicit links to runnable workflows and the concept study |
 | Collection comparison at `/pilot/` | `src/workbench/`, `src/research/` | Catalogue comparison, field-source inspection and saved investigations |
+| Collection Explorer at `/photographs/` | `src/photographs/`, `data/photographs/` | Separate frozen photographic catalogue, query/selection, chronological inspection, image viewer and evidence export |
 | Instrument alternatives | `src/concepts/`, `src/research/` | Separate interactions sharing the same Met investigation contract |
 | Historical catalogue at `/baseline/` | `src/pilot/` | Read-only filtering, aggregation, selected detail and URL navigation |
 | Collection editor at `/tool/` | `src/domain/`, `src/app/` | Validated flat records, editable working copy and local collection recovery |
@@ -65,6 +66,16 @@ The historical catalogue at `/baseline/` reads its form through one control-to-f
 Offline importers produce the bundled snapshots. Domain validators accept or reject complete imported documents before rendering replaces the working state. Views derive from that validated state and their route controls. Edits validate a candidate before updating the working copy. Local persistence reports success or recovery failure, and explicit export creates a separate file while preserving the original input.
 
 The historical catalogue derives its graphics and exports from the same pure aggregation and performs no persistence writes. The editor uses `src/app/storage.ts`, Met investigations use `src/research/browser.ts`, and bulletin notebooks use `src/annotation/browser.ts`. Their schemas and storage keys remain independent, so opening a new tool does not migrate another tool's drafts.
+
+## Photograph reference boundary
+
+The photograph reference uses its own JSON-LD projection of an independently acquired open snapshot. Pure source/query operations and rendering remain separate. Its URL state carries view, filters and selection without reading or writing the older tools' recovery keys. Source image assets are local build inputs and resolved through Vite so repository-subpath deployment preserves their URLs.
+
+OpenSeadragon is installed from npm and bundled locally for direct image pan/zoom. A local JPEG image tile source supports this slice without claiming an IIIF service. Native controls provide keyboard operation and an ordinary image remains accessible as a fallback. [The OpenSeadragon image tile-source example](https://openseadragon.github.io/examples/tilesource-image/) documents that supported input. No museum API call is required in the runtime path. The build lockfile records the dependency version.
+
+## External-TEI example boundary
+
+The SZD package is a source-preserving adapter for one known TEI snapshot. Its prepared page references can be read by the edition template's frontend stage. It supplies no canonical transcription JSON for that template's correction server. The public build copies only the explicit downloadable package assets; raw source and verification details remain in the repository. External applications keep their own environments and contracts. The [data contract](data.md#szd-edition-example) owns source, rights and production status.
 
 ## Investigation workbench and concepts
 
@@ -92,11 +103,11 @@ The [maintenance guide](../docs/customizing.md) requires a recoverable source st
 
 The separate recovery controller preserves imported bytes on an unchanged save, rejects edits made during asynchronous file reading, protects corrupt stored copies and blocks persistence after a detected external change. It stores the research question and saved annotations. Pending annotation forms remain in memory and require save or discard before import/export. Navigation guards and a beforeunload warning protect that pending work, but no crash recovery of the unfinished form is provided.
 
-`scripts/import-annotation-data.mjs` extracts the retained bulletin HTML and checks raw and rights-page hashes. `scripts/check-annotation-data.mjs` repeats extraction in temporary storage and compares bytes. `data/hsa-letter/generate.mjs` converts the retained letter text to LF and supplies fixed source-role and rights metadata recorded from the upstream notice. Its check reproduces `sources.json` from the letter bytes and configured metadata without reading the notice. `scripts/import-schoenbach-data.mjs` creates the editor's descriptive collection and evidence from frozen CMIF. `npm run check:data` verifies all four derivations within these bounds. No new runtime source request is required.
+`scripts/import-annotation-data.mjs` extracts the retained bulletin HTML and checks raw and rights-page hashes. `scripts/check-annotation-data.mjs` repeats extraction in temporary storage and compares bytes. `data/hsa-letter/generate.mjs` converts the retained letter text to LF and supplies fixed source-role and rights metadata recorded from the upstream notice. Its check reproduces `sources.json` from the letter bytes and configured metadata without reading the notice. `scripts/import-schoenbach-data.mjs` creates the editor's descriptive collection and evidence from frozen CMIF. `npm run check:data` verifies the configured source derivations within these bounds; the package scripts define the current gate inventory. No new runtime source request is required.
 
 ## Documentation and gallery
 
-The overview links the tool gallery and development guidance. The gallery provides explicit application links, leaving readable descriptions selectable. Documentation navigation groups guides and reference documents and generates section links from published headings. These pages guide entry without imposing a shared working interface on the tools.
+The overview leads with Collection Explorer and links the tool gallery and development guidance. The gallery catalog leads with Collection Explorer and groups the remaining entries by capture, analysis, correction and edition building. Existing applications and guided setup remain distinct. Technical examples are linked from development guidance, with their original runtimes intact. Previous task-group fragments remain as aliases. The gallery provides explicit application links, leaving readable descriptions selectable. Documentation navigation groups guides and reference documents and generates section links from published headings. These pages guide entry without imposing a shared working interface on the tools.
 
 The documentation generator and Vite read the same explicit `scripts/docs-pages.json` manifest. Local links resolve from Markdown locations into generated routes, including repository subpaths. Markdown targets require an allowlisted destination, heading IDs are unique, and published fragments are checked before output. `scripts/build-gallery.mjs` generates the gallery from `data/tools/catalog.json`. Both generators run before development and production builds. Tool entrypoints remain handwritten. The gallery's local screenshot assets add no third-party runtime request. External tools load only after ordinary navigation. The documentation footer reads the package version.
 ## Security

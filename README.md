@@ -2,17 +2,13 @@
 
 Fancy Research Tools is a documented and tested foundation for developing research software with Large Language Models (LLMs) and coding agents. Its core connects inspectable code, architecture knowledge, explicit adaptation points and quality checks. Humans and agents can use it to develop project-specific research workflows and interfaces.
 
-The unreleased browser starter includes public guides, maintained specifications and runnable examples. Its tools compare museum catalogue records, edit real correspondence metadata and annotate a historical letter or archived forecast discussions. The gallery also connects existing research tools through their own public interfaces. The [current plan](knowledge/plan.md#resume-in-the-next-session) distinguishes implemented work, engineering evidence and remaining researcher acceptance.
+The unreleased browser starter includes public guides, maintained specifications and runnable examples. Its first reference tool is Collection Explorer, using forty openly licensed Cleveland Museum of Art photographs. The gallery organizes further work by capture, analysis, correction and edition building. Existing tools retain their own interfaces and setup requirements. Earlier comparison, metadata and annotation implementations remain available as technical examples in the development guide. The [current plan](knowledge/plan.md#resume-in-the-next-session) distinguishes implemented work, engineering evidence and remaining researcher acceptance.
 
 ## Start
 
-The start page leads to the tool gallery and documentation. Gallery categories follow research activities. Each entry names its material and opens either a bundled workspace or an existing external tool.
+Start with Collection Explorer at `photographs/`: search historical photographs, follow their qualified catalogue chronology, inspect images and retain up to four records for comparison and evidence export. Its [source and rights record](data/photographs/README.md) documents the independent open sample. It has no map because the source does not establish suitable geographic relations.
 
-Compare collection records at `pilot/` supports catalogue search, source comparison, notes and investigation export/reopen. Each comparison value links to an addressable source view with its original fields, mapping and technical checks. [Source provenance](data/met-instruments/README.md) defines their scope. New exports include field evidence in version 2; exact version 1 files remain readable.
-
-Edit collection records at `tool/` starts with five [Schönbach correspondence descriptions](data/schoenbach/README.md) already used by CorrespExplorer. The original CMIF values remain visible beside working metadata. Existing schema version 1 drafts and imports keep their data and storage keys. The collection is a documented descriptive projection, and exports do not recreate the full TEI source.
-
-Annotate a letter at `letters/` uses the [Benndorf letter transcription supplied with teiCrafter](data/hsa-letter/README.md). Researchers anchor quotations and record interpretations, creators and source-fit reviews separately from the historical author and modern editor. Annotate forecast discussions at `annotations/` retains the two frozen NOAA/NHC Milton discussions from October 2024 and their existing notebook format. These are archived research sources. Each annotation case keeps its own sources, categories and local draft.
+The gallery leads with the runnable Collection Explorer. Its other task entries distinguish existing applications from guided local setup. [Getting started](docs/getting-started.md) covers teiCrafter, correspondence analysis, bibliographic correction and the SZD edition example. The [technical examples](docs/getting-started.md#technical-examples) retain the earlier catalogue, metadata and annotation routes, draft formats and reproducible test cases.
 
 ```sh
 npm ci

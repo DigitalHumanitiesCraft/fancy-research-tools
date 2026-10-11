@@ -13,12 +13,37 @@ template:
 status: active
 language: en
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Journal
 
 ## Entries
+
+### 2026-10-11 organized examples by research task
+
+- Source: the operator rejected the mixture of local workflow studies and external tools, confirmed the complementary research-use and agent-assisted-development goals, and commissioned implementation, documentation review, commit and push.
+- Targets: gallery catalog, public guides, project/design/data/specification/architecture contracts, current plan and local research UI procedures.
+- Result: retained Collection Explorer first, moved earlier local studies to development guidance and connected capture, analysis, correction and edition tasks to honest application or setup destinations. Prepared a source-bound SZD case without claiming universal interchange or human verification. Local skills now recover settled decisions before asking and inspect redundancy across rendered components and code owners.
+- Verification: the current dated Testing section records executed checks and remaining limitations. Historical run records retain their original scope. A branch push does not establish deployment or human acceptance.
+
+### 2026-10-11 made Collection Explorer the first reference
+
+- Source: operator request to disentangle the examples and put the generalized collection workflow first.
+- Target: gallery roles, application name, overview, walkthrough order and canonical UI decisions.
+- Result: Collection Explorer leads with the independent open photograph sample. Other local workflows, external applications and design studies have separate roles. Existing routes and saved-work contracts remain intact. Review decisions now state task conditions and counterexamples, including inclusion policies and cross-component redundancy. Independent reviews found and corrected wording drift. Operator design acceptance remains open.
+
+### 2026-10-11 implemented portable UI practice and an independent photograph reference
+
+- Source: operator approval of the adaptable starter, named presentation profile and later additional-person observation, followed by the implementation instruction.
+- Target: local UI skills, portable patterns, open-source data contract, Photograph study, gallery, regression checks and maintained project knowledge.
+- Result: built a complete source-to-comparison-and-export slice using independent CC0 museum photographs. Source review corrected image dimensions without changing original bytes. Browser and independent code reviews corrected ambiguous selection, redundant controls, route-reset and focus defects. Fresh synthetic collection and annotation trials retained both useful outcomes and failures; a guided repair checks transfer of the clarified presentation profile. The Vault concept links this method and its private-material boundary without copying technical run metrics. Human review and publication remain separate. Testing holds the exact evidence and limitations.
+
+### 2026-10-11 integrated operator decisions on reuse and evaluation
+
+- Source: the discussion of reusable UI knowledge, existing skills and a separate open collection example, followed by the operator's confirmation of a directly adaptable starter, a named and adaptable presentation profile, and later observation of an additional person with a real research question.
+- Target: purpose and research observation in Project, the default profile in Design, the public adaptation guide and bounded future work in Plan.
+- Result: recorded the three decisions and retained the proposed follow-on work in Plan. Preserved pending acceptance of the current interfaces and the boundary around private customer material. Implementation, participant recruitment and publication remain separate from this documentation change.
 
 ### 2026-10-10 corrected reflow exposed by Linux CI
 
@@ -40,7 +65,7 @@ updated: 2026-10-10
 
 ### 2026-10-10 revised entry and workspaces using existing projects
 
-- Source: the operator requested real examples from existing work, including ACTIVE-WORK, VetMed AI Academy, CorrespExplorer, teiCrafter, coOCR/HTR, the Agentic Edition Pipeline and the DHCraft portfolio. Read-only project research distinguished published tools, public reusable material, private workflows and templates.
+- Source: the operator requested real examples from existing work, including internal coordination documents, an institutional workflow, CorrespExplorer, teiCrafter, coOCR/HTR, the Agentic Edition Pipeline and the DHCraft portfolio. Read-only project research distinguished published tools, public reusable material, private workflows and templates.
 - Target: task categories and integration in Design, material and rights in Data, case isolation and projection in Specification and Architecture, current guides and verification.
 - Result: replaced the development-history gallery with task-based entries to existing tools and three local working capabilities. Added a real Benndorf letter to the shared annotation engine and real CC0 Schönbach correspondence as the editor default. Revised both annotation surfaces, catalogue comparison and metadata editing; field provenance now has an addressable reading view. Existing sources, draft formats and recovery paths remain supported. External applications are linked at their existing hosts, with actual previews and explicit setup access for the pipeline. The private Vault and institutional datasets remain unchanged. The retained project-tools run records software, native zoom, source preservation and separate agent review. Operator design acceptance remains open.
 

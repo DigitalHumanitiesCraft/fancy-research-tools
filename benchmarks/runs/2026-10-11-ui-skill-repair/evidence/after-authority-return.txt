@@ -1,0 +1,116 @@
+Browser tab: 1, Title: "Compare catalogue records", URL: "http://127.0.0.1:4193/candidate/#comparison?text=&attribution=Northfield+workshop&role=photographer".
+1 AXWebArea Compare catalogue records, URL: 127.0.0.1:4193/candidate/#comparison?text=&attribution=Northfield+workshop&role=photographer
+	2 link Description: Skip to workspace, Value: 127.0.0.1:4193/candidate/#main
+	3 container
+		4 heading Compare catalogue records, Value: 1
+			5 text Compare catalogue records
+		6 text Synthetic catalogue
+		7 container Workspace
+			8 link Description: Collection, Value: 127.0.0.1:4193/candidate/#collection?text=&attribution=Northfield+workshop&role=photographer, ID: collection-link
+			9 link Description: Comparison (3), Value: 127.0.0.1:4193/candidate/#comparison?text=&attribution=Northfield+workshop&role=photographer, ID: comparison-link
+	185 container main
+		186 heading Comparison, Value: 2, ID: view-heading
+			187 text Comparison
+		188 container Selected source records; scroll horizontally to compare all columns
+			189 table
+				190 row
+					191 cell
+						192 text Catalogue field
+					193 cell
+						194 text Construction of the north pier
+						195 text DEMO-A-01
+						196 button Remove from comparison
+					197 cell
+						198 text Workers beside the unfinished north pier
+						199 text DEMO-A-02
+						200 button Remove from comparison
+					201 cell
+						202 text View across the construction basin and temporary railway at the western end of the harbour
+						203 text DEMO-A-03
+						204 button Remove from comparison
+				205 row
+					206 cell
+						207 text Catalogue date
+					208 cell
+						209 text before 2031
+						210 link Description: Catalogue date source for DEMO-A-01, ID: comparison-demo-image-01-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-01&field=catalogueDate&from=comparison
+					211 cell
+						212 text between 2030 and 2034
+						213 link Description: Catalogue date source for DEMO-A-02, ID: comparison-demo-image-02-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-02&field=catalogueDate&from=comparison
+					214 cell
+						215 text circa 2032
+						216 link Description: Catalogue date source for DEMO-A-03, ID: comparison-demo-image-03-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-03&field=catalogueDate&from=comparison
+				217 row
+					218 cell
+						219 text Attribution
+					220 cell
+						221 text attributed to 
+						222 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-01, ID: comparison-demo-image-01-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-01&field=attributions&from=comparison&authority=0
+						223 text photographer
+						224 link Description: Attribution source for DEMO-A-01, ID: comparison-demo-image-01-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-01&field=attributions&from=comparison
+					225 cell
+						226 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-02, ID: comparison-demo-image-02-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-02&field=attributions&from=comparison&authority=0
+						227 text photographer
+						228 link Description: Attribution source for DEMO-A-02, ID: comparison-demo-image-02-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-02&field=attributions&from=comparison
+					229 cell
+						230 text possibly  Northfield workshop photographer Authority not recorded
+						231 link Description: Attribution source for DEMO-A-03, ID: comparison-demo-image-03-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-03&field=attributions&from=comparison
+				232 row
+					233 cell
+						234 text Place
+					235 cell
+						236 text North Harbour depicted
+						237 link Description: Place source for DEMO-A-01, ID: comparison-demo-image-01-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-01&field=places&from=comparison
+					238 cell
+						239 text East Harbour holding institution
+						240 link Description: Place source for DEMO-A-02, ID: comparison-demo-image-02-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-02&field=places&from=comparison
+					241 cell
+						242 text North Harbour
+						243 button (collapsed) Description: LLM-produced value, Secondary Actions: Expand
+						244 text depicted
+						245 link Description: Place source for DEMO-A-03, ID: comparison-demo-image-03-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-03&field=places&from=comparison
+				246 row
+					247 cell
+						248 text Material
+					249 cell
+						250 text Paper print
+						251 link Description: Material source for DEMO-A-01, ID: comparison-demo-image-01-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-01&field=material&from=comparison
+					252 cell
+						253 text Glass negative
+						254 link Description: Material source for DEMO-A-02, ID: comparison-demo-image-02-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-02&field=material&from=comparison
+					255 cell
+						256 text Not recorded
+						257 link Description: Material source for DEMO-A-03, ID: comparison-demo-image-03-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-03&field=material&from=comparison
+				258 row
+					259 cell
+						260 text Catalogue note
+					261 cell
+						262 text The date expression is transcribed from the demonstration register.
+						263 link Description: Catalogue note source for DEMO-A-01, ID: comparison-demo-image-01-catalogueNote, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-01&field=catalogueNote&from=comparison
+					264 cell
+						265 text The depicted location is not recorded.
+						266 link Description: Catalogue note source for DEMO-A-02, ID: comparison-demo-image-02-catalogueNote, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-02&field=catalogueNote&from=comparison
+					267 cell
+						268 text An image edge is missing.
+						269 link Description: Catalogue note source for DEMO-A-03, ID: comparison-demo-image-03-catalogueNote, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-03&field=catalogueNote&from=comparison
+		270 link Description: Revise selection, Value: 127.0.0.1:4193/candidate/#collection?text=&attribution=Northfield+workshop&role=photographer
+		271 container Research notes
+			272 heading Research notes, Value: 2, ID: writing-heading
+				273 text Research notes
+			274 container
+				275 text Unresolved question
+				276 text entry area (settable) Unresolved question Required for download. Your question stays separate from catalogue statements., ID: question, Value: Does the temporary railway connect the three waterside construction views despite uncertain attribution and dates?
+				277 text Required for download. Your question stays separate from catalogue statements.
+			278 container
+				279 text Observation (optional)
+				280 text entry area (settable) Observation (optional) Your interpretation; no author identity or review is inferred., ID: observation, Value: The depicted location is missing for DEMO-A-02; the DEMO-A-03 place is LLM-extracted and has no recorded review.
+				281 text Your interpretation; no author identity or review is inferred.
+			282 button Download question + selected records, ID: download
+			283 button Reopen investigation JSON, ID: reopen-trigger
+	184 text Copied authority identifier for Northfield workshop.
+	139 container
+		140 link Description: Source & limits, Value: 127.0.0.1:4193/candidate/#about?text=&attribution=Northfield+workshop&role=photographer, ID: about-link
+		141 text Draft restored from this browser. Export for a portable copy.
+		142 text No download requested
+
+The focused UI element is 222 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-01, ID: comparison-demo-image-01-authority-0, URL: 127.0.0.1:4193/candidate/#source?text=&attribution=Northfield+workshop&role=photographer&id=demo-image-01&field=attributions&from=comparison&authority=0

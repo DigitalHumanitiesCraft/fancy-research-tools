@@ -1,0 +1,115 @@
+Browser tab: 1, Title: "Compare catalogue records", URL: "http://127.0.0.1:4193/candidate/#comparison?text=&attribution=&role=".
+1 AXWebArea Compare catalogue records, URL: 127.0.0.1:4193/candidate/#comparison?text=&attribution=&role=
+	2 link Description: Skip to workspace, Value: 127.0.0.1:4193/candidate/#main
+	3 container
+		4 heading Compare catalogue records, Value: 1
+			5 text Compare catalogue records
+		6 text Synthetic catalogue
+		7 container Workspace
+			8 link Description: Collection, Value: 127.0.0.1:4193/candidate/#collection?text=&attribution=&role=, ID: collection-link
+			9 link Description: Comparison (3), Value: 127.0.0.1:4193/candidate/#comparison?text=&attribution=&role=, ID: comparison-link
+	10 container main
+		11 heading Comparison, Value: 2, ID: view-heading
+			12 text Comparison
+		13 container Selected source records; scroll horizontally to compare all columns
+			14 table
+				15 row
+					16 cell
+						17 text Catalogue field
+					18 cell
+						19 text Construction of the north pier
+						20 text DEMO-A-01
+						21 button Remove from comparison
+					22 cell
+						23 text View across the construction basin and temporary railway at the western end of the harbour
+						24 text DEMO-A-03
+						25 button Remove from comparison
+					26 cell
+						27 text Workers beside the unfinished north pier
+						28 text DEMO-A-02
+						29 button Remove from comparison
+				30 row
+					31 cell
+						32 text Catalogue date
+					33 cell
+						34 text before 2031
+						35 link Description: Catalogue date source for DEMO-A-01, ID: comparison-demo-image-01-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=catalogueDate&from=comparison
+					36 cell
+						37 text circa 2032
+						38 link Description: Catalogue date source for DEMO-A-03, ID: comparison-demo-image-03-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=catalogueDate&from=comparison
+					39 cell
+						40 text between 2030 and 2034
+						41 link Description: Catalogue date source for DEMO-A-02, ID: comparison-demo-image-02-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=catalogueDate&from=comparison
+				42 row
+					43 cell
+						44 text Attribution
+					45 cell
+						46 text attributed to 
+						47 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-01, ID: comparison-demo-image-01-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=attributions&from=comparison&authority=0
+						48 text photographer
+						49 link Description: Attribution source for DEMO-A-01, ID: comparison-demo-image-01-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=attributions&from=comparison
+					50 cell
+						51 text possibly  Northfield workshop photographer Authority not recorded
+						52 link Description: Attribution source for DEMO-A-03, ID: comparison-demo-image-03-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=attributions&from=comparison
+					53 cell
+						54 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-02, ID: comparison-demo-image-02-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=attributions&from=comparison&authority=0
+						55 text photographer
+						56 link Description: Attribution source for DEMO-A-02, ID: comparison-demo-image-02-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=attributions&from=comparison
+				57 row
+					58 cell
+						59 text Place
+					60 cell
+						61 text North Harbour depicted
+						62 link Description: Place source for DEMO-A-01, ID: comparison-demo-image-01-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=places&from=comparison
+					63 cell
+						64 text North Harbour
+						65 button (collapsed) Description: LLM-produced value, Secondary Actions: Expand
+						66 text depicted
+						67 link Description: Place source for DEMO-A-03, ID: comparison-demo-image-03-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=places&from=comparison
+					68 cell
+						69 text East Harbour holding institution
+						70 link Description: Place source for DEMO-A-02, ID: comparison-demo-image-02-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=places&from=comparison
+				71 row
+					72 cell
+						73 text Material
+					74 cell
+						75 text Paper print
+						76 link Description: Material source for DEMO-A-01, ID: comparison-demo-image-01-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=material&from=comparison
+					77 cell
+						78 text Not recorded
+						79 link Description: Material source for DEMO-A-03, ID: comparison-demo-image-03-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=material&from=comparison
+					80 cell
+						81 text Glass negative
+						82 link Description: Material source for DEMO-A-02, ID: comparison-demo-image-02-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=material&from=comparison
+				83 row
+					84 cell
+						85 text Catalogue note
+					86 cell
+						87 text The date expression is transcribed from the demonstration register.
+						88 link Description: Catalogue note source for DEMO-A-01, ID: comparison-demo-image-01-catalogueNote, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=catalogueNote&from=comparison
+					89 cell
+						90 text An image edge is missing.
+						91 link Description: Catalogue note source for DEMO-A-03, ID: comparison-demo-image-03-catalogueNote, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=catalogueNote&from=comparison
+					92 cell
+						93 text The depicted location is not recorded.
+						94 link Description: Catalogue note source for DEMO-A-02, ID: comparison-demo-image-02-catalogueNote, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=catalogueNote&from=comparison
+		95 link Description: Revise selection, Value: 127.0.0.1:4193/candidate/#collection?text=&attribution=&role=
+		96 container Research notes
+			97 heading Research notes, Value: 2, ID: writing-heading
+				98 text Research notes
+			99 container
+				100 text Unresolved question
+				101 text entry area (settable) Unresolved question Required for download. Your question stays separate from catalogue statements., ID: question, Value: Does the temporary railway connect the three waterside construction views despite uncertain attribution and dates?
+				102 text Required for download. Your question stays separate from catalogue statements.
+			103 container
+				104 text Observation (optional)
+				105 text entry area (settable) Observation (optional) Your interpretation; no author identity or review is inferred., ID: observation, Value: The depicted location is missing for DEMO-A-02; the DEMO-A-03 place is LLM-extracted and has no recorded review.
+				106 text Your interpretation; no author identity or review is inferred.
+			107 button Download question + selected records, ID: download
+			108 button Reopen investigation JSON, ID: reopen-trigger
+	109 container
+		110 link Description: Source & limits, Value: 127.0.0.1:4193/candidate/#about?text=&attribution=&role=, ID: about-link
+		111 text Draft restored from this browser. Export for a portable copy.
+		112 text No download requested
+
+The focused UI element is 1 AXWebArea Compare catalogue records, URL: 127.0.0.1:4193/candidate/#comparison?text=&attribution=&role=

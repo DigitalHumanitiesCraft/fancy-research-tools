@@ -1,0 +1,136 @@
+{
+  "recordedAt": "2026-10-11T14:03:36.404Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": "app.js",
+      "bytes": 14592,
+      "sha256": "4acab5214aeb608449c77672ce3f65539c5df601f8d9bada26049ab2023520de"
+    },
+    {
+      "path": "check-export.mjs",
+      "bytes": 1673,
+      "sha256": "00e5b2d369833ea7da41e6fd2dd562a136c4b8d405cabb68800f6e90416edf88"
+    },
+    {
+      "path": "check.mjs",
+      "bytes": 5002,
+      "sha256": "095aa9c104a3aac2cdccc3bda11e3cc9b59224e68a3d3317abfe3de8e75493c5"
+    },
+    {
+      "path": "decisions.md",
+      "bytes": 9016,
+      "sha256": "060c02ceb560769439881e5feb79cc4fd5152bcafdf8203a1465e07121764dfc"
+    },
+    {
+      "path": "evidence/01-entry.jpg",
+      "bytes": 104579,
+      "sha256": "9a931449349bcb9463d0891856f3f78bb1751dd1f44cde4311a05152c1f6f4fa"
+    },
+    {
+      "path": "evidence/02-invalid-import.txt",
+      "bytes": 972,
+      "sha256": "067a0ca5c4c1c88c3a16f86f6688fb5c0e37b3d6a227a8396a156ab4d3348406"
+    },
+    {
+      "path": "evidence/03-empty.txt",
+      "bytes": 2460,
+      "sha256": "769a6c5fde95b28eded50a260eeee6c4aca96a29cdbb2ef4a594394495fbd346"
+    },
+    {
+      "path": "evidence/04-desktop.jpg",
+      "bytes": 176368,
+      "sha256": "b4851f2b323e422dd34235917a8e358c3289728bb3dff314e7739f6be97d64ad"
+    },
+    {
+      "path": "evidence/05-narrow.jpg",
+      "bytes": 145362,
+      "sha256": "77cc5251dfc47150a4dfdb303390eea6db5b649e3dd105b29957480d80310c4a"
+    },
+    {
+      "path": "evidence/06-final-state.txt",
+      "bytes": 4055,
+      "sha256": "b0df375147d064d9a724f807d046c401cff52fb23eab7e0274f75f65342e2aca"
+    },
+    {
+      "path": "evidence/07-final-desktop.jpg",
+      "bytes": 153112,
+      "sha256": "cfaa4b7f0de00df9caff61f0bc0b6397f0914515e9052603b3d7f3bee3854135"
+    },
+    {
+      "path": "evidence/08-keyboard-save.txt",
+      "bytes": 4055,
+      "sha256": "b0df375147d064d9a724f807d046c401cff52fb23eab7e0274f75f65342e2aca"
+    },
+    {
+      "path": "evidence/downloaded-notebook.json",
+      "bytes": 1247,
+      "sha256": "5184ea56ddc69664994c21df6963df11ec82c49fd4d2a9e2cfb526a797378fe6"
+    },
+    {
+      "path": "evidence/export-check.txt",
+      "bytes": 184,
+      "sha256": "73556a908d60f04042df94fbb8a50632491ba18b8ba768727809ea1573e97857"
+    },
+    {
+      "path": "evidence/model-checks-initial.txt",
+      "bytes": 777,
+      "sha256": "e9ffbf27544a29ddd70dec4acc1076d869128e87f65f1b46d18f1162470e1f3e"
+    },
+    {
+      "path": "evidence/model-checks.json",
+      "bytes": 1305,
+      "sha256": "48640aaa8526c87866afc780fe77084fb034d118e0c6213561ccca791481dd54"
+    },
+    {
+      "path": "evidence/reopened-notebook.json",
+      "bytes": 1247,
+      "sha256": "5184ea56ddc69664994c21df6963df11ec82c49fd4d2a9e2cfb526a797378fe6"
+    },
+    {
+      "path": "evidence/source-manifest.json",
+      "bytes": 1227,
+      "sha256": "405b7300b7ca0689f365222fc216ba71db80aeecbe4e19a66eeb0eadaf4e5ce4"
+    },
+    {
+      "path": "evidence/walkthrough.md",
+      "bytes": 9366,
+      "sha256": "12c8bfc21dff7d942b0908e2b9ab62c73b0bf309a610a9364b6c4f9759543aa2"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4159,
+      "sha256": "33dd550aba55e8233194653fd7240193b2d525db6edff44203958c9ebe389cd2"
+    },
+    {
+      "path": "model.mjs",
+      "bytes": 3241,
+      "sha256": "fe9d246ed2e899fa9ff2c0dbc654023fd5079d6db801f39f036db7b153817eff"
+    },
+    {
+      "path": "serve.mjs",
+      "bytes": 1085,
+      "sha256": "e28ea2dd8c8e36f7f98c560cf6ba99050c35063361388d606688c029977b75b1"
+    },
+    {
+      "path": "style.css",
+      "bytes": 5600,
+      "sha256": "0179f85189748d4712c404456a3c2138c206a9a5baf8691743a65a0a74bdd59a"
+    },
+    {
+      "path": "task/existing-notebook.json",
+      "bytes": 546,
+      "sha256": "8fc463fdd39d5f680944ca6a39406fc18baddde9c98dcdccc8f84be3c3e1a147"
+    },
+    {
+      "path": "task/input.json",
+      "bytes": 1986,
+      "sha256": "d48ef37e9dd08cd17d12e7ee12dadc31ded23ecabdcff76b156af1beb973fb24"
+    },
+    {
+      "path": "task/task.md",
+      "bytes": 1626,
+      "sha256": "c0ce5b5985ef2edf38ece24303e86cc292786d7e87a42df86b5bb3e5ae545129"
+    }
+  ]
+}

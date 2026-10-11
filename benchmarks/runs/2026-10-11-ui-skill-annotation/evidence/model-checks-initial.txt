@@ -1,0 +1,21 @@
+PASS Preserved input bytes SHA-256
+PASS Existing notebook and review survive serialize/reopen
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+120 !== 118
+
+    at file:///<LOCAL_USER>/AppData/Local/Temp/frt-ui-probes-5ba6ac4436aa447e993ae834100381e4/annotation/check.mjs:20:10
+    at check (file:///<LOCAL_USER>/AppData/Local/Temp/frt-ui-probes-5ba6ac4436aa447e993ae834100381e4/annotation/check.mjs:9:28)
+    at file:///<LOCAL_USER>/AppData/Local/Temp/frt-ui-probes-5ba6ac4436aa447e993ae834100381e4/annotation/check.mjs:16:1 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 120,
+  expected: 118,
+  operator: 'strictEqual'
+}
+
+Node.js v22.14.0

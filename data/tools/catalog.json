@@ -1,130 +1,126 @@
 {
-  "reviewedOn": "2026-10-10",
+  "reviewedOn": "2026-10-11",
   "portfolioSource": "https://dhcraft.org/fancy-research-tools/",
   "groups": [
     {
-      "id": "transcribe-and-annotate",
-      "title": "Transcribe and annotate",
+      "id": "explore-collections",
+      "title": "Explore collections",
+      "aliases": [
+        "reference-tool",
+        "explore-and-compare"
+      ],
       "tools": [
         {
-          "id": "coocr",
-          "name": "coOCR/HTR",
-          "action": "Transcribe a document",
-          "href": "https://dhcraft.org/co-ocr-htr/",
-          "material": "Page images and PAGE XML",
-          "location": "dhcraft.org",
-          "preview": "coocr.png",
-          "alt": "coOCR/HTR with the Antidotarium page image beside its transcription",
-          "repository": "https://github.com/DigitalHumanitiesCraft/co-ocr-htr",
-          "access": "Public research preview. Transcription through an LLM requires a configured provider."
-        },
-        {
-          "id": "annotations",
-          "name": "Source annotation",
-          "action": "Annotate a letter",
-          "href": "../letters/",
-          "material": "Benndorf to Schuchardt, 1879",
-          "location": "Local workspace",
-          "preview": "letter-annotation.png",
-          "alt": "Benndorf's letter beside an exact quotation and annotation controls",
+          "id": "photographs",
+          "name": "Collection Explorer",
+          "action": "Open Collection Explorer",
+          "href": "../photographs/",
+          "material": "Cleveland Museum of Art, photographs",
+          "location": "",
+          "preview": "collection-explorer.png",
+          "alt": "Historical photographs with catalogue dates, qualified attributions and comparison controls",
           "repository": "https://github.com/DigitalHumanitiesCraft/fancy-research-tools",
-          "access": "Frozen public-domain letter text. The edition's apparatus and images are excluded.",
-          "related": { "label": "Annotate historical forecasts", "href": "../annotations/" }
-        },
-        {
-          "id": "szd",
-          "name": "SZD-HTR",
-          "action": "Inspect transcriptions",
-          "href": "https://chpollin.github.io/szd-htr-ocr-pipeline/",
-          "material": "Stefan Zweig Digital",
-          "location": "chpollin.github.io",
-          "preview": "szd-htr.png",
-          "alt": "SZD-HTR catalogue with manuscript titles, identifiers and recorded review states",
-          "repository": "https://github.com/chpollin/szd-htr-ocr-pipeline",
-          "access": "Public experimental viewer. Local editorial services are separate from the hosted viewer."
+          "access": "Forty individually checked CC0 photographs and metadata. Local web-size images, catalogue chronology and evidence export. A purposive sample, not a representative collection.",
+          "related": {
+            "label": "Adapt this example",
+            "href": "../guides/customizing.html#adapt-the-interface"
+          }
         }
       ]
     },
     {
-      "id": "edit-texts-and-metadata",
-      "title": "Edit texts and metadata",
+      "id": "capture-and-encode",
+      "title": "Capture and encode",
+      "aliases": [
+        "transcribe-and-annotate",
+        "edit-texts-and-metadata"
+      ],
       "tools": [
         {
           "id": "teicrafter",
           "name": "teiCrafter",
-          "action": "Edit TEI XML",
-          "href": "https://dhcraft.org/teiCrafter/editor.html",
-          "material": "TEI XML; preview from Stefan Zweig Digital",
-          "location": "dhcraft.org",
+          "action": "Work through the SZD example",
+          "href": "../guides/getting-started.html#capture-szd",
+          "material": "Stefan Zweig Digital, a letter and its transcription",
+          "location": "",
           "preview": "teicrafter.png",
           "alt": "teiCrafter showing a Stefan Zweig letter transcription beside its facsimile",
           "repository": "https://github.com/DigitalHumanitiesCraft/teiCrafter",
           "access": "Public research preview. Screenshot follows loading the published SZD XML file; the launch opens the editor. Its deployed version differs from local development.",
-          "related": { "label": "SZD example (TEI XML)", "href": "https://dhcraft.org/teiCrafter/data/editor/szd/o_szd.1079.tei.xml" }
-        },
-        {
-          "id": "metadata",
-          "name": "Collection metadata",
-          "action": "Edit letter metadata",
-          "href": "../tool/",
-          "material": "Schönbach correspondence, CMIF",
-          "location": "Local workspace",
-          "preview": "collection-metadata.png",
-          "alt": "Schönbach correspondence records beside editable metadata and their original source values",
-          "repository": "https://github.com/DigitalHumanitiesCraft/fancy-research-tools",
-          "access": "CC0 correspondence metadata, projected into the existing collection JSON format. Not a TEI round-trip editor."
+          "related": {
+            "label": "Open teiCrafter",
+            "href": "https://digitalhumanitiescraft.github.io/teiCrafter/"
+          }
         }
       ]
     },
     {
-      "id": "explore-and-compare",
-      "title": "Explore and compare",
+      "id": "analyse-correspondence",
+      "title": "Analyse correspondence",
+      "aliases": [
+        "external-tools"
+      ],
       "tools": [
         {
           "id": "corresp",
           "name": "CorrespExplorer",
-          "action": "Explore correspondence",
+          "action": "Open CorrespExplorer",
           "href": "https://dhcraft.org/CorrespExplorer/",
           "material": "Hugo Schuchardt Archiv, CMIF",
           "location": "dhcraft.org",
           "preview": "correspondence.png",
-          "alt": "CorrespExplorer showing the Hugo Schuchardt correspondence in a loaded analysis view",
+          "alt": "CorrespExplorer dataset selection, including the Hugo Schuchardt Archiv example",
           "repository": "https://github.com/DigitalHumanitiesCraft/CorrespExplorer",
-          "access": "Public demo. Choose Hugo Schuchardt Archiv to open the real correspondence example."
-        },
+          "access": "Public demo. Choose Hugo Schuchardt Archiv to open the real correspondence example.",
+          "related": {
+            "label": "Follow the analysis example",
+            "href": "../guides/getting-started.html#analyse-correspondence"
+          }
+        }
+      ]
+    },
+    {
+      "id": "review-and-correct",
+      "title": "Review and correct",
+      "tools": [
         {
           "id": "bibliography",
-          "name": "Stefan Zweig Bibliography",
-          "action": "Search the bibliography",
-          "href": "https://chpollin.github.io/klawiter-rescue/#browse",
-          "material": "Klawiter bibliography",
-          "location": "chpollin.github.io",
+          "name": "Bibliographic curation",
+          "action": "Set up the correction example",
+          "href": "../guides/getting-started.html#review-bibliography",
+          "material": "Klawiter, Stefan Zweig bibliography",
+          "location": "Local correction workflow",
           "preview": "bibliography.png",
+          "previewCaption": "Published reading interface",
           "alt": "Stefan Zweig Bibliography showing publication records and source provenance",
           "repository": "https://github.com/chpollin/klawiter-rescue",
-          "access": "Public rescued bibliography. Extraction and enrichment labels do not imply expert verification."
-        },
+          "access": "Public rescued bibliography. Extraction and enrichment labels do not imply expert verification.",
+          "related": {
+            "label": "Browse the published bibliography",
+            "href": "https://chpollin.github.io/klawiter-rescue/#browse"
+          }
+        }
+      ]
+    },
+    {
+      "id": "build-an-edition",
+      "title": "Build an edition",
+      "tools": [
         {
-          "id": "comparison",
-          "name": "Collection comparison",
-          "action": "Compare catalogue records",
-          "href": "../pilot/",
-          "material": "The Met, musical instruments",
-          "location": "Local workspace",
-          "preview": "collection-comparison.png",
-          "alt": "Met catalogue records with selection controls for comparison",
-          "repository": "https://github.com/DigitalHumanitiesCraft/fancy-research-tools",
-          "access": "Frozen catalogue sample. Selection is not representative of the museum collection."
+          "id": "edition",
+          "name": "Agentic Edition Pipeline",
+          "action": "Work through the SZD edition example",
+          "href": "../guides/getting-started.html#build-szd-edition",
+          "material": "Stefan Zweig Digital, source-bound TEI and facsimile links",
+          "location": "Project setup required",
+          "related": {
+            "label": "Open repository template",
+            "href": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline"
+          },
+          "repository": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline",
+          "access": "Real SZD sample enters at checked TEI build. Automated transcription is a separate provider workflow; scholarly checking remains explicit."
         }
       ]
     }
-  ],
-  "edition": {
-    "name": "Agentic Edition Pipeline",
-    "href": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline",
-    "knowledge": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline/tree/main/knowledge",
-    "kind": "Repository template",
-    "stages": ["Page images", "Transcription", "Review", "TEI", "Reading edition"],
-    "access": "Requires a project checkout and configuration. Its shipped quickstart is synthetic. Real project material stays in its source project."
-  }
+  ]
 }

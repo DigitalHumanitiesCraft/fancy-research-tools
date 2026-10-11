@@ -13,23 +13,53 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Design
 
 Each research tool has an interface and visual identity derived from its research task. Fancy Research Tools shares engineering quality and accessible primitives. It does not prescribe DHCraft branding or a universal application shell. The operator replaced the initial DHCraft reuse decision with task-specific design on 2026-10-10.
 
+## Reference hierarchy
+
+Collection Explorer at `/photographs/` is the first reference tool. Its open photograph sample supports search, catalogue chronology, image inspection and comparison. The overview and gallery lead to it first. The other gallery entries follow research tasks, Capture and encode, Analyse correspondence, Review and correct, and Build editions. Existing applications and setup guides have explicit destinations. Earlier bundled applications and concept variants remain technical and design examples in the development guide. The task categories are a project navigation decision, with no universal taxonomy claim. Existing routes, saved work and export contracts remain unchanged.
+
+### Reusable review decisions
+
+Each rule below carries a task condition. A presentation preference is distinct from a source-integrity requirement and from observed usability.
+
+| Decision | Useful application | Boundary or counterexample |
+|---|---|---|
+| Title or name first | Browsing and comparing records; supporting kind, signature and rights remain compact beneath it. | A citation or identifier audit may require the identifier as its primary column. |
+| One owner for a filter or count | Linked views share query state and a single result summary. Check the rendered dense state and its component callers for duplication. | Selection, coverage and chart populations can differ; keep those distinctions and exact contributors accessible. |
+| Direct useful rows | Show comparison attributes and qualifications before opening details. A routine source action should reach its passage directly. | Long technical traces may remain optional. Disclosing a whole record is justified when its preview already supports the next decision. |
+| Proportionate spacing | Align comparable fields, compact related controls and leave space between task groups. Give image and map inspection the main working area. | Uniform maximum density makes long source passages harder to read. |
+| Explicit data semantics | Format dates without inventing precision; distinguish named places from supported coordinates. | An ordinal chronology must not imply elapsed-time distance. No map is supplied by the current photograph data. |
+| Defined inclusion policy | Decide which source and derived assertions may contribute before rendering them. If permitted, mark LLM-produced values consistently at the affected field. | Excluded assertions must also be absent from search, counts, diagrams and exports. A source-only tool needs no LLM badge. |
+| Useful missingness | Comparable cells may be blank when the column establishes meaning. Missing categories remain available in filters, coverage and source inspection. | An unresolved attribution, access restriction or failed load needs an explicit state. |
+
+The current Collection Explorer is a source-only example. Its timeline is an ordinal catalogue chronology and its forty-record sample is fully available without pagination. Lanes, map views and a larger shared framework remain adaptation candidates that require their own source data and measured need.
+
+## Operator default profile
+
+The operator confirmed an adaptable default profile on 2026-10-11. It favours compact task-specific views, aligned comparable fields, restrained labels and directly visible evidence needed for the next decision. Optional details deepen inspection while preserving context. The [interface copy constraint](#interface-copy-constraint) governs introductory sublines in this repository. These presentation choices express the operator's preferences and remain distinct from empirical usability findings.
+
+Adopters may revise this profile in their own design contract and bring their local agent instructions and acceptance checks into agreement. Within Fancy Research Tools, the current profile continues to apply. Accessibility, source fidelity, uncertainty, rights and recoverable working state remain independent requirements when presentation changes. Each tool still derives its layout and density from its research task.
+
+The profile also carries the operator's repeated interface decisions. Use aligned fields and ordinary spacing instead of middle-dot separators. Show counts when they explain a changed result or selection, without adding a permanent count heading to an already labelled view. Keep shelfmarks visible where they distinguish cited material; integrate authority identifiers as meaningful links with accessible explanation and copying when needed. A short identifier does not need its own disclosure. For LLM-produced values permitted by the project inclusion policy, use the same named status icon with an explanation on focus and tap. Its presence and accessible name communicate production without hover; a separate recorded review never replaces that production status. Record-wide badges must not imply that unrelated fields share it. Routine evidence access should not require nested accordions. Optional technical traces may remain collapsed.
+
+Format structured calendar dates for human reading in the interface language. Keep precision, approximate wording and open or interval bounds intact. Preserve the exact source representation in source inspection and export; do not expose an ISO storage value as the ordinary date label or invent missing components.
+
 ## Task hierarchy
 
 The operator rejected the preceding gallery and its interfaces on 2026-10-10. The critique concerned opaque tool names, development-history categories, eyebrows and introductory copy, excessive text and generic layouts. The revised candidate below uses real project examples and task-based entry points. Operator assessment of this revision remains open. Successful engineering checks do not establish design acceptance.
 
-The revision must make the activity, material and useful result understandable at entry, then organize each workspace around the actual research action. Gallery grouping should follow meaningful user-facing capabilities. Prototype variants and historical status belong in development context. The exact new grouping and layouts remain design proposals until reviewed. Reducing copy must preserve source wording, uncertainty, field meaning and actionable state feedback.
+The revision must make the activity, material and useful result understandable at entry, then organize each workspace around the actual research action. The gallery groups entry points by research task, with Collection Explorer first. Each entry names its activity, material and whether it opens an application or preparation guide. Prototype variants and historical status belong in development context. The reference hierarchy is the operator’s current product decision. Its rendered layout still requires operator review. Reducing copy must preserve source wording, uncertainty, field meaning and actionable state feedback.
 
 | Surface | Primary content | Supporting content |
 |---|---|---|
-| Project overview | Entry to the tool gallery and development guides | Project scope and research basis |
-| Tool gallery | Transcribe and annotate, edit texts and metadata, explore and compare | Hosting destination, real material and a separate edition template |
+| Project overview | Collection Explorer, then the other examples and development guides | Project scope and research basis |
+| Tool gallery | Explore collections, capture and encode, analyse correspondence, review and correct, build editions | One task example per entry, real material and an honest application or setup destination |
 | Documentation | Adaptation guide and maintained contracts | Visible section navigation, page outline and evidence references |
 | Collection comparison | Comparable catalogue columns, retained selection and authored observations | Addressable field provenance, recovery and explicit export |
 | Collection editor | Selected source record and editable fields | Validation, draft recovery and import/export |
@@ -42,17 +72,30 @@ The previous three-pane catalogue is preserved at `/baseline/` for the earlier f
 
 At `/pilot/`, the header carries identity, Collection/Comparison navigation and export. About and separate data/code license links live in the footer. Source selection, sample limitations and snapshot context live in About. Source links and uncertainty remain with the evidence. No blanket hiding of information required for interpretation follows from reducing introductory copy.
 
+## Photograph study
+
+The new `/photographs/` reference supports comparing catalogue descriptions of historical photographs and examining their images and sources. It uses a separate openly licensed sample. Collection, Timeline and a selected-image route preserve the same query and selection. The operated review is recorded in [Testing](testing.md#open-photographs-and-ui-skills-2026-10-11); human assessment remains pending.
+
+| View | First decision and visible evidence | Action and optional depth | Wide and narrow layout |
+|---|---|---|---|
+| Collection | Choose photographs to inspect or compare using thumbnail, title, original date wording, creator and technique. | Open the photograph directly or retain it in a small comparison selection. Search and relevant creator/process filters remain visible. | Compact aligned entries on wide screens, readable stacked entries on narrow screens. Content receives the larger share of the viewport. |
+| Timeline | Inspect chronological order while seeing each photograph and its qualified catalogue date. | Select a directly operable mark or its attached preview. Original qualifiers stay visible. | Vertically scrollable, ordinal chronology with explicit decade grouping and no proportional time ruler. Mark spacing accommodates evidence and does not claim elapsed duration. |
+| Photograph | Examine the image and the catalogue wording together. | Direct image pan/zoom through locally bundled OpenSeadragon with keyboard controls and a usable image fallback. Source values and a named museum link are directly available. | Image dominates the wide view beside compact structured fields. Narrow layout places image then fields in ordinary reading order. |
+| Comparison | Compare retained photographs by the same date, creator and technique fields. | Inspect each source or export the selected evidence. Removing an item preserves the remaining selection. | Aligned fields with a bounded horizontal comparison region where necessary; no document-level horizontal overflow. |
+
+The visual direction uses a neutral light surface, dark ink and one restrained blue action colour, system typography and compact spacing. It inherits accessible primitives without importing the other tools' layouts. Source qualifiers and actionable failures retain readable contrast. No introductory subline, permanent unfiltered collection counter or repeated metadata caption is added. Identifiers become useful source links or accessible optional details, and no LLM provenance icon appears for catalogue-only data. A map requires separately sourced, typed geographic relations. Culture and museum location do not establish a photograph's depicted or capture location.
+
 ## Project navigation
 
 Overview, Tools and Documentation are equal navigation links in the project header. Overview gives direct access to research activities and development guides. The gallery identifies each tool's action, material and destination. Local workspaces provide All tools as a return link. External applications retain their published navigation and open through ordinary links, so browser Back remains available.
 
-The gallery uses compact entries with actual working-state screenshots and explicit action links. Text stays selectable. Categories describe activities, and published applications retain their established names. Hosting domains distinguish external applications from local workspaces. The Agentic Edition Pipeline has repository and setup links under Build an edition because it requires project configuration. Interface variants are reachable through [Design studies](../concepts/). The [historical catalogue](../baseline/) remains available as a development baseline outside the gallery's tool categories. Integration does not assert design acceptance or operational readiness of an external application.
+The gallery uses compact entries with actual working-state screenshots and explicit action links. Text stays selectable. Categories distinguish research tasks. Individual entries describe activities, and published applications retain their established names. Hosting domains distinguish external applications from local workspaces. Build editions opens the prepared SZD workflow guide, with the Agentic Edition Pipeline repository as a secondary setup resource. A prepared source package does not establish a completed end-to-end tool integration. Earlier local workflows and interface variants are reachable through [Technical examples](../docs/getting-started.md#technical-examples). The [historical catalogue](../baseline/) remains available as a development baseline outside the gallery's tool categories. Integration does not assert design acceptance or operational readiness of an external application.
 
 Documentation navigation and the page outline remain visible. Wide layouts place them beside the article. Narrow layouts show the article first, followed by the outline and section navigation, with a skip link to the content. Disclosure is appropriate for additional detail requested during a task, such as field hashes and derivation records. Keep information needed to choose an action or interpret evidence visible, including source identity, uncertainty, errors and unsaved work. Compactness alone does not justify a disclosure control.
 
 ## Annotation workspace
 
-The primary gallery example opens `/letters/` with Benndorf's letter to Schuchardt of 14 February 1879. It uses the public-domain plaintext supplied with teiCrafter, excluding the edition's apparatus and images. Person, Place, Research topic and Editorial question are proposed annotation categories. Author, recipient, edition editor and publisher describe the source, independently of the annotation creator and reviewer. The letter and frozen source identifiers remain selectable. The source panel occupies the larger share of a wide workspace; annotation controls start with the quotation and interpretation, followed by compact creator and optional review fields.
+The letter workflow study opens `/letters/` with Benndorf's letter to Schuchardt of 14 February 1879. It uses the public-domain plaintext supplied with teiCrafter, excluding the edition's apparatus and images. Person, Place, Research topic and Editorial question are proposed annotation categories. Author, recipient, edition editor and publisher describe the source, independently of the annotation creator and reviewer. The letter and frozen source identifiers remain selectable. The source panel occupies the larger share of a wide workspace; annotation controls start with the quotation and interpretation, followed by compact creator and optional review fields.
 
 The contrasting annotation tool at `/annotations/` supports reading archived NOAA/NHC Hurricane Milton discussions 2 and 6 from October 2024, selecting an exact passage and recording how that passage functions as observation, forecast or stated uncertainty. This is a research task hypothesis for operator review. It does not supply current weather guidance. The full frozen bulletin, issue time, forecaster and original source link remain visible beside the annotation controls. Attribution printed in the source is distinguishable from a self-declared annotation creator and a separate recorded reviewer.
 
@@ -91,7 +134,7 @@ Source categories retain their original labels. Derived grouping and selection a
 
 ## Interaction patterns
 
-Search and classification change the visible collection while retaining the comparison selection. Pagination keeps the list bounded. Title sorting is alphabetical; chronological sorting uses catalogue indexing starts with missing values last. This ordering does not infer precise creation dates. Collection filters are represented in the URL. Browser navigation restores that view state.
+In the Met comparison study, search and classification change the visible collection while retaining the comparison selection. Its pagination keeps the list bounded; the Collection Explorer displays its complete forty-record sample. Title sorting is alphabetical; chronological sorting uses catalogue indexing starts with missing values last. This ordering does not infer precise creation dates. Collection filters are represented in the URL. Browser navigation restores that view state.
 
 The investigation contains up to four original source records, the question and separately authored notes. Local recovery and portable export/reopen share a validated contract. Invalid imports preserve the existing work, and replacement requires confirmation. Blocked storage or a changed copy in another tab produces actionable feedback without overwriting that copy. These protections are not atomic collaboration.
 
@@ -121,7 +164,7 @@ Source, interpretation and uncertainty remain distinguishable in ordinary readin
 
 ## Project examples
 
-The [DHCraft portfolio](https://dhcraft.org/fancy-research-tools/) supplied the starting inventory. The linked applications and selected working states were inspected on 2026-10-10. The gallery is generated from `data/tools/catalog.json`, which records destinations, material, access limits and source repositories. Its screenshots show observed application states, including local files loaded into existing tools. A preview is not a claim that an external application starts with that exact state.
+The [DHCraft portfolio](https://dhcraft.org/fancy-research-tools/) supplied the starting inventory. The linked applications and selected working states were inspected on 2026-10-10. The gallery is generated from `data/tools/catalog.json`, which records destinations, material, access limits and source repositories. The table below also retains technical antecedents that are outside the main gallery. Its screenshots show observed application states, including local files loaded into existing tools. A preview is not a claim that an external application starts with that exact state.
 
 | Project | Useful task and integration | Boundary |
 |---|---|---|
@@ -129,8 +172,8 @@ The [DHCraft portfolio](https://dhcraft.org/fancy-research-tools/) supplied the 
 | [teiCrafter](https://dhcraft.org/teiCrafter/editor.html) | Edit TEI while retaining source text and structural checks; launch the existing editor. | The published editor and current local development differ. The preview uses its real SZD sample. |
 | [CorrespExplorer](https://dhcraft.org/CorrespExplorer/) | Explore correspondence through explicit people, dates and places; launch the existing application. | The preview uses the real HSA dataset, distinct from its synthetic feature demonstration. |
 | [SZD-HTR](https://chpollin.github.io/szd-htr-ocr-pipeline/) | Inspect transcription and recorded review states in their source collection. | The hosted viewer does not provide the local project's full editorial service. |
-| [Stefan Zweig Bibliography](https://chpollin.github.io/klawiter-rescue/) | Search bibliographic records while distinguishing extraction, enrichment and curation. | A recorded production method does not establish expert verification. |
-| [Agentic Edition Pipeline](https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline) | Start a project pipeline from images through transcription, review and TEI to a reading edition. | Repository template with a synthetic quickstart, requiring setup and project-specific data. |
+| [Stefan Zweig Bibliography](https://chpollin.github.io/klawiter-rescue/) | Read the published catalogue; use the [local curation guide](../docs/getting-started.md#review-bibliography) for source-supported corrections and patches. | The public site is read-only. Full propagation of field corrections remains an upstream acceptance dependency. |
+| [Agentic Edition Pipeline](https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline) | Prepare a local edition preview with the [real SZD package](../docs/getting-started.md#build-szd-edition). | The template retains its synthetic quickstart. External TEI enters the frontend stage; correction-server round trips and automatic publication are unsupported for this package. |
 
 The local letter annotation and metadata editor reuse published project material under the [data contract](data.md). The selective internal workflow review also informed source inspection and the separation of original values from corrections. No internal project records, institutional datasets or credentials were copied into the gallery. The observed existing interfaces also contain excess introduction, empty panels and development controls; their inclusion is not an endorsement of those patterns.
 

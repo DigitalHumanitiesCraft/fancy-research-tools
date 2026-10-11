@@ -1,0 +1,615 @@
+@layer reset, tokens, base, layout, components, utilities;
+
+@layer reset {
+  * {
+    box-sizing: border-box;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  ol,
+  dl,
+  dd,
+  figure {
+    margin: 0;
+  }
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+  img {
+    display: block;
+    max-inline-size: 100%;
+  }
+}
+@layer tokens {
+  :root {
+    color-scheme: light;
+    --paper: oklch(99% 0.002 250);
+    --ink: oklch(24% 0.02 250);
+    --muted: oklch(44% 0.02 250);
+    --accent: oklch(43% 0.12 250);
+    --tint: oklch(95% 0.025 250);
+    --surface: oklch(96% 0.005 250);
+    --line: oklch(69% 0.012 250);
+    --image-bed: oklch(20% 0.008 250);
+    --white: oklch(100% 0 0);
+    --radius: 0.3rem;
+    --gap: 1.2rem;
+  }
+}
+@layer base {
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font:
+      1rem / 1.5 system-ui,
+      sans-serif;
+  }
+  a {
+    color: var(--accent);
+    text-underline-offset: 0.2em;
+  }
+  a:hover {
+    text-decoration-thickness: 0.13em;
+  }
+  :focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+  button {
+    cursor: pointer;
+  }
+  button,
+  input,
+  select {
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    min-block-size: 2.6rem;
+  }
+  button {
+    padding: 0.35rem 0.7rem;
+  }
+  button:hover {
+    background: var(--tint);
+  }
+  button[aria-pressed="true"] {
+    color: var(--accent);
+    background: var(--tint);
+    border-color: var(--accent);
+  }
+  input,
+  select {
+    padding: 0.4rem 0.55rem;
+    inline-size: 100%;
+    min-inline-size: 0;
+  }
+  h1 {
+    font-size: clamp(1.4rem, 1.2rem + 0.5vw, 1.85rem);
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: 1.15rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding: 2rem;
+  }
+  .icon {
+    inline-size: 1.1rem;
+    block-size: 1.1rem;
+    flex: 0 0 auto;
+  }
+}
+@layer layout {
+  .site-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 2rem;
+    padding: 1rem clamp(1rem, 3vw, 2rem);
+    background: var(--paper);
+  }
+  .identity {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .site-header nav {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .site-header :where(nav a) {
+    text-decoration: none;
+    padding: 0.5rem 0.8rem;
+    color: var(--muted);
+    border-radius: var(--radius);
+  }
+  .site-header :where(nav a[aria-current="page"]) {
+    color: var(--accent);
+    background: var(--tint);
+    font-weight: 650;
+  }
+  .all-tools {
+    margin-inline-start: auto;
+    font-size: 0.9rem;
+  }
+  main {
+    container-type: inline-size;
+    padding: 1.25rem clamp(1rem, 3vw, 2rem) 1rem;
+    min-block-size: 75vh;
+  }
+  .browse-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.4rem 2rem;
+  }
+  .browse-filters {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    align-items: end;
+  }
+  .filter {
+    display: grid;
+    gap: 0.2rem;
+    flex: 1 1 12rem;
+    max-inline-size: 21rem;
+    font-size: 0.85rem;
+  }
+  .filter.search {
+    flex: 2 1 17rem;
+    max-inline-size: 32rem;
+  }
+  .filter > span {
+    color: var(--muted);
+  }
+  .collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 17.5rem), 1fr));
+    gap: 1.8rem 1.3rem;
+    list-style: none;
+    padding: 0;
+  }
+  .photo-card {
+    display: grid;
+    align-content: start;
+    gap: 0.25rem;
+    min-inline-size: 0;
+  }
+  .photo-picture {
+    position: relative;
+    background: var(--surface);
+    margin-block-end: 0.25rem;
+  }
+  .photo-picture a {
+    display: block;
+  }
+  .photo-picture img {
+    inline-size: 100%;
+    block-size: 12.5rem;
+    object-fit: contain;
+  }
+  .photo-card h2,
+  .photo-card h3 {
+    line-height: 1.35;
+  }
+  .photo-card :where(h2 a, h3 a) {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .photo-card :where(h2 a, h3 a):hover {
+    text-decoration: underline;
+  }
+  .creator,
+  .technique {
+    font-size: 0.86rem;
+  }
+  .technique {
+    color: var(--muted);
+  }
+  .photo-date {
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .detail-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: start;
+  }
+  .detail-layout > figure {
+    flex: 2 1 40rem;
+    min-inline-size: 0;
+  }
+  .detail-layout > section {
+    flex: 1 1 22rem;
+    min-inline-size: 0;
+  }
+  .detail-layout h1 {
+    margin-block-end: 1.1rem;
+  }
+  .detail-layout dl {
+    display: grid;
+    grid-template-columns: minmax(6rem, 0.7fr) minmax(0, 2fr);
+    gap: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+  dt {
+    color: var(--muted);
+  }
+  dd {
+    overflow-wrap: anywhere;
+  }
+  .detail-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    align-items: center;
+    margin-block: 1.2rem;
+  }
+  .viewer {
+    position: relative;
+    background: var(--image-bed);
+    block-size: min(57vh, 40rem);
+    min-block-size: 19rem;
+    border-radius: var(--radius);
+  }
+  .viewer > img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: contain;
+  }
+  .viewer-canvas {
+    position: absolute;
+    inset: 0;
+  }
+  .viewer-controls {
+    position: absolute;
+    inset-block-start: 0.75rem;
+    inset-inline-start: 0.75rem;
+    z-index: 2;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    padding: 0.25rem;
+    border-radius: var(--radius);
+    background: var(--paper);
+  }
+  .viewer-controls a {
+    margin-inline-start: auto;
+    font-size: 0.85rem;
+  }
+  .detail-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-block-end: 1.2rem;
+  }
+  .detail-nav :where(.neighbour) {
+    margin-inline-start: auto;
+  }
+  .neighbour {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .neighbour a {
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.35rem 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-decoration: none;
+    max-inline-size: 16rem;
+    font-size: 0.8rem;
+  }
+  .neighbour a span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .neighbour img {
+    inline-size: 2rem;
+    block-size: 2rem;
+    object-fit: cover;
+  }
+  .timeline {
+    list-style: none;
+    padding: 0;
+    max-inline-size: 72rem;
+    margin-inline: auto;
+  }
+  .timeline-year {
+    margin-block: 1.3rem 0.4rem;
+    color: var(--muted);
+  }
+  .timeline-year h2 {
+    font-size: 1.25rem;
+  }
+  .timeline-entry {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7rem minmax(0, 1fr);
+    gap: 1.5rem;
+    margin-inline-start: 0.5rem;
+    padding-block: 0.75rem;
+  }
+  .timeline-entry::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 7.7rem;
+    inset-block: 0;
+    border-inline-start: 1px solid var(--line);
+  }
+  .timeline-entry .photo-date {
+    align-self: start;
+    text-align: end;
+    padding-block-start: 0.4rem;
+    padding-inline-end: 0.5rem;
+  }
+  .timeline-mark {
+    position: absolute;
+    inset-inline-start: 7rem;
+    inset-block-start: 0.9rem;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    min-block-size: 1.5rem;
+    padding: 0;
+    border: 3px solid var(--paper);
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .timeline-mark.qualified {
+    background: var(--paper);
+    outline: 2px dashed var(--accent);
+    outline-offset: -4px;
+  }
+  .timeline-entry .photo-card {
+    grid-template-columns: 7rem minmax(0, 1fr);
+    column-gap: 1rem;
+    padding-inline-start: 0.8rem;
+  }
+  .timeline-entry .photo-picture {
+    grid-row: 1 / span 5;
+  }
+  .timeline-entry :where(.photo-picture) img {
+    block-size: 7rem;
+  }
+  .comparison-scroll {
+    overflow-x: auto;
+    margin-block-start: 1.5rem;
+  }
+  .comparison {
+    border-collapse: collapse;
+    inline-size: 100%;
+  }
+  .comparison th,
+  .comparison td {
+    text-align: start;
+    vertical-align: top;
+    padding: 0.8rem;
+    border-block-end: 1px solid var(--line);
+    min-inline-size: 13rem;
+    max-inline-size: 23rem;
+  }
+  @container (max-width: 40rem) {
+    .timeline-entry {
+      grid-template-columns: 5rem minmax(0, 1fr);
+      gap: 1rem;
+    }
+    .timeline-entry::before {
+      inset-inline-start: 5.7rem;
+    }
+    .timeline-mark {
+      inset-inline-start: 5rem;
+    }
+    .timeline-entry .photo-card {
+      grid-template-columns: minmax(0, 1fr);
+      padding-inline-start: 0.8rem;
+    }
+    .timeline-entry .photo-picture {
+      grid-row: auto;
+    }
+    .timeline-entry .photo-picture img {
+      block-size: 9rem;
+    }
+    .detail-layout dl {
+      grid-template-columns: 5.5rem minmax(0, 1fr);
+      gap: 0.75rem;
+    }
+  }
+  .comparison th:first-child {
+    min-inline-size: 7rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  @media (max-width: 40rem) {
+    .identity {
+      order: -2;
+    }
+    .all-tools {
+      order: -1;
+    }
+    .site-header nav {
+      flex-basis: 100%;
+      gap: 0.25rem;
+    }
+    .site-header :where(nav a) {
+      padding-inline: 0.6rem;
+    }
+  }
+  .comparison img {
+    block-size: 11rem;
+    inline-size: 100%;
+    object-fit: contain;
+    background: var(--surface);
+    margin-block-end: 0.75rem;
+  }
+  .comparison td {
+    font-size: 0.95rem;
+  }
+  .comparison-item {
+    position: relative;
+  }
+  .comparison-item .selection-toggle {
+    position: absolute;
+    inset-block-start: 0.4rem;
+    inset-inline-end: 0.4rem;
+    justify-content: center;
+    inline-size: 2.6rem;
+    padding: 0.35rem;
+  }
+}
+@layer components {
+  .selection-box {
+    display: inline-grid;
+    place-items: center;
+    inline-size: 1.1rem;
+    block-size: 1.1rem;
+    border: 1px solid currentColor;
+    border-radius: 0.15rem;
+    color: var(--accent);
+  }
+  .selection-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.85rem;
+  }
+  .photo-picture .selection-toggle {
+    position: absolute;
+    inset-block-start: 0.45rem;
+    inset-inline-end: 0.45rem;
+    padding: 0.35rem;
+    inline-size: 2.5rem;
+    block-size: 2.5rem;
+    justify-content: center;
+    box-shadow: 0 1px 4px color-mix(in oklch, var(--ink), transparent 85%);
+  }
+  .selection-tray {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.65rem 0.8rem;
+    background: var(--tint);
+    border-radius: var(--radius);
+    margin-block-end: 1.1rem;
+  }
+  .selection-tray ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .selection-tray li {
+    display: flex;
+    align-items: center;
+    background: var(--paper);
+    border-radius: var(--radius);
+  }
+  .selection-tray img {
+    inline-size: 2.1rem;
+    block-size: 2.1rem;
+    object-fit: cover;
+  }
+  .selection-tray :where(li button) {
+    min-block-size: 2.1rem;
+    border: none;
+    padding: 0.35rem;
+    display: inline-flex;
+  }
+  .selection-tray > a {
+    font-weight: 650;
+  }
+  .selection-tray .export {
+    margin-inline-start: auto;
+  }
+  .empty {
+    padding-block: 2rem;
+    display: grid;
+    justify-items: start;
+    gap: 0.8rem;
+  }
+  .result-status {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .notice {
+    color: var(--ink);
+    background: var(--tint);
+    padding: 0.8rem;
+    margin-block-end: 1rem;
+  }
+  .view-heading {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-block-end: 1rem;
+  }
+  .view-heading button {
+    margin-inline-start: auto;
+  }
+  .viewer-help {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-block-start: 0.5rem;
+  }
+}
+@layer utilities {
+  [hidden] {
+    display: none;
+  }
+  .sr-only {
+    position: absolute;
+    inline-size: 1px;
+    block-size: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .skip-link {
+    position: fixed;
+    inset-block-start: -5rem;
+    inset-inline-start: 1rem;
+    background: var(--paper);
+    z-index: 20;
+    padding: 0.7rem;
+  }
+  .skip-link:focus {
+    inset-block-start: 1rem;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      scroll-behavior: auto;
+    }
+  }
+  @media (pointer: coarse) {
+    button {
+      min-block-size: 2.75rem;
+    }
+  }
+}

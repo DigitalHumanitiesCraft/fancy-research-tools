@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/DigitalHumanitiesCraft/fancy-research-tools/raw/refs/heads/main/data/photographs/schema.json",
+  "title": "Frozen historical-photograph collection, version 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["@context", "id", "@type", "schemaVersion", "title", "license", "derivation", "items"],
+  "properties": {
+    "@context": { "type": "object" },
+    "id": { "type": "string", "minLength": 1 },
+    "@type": { "const": "Collection" },
+    "schemaVersion": { "const": 1 },
+    "title": { "$ref": "#/$defs/text" },
+    "license": { "const": "CC0-1.0" },
+    "derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["script", "sha256", "method"],
+      "properties": {
+        "script": { "const": "scripts/import-photographs.mjs" },
+        "sha256": { "$ref": "#/$defs/hash" },
+        "method": { "$ref": "#/$defs/text" }
+      }
+    },
+    "items": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/photograph" } }
+  },
+  "$defs": {
+    "text": { "type": "string", "minLength": 1 },
+    "nullableText": { "type": ["string", "null"] },
+    "hash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "year": { "type": ["integer", "null"] },
+    "creator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "role", "qualifier", "extent"],
+      "properties": {
+        "name": { "$ref": "#/$defs/text" },
+        "id": { "type": "string", "pattern": "^https://openaccess-api\\.clevelandart\\.org/api/creators/[0-9]+$" },
+        "role": { "$ref": "#/$defs/nullableText" },
+        "qualifier": { "$ref": "#/$defs/nullableText" },
+        "extent": { "$ref": "#/$defs/nullableText" }
+      }
+    },
+    "date": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "start", "end", "kind", "indexStart", "indexEnd"],
+      "properties": {
+        "label": { "type": "string" },
+        "start": { "$ref": "#/$defs/year" },
+        "end": { "$ref": "#/$defs/year" },
+        "kind": { "enum": ["exact-year", "range", "approximate", "decade", "unknown"] },
+        "indexStart": { "$ref": "#/$defs/year" },
+        "indexEnd": { "$ref": "#/$defs/year" }
+      },
+      "allOf": [{
+        "if": { "properties": { "kind": { "const": "unknown" } } },
+        "then": { "properties": { "start": { "type": "null" }, "end": { "type": "null" } } },
+        "else": { "properties": { "start": { "type": "integer" }, "end": { "type": "integer" } } }
+      }]
+    },
+    "photograph": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "@type", "title", "date", "creators", "technique", "culture", "accession", "sourceUrl", "image", "source"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^https://clevelandart\\.org/art/" },
+        "@type": { "const": "Photograph" },
+        "title": { "$ref": "#/$defs/text" },
+        "date": { "$ref": "#/$defs/date" },
+        "creators": { "type": "array", "items": { "$ref": "#/$defs/creator" } },
+        "technique": { "$ref": "#/$defs/nullableText" },
+        "culture": { "type": "array", "items": { "$ref": "#/$defs/text" } },
+        "accession": { "$ref": "#/$defs/text" },
+        "sourceUrl": { "type": "string", "pattern": "^https://clevelandart\\.org/art/" },
+        "image": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["src", "width", "height", "sourceUrl", "license"],
+          "properties": {
+            "src": { "type": "string", "pattern": "^data/photographs/images/[0-9]+\\.jpg$" },
+            "width": { "type": "integer", "minimum": 1 },
+            "height": { "type": "integer", "minimum": 1 },
+            "sourceUrl": { "type": "string", "pattern": "^https://openaccess-cdn\\.clevelandart\\.org/" },
+            "license": { "const": "CC0-1.0" }
+          }
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["id", "rawPath", "sha256", "fields"],
+          "properties": {
+            "id": { "type": "string", "pattern": "^https://openaccess-api\\.clevelandart\\.org/api/artworks/[0-9]+$" },
+            "rawPath": { "const": "data/photographs/raw/artworks.json" },
+            "sha256": { "$ref": "#/$defs/hash" },
+            "fields": { "type": "object" }
+          }
+        }
+      }
+    }
+  }
+}

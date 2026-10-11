@@ -4,6 +4,7 @@
 
 ### Research workflows
 
+- Add Collection Explorer as the first reference, with open Cleveland photographs, source-qualified chronology, local image inspection and comparison export.
 - Introduce catalogue comparison with a compact selection table and a local metadata editor with original source values beside working fields.
 - Replace the editor's synthetic default with Schönbach correspondence metadata already used by CorrespExplorer while retaining existing collections and drafts.
 - Retain alternative investigation interfaces as design studies on the same Met material.
@@ -11,7 +12,7 @@
 - Add addressable source views for comparison values, with original fields, deterministic mappings and bounded technical checks.
 - Add source annotation for the Benndorf letter supplied with teiCrafter and two archived Milton discussions, with exact quotation anchors, source navigation and portable notebooks.
 - Keep source attribution, self-declared annotation creators and optional named source-fit reviews separate. Clear an earlier review when its annotation changes.
-- Organize the tool gallery by research activity, with previews of actual working surfaces. Link coOCR/HTR, teiCrafter, CorrespExplorer, SZD-HTR and the Stefan Zweig Bibliography at their public hosts, and present the Agentic Edition Pipeline as a repository template.
+- Organize five gallery entries by exploration, capture, analysis, correction and edition work. Keep earlier local workflows in development guidance, distinguish applications from setup guides and prepare a real SZD source package.
 - Correct navigation wrapping under native browser zoom so Collection and Comparison remain readable.
 
 ### Data preservation
@@ -21,6 +22,7 @@
 - Preserve accepted text and line endings through form restoration, unrelated edits and exports with a shared control binding.
 - Protect empty corrupt editor drafts and warn before leaving an investigation after another tab replaces its saved copy.
 - Keep each annotation case's sources, categories and local storage separate, reject cross-case imports, and preserve existing bulletin notebooks. Retain rejected-import preservation, concurrent-edit guards and export recovery after storage failure.
+- Verify the independent Cleveland photograph snapshot and retain image-specific rights and source-qualified date meanings.
 - Verify Met, NOAA/NHC, Benndorf and Schönbach snapshots and reproduce their derived data without replacing retained files. Keep the Met raw-source oracle, exact bulletin extraction, declared letter line-ending transformation and bounded CMIF projection.
 - Protect provenance-related file bytes from Git line-ending conversion.
 

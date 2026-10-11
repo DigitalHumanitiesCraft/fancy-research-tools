@@ -13,16 +13,16 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Data
 
-The examples use separate data contracts and persisted working state. The editor starts with real Schönbach correspondence metadata, comparison uses frozen Met catalogue records, and annotation supports a historical letter and archived NOAA/NHC discussions. Each export preserves its defined material and authored work. Existing drafts and synthetic regression fixtures remain supported.
+The first reference uses independent Cleveland Museum of Art photographs. A separate SZD package prepares a real letter for capture and edition work. The examples use separate data contracts and persisted working state. The editor starts with real Schönbach correspondence metadata, comparison uses frozen Met catalogue records, and annotation supports a historical letter and archived NOAA/NHC discussions. Each export preserves its defined material and authored work. Existing drafts and synthetic regression fixtures remain supported.
 
 ## Subject
 
-Example descriptions represent collection items with descriptive metadata and review state. Projects must define the meaning and provenance of their own fields before importing real material.
+The flat collection editor represents items with descriptive metadata and a manual review state. The photograph, annotation and edition examples have their own contracts below. Projects must define the meaning and provenance of their own fields before importing real material.
 
 ## Sources
 
@@ -37,6 +37,24 @@ The pilot snapshot in `data/met-instruments/` contains the first sixty numeric o
 `npm run check:data` executes that unchanged importer against temporary copies, compares the generated records, checksum and field-evidence registry byte for byte, and runs the independent raw-source oracle. It leaves the repository dataset unchanged and runs in both CI workflows. A changed importer digest changes the registry identity and therefore requires the compatibility decision described below before adoption.
 
 The [research guide](../docs/research.md) lists candidates for inspection. Domain-specific material such as TEI structures or correspondence relations may require a different data contract. Mapping it into the current flat records must not silently discard meaningful structure. Synthetic fixtures remain appropriate for deterministic failure and boundary tests.
+
+## Open photograph reference
+
+`data/photographs/` contains forty photographs from the Cleveland Museum of Art's Open Access API, acquired on 2026-10-11. Its README, manifest and frozen response record the selection and rights. Metadata and each selected image have CC0 evidence. The sample combines three deliberately chosen date cases with the lowest remaining numeric IDs; it is not representative. The API's period filter includes some later descriptive dates, which remain visible. Local images retain the downloaded JPEG bytes and their web resolution. Five publisher dimension values disagree with the actual files; the projection uses decoded JPEG dimensions and preserves the source values separately.
+
+The JSON-LD separates catalogue date wording, conservatively parsed nominal bounds and the publisher's indexing bounds. Approximate dates remain approximate. Bare decades form a decade interval; unsupported compound descriptions retain their wording without a plotted date. Creator roles, attribution qualifiers, extents and authority references stay together. An attribution reference does not merge people or imply verified identity. No locations are inferred from culture, title or museum address.
+
+`schema.json` defines the structural contract. `scripts/check-photographs.mjs`, included in `npm run check:data`, verifies frozen source and image hashes, actual JPEG dimensions, reproducible derivation and independently specified source cases in `semantic-cases.json`. These checks establish the named properties of the projection, not historical correctness. The original source fields and derivation identity accompany exported selections. The selection file is a JSON evidence packet; it is not a supported editable investigation or an image archive.
+
+The example contains no customer material and no LLM-produced catalogue values. Its interface therefore shows no LLM status marker. Synthetic skill trials exercise uncertain extraction separately under `benchmarks/cases/research-ui-skills/`.
+
+## SZD edition example
+
+`data/szd-example/` retains the public METS inventory and pinned pipeline transcription for Stefan Zweig's letter to Max Fleischer of 22 May 1901, SZ-LAS/B3.1. Its manifest identifies every frozen file and the upstream pipeline revision. The inventory distinguishes envelope scans, text pages and a colour reference. No facsimile bytes are bundled.
+
+The source-specific rights statement names Literaturarchiv Salzburg and CC-BY without a version. Preserve that exact statement and attribution; a repository software licence does not relicense the archive material. The upstream transcription and review were produced by an LLM. The derived TEI marks its local state as `machine_unreviewed` and does not claim human verification. Derivation retains source text and zones while making page-image pointers explicit and recording attribution. The package README and checker define its exact reproducibility boundary.
+
+The [capture and edition guide](../docs/getting-started.md#capture-szd) uses this material. A frozen source package, a valid TEI file and a reading adapter check establish different properties. They do not prove that an external editor, correction server and generic pipeline exchange the full source without loss. Each actual transfer needs its own source-to-output verification.
 
 ## Model
 

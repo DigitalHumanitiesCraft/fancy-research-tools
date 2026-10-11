@@ -1,0 +1,301 @@
+Browser tab: 1, Title: "Compare catalogue records", URL: "http://127.0.0.1:4193/candidate/#collection?text=&attribution=&role=".
+1 AXWebArea Compare catalogue records, URL: 127.0.0.1:4193/candidate/#collection?text=&attribution=&role=
+	2 link Description: Skip to workspace, Value: 127.0.0.1:4193/candidate/#main
+	3 container
+		4 heading Compare catalogue records, Value: 1
+			5 text Compare catalogue records
+		6 text Synthetic catalogue
+		7 container Workspace
+			8 link Description: Collection, Value: 127.0.0.1:4193/candidate/#collection?text=&attribution=&role=, ID: collection-link
+			9 link Description: Comparison (3), Value: 127.0.0.1:4193/candidate/#comparison?text=&attribution=&role=, ID: comparison-link
+	52 container main
+		53 heading Collection, Value: 2, ID: view-heading
+			54 text Collection
+		55 container
+			56 text Search catalogue text
+			57 search text field (settable) Search catalogue text, ID: search
+		58 container
+			59 text Attribution label
+			60 pop up button (collapsed, settable) Attribution label, Value: All labels, ID: attribution, Secondary Actions: Expand
+				61 menu
+					62 (selected) All labels
+					63 Northfield workshop
+					64 A. Vale
+					65 R. Brook
+		66 container
+			67 text Attribution role
+			68 pop up button (collapsed, settable) Attribution role, Value: All roles, ID: role, Secondary Actions: Expand
+				69 menu
+					70 (selected) All roles
+					71 Photographer
+					72 Publisher
+		73 button Reset filters
+		74 text Search matches all typed words in descriptive fields. Attribution label and role must occur in the same entry; a label does not establish shared identity.
+		75 container results
+			76 container
+				77 text 12 matching records 3 selected across the catalogue
+			78 container Matching catalogue records; scroll horizontally for all fields
+				79 table
+					80 row
+						81 cell
+							82 text Select
+						83 cell
+							84 text Object
+						85 cell
+							86 text Catalogue date
+						87 cell
+							88 text Attribution
+						89 cell
+							90 text Place
+						91 cell
+							92 text Material
+					93 row
+						94 cell
+							95 checkbox (settable, integer) Description: Select DEMO-A-01: Construction of the north pier, Value: 1, ID: select-demo-image-01
+						96 cell
+							97 text Construction of the north pier
+							98 text DEMO-A-01
+							99 link Description: Object source for DEMO-A-01, ID: collection-demo-image-01-title, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=title&from=collection
+						100 cell
+							101 text before 2031
+							102 link Description: Catalogue date source for DEMO-A-01, ID: collection-demo-image-01-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=catalogueDate&from=collection
+						103 cell
+							104 text attributed to 
+							105 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-01, ID: collection-demo-image-01-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=attributions&from=collection&authority=0
+							106 text photographer
+							107 link Description: Attribution source for DEMO-A-01, ID: collection-demo-image-01-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=attributions&from=collection
+						108 cell
+							109 text North Harbour depicted
+							110 link Description: Place source for DEMO-A-01, ID: collection-demo-image-01-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=places&from=collection
+						111 cell
+							112 text Paper print
+							113 link Description: Material source for DEMO-A-01, ID: collection-demo-image-01-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-01&field=material&from=collection
+					114 row
+						115 cell
+							116 checkbox (settable, integer) Description: Select DEMO-A-02: Workers beside the unfinished north pier, Value: 1, ID: select-demo-image-02
+						117 cell
+							118 text Workers beside the unfinished north pier
+							119 text DEMO-A-02
+							120 link Description: Object source for DEMO-A-02, ID: collection-demo-image-02-title, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=title&from=collection
+						121 cell
+							122 text between 2030 and 2034
+							123 link Description: Catalogue date source for DEMO-A-02, ID: collection-demo-image-02-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=catalogueDate&from=collection
+						124 cell
+							125 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-02, ID: collection-demo-image-02-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=attributions&from=collection&authority=0
+							126 text photographer
+							127 link Description: Attribution source for DEMO-A-02, ID: collection-demo-image-02-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=attributions&from=collection
+						128 cell
+							129 text East Harbour holding institution
+							130 link Description: Place source for DEMO-A-02, ID: collection-demo-image-02-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=places&from=collection
+						131 cell
+							132 text Glass negative
+							133 link Description: Material source for DEMO-A-02, ID: collection-demo-image-02-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-02&field=material&from=collection
+					134 row
+						135 cell
+							136 checkbox (settable, integer) Value: 1, ID: select-demo-image-03, Description: Select DEMO-A-03: View across the construction basin and temporary railway at the western end of the harbour
+						137 cell
+							138 text View across the construction basin and temporary railway at the western end of the harbour
+							139 text DEMO-A-03
+							140 link Description: Object source for DEMO-A-03, ID: collection-demo-image-03-title, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=title&from=collection
+						141 cell
+							142 text circa 2032
+							143 link Description: Catalogue date source for DEMO-A-03, ID: collection-demo-image-03-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=catalogueDate&from=collection
+						144 cell
+							145 text possibly  Northfield workshop photographer Authority not recorded
+							146 link Description: Attribution source for DEMO-A-03, ID: collection-demo-image-03-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=attributions&from=collection
+						147 cell
+							148 text North Harbour
+							149 button (collapsed) Description: LLM-produced value, Secondary Actions: Expand
+							150 text depicted
+							151 link Description: Place source for DEMO-A-03, ID: collection-demo-image-03-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=places&from=collection
+						152 cell
+							153 text Not recorded
+							154 link Description: Material source for DEMO-A-03, ID: collection-demo-image-03-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-03&field=material&from=collection
+					155 row
+						156 cell
+							157 checkbox (settable, integer) Description: Select DEMO-A-04: Completed north pier, Value: 0, ID: select-demo-image-04
+						158 cell
+							159 text Completed north pier
+							160 text DEMO-A-04
+							161 link Description: Object source for DEMO-A-04, ID: collection-demo-image-04-title, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-04&field=title&from=collection
+						162 cell
+							163 text 12 June 2038
+							164 link Description: Catalogue date source for DEMO-A-04, ID: collection-demo-image-04-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-04&field=catalogueDate&from=collection
+						165 cell
+							166 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-04, ID: collection-demo-image-04-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-04&field=attributions&from=collection&authority=0
+							167 text publisher
+							168 link Description: Attribution source for DEMO-A-04, ID: collection-demo-image-04-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-04&field=attributions&from=collection
+						169 cell
+							170 text North Harbour depicted
+							171 link Description: Place source for DEMO-A-04, ID: collection-demo-image-04-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-04&field=places&from=collection
+						172 cell
+							173 text Postcard
+							174 link Description: Material source for DEMO-A-04, ID: collection-demo-image-04-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-04&field=material&from=collection
+					175 row
+						176 cell
+							177 checkbox (settable, integer) Description: Select DEMO-A-05: Timber unloaded beside the pier, Value: 0, ID: select-demo-image-05
+						178 cell
+							179 text Timber unloaded beside the pier
+							180 text DEMO-A-05
+							181 link Description: Object source for DEMO-A-05, ID: collection-demo-image-05-title, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-05&field=title&from=collection
+						182 cell
+							183 text Not recorded
+							184 link Description: Catalogue date source for DEMO-A-05, ID: collection-demo-image-05-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-05&field=catalogueDate&from=collection
+						185 cell
+							186 link Description: A. Vale: inspect authority identifier urn:synthetic:person:vale-1 for DEMO-A-05, ID: collection-demo-image-05-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-05&field=attributions&from=collection&authority=0
+							187 text photographer
+							188 link Description: Attribution source for DEMO-A-05, ID: collection-demo-image-05-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-05&field=attributions&from=collection
+						189 cell
+							190 text Not recorded
+							191 link Description: Place source for DEMO-A-05, ID: collection-demo-image-05-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-05&field=places&from=collection
+						192 cell
+							193 text Paper print
+							194 link Description: Material source for DEMO-A-05, ID: collection-demo-image-05-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-05&field=material&from=collection
+					195 row
+						196 cell
+							197 checkbox (settable, integer) Description: Select DEMO-A-06: Workshop courtyard, Value: 0, ID: select-demo-image-06
+						198 cell
+							199 text Workshop courtyard
+							200 text DEMO-A-06
+							201 link Description: Object source for DEMO-A-06, ID: collection-demo-image-06-title, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-06&field=title&from=collection
+						202 cell
+							203 text 2032
+							204 link Description: Catalogue date source for DEMO-A-06, ID: collection-demo-image-06-catalogueDate, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-06&field=catalogueDate&from=collection
+						205 cell
+							206 link Description: Northfield workshop: inspect authority identifier urn:synthetic:workshop:northfield for DEMO-A-06, ID: collection-demo-image-06-authority-0, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-06&field=attributions&from=collection&authority=0
+							207 text photographer
+							208 link Description: Attribution source for DEMO-A-06, ID: collection-demo-image-06-attributions, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-06&field=attributions&from=collection
+						209 cell
+							210 text Northfield depicted
+							211 link Description: Place source for DEMO-A-06, ID: collection-demo-image-06-places, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-06&field=places&from=collection
+						212 cell
+							213 text Paper print
+							214 link Description: Material source for DEMO-A-06, ID: collection-demo-image-06-material, Value: 127.0.0.1:4193/candidate/#source?text=&attribution=&role=&id=demo-image-06&field=material&from=collection
+					215 row
+						216 cell
+							217 checkbox (settable, integer) Description: Select DEMO-A-07: Bridge construction, Value: 0, ID: select-demo-image-07
+						218 cell
+							219 text Bridge construction
+							220 text DEMO-A-07
+							221 link Description: Object source for DEMO-A-07, Value: …, ID: collection-demo-image-07-title
+						222 cell
+							223 text after 2034
+							224 link Description: Catalogue date source for DEMO-A-07, Value: …, ID: collection-demo-image-07-catalogueDate
+						225 cell
+							226 text attributed to 
+							227 link Description: A. Vale: inspect authority identifier urn:synthetic:person:vale-2 for DEMO-A-07, Value: …, ID: collection-demo-image-07-authority-0
+							228 text photographer
+							229 link Description: Attribution source for DEMO-A-07, Value: …, ID: collection-demo-image-07-attributions
+						230 cell
+							231 text North Harbour depicted
+							232 link Description: Place source for DEMO-A-07, Value: …, ID: collection-demo-image-07-places
+						233 cell
+							234 text Glass negative
+							235 link Description: Material source for DEMO-A-07, Value: …, ID: collection-demo-image-07-material
+					236 row
+						237 cell
+							238 checkbox (settable, integer) Description: Select DEMO-A-08: New harbour wall, Value: 0, ID: select-demo-image-08
+						239 cell
+							240 text New harbour wall
+							241 text DEMO-A-08
+							242 link Description: Object source for DEMO-A-08, Value: …, ID: collection-demo-image-08-title
+						243 cell
+							244 text 2032
+							245 link Description: Catalogue date source for DEMO-A-08, Value: …, ID: collection-demo-image-08-catalogueDate
+						246 cell
+							247 text Not recorded
+							248 link Description: Attribution source for DEMO-A-08, Value: …, ID: collection-demo-image-08-attributions
+						249 cell
+							250 text West Basin depicted
+							251 link Description: Place source for DEMO-A-08, Value: …, ID: collection-demo-image-08-places
+						252 cell
+							253 text Paper print
+							254 link Description: Material source for DEMO-A-08, Value: …, ID: collection-demo-image-08-material
+					255 row
+						256 cell
+							257 checkbox (settable, integer) Description: Select DEMO-A-09: Harbour crane under repair, Value: 0, ID: select-demo-image-09
+						258 cell
+							259 text Harbour crane under repair
+							260 text DEMO-A-09
+							261 link Description: Object source for DEMO-A-09, Value: …, ID: collection-demo-image-09-title
+						262 cell
+							263 text 2032
+							264 link Description: Catalogue date source for DEMO-A-09, Value: …, ID: collection-demo-image-09-catalogueDate
+						265 cell
+							266 text R. Brook photographer Authority not recorded
+							267 link Description: Attribution source for DEMO-A-09, Value: …, ID: collection-demo-image-09-attributions
+						268 cell
+							269 text Not recorded
+							270 link Description: Place source for DEMO-A-09, Value: …, ID: collection-demo-image-09-places
+						271 cell
+							272 text Paper print
+							273 link Description: Material source for DEMO-A-09, Value: …, ID: collection-demo-image-09-material
+					274 row
+						275 cell
+							276 checkbox (settable, integer) Description: Select DEMO-A-10: Harbour office, Value: 0, ID: select-demo-image-10
+						277 cell
+							278 text Harbour office
+							279 text DEMO-A-10
+							280 link Description: Object source for DEMO-A-10, Value: …, ID: collection-demo-image-10-title
+						281 cell
+							282 text 2032
+							283 link Description: Catalogue date source for DEMO-A-10, Value: …, ID: collection-demo-image-10-catalogueDate
+						284 cell
+							285 text R. Brook photographer Authority not recorded
+							286 link Description: Attribution source for DEMO-A-10, Value: …, ID: collection-demo-image-10-attributions
+						287 cell
+							288 text Not recorded
+							289 link Description: Place source for DEMO-A-10, Value: …, ID: collection-demo-image-10-places
+						290 cell
+							291 text Glass negative
+							292 link Description: Material source for DEMO-A-10, Value: …, ID: collection-demo-image-10-material
+					293 row
+						294 cell
+							295 checkbox (settable, integer) Description: Select DEMO-A-11: Temporary footbridge, Value: 0, ID: select-demo-image-11
+						296 cell
+							297 text Temporary footbridge
+							298 text DEMO-A-11
+							299 link Description: Object source for DEMO-A-11, Value: …, ID: collection-demo-image-11-title
+						300 cell
+							301 text 2032
+							302 link Description: Catalogue date source for DEMO-A-11, Value: …, ID: collection-demo-image-11-catalogueDate
+						303 cell
+							304 text Not recorded
+							305 link Description: Attribution source for DEMO-A-11, Value: …, ID: collection-demo-image-11-attributions
+						306 cell
+							307 text Not recorded
+							308 link Description: Place source for DEMO-A-11, Value: …, ID: collection-demo-image-11-places
+						309 cell
+							310 text Not recorded
+							311 link Description: Material source for DEMO-A-11, Value: …, ID: collection-demo-image-11-material
+					312 row
+						313 cell
+							314 checkbox (settable, integer) Description: Select DEMO-A-12: Harbour from the signal tower, Value: 0, ID: select-demo-image-12
+						315 cell
+							316 text Harbour from the signal tower
+							317 text DEMO-A-12
+							318 link Description: Object source for DEMO-A-12, Value: …, ID: collection-demo-image-12-title
+						319 cell
+							320 text 2032
+							321 link Description: Catalogue date source for DEMO-A-12, Value: …, ID: collection-demo-image-12-catalogueDate
+						322 cell
+							323 text Not recorded
+							324 link Description: Attribution source for DEMO-A-12, Value: …, ID: collection-demo-image-12-attributions
+						325 cell
+							326 text West Basin depicted
+							327 link Description: Place source for DEMO-A-12, Value: …, ID: collection-demo-image-12-places
+						328 cell
+							329 text Paper print
+							330 link Description: Material source for DEMO-A-12, Value: …, ID: collection-demo-image-12-material
+		331 container Description: Retained selection, ID: selection-tray
+			332 text 3 selected
+			333 button Remove DEMO-A-01
+			334 button Remove DEMO-A-03
+			335 button Remove DEMO-A-02
+			336 link Description: Compare selected records, Value: …
+	48 container
+		49 link Description: Source & limits, Value: …, ID: about-link
+		337 text Draft saved in this browser. Export for a portable copy.
+		338 text No download requested
+
+The focused UI element is 57 search text field (settable) Search catalogue text, ID: search

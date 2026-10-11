@@ -1,0 +1,49 @@
+Browser tab: 2, Title: "Field-note annotations", URL: "http://127.0.0.1:4192/".
+1 AXWebArea Field-note annotations, URL: 127.0.0.1:4192/
+	2 link Description: Skip to source, Value: 127.0.0.1:4192/#source-text
+	3 container
+		4 heading Field-note annotations, Value: 1
+			5 text Field-note annotations
+		6 button Open notebook, ID: open
+		7 button Download notebook, ID: export
+	8 container
+		103 text Notebook saved in browser recovery · download for a portable copy
+		104 text Notebook opened. Original file unchanged.
+		11 container Source
+			12 heading Source, Value: 2, ID: source-heading
+				13 text Source
+			14 text Synthetic material
+			15 text Field note
+			16 pop up button (collapsed, settable) Field note, Value: Notebook A, morning visit, ID: source-choice, Secondary Actions: Expand
+				17 menu
+					18 (selected) Notebook A, morning visit
+					19 Notebook B, evening visit
+			20 definition list
+				21 container Source author
+					22 text Source author
+				105 text Fictional observer Rowan
+				24 container Source date
+					25 text Source date
+				106 text 2042-05-03
+			27 text Full source text
+			28 text entry area Full source text, ID: source-text, Value: At noon the water was still. Three reeds leaned toward the bank. I thought the closed gate might explain the low water. At noon the water was still. The repeated sentence was copied from the earlier page.
+			29 button Annotate selection, ID: annotate
+			107 text No passage selected
+			31 text Select text with the pointer or use Shift + arrow keys in the source. Ranges distinguish repeated passages.
+			32 button (collapsed) Source details, Secondary Actions: Expand
+				33 text Source details
+		34 container Annotation
+			35 heading Annotation, Value: 2, ID: annotation-heading
+				36 text Annotation
+			108 text No draft
+			102 text Select a passage, then choose Annotate selection. To revise saved work, choose Edit below.
+		55 container Saved annotations
+			56 heading Saved annotations, Value: 2, ID: notebook-heading
+				57 text Saved annotations
+			109 text 0 saved
+			110 text No saved annotations. Select a passage above to begin.
+	96 container
+		97 text Browser recovery is local to this browser and address. Download a notebook for a portable copy.
+		98 text Original synthetic fixture under the repository licence
+
+The focused UI element is 16 pop up button (collapsed, settable) Field note, Value: Notebook A, morning visit, ID: source-choice, Secondary Actions: Expand

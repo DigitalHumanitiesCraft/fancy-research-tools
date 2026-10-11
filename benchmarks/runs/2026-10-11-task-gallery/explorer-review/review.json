@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-11",
+  "role": "independent bounded interface review and corrections",
+  "material": "Cleveland Museum of Art frozen 40-photograph CC0 sample",
+  "baseline": "http://127.0.0.1:4187/photographs/",
+  "corrected": "http://127.0.0.1:4191/photographs/",
+  "tasks": [
+    "Search Peacock; retain two distinct source records; compare process and image; export",
+    "Open qualified c. 1900s date and unidentified creator; retain original wording",
+    "Zero-result search and clear filters with keyboard focus restoration",
+    "Zoom/pan an image; change retained comparison without resetting inspection",
+    "Remove adjacent selected photograph and verify navigation no longer points to it"
+  ],
+  "fixed": [
+    "Comparison removal is a compact named close control on each photograph",
+    "Current detail selection has one removal action, not repeated in tray",
+    "Clear filters restores search focus",
+    "Singular matching photograph label",
+    "Detail selection updates tray, actions and neighbours without remounting viewer"
+  ],
+  "checks": {
+    "typescript": "passed",
+    "biomeScoped": "passed",
+    "unitPhotographs": "5 passed",
+    "browserPhotographsIsolated": "4 passed",
+    "export": "downloaded selected objects exactly equal corresponding frozen collection items",
+    "narrow": "320px timeline and detail screenshots read; no page overflow asserted",
+    "axe": "no violations in tested narrow detail state"
+  },
+  "limitations": [
+    "No human usability acceptance",
+    "No manual screen-reader evaluation or native 200 percent zoom during this bounded run",
+    "No claim of full accessibility coverage",
+    "Ordinal chronology retains two unparsed source date descriptions in Other catalogue dates"
+  ],
+  "evidence": [
+    "comparison-before.png",
+    "comparison-after.png",
+    "detail-after.png",
+    "viewer-continuity.png",
+    "timeline-before.png",
+    "unparsed-date.png",
+    "selection.json",
+    "browser/"
+  ]
+}

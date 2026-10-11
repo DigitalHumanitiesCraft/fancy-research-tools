@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-11",
+  "reason": "Removed private project names and commitments from public conceptual-review prose. Historical trial copies are now redacted, not byte-identical original inputs. No task output, source data or evaluation result was changed.",
+  "files": [
+    {
+      "path": "knowledge/plan.md",
+      "beforeSha256": "9091392cd71df3c2318bbde17010ac84238837e3102d054a01cf7af07479acf6",
+      "afterSha256": "48e44cd6dc5f133efd27d16592a650a574f15d08f7cf138502304a5eba245086"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-initial-context/knowledge/plan.md",
+      "beforeSha256": "d941cf082dd78b8bcaa24a27325994f2a5e376f1c69b9b14e913e53b3f979c64",
+      "afterSha256": "b1a99865794457a1c3d736218882183ea2c19bccf086c7f0c3a8cae727656fbd"
+    },
+    {
+      "path": "benchmarks/runs/2026-10-11-ui-skill-repair/knowledge/plan.md",
+      "beforeSha256": "d941cf082dd78b8bcaa24a27325994f2a5e376f1c69b9b14e913e53b3f979c64",
+      "afterSha256": "b1a99865794457a1c3d736218882183ea2c19bccf086c7f0c3a8cae727656fbd"
+    }
+  ]
+}

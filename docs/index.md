@@ -1,19 +1,25 @@
 # Fancy Research Tools
 
-## Research tasks
+## Explore collections
 
-- [Transcribe and annotate](../tools/#transcribe-and-annotate) with coOCR/HTR, SZD-HTR and source annotation.
-- [Edit texts and metadata](../tools/#edit-texts-and-metadata) with teiCrafter and the correspondence editor.
-- [Explore and compare](../tools/#explore-and-compare) with CorrespExplorer, the Stefan Zweig Bibliography and catalogue comparison.
-- [Build an edition](../tools/#build-an-edition) using the Agentic Edition Pipeline template.
+- [Open Collection Explorer](../photographs/) with Cleveland Museum of Art photographs.
+- [Follow a complete source-to-comparison task](getting-started.md#explore-photographs).
+
+## Capture, analyse and edit
+
+- [Capture and encode](getting-started.md#capture-szd) with teiCrafter and a real SZD example.
+- [Analyse correspondence](https://dhcraft.org/CorrespExplorer/) in CorrespExplorer.
+- [Review and correct](getting-started.md#review-bibliography) with the local Klawiter curation workflow.
+- [Build an edition](getting-started.md#build-szd-edition) using the SZD source package and Agentic Edition Pipeline.
 
 [Open the tool gallery](../tools/)
 
 ## Develop a research tool
 
-- [Start a project](getting-started.md) with a research question, source material or an existing workflow.
-- [Adapt an existing workflow](customizing.md) while preserving its data, decisions and saved work.
-- [Read the research basis](research.md) for the material and evaluation limits.
+- [Start a project](getting-started.md#work-with-a-coding-agent) with a question, source material or existing workflow.
+- [Adapt an existing workflow](customizing.md) while preserving data, decisions and saved work.
+- [Inspect technical examples](getting-started.md#technical-examples) for comparison, metadata editing, annotation and alternative interfaces.
+- [Read the research basis](research.md) for material and evaluation limits.
 
 ## Reference
 

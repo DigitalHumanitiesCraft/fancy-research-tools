@@ -13,7 +13,7 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 version: 0.1
 ---
 
@@ -41,6 +41,7 @@ The maintained knowledge base guides implementation and review of Fancy Research
 
 ## Reading paths
 
+- Established purpose and audience are in [Project](project.md#purpose). Recover those decisions before asking conceptual questions.
 - Session resumption starts with [handoff](handoff.md) and [the current plan](plan.md#resume-in-the-next-session). Implementation then follows [specification](specification.md) and the relevant contract.
 - Data adaptation starts with [data](data.md), [architecture](architecture.md), and [testing](testing.md).
 - Interface changes start with [design](design.md), the corresponding acceptance scenario in [specification](specification.md) and the [UI acceptance protocol](testing.md#ui-acceptance-protocol). These contracts cover documentation, exploration and editing.

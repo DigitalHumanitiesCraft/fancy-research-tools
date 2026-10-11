@@ -1,5 +1,33 @@
+import { readFile } from "node:fs/promises";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
+
+test("SZD example download preserves source bytes and manifest links", async ({
+  page,
+  request,
+}) => {
+  await page.goto("/guides/getting-started.html#capture-szd");
+  const pendingDownload = page.waitForEvent("download");
+  await page.getByRole("link", { name: "prepared TEI", exact: true }).click();
+  const download = await pendingDownload;
+  expect(download.suggestedFilename()).toBe("letter.tei.xml");
+  const saved = await download.path();
+  expect(saved).not.toBeNull();
+  expect(await readFile(saved as string, "utf8")).toBe(
+    await readFile("data/szd-example/letter.tei.xml", "utf8"),
+  );
+  for (const file of [
+    "manifest.json",
+    "verification.json",
+    "raw/gams-mets.xml",
+    "raw/pipeline.tei.xml",
+    "raw/pipeline-page.json",
+  ]) {
+    const response = await request.get(`/examples/szd/${file}`);
+    expect(response.status()).toBe(200);
+    expect(await response.text()).toBe(await readFile(`data/szd-example/${file}`, "utf8"));
+  }
+});
 
 test("published documentation routes, headings and local links resolve", async ({
   page,
@@ -75,33 +103,49 @@ test("relative assets and navigation work below a repository subpath", async ({ 
   await expect(page).toHaveURL(/\/fancy-research-tools\/tools\/$/);
   await page
     .getByRole("main")
-    .getByRole("link", { name: "Compare catalogue records", exact: true })
+    .getByRole("link", { name: "Open Collection Explorer", exact: true })
     .click();
-  await expect(page).toHaveURL(/\/fancy-research-tools\/pilot\/$/);
+  await expect(page).toHaveURL(/\/fancy-research-tools\/photographs\/$/);
   await expect(page.getByRole("main")).toBeVisible();
   await page.reload();
   await expect(page.getByRole("main")).toBeVisible();
-  await page.goto("/fancy-research-tools/");
-  await page.getByRole("link", { name: "Open the tool gallery" }).click();
-  await page
-    .getByRole("main")
-    .getByRole("link", { name: "Edit letter metadata", exact: true })
-    .click();
-  await expect(page).toHaveURL(/\/fancy-research-tools\/tool\/$/);
+  await page.goto("/fancy-research-tools/tool/");
   await expect(page.getByRole("main")).toBeVisible();
+  await page.goto("/fancy-research-tools/photographs/#view=photograph&record=1984.24");
+  await expect(page.locator(".viewer-canvas")).toHaveAttribute("data-ready", "true");
+  await expect(page.getByRole("link", { name: "Open image", exact: true })).toHaveAttribute(
+    "href",
+    /\/fancy-research-tools\/assets\/[^/]+\.jpg$/,
+  );
+  await page.reload();
+  await expect(page.locator(".viewer-canvas")).toHaveAttribute("data-ready", "true");
 });
 
-test("gallery previews, tool entry and return work at narrow width", async ({ page }) => {
+test("gallery previews, tool entry and return work at narrow width", async ({ page }, testInfo) => {
   await page.setViewportSize({ width: 320, height: 800 });
   await page.goto("/tools/");
   const destinations = await page
     .locator(".open-tool")
     .evaluateAll((links) => links.map((link) => (link as HTMLAnchorElement).href));
-  expect(destinations).toHaveLength(8);
-  const localDestinations = destinations.filter(
-    (href) => new URL(href).origin === "http://127.0.0.1:4173",
-  );
-  expect(localDestinations).toHaveLength(3);
+  expect(destinations).toHaveLength(5);
+  await expect(page.locator(".open-tool").first()).toHaveText("Open Collection Explorer");
+  for (const id of [
+    "explore-collections",
+    "capture-and-encode",
+    "analyse-correspondence",
+    "review-and-correct",
+    "build-an-edition",
+  ])
+    await expect(page.locator(`section[aria-labelledby="${id}"] .open-tool`)).toHaveCount(1);
+  for (const id of [
+    "reference-tool",
+    "explore-and-compare",
+    "transcribe-and-annotate",
+    "edit-texts-and-metadata",
+    "external-tools",
+  ])
+    await expect(page.locator(`[id="${id}"]`)).toHaveCount(1);
+  await expect(page.getByRole("heading", { name: "Workflow studies" })).toHaveCount(0);
   await expect(page.getByRole("navigation", { name: "Research tasks" })).toBeVisible();
   await expect(
     page.getByRole("heading", { name: "Alternative instrument interfaces" }),
@@ -122,12 +166,22 @@ test("gallery previews, tool entry and return work at narrow width", async ({ pa
       .toBe(true);
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: testInfo.outputPath("gallery-narrow.png"), fullPage: true });
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
-  for (const destination of localDestinations) {
-    await page.goto(destination);
+  await page.getByRole("link", { name: "Open Collection Explorer", exact: true }).click();
+  await expect(page.getByRole("main")).toBeVisible();
+  await page.getByRole("link", { name: "All tools", exact: true }).click();
+  await expect(page).toHaveURL(/\/tools\/$/);
+  for (const name of [
+    "Work through the SZD example",
+    "Set up the correction example",
+    "Work through the SZD edition example",
+  ]) {
+    await page.goto("/tools/");
+    await page.getByRole("link", { name, exact: true }).click();
     await expect(page.getByRole("main")).toBeVisible();
-    await page.getByRole("link", { name: "All tools", exact: true }).click();
-    await expect(page).toHaveURL(/\/tools\/$/);
+    const fragment = new URL(page.url()).hash;
+    await expect(page.locator(fragment)).toBeVisible();
   }
 });
 

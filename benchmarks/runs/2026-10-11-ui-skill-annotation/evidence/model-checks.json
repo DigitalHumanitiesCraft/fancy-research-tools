@@ -1,0 +1,49 @@
+{
+  "runtime": "v22.14.0",
+  "checks": [
+    {
+      "name": "Preserved input bytes SHA-256",
+      "status": "passed"
+    },
+    {
+      "name": "Existing notebook and review survive serialize/reopen",
+      "status": "passed"
+    },
+    {
+      "name": "Both identical passage occurrences retain distinct offsets",
+      "status": "passed"
+    },
+    {
+      "name": "No-op revision retains review; each substantive field clears it",
+      "status": "passed"
+    },
+    {
+      "name": "Editing category preserves untouched CRLF and surrounding whitespace",
+      "status": "passed"
+    },
+    {
+      "name": "Unicode café source anchors survive interchange",
+      "status": "passed"
+    },
+    {
+      "name": "Unknown fields at notebook, annotation and review levels rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Changed quote, invalid offset, unknown source and category rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Duplicate IDs, wrong case/version, missing fields, null and wrong types rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Empty notebook accepted and malformed/oversized JSON rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Imported markup retained as literal annotation text",
+      "status": "passed"
+    }
+  ]
+}

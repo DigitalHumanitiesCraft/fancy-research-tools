@@ -1,0 +1,62 @@
+{
+  "purpose": "Independent expectations read from selected frozen source records, without importing the date classifier. They establish source agreement rather than historical truth.",
+  "records": [
+    {
+      "sourceId": 156283,
+      "title": "Bridal Veil, Yosemite",
+      "date": { "label": "1865–66", "start": 1865, "end": 1866, "kind": "range" },
+      "culture": ["America"],
+      "roles": ["artist"]
+    },
+    {
+      "sourceId": 151356,
+      "title": "Alexandre Dumas père (1802–1870)",
+      "date": { "label": "1855", "start": 1855, "end": 1855, "kind": "exact-year" },
+      "roles": ["artist"]
+    },
+    {
+      "sourceId": 151948,
+      "title": "Rue de la Ferronnerie",
+      "date": { "label": "c. 1865", "start": 1865, "end": 1865, "kind": "approximate", "indexStart": 1860, "indexEnd": 1870 },
+      "roles": ["artist"]
+    },
+    {
+      "sourceId": 85863,
+      "title": "Karnak, Les Pylônes d'Horus",
+      "date": { "label": "1860s", "start": 1860, "end": 1869, "kind": "decade" },
+      "roles": ["artist"]
+    },
+    {
+      "sourceId": 147949,
+      "title": "Yosemite Falls",
+      "date": { "label": "1868", "start": 1868, "end": 1868, "kind": "exact-year" },
+      "roles": ["artist"],
+      "creatorQualifier": "attributed to"
+    },
+    {
+      "sourceId": 92759,
+      "title": "Krishna's Butter Ball, Mahabalipuram",
+      "date": { "label": "c. 1900s", "start": null, "end": null, "kind": "unknown" },
+      "roles": ["artist"]
+    },
+    {
+      "sourceId": 146322,
+      "title": "Durham Cathedral",
+      "date": { "label": "1890s-1930s", "start": null, "end": null, "kind": "unknown" },
+      "roles": ["artist"]
+    },
+    {
+      "sourceId": 147951,
+      "title": "Footbridge Near Chingford",
+      "date": { "label": "1888", "start": 1888, "end": 1888, "kind": "exact-year" },
+      "roles": ["artist", "author", "publisher"]
+    },
+    {
+      "sourceId": 151841,
+      "title": "Unknown Woman",
+      "date": { "label": "c. 1844", "start": 1844, "end": 1844, "kind": "approximate" },
+      "roles": ["artist", "artist"],
+      "creatorQualifier": "and"
+    }
+  ]
+}

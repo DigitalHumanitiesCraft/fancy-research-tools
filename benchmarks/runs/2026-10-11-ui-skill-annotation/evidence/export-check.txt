@@ -1,0 +1,1 @@
+PASS Actual browser download and reopened download are byte-identical. Three expected annotations retain exact source slices, categories, interpretations, creator and cleared reviews.

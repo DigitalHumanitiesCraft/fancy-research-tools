@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "caseId": "synthetic-annotation-procedure-trial-v1",
+  "annotations": [
+    {
+      "id": "demo-annotation-1",
+      "sourceId": "demo-note-1",
+      "start": 0,
+      "end": 28,
+      "quote": "At noon the water was still.",
+      "category": "observation",
+      "note": "The first occurrence records a visible condition.",
+      "creator": "Demonstration researcher",
+      "review": { "reviewer": "Demonstration reviewer", "criterion": "Quotation records an observed condition.", "result": "confirmed" }
+    }
+  ]
+}

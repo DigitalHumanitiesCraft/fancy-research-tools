@@ -1,0 +1,86 @@
+{
+  "recordedAt": "2026-10-11T14:03:35.838Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1776,
+      "sha256": "d857439976cf4307179af830266ba401d7aac1f28185d29350080e761ee3a872"
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 22454,
+      "sha256": "8be2cec739e227b17177688a6c1b876608238380ea8e12081142d3b5bf8d7c66"
+    },
+    {
+      "path": "catalogue.json",
+      "bytes": 6997,
+      "sha256": "9897cffd1990dac5b5476a0ed6aa7630eed0802a6fbc4196c9fdf4d285fc382c"
+    },
+    {
+      "path": "check.mjs",
+      "bytes": 3396,
+      "sha256": "c614d11addee2028860b72010962d5a573d2d6f98c282627b1b3406a1c5bb348"
+    },
+    {
+      "path": "decisions.md",
+      "bytes": 7595,
+      "sha256": "d9dec3b3ec4dcad0666625138b3629e538c37b57ae7473359915a0882d164a8a"
+    },
+    {
+      "path": "evidence/browser-checks.md",
+      "bytes": 5355,
+      "sha256": "7a0df6c13570cb83f4e7ac0fa54f28e1894751d7b926439d803234b1302fcc5e"
+    },
+    {
+      "path": "evidence/browser-download.json",
+      "bytes": 4286,
+      "sha256": "f28d543f8b761dbef04967b538ab1a2f38d1575c030186ff948d99131ebcc88a"
+    },
+    {
+      "path": "evidence/check.log",
+      "bytes": 255,
+      "sha256": "9a9066ba8ffa45bdbc78860b8fd2408e8765878cccd695d3caf77a91537bf4b0"
+    },
+    {
+      "path": "evidence/collection-dense-dom.txt",
+      "bytes": 26894,
+      "sha256": "d597ac5a4ed9b14dc0449ba07077e8c61febd92ca04309e4aa9a7ea16806c454"
+    },
+    {
+      "path": "evidence/collection-desktop.jpg",
+      "bytes": 117781,
+      "sha256": "6c0074dfaa3ca1cbe23f92a6ef7863b28c95148e954a1402f4ff6cc7c2488e4d"
+    },
+    {
+      "path": "evidence/comparison-desktop.jpg",
+      "bytes": 148980,
+      "sha256": "28c17933b5c0958e2de2fdbb63b4eb9d30b2a87cfc43eecb59b169be21a48c1e"
+    },
+    {
+      "path": "evidence/comparison-narrow.jpg",
+      "bytes": 28167,
+      "sha256": "d7d52b56175be6ed91ebf3f902feb009e0129c41d40f6664da9a83a727b31ca7"
+    },
+    {
+      "path": "evidence/rejected-source.json",
+      "bytes": 4136,
+      "sha256": "928e91071c2fb090f02faea5b8009bac36ba6e99f32450cbe4fb9c3ce7a8b81e"
+    },
+    {
+      "path": "index.html",
+      "bytes": 998,
+      "sha256": "090a4696ae67fdeab4c81cedd0567f0b1dda66e3621990d6201f17a29858ac06"
+    },
+    {
+      "path": "model.mjs",
+      "bytes": 4440,
+      "sha256": "4e2ec292cb8e444a889bbad8d04be0f8b2e80d1944f9d82454db83c7fc45ec91"
+    },
+    {
+      "path": "style.css",
+      "bytes": 6050,
+      "sha256": "93ae0e5cc8ef0a34053ff46937b9be3f07dbe003f9acba54853a9c9f6de2fb4f"
+    }
+  ]
+}

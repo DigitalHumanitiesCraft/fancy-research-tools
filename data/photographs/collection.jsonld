@@ -1,0 +1,3220 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://schema.org/",
+    "frt": "https://github.com/DigitalHumanitiesCraft/fancy-research-tools#",
+    "id": "@id",
+    "title": "name",
+    "schemaVersion": "frt:schemaVersion",
+    "items": {
+      "@id": "hasPart",
+      "@container": "@set"
+    },
+    "date": "frt:catalogueDate",
+    "label": "name",
+    "start": "frt:nominalStartYear",
+    "end": "frt:nominalEndYear",
+    "kind": "frt:dateKind",
+    "indexStart": "frt:publisherIndexStartYear",
+    "indexEnd": "frt:publisherIndexEndYear",
+    "creators": {
+      "@id": "frt:creatorAttribution",
+      "@container": "@set",
+      "@context": {
+        "id": {
+          "@id": "frt:sourceCreator",
+          "@type": "@id"
+        }
+      }
+    },
+    "role": "roleName",
+    "qualifier": "frt:sourceQualifier",
+    "extent": "frt:sourceExtent",
+    "technique": "artMedium",
+    "culture": {
+      "@id": "frt:catalogueCulture",
+      "@container": "@set"
+    },
+    "accession": "identifier",
+    "sourceUrl": {
+      "@id": "url",
+      "@type": "@id"
+    },
+    "src": "frt:localImagePath",
+    "source": "frt:sourceEvidence",
+    "rawPath": "frt:rawSnapshotPath",
+    "sha256": "frt:sha256",
+    "fields": {
+      "@id": "frt:originalFields",
+      "@type": "@json"
+    },
+    "derivation": {
+      "@id": "frt:derivation",
+      "@type": "@json"
+    }
+  },
+  "id": "urn:frt:cma-photographs:2026-10-11",
+  "@type": "Collection",
+  "schemaVersion": 1,
+  "title": "Historical photographs from the Cleveland Museum of Art",
+  "license": "CC0-1.0",
+  "derivation": {
+    "script": "scripts/import-photographs.mjs",
+    "sha256": "46aa7facc7e610e7a89fc5c336d2ad0c62f773396cae1fcfec86bf208a7fe206",
+    "method": "Deterministic projection from the frozen CMA response. Literal year, year range, circa-year and decade date labels receive nominal plotting years. Source numeric index bounds remain separate. No historic truth or human review is asserted."
+  },
+  "items": [
+    {
+      "id": "https://clevelandart.org/art/2018.252",
+      "@type": "Photograph",
+      "title": "Karnak, Les Pylônes d'Horus",
+      "date": {
+        "label": "1860s",
+        "start": 1860,
+        "end": 1869,
+        "kind": "decade",
+        "indexStart": 1860,
+        "indexEnd": 1869
+      },
+      "creators": [
+        {
+          "name": "Henri Béchard (French)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/54352",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "Albumen print from wet collodion negative",
+      "culture": [
+        "France"
+      ],
+      "accession": "2018.252",
+      "sourceUrl": "https://clevelandart.org/art/2018.252",
+      "image": {
+        "src": "data/photographs/images/85863.jpg",
+        "width": 900,
+        "height": 635,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/2018.252/2018.252_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/85863",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Karnak, Les Pylônes d'Horus",
+          "accession_number": "2018.252",
+          "creation_date": "1860s",
+          "creation_date_earliest": 1860,
+          "creation_date_latest": 1869,
+          "creators": [
+            {
+              "id": 54352,
+              "description": "Henri Béchard (French)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": null,
+              "name_in_original_language": null,
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "France"
+          ],
+          "technique": "Albumen print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/2018.252",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/2018.252/2018.252_web.jpg",
+            "width": "900",
+            "height": "635",
+            "filesize": "267605",
+            "filename": "2018.252_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/2019.68",
+      "@type": "Photograph",
+      "title": "Krishna's Butter Ball, Mahabalipuram",
+      "date": {
+        "label": "c. 1900s",
+        "start": null,
+        "end": null,
+        "kind": "unknown",
+        "indexStart": 1900,
+        "indexEnd": 1950
+      },
+      "creators": [
+        {
+          "name": "Unidentified Photographer",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/30876",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "Gelatin silver print, toned, on collodion printing-out paper",
+      "culture": [
+        "early 20th century"
+      ],
+      "accession": "2019.68",
+      "sourceUrl": "https://clevelandart.org/art/2019.68",
+      "image": {
+        "src": "data/photographs/images/92759.jpg",
+        "width": 632,
+        "height": 900,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/2019.68/2019.68_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/92759",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Krishna's Butter Ball, Mahabalipuram",
+          "accession_number": "2019.68",
+          "creation_date": "c. 1900s",
+          "creation_date_earliest": 1900,
+          "creation_date_latest": 1950,
+          "creators": [
+            {
+              "id": 30876,
+              "description": "Unidentified Photographer",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": null,
+              "name_in_original_language": null,
+              "death_year": "1899",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "early 20th century"
+          ],
+          "technique": "Gelatin silver print, toned, on collodion printing-out paper",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/2019.68",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/2019.68/2019.68_web.jpg",
+            "width": "632",
+            "height": "900",
+            "filesize": "285845",
+            "filename": "2019.68_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1972.1090",
+      "@type": "Photograph",
+      "title": "Durham Cathedral",
+      "date": {
+        "label": "1890s-1930s",
+        "start": null,
+        "end": null,
+        "kind": "unknown",
+        "indexStart": 1890,
+        "indexEnd": 1939
+      },
+      "creators": [
+        {
+          "name": "John R. Edis (British)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/29765",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "England, 20th century"
+      ],
+      "accession": "1972.1090",
+      "sourceUrl": "https://clevelandart.org/art/1972.1090",
+      "image": {
+        "src": "data/photographs/images/146322.jpg",
+        "width": 687,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1972.1090/1972.1090_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/146322",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Durham Cathedral",
+          "accession_number": "1972.1090",
+          "creation_date": "1890s-1930s",
+          "creation_date_earliest": 1890,
+          "creation_date_latest": 1939,
+          "creators": [
+            {
+              "id": 29765,
+              "description": "John R. Edis (British)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": null,
+              "name_in_original_language": null,
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 20th century"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1972.1090",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1972.1090/1972.1090_web.jpg",
+            "width": "687",
+            "height": "893",
+            "filesize": "495513",
+            "filename": "1972.1090_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1974.47",
+      "@type": "Photograph",
+      "title": "Yosemite Falls",
+      "date": {
+        "label": "1868",
+        "start": 1868,
+        "end": 1868,
+        "kind": "exact-year",
+        "indexStart": 1868,
+        "indexEnd": 1868
+      },
+      "creators": [
+        {
+          "name": "Eadweard J. Muybridge (American, 1830–1904)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/716",
+          "role": "artist",
+          "qualifier": "attributed to",
+          "extent": null
+        }
+      ],
+      "technique": "albumen print",
+      "culture": [
+        "America"
+      ],
+      "accession": "1974.47",
+      "sourceUrl": "https://clevelandart.org/art/1974.47",
+      "image": {
+        "src": "data/photographs/images/147949.jpg",
+        "width": 603,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1974.47/1974.47_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/147949",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Yosemite Falls",
+          "accession_number": "1974.47",
+          "creation_date": "1868",
+          "creation_date_earliest": 1868,
+          "creation_date_latest": 1868,
+          "creators": [
+            {
+              "id": 716,
+              "description": "Eadweard J. Muybridge (American, 1830–1904)",
+              "extent": null,
+              "qualifier": "attributed to",
+              "role": "artist",
+              "biography": "Eadweard J. Muybridge (Edward James Muggeridge) American, b. England, 1830-1904\r\n\r\nAround 1852 Edward James Muggeridge, born in Kingston-on-Thames in Surrey, immigrated to California and by 1856 had established himself in the book business in San Francisco. He learned the art of photography in 1867, possibly from his friend Silas Selleck. Soon after, he emerged as the \"artist-photographer\" Eadweard Muybridge. Also known as \"Helios,\" the proprietor of a mobile photo wagon called the Flying Studio, he became associated with Selleck's cosmopolitan gallery.\r\n\tMuybridge was one of the best early western landscape photographers. His work included a coastal survey for the U.S. government, as well as topographical, landscape, and portrait photographs made from Alaska to Central America. His large wet plate views of Yosemite rank with those of Carleton Watkins as among the finest ever taken, and his multiprint panoramas of San Francisco are highly prized.\r\n\tIn 1872 Muybridge began the experimental study that occupied him for the remainder of his life and for which he is best known. It stemmed from a commission by former California governor Leland Stanford, Jr., who asked him to capture photographically the movement of a galloping horse. Muybridge quickly became a renowned lecturer and authority on the photography of motion, developing one of the first camera shutters in 1869 and the zoogyroscope (an early machine for projecting pictures that appeared to move) in 1880. His work contributed to the development of the motion picture.\r\n\tMuybridge continued his investigations for three years at the University of Pennsylvania (1883-86) and in 1887 published the result of some 15 years of accumulated research in the 11 volumes of his immense study, Animal Locomotion, which consisted of 19,347 negatives. Muybridge's own stride was broken temporarily by his trial in 1874 for the murder of his wife's lover, a charge that he acknowledged but of which he was acquitted. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1830",
+              "death_year": "1904",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "albumen print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1974.47",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1974.47/1974.47_web.jpg",
+            "width": "603",
+            "height": "893",
+            "filesize": "465464",
+            "filename": "1974.47_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1974.48",
+      "@type": "Photograph",
+      "title": "A Convict's Home",
+      "date": {
+        "label": "1876",
+        "start": 1876,
+        "end": 1876,
+        "kind": "exact-year",
+        "indexStart": 1876,
+        "indexEnd": 1876
+      },
+      "creators": [
+        {
+          "name": "John Thomson (Scottish, 1837–1921)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/20005",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        },
+        {
+          "name": "Sampson Low, Marston, Searle and Rivington",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/69170",
+          "role": "publisher",
+          "qualifier": null,
+          "extent": "published by"
+        }
+      ],
+      "technique": "woodburytype",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1974.48",
+      "sourceUrl": "https://clevelandart.org/art/1974.48",
+      "image": {
+        "src": "data/photographs/images/147950.jpg",
+        "width": 1162,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1974.48/1974.48_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/147950",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "A Convict's Home",
+          "accession_number": "1974.48",
+          "creation_date": "1876",
+          "creation_date_earliest": 1876,
+          "creation_date_latest": 1876,
+          "creators": [
+            {
+              "id": 20005,
+              "description": "John Thomson (Scottish, 1837–1921)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "John Thomson British, b. Scotland, 1837-1921 John Thomson studied chemistry at the University of Edinburgh in his native city. While best known for his views of street life in London, Thomson spent his early photographic career in the Far East. Between 1863-73, based at a studio in Singapore, he photographed India, Ceylon (now Sri Lanka), Thailand, Cambodia, and Vietnam. He spent two years photographing China, an ambitious project for which he traveled more than 5,500 miles. Returning to England, Thomson used his experiences, and his 2,000 negatives, to write and publish Illustrations of China and Its People (1873-74), a monumental four-volume work containing 200 collotype illustrations with descriptive text. In 1877 he collaborated with journalist Adolph Smith to publish Street Life in London, one of the first books to combine text with photographic illustrations (36 Woodburytype plates of London's poor) to document sociological case histories. In 1886 Thomson was appointed instructor of photography to the Royal Geographic Society, where he was a Fellow until his death. He became official photographer to Queen Victoria in 1881 and in 1910 received the same appointment under King George V. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1837",
+              "death_year": "1921",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            },
+            {
+              "id": 69170,
+              "description": "Sampson Low, Marston, Searle and Rivington",
+              "extent": "published by",
+              "qualifier": null,
+              "role": "publisher",
+              "biography": null,
+              "name_in_original_language": null,
+              "use_in_caption": true,
+              "include_extent": true,
+              "weight": 2
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "woodburytype",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1974.48",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1974.48/1974.48_web.jpg",
+            "width": "1162",
+            "height": "893",
+            "filesize": "640510",
+            "filename": "1974.48_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1974.49",
+      "@type": "Photograph",
+      "title": "Footbridge Near Chingford",
+      "date": {
+        "label": "1888",
+        "start": 1888,
+        "end": 1888,
+        "kind": "exact-year",
+        "indexStart": 1888,
+        "indexEnd": 1888
+      },
+      "creators": [
+        {
+          "name": "Peter Henry Emerson (British, 1856–1936)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/110",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        },
+        {
+          "name": "Izaak Walton (British (modern), 1593–1683)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/381075",
+          "role": "author",
+          "qualifier": null,
+          "extent": "written by"
+        },
+        {
+          "name": "Sampson Low, Marston, Searle and Rivington",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/69170",
+          "role": "publisher",
+          "qualifier": null,
+          "extent": "published by"
+        }
+      ],
+      "technique": "photogravure",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1974.49",
+      "sourceUrl": "https://clevelandart.org/art/1974.49",
+      "image": {
+        "src": "data/photographs/images/147951.jpg",
+        "width": 693,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1974.49/1974.49_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/147951",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Footbridge Near Chingford",
+          "accession_number": "1974.49",
+          "creation_date": "1888",
+          "creation_date_earliest": 1888,
+          "creation_date_latest": 1888,
+          "creators": [
+            {
+              "id": 110,
+              "description": "Peter Henry Emerson (British, 1856–1936)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Peter Henry Emerson British, b. Cuba, 1856-1936\r\n\r\nTrained as a physician, Peter Henry Emerson abandoned medicine soon after receiving his degree in order to take up photography. His thorough command of the medium and his interest in reproducing rural subjects in a simple, direct manner led to an approach that he called naturalism. Emerson argued vehemently that the inherent qualities of photography should be used to portray subjects in a manner that eschewed artifice and the unnatural intrusions of the photographer's aesthetic style. This was in distinction to the academicism that Emerson despised, exemplified by the artificially constructed, often cloying images of Oscar G. Rejlander and Henry Peach Robinson.\r\n\tEmerson's several illustrated volumes of rural British life, beginning with Life and Landscape on the Norfolk Broads (1886), combined a clarity of vision derived from the advanced science of his day with a retrospective romanticism derived from French and British painting. The result was a unique style that helped direct photography away from artifice toward the visual integrity now associated with modernism and straight photography. Emerson's attempts as a writer and speaker to develop a theoretical base for his style, while highly regarded, are today thought to be a less powerful statement of his opinions than the work he produced. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1856",
+              "death_year": "1936",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            },
+            {
+              "id": 381075,
+              "description": "Izaak Walton (British (modern), 1593–1683)",
+              "extent": "written by",
+              "qualifier": null,
+              "role": "author",
+              "biography": "British author, biographer, and poet, 1593-1683",
+              "name_in_original_language": null,
+              "birth_year": "1593",
+              "death_year": "1683",
+              "use_in_caption": true,
+              "include_extent": true,
+              "weight": 2
+            },
+            {
+              "id": 69170,
+              "description": "Sampson Low, Marston, Searle and Rivington",
+              "extent": "published by",
+              "qualifier": null,
+              "role": "publisher",
+              "biography": null,
+              "name_in_original_language": null,
+              "use_in_caption": true,
+              "include_extent": true,
+              "weight": 3
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "photogravure",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1974.49",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1974.49/1974.49_web.jpg",
+            "width": "693",
+            "height": "893",
+            "filesize": "464108",
+            "filename": "1974.49_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1974.50",
+      "@type": "Photograph",
+      "title": "Boulogne Fisherman",
+      "date": {
+        "label": "c. 1897",
+        "start": 1897,
+        "end": 1897,
+        "kind": "approximate",
+        "indexStart": 1892,
+        "indexEnd": 1902
+      },
+      "creators": [
+        {
+          "name": "Paul Martin (British, 1864–1944)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/632",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "gelatin silver print",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1974.50",
+      "sourceUrl": "https://clevelandart.org/art/1974.50",
+      "image": {
+        "src": "data/photographs/images/147952.jpg",
+        "width": 1111,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1974.50/1974.50_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/147952",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Boulogne Fisherman",
+          "accession_number": "1974.50",
+          "creation_date": "c. 1897",
+          "creation_date_earliest": 1892,
+          "creation_date_latest": 1902,
+          "creators": [
+            {
+              "id": 632,
+              "description": "Paul Martin (British, 1864–1944)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Paul Martin British, b. France, 1864-1944\r\n\r\nPaul Augustus Martin is best known for pioneering work in the field of candid or instantaneous photography now associated with the snapshot. Born in Herbeuville, Martin immigrated with his family to England in 1873. He apprenticed as a wood engraver at age 16 and took up photography as a pastime in 1884. Using the newly invented small, hand-held detective camera, he began capturing the informal public scenes that would become his trademark. In 1892 Martin opened a studio with H. G. Dorrett and continued to pursue unusual aspects of the medium, such as the night photography that provided the material for his article \"Around London by Gaslight,\" published in the Amateur Photographer (October 9 and 16, 1896).\r\n\tA member of the West Sussex Photographic Society and the Linked Ring, Martin won numerous awards from the Royal Photographic Society. He produced studio work until 1926, then photographed for newspapers and magazines. Martin's revealing, instantaneous views of London prompted Cecil Beaton to dub him \"the Charles Dickens of photography.\" T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1864",
+              "death_year": "1944",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "gelatin silver print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1974.50",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1974.50/1974.50_web.jpg",
+            "width": "1111",
+            "height": "893",
+            "filesize": "668194",
+            "filename": "1974.50_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1974.51",
+      "@type": "Photograph",
+      "title": "Japanese Temple Graveyard, Shuntoji, Nagasaki",
+      "date": {
+        "label": "c. 1867",
+        "start": 1867,
+        "end": 1867,
+        "kind": "approximate",
+        "indexStart": 1862,
+        "indexEnd": 1872
+      },
+      "creators": [
+        {
+          "name": "Felice A. Beato (British, 1832–1909)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/35",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1974.51",
+      "sourceUrl": "https://clevelandart.org/art/1974.51",
+      "image": {
+        "src": "data/photographs/images/147953.jpg",
+        "width": 750,
+        "height": 616,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1974.51/1974.51_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/147953",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Japanese Temple Graveyard, Shuntoji, Nagasaki",
+          "accession_number": "1974.51",
+          "creation_date": "c. 1867",
+          "creation_date_earliest": 1862,
+          "creation_date_latest": 1872,
+          "creators": [
+            {
+              "id": 35,
+              "description": "Felice A. Beato (British, 1832–1909)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Felice Beato British?, b. Italy, 1832-1909 Often confused with his brother Antonio, Venice-born Felice Beato was a pioneer photojournalist with strong ties to Britain. His first important work was done in partnership with James Robertson, superintendent and chief engraver for the Imperial Mint in Constantinople and husband of Beato's sister, Maria Matilde. With Robertson he photographed first in Malta in the early 1850s, then in Constantinople, Athens, Palestine, and Egypt. By the middle of the decade, Beato and Robertson were among the first to apply photography to the reportage of war, covering the Crimean conflict and the fall of Balaklava. Images of war and the exotic became Beato's specialty. With Robertson, he covered the Indian Mutiny (1857-59), works especially well known for their grisly views of the siege of Lucknow. His photographs of the Opium War, taken in the early 1860s, are thought to be the first western views of China; his depictions of the conquered Fort Taku are among the most stark and uncompromising documents of their time. Following China, Beato worked for some 15 years in Japan, where he produced a large body of work. In 1877 he sold his studio and negatives to Austrian photographer Baron Raimond von Stillfried und Ratenitz, and in the mid-1880s documented British military activities at Khartoum in the Sudan. In an 1886 issue of the British Journal of Photography, Beato was credited with an important improvement in the albumen process, which cut necessary exposure time. Around 1889 he settled in Burma, where he illustrated mail-order catalogues and sold native furniture and crafts. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1832",
+              "death_year": "1909",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "albumen print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1974.51",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1974.51/1974.51_web.jpg",
+            "width": "1087",
+            "height": "893",
+            "filesize": "813870",
+            "filename": "1974.51_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1974.52",
+      "@type": "Photograph",
+      "title": "Mnemosyne (Marie Spartali, 1844-1927)",
+      "date": {
+        "label": "1868",
+        "start": 1868,
+        "end": 1868,
+        "kind": "exact-year",
+        "indexStart": 1868,
+        "indexEnd": 1868
+      },
+      "creators": [
+        {
+          "name": "Julia Margaret Cameron (British, 1815–1879)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/293",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print from wet collodion negative",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1974.52",
+      "sourceUrl": "https://clevelandart.org/art/1974.52",
+      "image": {
+        "src": "data/photographs/images/147954.jpg",
+        "width": 696,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1974.52/1974.52_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/147954",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Mnemosyne (Marie Spartali, 1844-1927)",
+          "accession_number": "1974.52",
+          "creation_date": "1868",
+          "creation_date_earliest": 1868,
+          "creation_date_latest": 1868,
+          "creators": [
+            {
+              "id": 293,
+              "description": "Julia Margaret Cameron (British, 1815–1879)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Julia Margaret Cameron British, 1815-1879\r\n\r\nBorn in Calcutta to a French mother and an English father employed by the East India Company, Julia Margaret Cameron was a key figure in the development of photography both in Britain and abroad. She was sent, under the care of her grandmother, to France for her education. Marriage to jurist Charles Hay Cameron took her back to India in 1838, and to England in 1848, where in 1860 the family finally settled on the Isle of Wight. Three years later Cameron received her first camera, a gift from her daughter, as a way to pass the time while her husband was away on an extended trip to Ceylon.\r\n\tFor the next 15 years, Cameron's passion for photography, and her fortunate position among Britain's cultural elite, allowed her to produce a series of portraits, allegories, and illustrations that are among the most admired and influential of photographic images. Frequently marked by a loose, soft style, her portraits of well-known figures, such as Sir John Herschel, Thomas Carlyle, and Ellen Terry, reveal her subject's character in an unusually forceful manner. Her allegories and tableaux often include neighbors and friends like Lord Tennyson and her artistic mentor, the Pre-Raphaelite painter G. F. Watts. In 1874 she illustrated Tennyson's popular long poem Idylls of the King.\r\n\tIn 1875, after the death of her daughter, Cameron returned to Ceylon with her husband, joining their five sons. There she continued to photograph until her death in 1879. A later generation was introduced to Cameron's work by Alfred Stieglitz, who reproduced a selection from it in Camera Work. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1815",
+              "death_year": "1879",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "albumen print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1974.52",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1974.52/1974.52_web.jpg",
+            "width": "696",
+            "height": "893",
+            "filesize": "360165",
+            "filename": "1974.52_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1975.37",
+      "@type": "Photograph",
+      "title": "Gloucester Cathedral - Cloisters: South and West Alleys",
+      "date": {
+        "label": "c. 1900",
+        "start": 1900,
+        "end": 1900,
+        "kind": "approximate",
+        "indexStart": 1895,
+        "indexEnd": 1905
+      },
+      "creators": [
+        {
+          "name": "Frederick H. Evans (British, 1853–1943)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/119",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "England, 20th century"
+      ],
+      "accession": "1975.37",
+      "sourceUrl": "https://clevelandart.org/art/1975.37",
+      "image": {
+        "src": "data/photographs/images/148309.jpg",
+        "width": 662,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1975.37/1975.37_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/148309",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Gloucester Cathedral - Cloisters: South and West Alleys",
+          "accession_number": "1975.37",
+          "creation_date": "c. 1900",
+          "creation_date_earliest": 1895,
+          "creation_date_latest": 1905,
+          "creators": [
+            {
+              "id": 119,
+              "description": "Frederick H. Evans (British, 1853–1943)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Frederick H. Evans British, 1853-1943\r\n\r\nBorn in Whitechapel, London, Frederick Evans was the preeminent architectural photographer of his day, known particularly for his views of British cathedrals. He was also known for portraiture, with sitters such as George Bernard Shaw and Aubrey Beardsley.\r\n\tOriginally a London bookseller, Evans retired in 1898 to devote himself full-time to photography. He was a passionate devotee of straight, or pure, photography. His elegant, unaltered platinum prints relied on form and light to probe the spiritual elements of architectural space and to reveal the character and nuance of the subjects of his portraits. Evans, who exhibited his work widely, extended his aesthetic beliefs to the realm of display; he is credited with transforming British exhibition practice -- the crowded Victorian salon giving way to a venue where prints were shown singly and clearly, out of competition with one another.\r\n\tAlfred Stieglitz was a great admirer of Evans's work, which was published in Camera Work (1903) and shown at the Little Galleries of the Photo-Secession in New York (1906). A member of the Royal Photographic Society, Evans was named an Honorary Fellow in 1925 and was elected to the Linked Ring in 1900. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1853",
+              "death_year": "1943",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 20th century"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1975.37",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1975.37/1975.37_web.jpg",
+            "width": "662",
+            "height": "893",
+            "filesize": "442130",
+            "filename": "1975.37_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1976.156",
+      "@type": "Photograph",
+      "title": "The Paranirvana of Buddha, Gal Vihara, Polonnaruva, Ceylon",
+      "date": {
+        "label": "1870–71",
+        "start": 1870,
+        "end": 1871,
+        "kind": "range",
+        "indexStart": 1870,
+        "indexEnd": 1871
+      },
+      "creators": [
+        {
+          "name": "Joseph Lawton (British, d. 1874)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/559",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1976.156",
+      "sourceUrl": "https://clevelandart.org/art/1976.156",
+      "image": {
+        "src": "data/photographs/images/148703.jpg",
+        "width": 1207,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1976.156/1976.156_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/148703",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "The Paranirvana of Buddha, Gal Vihara, Polonnaruva, Ceylon",
+          "accession_number": "1976.156",
+          "creation_date": "1870–71",
+          "creation_date_earliest": 1870,
+          "creation_date_latest": 1871,
+          "creators": [
+            {
+              "id": 559,
+              "description": "Joseph Lawton (British, d. 1874)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Joseph Lawton British, d. 1874 In the 1860s Joseph Lawton immigrated to Ceylon (now Sri Lanka), opening a studio at Kandy in 1866. His most important known work is a series of views of ancient ruins in Ceylon, commissioned in 1870-71, that accompanied a survey by the Committee of Ancient Architecture. Lawton's death in 1874 was attributed to health problems contracted during this work. His widow continued to operate the firm of J. Lawton and Co., listed as photographers to the Duke of Edinburgh, until it closed in 1881. T.W.F.",
+              "name_in_original_language": null,
+              "death_year": "1874",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "albumen print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1976.156",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1976.156/1976.156_web.jpg",
+            "width": "1207",
+            "height": "893",
+            "filesize": "922220",
+            "filename": "1976.156_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1978.97",
+      "@type": "Photograph",
+      "title": "\"Dread\" Trotting",
+      "date": {
+        "label": "1887",
+        "start": 1887,
+        "end": 1887,
+        "kind": "exact-year",
+        "indexStart": 1887,
+        "indexEnd": 1887
+      },
+      "creators": [
+        {
+          "name": "Eadweard J. Muybridge (American, 1830–1904)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/716",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        },
+        {
+          "name": "University of Pennsylvania",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/69482",
+          "role": "published by",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "collotype",
+      "culture": [
+        "America"
+      ],
+      "accession": "1978.97",
+      "sourceUrl": "https://clevelandart.org/art/1978.97",
+      "image": {
+        "src": "data/photographs/images/149462.jpg",
+        "width": 750,
+        "height": 718,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1978.97/1978.97_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149462",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "\"Dread\" Trotting",
+          "accession_number": "1978.97",
+          "creation_date": "1887",
+          "creation_date_earliest": 1887,
+          "creation_date_latest": 1887,
+          "creators": [
+            {
+              "id": 716,
+              "description": "Eadweard J. Muybridge (American, 1830–1904)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Eadweard J. Muybridge (Edward James Muggeridge) American, b. England, 1830-1904\r\n\r\nAround 1852 Edward James Muggeridge, born in Kingston-on-Thames in Surrey, immigrated to California and by 1856 had established himself in the book business in San Francisco. He learned the art of photography in 1867, possibly from his friend Silas Selleck. Soon after, he emerged as the \"artist-photographer\" Eadweard Muybridge. Also known as \"Helios,\" the proprietor of a mobile photo wagon called the Flying Studio, he became associated with Selleck's cosmopolitan gallery.\r\n\tMuybridge was one of the best early western landscape photographers. His work included a coastal survey for the U.S. government, as well as topographical, landscape, and portrait photographs made from Alaska to Central America. His large wet plate views of Yosemite rank with those of Carleton Watkins as among the finest ever taken, and his multiprint panoramas of San Francisco are highly prized.\r\n\tIn 1872 Muybridge began the experimental study that occupied him for the remainder of his life and for which he is best known. It stemmed from a commission by former California governor Leland Stanford, Jr., who asked him to capture photographically the movement of a galloping horse. Muybridge quickly became a renowned lecturer and authority on the photography of motion, developing one of the first camera shutters in 1869 and the zoogyroscope (an early machine for projecting pictures that appeared to move) in 1880. His work contributed to the development of the motion picture.\r\n\tMuybridge continued his investigations for three years at the University of Pennsylvania (1883-86) and in 1887 published the result of some 15 years of accumulated research in the 11 volumes of his immense study, Animal Locomotion, which consisted of 19,347 negatives. Muybridge's own stride was broken temporarily by his trial in 1874 for the murder of his wife's lover, a charge that he acknowledged but of which he was acquitted. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1830",
+              "death_year": "1904",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            },
+            {
+              "id": 69482,
+              "description": "University of Pennsylvania",
+              "extent": null,
+              "qualifier": null,
+              "role": "published by",
+              "biography": null,
+              "name_in_original_language": null,
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 2
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "collotype",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1978.97",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1978.97/1978.97_web.jpg",
+            "width": "932",
+            "height": "893",
+            "filesize": "563549",
+            "filename": "1978.97_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.128",
+      "@type": "Photograph",
+      "title": "Along the Old Canal",
+      "date": {
+        "label": "1896",
+        "start": 1896,
+        "end": 1896,
+        "kind": "exact-year",
+        "indexStart": 1896,
+        "indexEnd": 1896
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.128",
+      "sourceUrl": "https://clevelandart.org/art/1980.128",
+      "image": {
+        "src": "data/photographs/images/149889.jpg",
+        "width": 1251,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.128/1980.128_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149889",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Along the Old Canal",
+          "accession_number": "1980.128",
+          "creation_date": "1896",
+          "creation_date_earliest": 1896,
+          "creation_date_latest": 1896,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.128",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.128/1980.128_web.jpg",
+            "width": "1251",
+            "height": "893",
+            "filesize": "746968",
+            "filename": "1980.128_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.129",
+      "@type": "Photograph",
+      "title": "At the Window",
+      "date": {
+        "label": "1896",
+        "start": 1896,
+        "end": 1896,
+        "kind": "exact-year",
+        "indexStart": 1896,
+        "indexEnd": 1896
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with watercolor and gouache",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.129",
+      "sourceUrl": "https://clevelandart.org/art/1980.129",
+      "image": {
+        "src": "data/photographs/images/149890.jpg",
+        "width": 670,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.129/1980.129_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149890",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "At the Window",
+          "accession_number": "1980.129",
+          "creation_date": "1896",
+          "creation_date_earliest": 1896,
+          "creation_date_latest": 1896,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with watercolor and gouache",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.129",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.129/1980.129_web.jpg",
+            "width": "670",
+            "height": "893",
+            "filesize": "412512",
+            "filename": "1980.129_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.130",
+      "@type": "Photograph",
+      "title": "What Shall I Say?",
+      "date": {
+        "label": "1896",
+        "start": 1896,
+        "end": 1896,
+        "kind": "exact-year",
+        "indexStart": 1896,
+        "indexEnd": 1896
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with gouache",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.130",
+      "sourceUrl": "https://clevelandart.org/art/1980.130",
+      "image": {
+        "src": "data/photographs/images/149892.jpg",
+        "width": 750,
+        "height": 627,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.130/1980.130_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149892",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "What Shall I Say?",
+          "accession_number": "1980.130",
+          "creation_date": "1896",
+          "creation_date_earliest": 1896,
+          "creation_date_latest": 1896,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with gouache",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.130",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.130/1980.130_web.jpg",
+            "width": "1068",
+            "height": "893",
+            "filesize": "564730",
+            "filename": "1980.130_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.131",
+      "@type": "Photograph",
+      "title": "What Shall I Say?",
+      "date": {
+        "label": "1896",
+        "start": 1896,
+        "end": 1896,
+        "kind": "exact-year",
+        "indexStart": 1896,
+        "indexEnd": 1896
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with graphite",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.131",
+      "sourceUrl": "https://clevelandart.org/art/1980.131",
+      "image": {
+        "src": "data/photographs/images/149893.jpg",
+        "width": 1180,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.131/1980.131_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149893",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "What Shall I Say?",
+          "accession_number": "1980.131",
+          "creation_date": "1896",
+          "creation_date_earliest": 1896,
+          "creation_date_latest": 1896,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with graphite",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.131",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.131/1980.131_web.jpg",
+            "width": "1180",
+            "height": "893",
+            "filesize": "642973",
+            "filename": "1980.131_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.132",
+      "@type": "Photograph",
+      "title": "By the Window",
+      "date": {
+        "label": "1896",
+        "start": 1896,
+        "end": 1896,
+        "kind": "exact-year",
+        "indexStart": 1896,
+        "indexEnd": 1896
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with crayon",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.132",
+      "sourceUrl": "https://clevelandart.org/art/1980.132",
+      "image": {
+        "src": "data/photographs/images/149894.jpg",
+        "width": 656,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.132/1980.132_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149894",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "By the Window",
+          "accession_number": "1980.132",
+          "creation_date": "1896",
+          "creation_date_earliest": 1896,
+          "creation_date_latest": 1896,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with crayon",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.132",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.132/1980.132_web.jpg",
+            "width": "656",
+            "height": "893",
+            "filesize": "404484",
+            "filename": "1980.132_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.133",
+      "@type": "Photograph",
+      "title": "On the Porch (Julia Hall McCune)",
+      "date": {
+        "label": "c. 1897",
+        "start": 1897,
+        "end": 1897,
+        "kind": "approximate",
+        "indexStart": 1892,
+        "indexEnd": 1902
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.133",
+      "sourceUrl": "https://clevelandart.org/art/1980.133",
+      "image": {
+        "src": "data/photographs/images/149895.jpg",
+        "width": 613,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.133/1980.133_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149895",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "On the Porch (Julia Hall McCune)",
+          "accession_number": "1980.133",
+          "creation_date": "c. 1897",
+          "creation_date_earliest": 1892,
+          "creation_date_latest": 1902,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.133",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.133/1980.133_web.jpg",
+            "width": "613",
+            "height": "893",
+            "filesize": "350175",
+            "filename": "1980.133_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.134",
+      "@type": "Photograph",
+      "title": "The Readers",
+      "date": {
+        "label": "1897",
+        "start": 1897,
+        "end": 1897,
+        "kind": "exact-year",
+        "indexStart": 1897,
+        "indexEnd": 1897
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with graphite",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.134",
+      "sourceUrl": "https://clevelandart.org/art/1980.134",
+      "image": {
+        "src": "data/photographs/images/149896.jpg",
+        "width": 509,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.134/1980.134_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149896",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "The Readers",
+          "accession_number": "1980.134",
+          "creation_date": "1897",
+          "creation_date_earliest": 1897,
+          "creation_date_latest": 1897,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with graphite",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.134",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.134/1980.134_web.jpg",
+            "width": "509",
+            "height": "893",
+            "filesize": "263375",
+            "filename": "1980.134_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.135",
+      "@type": "Photograph",
+      "title": "Julia Hall McCune",
+      "date": {
+        "label": "c. 1897",
+        "start": 1897,
+        "end": 1897,
+        "kind": "approximate",
+        "indexStart": 1892,
+        "indexEnd": 1902
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with pencil",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.135",
+      "sourceUrl": "https://clevelandart.org/art/1980.135",
+      "image": {
+        "src": "data/photographs/images/149897.jpg",
+        "width": 644,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.135/1980.135_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149897",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Julia Hall McCune",
+          "accession_number": "1980.135",
+          "creation_date": "c. 1897",
+          "creation_date_earliest": 1892,
+          "creation_date_latest": 1902,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with pencil",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.135",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.135/1980.135_web.jpg",
+            "width": "644",
+            "height": "893",
+            "filesize": "404159",
+            "filename": "1980.135_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.136",
+      "@type": "Photograph",
+      "title": "Telegraph Poles",
+      "date": {
+        "label": "1898",
+        "start": 1898,
+        "end": 1898,
+        "kind": "exact-year",
+        "indexStart": 1898,
+        "indexEnd": 1898
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "photogravure",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.136",
+      "sourceUrl": "https://clevelandart.org/art/1980.136",
+      "image": {
+        "src": "data/photographs/images/149898.jpg",
+        "width": 499,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.136/1980.136_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149898",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Telegraph Poles",
+          "accession_number": "1980.136",
+          "creation_date": "1898",
+          "creation_date_earliest": 1898,
+          "creation_date_latest": 1898,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "photogravure",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.136",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.136/1980.136_web.jpg",
+            "width": "499",
+            "height": "893",
+            "filesize": "275374",
+            "filename": "1980.136_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.137",
+      "@type": "Photograph",
+      "title": "Letitia Felix",
+      "date": {
+        "label": "c. 1898",
+        "start": 1898,
+        "end": 1898,
+        "kind": "approximate",
+        "indexStart": 1893,
+        "indexEnd": 1903
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.137",
+      "sourceUrl": "https://clevelandart.org/art/1980.137",
+      "image": {
+        "src": "data/photographs/images/149899.jpg",
+        "width": 665,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.137/1980.137_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149899",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Letitia Felix",
+          "accession_number": "1980.137",
+          "creation_date": "c. 1898",
+          "creation_date_earliest": 1893,
+          "creation_date_latest": 1903,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.137",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.137/1980.137_web.jpg",
+            "width": "665",
+            "height": "893",
+            "filesize": "406541",
+            "filename": "1980.137_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.138",
+      "@type": "Photograph",
+      "title": "Letitia Felix",
+      "date": {
+        "label": "1899",
+        "start": 1899,
+        "end": 1899,
+        "kind": "exact-year",
+        "indexStart": 1899,
+        "indexEnd": 1899
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.138",
+      "sourceUrl": "https://clevelandart.org/art/1980.138",
+      "image": {
+        "src": "data/photographs/images/149900.jpg",
+        "width": 583,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.138/1980.138_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149900",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Letitia Felix",
+          "accession_number": "1980.138",
+          "creation_date": "1899",
+          "creation_date_earliest": 1899,
+          "creation_date_latest": 1899,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.138",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.138/1980.138_web.jpg",
+            "width": "583",
+            "height": "893",
+            "filesize": "310194",
+            "filename": "1980.138_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.139",
+      "@type": "Photograph",
+      "title": "Julia Hall McCune",
+      "date": {
+        "label": "c. 1900",
+        "start": 1900,
+        "end": 1900,
+        "kind": "approximate",
+        "indexStart": 1895,
+        "indexEnd": 1905
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.139",
+      "sourceUrl": "https://clevelandart.org/art/1980.139",
+      "image": {
+        "src": "data/photographs/images/149901.jpg",
+        "width": 654,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.139/1980.139_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149901",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Julia Hall McCune",
+          "accession_number": "1980.139",
+          "creation_date": "c. 1900",
+          "creation_date_earliest": 1895,
+          "creation_date_latest": 1905,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.139",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.139/1980.139_web.jpg",
+            "width": "654",
+            "height": "893",
+            "filesize": "319865",
+            "filename": "1980.139_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.140",
+      "@type": "Photograph",
+      "title": "The Azalea Plant (Julia Hall McCune)",
+      "date": {
+        "label": "c. 1900",
+        "start": 1900,
+        "end": 1900,
+        "kind": "approximate",
+        "indexStart": 1895,
+        "indexEnd": 1905
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with pencil",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.140",
+      "sourceUrl": "https://clevelandart.org/art/1980.140",
+      "image": {
+        "src": "data/photographs/images/149903.jpg",
+        "width": 685,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.140/1980.140_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149903",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "The Azalea Plant (Julia Hall McCune)",
+          "accession_number": "1980.140",
+          "creation_date": "c. 1900",
+          "creation_date_earliest": 1895,
+          "creation_date_latest": 1905,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with pencil",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.140",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.140/1980.140_web.jpg",
+            "width": "685",
+            "height": "893",
+            "filesize": "416256",
+            "filename": "1980.140_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.141",
+      "@type": "Photograph",
+      "title": "Winter Landscape",
+      "date": {
+        "label": "c. 1900",
+        "start": 1900,
+        "end": 1900,
+        "kind": "approximate",
+        "indexStart": 1895,
+        "indexEnd": 1905
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.141",
+      "sourceUrl": "https://clevelandart.org/art/1980.141",
+      "image": {
+        "src": "data/photographs/images/149904.jpg",
+        "width": 699,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.141/1980.141_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149904",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Winter Landscape",
+          "accession_number": "1980.141",
+          "creation_date": "c. 1900",
+          "creation_date_earliest": 1895,
+          "creation_date_latest": 1905,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.141",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.141/1980.141_web.jpg",
+            "width": "699",
+            "height": "893",
+            "filesize": "444473",
+            "filename": "1980.141_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.145",
+      "@type": "Photograph",
+      "title": "The Peacock Feather",
+      "date": {
+        "label": "c. 1902",
+        "start": 1902,
+        "end": 1902,
+        "kind": "approximate",
+        "indexStart": 1897,
+        "indexEnd": 1907
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with graphite",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.145",
+      "sourceUrl": "https://clevelandart.org/art/1980.145",
+      "image": {
+        "src": "data/photographs/images/149908.jpg",
+        "width": 724,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.145/1980.145_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149908",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "The Peacock Feather",
+          "accession_number": "1980.145",
+          "creation_date": "c. 1902",
+          "creation_date_earliest": 1897,
+          "creation_date_latest": 1907,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with graphite",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.145",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.145/1980.145_web.jpg",
+            "width": "724",
+            "height": "893",
+            "filesize": "437493",
+            "filename": "1980.145_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.146",
+      "@type": "Photograph",
+      "title": "The Peacock Feather",
+      "date": {
+        "label": "c. 1902",
+        "start": 1902,
+        "end": 1902,
+        "kind": "approximate",
+        "indexStart": 1897,
+        "indexEnd": 1907
+      },
+      "creators": [
+        {
+          "name": "Clarence H. White (American, 1871–1925)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1085",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print with gouache",
+      "culture": [
+        "America"
+      ],
+      "accession": "1980.146",
+      "sourceUrl": "https://clevelandart.org/art/1980.146",
+      "image": {
+        "src": "data/photographs/images/149909.jpg",
+        "width": 728,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.146/1980.146_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/149909",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "The Peacock Feather",
+          "accession_number": "1980.146",
+          "creation_date": "c. 1902",
+          "creation_date_earliest": 1897,
+          "creation_date_latest": 1907,
+          "creators": [
+            {
+              "id": 1085,
+              "description": "Clarence H. White (American, 1871–1925)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Clarence H. White American, 1871-1925 Born in Carlisle, Ohio, Clarence Hudson White moved to the town of Newark in 1887. He began to photograph as a hobby in 1893, quickly becoming quite skilled, and by 1896 his works were recognized by the Ohio Photographers Association. Entirely self-taught, his mastery of the medium was based on his ability to create balanced compositions and to render the subtle effects of natural light. He explored various materials for their aesthetic possibilities, including platinum and gum bichromate prints, and, after 1906, palladium prints. In 1898 White showed his work in Philadelphia, where it came to the attention of Alfred Stieglitz and Joseph Keiley. His images were included in the 1899 Photographic Salon in London, which had been organized by the Linked Ring. From 1900-10 White exhibited in every national and international photographic show in London, Paris, Glasgow, Berlin, and Vienna. Moving to New York City in 1906, he began a career as an educator, lecturing on photography at Columbia University Teachers College (1907-25) and the Brooklyn Institute of Arts and Sciences (1908-21). In 1910 White began teaching summer classes in Seguinland, Maine, which led him to open the Clarence H. White School of Photography in New York in 1914. During summer he continued to teach workshops in New York, Connecticut, and Maine. Among his accomplished students were Margaret Bourke-White, Dorothea Lange, Paul J. Outerbridge, Ralph Steiner, and Karl F. Struss. Named a member of the Linked Ring in 1900, White was nominated to the Photo-Secession in 1902. He was the first president of the Pictorial Photographers of America, helping to found it with Gertrude Käsebier and others in 1916. Influenced by Japanese art, the work of James Abbott McNeill Whistler, and other progressive sources, White's style is imaginative and gentle, often underscored by his use of platinum papers. He believed that the photograph was a work of fine art in its own right. Although deeply involved and influential in New York's competitive world of photography, White produced his best work from 1893-1906, photographing simple, open scenes of his family and friends in their domestic, midwestern environment. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1871",
+              "death_year": "1925",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "platinum print with gouache",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.146",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.146/1980.146_web.jpg",
+            "width": "728",
+            "height": "893",
+            "filesize": "443811",
+            "filename": "1980.146_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1980.35",
+      "@type": "Photograph",
+      "title": "Rue du Regard",
+      "date": {
+        "label": "1899",
+        "start": 1899,
+        "end": 1899,
+        "kind": "exact-year",
+        "indexStart": 1899,
+        "indexEnd": 1899
+      },
+      "creators": [
+        {
+          "name": "Eugène Atget (French, 1857–1927)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/23",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print, gold toned",
+      "culture": [
+        "France, 19th century"
+      ],
+      "accession": "1980.35",
+      "sourceUrl": "https://clevelandart.org/art/1980.35",
+      "image": {
+        "src": "data/photographs/images/150113.jpg",
+        "width": 743,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1980.35/1980.35_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/150113",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Rue du Regard",
+          "accession_number": "1980.35",
+          "creation_date": "1899",
+          "creation_date_earliest": 1899,
+          "creation_date_latest": 1899,
+          "creators": [
+            {
+              "id": 23,
+              "description": "Eugène Atget (French, 1857–1927)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Eugène Atget French, 1857-1927\r\n\r\nRelatively unknown to the public during his lifetime, Eugène Atget is today an icon -- one of the most celebrated and influential photographers of the 20th century. Born near Bordeaux, Atget first directed his efforts to painting and the stage before turning to photography shortly before 1890. He is best known for his documentary scenes of Paris and Versailles, but he photographed a number of other sites as well. Atget viewed his work as a historical and aesthetic record, regarding it as documentation for use by artists. Indeed, several artists are known to have painted from his images.\r\n\tUsing relatively unsophisticated, even outdated equipment, Atget achieved a view of French architecture and culture that is both personal and factual. Along with the rediscovery of the images of Mathew Brady in the early 20th century, the recognition of Atget's artistic accomplishments shortly before his death by Berenice Abbott, Man Ray, and others helped turn photographers away from the mannered style of pictorialism toward the visual and technical clarity of modernism. Marked by a selective and highly individual method, his is among the most widely shown, published, and recognized work in photography today. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1857",
+              "death_year": "1927",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "France, 19th century"
+          ],
+          "technique": "albumen print, gold toned",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1980.35",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1980.35/1980.35_web.jpg",
+            "width": "743",
+            "height": "893",
+            "filesize": "507754",
+            "filename": "1980.35_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1983.198",
+      "@type": "Photograph",
+      "title": "Alexandre Dumas père (1802–1870)",
+      "date": {
+        "label": "1855",
+        "start": 1855,
+        "end": 1855,
+        "kind": "exact-year",
+        "indexStart": 1855,
+        "indexEnd": 1855
+      },
+      "creators": [
+        {
+          "name": "Nadar (French, 1820–1910)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/721",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "salted paper print from wet collodion negative",
+      "culture": [
+        "France, 19th century"
+      ],
+      "accession": "1983.198",
+      "sourceUrl": "https://clevelandart.org/art/1983.198",
+      "image": {
+        "src": "data/photographs/images/151356.jpg",
+        "width": 666,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1983.198/1983.198_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151356",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Alexandre Dumas père (1802–1870)",
+          "accession_number": "1983.198",
+          "creation_date": "1855",
+          "creation_date_earliest": 1855,
+          "creation_date_latest": 1855,
+          "creators": [
+            {
+              "id": 721,
+              "description": "Nadar (French, 1820–1910)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Nadar (Gaspard-Félix Tournachon) French, 1820-1910\r\n\r\nBorn Gaspard-Félix Tournachon in Paris, Nadar is probably the best known French photographer. His portraits of celebrities and public figures help define our impression of France in the second half of the 19th century; his panache in conducting his business helped popularize photography.\r\n\tEducated at the Collège Bourber, Paris (1833-36), Nadar moved to Lyon, where he studied medicine (1837-38) before continuing his studies at the Hôtel Dieu and the Bicêtre in Paris. He wrote satires and essays and drew caricatures (his pseudonym derived from his barbed wit aimed against the establishment) for a number of Paris publications, eventually founding several of his own, and was a highly visible figure in the city's cultural and artistic life. Learning photographic technique from Adophe Bertsch and Camille d'Arnaud, Nadar founded a studio in 1854. Twenty years later his son Paul, also a photographer, became director of the business and by 1886 headed the firm. He also worked for a time with his brother, Adrien, who sometimes called himself Nadar jeune, a practice which later prompted Nadar to file a lawsuit.\r\n\tNadar's exploits with aerial balloon photography were of both photographic and historic importance. Below ground, he used artificial light to make surveys of the catacombs and sewers of Paris, novel and highly popular curiosities. With his son Paul as photographer, he is credited with the first photo-interview, conducted with the scientist and color theorist Michel-Eugène Chevreul on his 100th birthday in 1886. Because of the importance of his work and the notoriety of his sitters, among them Franz Liszt, George Sand, Sarah Bernhardt, and Honoré Balzac, Nadar will long occupy a key place in the development of photography. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1820",
+              "death_year": "1910",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "France, 19th century"
+          ],
+          "technique": "salted paper print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1983.198",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1983.198/1983.198_web.jpg",
+            "width": "666",
+            "height": "893",
+            "filesize": "292745",
+            "filename": "1983.198_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1983.206",
+      "@type": "Photograph",
+      "title": "Rowing Home the Schoof-Stuff",
+      "date": {
+        "label": "1886",
+        "start": 1886,
+        "end": 1886,
+        "kind": "exact-year",
+        "indexStart": 1886,
+        "indexEnd": 1886
+      },
+      "creators": [
+        {
+          "name": "Peter Henry Emerson (British, 1856–1936)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/110",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        },
+        {
+          "name": "Sampson Low, Marston, Seale and Riverton (with T.F. Goodall)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/69167",
+          "role": "published by",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "England"
+      ],
+      "accession": "1983.206",
+      "sourceUrl": "https://clevelandart.org/art/1983.206",
+      "image": {
+        "src": "data/photographs/images/151365.jpg",
+        "width": 1263,
+        "height": 634,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1983.206/1983.206_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151365",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Rowing Home the Schoof-Stuff",
+          "accession_number": "1983.206",
+          "creation_date": "1886",
+          "creation_date_earliest": 1886,
+          "creation_date_latest": 1886,
+          "creators": [
+            {
+              "id": 110,
+              "description": "Peter Henry Emerson (British, 1856–1936)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Peter Henry Emerson British, b. Cuba, 1856-1936\r\n\r\nTrained as a physician, Peter Henry Emerson abandoned medicine soon after receiving his degree in order to take up photography. His thorough command of the medium and his interest in reproducing rural subjects in a simple, direct manner led to an approach that he called naturalism. Emerson argued vehemently that the inherent qualities of photography should be used to portray subjects in a manner that eschewed artifice and the unnatural intrusions of the photographer's aesthetic style. This was in distinction to the academicism that Emerson despised, exemplified by the artificially constructed, often cloying images of Oscar G. Rejlander and Henry Peach Robinson.\r\n\tEmerson's several illustrated volumes of rural British life, beginning with Life and Landscape on the Norfolk Broads (1886), combined a clarity of vision derived from the advanced science of his day with a retrospective romanticism derived from French and British painting. The result was a unique style that helped direct photography away from artifice toward the visual integrity now associated with modernism and straight photography. Emerson's attempts as a writer and speaker to develop a theoretical base for his style, while highly regarded, are today thought to be a less powerful statement of his opinions than the work he produced. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1856",
+              "death_year": "1936",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            },
+            {
+              "id": 69167,
+              "description": "Sampson Low, Marston, Seale and Riverton (with T.F. Goodall)",
+              "extent": null,
+              "qualifier": null,
+              "role": "published by",
+              "biography": null,
+              "name_in_original_language": null,
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 2
+            }
+          ],
+          "culture": [
+            "England"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1983.206",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1983.206/1983.206_web.jpg",
+            "width": "1263",
+            "height": "634",
+            "filesize": "491658",
+            "filename": "1983.206_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1984.163",
+      "@type": "Photograph",
+      "title": "A Scene in York",
+      "date": {
+        "label": "1845",
+        "start": 1845,
+        "end": 1845,
+        "kind": "exact-year",
+        "indexStart": 1845,
+        "indexEnd": 1845
+      },
+      "creators": [
+        {
+          "name": "William Henry Fox Talbot (British, 1800–1877)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/994",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "salted paper print from calotype negative",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1984.163",
+      "sourceUrl": "https://clevelandart.org/art/1984.163",
+      "image": {
+        "src": "data/photographs/images/151837.jpg",
+        "width": 750,
+        "height": 621,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1984.163/1984.163_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151837",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "A Scene in York",
+          "accession_number": "1984.163",
+          "creation_date": "1845",
+          "creation_date_earliest": 1845,
+          "creation_date_latest": 1845,
+          "creators": [
+            {
+              "id": 994,
+              "description": "William Henry Fox Talbot (British, 1800–1877)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "William Henry Fox Talbot British, 1800-1877\r\n\r\nBorn in Melbury, Dorset, Fox Talbot was a gentleman of the 19th century who, like many others of his class, pursued leisure activities in the arts and sciences. He experimented with means for capturing permanently the elusive images formed on paper by the camera obscura, an instrument used as a drawing aid. After several years of varying results, Talbot successfully devised a process that chemically recorded the image made by light on a piece of paper. On February 21, 1839, one month after the announcement of Louis-Jacques-Mandé Daguerre's photographic process, Talbot presented his experiments to the Royal Society in London.\r\n\tTalbot's process differed greatly from that of Daguerre. Unlike the daguerreotype's sharply detailed image, the calotype, or Talbotype, was softly blurred; yet because the positive image was made from a negative, it had the advantage of multiple reproduction. This formed the basis of conventional photography.\r\n\tA graduate of Trinity College, Cambridge, Talbot was a man of scholarly and scientific bent whose interests included optics and botany. Before his work in photography, he also had published on mathematics and linguistics. He later played an important role in the deciphering of Assyrian and other cuneiform inscriptions of interest to biblical scholars.\r\n\tTalbot was made a Fellow of the Royal Society at age 32. He is credited with the first photographic negative, which still exists, a view of a set of windows at his home, Lacock Abbey. He invented a form of engraving that was a forerunner of photogravure, as well as other innovations in the quickly growing art form for which he was largely responsible. Talbot's The Pencil of Nature (1844-46) and Sun Pictures in Scotland (1845) are two of the earliest photographically illustrated books. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1800",
+              "death_year": "1877",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "salted paper print from calotype negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1984.163",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1984.163/1984.163_web.jpg",
+            "width": "1078",
+            "height": "893",
+            "filesize": "668941",
+            "filename": "1984.163_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1984.164",
+      "@type": "Photograph",
+      "title": "Tintern Abbey",
+      "date": {
+        "label": "c. 1856",
+        "start": 1856,
+        "end": 1856,
+        "kind": "approximate",
+        "indexStart": 1851,
+        "indexEnd": 1861
+      },
+      "creators": [
+        {
+          "name": "Roger Fenton (British, 1819–1869)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/125",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "salted paper print from wet collodion negative",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1984.164",
+      "sourceUrl": "https://clevelandart.org/art/1984.164",
+      "image": {
+        "src": "data/photographs/images/151838.jpg",
+        "width": 750,
+        "height": 625,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1984.164/1984.164_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151838",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Tintern Abbey",
+          "accession_number": "1984.164",
+          "creation_date": "c. 1856",
+          "creation_date_earliest": 1851,
+          "creation_date_latest": 1861,
+          "creators": [
+            {
+              "id": 125,
+              "description": "Roger Fenton (British, 1819–1869)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Roger Fenton British, 1819-1869\r\n\r\nDespite the relative brevity of his career, Roger Fenton stands among the most important and accomplished British photographers. Born in Heywood, Lancashire, to a wealthy family, Fenton graduated from University College in London and in 1844 may have studied painting in the Paris studio of Paul Delaroche, along with several other important future photographers. After returning to England, he spent four years earning a degree as a solicitor, continued to paint, and developed an interest in photography before joining a London law firm in 1851.\r\n\tFenton's paintings were shown annually in London at the Royal Academy from 1849–51. After helping to found the Calotype Club (1847), in 1852 he published an article that advocated establishment of a British photographic organization modeled after the Société héliographique in France. His argument, combined with the lifting of the use restrictions on William Henry Fox Talbot's patent for the calotype, led to formation of the London Photographic Society; Fenton served as its first honorary secretary. In December 1852, an early exhibition of the new society included 39 of his views. Soon afterward, he accompanied his friend Charles Vignoles to Russia to photograph the construction of a bridge at Kiev. Traveling to the Crimea in 1855, Fenton was the first photographer to make a sustained sequence of war views. He also accepted commissions to document the collections of the British Museum and to photograph the royal family at Buckingham and Windsor castles.\r\n\tAmong Fenton's best work are his photographs of landscapes and architecture. His still lifes are exceptional. His views -- whether of great expanses of garden and lawn, of Balaklava, or of fishermen at a local stream -- have an artistic consistency, grandeur of vision, and command of technique comparable only to the work of Édouard Baldus in France and Carleton E. Watkins in America. In 1862, judging the quality of photography to have declined, Fenton sold all his equipment at auction and returned to the law. His negatives were bought by Francis Frith, whose publishing concern continued to print them in various formats for the next hundred years. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1819",
+              "death_year": "1869",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "salted paper print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1984.164",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1984.164/1984.164_web.jpg",
+            "width": "1071",
+            "height": "893",
+            "filesize": "803683",
+            "filename": "1984.164_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1984.165",
+      "@type": "Photograph",
+      "title": "Julia Jackson Duckworth (1846-1895)",
+      "date": {
+        "label": "1874",
+        "start": 1874,
+        "end": 1874,
+        "kind": "exact-year",
+        "indexStart": 1874,
+        "indexEnd": 1874
+      },
+      "creators": [
+        {
+          "name": "Julia Margaret Cameron (British, 1815–1879)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/293",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print from wet collodion negative",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1984.165",
+      "sourceUrl": "https://clevelandart.org/art/1984.165",
+      "image": {
+        "src": "data/photographs/images/151839.jpg",
+        "width": 679,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1984.165/1984.165_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151839",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Julia Jackson Duckworth (1846-1895)",
+          "accession_number": "1984.165",
+          "creation_date": "1874",
+          "creation_date_earliest": 1874,
+          "creation_date_latest": 1874,
+          "creators": [
+            {
+              "id": 293,
+              "description": "Julia Margaret Cameron (British, 1815–1879)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Julia Margaret Cameron British, 1815-1879\r\n\r\nBorn in Calcutta to a French mother and an English father employed by the East India Company, Julia Margaret Cameron was a key figure in the development of photography both in Britain and abroad. She was sent, under the care of her grandmother, to France for her education. Marriage to jurist Charles Hay Cameron took her back to India in 1838, and to England in 1848, where in 1860 the family finally settled on the Isle of Wight. Three years later Cameron received her first camera, a gift from her daughter, as a way to pass the time while her husband was away on an extended trip to Ceylon.\r\n\tFor the next 15 years, Cameron's passion for photography, and her fortunate position among Britain's cultural elite, allowed her to produce a series of portraits, allegories, and illustrations that are among the most admired and influential of photographic images. Frequently marked by a loose, soft style, her portraits of well-known figures, such as Sir John Herschel, Thomas Carlyle, and Ellen Terry, reveal her subject's character in an unusually forceful manner. Her allegories and tableaux often include neighbors and friends like Lord Tennyson and her artistic mentor, the Pre-Raphaelite painter G. F. Watts. In 1874 she illustrated Tennyson's popular long poem Idylls of the King.\r\n\tIn 1875, after the death of her daughter, Cameron returned to Ceylon with her husband, joining their five sons. There she continued to photograph until her death in 1879. A later generation was introduced to Cameron's work by Alfred Stieglitz, who reproduced a selection from it in Camera Work. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1815",
+              "death_year": "1879",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "albumen print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1984.165",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1984.165/1984.165_web.jpg",
+            "width": "679",
+            "height": "893",
+            "filesize": "323786",
+            "filename": "1984.165_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1984.166",
+      "@type": "Photograph",
+      "title": "Queen of the May",
+      "date": {
+        "label": "1875",
+        "start": 1875,
+        "end": 1875,
+        "kind": "exact-year",
+        "indexStart": 1875,
+        "indexEnd": 1875
+      },
+      "creators": [
+        {
+          "name": "Julia Margaret Cameron (British, 1815–1879)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/293",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print from wet collodion negative",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1984.166",
+      "sourceUrl": "https://clevelandart.org/art/1984.166",
+      "image": {
+        "src": "data/photographs/images/151840.jpg",
+        "width": 678,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1984.166/1984.166_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151840",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Queen of the May",
+          "accession_number": "1984.166",
+          "creation_date": "1875",
+          "creation_date_earliest": 1875,
+          "creation_date_latest": 1875,
+          "creators": [
+            {
+              "id": 293,
+              "description": "Julia Margaret Cameron (British, 1815–1879)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Julia Margaret Cameron British, 1815-1879\r\n\r\nBorn in Calcutta to a French mother and an English father employed by the East India Company, Julia Margaret Cameron was a key figure in the development of photography both in Britain and abroad. She was sent, under the care of her grandmother, to France for her education. Marriage to jurist Charles Hay Cameron took her back to India in 1838, and to England in 1848, where in 1860 the family finally settled on the Isle of Wight. Three years later Cameron received her first camera, a gift from her daughter, as a way to pass the time while her husband was away on an extended trip to Ceylon.\r\n\tFor the next 15 years, Cameron's passion for photography, and her fortunate position among Britain's cultural elite, allowed her to produce a series of portraits, allegories, and illustrations that are among the most admired and influential of photographic images. Frequently marked by a loose, soft style, her portraits of well-known figures, such as Sir John Herschel, Thomas Carlyle, and Ellen Terry, reveal her subject's character in an unusually forceful manner. Her allegories and tableaux often include neighbors and friends like Lord Tennyson and her artistic mentor, the Pre-Raphaelite painter G. F. Watts. In 1874 she illustrated Tennyson's popular long poem Idylls of the King.\r\n\tIn 1875, after the death of her daughter, Cameron returned to Ceylon with her husband, joining their five sons. There she continued to photograph until her death in 1879. A later generation was introduced to Cameron's work by Alfred Stieglitz, who reproduced a selection from it in Camera Work. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1815",
+              "death_year": "1879",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "albumen print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1984.166",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1984.166/1984.166_web.jpg",
+            "width": "678",
+            "height": "893",
+            "filesize": "322505",
+            "filename": "1984.166_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1984.167",
+      "@type": "Photograph",
+      "title": "Unknown Woman",
+      "date": {
+        "label": "c. 1844",
+        "start": 1844,
+        "end": 1844,
+        "kind": "approximate",
+        "indexStart": 1839,
+        "indexEnd": 1849
+      },
+      "creators": [
+        {
+          "name": "David Octavius Hill (British, 1802–1870)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/156",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        },
+        {
+          "name": "Robert Adamson (British, 1821–1848)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/159",
+          "role": "artist",
+          "qualifier": "and",
+          "extent": null
+        }
+      ],
+      "technique": "salted paper print from calotype negative",
+      "culture": [
+        "England, 19th century"
+      ],
+      "accession": "1984.167",
+      "sourceUrl": "https://clevelandart.org/art/1984.167",
+      "image": {
+        "src": "data/photographs/images/151841.jpg",
+        "width": 635,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1984.167/1984.167_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151841",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Unknown Woman",
+          "accession_number": "1984.167",
+          "creation_date": "c. 1844",
+          "creation_date_earliest": 1839,
+          "creation_date_latest": 1849,
+          "creators": [
+            {
+              "id": 156,
+              "description": "David Octavius Hill (British, 1802–1870)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "David Octavius Hill British, b. Scotland, 1802-1870; and Robert Adamson British, b. Scotland, 1821-1848\r\n\r\nBrought together out of necessity, David Octavius Hill and Robert Adamson proved to be collaborators whose work was as inspired as its impact has been long lasting. Hill was born in Perth to a family in the printing and publishing business. Trained as a painter, an occupation pursued throughout his life, Hill also was an illustrator and lithographer. His earliest work, Sketches of Scenery in Perthshire Drawn from Nature and on Stone (1821), published before he was 20, was one of the first in Britain to employ the new medium of lithography. In 1829 he helped found the Royal Scottish Academy, serving as secretary from 1830-70.\r\n\tHill turned to photography as an aid for a large group portrait of the 474 ministers who formed the new Free Church of Scotland. Noting the difficulties of such a monumental task, photographic pioneer Sir David Brewster, an associate of William Henry Fox Talbot, introduced Hill to Robert Adamson (born in Brunswick). Trained as an engineer, Adamson had learned the technique of photography from his brother John, whom Brewster had taught. The portraits necessary for Hill's work were the beginning of their collaboration, the two working in Adamson's Edinburgh studio in 1843. Hill is generally thought to be the artistic mind behind their images, while Adamson served as the technician responsible for the camera. This opinion among scholars, however, is shifting toward greater recognition of Adamson's artistic skill.\r\n\tAfter Adamson's early death in 1848, Hill stopped working entirely for 10 years before continuing in collaboration with A. McGlashan of Glasgow at a considerably diminished level. The portraits by Hill and Adamson are known for their painterly, Old Master quality and exceptional use of light and shadow. Other images include architecture, landscape, and a series on the small fishing village of Newhaven. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1802",
+              "death_year": "1870",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            },
+            {
+              "id": 159,
+              "description": "Robert Adamson (British, 1821–1848)",
+              "extent": null,
+              "qualifier": "and",
+              "role": "artist",
+              "biography": "David Octavius Hill British, b. Scotland, 1802-1870; and Robert Adamson British, b. Scotland, 1821-1848\r\n\r\nBrought together out of necessity, David Octavius Hill and Robert Adamson proved to be collaborators whose work was as inspired as its impact has been long lasting. Hill was born in Perth to a family in the printing and publishing business. Trained as a painter, an occupation pursued throughout his life, Hill also was an illustrator and lithographer. His earliest work, Sketches of Scenery in Perthshire Drawn from Nature and on Stone (1821), published before he was 20, was one of the first in Britain to employ the new medium of lithography. In 1829 he helped found the Royal Scottish Academy, serving as secretary from 1830-70.\r\n\tHill turned to photography as an aid for a large group portrait of the 474 ministers who formed the new Free Church of Scotland. Noting the difficulties of such a monumental task, photographic pioneer Sir David Brewster, an associate of William Henry Fox Talbot, introduced Hill to Robert Adamson (born in Brunswick). Trained as an engineer, Adamson had learned the technique of photography from his brother John, whom Brewster had taught. The portraits necessary for Hill's work were the beginning of their collaboration, the two working in Adamson's Edinburgh studio in 1843. Hill is generally thought to be the artistic mind behind their images, while Adamson served as the technician responsible for the camera. This opinion among scholars, however, is shifting toward greater recognition of Adamson's artistic skill.\r\n\tAfter Adamson's early death in 1848, Hill stopped working entirely for 10 years before continuing in collaboration with A. McGlashan of Glasgow at a considerably diminished level. The portraits by Hill and Adamson are known for their painterly, Old Master quality and exceptional use of light and shadow. Other images include architecture, landscape, and a series on the small fishing village of Newhaven. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1821",
+              "death_year": "1848",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 2
+            }
+          ],
+          "culture": [
+            "England, 19th century"
+          ],
+          "technique": "salted paper print from calotype negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1984.167",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1984.167/1984.167_web.jpg",
+            "width": "635",
+            "height": "893",
+            "filesize": "460000",
+            "filename": "1984.167_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1984.17",
+      "@type": "Photograph",
+      "title": "Fountain of Notre-Dame at Saint-Brieuc, Brittany",
+      "date": {
+        "label": "c. 1853",
+        "start": 1853,
+        "end": 1853,
+        "kind": "approximate",
+        "indexStart": 1848,
+        "indexEnd": 1858
+      },
+      "creators": [
+        {
+          "name": "Louis-Rémy Robert (French, 1811–1882)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/826",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "salted paper print from calotype negative",
+      "culture": [
+        "France, 19th century"
+      ],
+      "accession": "1984.17",
+      "sourceUrl": "https://clevelandart.org/art/1984.17",
+      "image": {
+        "src": "data/photographs/images/151844.jpg",
+        "width": 725,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1984.17/1984.17_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151844",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Fountain of Notre-Dame at Saint-Brieuc, Brittany",
+          "accession_number": "1984.17",
+          "creation_date": "c. 1853",
+          "creation_date_earliest": 1848,
+          "creation_date_latest": 1858,
+          "creators": [
+            {
+              "id": 826,
+              "description": "Louis-Rémy Robert (French, 1811–1882)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Louis-Rémy Robert French, 1811-1882\r\n\r\nBorn in Paris, Louis-Rémy Robert was trained by his father as a painter on porcelain and glass, eventually succeeding him as chief in charge of the workshops of painters and gilders at the Manufacture de Sèvres. He developed an active interest in photography, probably due in part to his friendship with Henri-Victor Regnault, who was appointed director at Sèvres in 1852, and whom Robert succeeded in 1871.\r\n\tRobert's views are frequently more traditional and classically inclined than those of Regnault. His well-known series on the architecture, gardens, and art of Versailles, published by Louis-Désire Blanquart-Évrard as Souvenirs de Versailles (1853), reflects an appreciation of the heritage in French culture and design, traditions with which Robert was familiar, on a smaller scale, through his background in porcelain and glass decoration.\r\n\tRobert was also a technical innovator, a friend of the printers Blanquart-Évrard and Alphonse Louis Poitevin, and served as a judge for the competition originated by the Duc de Luynes to further research into the longevity of photographic prints. A member of the Société française de photographie, Robert exhibited his work in Paris, Brussels, and London between 1855-62 and lectured on photography at the École des Ponts et Chausées from 1858-72. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1811",
+              "death_year": "1882",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "France, 19th century"
+          ],
+          "technique": "salted paper print from calotype negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1984.17",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1984.17/1984.17_web.jpg",
+            "width": "725",
+            "height": "893",
+            "filesize": "488911",
+            "filename": "1984.17_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1984.215",
+      "@type": "Photograph",
+      "title": "Westminster Abbey, Tomb of Sir Georges Villiers (d. 1605)",
+      "date": {
+        "label": "c. 1900",
+        "start": 1900,
+        "end": 1900,
+        "kind": "approximate",
+        "indexStart": 1895,
+        "indexEnd": 1905
+      },
+      "creators": [
+        {
+          "name": "Frederick H. Evans (British, 1853–1943)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/119",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "platinum print",
+      "culture": [
+        "England, 20th century"
+      ],
+      "accession": "1984.215",
+      "sourceUrl": "https://clevelandart.org/art/1984.215",
+      "image": {
+        "src": "data/photographs/images/151932.jpg",
+        "width": 670,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1984.215/1984.215_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151932",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Westminster Abbey, Tomb of Sir Georges Villiers (d. 1605)",
+          "accession_number": "1984.215",
+          "creation_date": "c. 1900",
+          "creation_date_earliest": 1895,
+          "creation_date_latest": 1905,
+          "creators": [
+            {
+              "id": 119,
+              "description": "Frederick H. Evans (British, 1853–1943)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Frederick H. Evans British, 1853-1943\r\n\r\nBorn in Whitechapel, London, Frederick Evans was the preeminent architectural photographer of his day, known particularly for his views of British cathedrals. He was also known for portraiture, with sitters such as George Bernard Shaw and Aubrey Beardsley.\r\n\tOriginally a London bookseller, Evans retired in 1898 to devote himself full-time to photography. He was a passionate devotee of straight, or pure, photography. His elegant, unaltered platinum prints relied on form and light to probe the spiritual elements of architectural space and to reveal the character and nuance of the subjects of his portraits. Evans, who exhibited his work widely, extended his aesthetic beliefs to the realm of display; he is credited with transforming British exhibition practice -- the crowded Victorian salon giving way to a venue where prints were shown singly and clearly, out of competition with one another.\r\n\tAlfred Stieglitz was a great admirer of Evans's work, which was published in Camera Work (1903) and shown at the Little Galleries of the Photo-Secession in New York (1906). A member of the Royal Photographic Society, Evans was named an Honorary Fellow in 1925 and was elected to the Linked Ring in 1900. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1853",
+              "death_year": "1943",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "England, 20th century"
+          ],
+          "technique": "platinum print",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1984.215",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1984.215/1984.215_web.jpg",
+            "width": "670",
+            "height": "893",
+            "filesize": "365267",
+            "filename": "1984.215_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1984.24",
+      "@type": "Photograph",
+      "title": "Rue de la Ferronnerie",
+      "date": {
+        "label": "c. 1865",
+        "start": 1865,
+        "end": 1865,
+        "kind": "approximate",
+        "indexStart": 1860,
+        "indexEnd": 1870
+      },
+      "creators": [
+        {
+          "name": "Charles Marville (French, 1813–1879)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/635",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print from wet collodion negative",
+      "culture": [
+        "France, 19th century"
+      ],
+      "accession": "1984.24",
+      "sourceUrl": "https://clevelandart.org/art/1984.24",
+      "image": {
+        "src": "data/photographs/images/151948.jpg",
+        "width": 864,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1984.24/1984.24_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/151948",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Rue de la Ferronnerie",
+          "accession_number": "1984.24",
+          "creation_date": "c. 1865",
+          "creation_date_earliest": 1860,
+          "creation_date_latest": 1870,
+          "creators": [
+            {
+              "id": 635,
+              "description": "Charles Marville (French, 1813–1879)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "At the invitation of the city of Paris, photographer Charles Marville was among the first to document the ancient quarters of his birthplace. His views, taken in the late 1850s, were intended to record the many buildings and neighborhoods ultimately destroyed by Baron Georges-Eugène Haussmann's urban planning project that would create the boulevards and open spaces of modern Paris. While Marville's survey of the city, extensive and thorough in scope, prefigured other important efforts of its kind, it is distinguished by its emotional accessibility. His work beautifully reveals a Paris that has long disappeared. Originally trained as a painter and illustrator, Marville worked with both calotype and glass plate negatives. He photographed in France, Italy, Germany, and Algeria, becoming most well known for his architectural imagery but also producing acclaimed landscapes and studies of trees. Many of Marville's early views, often considered his best, were included in the albums of Louis-Désiré Blanquart-Évrard before the printer's establishment in Lille closed in 1855. Named official photographer of Paris in 1862, Marville also served as photographer to the Imperial Museum of the Louvre and to King Vittorio Emmanuelle of Italy. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1813",
+              "death_year": "1879",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "France, 19th century"
+          ],
+          "technique": "albumen print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1984.24",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1984.24/1984.24_web.jpg",
+            "width": "864",
+            "height": "893",
+            "filesize": "524893",
+            "filename": "1984.24_web.jpg"
+          }
+        }
+      }
+    },
+    {
+      "id": "https://clevelandart.org/art/1992.12",
+      "@type": "Photograph",
+      "title": "Bridal Veil, Yosemite",
+      "date": {
+        "label": "1865–66",
+        "start": 1865,
+        "end": 1866,
+        "kind": "range",
+        "indexStart": 1865,
+        "indexEnd": 1866
+      },
+      "creators": [
+        {
+          "name": "Carleton E. Watkins (American, 1829–1916)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1061",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print from wet collodion negative",
+      "culture": [
+        "America"
+      ],
+      "accession": "1992.12",
+      "sourceUrl": "https://clevelandart.org/art/1992.12",
+      "image": {
+        "src": "data/photographs/images/156283.jpg",
+        "width": 1109,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1992.12/1992.12_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/156283",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Bridal Veil, Yosemite",
+          "accession_number": "1992.12",
+          "creation_date": "1865–66",
+          "creation_date_earliest": 1865,
+          "creation_date_latest": 1866,
+          "creators": [
+            {
+              "id": 1061,
+              "description": "Carleton E. Watkins (American, 1829–1916)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Carleton E. Watkins American, 1829-1916\r\n\r\nBorn in Oneonta, New York, Carleton Watkins traveled west to California in the early 1850s, shortly after the gold rush. He learned photography in 1854 from Robert Vance, one of the earliest and best of San Francisco's daguerreotypists. Vance's landscape photography, unusually skilled for the time, may have influenced Watkins's work.\r\n\tWatkins was among the first photographers in the Yosemite valley, shooting there in 1861, and his mammoth-plate landscape photographs of the area are believed to have contributed to Yosemite's early designation as a national park. His Yosemite Art Gallery opened in San Francisco in 1867, but unlike most photographers of the time, Watkins is not known to have done much portrait work. His subjects included topographical, scenic, survey, agricultural, and urban views of California and surrounding states, including Oregon, Arizona, Nevada, and Utah. Through his friendship with railroad magnate Collis Huntington, Watkins photographed along railway lines and was able to reach distant sites. Huntington later bought him the farm where he retired. Watkins's landscapes were well received; he was awarded an international medal at the Paris Exposition (1867) and a medal of progress at the Vienna International Exposition (1873).\r\n\tThe numerous commissions and the work produced for the public market by Watkins combine clarity of vision with technical expertise. His work set the standard for subsequent photographers of western views, such as William Henry Jackson, Timothy O'Sullivan, and John K. Hillers. Although his life was difficult and his business sense lacking, his photographic efforts were protracted and indefatigable. Watkins's negatives were destroyed in the San Francisco earthquake and fire of 1906. He died several years later blind and insane. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1829",
+              "death_year": "1916",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "albumen print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1992.12",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1992.12/1992.12_web.jpg",
+            "width": "1109",
+            "height": "893",
+            "filesize": "806175",
+            "filename": "1992.12_web.jpg"
+          }
+        }
+      }
+    }
+  ]
+}

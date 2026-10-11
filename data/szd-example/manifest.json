@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "objectId": "o:szd.1079",
+  "title": "Brief an Max Fleischer vom 22. Mai 1901, SZ-LAS/B3.1",
+  "acquired": "2026-10-11",
+  "selection": "One publicly available letter with envelope, two text pages and a colour reference, chosen to exercise different page roles and existing machine transcription.",
+  "sourceUrl": "https://gams.uni-graz.at/o:szd.1079",
+  "pipelineRepository": "https://github.com/chpollin/szd-htr-ocr-pipeline",
+  "pipelineRevision": "8b0d7bc2919a3cf9269686ae79ebf73a9239dc3d",
+  "rights": {
+    "statement": "Literaturarchiv Salzburg, https://stefanzweig.digital, CC-BY",
+    "evidence": "raw/gams-mets.xml",
+    "locator": "mets:amdSec/mets:rightsMD/mets:mdWrap/mets:xmlData/dv:rights/dv:owner",
+    "licenseVersion": null,
+    "attribution": "Literaturarchiv Salzburg, Paris Lodron University of Salzburg. Stefan Zweig Digital. Letter to Max Fleischer, 22 May 1901, SZ-LAS/B3.1. Machine transcription from szd-htr-ocr-pipeline.",
+    "imagesBundled": false,
+    "scope": "Source-specific CC-BY statement retained verbatim. No version inferred. Remote facsimiles remain at the source. Repository software licences do not relicense archive material."
+  },
+  "review": {
+    "producer": "gemini-3.1-flash-lite-preview",
+    "upstreamLabel": "agent_verified",
+    "humanVerification": "not established",
+    "localState": "machine_unreviewed"
+  },
+  "files": [
+    {
+      "path": "raw/gams-mets.xml",
+      "url": "https://gams.uni-graz.at/archive/get/o:szd.1079/METS_SOURCE",
+      "sha256": "298d1275983c9255456da10bd62d9a0737f99981f6933d9d4099ac3f7a444138",
+      "bytes": 8181
+    },
+    {
+      "path": "raw/pipeline.tei.xml",
+      "url": "https://raw.githubusercontent.com/chpollin/szd-htr-ocr-pipeline/8b0d7bc2919a3cf9269686ae79ebf73a9239dc3d/results/korrespondenzen/o_szd.1079.tei.xml",
+      "sha256": "7564514a46dd1a098b6e01b6e7e5518844e03970c1a31011efe5daa6b1b5314e",
+      "bytes": 5286
+    },
+    {
+      "path": "raw/pipeline-page.json",
+      "url": "https://raw.githubusercontent.com/chpollin/szd-htr-ocr-pipeline/8b0d7bc2919a3cf9269686ae79ebf73a9239dc3d/results/korrespondenzen/o_szd.1079_page.json",
+      "sha256": "87ae4c1e0fb4fa2c26acd4790ecef2012216cd3397121ada7944ac2f084b27b0",
+      "bytes": 6682
+    }
+  ]
+}

@@ -14,6 +14,7 @@ export default defineConfig({
         resolve("baseline/index.html"),
         resolve("tool/index.html"),
         resolve("pilot/index.html"),
+        resolve("photographs/index.html"),
         resolve("annotations/index.html"),
         resolve("letters/index.html"),
         resolve("tools/index.html"),

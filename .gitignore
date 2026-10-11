@@ -9,3 +9,6 @@ reference/
 .DS_Store
 test-results-workspace/
 
+/public/examples/szd/
+benchmarks/runs/**/.last-run.json
+/benchmarks/runs/2026-10-11-open-photographs-browser/docs-published-documentati-9e0c7-ngs-and-local-links-resolve/trace.zip

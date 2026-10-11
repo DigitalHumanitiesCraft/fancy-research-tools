@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import {readFileSync, writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {readInvestigation} from './candidate/model.mjs';
+const read = path => readFileSync(new URL(path,import.meta.url));
+const json = path => JSON.parse(read(path).toString().replace(/^\uFEFF/,''));
+const hash = bytes => createHash('sha256').update(bytes).digest('hex').toUpperCase();
+const source = json('./task/input.json');
+const original = json('./evidence/before-export.json');
+const revised = json('./evidence/after-export-revised.json');
+const restored = json('./evidence/after-export-restored.json');
+assert.deepEqual(read('./candidate/catalogue.json'),read('./task/input.json'));
+for (const [name, output] of [['before',original],['revised',revised],['restored',restored]]) {
+  assert.deepEqual(output.records,output.selectedIds.map(id=>source.records.find(r=>r.id===id)), name+' exact source records');
+  assert.deepEqual(output.source,source.source,name+' catalogue semantics');
+  assert.deepEqual(output.interpretation,original.interpretation,name+' exact authored text');
+  readInvestigation(output,source);
+}
+assert.deepEqual(revised.selectedIds,['demo-image-01','demo-image-03','demo-image-02']);
+assert.deepEqual(restored,original);
+assert.deepEqual(read('./evidence/after-export-restored.json'),read('./evidence/before-export.json'));
+for (const item of json('./evidence/baseline-manifest.json')) assert.equal(hash(read('./'+item.path.replaceAll('\\','/'))),item.sha256,item.path);
+assert.equal(hash(read('./task/input.json')),json('./evidence/input-manifest.json').Hash);
+assert.deepEqual(read('./candidate/model.mjs'),read('./baseline/model.mjs'));
+const renderedSource = json('./evidence/rendered-source.json');
+assert.deepEqual(JSON.parse(renderedSource.values[0]),source.records[2].places);
+assert.deepEqual(JSON.parse(renderedSource.values[1]),source.records[2].production);
+assert.equal(renderedSource.icons.length,1);
+assert.equal(renderedSource.icons[0].name,'LLM-produced value');
+assert.equal(renderedSource.middleDots,false);
+const invalid = structuredClone(original); invalid.records[2].places[0].coordinates = [0,0];
+writeFileSync(new URL('./evidence/invalid-source.json',import.meta.url),JSON.stringify(invalid,null,2));
+assert.throws(()=>readInvestigation(invalid,source));
+console.log('PASS: baseline/input bytes unchanged; candidate catalogue/model unchanged; all selected source fields and semantics exact in 3 actual browser exports; original author text exact; revised selection order exact; reopened baseline export byte-identical; altered-source rejection.');

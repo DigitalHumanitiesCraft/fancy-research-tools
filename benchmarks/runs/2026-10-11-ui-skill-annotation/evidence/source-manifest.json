@@ -1,0 +1,42 @@
+[
+  {
+    "path": "index.html",
+    "sha256": "33dd550aba55e8233194653fd7240193b2d525db6edff44203958c9ebe389cd2"
+  },
+  {
+    "path": "style.css",
+    "sha256": "0179f85189748d4712c404456a3c2138c206a9a5baf8691743a65a0a74bdd59a"
+  },
+  {
+    "path": "app.js",
+    "sha256": "4acab5214aeb608449c77672ce3f65539c5df601f8d9bada26049ab2023520de"
+  },
+  {
+    "path": "model.mjs",
+    "sha256": "fe9d246ed2e899fa9ff2c0dbc654023fd5079d6db801f39f036db7b153817eff"
+  },
+  {
+    "path": "serve.mjs",
+    "sha256": "e28ea2dd8c8e36f7f98c560cf6ba99050c35063361388d606688c029977b75b1"
+  },
+  {
+    "path": "check.mjs",
+    "sha256": "095aa9c104a3aac2cdccc3bda11e3cc9b59224e68a3d3317abfe3de8e75493c5"
+  },
+  {
+    "path": "check-export.mjs",
+    "sha256": "00e5b2d369833ea7da41e6fd2dd562a136c4b8d405cabb68800f6e90416edf88"
+  },
+  {
+    "path": "decisions.md",
+    "sha256": "060c02ceb560769439881e5feb79cc4fd5152bcafdf8203a1465e07121764dfc"
+  },
+  {
+    "path": "task/input.json",
+    "sha256": "d48ef37e9dd08cd17d12e7ee12dadc31ded23ecabdcff76b156af1beb973fb24"
+  },
+  {
+    "path": "task/existing-notebook.json",
+    "sha256": "8fc463fdd39d5f680944ca6a39406fc18baddde9c98dcdccc8f84be3c3e1a147"
+  }
+]

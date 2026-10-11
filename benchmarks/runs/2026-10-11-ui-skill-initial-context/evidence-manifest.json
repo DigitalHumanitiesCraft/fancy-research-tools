@@ -1,0 +1,121 @@
+{
+  "recordedAt": "2026-10-11T14:06:09.447Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": ".agents/skills/research-ui-design/SKILL.md",
+      "bytes": 2984,
+      "sha256": "0c0a6cc5033d68a4abe160501e3bc636303b68b0ddecaf824d00e95e01681d3c"
+    },
+    {
+      "path": ".agents/skills/research-ui-evaluate/SKILL.md",
+      "bytes": 3257,
+      "sha256": "57708ddf93657f4cda9bfd5bd00d7717277bfe7b9f8c5462c7fb2b4cb150d236"
+    },
+    {
+      "path": ".agents/skills/research-ui-improve/SKILL.md",
+      "bytes": 2701,
+      "sha256": "b9d2f20ec44cbef5fd59e22bc8ab73ea42cf886c8d1ba2537dc300ac902d9dad"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 5445,
+      "sha256": "019c9e49b2ac9cb247068984ff90e4ee85caac641da1c05e4a1ea34f99e6bdf8"
+    },
+    {
+      "path": "benchmarks/README.md",
+      "bytes": 8097,
+      "sha256": "125f24a7eb030ff7106d7ec8c39cbc373f35078d3476271c628fbf5cd9153744"
+    },
+    {
+      "path": "benchmarks/development-study-protocol.md",
+      "bytes": 13364,
+      "sha256": "1c0d6c03375ad905be030057cde74a05679d08c68ee7e0e799bcf633a93d2a86"
+    },
+    {
+      "path": "benchmarks/ui-concepts-protocol.md",
+      "bytes": 6258,
+      "sha256": "99e69f17c5ba5b32a7e2479a28f4ae94b08301e0a58214876dddc0a0bca5d3f7"
+    },
+    {
+      "path": "docs/customizing.md",
+      "bytes": 21511,
+      "sha256": "ef74fa3bd7780b6bd3acb4c7af94d175707213b808e3f5c38951a0d354320ecc"
+    },
+    {
+      "path": "docs/getting-started.md",
+      "bytes": 11644,
+      "sha256": "48de8cb49fc3ccb96982f41c848b329096e54298f1ee0a6353a1135d63c4bd3d"
+    },
+    {
+      "path": "docs/index.md",
+      "bytes": 1111,
+      "sha256": "b6fb664435b01a644964fb3bce4820fc6f63549f35a9a60985e18a93bd5d319a"
+    },
+    {
+      "path": "docs/research.md",
+      "bytes": 16046,
+      "sha256": "803145637afef1b364905191db1f00583676afa6a80ec49348e8a0d6de123a36"
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "bytes": 4488,
+      "sha256": "def905588d4e970d6c7933339c59b3df3778b640c7dcadaf29f85b44748581c1"
+    },
+    {
+      "path": "knowledge/architecture.md",
+      "bytes": 15489,
+      "sha256": "0080238bff6ac9fdefb8a3466e055393ea086aeb975202a6ee6c8b41ff345aa7"
+    },
+    {
+      "path": "knowledge/data.md",
+      "bytes": 16474,
+      "sha256": "ac802c4dcbfbef601cb94cc773e17ed982045a001d856001da7b8033ddebfc08"
+    },
+    {
+      "path": "knowledge/design.md",
+      "bytes": 24829,
+      "sha256": "61d782cd203ae7ff0f204a73d38b6eb2e7375850f282c1c91afb3dfa426bb1dd"
+    },
+    {
+      "path": "knowledge/handoff.md",
+      "bytes": 518,
+      "sha256": "6576390dd5f6232d27156887d4969e7ad822c57a43c85249fcfc9b3d6dfba0e0"
+    },
+    {
+      "path": "knowledge/journal.md",
+      "bytes": 21994,
+      "sha256": "e888942129077ae973aa54619e7686401b7c5e18037c0774bf4eacb05278c982"
+    },
+    {
+      "path": "knowledge/plan.md",
+      "bytes": 35849,
+      "sha256": "d941cf082dd78b8bcaa24a27325994f2a5e376f1c69b9b14e913e53b3f979c64"
+    },
+    {
+      "path": "knowledge/project.md",
+      "bytes": 8339,
+      "sha256": "6afd68831aa3ee6a3381dde31a2a00c62ba84cc2b87073c4c529345a0c4c3231"
+    },
+    {
+      "path": "knowledge/specification.md",
+      "bytes": 26149,
+      "sha256": "684e46385f14726ce380fb668fe69aba6ec135ee9c12bd02237adb9ceb7f454a"
+    },
+    {
+      "path": "knowledge/testing.md",
+      "bytes": 35118,
+      "sha256": "21c4406d67eddc121979b5d49786453aacf5f0a9eec86e147ce40fcdd3c75131"
+    },
+    {
+      "path": "task/input.json",
+      "bytes": 6997,
+      "sha256": "9897cffd1990dac5b5476a0ed6aa7630eed0802a6fbc4196c9fdf4d285fc382c"
+    },
+    {
+      "path": "task/task.md",
+      "bytes": 1603,
+      "sha256": "69177594a66dcd5098cea314ef50b1d934b8ee10712fe81a4d4f0c746eeb0931"
+    }
+  ]
+}

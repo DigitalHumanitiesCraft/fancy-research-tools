@@ -13,18 +13,24 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Specification
 
-The unreleased starter includes catalogue comparison, annotation of real source texts and collection metadata editing, with task-based links to existing research tools. Design variants and the historical catalogue remain available for development comparisons. Requirements describe observable behaviour. The [testing record](testing.md) identifies evidence and remaining acceptance.
+The unreleased starter leads with Collection Explorer and provides task-based entry points for capture, correspondence analysis, correction and edition building. Catalogue comparison, source annotation and collection metadata editing remain technical examples. Design variants and the historical catalogue remain available for development comparisons. Requirements describe observable behaviour. The [testing record](testing.md) identifies evidence and remaining acceptance.
 
 ## Project entry and navigation
 
 - NAV-01: The start page provides an overview and links to Tools and Documentation. The project header presents Overview, Tools and Documentation with equal visual weight.
-- NAV-02: The gallery groups tools by research activity and identifies material and destination beside actual previews. Local workspaces provide All tools as a return path. External applications open through ordinary links with a visible host. Text remains selectable without triggering navigation. Templates receive setup links rather than a browser-tool launch claim.
+- NAV-02: The gallery puts Collection Explorer first and groups remaining entries by capture, analysis, correction and edition building. It identifies material, actual previews and whether the destination is an application or setup guide. The public bibliography is a reading interface; its correction entry opens the curation guide. Local workspaces provide All tools as a return path. External applications open through ordinary links with a visible host. Text remains selectable without triggering navigation. Templates receive setup links rather than a browser-tool launch claim.
 - NAV-03: Documentation section navigation and page outlines remain visible at desktop and narrow widths. Additional disclosures require a specific optional-detail need under the [design contract](design.md#project-navigation).
+
+## Prepared SZD workflow
+
+The capture and edition guides use one source-bound letter package. Downloads preserve its attribution and explicit machine-produced status. Import into teiCrafter, schema checking, edition parsing, browser editing and full frontend generation are distinct acceptance steps. The external-TEI preview has no claimed correction-server round trip. Source package checks and outstanding operated tasks are recorded separately in [Testing](testing.md).
+
+The correction guide distinguishes the published Klawiter reading interface from local edit mode, patch export and downstream application. Its unresolved propagation boundary must remain visible before promising canonical correction of all outputs.
 
 ## DH pilot contract
 
@@ -116,6 +122,22 @@ As a researcher correcting descriptive metadata, I want a recoverable working co
 This is an implementation assumption. FR-03 through FR-07 implement the scenario. A browser workflow does not establish institutional review authority.
 
 ## Functional scope
+
+### Open photograph reference
+
+The independent `/photographs/` tool compares an openly licensed historical-photograph sample. Its research task is to retain a small selection, compare catalogue date/creator/technique descriptions, inspect the image and retrieve its source without losing context. Source selection and rights are governed by [Data](data.md), and the first-view contract by [Design](design.md#photograph-study).
+
+| ID | Behaviour | Acceptance evidence |
+|---|---|---|
+| PHOTO-01 | Search and relevant filters coordinate collection and chronological views. View, query and retained selection are addressable. | Filtering, browser Back and reload reproduce independently expected record identities. An empty result preserves a recovery action. |
+| PHOTO-02 | Every chronological entry shows the source date qualification and opens the photograph directly. | Approximate/range dates remain qualified, original text stays accessible and dense entries remain operable. Ordinal layout makes no proportional-duration claim. |
+| PHOTO-03 | Image inspection preserves context and supports direct pan/zoom and keyboard operation. | Operate the locally bundled viewer, open a direct image fallback, return to the same query/selection and check narrow reflow. |
+| PHOTO-04 | Up to four retained photographs can be compared and exported with their original source evidence. | Independent expectations agree with the actual downloaded IDs, source fields and snapshot identity. Clearing/removing selection changes no other tool's saved work. |
+| PHOTO-05 | Source and derivation remain distinguishable, with original date/creator qualifications and image rights inspectable. | Check source cases against the frozen raw records. Culture or museum location is never rendered as a capture/depicted location. |
+
+The photograph reference has separate data and route state. It introduces no annotation editor or persistence migration for existing investigations. A declared access route, accessible image fallback and retained original values remain available if enhanced image rendering fails.
+
+### Existing collection workflows
 
 The explorer operates on the supplied collection and exposes shareable navigation state. The editor manages a local working copy. Switching research domains requires changes to the [data contract](data.md), validation, controls and tests together.
 

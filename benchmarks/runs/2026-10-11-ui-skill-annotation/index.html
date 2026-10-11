@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Field-note annotations</title><link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script></head>
+<body>
+<a href="#source-text" class="skip">Skip to source</a>
+<header><h1>Field-note annotations</h1><div class="actions"><button id="open">Open notebook</button><button class="primary" id="export">Download notebook</button></div></header>
+<main>
+<div class="working-state"><span id="storage">Loading supplied notebook…</span><button id="recover" hidden>Download stored recovery</button></div>
+<p id="message" role="status" aria-live="polite" hidden></p>
+<div class="workspace">
+<section aria-labelledby="source-heading" class="source-panel">
+<div class="section-head"><h2 id="source-heading">Source</h2><span class="synthetic">Synthetic material</span></div>
+<label for="source-choice">Field note</label><select id="source-choice"></select>
+<dl class="source-meta"><div><dt>Source author</dt><dd id="source-author"></dd></div><div><dt>Source date</dt><dd id="source-date"></dd></div></dl>
+<label for="source-text" class="sr-only">Full source text</label><textarea id="source-text" readonly spellcheck="false" aria-describedby="selection-help"></textarea>
+<div class="selection-tools"><button id="annotate" class="primary">Annotate selection</button><span id="selection-range">No passage selected</span></div>
+<p id="selection-help" class="field-help">Select text with the pointer or use Shift + arrow keys in the source. Ranges distinguish repeated passages.</p>
+<details><summary>Source details</summary><dl id="source-details"></dl></details>
+</section>
+<section aria-labelledby="annotation-heading" class="annotation-panel">
+<div class="section-head"><h2 id="annotation-heading">Annotation</h2><span id="edit-state">No draft</span></div>
+<div id="empty-editor">Select a passage, then choose Annotate selection. To revise saved work, choose Edit below.</div>
+<form id="editor" hidden>
+<div class="quote-meta"><span id="quote-source"></span><span id="quote-range"></span></div>
+<blockquote id="quote"></blockquote>
+<label for="category">Category</label><select id="category"><option value="observation">Observation</option><option value="speculation">Speculation</option><option value="question">Question</option></select>
+<label for="note">Interpretation</label><textarea id="note" rows="4" maxlength="20000"></textarea>
+<label for="creator">Annotation creator (self-declared)</label><input id="creator" maxlength="20000" autocomplete="off">
+<div id="draft-review" class="review"></div>
+<div class="actions"><button class="primary" type="submit">Save annotation</button><button id="discard" type="button">Discard draft</button></div>
+</form>
+</section>
+</div>
+<section class="notebook" aria-labelledby="notebook-heading"><div class="section-head"><h2 id="notebook-heading">Saved annotations</h2><span id="saved-count"></span></div><div id="annotations"></div></section>
+</main>
+<footer><span>Browser recovery is local to this browser and address. Download a notebook for a portable copy.</span><span id="rights"></span></footer>
+<dialog id="import-dialog" aria-labelledby="import-heading"><h2 id="import-heading">Open notebook</h2><label for="file">Notebook JSON file</label><input type="file" id="file" accept=".json,application/json"><button id="example">Open supplied notebook</button><details><summary>Open pasted JSON</summary><label for="json">Notebook JSON</label><textarea id="json" rows="8" spellcheck="false"></textarea><button id="paste">Check and open JSON</button></details><p id="import-error" role="alert" hidden></p><div class="actions"><button id="close-import">Cancel</button></div></dialog>
+<dialog id="confirm-dialog" aria-labelledby="confirm-heading"><h2 id="confirm-heading"></h2><p id="confirm-text"></p><div class="actions"><button id="confirm-no">Keep current work</button><button id="confirm-yes" class="danger">Continue</button></div></dialog>
+<noscript>This tool requires JavaScript. The unchanged sources and notebook are in the task folder.</noscript>
+</body></html>

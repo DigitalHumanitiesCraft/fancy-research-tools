@@ -1,0 +1,135 @@
+{
+  "format": "synthetic-catalogue-investigation",
+  "schemaVersion": 1,
+  "caseId": "synthetic-collection-procedure-trial-v1",
+  "synthetic": true,
+  "source": {
+    "title": "Demonstration catalogue for a software procedure trial",
+    "rights": "Original synthetic fixture under the repository licence",
+    "semantics": {
+      "catalogueDate": "Original descriptive expression. Index bounds support catalogue retrieval and do not independently establish an event date or duration.",
+      "place": "The role defines what a place describes. Null coordinates carry no position. All names and coordinates are fictional test values.",
+      "attribution": "Each attribution belongs to the stated role and retains its qualifier. Shared labels do not identify a single entity.",
+      "production": "How the particular field was supplied. A null review records no review. Production by an LLM does not supply a verification outcome."
+    }
+  },
+  "provenance": {
+    "input": "task/input.json",
+    "sha256": "9897cffd1990dac5b5476a0ed6aa7630eed0802a6fbc4196c9fdf4d285fc382c",
+    "transformations": "Selected records are copied without field changes; display formatting is not written into source records."
+  },
+  "query": {
+    "text": "",
+    "attribution": "",
+    "role": ""
+  },
+  "selectedIds": [
+    "demo-image-01",
+    "demo-image-03",
+    "demo-image-02"
+  ],
+  "records": [
+    {
+      "id": "demo-image-01",
+      "shelfmark": "DEMO-A-01",
+      "title": "Construction of the north pier",
+      "catalogueDate": {
+        "text": "before 2031",
+        "indexStart": 2025,
+        "indexEnd": 2031
+      },
+      "attributions": [
+        {
+          "label": "Northfield workshop",
+          "role": "photographer",
+          "qualifier": "attributed to",
+          "authority": "urn:synthetic:workshop:northfield"
+        }
+      ],
+      "places": [
+        {
+          "label": "North Harbour",
+          "role": "depicted",
+          "coordinates": [
+            10,
+            20
+          ]
+        }
+      ],
+      "material": "Paper print",
+      "production": {},
+      "catalogueNote": "The date expression is transcribed from the demonstration register."
+    },
+    {
+      "id": "demo-image-03",
+      "shelfmark": "DEMO-A-03",
+      "title": "View across the construction basin and temporary railway at the western end of the harbour",
+      "catalogueDate": {
+        "text": "circa 2032",
+        "indexStart": 2027,
+        "indexEnd": 2037
+      },
+      "attributions": [
+        {
+          "label": "Northfield workshop",
+          "role": "photographer",
+          "qualifier": "possibly",
+          "authority": null
+        }
+      ],
+      "places": [
+        {
+          "label": "North Harbour",
+          "role": "depicted",
+          "coordinates": null
+        }
+      ],
+      "material": null,
+      "production": {
+        "places[0]": {
+          "kind": "llm-extracted",
+          "sourceText": "Possibly taken by the harbour in the north.",
+          "review": null
+        }
+      },
+      "catalogueNote": "An image edge is missing."
+    },
+    {
+      "id": "demo-image-02",
+      "shelfmark": "DEMO-A-02",
+      "title": "Workers beside the unfinished north pier",
+      "catalogueDate": {
+        "text": "between 2030 and 2034",
+        "indexStart": 2030,
+        "indexEnd": 2034
+      },
+      "attributions": [
+        {
+          "label": "Northfield workshop",
+          "role": "photographer",
+          "qualifier": null,
+          "authority": "urn:synthetic:workshop:northfield"
+        }
+      ],
+      "places": [
+        {
+          "label": "East Harbour",
+          "role": "holding institution",
+          "coordinates": [
+            11,
+            22
+          ]
+        }
+      ],
+      "material": "Glass negative",
+      "production": {},
+      "catalogueNote": "The depicted location is not recorded."
+    }
+  ],
+  "interpretation": {
+    "unresolvedQuestion": "Does the temporary railway connect the three waterside construction views despite uncertain attribution and dates?",
+    "observation": "The depicted location is missing for DEMO-A-02; the DEMO-A-03 place is LLM-extracted and has no recorded review.",
+    "author": null,
+    "review": null
+  }
+}

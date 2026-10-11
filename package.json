@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "description": "A documented browser starter for research tools",
   "scripts": {
-    "predev": "node scripts/build-docs.mjs && node scripts/build-gallery.mjs",
+    "predev": "node scripts/build-example-assets.mjs && node scripts/build-docs.mjs && node scripts/build-gallery.mjs",
     "dev": "vite --host 127.0.0.1",
     "check": "tsc --noEmit && biome check .",
-    "check:data": "node scripts/check-data.mjs && node scripts/check-annotation-data.mjs && node data/hsa-letter/generate.mjs --check && node scripts/import-schoenbach-data.mjs --check",
+    "check:data": "node scripts/check-data.mjs && node scripts/check-annotation-data.mjs && node data/hsa-letter/generate.mjs --check && node scripts/import-schoenbach-data.mjs --check && node scripts/check-photographs.mjs && node scripts/check-szd-example.mjs",
     "format": "biome check --write .",
     "test": "vitest run",
-    "prebuild": "node scripts/build-docs.mjs && node scripts/build-gallery.mjs",
+    "prebuild": "node scripts/build-example-assets.mjs && node scripts/build-docs.mjs && node scripts/build-gallery.mjs",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "test:e2e": "playwright test",
@@ -31,6 +31,7 @@
     "@biomejs/biome": "^2.5.15",
     "@playwright/test": "^1.64.0",
     "@types/node": "^26.6.5",
+    "@types/openseadragon": "5.0.2",
     "lint-staged": "^16.4.0",
     "marked": "^18.1.0",
     "simple-git-hooks": "^2.14.0",
@@ -48,5 +49,8 @@
   },
   "lint-staged": {
     "*.{ts,js,mjs,json,css}": "biome check --write"
+  },
+  "dependencies": {
+    "openseadragon": "6.1.1"
   }
 }

@@ -1,0 +1,33 @@
+{
+  "caseId": "synthetic-annotation-procedure-trial-v1",
+  "synthetic": true,
+  "rights": "Original synthetic fixture under the repository licence",
+  "notebookContract": {
+    "schemaVersion": 1,
+    "fields": ["schemaVersion", "caseId", "annotations"],
+    "annotationFields": ["id", "sourceId", "start", "end", "quote", "category", "note", "creator", "review"],
+    "offsets": "Zero-based UTF-16 code units. Start is inclusive and end exclusive. The quote must equal the source slice.",
+    "categories": ["observation", "speculation", "question"],
+    "creator": "A self-declared name string. It does not identify a reviewer.",
+    "review": "Null or an object with reviewer, criterion and result strings. A review applies to the saved source anchor, category, note and creator together.",
+    "unknownFields": "Unsupported in this version. Reject without replacing current work."
+  },
+  "sources": [
+    {
+      "id": "demo-note-1",
+      "title": "Notebook A, morning visit",
+      "author": "Fictional observer Rowan",
+      "date": "2042-05-03",
+      "text": "At noon the water was still. Three reeds leaned toward the bank. I thought the closed gate might explain the low water. At noon the water was still. The repeated sentence was copied from the earlier page.",
+      "technicalProvenance": { "sourceVersion": "fixture-1", "derivation": "Text authored for an isolated software task.", "sourcePath": "synthetic/notebook-a.txt" }
+    },
+    {
+      "id": "demo-note-2",
+      "title": "Notebook B, evening visit",
+      "author": "Fictional observer Ellis",
+      "date": "2042-05-04",
+      "text": "A bird stood beside the café terrace. By evening the water reached the lowest step. It may have risen after the gate opened, although I did not see the gate move. The cause remains uncertain.",
+      "technicalProvenance": { "sourceVersion": "fixture-1", "derivation": "Text authored for an isolated software task.", "sourcePath": "synthetic/notebook-b.txt" }
+    }
+  ]
+}

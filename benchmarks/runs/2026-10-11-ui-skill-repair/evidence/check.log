@@ -1,0 +1,2 @@
+PASS: baseline/input bytes unchanged; candidate catalogue/model unchanged; all selected source fields and semantics exact in 3 actual browser exports; original author text exact; revised selection order exact; reopened baseline export byte-identical; altered-source rejection.
+PASS: source bytes and SHA-256; scoped filters and zero results; all selected fields; exact authored whitespace; round trip; rejection of changed, extra, duplicate and oversized fields; actual browser download with source semantics and field production.

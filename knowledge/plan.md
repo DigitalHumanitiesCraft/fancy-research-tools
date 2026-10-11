@@ -13,28 +13,45 @@ template:
 status: active
 language: en
 created: 2026-10-10
-updated: 2026-10-10
+updated: 2026-10-11
 ---
 
 # Plan
 
-The current candidate revises the rejected gallery and local workspaces using the operator's existing projects. The gallery groups activities and links existing public tools; the local editor starts with Schönbach correspondence, annotation includes a Benndorf letter, and catalogue comparison uses a compact table with addressable source evidence. The preceding negative design assessment remains recorded. The next step is the operator's review of this concrete revision. Research acceptance, screen-reader operation and comparative evaluation of the development method remain separate work.
+The current gallery is organized around research tasks. Collection Explorer is the first runnable reference. Capture and encode uses teiCrafter, Analyse correspondence uses CorrespExplorer, Review and correct introduces the local Klawiter curation workflow, and Build editions prepares an SZD example for Agentic Edition Pipeline. Earlier catalogue, metadata and annotation implementations remain technical examples with their original routes and working-state contracts.
+
+Both direct research use and development with coding agents are settled project goals. The operator rejected the previous mixture of workflow studies and external tools as the primary navigation. UI preferences and conditional reuse decisions live in [Design](design.md); source and rights boundaries live in [Data](data.md).
 
 ## Resume in the next session
 
-Read `AGENTS.md`, [Index](INDEX.md), [handoff](handoff.md), this plan and the [CI reflow correction](testing.md#ci-reflow-correction-2026-10-10). The [project-tool revision](testing.md#project-tool-revision-2026-10-10) retains the preceding full software checks. Inspect Git status before editing and preserve any local changes. A commit, push or deployment requires explicit authorisation. Check that `http://127.0.0.1:4173/` serves the current build, then start with `/tools/`. Follow the [local run instructions](../docs/getting-started.md#run-locally) if the server is unavailable.
+Read `AGENTS.md`, [Index](INDEX.md), [handoff](handoff.md), this plan and the latest dated section of [Testing](testing.md). Inspect Git status and preserve local work. The operator authorised commit and push after this implementation and documentation audit. That authorisation does not establish a public deployment, release or human acceptance. Verify the actual branch and remote state rather than assuming a documented action succeeded.
 
-Begin at `/tools/`, then operate the letter annotation, correspondence editor and catalogue comparison. Review the actual source, one substantive action and exported result for each task. Existing external applications open at their own hosts; their inclusion does not claim that their interfaces were rebuilt. Prototype variants remain in Design studies. Preserve sources, saved work and recovery contracts when incorporating feedback. The [design contract](design.md#task-hierarchy) records the revision rationale; representative observation follows the [development study protocol](../benchmarks/development-study-protocol.md).
+Begin at `/tools/` and follow the [photograph walkthrough](../docs/getting-started.md#explore-photographs) through source inspection, comparison and export. Continue with the real SZD package and guides. A frozen package and executable instructions are preparation evidence; a complete transfer through capture, transcription, correction and edition output must be observed separately. Use the [local run instructions](../docs/getting-started.md#run-locally) to rebuild before review.
 
 | Priority | Work remaining | Dependency and completion evidence |
 |---|---|---|
-| 1 | Obtain operator feedback on the revised working surfaces | Inspect task categories, real source examples and complete local workflows. The current revision is a candidate, with acceptance pending. |
-| 2 | Correct evidenced friction | State the consequence and change hypothesis, implement a bounded correction, repeat affected tasks and retain before/after evidence. |
-| 3 | Complete accessibility observations | Native zoom now has bounded evidence for the new and changed routes. Arrange a real screen-reader task. |
-| 4 | Observe representative research use | Assess source interpretation, annotation categories and review meaning with accountable researchers, recording assistance and errors. |
-| 5 | Assess version 0.2 readiness | Assess the implemented workflows on all four bounded materials against the acceptance contract and record technical readiness separately from human research acceptance. |
+| 1 | Review the first reference with the operator | Complete the photograph task, inspect source qualifiers and actual exported material, record concrete friction. |
+| 2 | Exercise the prepared SZD task across its actual tools | Record the source revision, setup, executed stages, retained output and every unsupported handoff. |
+| 3 | Close the bibliographic correction boundary before claiming a general curation example | Reproduce local editing and patch export; establish which canonical outputs receive the correction. The upstream propagation gap remains an acceptance dependency. |
+| 4 | Complete accessibility observations | Operate relevant keyboard, narrow and enlarged states. Arrange a real screen-reader task separately. |
+| 5 | Observe representative research use and assess the development method | Record assistance, interpretation and outcomes with the agreed additional person and their real question. Participant and timing remain unassigned. |
 
-Source acquisition and implementation of the contrasting annotation case are completed work. Avoid commissioning another dataset merely to fill that milestone. Broader skill evaluations, full-text appraisal of abstract-only research sources and representative participant work remain open. Maintain the source-access limits recorded in the research guide and the historical sections below.
+Source acquisition for the older technical examples is completed work. Keep their historical runs and compatibility checks. A shared tool framework or automatic transfer between external applications requires demonstrated contracts. Broader skill evaluations and representative participant work remain open.
+
+## UI knowledge and open collection reference
+
+The confirmed purpose lives in [Project](project.md#purpose), presentation choices in the [operator default profile](design.md#operator-default-profile), and public adaptation guidance in [Customizing](../docs/customizing.md#adapt-the-interface). The implementation sequence below is complete through the bounded agent trials. Human observation remains pending. The [testing record](testing.md#open-photographs-and-ui-skills-2026-10-11) distinguishes the initial failures, corrections and unperformed checks.
+
+| Order | Bounded work | Completion evidence |
+|---|---|---|
+| 1 | Completed: revise the three local UI procedures and portable patterns. | Concrete view, task, evidence and repair outputs refer to canonical contracts. A negative trial prompted a more explicit transfer of the operator profile. Global skills are unchanged. |
+| 2 | Completed: independent Photograph study with Cleveland Museum of Art material. | Frozen response, individual image rights, local JPEGs and reproducible JSON-LD are documented in `data/photographs/`. No customer material or private code was copied. |
+| 3 | Completed for the bounded cases: independent source expectations. | Difficult dates, attribution qualifiers, roles and actual image dimensions have independent checks. Synthetic cases separately exercise typed places and field-specific LLM production. |
+| 4 | Completed: Collection, ordinal Timeline, Photograph and Comparison. | Operated source-to-export workflow, pointer/keyboard viewer, local image fallback, addressable context and narrow checks. No map without source-backed coordinates and roles. |
+| 5 | Completed bounded collection and annotation trials; guided repair separately recorded. | Fresh agents used isolated copied contracts without intended answers. Actual downloads, source checks, negative findings and assistance are retained. This is neither an old-versus-new skill experiment nor human acceptance. |
+| 6 | Conduct a formative session with an additional person bringing their own research question, alongside operator review. | Record what the person finds, how they interpret uncertainty, whether they can retrieve a source, and any help or recovery needed under the existing development study protocol. Participant and timing remain unassigned; no session has been conducted. |
+
+The current Met and annotation cases retain their source, export and recovery contracts. The new collection example serves the requested transfer of research-interface knowledge. Publication remains a separate decision. The additional human session provides bounded formative evidence and does not establish general research fitness or accessibility conformance.
 
 ## Status tracker
 
@@ -42,9 +59,9 @@ Source acquisition and implementation of the contrasting annotation case are com
 |---|---|
 | M0 Baseline | The Met snapshot and importer and the listed historical evidence remain unchanged within the preservation probe's scope. The combined candidate has its own source manifest and run. |
 | M1 Workflow | Documented and exercised in the Met case and agent-only preparation trials A/B. Human novice entry and method benefit remain unverified. |
-| M2 Material and cases | Met metadata, Milton discussions, a Benndorf letter and Schönbach CMIF metadata have frozen sources and separate task/data contracts. |
+| M2 Material and cases | Cleveland photographs are the first reference material. Earlier Met metadata, Milton discussions, a Benndorf letter and Schönbach CMIF remain frozen technical examples. Additional SZD material follows its own source package contract. |
 | M3 Responsibilities | Small UI primitives and build rules are reused. Annotation validation, source extraction, recovery and interface remain independent from Met investigations. |
-| M4 Reference case | The Met investigation workflow is implemented and has earlier engineering evidence. Researcher assessment remains open. |
+| M4 Reference case | Collection Explorer is the first reference, with its own photograph data and bounded engineering evidence. The earlier Met investigation remains a technical example. Researcher assessment remains open. |
 | M5 Contrasting case | Forecast and letter annotation and the real-metadata projection are implemented. Domain assessment remains open. |
 | M6 Reproduction and feedback | A separate agent reproduced the earlier combined candidate. The operator then rejected its design. The task-based revision is ready for a new review after its checks; it has no human design acceptance yet. |
 
@@ -69,7 +86,7 @@ The Vault was read-only during the bounded review. The table preserves its outgo
 
 This is a locally prepared development increment, with no continuing service agreement. The research acceptance authority, continuing technical maintainer, deployment operator and long-term data custodian are all `unassigned` for this increment. No assignment is inferred from repository ownership or the operator's implementation request. No background update or monitoring job has been created.
 
-Use the retained lockfile and the public start/verification commands. Node.js 22.14.0 was used for the recorded local checks. The source captures for those checks included uncommitted files, so their base Git commit alone is insufficient to identify the tested state. The [CI reflow correction](testing.md#ci-reflow-correction-2026-10-10) identifies the latest source capture. The [commit preparation](testing.md#commit-preparation-2026-10-10) records the byte-preservation policy, and the [documentation closeout](testing.md#documentation-audit-closeout-2026-10-10) identifies the preceding documentation revision and its verification. The earlier full software checks belong to `benchmarks/runs/2026-10-10-project-tools-source.json` and its matching run directory. The older repository audit and review-ready captures retain their historical scope. Preserve original exports and the local recovery copies when preparing a later change.
+Use the retained lockfile and the public start/verification commands. Node.js 22.14.0 was used for the recorded local checks. The source captures for those checks included uncommitted files, so their base Git commit alone is insufficient to identify the tested state. The latest dated section in [Testing](testing.md) identifies current verification. The [CI reflow correction](testing.md#ci-reflow-correction-2026-10-10) retains its earlier source capture. The [commit preparation](testing.md#commit-preparation-2026-10-10) records the byte-preservation policy, and the [documentation closeout](testing.md#documentation-audit-closeout-2026-10-10) identifies the preceding documentation revision and its verification. The earlier full software checks belong to `benchmarks/runs/2026-10-10-project-tools-source.json` and its matching run directory. The older repository audit and review-ready captures retain their historical scope. Preserve original exports and the local recovery copies when preparing a later change.
 
 The retained real old-format export is `benchmarks/runs/2026-10-10-clear-scope-review/ui/instrument-investigation.json`. The provenance run retains `benchmarks/runs/2026-10-10-project-decisions/export-v2.json`; the audit also exercises actual downloaded version 2 files. Reopen test copies in a fresh browser context; preserve originals. A previous version 1-only application cannot read new version 2 files. Restore the matching old application with original version 1 exports when rolling back; do not overwrite new exports or silently downconvert their evidence. The editor remains on its separate collection schema version 1.
 
@@ -107,7 +124,7 @@ The [research-work synthesis](../docs/research.md#research-work-and-design-requi
 
 The Met workbench retains source comparison and separately authored interpretation. Annotation of Milton discussions and the Benndorf letter contrasts that workflow with exact quotation anchors and explicit review assertions. The metadata editor keeps original Schönbach correspondence values beside working corrections. The [architecture](architecture.md) records shared and domain-specific responsibilities. Selectable text, no introductory sublines and task-specific visual design remain binding. The historical [session closeout](../benchmarks/runs/2026-10-10-session-closeout/assessment.md) and later audit retain evidence for the repaired preservation defects. The revised candidate must preserve those behaviours before research assessment.
 
-Internal evidence consulted on 2026-10-10 includes the vault's teiCrafter hub, CorrespExplorer overview, Wenzelsbibel overview, Luschan Forschungsreisen Visualisierung, Fancy Research Tools Template-Konzept, Scholar-Centered Design, Design Patterns für DH-Forschungsinterfaces and Fehlerklassen agentisch erzeugter Forschungswerkzeuge. The teiCrafter and CorrespExplorer public repository descriptions were cross-checked. The Luschan repository and current partner commitments were unavailable for verification, so its vault material informs domain constraints only. No new live usability evaluation of these external tools was performed.
+The earlier conceptual review consulted private background material and public tool documentation. Private project names and commitments are omitted from this public copy. The review did not include a new live usability evaluation of the external tools. The public repository descriptions of teiCrafter and CorrespExplorer were cross-checked.
 
 ## Phases and milestones
 
@@ -177,7 +194,7 @@ Entry requires M4 and M5. Assign a fresh agent or developer a repository-only re
 
 Run clean installation, type/lint checks, relevant unit tests, production build and browser tests. Cover actual downloaded exports, failure recovery, old drafts, narrow layouts, keyboard use, applicable accessibility checks and repository-subpath delivery. Inspect the visible documentation and tools. Verify the publication allowlist and the correspondence between requirements, sources and recorded results.
 
-Update the application version and changelog to 0.2 only when the release candidate meets its technical criteria. The public documentation footer already derives its version from the package manifest. Preserve that behaviour. The knowledge-document schema version changes only if its own contract changes. Start the local server and present documentation and the implemented workflows on all four materials for operator feedback. Record human acceptance or remaining issues explicitly. External deployment requires its own authorisation.
+Update the application version and changelog to 0.2 only when the release candidate meets its technical criteria. The public documentation footer already derives its version from the package manifest. Preserve that behaviour. The knowledge-document schema version changes only if its own contract changes. Start the local server and present documentation and the implemented reference and technical workflows on their declared materials for operator feedback. Record human acceptance or remaining issues explicitly. External deployment requires its own authorisation.
 
 Exit requires V02-07 and V02-08. If domain review is unavailable, report technical readiness and pending research acceptance without marking scholarly validation complete.
 
