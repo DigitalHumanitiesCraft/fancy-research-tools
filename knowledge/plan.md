@@ -13,7 +13,7 @@ template:
 status: active
 language: en
 created: 2026-10-10
-updated: 2026-10-11
+updated: 2026-10-13
 ---
 
 # Plan
@@ -26,7 +26,7 @@ Read the action layer, [Index](INDEX.md), [handoff](handoff.md) and this queue. 
 
 | Priority | Next action | Completion evidence | Dependency |
 |---|---|---|---|
-| 1 | Review Collection Explorer with the operator through search, qualified source inspection, image comparison and export | Actual output, interpretation and observed friction under the [UI protocol](testing.md#ui-acceptance-protocol) | Operator availability; test whether ordinal date spacing is understood |
+| 1 | Complete the Collection Explorer task review through search, qualified source inspection, image comparison and export after the [positive initial view assessment](testing.md#initial-operator-feedback-on-photographs-2026-10-13) | Actual output, interpretation and observed friction under the [UI protocol](testing.md#ui-acceptance-protocol) | Operator availability; test whether ordinal date spacing is understood |
 | 2 | Complete the prepared SZD task in teiCrafter and a separate edition copy | Import, source-supported edit, downloaded/reopened XML, local edition build and comparison with the retained source | A usable native file picker or supported import path; preparation and parser checks already exist |
 | 3 | Exercise local bibliographic correction and establish its propagation boundary | Original value, correction, exported patch and affected canonical outputs | Upstream Klawiter propagation gap must close before a general curation claim |
 | 4 | Complete manual accessibility observations for the current reference | Keyboard and native-zoom tasks on the current state, plus real screen-reader operation | Appropriate browser and assistive technology; earlier checks retain their source limits |
@@ -42,7 +42,7 @@ New implementation follows a concrete defect or research need found in these tas
 | M1 Development workflow | Documented question-, material- and existing-tool entry, with bounded agent trials | Independent novice development and benefit of the method |
 | M2 Material and cases | Open photograph reference, retained technical examples and prepared SZD package under [Data](data.md) | Task-specific scholarly interpretation |
 | M3 Responsibility boundaries | Separate domain formats and state, selectively shared primitives under [Architecture](architecture.md#core-and-adaptation-boundaries) | Broader reuse only after observed adaptations |
-| M4 Reference workflow | Collection Explorer search, chronology, image inspection, comparison and evidence export | Operator and researcher assessment |
+| M4 Reference workflow | Collection Explorer search, chronology, image inspection, comparison and evidence export; positive initial operator assessment of the photograph view | Complete operator task assessment and representative researcher assessment |
 | M5 Contrasting adaptations | Annotation and metadata correction implemented; existing external tools linked through concrete tasks | External SZD and curation paths in the queue above |
 | M6 Reproduction and review | Local and Linux checks, agent reproduction and operated reviews recorded in Testing | Human design acceptance and release decision |
 

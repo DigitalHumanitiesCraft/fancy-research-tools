@@ -13,7 +13,7 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-11
+updated: 2026-10-13
 ---
 
 # Testing
@@ -31,9 +31,13 @@ The subsequent [knowledge-refactor run](https://github.com/DigitalHumanitiesCraf
 | Source semantics and preservation | Frozen-source regeneration, independent expected cases, actual downloads compared with their source and author values | Correct bytes do not establish correct historical interpretation |
 | Interaction and recovery | Browser cases for filtered selection, source addresses, retained image state, rejected/cancelled inputs, legacy drafts and export/reopen where supported | Each application's declared state and format under [Data](data.md) remain distinct |
 | Accessible operation | Automated axe checks, tested keyboard/focus sequences, 320px reflow and earlier source-bound native-zoom observations | No general conformance or real screen-reader acceptance |
-| UI design | Operated agent reviews and bounded screenshot review, including negative findings and repairs | Operator and representative researcher acceptance remain pending |
+| UI design | Operated agent reviews and bounded screenshot review, including negative findings and repairs, plus the operator's positive first assessment of the photograph view on 2026-10-13 | Complete task assessment, other views and representative researcher acceptance remain pending |
 | SZD interoperability | Pinned schema/parser checks in `data/szd-example/verification.json`; source-preserving package download | Native file picker blocked complete editor import/edit/reopen; full edition build remains unperformed |
 | Reusable procedures | Recorded agent-only collection/annotation trials and separately guided repair | No causal old/new comparison, novice-use finding or general skill-effectiveness claim |
+
+### Initial operator feedback on photographs 2026-10-13
+
+The operator described the photograph view as "ganz gut" in the session on 13 October 2026. The preview served the existing production build from 11 October 2026; the inspected repository baseline was fb14c25. This is a positive initial judgement of the view's presentation. Search, qualified source interpretation, comparison and exported/reopened evidence were not observed in this session. The [UI acceptance protocol](#ui-acceptance-protocol) remains the basis for those tasks, and the [Plan](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/codex/version-0.1/knowledge/plan.md#resume-in-the-next-session) holds the next action.
 
 ## Test strategy
 
