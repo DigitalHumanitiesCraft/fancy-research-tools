@@ -127,7 +127,9 @@ test("gallery previews, tool entry and return work at narrow width", async ({ pa
   const destinations = await page
     .locator(".open-tool")
     .evaluateAll((links) => links.map((link) => (link as HTMLAnchorElement).href));
-  expect(destinations).toHaveLength(5);
+  expect(destinations).toContain(new URL("/evidence/", page.url()).href);
+  expect(destinations).toContain(new URL("/letters/", page.url()).href);
+  await expect(page.locator(".tool-mode")).toHaveCount(destinations.length);
   await expect(page.locator(".open-tool").first()).toHaveText("Open Collection Explorer");
   for (const id of [
     "explore-collections",
@@ -136,7 +138,7 @@ test("gallery previews, tool entry and return work at narrow width", async ({ pa
     "review-and-correct",
     "build-an-edition",
   ])
-    await expect(page.locator(`section[aria-labelledby="${id}"] .open-tool`)).toHaveCount(1);
+    await expect(page.locator(`section[aria-labelledby="${id}"] .open-tool`).first()).toBeVisible();
   for (const id of [
     "reference-tool",
     "explore-and-compare",
@@ -167,6 +169,10 @@ test("gallery previews, tool entry and return work at narrow width", async ({ pa
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: testInfo.outputPath("gallery-narrow.png"), fullPage: true });
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.screenshot({ path: testInfo.outputPath("gallery-wide.png") });
+  await page.setViewportSize({ width: 320, height: 800 });
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
   await page.getByRole("link", { name: "Open Collection Explorer", exact: true }).click();
   await expect(page.getByRole("main")).toBeVisible();

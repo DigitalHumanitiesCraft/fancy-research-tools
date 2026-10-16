@@ -13,12 +13,18 @@ template:
 status: active
 language: en
 created: 2026-10-10
-updated: 2026-10-13
+updated: 2026-10-16
 ---
 
 # Journal
 
 ## Entries
+
+### 2026-10-16 improved local examples and bounded activity coverage
+
+The operator confirmed the overarching purpose of translating researchers' own questions into tools that can evolve during research, then directly requested improvement and expansion of the examples. Work used an isolated checkout of the active development branch because main is retired. Existing local cases received bounded changes in question entry, selection ordering, attribution search, addressable source selection, safe asynchronous import and explicit annotation reanchoring. Photograph selection packets retain their existing export shape and now reopen against the frozen collection.
+
+The gallery exposes the local examples and identifies external applications and setup guides. Source-evidence review adds a complete small statement-to-quotation task using existing open NHC material, with explicit actor declarations, revision-sensitive review and export/reopening. It makes no Grounded Vault conformance claim. [Research basis](../docs/research.md#coverage-of-research-activities) records activity coverage and remaining tasks. Complete comparative research and human acceptance remain open; implementation breadth supplies no evidence of universal fitness. [Testing](testing.md) owns the actual verification and bounded failures.
 
 ### 2026-10-13 recorded positive initial feedback on the photograph view
 

@@ -16,7 +16,7 @@ function toolEntry(tool) {
   return `<li><article class="tool-entry${tool.preview ? "" : " tool-entry-text"}" aria-labelledby="${escapeHtml(tool.id)}">
     ${tool.preview ? `<figure class="tool-figure"><a class="tool-preview" href="${escapeHtml(tool.href)}" tabindex="-1" aria-hidden="true"><img src="../previews/${tool.preview}" width="1440" height="960" loading="lazy" alt="${escapeHtml(tool.alt)}"></a>${tool.previewCaption ? `<figcaption>${escapeHtml(tool.previewCaption)}</figcaption>` : ""}</figure>` : ""}
     <div class="tool-info"><h3 id="${escapeHtml(tool.id)}">${escapeHtml(tool.name)}</h3>
-    <ul class="tool-facts" role="list"><li>${escapeHtml(tool.material)}</li>${tool.location ? `<li>${escapeHtml(tool.location)}</li>` : ""}</ul>
+    <ul class="tool-facts" role="list"><li class="tool-mode">${escapeHtml(tool.mode)}</li><li>${escapeHtml(tool.material)}</li>${tool.location ? `<li>${escapeHtml(tool.location)}</li>` : ""}${tool.outcome ? `<li>Retains ${escapeHtml(tool.outcome)}</li>` : ""}</ul><p class="tool-access">${escapeHtml(tool.access)}</p>
     <div class="tool-actions">${link(tool.href, tool.action, "open-tool")}${tool.related ? link(tool.related.href, tool.related.label) : ""}</div></div>
   </article></li>`;
 }
@@ -35,6 +35,7 @@ await writeFile(
 <header class="site-header"><a class="brand" href="../">Fancy Research Tools</a><nav aria-label="Main navigation"><a href="../">Overview</a><a href="./" aria-current="page">Tools</a><a href="../guides/getting-started.html">Documentation</a></nav></header>
 <main id="tools" class="tool-gallery" tabindex="-1"><h1>Tools</h1>
 <nav class="task-navigation" aria-label="Research tasks">${catalog.groups.map((group) => link(`#${group.id}`, group.title)).join("")}</nav>
+<p class="coverage-link"><a href="../guides/research.html#coverage-of-research-activities">Research activities and remaining gaps</a></p>
 ${sections}
 </main><footer><nav aria-label="Project resources"><a href="../reference/design.html#project-examples">Sources and integration</a><a href="../concepts/">Design studies</a><a href="https://dhcraft.org/fancy-research-tools/">DHCraft</a></nav></footer></body></html>\n`,
 );

@@ -17,6 +17,7 @@ export default defineConfig({
         resolve("photographs/index.html"),
         resolve("annotations/index.html"),
         resolve("letters/index.html"),
+        resolve("evidence/index.html"),
         resolve("tools/index.html"),
         ...["", "atlas", "bench", "trail"].map((dir) => resolve("concepts", dir, "index.html")),
       ],

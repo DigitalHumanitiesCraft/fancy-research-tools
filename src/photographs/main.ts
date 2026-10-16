@@ -1,5 +1,6 @@
 import rawCollection from "../../data/photographs/collection.jsonld?raw";
 import { icon } from "../ui/icons";
+import { MAX_SELECTION_BYTES, openSelection } from "./exchange";
 import {
   creatorText,
   filterPhotographs,
@@ -43,6 +44,8 @@ try {
   let destroyViewer: (() => void) | undefined;
   let viewerGeneration = 0;
   let notice = "";
+  let revision = 0;
+  let readGeneration = 0;
   const scrollPositions = new Map<string, number>();
 
   const imageUrl = (record: Photograph) => {
@@ -60,6 +63,7 @@ try {
     })[view];
 
   const navigate = (next: PhotoState, replace = false, restore = false) => {
+    revision += 1;
     scrollPositions.set(stateHash(state), window.scrollY);
     state = next;
     history[replace ? "replaceState" : "pushState"]({}, "", stateHash(state));
@@ -89,6 +93,7 @@ try {
   }
 
   function syncLocation() {
+    revision += 1;
     history.replaceState({}, "", stateHash(state));
     for (const anchor of document.querySelectorAll<HTMLAnchorElement>("a[data-photo-view]")) {
       anchor.href = stateHash({
@@ -623,7 +628,46 @@ try {
     else browse();
   }
 
+  const openButton = document.querySelector<HTMLButtonElement>("#open-selection");
+  const fileInput = document.querySelector<HTMLInputElement>("#selection-file");
+  const fileStatus = document.querySelector<HTMLElement>("#selection-status");
+  openButton?.addEventListener("click", () => fileInput?.click());
+  fileInput?.addEventListener("change", async () => {
+    const file = fileInput.files?.[0];
+    fileInput.value = "";
+    if (!file || !fileStatus) return;
+    const generation = ++readGeneration;
+    const expectedRevision = revision;
+    try {
+      if (file.size > MAX_SELECTION_BYTES) throw new Error("The selection file exceeds 2 MB.");
+      const text = await file.text();
+      if (generation !== readGeneration) return;
+      const candidate = openSelection(text, collection);
+      if (revision !== expectedRevision)
+        throw new Error(
+          "The selection was not opened because your work changed while the file was being read. Open it again when ready.",
+        );
+      if (
+        (state.selected.length || state.query || state.creator || state.technique) &&
+        !window.confirm("Replace the current search and selection with this file?")
+      ) {
+        fileStatus.textContent = "Opening cancelled. Your current selection is unchanged.";
+        return;
+      }
+      notice = "";
+      navigate(candidate);
+      fileStatus.textContent =
+        "Selection opened. Original catalogue evidence and search settings match this snapshot.";
+    } catch (error) {
+      if (generation !== readGeneration) return;
+      fileStatus.textContent =
+        error instanceof Error
+          ? error.message
+          : "The selection could not be opened. Your work is unchanged.";
+    }
+  });
   window.addEventListener("popstate", () => {
+    revision += 1;
     state = initialState(location.hash, collection.items);
     notice = "";
     render();
@@ -631,6 +675,7 @@ try {
   });
   window.addEventListener("hashchange", () => {
     if (location.hash !== stateHash(state)) {
+      revision += 1;
       state = initialState(location.hash, collection.items);
       render();
     }

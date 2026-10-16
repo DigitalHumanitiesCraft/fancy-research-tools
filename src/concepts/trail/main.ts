@@ -40,7 +40,11 @@ let author = "user";
 const value = (text: string | number | null) =>
   text === null || text === "" ? "Not supplied" : String(text);
 const maker = attribution;
-const records = () => dataset.records.filter((record) => selected.has(record.id));
+const records = () =>
+  [...selected].flatMap((id) => {
+    const record = dataset.records.find((item) => item.id === id);
+    return record ? [record] : [];
+  });
 function sourceLink(record: RecordItem) {
   const link = make("a", record.title);
   link.href = safeSourceUrl(record.sourceUrl);

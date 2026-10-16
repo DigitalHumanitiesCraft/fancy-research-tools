@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Check a sourced claim</title>
+    <script type="module" src="../src/evidence/main.ts"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#source-text">Skip to source text</a>
+    <header class="page-header">
+      <h1>Check a sourced claim</h1>
+      <nav aria-label="Tool navigation">
+        <a href="../tools/">All tools</a>
+        <button id="export-packet" type="button">Export evidence packet</button>
+      </nav>
+    </header>
+    <main>
+      <p id="file-status" role="status">Work stays in this tab until exported.</p>
+      <div class="workspace">
+        <section class="source-pane" aria-label="Frozen source">
+          <div class="source-toolbar">
+            <div><label for="source">Bulletin</label><select id="source"></select></div>
+            <button id="retain-quotation" type="button">Retain selected quotation</button>
+          </div>
+          <dl class="source-attribution">
+            <div><dt>Issued</dt><dd id="issued"></dd></div>
+            <div><dt>Forecaster</dt><dd id="forecaster"></dd></div>
+          </dl>
+          <p>Historical archive, October 2024. <a id="source-link" rel="noreferrer" target="_blank">Original NHC bulletin (opens a new tab)</a></p>
+          <label for="source-text">Original bulletin text</label>
+          <textarea id="source-text" readonly spellcheck="false" rows="20"></textarea>
+          <p id="selection-status" role="status">Select a passage with the pointer or Shift and arrow keys.</p>
+          <details>
+            <summary>Source identity</summary>
+            <dl>
+              <div><dt>Source ID</dt><dd id="source-id"></dd></div>
+              <div><dt>Original page SHA-256</dt><dd id="raw-hash"></dd></div>
+              <div><dt>Displayed text SHA-256</dt><dd id="text-hash"></dd></div>
+            </dl>
+          </details>
+        </section>
+        <section class="claim-pane" aria-label="Claim and evidence">
+          <label for="research-question">Research question</label>
+          <textarea id="research-question" rows="2" maxlength="20000"></textarea>
+          <label for="claim">Your claim</label>
+          <textarea id="claim" rows="3" maxlength="20000"></textarea>
+          <section aria-labelledby="evidence-heading">
+            <h2 id="evidence-heading" tabindex="-1">Retained quotations</h2>
+            <p id="empty-evidence">No quotations retained.</p>
+            <ol id="evidence"></ol>
+          </section>
+          <label for="reasoning">Your reasoning</label>
+          <textarea id="reasoning" rows="4" maxlength="20000" aria-describedby="reasoning-guidance"></textarea>
+          <p id="reasoning-guidance" class="field-guidance">Explain how the quoted wording supports, challenges or limits your claim. Source agreement does not establish forecast accuracy.</p>
+          <fieldset>
+            <legend>Claim creator (self-declared)</legend>
+            <div class="actor-fields">
+              <div><label for="creator-kind">Creator kind</label><select id="creator-kind"><option value="unknown">Unknown</option><option value="human">Human</option><option value="llm">LLM</option><option value="agent">AI agent</option></select></div>
+              <div><label for="creator-name">Creator name</label><input id="creator-name" maxlength="20000" /></div>
+            </div>
+          </fieldset>
+          <section aria-labelledby="review-heading">
+            <h2 id="review-heading">Source-fit review</h2>
+            <p id="review-status" role="status">No review recorded.</p>
+            <form id="review-form">
+              <div class="actor-fields">
+                <div><label for="reviewer-kind">Reviewer kind</label><select id="reviewer-kind"><option value="unknown">Unknown</option><option value="human">Human</option><option value="llm">LLM</option><option value="agent">AI agent</option></select></div>
+                <div><label for="reviewer-name">Reviewer name</label><input id="reviewer-name" required maxlength="20000" /></div>
+              </div>
+              <label for="criterion">Review criterion</label>
+              <textarea id="criterion" rows="2" required maxlength="20000"></textarea>
+              <label for="result">Does the retained evidence support this claim?</label>
+              <select id="result"><option value="unclear">Unclear</option><option value="supports">Supports</option><option value="does-not-support">Does not support</option></select>
+              <div class="actions"><button type="submit">Record review</button><button id="clear-review" type="button" hidden>Remove recorded review</button></div>
+            </form>
+          </section>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="file-controls"><label for="open-packet">Open evidence packet</label><input id="open-packet" type="file" accept="application/json,.json" /></div>
+      <nav aria-label="Documentation"><a href="../reference/data.html">Data and provenance</a><a href="https://www.weather.gov/disclaimer" rel="noreferrer" target="_blank">NOAA terms (opens a new tab)</a><a href="https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/main/LICENSE" rel="noreferrer" target="_blank">Code license (opens a new tab)</a></nav>
+    </footer>
+  </body>
+</html>

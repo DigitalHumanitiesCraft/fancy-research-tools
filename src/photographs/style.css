@@ -613,3 +613,11 @@
     }
   }
 }
+
+@layer components {
+  #selection-status:not(:empty) {
+    margin: 1rem;
+    padding: 0.75rem;
+    border-inline-start: 3px solid var(--accent);
+  }
+}

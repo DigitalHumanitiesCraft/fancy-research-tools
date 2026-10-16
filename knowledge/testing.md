@@ -13,7 +13,7 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-13
+updated: 2026-10-16
 ---
 
 # Testing
@@ -22,7 +22,9 @@ Quality checks establish bounded software behaviour, source preservation and obs
 
 ## Current evidence
 
-The implementation baseline is [a217446](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/commit/a217446f720282c347864dc710c8502db8d6ecbe). Its local sequence passed 96 unit tests, a full 60-case browser run, all six source gates, type/lint checks and the production build. After two gallery corrections, the five affected documentation/browser cases were repeated. The separate [Linux CI run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/actions/runs/38162240871) passed for the committed state. The [task-gallery record](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-11-task-gallery) preserves that sequence.
+The local examples revision of 2026-10-16 passed the project checks on Windows with installed Chrome. The [revision record](#local-examples-revision-2026-10-16) identifies the executed scope and preserved artifacts. Earlier evidence below retains its original source identity.
+
+The earlier implementation baseline is [a217446](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/commit/a217446f720282c347864dc710c8502db8d6ecbe). Its local sequence passed 96 unit tests, a full 60-case browser run, all six source gates, type/lint checks and the production build. After two gallery corrections, the five affected documentation/browser cases were repeated. The separate [Linux CI run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/actions/runs/38162240871) passed for the committed state. The [task-gallery record](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-11-task-gallery) preserves that sequence.
 
 The subsequent [knowledge-refactor run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/codex/version-0.1/benchmarks/runs/2026-10-11-knowledge-refactor) passed type/lint, the documentation/production build and five affected browser cases. It corrected unpublished Markdown links detected by the build. Application, source data, dependency and test files remain unchanged. All existing requirement identifiers survived the independent loss review. The three local skills passed structural validation. A fresh agent applied the evaluation skill to a real photograph comparison and actual export; source values and selected identities agreed. The requested narrow viewport measured 487 CSS pixels, so that trial cannot claim 390-pixel coverage. Human interpretation, screen-reader operation and comparative skill effectiveness remain untested. The run manifest identifies the exact changed knowledge and procedure state.
 
@@ -34,6 +36,18 @@ The subsequent [knowledge-refactor run](https://github.com/DigitalHumanitiesCraf
 | UI design | Operated agent reviews and bounded screenshot review, including negative findings and repairs, plus the operator's positive first assessment of the photograph view on 2026-10-13 | Complete task assessment, other views and representative researcher acceptance remain pending |
 | SZD interoperability | Pinned schema/parser checks in `data/szd-example/verification.json`; source-preserving package download | Native file picker blocked complete editor import/edit/reopen; full edition build remains unperformed |
 | Reusable procedures | Recorded agent-only collection/annotation trials and separately guided repair | No causal old/new comparison, novice-use finding or general skill-effectiveness claim |
+
+### Local examples revision 2026-10-16
+
+The direct operator assignment requested improvement and expansion of existing examples and an honest assessment of research-activity coverage. The isolated branch `codex/improve-research-examples` started at 27e102c. Its unchanged baseline passed type/lint, all source gates, unit tests and the production build. Bounded operated baseline checks reproduced missing concept-question controls, inconsistent Trail ordering, missing attribution search, transient catalogue selection and a metadata-import overwrite. The main agent also operated the photograph workflow and downloaded its existing selection packet before changing it.
+
+After integration, `npm run check`, `npm run check:data`, `npm test`, `npm run build` and the complete `npm run test:e2e -- --workers 2` passed. The browser run used `PLAYWRIGHT_CHANNEL=chrome` and `E2E_PORT=18971`, leaving defaults unchanged. Default Playwright Chromium was unavailable locally; the initial failed launch established no interaction result. Installed Chrome supplied the actual checks. Existing investigation, annotation, letter, editor, catalogue, image and documentation cases passed alongside the new regressions. The complete run included actual downloads/reopening, unchanged author text and legacy formats, rejected/cancelled/stale imports, source evidence, keyboard sequences and 320 CSS-pixel reflow. The main agent inspected the retained broad and narrow screenshots.
+
+During development, the new evidence route exposed readonly-textarea keyboard behaviour and a narrow native-file-input overflow. Both were corrected before the passing full run. A new test filename initially collided with the existing field-evidence tests; the original file was restored byte for byte and the new tests moved to a distinct filename before integration. The final full suite includes both. A separate bounded photo-exchange review exercised superseded reads, cancelled replacement and re-export equality without a concrete product finding.
+
+`benchmarks/runs/2026-10-16-examples/` retains the selected broad/narrow images, actual evidence packet and reopened packet, original photograph download, browser-result record, assessment and artifact hash manifest. The matching `benchmarks/runs/2026-10-16-examples-source.json` identifies source content, including working-tree files, independently of the base commit. Routine runner output remains separate from this selected evidence.
+
+The main agent directly operated a claim about explicitly uncertain initial motion in Discussion 2 with an exact quotation and a separately declared agent review. This demonstrates that sequence, without authenticating a reviewer or establishing meteorological accuracy. The evidence route stores one statement per packet in the current tab until export. Grounded Vault processing, full external-editor/edition/curation paths, independent researcher acceptance, real screen-reader use and new native-browser-zoom observations remain unperformed. Agent tests establish the described technical behaviour only.
 
 ### Initial operator feedback on photographs 2026-10-13
 

@@ -1,5 +1,5 @@
 {
-  "reviewedOn": "2026-10-11",
+  "reviewedOn": "2026-10-16",
   "portfolioSource": "https://dhcraft.org/fancy-research-tools/",
   "groups": [
     {
@@ -20,11 +20,33 @@
           "preview": "collection-explorer.png",
           "alt": "Historical photographs with catalogue dates, qualified attributions and comparison controls",
           "repository": "https://github.com/DigitalHumanitiesCraft/fancy-research-tools",
-          "access": "Forty individually checked CC0 photographs and metadata. Local web-size images, catalogue chronology and evidence export. A purposive sample, not a representative collection.",
+          "access": "CC0 photographs and catalogue metadata. Local web-size images, catalogue chronology and source-preserving selection export/reopening. The purposive sample supports comparison within this snapshot.",
           "related": {
             "label": "Adapt this example",
             "href": "../guides/customizing.html#adapt-the-interface"
-          }
+          },
+          "mode": "Local reference tool",
+          "outcome": "ordered photographs and original evidence with search settings"
+        },
+        {
+          "material": "Metropolitan Museum of Art, musical instruments",
+          "mode": "Local development example",
+          "name": "Instrument comparison",
+          "action": "Compare collection records",
+          "outcome": "research question, selected records and authored observations in a reopenable investigation",
+          "href": "../pilot/",
+          "access": "Find qualified attributions, inspect their derivation and compare selected catalogue records.",
+          "id": "met-comparison"
+        },
+        {
+          "material": "Metropolitan Museum of Art, musical instruments",
+          "mode": "Local development example",
+          "name": "Instrument catalogue",
+          "action": "Explore catalogue distributions",
+          "outcome": "filtered records and provenance in a catalogue export",
+          "href": "../baseline/",
+          "access": "Filter categorical distributions and missing metadata. Counts describe the filtered snapshot. A selected source record has an addressable URL.",
+          "id": "met-catalogue"
         }
       ]
     },
@@ -50,7 +72,8 @@
           "related": {
             "label": "Open teiCrafter",
             "href": "https://digitalhumanitiescraft.github.io/teiCrafter/"
-          }
+          },
+          "mode": "Prepared exercise in an external editor"
         }
       ]
     },
@@ -75,7 +98,8 @@
           "related": {
             "label": "Follow the analysis example",
             "href": "../guides/getting-started.html#analyse-correspondence"
-          }
+          },
+          "mode": "External application"
         }
       ]
     },
@@ -83,6 +107,26 @@
       "id": "review-and-correct",
       "title": "Review and correct",
       "tools": [
+        {
+          "material": "Archived National Hurricane Center discussions",
+          "mode": "Local development example",
+          "name": "Evidence review",
+          "action": "Check a sourced statement",
+          "outcome": "question, statement, source anchors, reasoning and explicit review in a reopenable file",
+          "href": "../evidence/",
+          "access": "Bind your statement to exact source passages and record a separate review. A declared reviewer is not an authenticated identity.",
+          "id": "evidence-review"
+        },
+        {
+          "material": "Schönbach CMIF correspondence descriptions",
+          "mode": "Local development example",
+          "name": "Correspondence metadata editor",
+          "action": "Correct metadata",
+          "outcome": "corrected descriptive JSON with manual review flags",
+          "href": "../tool/",
+          "access": "Compare original values with a working correction. The flat JSON projection retains a source reference; it does not preserve the full CMIF structure.",
+          "id": "metadata-editor"
+        },
         {
           "id": "bibliography",
           "name": "Bibliographic curation",
@@ -98,7 +142,8 @@
           "related": {
             "label": "Browse the published bibliography",
             "href": "https://chpollin.github.io/klawiter-rescue/#browse"
-          }
+          },
+          "mode": "Setup guide for local correction"
         }
       ]
     },
@@ -118,7 +163,70 @@
             "href": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline"
           },
           "repository": "https://github.com/DigitalHumanitiesCraft/agentic-edition-pipeline",
-          "access": "Real SZD sample enters at checked TEI build. Automated transcription is a separate provider workflow; scholarly checking remains explicit."
+          "access": "Real SZD sample enters at checked TEI build. Automated transcription is a separate provider workflow; scholarly checking remains explicit.",
+          "mode": "Repository setup guide"
+        }
+      ]
+    },
+    {
+      "id": "annotate-sources",
+      "title": "Annotate sources",
+      "tools": [
+        {
+          "material": "Hugo Schuchardt Archiv, published letter transcription",
+          "mode": "Local development example",
+          "name": "Historical letter annotation",
+          "action": "Annotate a letter",
+          "outcome": "question, source snapshot and annotations in a reopenable notebook",
+          "href": "../letters/",
+          "access": "Keep exact quotation anchors separate from your interpretation and optional source-fit review.",
+          "id": "letter-annotations"
+        },
+        {
+          "material": "Archived National Hurricane Center discussions",
+          "mode": "Local development example",
+          "name": "Discussion annotation",
+          "action": "Annotate archived discussions",
+          "outcome": "exact source passages, annotations and declared reviews in a reopenable notebook",
+          "href": "../annotations/",
+          "access": "Compare observation, forecast and stated uncertainty. Source and category filters change the view while the export retains the full notebook.",
+          "id": "discussion-annotations"
+        }
+      ]
+    },
+    {
+      "id": "compare-interactions",
+      "title": "Compare interaction concepts",
+      "tools": [
+        {
+          "material": "Metropolitan Museum of Art, musical instruments",
+          "mode": "Local interaction study",
+          "name": "Atlas",
+          "action": "Try object-led discovery",
+          "outcome": "question, ordered evidence and notes in a reopenable investigation",
+          "href": "../concepts/atlas/",
+          "access": "Collect catalogue evidence while developing your own question.",
+          "id": "atlas-concept"
+        },
+        {
+          "material": "Metropolitan Museum of Art, musical instruments",
+          "mode": "Local interaction study",
+          "name": "Bench",
+          "action": "Try comparison-first work",
+          "outcome": "question, ordered evidence and notes in a reopenable investigation",
+          "href": "../concepts/bench/",
+          "access": "Compare selected records and write your own question beside the evidence.",
+          "id": "bench-concept"
+        },
+        {
+          "material": "Metropolitan Museum of Art, musical instruments",
+          "mode": "Local interaction study",
+          "name": "Trail",
+          "action": "Try a question-led sequence",
+          "outcome": "question, ordered evidence and notes in a reopenable investigation",
+          "href": "../concepts/trail/",
+          "access": "Revisit a question, select sources and inspect them in the order you retained them.",
+          "id": "trail-concept"
         }
       ]
     }

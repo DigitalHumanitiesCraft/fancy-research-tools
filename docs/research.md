@@ -14,6 +14,30 @@ Research software may support collection, preparation, annotation, exploration, 
 
 The browser examples support catalogue comparison, source-anchored annotation and local metadata editing. Other tasks may require notebooks, pipelines, servers or desktop applications.
 
+## Coverage of research activities
+
+The activity families below are a working selection framework. The inventory combines the existing project concept with inspection of the local source models and runnable routes. [TaDiRAH](https://github.com/dhtaxonomy/TaDiRAH) supplies an external reference for organising Digital Humanities activities. Its README was read on 2026-10-16; the complete vocabulary and all software in each activity have not been systematically reviewed. Browser, notebook, CLI, API and pipeline describe technical forms. They do not establish coverage of a research task.
+
+| Research activity | Runnable local operation | Linked or prepared example | Remaining boundary |
+|---|---|---|---|
+| Capture and record | [Metadata editor](../tool/) edits existing descriptions | teiCrafter and the [SZD capture exercise](getting-started.md#capture-szd) | Interview capture, sensor ingestion and complete external-editor round trips remain outside local implementation |
+| Prepare and connect | Reproducible frozen-source projections and validated imports | [Adaptation guide](customizing.md) | General conversion, entity resolution and user-configured pipelines require their own source-loss contracts |
+| Annotate and edit | [Letter](../letters/) and [discussion](../annotations/) quotation annotation, metadata correction | SZD edition preparation | Image-region/audio annotation and complete TEI editing require different models |
+| Search and explore | [Photographs](../photographs/), [catalogue](../baseline/), [comparison](../pilot/) | CorrespExplorer | Correspondence runtime remains external; a map requires supported coordinates and relations |
+| Analyse and model | Descriptive filtered counts and metadata-gap distributions | CorrespExplorer analysis exercise | Statistical inference, simulation and model comparison are unimplemented |
+| Visualise and interpret | Photograph chronology and comparison, instrument distributions, Atlas/Bench/Trail | [Interaction studies](../concepts/) | Network and geographic encodings require justified source semantics; layout alone supplies no finding |
+| Review and collaborate | [Evidence review](../evidence/), annotation source-fit review and correction | Bibliographic curation setup | Named actors are declarations; authenticated collaboration and adjudication are unimplemented |
+| Publish and reuse | Explicit exports, supported reopening, generated documentation and attributed source downloads | Agentic Edition Pipeline | A downloaded packet is not a published dataset; complete edition generation remains unobserved here |
+| Organise research | Questions, selected evidence, authored notes and explicit review packets | Grounded Vault | A full literature workflow or protocol manager is not integrated |
+
+The [gallery](../tools/) identifies whether an entry runs locally, opens an external application or requires project setup. The [testing record](../knowledge/testing.md) owns execution evidence. A code path, a prepared guide, an operated agent sequence and human research acceptance establish different things. These examples do not establish exhaustive coverage or independent usability across disciplines.
+
+### Grounded Vault
+
+[Grounded Vault](https://github.com/DigitalHumanitiesCraft/grounded-vault) is a provenance-oriented repository architecture and Promptotyping profile. Its README, read in full on 2026-10-16, describes the chain from originals through representations, distillates and assertions to outputs, and separates validation, machine review and human verification. It also supplies tools and a worked example. It is therefore relevant both as a method for source-bound work and as a separate software project.
+
+The local [Evidence review](../evidence/) example makes one smaller operation exercisable. A researcher binds a statement to exact passages of archived discussions, writes a justification, records a separate declared review and reopens the exported result. It uses a project-specific JSON packet. It does not implement the Grounded Vault layer architecture, validator, machine-review runner or publication governance. Formal anchor checks establish agreement with this frozen text; an entered reviewer category does not authenticate a human or establish scholarly truth.
+
 ## Compare existing tools
 
 Choose examples with different data models and research tasks. For each, record the task, user roles, material, supported actions, architecture, provenance, evaluation evidence and maintenance conditions. Distinguish what source code demonstrates from what documentation claims and what a user study observes.

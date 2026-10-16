@@ -13,12 +13,12 @@ template:
 status: active
 language: en
 created: 2026-10-10
-updated: 2026-10-13
+updated: 2026-10-16
 ---
 
 # Plan
 
-The task gallery and Collection Explorer are implemented. The remaining work concerns observed research use, the prepared external-tool workflows and release acceptance under [V02-01–08](specification.md#planned-version-02-acceptance). Technical execution evidence is maintained in [Testing](testing.md#current-evidence).
+The task gallery, local development examples and bounded source-evidence review are implemented. The [activity coverage](../docs/research.md#coverage-of-research-activities) separates local support, external applications and unimplemented work. The remaining work concerns observed research use, the prepared external-tool workflows and release acceptance under [V02-01–08](specification.md#planned-version-02-acceptance). Technical execution evidence is maintained in [Testing](testing.md#current-evidence).
 
 ## Resume in the next session
 
@@ -42,8 +42,8 @@ New implementation follows a concrete defect or research need found in these tas
 | M1 Development workflow | Documented question-, material- and existing-tool entry, with bounded agent trials | Independent novice development and benefit of the method |
 | M2 Material and cases | Open photograph reference, retained technical examples and prepared SZD package under [Data](data.md) | Task-specific scholarly interpretation |
 | M3 Responsibility boundaries | Separate domain formats and state, selectively shared primitives under [Architecture](architecture.md#core-and-adaptation-boundaries) | Broader reuse only after observed adaptations |
-| M4 Reference workflow | Collection Explorer search, chronology, image inspection, comparison and evidence export; positive initial operator assessment of the photograph view | Complete operator task assessment and representative researcher assessment |
-| M5 Contrasting adaptations | Annotation and metadata correction implemented; existing external tools linked through concrete tasks | External SZD and curation paths in the queue above |
+| M4 Reference workflow | Collection Explorer search, chronology, image inspection, comparison and source-checked selection export/reopening; positive initial operator assessment of the photograph view | Complete operator task assessment and representative researcher assessment |
+| M5 Contrasting adaptations | Annotation, source-evidence review and metadata correction implemented; existing external tools linked through concrete tasks | External SZD and curation paths in the queue above |
 | M6 Reproduction and review | Local and Linux checks, agent reproduction and operated reviews recorded in Testing | Human design acceptance and release decision |
 
 ## Current maintenance handover
@@ -54,7 +54,7 @@ Use the [Data compatibility contract](data.md#investigation-exchange) before cha
 
 ## Release decision
 
-The package remains an unreleased development version. Version 0.2 requires the applicable [acceptance criteria](specification.md#planned-version-02-acceptance), recorded technical results and an explicit decision about pending research acceptance. The package, data schemas and knowledge-document schema have independent versions. Commit and push were authorised for this implementation and knowledge refactoring. Deployment and a claim of human acceptance remain separate decisions.
+The package remains an unreleased development version. Version 0.2 requires the applicable [acceptance criteria](specification.md#planned-version-02-acceptance), recorded technical results and an explicit decision about pending research acceptance. The package, data schemas and knowledge-document schema have independent versions. Earlier implementation and knowledge refactoring had separate commit/push authorisation. This local examples increment carries no publication or push decision. Deployment and a claim of human acceptance remain separate decisions.
 
 ## Provenance
 

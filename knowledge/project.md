@@ -13,7 +13,7 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Project
@@ -21,6 +21,8 @@ updated: 2026-10-11
 Fancy Research Tools provides runnable examples and maintained contracts for developing research software with Large Language Models (LLMs) and coding agents. The foundation combines inspectable code, explicit adaptation points and quality checks. Each adaptation develops its own research task, data model and interface.
 
 ## Purpose
+
+The overarching goal, confirmed by the operator on 2026-10-16, is that researchers can translate their own scholarly questions into suitable digital tools and continue developing those tools during research.
 
 Researchers use the project both to carry out a concrete task and to develop or adapt a tool with a coding agent. The operator confirmed these complementary entry paths on 2026-10-11. The public repository must support both without access to a private Vault or the originating conversation. Reusable presentation choices are maintained in the [operator default profile](design.md#operator-default-profile).
 
@@ -40,7 +42,7 @@ Collection Explorer is the first reference tool. It supports photograph selectio
 | Review and correct | Bibliographic curation | Local Klawiter correction setup, distinguished from its public reading interface |
 | Build an edition | Agentic Edition Pipeline | Repository setup using the same SZD letter package |
 
-Catalogue comparison, source annotation and flat metadata editing remain technical examples for studying adaptation and preserving earlier work. They provide contrasting domain contracts, rather than five additional primary products. Route behaviour and compatibility requirements are maintained in [Specification](specification.md), with demonstrated and pending acceptance in [Testing](testing.md).
+Catalogue comparison, source annotation and flat metadata editing remain technical examples for studying adaptation and preserving earlier work. They provide contrasting domain contracts and are directly accessible in the gallery. Evidence review adds a bounded statement-to-passage workflow. The [activity coverage](../docs/research.md#coverage-of-research-activities) separates implemented local operations from linked applications and unimplemented cases. Route behaviour and compatibility requirements are maintained in [Specification](specification.md), with demonstrated and pending acceptance in [Testing](testing.md).
 
 Version 0.1 is a static browser starter with local working state and explicit exports. Shared editing, authenticated identity, protected services and a universal plugin API require additional scope and architecture decisions. Actual adaptations determine which responsibilities belong in the shared core.
 

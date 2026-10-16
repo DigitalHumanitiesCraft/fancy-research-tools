@@ -12,8 +12,11 @@
     <header class="site-header">
       <a class="identity" href="#view=collection">Collection Explorer</a>
       <nav aria-label="Study views" id="view-nav"></nav>
+      <button type="button" id="open-selection">Open selection</button>
+      <input id="selection-file" type="file" accept=".json,application/json" aria-label="Open photograph selection" hidden />
       <a class="all-tools" href="../tools/">All tools</a>
     </header>
+    <p id="selection-status" aria-live="polite"></p>
     <main id="content" tabindex="-1"><p role="status">Loading photographs…</p></main>
     <footer>
       <a href="https://www.clevelandart.org/open-access">Cleveland Museum of Art Open Access</a>

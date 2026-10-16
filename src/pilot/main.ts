@@ -30,16 +30,19 @@ const group = element<HTMLSelectElement>("group");
 const index = makeIndex(snapshot.records);
 let filters = readFilters(new URLSearchParams(location.search));
 let selectedId = "";
+let selectionAddressed = false;
 type SortKey = "title" | "date" | "culture" | "maker";
 let sortKey: SortKey | "" = "";
 let descending = false;
-function readSort() {
+function readViewState() {
   const params = new URLSearchParams(location.search);
   const key = params.get("sort");
   sortKey = key === "title" || key === "date" || key === "culture" || key === "maker" ? key : "";
   descending = params.get("order") === "desc";
+  selectedId = params.get("id") ?? "";
+  selectionAddressed = params.has("id");
 }
-readSort();
+readViewState();
 function ordered(records: Instrument[]) {
   if (!sortKey) return records;
   const key = sortKey;
@@ -59,13 +62,18 @@ function ordered(records: Instrument[]) {
     );
   });
 }
-function updateUrl() {
+function updateUrl(replace = false) {
   const params = writeFilters(filters);
   if (sortKey) {
     params.set("sort", sortKey);
     if (descending) params.set("order", "desc");
   }
-  history.pushState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}`);
+  if (selectionAddressed && selectedId) params.set("id", selectedId);
+  history[replace ? "replaceState" : "pushState"](
+    null,
+    "",
+    `${location.pathname}${params.size ? `?${params}` : ""}`,
+  );
 }
 for (const button of document.querySelectorAll<HTMLButtonElement>("[data-sort]")) {
   button.addEventListener("click", () => {
@@ -240,7 +248,10 @@ function render() {
   const list = element("objects");
   list.replaceChildren();
   element("objects-empty").hidden = records.length > 0;
-  if (!records.some((record) => record.id === selectedId)) selectedId = records[0]?.id ?? "";
+  if (!records.some((record) => record.id === selectedId)) {
+    selectedId = records[0]?.id ?? "";
+    if (selectionAddressed) updateUrl(true);
+  }
   for (const record of records) {
     const item = document.createElement("tr");
     item.dataset.id = record.id;
@@ -252,6 +263,8 @@ function render() {
     select.setAttribute("aria-controls", "object-detail");
     select.addEventListener("click", () => {
       selectedId = record.id;
+      selectionAddressed = true;
+      updateUrl();
       for (const button of list.querySelectorAll("button"))
         button.setAttribute("aria-pressed", String(button === select));
       renderDetail(record);
@@ -328,7 +341,7 @@ group.addEventListener("change", () => navigate(readControls()));
 element("reset").addEventListener("click", () => navigate({ ...defaults }));
 window.addEventListener("popstate", () => {
   filters = readFilters(new URLSearchParams(location.search));
-  readSort();
+  readViewState();
   restoreControls();
   render();
 });

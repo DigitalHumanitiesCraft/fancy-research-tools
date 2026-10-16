@@ -45,6 +45,7 @@ const reviewerName = bindTextValue(element<HTMLInputElement>("reviewer-name"));
 const criterion = bindTextValue(element<HTMLTextAreaElement>("review-criterion"));
 let notebook = createNotebook();
 let active: Annotation | null = null;
+let pendingAnchor: Pick<Annotation, "sourceId" | "start" | "end" | "quote"> | null = null;
 let editing = false;
 let reviewCleared = false;
 let reviewTouched = false;
@@ -104,6 +105,8 @@ function renderSource() {
 }
 function clearForm() {
   active = null;
+  pendingAnchor = null;
+  replaceQuotation.hidden = true;
   editing = false;
   reviewCleared = false;
   reviewTouched = false;
@@ -140,6 +143,8 @@ function restoreReview(review: Review | null) {
 function startForm(annotation: Annotation, isEdit: boolean) {
   active = annotation;
   editing = isEdit;
+  pendingAnchor = null;
+  replaceQuotation.hidden = !isEdit;
   reviewCleared = false;
   reviewTouched = false;
   reviewToRestore = null;
@@ -205,11 +210,76 @@ function appendText(parent: HTMLElement, tag: "p" | "blockquote", text: string, 
   node.className = className;
   parent.append(node);
 }
+const replaceQuotation = document.createElement("button");
+replaceQuotation.type = "button";
+replaceQuotation.id = "replace-quotation";
+replaceQuotation.textContent = "Use selection for this annotation";
+replaceQuotation.hidden = true;
+element("quotation").after(replaceQuotation);
+
+const annotationFilters = document.createElement("div");
+annotationFilters.className = "annotation-filters";
+function annotationFilter(id: string, labelText: string, allText: string) {
+  const group = document.createElement("div");
+  const label = document.createElement("label");
+  label.htmlFor = id;
+  label.textContent = labelText;
+  const select = document.createElement("select");
+  select.id = id;
+  select.append(new Option(allText, ""));
+  group.append(label, select);
+  annotationFilters.append(group);
+  select.addEventListener("change", renderAnnotations);
+  return { select, group };
+}
+const annotationSource = annotationFilter("annotation-source", "Annotation source", "All sources");
+for (const source of sources) annotationSource.select.append(new Option(source.title, source.id));
+annotationSource.group.hidden = sources.length < 2;
+const annotationCategory = annotationFilter(
+  "annotation-category",
+  "Annotation category",
+  "All categories",
+);
+for (const value of definition.categories)
+  annotationCategory.select.append(new Option(categoryLabels[value], value));
+const clearAnnotationFilters = document.createElement("button");
+clearAnnotationFilters.type = "button";
+clearAnnotationFilters.textContent = "Clear annotation filters";
+clearAnnotationFilters.addEventListener("click", () => {
+  annotationSource.select.value = "";
+  annotationCategory.select.value = "";
+  renderAnnotations();
+  annotationCategory.select.focus();
+});
+const filterStatus = document.createElement("p");
+filterStatus.id = "annotation-filter-status";
+filterStatus.setAttribute("role", "status");
+annotationFilters.append(clearAnnotationFilters, filterStatus);
+element("saved-heading").after(annotationFilters);
+
 function renderAnnotations() {
   const list = element<HTMLOListElement>("annotations");
   list.replaceChildren();
-  element("empty-notebook").hidden = notebook.annotations.length > 0;
-  for (const annotation of notebook.annotations) {
+  const filtered = notebook.annotations.filter(
+    (annotation) =>
+      (!annotationSource.select.value || annotation.sourceId === annotationSource.select.value) &&
+      (!annotationCategory.select.value || annotation.category === annotationCategory.select.value),
+  );
+  const hasFilters = Boolean(annotationSource.select.value || annotationCategory.select.value);
+  annotationFilters.hidden = notebook.annotations.length === 0;
+  clearAnnotationFilters.hidden = !hasFilters;
+  filterStatus.hidden = !hasFilters;
+  filterStatus.textContent = hasFilters
+    ? filtered.length +
+      " matching annotations. Export includes all " +
+      notebook.annotations.length +
+      " saved annotations."
+    : "";
+  element("empty-notebook").hidden = filtered.length > 0;
+  element("empty-notebook").textContent = notebook.annotations.length
+    ? "No annotations match these filters."
+    : "No annotations saved.";
+  for (const annotation of filtered) {
     const item = document.createElement("li");
     item.dataset.annotationId = annotation.id;
     appendText(
@@ -383,41 +453,67 @@ element("cancel-annotation").addEventListener("click", () => {
   clearForm();
   element("annotate-selection").focus();
 });
-for (const id of ["category", "note", "creator-kind", "creator-name"]) {
-  element(id).addEventListener("input", () => {
-    if (!active?.review) return;
-    const revised = reviseAnnotation(active, {
-      category: category.value as Category,
-      note: note.read(),
-      creator: { kind: creatorKind.value as Actor["kind"], name: creatorName.read() },
-    });
-    if (revised.review !== null) {
-      if (reviewCleared && !reviewTouched) {
-        restoreReview(reviewToRestore);
-        reviewCleared = false;
-        element("review-change").textContent =
-          "The review choice is retained because the annotation matches its reviewed version.";
-      }
-      return;
+function annotationChanges() {
+  return {
+    ...pendingAnchor,
+    category: category.value as Category,
+    note: note.read(),
+    creator: { kind: creatorKind.value as Actor["kind"], name: creatorName.read() },
+  };
+}
+function updateReview() {
+  if (!active?.review) return;
+  const revised = reviseAnnotation(active, annotationChanges());
+  if (revised.review !== null) {
+    if (reviewCleared && !reviewTouched) {
+      restoreReview(reviewToRestore);
+      reviewCleared = false;
+      element("review-change").textContent =
+        "The review choice is retained because the annotation matches its reviewed version.";
     }
-    if (reviewCleared) return;
-    reviewToRestore = readReview();
-    reviewTouched = false;
-    reviewCleared = true;
+    return;
+  }
+  if (reviewCleared) return;
+  reviewToRestore = readReview();
+  reviewTouched = false;
+  reviewCleared = true;
+  restoreReview(null);
+  element("review-change").textContent =
+    "The previous review is cleared because the annotation changed. Record a new review only after checking this version.";
+}
+for (const id of ["category", "note", "creator-kind", "creator-name"])
+  element(id).addEventListener("input", updateReview);
+replaceQuotation.addEventListener("click", () => {
+  const start = sourceText.selectionStart;
+  const end = sourceText.selectionEnd;
+  if (!active || !editing || !selected) return;
+  if (start === end) {
+    status("Select a passage in the source before replacing this quotation.");
+    sourceText.focus();
+    return;
+  }
+  const previousAnchor = pendingAnchor ?? active;
+  if (
+    previousAnchor.sourceId === selected.id &&
+    previousAnchor.start === start &&
+    previousAnchor.end === end
+  )
+    return;
+  pendingAnchor = { sourceId: selected.id, start, end, quote: selected.text.slice(start, end) };
+  element("quotation").textContent = pendingAnchor.quote;
+  if (recordReview.checked && (!active.review || reviewCleared)) {
     restoreReview(null);
+    reviewTouched = true;
     element("review-change").textContent =
       "The previous review is cleared because the annotation changed. Record a new review only after checking this version.";
-  });
-}
+  } else updateReview();
+  status("Quotation selected. Save the annotation to keep it.");
+});
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!active) return;
   try {
-    const changes = {
-      category: category.value as Category,
-      note: note.read(),
-      creator: { kind: creatorKind.value as Actor["kind"], name: creatorName.read() },
-    };
+    const changes = annotationChanges();
     const candidate = editing ? reviseAnnotation(active, changes) : { ...active, ...changes };
     candidate.review = readReview();
     const annotations = editing

@@ -27,6 +27,11 @@ let editing = false;
 const drafts = createDraftStorage(location.pathname, () => localStorage);
 let activeUrl = new URL(location.href);
 let editError = false;
+let inputRevision = 0;
+let importRevision = 0;
+document.addEventListener("input", () => {
+  inputRevision += 1;
+});
 
 function message(target: HTMLElement, text: string): void {
   if (target === error) editError = false;
@@ -354,9 +359,14 @@ element<HTMLInputElement>("import-file").addEventListener("change", async (event
   const input = event.currentTarget as HTMLInputElement;
   const file = input.files?.[0];
   if (!file) return;
+  const request = ++importRevision;
+  const beforeInput = inputRevision;
+  const beforeRevision = revision;
   try {
     if (file.size > MAX_BYTES) throw new Error("The file exceeds the 1 MiB limit.");
     const imported = withinSizeLimit(parseDataset(await file.text()));
+    if (request !== importRevision || inputRevision !== beforeInput || revision !== beforeRevision)
+      throw new Error("Your work changed while the file was loading. Open it again when ready.");
     if (!allowDiscard()) return;
     if (
       !window.confirm(
@@ -375,9 +385,10 @@ element<HTMLInputElement>("import-file").addEventListener("change", async (event
     message(error, "");
     render();
   } catch (cause) {
+    if (request !== importRevision) return;
     message(error, `Import rejected: ${describe(cause)} Your current collection is unchanged.`);
   } finally {
-    input.value = "";
+    if (request === importRevision) input.value = "";
   }
 });
 

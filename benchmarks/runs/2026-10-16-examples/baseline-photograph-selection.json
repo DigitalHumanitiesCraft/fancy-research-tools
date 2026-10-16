@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "kind": "photograph-selection",
+  "collection": "urn:frt:cma-photographs:2026-10-11",
+  "context": {
+    "@version": 1.1,
+    "@vocab": "https://schema.org/",
+    "frt": "https://github.com/DigitalHumanitiesCraft/fancy-research-tools#",
+    "id": "@id",
+    "title": "name",
+    "schemaVersion": "frt:schemaVersion",
+    "items": {
+      "@id": "hasPart",
+      "@container": "@set"
+    },
+    "date": "frt:catalogueDate",
+    "label": "name",
+    "start": "frt:nominalStartYear",
+    "end": "frt:nominalEndYear",
+    "kind": "frt:dateKind",
+    "indexStart": "frt:publisherIndexStartYear",
+    "indexEnd": "frt:publisherIndexEndYear",
+    "creators": {
+      "@id": "frt:creatorAttribution",
+      "@container": "@set",
+      "@context": {
+        "id": {
+          "@id": "frt:sourceCreator",
+          "@type": "@id"
+        }
+      }
+    },
+    "role": "roleName",
+    "qualifier": "frt:sourceQualifier",
+    "extent": "frt:sourceExtent",
+    "technique": "artMedium",
+    "culture": {
+      "@id": "frt:catalogueCulture",
+      "@container": "@set"
+    },
+    "accession": "identifier",
+    "sourceUrl": {
+      "@id": "url",
+      "@type": "@id"
+    },
+    "src": "frt:localImagePath",
+    "source": "frt:sourceEvidence",
+    "rawPath": "frt:rawSnapshotPath",
+    "sha256": "frt:sha256",
+    "fields": {
+      "@id": "frt:originalFields",
+      "@type": "@json"
+    },
+    "derivation": {
+      "@id": "frt:derivation",
+      "@type": "@json"
+    }
+  },
+  "derivation": {
+    "script": "scripts/import-photographs.mjs",
+    "sha256": "46aa7facc7e610e7a89fc5c336d2ad0c62f773396cae1fcfec86bf208a7fe206",
+    "method": "Deterministic projection from the frozen CMA response. Literal year, year range, circa-year and decade date labels receive nominal plotting years. Source numeric index bounds remain separate. No historic truth or human review is asserted."
+  },
+  "query": {
+    "text": "Yosemite",
+    "creator": "",
+    "technique": "",
+    "sort": "date"
+  },
+  "selected": [
+    {
+      "id": "https://clevelandart.org/art/1992.12",
+      "@type": "Photograph",
+      "title": "Bridal Veil, Yosemite",
+      "date": {
+        "label": "1865–66",
+        "start": 1865,
+        "end": 1866,
+        "kind": "range",
+        "indexStart": 1865,
+        "indexEnd": 1866
+      },
+      "creators": [
+        {
+          "name": "Carleton E. Watkins (American, 1829–1916)",
+          "id": "https://openaccess-api.clevelandart.org/api/creators/1061",
+          "role": "artist",
+          "qualifier": null,
+          "extent": null
+        }
+      ],
+      "technique": "albumen print from wet collodion negative",
+      "culture": [
+        "America"
+      ],
+      "accession": "1992.12",
+      "sourceUrl": "https://clevelandart.org/art/1992.12",
+      "image": {
+        "src": "data/photographs/images/156283.jpg",
+        "width": 1109,
+        "height": 893,
+        "sourceUrl": "https://openaccess-cdn.clevelandart.org/1992.12/1992.12_web.jpg",
+        "license": "CC0-1.0"
+      },
+      "source": {
+        "id": "https://openaccess-api.clevelandart.org/api/artworks/156283",
+        "rawPath": "data/photographs/raw/artworks.json",
+        "sha256": "705c0fec1a413aafdeacbcda077f643336204d35c850f7ff6fa9b4d8f68562af",
+        "fields": {
+          "title": "Bridal Veil, Yosemite",
+          "accession_number": "1992.12",
+          "creation_date": "1865–66",
+          "creation_date_earliest": 1865,
+          "creation_date_latest": 1866,
+          "creators": [
+            {
+              "id": 1061,
+              "description": "Carleton E. Watkins (American, 1829–1916)",
+              "extent": null,
+              "qualifier": null,
+              "role": "artist",
+              "biography": "Carleton E. Watkins American, 1829-1916\r\n\r\nBorn in Oneonta, New York, Carleton Watkins traveled west to California in the early 1850s, shortly after the gold rush. He learned photography in 1854 from Robert Vance, one of the earliest and best of San Francisco's daguerreotypists. Vance's landscape photography, unusually skilled for the time, may have influenced Watkins's work.\r\n\tWatkins was among the first photographers in the Yosemite valley, shooting there in 1861, and his mammoth-plate landscape photographs of the area are believed to have contributed to Yosemite's early designation as a national park. His Yosemite Art Gallery opened in San Francisco in 1867, but unlike most photographers of the time, Watkins is not known to have done much portrait work. His subjects included topographical, scenic, survey, agricultural, and urban views of California and surrounding states, including Oregon, Arizona, Nevada, and Utah. Through his friendship with railroad magnate Collis Huntington, Watkins photographed along railway lines and was able to reach distant sites. Huntington later bought him the farm where he retired. Watkins's landscapes were well received; he was awarded an international medal at the Paris Exposition (1867) and a medal of progress at the Vienna International Exposition (1873).\r\n\tThe numerous commissions and the work produced for the public market by Watkins combine clarity of vision with technical expertise. His work set the standard for subsequent photographers of western views, such as William Henry Jackson, Timothy O'Sullivan, and John K. Hillers. Although his life was difficult and his business sense lacking, his photographic efforts were protracted and indefatigable. Watkins's negatives were destroyed in the San Francisco earthquake and fire of 1906. He died several years later blind and insane. T.W.F.",
+              "name_in_original_language": null,
+              "birth_year": "1829",
+              "death_year": "1916",
+              "use_in_caption": true,
+              "include_extent": false,
+              "weight": 1
+            }
+          ],
+          "culture": [
+            "America"
+          ],
+          "technique": "albumen print from wet collodion negative",
+          "share_license_status": "CC0",
+          "url": "https://clevelandart.org/art/1992.12",
+          "image": {
+            "url": "https://openaccess-cdn.clevelandart.org/1992.12/1992.12_web.jpg",
+            "width": "1109",
+            "height": "893",
+            "filesize": "806175",
+            "filename": "1992.12_web.jpg"
+          }
+        }
+      }
+    }
+  ],
+  "license": "CC0-1.0"
+}

@@ -13,7 +13,7 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-11
+updated: 2026-10-16
 version: 0.1
 ---
 
@@ -34,6 +34,8 @@ The maintained knowledge base guides implementation and review of Fancy Research
 | [Plan](plan.md) | Which remaining task comes next and what blocks acceptance? | Milestone or dependency changes |
 | [Journal](journal.md) | Which decisions led here? | Coherent integrated transition |
 | [Handoff](handoff.md) | Which incoming findings need processing? | Received or resolved input |
+
+The public [research activity coverage](../docs/research.md#coverage-of-research-activities) maps local workflows, external applications and remaining cases, including the bounded Grounded Vault relationship.
 
 ## Storage zones
 

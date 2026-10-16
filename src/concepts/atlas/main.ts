@@ -26,7 +26,7 @@ let query = "";
 let page = 0;
 let observation = "";
 let question = "";
-let researchQuestion = "How are materials and makers described in these instruments?";
+let researchQuestion = "";
 let author = "user";
 const normalize = normalizeSearch;
 const indexed = data.records.map((record) => ({
@@ -158,7 +158,13 @@ function comparison() {
     ["Classification", (r) => r.classification],
     ["Catalogue date bounds", (r) => `${r.beginYear}–${r.endYear}`],
   ];
-  main.innerHTML = `<section class="comparison"><div class="view-title"><h1>Your comparison</h1><a class="back" href="#catalogue">← Keep exploring</a></div>${records.length ? `<div class="comparison-scroll" role="region" aria-label="Selected record comparison" tabindex="0"><table><thead><tr><th scope="col">Catalogue evidence</th>${records.map((record) => `<th scope="col"><h2><a href="#object-${record.id}">${esc(record.title)}</a></h2>${source(record)}${selectButton(record)}</th>`).join("")}</tr></thead><tbody>${rows.map(([label, get]) => `<tr><th scope="row">${label}</th>${records.map((record) => `<td>${esc(get(record))}</td>`).join("")}</tr>`).join("")}</tbody></table></div><p class="qualification">Date bounds are catalogue indexing ranges. “Not supplied” means missing catalogue information.</p>` : '<div class="empty"><h2>Choose your evidence</h2><p>Select two to four catalogue records to compare their descriptions.</p><a class="primary" href="#catalogue">Browse the catalogue →</a></div>'}<section class="notebook" aria-labelledby="notebook-title"><div><h2 id="notebook-title">What do you notice?</h2></div><div class="note-fields"><label for="observation">Observation</label><textarea id="observation" rows="4" placeholder="Describe a contrast, similarity or uncertainty…">${esc(observation)}</textarea><label for="question">Unresolved question</label><textarea id="question" rows="3" placeholder="What would you need to investigate next?">${esc(question)}</textarea><button type="button" id="download" class="primary">Download evidence & notes <span aria-hidden="true">↓</span></button><p id="download-status" role="status"></p></div></section></section>`;
+  main.innerHTML = `<section class="comparison"><div class="view-title"><h1>Your comparison</h1><a class="back" href="#catalogue">← Keep exploring</a></div>${records.length ? `<div class="comparison-scroll" role="region" aria-label="Selected record comparison" tabindex="0"><table><thead><tr><th scope="col">Catalogue evidence</th>${records.map((record) => `<th scope="col"><h2><a href="#object-${record.id}">${esc(record.title)}</a></h2>${source(record)}${selectButton(record)}</th>`).join("")}</tr></thead><tbody>${rows.map(([label, get]) => `<tr><th scope="row">${label}</th>${records.map((record) => `<td>${esc(get(record))}</td>`).join("")}</tr>`).join("")}</tbody></table></div><p class="qualification">Date bounds are catalogue indexing ranges. “Not supplied” means missing catalogue information.</p>` : '<div class="empty"><h2>Choose your evidence</h2><p>Select two to four catalogue records to compare their descriptions.</p><a class="primary" href="#catalogue">Browse the catalogue →</a></div>'}<section class="notebook" aria-labelledby="notebook-title"><div><h2 id="notebook-title">What do you notice?</h2></div><div class="note-fields"><label for="research-question">Research question</label><textarea id="research-question" rows="2">${esc(researchQuestion)}</textarea><label for="observation">Observation</label><textarea id="observation" rows="4" placeholder="Describe a contrast, similarity or uncertainty…">${esc(observation)}</textarea><label for="question">Unresolved question</label><textarea id="question" rows="3" placeholder="What would you need to investigate next?">${esc(question)}</textarea><button type="button" id="download" class="primary">Download evidence & notes <span aria-hidden="true">↓</span></button><p id="download-status" role="status"></p></div></section></section>`;
+  const researchQuestionText = bindTextValue(required<HTMLTextAreaElement>("#research-question"));
+  researchQuestionText.restore(researchQuestion);
+  required("#research-question").addEventListener("input", () => {
+    researchQuestion = researchQuestionText.read();
+    recovery?.save();
+  });
   required<HTMLTextAreaElement>("#observation").addEventListener("input", (event) => {
     observation = (event.target as HTMLTextAreaElement).value;
     recovery?.save();

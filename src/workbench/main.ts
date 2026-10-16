@@ -27,7 +27,14 @@ const byId = new Map(dataset.records.map((record) => [record.id, record]));
 const indexed = dataset.records.map((record) => ({
   record,
   text: normalizeSearch(
-    [record.title, record.objectName, record.medium, record.culture, record.objectDate]
+    [
+      record.title,
+      record.objectName,
+      record.medium,
+      record.culture,
+      record.objectDate,
+      attribution(record),
+    ]
       .filter(Boolean)
       .join(" "),
   ),

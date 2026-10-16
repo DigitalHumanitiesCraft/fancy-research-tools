@@ -13,7 +13,7 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Specification
@@ -23,7 +23,7 @@ The [project scope](project.md#functional-scope) defines the reference tool, gui
 ## Project entry and navigation
 
 - NAV-01: The start page provides an overview and links to Tools and Documentation. The project header presents Overview, Tools and Documentation with equal visual weight.
-- NAV-02: The gallery puts Collection Explorer first and groups remaining entries by capture, analysis, correction and edition building. It identifies material, actual previews and whether the destination is an application or setup guide. The public bibliography is a reading interface; its correction entry opens the curation guide. Local workspaces provide All tools as a return path. External applications open through ordinary links with a visible host. Text remains selectable without triggering navigation. Templates receive setup links rather than a browser-tool launch claim.
+- NAV-02: The gallery puts Collection Explorer first and groups remaining entries by research task, including source annotation and interaction studies. Every local development example has a direct entry, and the activity-coverage link names remaining gaps. It identifies material, actual previews and whether the destination is an application or setup guide. The public bibliography is a reading interface; its correction entry opens the curation guide. Local workspaces provide All tools as a return path. External applications open through ordinary links with a visible host. Text remains selectable without triggering navigation. Templates receive setup links rather than a browser-tool launch claim.
 - NAV-03: Documentation section navigation and page outlines remain visible at desktop and narrow widths. Additional disclosures require a specific optional-detail need under the [design contract](design.md#project-navigation).
 
 ## Prepared SZD workflow
@@ -43,7 +43,7 @@ Search matches a normalized substring across title, object name, culture, descri
 
 Title, date, culture and maker headers sort in both directions. Date order uses the source `beginYear`, which is an indexing bound under the [source semantics](data.md#sources). Missing values remain last in both directions and object ID resolves ties. Sorting preserves the result population, counts and selection.
 
-Grouping and chart filtering apply current form values through the same query transition. Pending search inputs remain identifiable, while rendering and export consume applied state. A matching selection stays visible. A filter that excludes it selects a matching record or exposes an empty detail state. This differs from the editor's retained out-of-result selection under [recovery and replacement](#recovery-and-replacement).
+Grouping and chart filtering apply current form values through the same query transition. Pending search inputs remain identifiable, while rendering and export consume applied state. A matching selection stays visible. Its identifier is addressable with the query and sorting state, restored by reload and browser navigation. Unknown or out-of-result identifiers follow the normal matching-selection fallback. A filter that excludes it selects a matching record or exposes an empty detail state. This differs from the editor's retained out-of-result selection under [recovery and replacement](#recovery-and-replacement).
 
 All distribution categories remain reachable. The distribution and table share a population, and the chart's filtering purpose is visible. A single contextual result count, comparable rows and one directly visible detail pane support the baseline task. The header carries the tool title and export action. A native About dialog provides the source, declared sample selection, snapshot, limitations and guide. The footer carries About and distinguishes data and code licences. The dialog supports a close button, Escape and focus return.
 
@@ -148,6 +148,8 @@ The independent `/photographs/` tool compares an openly licensed historical-phot
 | PHOTO-04 | Up to four retained photographs can be compared and exported with their original source evidence. | Independent expectations agree with the actual downloaded IDs, source fields and snapshot identity. Clearing/removing selection changes no other tool's saved work. |
 | PHOTO-05 | Source and derivation remain distinguishable, with original date/creator qualifications and image rights inspectable. | Check source cases against the frozen raw records. Culture or museum location is never rendered as a capture/depicted location. |
 
+- PHOTO-06: Reopen existing selection packets against the frozen collection under the [selection contract](data.md#open-photograph-reference). Reject invalid or changed evidence without replacing work, confirm valid replacement and abort stale reads after intervening interaction.
+
 The photograph reference has separate data and route state. It introduces no annotation editor or persistence migration for existing investigations. A declared access route, accessible image fallback and retained original values remain available if enhanced image rendering fails.
 
 ### Existing collection workflows
@@ -183,11 +185,11 @@ The [project data policy](project.md#data-basis) requires real open material for
 
 ## Provisional concept-study requirements
 
-The three concept routes support the same research episode: find records using the pilot's metadata search fields, select two to four candidates, inspect original descriptions and uncertainty, remove/reselect candidates, write an observation and unresolved question, and download a research artefact. Source records and source provenance are preserved; researcher text is separately identified. Search must not erase the retained comparison selection. Empty selection cannot produce a misleading completed comparison. Each concept uses the investigation exchange and local recovery contract in [Data](data.md#investigation-exchange). Save success, failure and replacement are explicit. Export/reopen also preserves notes without selected records, which is unfinished work rather than a completed comparison. Each concept exposes a route back to the concept comparison. These requirements scope the study, not every future research tool.
+The three concept routes support the same research episode: find records using the pilot's metadata search fields, select two to four candidates, inspect original descriptions and uncertainty, remove/reselect candidates, write an observation and unresolved question, and download a research artefact. Source records and source provenance are preserved; researcher text is separately identified. Search must not erase the retained comparison selection. Empty selection cannot produce a misleading completed comparison. Each concept uses the investigation exchange and local recovery contract in [Data](data.md#investigation-exchange). Save success, failure and replacement are explicit. Each concept permits an authored research question and preserves its exact text under the investigation contract. Trail displays evidence in retained selection order. Export/reopen also preserves notes without selected records, which is unfinished work rather than a completed comparison. Each concept exposes a route back to the concept comparison. These requirements scope the study, not every future research tool.
 
 ## Investigation workbench contract
 
-- IW-01: At `/pilot/`, inspect the real frozen catalogue through search, classification, pagination and title or catalogue-date ordering. Original attribution qualifiers remain visible.
+- IW-01: At `/pilot/`, inspect the real frozen catalogue through search, classification, pagination and title or catalogue-date ordering. Original attribution qualifiers remain visible and searchable.
 - IW-02: Select up to four records, change search without losing that selection, compare original fields and record a research question, observation and unresolved question. Browser navigation remains usable.
 - IW-03: Restore locally saved investigation state after reload. If storage fails or another tab changes or clears the draft, preserve the existing stored bytes, allow export of current work and warn before leaving with work that is no longer saved.
 - IW-04: Export and reopen the canonical investigation, preserving selected source evidence, provenance and separately authored notes. Preserve accepted whitespace and line endings until the corresponding text field is edited. Reject unsupported or changed evidence before replacing work. Confirm valid replacement and abort a file read if intervening edits would be lost.
@@ -202,10 +204,22 @@ The instrument study is a candidate research workflow. Human acceptance and inte
 - AN-01: At `/annotations/`, read the full frozen text of archived NOAA/NHC Milton discussions 2 and 6, with original source link, issue time and printed forecaster attribution. Distinguish this historical material from current operational guidance.
 - AN-02: Select an exact contiguous passage by pointer or keyboard, categorize it as observation, forecast or stated uncertainty, and save a separate interpretation. Preserve quoted text, source identity and exact offsets.
 - AN-03: Record creator kind and name as self-declarations. A source-fit review requires a named reviewer, an explicit criterion and a supports/does-not-support/unclear result. Editing reviewed content clears its prior review; no actor type automatically establishes trust.
-- AN-04: Edit and remove annotations, retain a research question, recover locally saved work, export a complete notebook and reopen it in a fresh context. Preserve accepted author text until its own field is edited, and protect unfinished forms during source navigation or file replacement.
+- AN-04: Edit and remove annotations, explicitly replace an edited quotation with a newly selected exact range, retain a research question, recover locally saved work, export a complete notebook and reopen it in a fresh context. Preserve accepted author text until its own field is edited, and protect unfinished forms during source navigation or file replacement.
 - AN-05: Reject altered sources, mismatched quote anchors, duplicate annotation IDs, unknown fields, unsupported versions and oversized files before replacing work. Keep corrupt or externally changed browser copies intact and expose a recovery export plus unload warning.
 - AN-06: Keep the Met investigation and collection editor schemas, source identities, drafts and routes unchanged. Document which responsibilities the annotation case reuses and which it replaces. Tests establish the bounded technical contrast; human interpretation remains for operator and domain review.
 - AN-07: At `/letters/`, read the Benndorf letter with author, recipient, date, place, edition and rights context. Annotate exact passages as Person, Place, Research topic or Editorial question. Preserve the frozen raw transcription and explicitly identify the LF display transformation. Keep this case's notebook and storage separate from the existing NHC case, reject cross-case imports and preserve unchanged NHC exports byte for byte.
+
+Saved-annotation filters narrow the visible list by source and category. They do not delete annotations or narrow the complete notebook export.
+
+## Source-evidence review contract
+
+- EV-01: At `/evidence/`, read the unchanged frozen NHC discussion text, issue time, attribution and original URL. Retain exact contiguous quotations with source identity and UTF-16 offsets.
+- EV-02: Write a research question, claim and reasoning separately from the original source. Preserve accepted exact strings through unrelated edits and reopening. Multiple quotations can support, challenge or qualify the same statement.
+- EV-03: Record a separate source-fit review with a named self-declared actor, explicit criterion and supports/does-not-support/unclear result. Require claim, reasoning and evidence before review. Changing the question, claim, reasoning, creator or evidence invalidates the recorded review. Actor declarations establish no authenticated human status.
+- EV-04: Export the complete validated packet and reopen it. Reject changed sources, mismatched anchors, duplicate ranges, unknown fields, unsupported versions and oversized files before replacement. Protect current edits and unfinished review inputs against invalid, cancelled, stale and superseded imports.
+- EV-05: State that work remains in the current tab until exported. Warn before leaving unretained work and confirm export without unfinished review inputs. Keep other tools' saved state and formats untouched.
+
+The [packet contract](data.md#source-evidence-packet) defines bounds and source identity. This is one evidence-review operation inspired by Grounded Vault's distinction among source, assertion and review. Complete Grounded Vault processing remains a separate application.
 
 ## Correspondence metadata contract
 

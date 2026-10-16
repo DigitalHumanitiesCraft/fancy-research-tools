@@ -13,7 +13,7 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Architecture
@@ -136,3 +136,9 @@ Native controls, labels, semantic headings, a skip link, visible focus and feedb
 ## Build and deployment
 
 The [start guide](../docs/getting-started.md) supplies commands. Continuous integration checks the committed source. The Pages workflow uses manual `workflow_dispatch`, so an ordinary push does not publish the website. Deployment additionally requires repository-level Pages configuration and authorisation. All local routes and assets must work beneath a repository subdirectory. A successful build establishes neither public deployment nor research acceptance.
+
+## Source-evidence review
+
+`src/evidence/` supplies a separate packet model and controller for `/evidence/`. It reuses the frozen NHC sources, actor/review vocabulary and exact-text binding. It has its own source-anchor validation, revision invalidation and bounded file boundary. No storage key or external service is introduced. Its [data contract](data.md#source-evidence-packet) and [observable requirements](specification.md#source-evidence-review-contract) own semantics and recovery.
+
+`src/photographs/exchange.ts` validates reopening against the complete existing selection-export shape and current frozen collection. The photograph controller guards asynchronous reads with interaction and request revisions before replacement. Neither exchange converts the existing investigation or notebook formats.

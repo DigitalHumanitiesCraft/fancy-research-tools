@@ -13,7 +13,7 @@ template:
 status: draft
 language: en
 created: 2026-10-10
-updated: 2026-10-11
+updated: 2026-10-16
 ---
 
 # Data
@@ -54,7 +54,7 @@ A descriptive projection must retain its original material separately when struc
 
 The JSON-LD separates catalogue date wording, conservatively parsed nominal bounds and the publisher's indexing bounds. Approximate dates remain approximate. Bare decades form a decade interval; unsupported compound descriptions retain their wording without a plotted date. Creator roles, attribution qualifiers, extents and authority references stay together. An attribution reference does not merge people or imply verified identity. No locations are inferred from culture, title or museum address.
 
-[The photograph schema](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/a217446/data/photographs/schema.json) defines structure. Its material checks cover frozen source and image hashes, decoded JPEG dimensions, reproducible derivation and independently specified `semantic-cases.json`. Those criteria establish projection agreement and declared date cases. Historical correctness requires additional source assessment. The original source fields and derivation identity accompany exported selections. The selection file is a JSON evidence packet; it is not a supported editable investigation or an image archive.
+[The photograph schema](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/blob/a217446/data/photographs/schema.json) defines structure. Its material checks cover frozen source and image hashes, decoded JPEG dimensions, reproducible derivation and independently specified `semantic-cases.json`. Those criteria establish projection agreement and declared date cases. Historical correctness requires additional source assessment. The original source fields and derivation identity accompany exported selections. The selection file remains the existing schema 1 JSON evidence packet. It now reopens its ordered selection and exact search settings against this frozen collection. Complete original records, context, derivation and rights must match; changed snapshots, unknown fields and duplicate identities are rejected. File input is bounded at 2,000,000 UTF-8 bytes. Reopening enters Comparison and does not restore a previous image viewport. It stores no authored annotations and contains image references rather than image bytes.
 
 The example contains no customer material and no LLM-produced catalogue values. Its interface therefore shows no LLM status marker. Synthetic skill trials exercise uncertain extraction separately under `benchmarks/cases/research-ui-skills/`.
 
@@ -124,6 +124,14 @@ Creator kinds are human, LLM, agent and unknown. A supplied name declares an ide
 Unknown fields, unsupported versions, changed sources, duplicate IDs and invalid quote anchors are rejected before replacement. Input and formatted output must fit within 1,000,000 UTF-8 bytes. Each authored text field is bounded at 20,000 UTF-16 code units. Source changes require a new snapshot and an explicit compatibility decision. The Met investigation and collection-editor formats remain independent.
 
 Notebook import preserves accepted bytes until an actual change. [AN-04 and AN-05](specification.md#contrasting-annotation-contract) and [Recovery and replacement](specification.md#recovery-and-replacement) define saved-state recovery, pending forms and protected stored copies. Separate case identities do not authorize conversion between the Met, editor and notebook formats.
+
+## Source-evidence packet
+
+The `/evidence/` route reuses the unchanged frozen NHC sources and the existing actor/review vocabularies. Its independent schema 1 has kind `source-evidence-packet`, complete sources, `researchQuestion`, `claim`, `reasoning`, declared `creator`, an ordered `evidence` array and nullable `review`. Every quotation carries `sourceId`, start-inclusive/end-exclusive UTF-16 offsets and the exact source substring. A packet supports up to 32 distinct source ranges. Sources must match the complete frozen values, including the preserved raw and displayed hashes. Unknown fields, changed source text, duplicate ranges and unsupported formats are rejected.
+
+Files and formatted packets fit within 1,000,000 UTF-8 bytes. Each authored text field fits within 20,000 UTF-16 code units. Accepted strings use the [exact-string rule](#relationship-to-source-material). Export/reopening retains uncompleted claims as work, while review requires a nonempty claim, reasoning, quotation and a named reviewer with a criterion. Substantive changes clear the previous review; no-op model revisions retain it. No timestamp, identity authentication or human verification is inferred. A reviewer kind of human is an entered declaration.
+
+The packet stays in memory until exported. There is no local-storage recovery and no format conversion to annotation notebooks, Met investigations or Grounded Vault. A browser-leaving warning covers changed work and unfinished review inputs. Downloads are explicit, and their completion must be checked outside the click event. Reopening confirms replacement of unretained work after complete validation; stale reads cannot replace later edits. Keeping original exports and a matching software copy supplies rollback. A future source change needs an explicit migration decision.
 
 ## Provenance of individual values
 

@@ -21,6 +21,16 @@ const search = el<HTMLInputElement>("search");
 const queryText = bindTextValue(search, (value) => value.trim());
 const observationText = bindTextValue(el<HTMLTextAreaElement>("observation"));
 const questionText = bindTextValue(el<HTMLTextAreaElement>("question"));
+const researchQuestionControl = document.createElement("textarea");
+researchQuestionControl.id = "research-question";
+researchQuestionControl.rows = 2;
+const researchQuestionLabel = document.createElement("label");
+researchQuestionLabel.textContent = "Research question";
+researchQuestionLabel.append(researchQuestionControl);
+const noteFields = el("compare-pane").querySelector(".note-fields");
+if (!noteFields) throw new Error("Missing comparison notes");
+noteFields.prepend(researchQuestionLabel);
+const researchQuestionText = bindTextValue(researchQuestionControl);
 const status = el("status");
 const normalise = normalizeSearch;
 const indexed = dataset.records.map((record) => ({
@@ -34,7 +44,6 @@ const indexed = dataset.records.map((record) => ({
 let query = "";
 let recovery: ReturnType<typeof connectInvestigation> | undefined;
 let author = "user";
-let researchQuestion = "How are materials and makers described in these instruments?";
 const textNode = <K extends keyof HTMLElementTagNameMap>(tag: K, text: string) => {
   const node = document.createElement(tag);
   node.textContent = text;
@@ -191,7 +200,7 @@ renderMatrix();
 const readInvestigation = () =>
   createInvestigation({
     query,
-    researchQuestion: researchQuestion,
+    researchQuestion: researchQuestionText.read(),
     selectedIds: [...selected],
     observation: observationText.read(),
     unresolvedQuestion: questionText.read(),
@@ -212,10 +221,10 @@ recovery = connectInvestigation({
     for (const id of state.selectedIds) selected.add(id);
     observationText.restore(state.interpretation.observation);
     questionText.restore(state.interpretation.unresolvedQuestion);
-    researchQuestion = state.researchQuestion;
+    researchQuestionText.restore(state.researchQuestion);
     renderResults();
     updateSelection();
   },
 });
-for (const id of ["observation", "question"])
+for (const id of ["research-question", "observation", "question"])
   el(id).addEventListener("input", () => recovery?.save());

@@ -1,0 +1,226 @@
+@import "../ui/foundation.css";
+
+@layer tokens {
+  :root {
+    color-scheme: light;
+    --paper: oklch(99% 0.003 250);
+    --ink: oklch(25% 0.025 250);
+    --muted: oklch(42% 0.025 250);
+    --accent: oklch(40% 0.12 250);
+    --line: oklch(62% 0.02 250);
+    --control: oklch(100% 0 0);
+    --error: oklch(38% 0.14 25);
+    --space: clamp(1rem, 0.8rem + 1vw, 1.75rem);
+  }
+}
+@layer base {
+  body {
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--ink);
+    background: var(--paper);
+  }
+  h1 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin-block: 1.5rem 0.5rem;
+  }
+  p {
+    margin-block: 0.65rem;
+    max-inline-size: 78ch;
+  }
+  a {
+    color: var(--accent);
+    text-underline-offset: 0.15em;
+  }
+  button,
+  input,
+  select,
+  textarea {
+    max-inline-size: 100%;
+    color: var(--ink);
+    background: var(--control);
+    border: 1px solid var(--line);
+    border-radius: 0.2rem;
+  }
+  button,
+  select,
+  input {
+    min-block-size: 2.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+  button {
+    cursor: pointer;
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-block: 0.65rem 0.3rem;
+  }
+  textarea {
+    display: block;
+    inline-size: 100%;
+    resize: vertical;
+    padding: 0.6rem;
+  }
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 1rem 0;
+    min-inline-size: 0;
+  }
+  legend {
+    font-weight: 600;
+  }
+  :focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+  dl {
+    margin-block: 0.65rem;
+  }
+  dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+  dt {
+    font-weight: 600;
+  }
+  pre,
+  blockquote {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    margin: 0.65rem 0;
+  }
+  summary {
+    cursor: pointer;
+    min-block-size: 2rem;
+  }
+}
+@layer layout {
+  .page-header,
+  main,
+  footer {
+    padding: var(--space);
+    max-inline-size: 100rem;
+    margin-inline: auto;
+  }
+  .page-header,
+  nav,
+  .actions,
+  .source-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem 1.25rem;
+    align-items: center;
+  }
+  .page-header {
+    justify-content: space-between;
+  }
+  .workspace {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+    align-items: start;
+  }
+  .source-pane {
+    flex: 1.2 1 31rem;
+    min-inline-size: 0;
+  }
+  .claim-pane {
+    flex: 1 1 27rem;
+    min-inline-size: 0;
+  }
+  .source-toolbar > div {
+    flex: 1 1 17rem;
+    min-inline-size: 0;
+  }
+  .source-toolbar select {
+    inline-size: 100%;
+  }
+  .source-attribution {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+  .actor-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+    gap: 0 1rem;
+  }
+  .actor-fields input,
+  .actor-fields select {
+    inline-size: 100%;
+  }
+  .actions {
+    margin-block-start: 0.75rem;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+}
+@layer components {
+  #source-text {
+    font-family: ui-monospace, monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  #file-status {
+    font-weight: 600;
+  }
+  #file-status[data-error="true"] {
+    color: var(--error);
+  }
+  .field-guidance,
+  .quotation-origin {
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  #evidence {
+    padding-inline-start: 1.5rem;
+  }
+  #evidence li {
+    margin-block-end: 1.25rem;
+  }
+  #evidence blockquote {
+    padding-inline-start: 0.75rem;
+    border-inline-start: 2px solid var(--line);
+  }
+  #review-status {
+    overflow-wrap: anywhere;
+  }
+  .skip-link {
+    position: absolute;
+    inset-block-start: -5rem;
+  }
+  .skip-link:focus {
+    inset-block-start: 0.5rem;
+    inset-inline-start: 0.5rem;
+    background: var(--paper);
+    padding: 0.5rem;
+  }
+}
+@layer utilities {
+  .source-measure {
+    position: fixed;
+    visibility: hidden;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .file-controls input {
+    inline-size: 100%;
+  }
+}

@@ -314,6 +314,19 @@
   .saved-section {
     margin-block-start: 1.4rem;
   }
+  #replace-quotation {
+    margin-block-end: 1rem;
+  }
+  .annotation-filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+    align-items: end;
+    gap: 0.65rem;
+    margin-block-end: 1rem;
+  }
+  #annotation-filter-status {
+    grid-column: 1 / -1;
+  }
   #annotations {
     padding-inline-start: 1.5rem;
     margin-block: 0;

@@ -64,9 +64,19 @@ Open the local URL printed by Vite. The start page links the tool gallery and do
 2. Compare the visible dates and attributions. Select Bridal Veil and Yosemite Falls using their comparison controls, then open Comparison.
 3. Inspect the different processes and the qualified attribution to Muybridge. Open either photograph to pan and zoom the local image. The source link opens the museum catalogue.
 4. Return to the same result and open Timeline. Each photograph has a direct link beside its catalogue date; the order is chronological, while spacing does not measure elapsed years.
-5. Export the selection. The JSON retains both records, original source fields and derivation evidence, including qualifiers. The search and selection also survive reload through the URL.
+5. Export the selection. The JSON retains both records, original source fields and derivation evidence, including qualifiers. Open the downloaded file through Open selection, confirm replacement if work is present, and inspect the same ordered evidence. Return to Collection to recover its search settings. The search and selection also survive reload through the URL.
 
-The example provides web-size images rather than full-resolution originals. It does not save annotations or reopen selection files. The sample and date limits are described in the [data contract](../knowledge/data.md#open-photograph-reference).
+The example provides web-size images rather than full-resolution originals. It does not save authored annotations or include image bytes in selection files. The sample and date limits are described in the [data contract](../knowledge/data.md#open-photograph-reference).
+
+## Check a sourced statement
+
+1. Open [Evidence review](../evidence/). Read archived Discussion 2 and find the paragraph beginning `Given that the system is still in its development stage`.
+2. Write your question and a claim about how the source qualifies the initial motion. Select the exact wording in Original bulletin text with the pointer or Shift and arrow keys, then choose Retain selected quotation.
+3. Explain how that wording supports or limits your claim. A wording comparison does not measure forecast accuracy. Creator kind and name identify your declared authorship.
+4. If you review the claim, enter a reviewer, criterion and result, then choose Record review. The tool records the declaration; it does not authenticate the reviewer. Edit the claim and observe that its previous review is cleared.
+5. Export evidence packet and open the downloaded JSON through Open evidence packet. Compare the restored question, claim, exact quote, reasoning and review. Return to quotation selects the original source range.
+
+Work stays in this tab until exported, and reloading can discard unexported work after the leaving warning. Invalid, changed-source or wrong-format packets leave current work intact. The [packet contract](../knowledge/data.md#source-evidence-packet) explains preservation and limits; the [activity coverage](research.md#grounded-vault) bounds its relationship to Grounded Vault.
 
 ## Capture SZD
 
