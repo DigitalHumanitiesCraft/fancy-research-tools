@@ -64,9 +64,10 @@ Open the local URL printed by Vite. The start page links the tool gallery and do
 2. Compare the visible dates and attributions. Select Bridal Veil and Yosemite Falls using their comparison controls, then open Comparison.
 3. Inspect the different processes and the qualified attribution to Muybridge. Open either photograph to pan and zoom the local image. The source link opens the museum catalogue.
 4. Return to the same result and open Timeline. Each photograph has a direct link beside its catalogue date; the order is chronological, while spacing does not measure elapsed years.
-5. Export the selection. The JSON retains both records, original source fields and derivation evidence, including qualifiers. Open the downloaded file through Open selection, confirm replacement if work is present, and inspect the same ordered evidence. Return to Collection to recover its search settings. The search and selection also survive reload through the URL.
+5. In Comparison, enter a Research question such as “How do date, process and attribution differ between these two photographs?” Write Your statement and Your reasoning using the retained catalogue values, and record an Unresolved question. For example, the catalogue dates differ and one attribution is qualified. This comparison alone cannot verify authorship or exact exposure dates. Choose the actual Author kind and enter an author name if known.
+6. Choose Export research. Open the downloaded `photograph-investigation.json` through Open selection in a fresh tab. Check that the same question, statement, reasoning, qualifiers and ordered photographs return. Compare a reexported file with the first result. Notes require explicit export before leaving the tab. The separate Export selection action retains the earlier evidence-only format. The URL retains search and selection, while authored notes travel in the research file.
 
-The example provides web-size images rather than full-resolution originals. It does not save authored annotations or include image bytes in selection files. The sample and date limits are described in the [data contract](../knowledge/data.md#open-photograph-reference).
+The example provides web-size images rather than full-resolution originals. Authored research notes are retained through the research file, and the files contain image references rather than image bytes. The sample and date limits are described in the [data contract](../knowledge/data.md#open-photograph-reference).
 
 ## Check a sourced statement
 

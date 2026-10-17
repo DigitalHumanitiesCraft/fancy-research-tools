@@ -148,6 +148,8 @@ The independent `/photographs/` tool compares an openly licensed historical-phot
 | PHOTO-04 | Up to four retained photographs can be compared and exported with their original source evidence. | Independent expectations agree with the actual downloaded IDs, source fields and snapshot identity. Clearing/removing selection changes no other tool's saved work. |
 | PHOTO-05 | Source and derivation remain distinguishable, with original date/creator qualifications and image rights inspectable. | Check source cases against the frozen raw records. Culture or museum location is never rendered as a capture/depicted location. |
 
+- PHOTO-07: Retain a question, statement, reasoning, unresolved question and declared author separately from catalogue evidence. Internal view changes preserve the notes. Export an actual research file and reopen it in a fresh context with the same ordered source records and exact authored text under the [research packet contract](data.md#open-photograph-reference). Invalid, cancelled or stale imports preserve later notes, and opening legacy selections explicitly confirms replacement. Warn before leaving unexported notes.
+
 - PHOTO-06: Reopen existing selection packets against the frozen collection under the [selection contract](data.md#open-photograph-reference). Reject invalid or changed evidence without replacing work, confirm valid replacement and abort stale reads after intervening interaction.
 
 The photograph reference has separate data and route state. It introduces no annotation editor or persistence migration for existing investigations. A declared access route, accessible image fallback and retained original values remain available if enhanced image rendering fails.

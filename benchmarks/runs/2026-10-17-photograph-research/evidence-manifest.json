@@ -1,0 +1,36 @@
+{
+  "recordedAt": "2026-10-17T10:20:25.037Z",
+  "evidence": "Copied test artifacts only. This manifest does not claim task success or researcher acceptance.",
+  "files": [
+    {
+      "path": "baseline-comparison.png",
+      "bytes": 46025,
+      "sha256": "6bb8d49f46b935bd8178a15b4cd2b24af2654acef39ed195d94e97ab770d9365"
+    },
+    {
+      "path": "full-browser-result.json",
+      "bytes": 45,
+      "sha256": "91d1c43004802cd49950d78eb11c8fa7d05da8ffffe219a8b13b2f561bc00903"
+    },
+    {
+      "path": "photograph-investigation-reopened.json",
+      "bytes": 12053,
+      "sha256": "f068430fdd323635f4ae157c5d51f4e649fc7f717df2bea7868e510fd3d9b00e"
+    },
+    {
+      "path": "photograph-investigation.json",
+      "bytes": 12053,
+      "sha256": "f068430fdd323635f4ae157c5d51f4e649fc7f717df2bea7868e510fd3d9b00e"
+    },
+    {
+      "path": "research-narrow.png",
+      "bytes": 144480,
+      "sha256": "df84323a61a9116232d2653fd75fb6405d507ff64c6a7149ee31dbfcda68a84a"
+    },
+    {
+      "path": "research-wide.png",
+      "bytes": 244663,
+      "sha256": "f7d7c011fa2ff8d74d0fa65a1680b53eeb95fb7ea8028abe42856e34a890ad05"
+    }
+  ]
+}

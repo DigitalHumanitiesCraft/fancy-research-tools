@@ -22,7 +22,7 @@ Quality checks establish bounded software behaviour, source preservation and obs
 
 ## Current evidence
 
-The local examples revision of 2026-10-16 passed the project checks on Windows with installed Chrome. The [revision record](#local-examples-revision-2026-10-16) identifies the executed scope and preserved artifacts. Earlier evidence below retains its original source identity.
+The photograph research round trip of 2026-10-17 passed the project checks on Windows with installed Chrome. Its [execution record](#photograph-research-round-trip-2026-10-17) adds authored research to the preserved local examples revision. The [revision record](#local-examples-revision-2026-10-16) identifies the executed scope and preserved artifacts. Earlier evidence below retains its original source identity.
 
 The earlier implementation baseline is [a217446](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/commit/a217446f720282c347864dc710c8502db8d6ecbe). Its local sequence passed 96 unit tests, a full 60-case browser run, all six source gates, type/lint checks and the production build. After two gallery corrections, the five affected documentation/browser cases were repeated. The separate [Linux CI run](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/actions/runs/38162240871) passed for the committed state. The [task-gallery record](https://github.com/DigitalHumanitiesCraft/fancy-research-tools/tree/a217446f720282c347864dc710c8502db8d6ecbe/benchmarks/runs/2026-10-11-task-gallery) preserves that sequence.
 
@@ -36,6 +36,14 @@ The subsequent [knowledge-refactor run](https://github.com/DigitalHumanitiesCraf
 | UI design | Operated agent reviews and bounded screenshot review, including negative findings and repairs, plus the operator's positive first assessment of the photograph view on 2026-10-13 | Complete task assessment, other views and representative researcher acceptance remain pending |
 | SZD interoperability | Pinned schema/parser checks in `data/szd-example/verification.json`; source-preserving package download | Native file picker blocked complete editor import/edit/reopen; full edition build remains unperformed |
 | Reusable procedures | Recorded agent-only collection/annotation trials and separately guided repair | No causal old/new comparison, novice-use finding or general skill-effectiveness claim |
+
+### Photograph research round trip 2026-10-17
+
+The authorized end-to-end follow-up reproduced a missing question/statement path in the actual Comparison preview. The regression failed before the change. The corrected task retains the question through source inspection, adds a statement with reasoning and declared agent authorship, downloads an actual research packet, opens that file in a fresh browser context and compares a second actual download with the original packet. The same actual downloaded file was separately reopened in the in-app browser and its restored question, statement, qualifiers and agent declaration inspected.
+
+Type/lint, frozen-source gates, unit tests, production build and the complete browser suite passed on Windows with installed Chrome. A focused repeat passed after positioning screenshots at the top of the page. Changed-source rejection, declined replacement, later edits during a delayed read, exact imported line endings and legacy selection reopening preserve their intended boundaries. Wide and 320 CSS-pixel screenshots were inspected, and the tested narrow state had no document overflow or axe violations. No new screen-reader, native-zoom, human usefulness or external-tool execution is claimed.
+
+The retained assessment, actual downloaded files, before/after screenshots and artifact manifest under `benchmarks/runs/2026-10-17-photograph-research/` identify this bounded agent run. The matching source capture is `benchmarks/runs/2026-10-17-photograph-research-source.json`. The author declaration records an agent walkthrough. Research acceptance remains pending.
 
 ### Local examples revision 2026-10-16
 

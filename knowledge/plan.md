@@ -42,7 +42,7 @@ New implementation follows a concrete defect or research need found in these tas
 | M1 Development workflow | Documented question-, material- and existing-tool entry, with bounded agent trials | Independent novice development and benefit of the method |
 | M2 Material and cases | Open photograph reference, retained technical examples and prepared SZD package under [Data](data.md) | Task-specific scholarly interpretation |
 | M3 Responsibility boundaries | Separate domain formats and state, selectively shared primitives under [Architecture](architecture.md#core-and-adaptation-boundaries) | Broader reuse only after observed adaptations |
-| M4 Reference workflow | Collection Explorer search, chronology, image inspection, comparison and source-checked selection export/reopening; positive initial operator assessment of the photograph view | Complete operator task assessment and representative researcher assessment |
+| M4 Reference workflow | Collection Explorer search, chronology, image inspection, comparison and source-checked selection and authored research export/reopening; positive initial operator assessment of the photograph view | Complete operator task assessment and representative researcher assessment |
 | M5 Contrasting adaptations | Annotation, source-evidence review and metadata correction implemented; existing external tools linked through concrete tasks | External SZD and curation paths in the queue above |
 | M6 Reproduction and review | Local and Linux checks, agent reproduction and operated reviews recorded in Testing | Human design acceptance and release decision |
 

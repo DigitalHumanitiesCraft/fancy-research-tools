@@ -20,6 +20,11 @@ updated: 2026-10-16
 
 ## Entries
 
+### 2026-10-17 photograph question, statement and portable research
+
+The Human User commissioned completion of the prepared workflow on existing material through export and actual reopening. An operated baseline reproduced the missing authored question and statement in Comparison, and a regression failed before the correction. A separate research packet now wraps the unchanged selection format, keeping original catalogue evidence apart from authored interpretation and declared authorship. Internal views preserve notes, while explicit export retains them after departure. The source validator and asynchronous replacement guard protect existing and later work. The guide provides a common Yosemite task. This agent walkthrough extends runnable support and leaves human research acceptance, complete external workflows and broad activity coverage pending.
+
+
 ### 2026-10-16 improved local examples and bounded activity coverage
 
 The operator confirmed the overarching purpose of translating researchers' own questions into tools that can evolve during research, then directly requested improvement and expansion of the examples. Work used an isolated checkout of the active development branch because main is retired. Existing local cases received bounded changes in question entry, selection ordering, attribution search, addressable source selection, safe asynchronous import and explicit annotation reanchoring. Photograph selection packets retain their existing export shape and now reopen against the frozen collection.

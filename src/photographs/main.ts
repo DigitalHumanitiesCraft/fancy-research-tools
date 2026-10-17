@@ -1,6 +1,6 @@
 import rawCollection from "../../data/photographs/collection.jsonld?raw";
 import { icon } from "../ui/icons";
-import { MAX_SELECTION_BYTES, openSelection } from "./exchange";
+import { MAX_SELECTION_BYTES } from "./exchange";
 import {
   creatorText,
   filterPhotographs,
@@ -12,6 +12,13 @@ import {
   selectionExport,
   stateHash,
 } from "./model";
+import {
+  emptyResearch,
+  hasResearch,
+  mountResearch,
+  openPhotographFile,
+  researchPacket,
+} from "./research";
 import "./style.css";
 
 const images = import.meta.glob<string>("../../data/photographs/images/*.jpg", {
@@ -46,6 +53,8 @@ try {
   let notice = "";
   let revision = 0;
   let readGeneration = 0;
+  let research = emptyResearch();
+  let lastResearchExport = "";
   const scrollPositions = new Map<string, number>();
 
   const imageUrl = (record: Photograph) => {
@@ -526,6 +535,40 @@ try {
       });
   }
 
+  function exportResearch() {
+    try {
+      const text = JSON.stringify(researchPacket(collection, state, research), null, 2);
+      const url = URL.createObjectURL(new Blob([text], { type: "application/json" }));
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "photograph-investigation.json";
+      anchor.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      lastResearchExport = text;
+      const status = document.querySelector<HTMLElement>("#selection-status");
+      if (status)
+        status.textContent =
+          "Research download requested. Keep the downloaded file to reopen your work.";
+    } catch (error) {
+      const status = document.querySelector<HTMLElement>("#selection-status");
+      if (status)
+        status.textContent =
+          error instanceof Error ? error.message : "The research file could not be exported.";
+    }
+  }
+
+  function renderResearch() {
+    mountResearch(
+      content,
+      research,
+      (next) => {
+        research = next;
+        revision += 1;
+      },
+      exportResearch,
+    );
+  }
+
   function comparison() {
     const heading = element("h1", "", "Comparison");
     heading.tabIndex = -1;
@@ -545,6 +588,7 @@ try {
         link("Choose photographs", { ...state, view: "collection" }),
       );
       content.append(empty);
+      renderResearch();
       return;
     }
     const scroll = element("div", "comparison-scroll");
@@ -597,6 +641,7 @@ try {
     table.append(thead, body);
     scroll.append(table);
     content.append(scroll);
+    renderResearch();
   }
 
   function render() {
@@ -642,22 +687,33 @@ try {
       if (file.size > MAX_SELECTION_BYTES) throw new Error("The selection file exceeds 2 MB.");
       const text = await file.text();
       if (generation !== readGeneration) return;
-      const candidate = openSelection(text, collection);
+      const candidate = openPhotographFile(text, collection);
       if (revision !== expectedRevision)
         throw new Error(
           "The selection was not opened because your work changed while the file was being read. Open it again when ready.",
         );
       if (
-        (state.selected.length || state.query || state.creator || state.technique) &&
-        !window.confirm("Replace the current search and selection with this file?")
+        (state.selected.length ||
+          state.query ||
+          state.creator ||
+          state.technique ||
+          hasResearch(research)) &&
+        !window.confirm("Replace the current search, selection and research notes with this file?")
       ) {
         fileStatus.textContent = "Opening cancelled. Your current selection is unchanged.";
         return;
       }
       notice = "";
-      navigate(candidate);
+      research = candidate.research;
+      lastResearchExport = candidate.legacy
+        ? ""
+        : JSON.stringify(researchPacket(collection, candidate.state, research), null, 2);
+      navigate(candidate.state);
       fileStatus.textContent =
-        "Selection opened. Original catalogue evidence and search settings match this snapshot.";
+        "Selection opened. Original catalogue evidence and search settings match this snapshot." +
+        (candidate.legacy
+          ? " This selection file contains no research notes."
+          : " Research notes restored.");
     } catch (error) {
       if (generation !== readGeneration) return;
       fileStatus.textContent =
@@ -678,6 +734,20 @@ try {
       revision += 1;
       state = initialState(location.hash, collection.items);
       render();
+    }
+  });
+  window.addEventListener("beforeunload", (event) => {
+    if (!hasResearch(research)) return;
+    let exported = false;
+    try {
+      exported =
+        JSON.stringify(researchPacket(collection, state, research), null, 2) === lastResearchExport;
+    } catch {
+      /* Oversized work still needs a departure warning. */
+    }
+    if (!exported) {
+      event.preventDefault();
+      event.returnValue = "";
     }
   });
   render();
