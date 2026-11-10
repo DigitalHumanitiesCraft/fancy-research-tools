@@ -13,7 +13,7 @@ template:
 status: active
 language: en
 created: 2026-10-10
-updated: 2026-10-16
+updated: 2026-11-10
 ---
 
 # Plan
@@ -54,7 +54,7 @@ Use the [Data compatibility contract](data.md#investigation-exchange) before cha
 
 ## Release decision
 
-The package remains an unreleased development version. Version 0.2 requires the applicable [acceptance criteria](specification.md#planned-version-02-acceptance), recorded technical results and an explicit decision about pending research acceptance. The package, data schemas and knowledge-document schema have independent versions. Earlier implementation and knowledge refactoring had separate commit/push authorisation. This local examples increment carries no publication or push decision. Deployment and a claim of human acceptance remain separate decisions.
+The package remains an unreleased development version. Version 0.2 requires the applicable [acceptance criteria](specification.md#planned-version-02-acceptance), recorded technical results and an explicit decision about pending research acceptance. The package, data schemas and knowledge-document schema have independent versions. Earlier implementation and knowledge refactoring had separate commit/push authorisation. This examples increment was pushed to `origin/codex/improve-research-examples` on 2026-10-31 (fdf1852) and is not merged into `codex/version-0.1`. Deployment and a claim of human acceptance remain separate decisions.
 
 ## Provenance
 
