@@ -18,7 +18,15 @@ updated: 2026-10-16
 
 # Journal
 
+## Open
+
+Nothing open.
+
 ## Entries
+
+### 2026-11-14 dissolved the handoff file into the journal
+
+The operator decided on 2026-11-14 that a Promptotyping repository no longer keeps `knowledge/handoff.md`. The journal opens with `## Open`, which holds what the next session needs to continue. The handoff file held no open point, so nothing was carried over and `## Open` reads `Nothing open.`. The file is removed, and the action layer, the index and the plan no longer name it. Run records under `benchmarks/runs/` keep their references to it as historical evidence.
 
 ### 2026-10-17 photograph question, statement and portable research
 

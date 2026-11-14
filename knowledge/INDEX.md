@@ -33,7 +33,6 @@ The maintained knowledge base guides implementation and review of Fancy Research
 | [Testing](testing.md) | Which claims have evidence? | Checks or acceptance results |
 | [Plan](plan.md) | Which remaining task comes next and what blocks acceptance? | Milestone or dependency changes |
 | [Journal](journal.md) | Which decisions led here? | Coherent integrated transition |
-| [Handoff](handoff.md) | Which incoming findings need processing? | Received or resolved input |
 
 The public [research activity coverage](../docs/research.md#coverage-of-research-activities) maps local workflows, external applications and remaining cases, including the bounded Grounded Vault relationship.
 
@@ -44,7 +43,7 @@ The public [research activity coverage](../docs/research.md#coverage-of-research
 ## Reading paths
 
 - Established purpose and audience are in [Project](project.md#purpose). Recover those decisions before asking conceptual questions.
-- Session resumption starts with [handoff](handoff.md) and [the current plan](plan.md#resume-in-the-next-session). Implementation then follows [specification](specification.md) and the relevant contract.
+- Session resumption starts with the `## Open` section of the [journal](journal.md) and [the current plan](plan.md#resume-in-the-next-session). Implementation then follows [specification](specification.md) and the relevant contract.
 - Data adaptation starts with [data](data.md), [architecture](architecture.md), and [testing](testing.md).
 - Interface changes start with [design](design.md), the corresponding acceptance scenario in [specification](specification.md) and the [UI acceptance protocol](testing.md#ui-acceptance-protocol). These contracts cover documentation, exploration and editing.
 - Agent-assisted starts and existing-tool adaptation follow [project commitments](project.md#development-commitments), the public guides and the [development study protocol](../benchmarks/development-study-protocol.md). Record maintenance ownership and human evidence separately from implementation.
@@ -53,7 +52,7 @@ The public [research activity coverage](../docs/research.md#coverage-of-research
 
 The [Promptotyping document convention](https://dhcraft.org/Promptotyping/#konvention-v0.1) supplies the document functions. The shared document schema version lives only in this index. Git identifies the content revision. The application release and collection schema have independent versions.
 
-Within `knowledge/`, project, specification, architecture, data, design and testing are approved for the public documentation build. The complete allowlist in `scripts/docs-pages.json` also includes the overview, public guides and development study protocol. Index, plan, journal and handoff remain repository documents outside that website build. An allowlist does not make files in a public Git repository private.
+Within `knowledge/`, project, specification, architecture, data, design and testing are approved for the public documentation build. The complete allowlist in `scripts/docs-pages.json` also includes the overview, public guides and development study protocol. Index, plan and journal remain repository documents outside that website build. An allowlist does not make files in a public Git repository private.
 
 ## Terms
 

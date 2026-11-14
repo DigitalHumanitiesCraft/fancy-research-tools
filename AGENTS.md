@@ -6,11 +6,11 @@ Build a research-tool starter from maintained project knowledge. The responsible
 
 ## Knowledge base
 
-Read `knowledge/INDEX.md`, `knowledge/handoff.md` and the documents relevant to the task. On session resumption, read `knowledge/plan.md` for completed work, remaining acceptance and the next bounded task. Inspect the working tree before editing and preserve existing uncommitted work. Before asking about audience, purpose or scope, read the settled decisions in `knowledge/project.md` and the current plan. Both immediate research use and agent-assisted adaptation are confirmed goals. Ask only about a remaining consequential decision that these sources and the current request do not answer. Data changes require `knowledge/data.md`. Behaviour changes require `knowledge/specification.md`. UI work requires `knowledge/design.md`. Read `knowledge/journal.md` when decision provenance matters.
+Read `knowledge/INDEX.md`, the beginning of `knowledge/journal.md` (`## Open`) and the documents relevant to the task. On session resumption, read `knowledge/plan.md` for completed work, remaining acceptance and the next bounded task. Inspect the working tree before editing and preserve existing uncommitted work. Before asking about audience, purpose or scope, read the settled decisions in `knowledge/project.md` and the current plan. Both immediate research use and agent-assisted adaptation are confirmed goals. Ask only about a remaining consequential decision that these sources and the current request do not answer. Data changes require `knowledge/data.md`. Behaviour changes require `knowledge/specification.md`. UI work requires `knowledge/design.md`. Read `knowledge/journal.md` when decision provenance matters.
 
 ## Working rules
 
-Maintain durable facts in their canonical knowledge document and update statements that repeat them. Record one journal entry for a coherent transition. Process handoff points by verifying their source and target, integrating or rejecting the finding, recording the outcome and removing the resolved point.
+Maintain durable facts in their canonical knowledge document and update statements that repeat them. Record one journal entry for a coherent transition. Keep `## Open` at the top of the journal current: carry open work there, and remove a point once it is resolved and its durable content integrated.
 
 Keep the bundled baseline separate from draft edits. Reject unsupported data without silently dropping fields. Treat imported strings as untrusted input. Never infer historical facts from synthetic examples or describe software tests as scientific validation.
 

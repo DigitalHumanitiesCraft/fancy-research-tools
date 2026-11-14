@@ -22,7 +22,7 @@ The task gallery, local development examples and bounded source-evidence review 
 
 ## Resume in the next session
 
-Read the action layer, [Index](INDEX.md), [handoff](handoff.md) and this queue. Inspect the actual branch and working tree before editing. Recover confirmed purpose and audience from [Project](project.md#purpose). The local entry is `/tools/`; setup and complete example tasks are in [Getting started](../docs/getting-started.md).
+Read the action layer, [Index](INDEX.md), the `## Open` section of the [journal](journal.md) and this queue. Inspect the actual branch and working tree before editing. Recover confirmed purpose and audience from [Project](project.md#purpose). The local entry is `/tools/`; setup and complete example tasks are in [Getting started](../docs/getting-started.md).
 
 | Priority | Next action | Completion evidence | Dependency |
 |---|---|---|---|
